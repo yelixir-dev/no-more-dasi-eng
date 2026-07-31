@@ -1,5 +1,6 @@
 # Overlay: Biotechnology (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 20,132 words — treat stats as directional, not targets)
 Source: 3 file(s), 20,132 words
 
 ## Corpus stats
@@ -70,6 +71,15 @@ Source: 3 file(s), 20,132 words
 - in vivo: in vivo=1, in-vivo=0
 - in vitro: in vitro=12, in-vitro=0
 - et al.: et al.=4, et al=33
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 19.3 words, passive 103.9 /10K
+- conclusion: 2 section(s), avg sentence 21.2 words, passive 94.3 /10K
+- discussion: 3 section(s), avg sentence 21.4 words, passive 134.6 /10K
+- introduction: 3 section(s), avg sentence 20.8 words, passive 116.1 /10K
+- methods: 3 section(s), avg sentence 17.6 words, passive 485.1 /10K
+- results: 3 section(s), avg sentence 20.3 words, passive 94.4 /10K
 
 ## Editor notes (manual curation)
 

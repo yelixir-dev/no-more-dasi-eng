@@ -1,5 +1,6 @@
 # Overlay: Microbiology (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 35,582 words — treat stats as directional, not targets)
 Source: 3 file(s), 35,582 words
 
 ## Corpus stats
@@ -70,6 +71,14 @@ Source: 3 file(s), 35,582 words
 - in vivo: in vivo=6, in-vivo=0
 - in vitro: in vitro=2, in-vitro=0
 - et al.: et al.=0, et al=236
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 22.5 words, passive 111.0 /10K
+- discussion: 3 section(s), avg sentence 24.0 words, passive 95.6 /10K
+- introduction: 3 section(s), avg sentence 26.3 words, passive 78.6 /10K
+- methods: 5 section(s), avg sentence 16.8 words, passive 252.0 /10K
+- results: 4 section(s), avg sentence 19.5 words, passive 150.7 /10K
 
 ## Editor notes (manual curation)
 

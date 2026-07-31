@@ -1,5 +1,6 @@
 # Overlay: Environmental sciences (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 24,521 words — treat stats as directional, not targets)
 Source: 3 file(s), 24,521 words
 
 ## Corpus stats
@@ -69,6 +70,15 @@ Source: 3 file(s), 24,521 words
 - x-ray: x-ray=3, x ray=0, xray=0
 - et al.: et al.=18, et al=134
 - setup: setup=3, set-up=0, set up=1
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 21.2 words, passive 141.3 /10K
+- conclusion: 3 section(s), avg sentence 17.6 words, passive 67.3 /10K
+- discussion: 1 section(s), avg sentence 27.3 words, passive 59.5 /10K
+- introduction: 3 section(s), avg sentence 23.0 words, passive 112.2 /10K
+- merged: results+discussion: 1 section(s), avg sentence 21.5 words, passive 128.6 /10K
+- methods: 2 section(s), avg sentence 23.8 words, passive 189.7 /10K
 
 ## Editor notes (manual curation)
 

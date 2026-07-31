@@ -1,5 +1,6 @@
 # Overlay: Cell biology (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 23,382 words — treat stats as directional, not targets)
 Source: 3 file(s), 23,382 words
 
 ## Corpus stats
@@ -69,6 +70,15 @@ Source: 3 file(s), 23,382 words
 - in vivo: in vivo=7, in-vivo=0
 - in vitro: in vitro=7, in-vitro=0
 - et al.: et al.=0, et al=86
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 18.7 words, passive 35.6 /10K
+- conclusion: 1 section(s), avg sentence 23.0 words, passive 0.0 /10K
+- discussion: 3 section(s), avg sentence 25.2 words, passive 110.4 /10K
+- introduction: 2 section(s), avg sentence 24.2 words, passive 321.4 /10K
+- methods: 2 section(s), avg sentence 19.0 words, passive 573.3 /10K
+- results: 3 section(s), avg sentence 20.5 words, passive 118.4 /10K
 
 ## Editor notes (manual curation)
 

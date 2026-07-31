@@ -1,5 +1,6 @@
 # Overlay: Biochemistry (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 20,503 words — treat stats as directional, not targets)
 Source: 3 file(s), 20,503 words
 
 ## Corpus stats
@@ -70,6 +71,15 @@ Source: 3 file(s), 20,503 words
 - in vivo: in vivo=9, in-vivo=0
 - in vitro: in vitro=4, in-vitro=0
 - et al.: et al.=0, et al=43
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 18.5 words, passive 112.6 /10K
+- conclusion: 2 section(s), avg sentence 18.5 words, passive 0.0 /10K
+- discussion: 3 section(s), avg sentence 24.9 words, passive 102.4 /10K
+- introduction: 2 section(s), avg sentence 20.8 words, passive 100.8 /10K
+- methods: 3 section(s), avg sentence 17.5 words, passive 507.7 /10K
+- results: 3 section(s), avg sentence 18.6 words, passive 113.7 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,5 +1,6 @@
 # Overlay: Physics (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 18,350 words — treat stats as directional, not targets)
 Source: 3 file(s), 18,350 words
 
 ## Corpus stats
@@ -68,6 +69,15 @@ Source: 3 file(s), 18,350 words
 
 - et al.: et al.=0, et al=27
 - setup: setup=1, set-up=0, set up=1
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 23.8 words, passive 87.0 /10K
+- conclusion: 3 section(s), avg sentence 13.9 words, passive 38.9 /10K
+- discussion: 1 section(s), avg sentence 23.2 words, passive 118.3 /10K
+- introduction: 3 section(s), avg sentence 23.6 words, passive 128.0 /10K
+- methods: 1 section(s), avg sentence 22.7 words, passive 304.5 /10K
+- results: 1 section(s), avg sentence 24.0 words, passive 116.0 /10K
 
 ## Editor notes (manual curation)
 

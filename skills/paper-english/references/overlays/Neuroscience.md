@@ -1,5 +1,6 @@
 # Overlay: Neuroscience (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 26,129 words — treat stats as directional, not targets)
 Source: 3 file(s), 26,129 words
 
 ## Corpus stats
@@ -68,6 +69,15 @@ Source: 3 file(s), 26,129 words
 
 - et al.: et al.=0, et al=30
 - setup: setup=1, set-up=0, set up=0
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 21.4 words, passive 178.8 /10K
+- conclusion: 2 section(s), avg sentence 10.0 words, passive 56.2 /10K
+- discussion: 3 section(s), avg sentence 25.5 words, passive 108.4 /10K
+- introduction: 3 section(s), avg sentence 25.9 words, passive 159.1 /10K
+- methods: 2 section(s), avg sentence 20.3 words, passive 295.8 /10K
+- results: 3 section(s), avg sentence 24.7 words, passive 107.7 /10K
 
 ## Editor notes (manual curation)
 

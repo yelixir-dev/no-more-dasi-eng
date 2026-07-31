@@ -1,5 +1,6 @@
 # Overlay: Engineering (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 24,693 words — treat stats as directional, not targets)
 Source: 3 file(s), 24,693 words
 
 ## Corpus stats
@@ -69,6 +70,14 @@ Source: 3 file(s), 24,693 words
 - in situ: in situ=0, in-situ=1
 - et al.: et al.=10, et al=35
 - setup: setup=0, set-up=0, set up=2
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 23.4 words, passive 162.9 /10K
+- body: 1 section(s), avg sentence 18.2 words, passive 194.1 /10K
+- conclusion: 2 section(s), avg sentence 21.2 words, passive 214.1 /10K
+- introduction: 2 section(s), avg sentence 21.8 words, passive 133.1 /10K
+- merged: results+discussion: 1 section(s), avg sentence 24.2 words, passive 102.5 /10K
 
 ## Editor notes (manual curation)
 

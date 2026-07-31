@@ -21,6 +21,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from check_terms import VARIANT_FAMILIES, normalize
+from section_split import split_sections
+
+MATURE_FILES = 10
+MATURE_WORDS = 100000
 
 WORD = re.compile(r"[A-Za-z][A-Za-z-]{1,}")
 SENTENCE_END = re.compile(r"[.!?]+[\"')\]]*\s+")
@@ -147,14 +151,22 @@ def notation_watch(text):
     return rows
 
 
-def render_overlay(field, files, failures, text):
+def render_overlay(field, files, failures, text, section_metrics=None):
     stats = field_stats(text)
     terms = top_terms(text)
     phrases = phrase_bank(text)
     notation = notation_watch(text)
+    mature = len(files) >= MATURE_FILES and stats["words"] >= MATURE_WORDS
+    maturity = (
+        f"Maturity: {'mature' if mature else 'immature'} "
+        f"({len(files)} files, {stats['words']:,} words"
+        + ("" if mature else " — treat stats as directional, not targets")
+        + ")"
+    )
     lines = [
         f"# Overlay: {field} (AUTO-DRAFT {date.today().isoformat()})",
         "",
+        maturity,
         f"Source: {len(files)} file(s), {stats['words']:,} words"
         + (f" · extraction failures: {len(failures)}" if failures else ""),
         "",
@@ -174,6 +186,13 @@ def render_overlay(field, files, failures, text):
     for family, counts in notation:
         detail = ", ".join(f"{v}={n}" for v, n in counts.items())
         lines.append(f"- {family[0]}: {detail}")
+    if section_metrics:
+        lines += ["", "## Section metrics", ""]
+        for role, m in sorted(section_metrics.items()):
+            lines.append(
+                f"- {role}: {m['sections']} section(s), avg sentence {m['avg_sentence_words']} words, "
+                f"passive {m['passive_per_10k']} /10K"
+            )
     lines += [
         "",
         "## Editor notes (manual curation)",
@@ -186,6 +205,34 @@ def render_overlay(field, files, failures, text):
         lines += [f"- {name}" for name in failures]
         lines.append("")
     return "\n".join(lines)
+
+
+def aggregate_section_metrics(texts):
+    per_role = {}
+    for text in texts:
+        for section in split_sections(text):
+            role = section["role"]
+            if role in ("frontmatter", "references"):
+                continue
+            body = section["body"]
+            if not body:
+                continue
+            stats = field_stats(body)
+            agg = per_role.setdefault(role, {"sections": 0, "words": 0, "sentences": 0, "passive": 0.0})
+            agg["sections"] += 1
+            agg["words"] += stats["words"]
+            agg["sentences"] += stats["sentences"]
+            agg["passive"] += stats["passive_per_10k"] * stats["words"]
+    result = {}
+    for role, agg in per_role.items():
+        if agg["words"] == 0:
+            continue
+        result[role] = {
+            "sections": agg["sections"],
+            "avg_sentence_words": round(agg["words"] / max(agg["sentences"], 1), 1),
+            "passive_per_10k": round(agg["passive"] / agg["words"], 1),
+        }
+    return result
 
 
 def main():
@@ -227,7 +274,7 @@ def main():
         if not texts:
             print(f"SKIP {field}: no extractable text", file=sys.stderr)
             continue
-        overlay = render_overlay(field, files, failures, "\n".join(texts))
+        overlay = render_overlay(field, files, failures, "\n".join(texts), aggregate_section_metrics(texts))
         (out_dir / f"{field}.md").write_text(overlay, encoding="utf-8")
         generated.append(field)
         print(f"OK {field}: {len(files)} file(s) -> {out_dir / (field + '.md')}")

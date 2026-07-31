@@ -1,5 +1,6 @@
 # Overlay: Chemistry (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 27,264 words — treat stats as directional, not targets)
 Source: 3 file(s), 27,264 words
 
 ## Corpus stats
@@ -70,6 +71,16 @@ Source: 3 file(s), 27,264 words
 - x-ray: x-ray=16, x ray=0, xray=0
 - in vivo: in vivo=1, in-vivo=0
 - et al.: et al.=0, et al=92
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 22.4 words, passive 83.8 /10K
+- conclusion: 2 section(s), avg sentence 17.7 words, passive 118.1 /10K
+- discussion: 1 section(s), avg sentence 29.7 words, passive 48.1 /10K
+- introduction: 3 section(s), avg sentence 22.0 words, passive 109.4 /10K
+- merged: results+discussion: 2 section(s), avg sentence 21.6 words, passive 155.1 /10K
+- methods: 3 section(s), avg sentence 15.5 words, passive 217.2 /10K
+- results: 1 section(s), avg sentence 21.5 words, passive 74.7 /10K
 
 ## Editor notes (manual curation)
 

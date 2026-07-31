@@ -1,5 +1,6 @@
 # Overlay: Cancer (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 22,155 words — treat stats as directional, not targets)
 Source: 3 file(s), 22,155 words
 
 ## Corpus stats
@@ -70,6 +71,16 @@ Source: 3 file(s), 22,155 words
 - in vivo: in vivo=4, in-vivo=0
 - in vitro: in vitro=3, in-vitro=0
 - et al.: et al.=0, et al=93
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 22.3 words, passive 92.7 /10K
+- conclusion: 2 section(s), avg sentence 20.9 words, passive 116.1 /10K
+- discussion: 2 section(s), avg sentence 21.5 words, passive 117.2 /10K
+- introduction: 3 section(s), avg sentence 22.6 words, passive 216.2 /10K
+- merged: results+discussion: 1 section(s), avg sentence 30.6 words, passive 129.2 /10K
+- methods: 1 section(s), avg sentence 24.2 words, passive 424.6 /10K
+- results: 2 section(s), avg sentence 20.7 words, passive 108.1 /10K
 
 ## Editor notes (manual curation)
 

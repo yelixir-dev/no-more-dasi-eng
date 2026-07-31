@@ -1,5 +1,6 @@
 # Overlay: Mathematics and computing (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 34,148 words — treat stats as directional, not targets)
 Source: 3 file(s), 34,148 words
 
 ## Corpus stats
@@ -69,6 +70,13 @@ Source: 3 file(s), 34,148 words
 - in situ: in situ=0, in-situ=1
 - et al.: et al.=10, et al=44
 - setup: setup=2, set-up=0, set up=2
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 23.1 words, passive 129.9 /10K
+- conclusion: 2 section(s), avg sentence 21.2 words, passive 214.1 /10K
+- introduction: 3 section(s), avg sentence 21.6 words, passive 157.6 /10K
+- merged: results+discussion: 2 section(s), avg sentence 23.9 words, passive 64.3 /10K
 
 ## Editor notes (manual curation)
 

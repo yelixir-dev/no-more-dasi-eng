@@ -1,5 +1,6 @@
 # Overlay: Nanoscience and technology (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 24,102 words — treat stats as directional, not targets)
 Source: 3 file(s), 24,102 words
 
 ## Corpus stats
@@ -72,6 +73,16 @@ Source: 3 file(s), 24,102 words
 - et al.: et al.=0, et al=81
 - photonic crystal: photonic crystal=1, photonic-crystal=0
 - setup: setup=2, set-up=0, set up=0
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 23.1 words, passive 91.3 /10K
+- conclusion: 1 section(s), avg sentence 24.0 words, passive 147.1 /10K
+- discussion: 2 section(s), avg sentence 27.3 words, passive 62.9 /10K
+- introduction: 2 section(s), avg sentence 22.6 words, passive 98.4 /10K
+- merged: results+discussion: 1 section(s), avg sentence 21.6 words, passive 169.5 /10K
+- methods: 3 section(s), avg sentence 14.8 words, passive 208.8 /10K
+- results: 2 section(s), avg sentence 19.5 words, passive 120.3 /10K
 
 ## Editor notes (manual curation)
 

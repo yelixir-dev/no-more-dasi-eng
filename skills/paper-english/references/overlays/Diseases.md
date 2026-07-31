@@ -1,5 +1,6 @@
 # Overlay: Diseases (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 19,056 words — treat stats as directional, not targets)
 Source: 3 file(s), 19,056 words
 
 ## Corpus stats
@@ -67,6 +68,15 @@ Source: 3 file(s), 19,056 words
 ## Notation watch
 
 - et al.: et al.=0, et al=35
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 21.6 words, passive 100.7 /10K
+- body: 1 section(s), avg sentence 18.2 words, passive 194.1 /10K
+- discussion: 1 section(s), avg sentence 24.1 words, passive 110.3 /10K
+- introduction: 1 section(s), avg sentence 21.9 words, passive 96.8 /10K
+- methods: 1 section(s), avg sentence 21.9 words, passive 256.2 /10K
+- results: 1 section(s), avg sentence 20.8 words, passive 115.3 /10K
 
 ## Editor notes (manual curation)
 

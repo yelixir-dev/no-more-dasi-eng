@@ -1,5 +1,6 @@
 # Overlay: Energy science and technology (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 23,699 words — treat stats as directional, not targets)
 Source: 3 file(s), 23,699 words
 
 ## Corpus stats
@@ -70,6 +71,14 @@ Source: 3 file(s), 23,699 words
 - in situ: in situ=1, in-situ=0
 - ex situ: ex situ=0, ex-situ=1
 - et al.: et al.=1, et al=91
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 25.0 words, passive 71.4 /10K
+- conclusion: 2 section(s), avg sentence 18.7 words, passive 72.3 /10K
+- introduction: 3 section(s), avg sentence 24.8 words, passive 164.0 /10K
+- merged: results+discussion: 2 section(s), avg sentence 21.6 words, passive 121.1 /10K
+- methods: 2 section(s), avg sentence 20.6 words, passive 381.7 /10K
 
 ## Editor notes (manual curation)
 

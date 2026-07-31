@@ -1,5 +1,6 @@
 # Overlay: Biophysics (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 47,065 words — treat stats as directional, not targets)
 Source: 3 file(s), 47,065 words
 
 ## Corpus stats
@@ -72,6 +73,14 @@ Source: 3 file(s), 47,065 words
 - in vitro: in vitro=10, in-vitro=1
 - et al.: et al.=0, et al=141
 - setup: setup=1, set-up=0, set up=0
+
+## Section metrics
+
+- abstract: 2 section(s), avg sentence 19.9 words, passive 52.8 /10K
+- discussion: 3 section(s), avg sentence 15.1 words, passive 63.3 /10K
+- introduction: 3 section(s), avg sentence 21.5 words, passive 238.2 /10K
+- methods: 2 section(s), avg sentence 19.5 words, passive 451.5 /10K
+- results: 3 section(s), avg sentence 21.2 words, passive 79.3 /10K
 
 ## Editor notes (manual curation)
 

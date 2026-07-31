@@ -1,5 +1,6 @@
 # Overlay: Materials science (AUTO-DRAFT 2026-08-01)
 
+Maturity: immature (3 files, 24,132 words — treat stats as directional, not targets)
 Source: 3 file(s), 24,132 words
 
 ## Corpus stats
@@ -70,6 +71,16 @@ Source: 3 file(s), 24,132 words
 - in vitro: in vitro=5, in-vitro=0
 - et al.: et al.=0, et al=29
 - setup: setup=2, set-up=0, set up=0
+
+## Section metrics
+
+- abstract: 3 section(s), avg sentence 20.1 words, passive 142.3 /10K
+- conclusion: 3 section(s), avg sentence 22.1 words, passive 183.2 /10K
+- discussion: 2 section(s), avg sentence 25.0 words, passive 144.4 /10K
+- introduction: 3 section(s), avg sentence 25.0 words, passive 138.2 /10K
+- merged: results+discussion: 1 section(s), avg sentence 24.2 words, passive 102.5 /10K
+- methods: 1 section(s), avg sentence 21.0 words, passive 486.3 /10K
+- results: 1 section(s), avg sentence 20.9 words, passive 239.0 /10K
 
 ## Editor notes (manual curation)
 
