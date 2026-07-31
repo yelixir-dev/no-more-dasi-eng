@@ -123,6 +123,50 @@ class CheckTermsTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
 
+class SectionSplitTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+
+    def split(self, text):
+        f = self.dir / "in.txt"
+        f.write_text(text)
+        r = run_script("section_split.py", f)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        return json.loads(r.stdout)
+
+    def test_standard_imrad(self):
+        sections = self.split(
+            "Abstract\nWe show results.\n\nIntroduction\nBackground here.\n\n"
+            "Methods\nWe measured it.\n\nResults\nIt worked.\n\nConclusion\nWe conclude.\n"
+        )
+        names = [s["name"].lower() for s in sections]
+        self.assertEqual(names, ["abstract", "introduction", "methods", "results", "conclusion"])
+        self.assertIn("Background here.", sections[1]["body"])
+
+    def test_merged_results_and_discussion(self):
+        sections = self.split(
+            "Abstract\nA.\n\nIntroduction\nB.\n\n"
+            "Results and Discussion\nC.\n\nConclusion\nD.\n"
+        )
+        roles = [s["role"] for s in sections]
+        self.assertIn("merged", roles[2])
+        self.assertIn("C.", sections[2]["body"])
+
+    def test_numbered_headings(self):
+        sections = self.split(
+            "1. Introduction\nB.\n\n2. Experimental Section\nM.\n\n3. Conclusions\nC.\n"
+        )
+        self.assertEqual(len(sections), 3)
+        self.assertEqual(sections[1]["role"], "methods")
+
+    def test_no_headings_single_body(self):
+        sections = self.split("Just one paragraph of body text without headings.\n")
+        self.assertEqual(len(sections), 1)
+        self.assertEqual(sections[0]["role"], "body")
+
+
 class MineCorpusTest(unittest.TestCase):
     def setUp(self):
         self.dir = Path(tempfile.mkdtemp())

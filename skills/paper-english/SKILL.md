@@ -41,12 +41,17 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 ## Phase 3: 섹션 인식 교정
 
-원고를 Abstract / Introduction / Methods / Results / Discussion으로 나눠 인식하고 섹션별 규칙을 적용한다 (`references/core/academic-en.md`의 섹션별 시제 표):
+원고를 `scripts/section_split.py`로 나눠 인식한다 (IMRaD + Results and Discussion 병합, Experimental Section 등 변형 대응). 학회·논문집마다 구조는 다르지만 거시 구조는 요약/서론/본론/결과/결론의 선택이며, 병합형(Results+Discussion, 본론+결과)은 오류가 아니니 교정으로 "정규화"하지 않는다. 섹션별 시제·수동태 규칙과 전개·호흡 규칙은 `references/core/academic-en.md` §3·§8을 따른다.
 
 - Methods = 과거·수동 우세 유지 (억지 능동화 금지)
-- Results = 과거 중심, 도표 지시 현재
+- Results = 과거 중심, 도표 지시 현재. 해석 문장을 Results에 넣지 않는다
 - Discussion/Conclusion = 해석은 현재 시제
 - Abstract = 섹션 축약형, 시제 혼용 규칙 적용
+- Introduction에는 결론 구조를 만들지 않는다 (§8 교차 오염 검사) — 서론에 "in conclusion" 류를 추가하는 것은 의미 불변 위반
+
+### 부분 윤문 요청 ("서론만", "본론만")
+
+사용자가 특정 섹션만 요청하면 **범위 잠금**: 요청한 구간만 고치고 다른 섹션은 건드리지 않는다. 그 섹션의 역할(§8)을 유지하고, 없는 섹션의 규칙은 적용하지 않으며, 교차 참조(“Section 3”, “Figure 4”)는 편집하지 않고 끊긴 참조만 노트로 보고한다. 검증 게이트도 그 구간 기준으로 실행한다 (`academic-en.md` §9).
 
 ## Phase 4: 검증 (코드 게이트 — LLM 자기판정 금지)
 
@@ -54,6 +59,7 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 1. `scripts/verify_integrity.py <원고> <교정본>` — 수치·단위·화학식·인용 보존 + 변경률 게이트. **exit 1이면 납품 금지**, 해당 위반을 수정하고 재실행.
 2. `scripts/check_terms.py <교정본>` — 용어 표기 일관성 (bandgap/band gap 등). exit 1이면 다수형으로 통일 후 재실행.
+3. 부분 윤문이면 위 두 검사를 해당 구간 기준으로 실행한다.
 
 ## 참조 파일
 

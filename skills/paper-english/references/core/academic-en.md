@@ -69,6 +69,32 @@ Section-aware correction is mandatory; the tense conventions differ per section.
 - R6.3 Do not stack hedges: "may possibly suggest" -> pick one.
 - R6.4 "However" mid-sentence is fine; do not relocate it to sentence start mechanically.
 
-## 7. Change discipline
+## 8. Macro-structure and per-section rhetoric (구조와 전개)
+
+Journals vary, but the macro-structure is always a selection from: Abstract / Introduction / Body(Methods) / Results / Conclusion. Merged variants are normal: Results+Discussion (Nat. Commun. style), Body+Results, Conclusion+Outlook. Never treat a merged or reordered structure as an error, and never "normalize" it to textbook IMRaD.
+
+Per-section role and pacing (호흡):
+
+- R8.1 Abstract: one-paragraph arc — problem, gap, what was done, key result with numbers, implication. No citations, no unexplained acronyms.
+- R8.2 Introduction: funnel — field context -> specific problem -> gap -> what this work does ("Here, we..."). Ends with the contribution, optionally a one-line result preview. It must NOT contain a full conclusion: no outcome evaluation, no "in conclusion", no summary of implications beyond the preview line.
+- R8.3 Methods: chronological/procedural blocks with topic sentences per technique. No results, no justification rhetoric beyond one clause ("to minimize scattering").
+- R8.4 Results: evidence blocks ordered by question, figure-anchored ("Figure 2 shows..."). Reports what the data show, not why it matters — interpretation belongs to Discussion.
+- R8.5 Discussion: claim-evidence-limitation arc. Interprets, compares with literature, states limitations. Must not introduce new measurements.
+- R8.6 Conclusion: restates the advance and its significance, forward-looking. Must not cite new evidence or repeat Results numbers beyond the headline one.
+- R8.7 Merged sections: in Results+Discussion, each evidence block carries its own local interpretation; do not split it into two sections, and do not force global interpretation paragraphs into a Results-only manuscript.
+
+Cross-section contamination checks (lintable): flag conclusion markers ("in conclusion", "in summary", "these findings demonstrate the potential") inside Introduction; flag literature-comparison and hedged interpretation sentences ("this may indicate") inside Results; flag new quantitative results first appearing inside Conclusion.
+
+## 9. Partial-section requests (부분 윤문)
+
+When the user asks to correct only one section (e.g., "서론만", "Methods만"):
+
+- R9.1 Scope lock: edit only the requested span. Do not touch, restructure, or "fix cross-references" in other sections.
+- R9.2 Preserve the section's role per §8. An Introduction stays an Introduction: never append concluding sentences, a mini-abstract, or a roadmap paragraph the author did not write. A Methods section must not gain results.
+- R9.3 Keep forward/backward references intact ("as shown in Section 3", "Figure 4"): do not renumber or delete them, but flag dangling ones to the user as a note, not an edit.
+- R9.4 Apply only the rules valid for that section (tense table §3, role rules §8) plus the field overlay. Rules tied to absent sections do not apply.
+- R9.5 Run the same verification gates on the edited span: verify_integrity.py against the original span, check_terms.py on the output span.
+
+## 10. Change discipline
 
 All corrections preserve numbers, units, error ranges, chemical formulas, symbols, and citations token-for-token. Detected spans only are edited; undetected paragraphs stay unchanged. Change rate above 30% of tokens triggers a warning; above 50% the run stops.
