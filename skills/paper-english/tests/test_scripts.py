@@ -123,6 +123,89 @@ class CheckTermsTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
 
+class BenchEditTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+        self.orig = self.dir / "orig.txt"
+        self.orig.write_text(
+            "In recent years, photonics has attracted considerable attention. "
+            "The soliton plays a crucial role in the resonator. "
+            "Figure 2 showed the spectrum. "
+            "This result may possibly suggest a shift. "
+            "The film was deposited. " * 12
+        )
+
+    def bench(self, corrected):
+        out = self.dir / "out.txt"
+        out.write_text(corrected)
+        return run_script("bench_edit.py", self.orig, out)
+
+    def test_improvement_detected(self):
+        r = self.bench("The soliton controls the resonance. Figure 2 shows the spectrum. " * 12)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertIn("before", r.stdout.lower())
+        self.assertIn("after", r.stdout.lower())
+
+    def test_regression_fails(self):
+        r = self.bench("This paves the way for devices. " * 12)
+        self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
+
+
+class ManuscriptStateTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+        self.text = self.dir / "paper.txt"
+        self.text.write_text(
+            "We used finite-difference time-domain (FDTD) simulations. "
+            "The bandgap was 3.2 eV. This bandgap shift is small. "
+            "The band gap widens. The bandgap remains. Figure 3 shows the setup."
+        )
+
+    def test_learn_and_show(self):
+        r = run_script("manuscript_state.py", "learn", self.dir, self.text)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        state = json.loads((self.dir / "manuscript.json").read_text())
+        self.assertEqual(state["abbreviations"]["FDTD"], "finite-difference time-domain")
+        self.assertEqual(state["terms"]["bandgap"], "bandgap")
+        r2 = run_script("manuscript_state.py", "show", self.dir)
+        self.assertEqual(r2.returncode, 0, r2.stdout + r2.stderr)
+        self.assertIn("FDTD", r2.stdout)
+
+
+class CheckAbbrevTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+
+    def check(self, text, *extra):
+        f = self.dir / "in.txt"
+        f.write_text(text)
+        return run_script("check_abbrev.py", f, *extra)
+
+    def test_undefined_acronym_fails(self):
+        r = self.check("The FDTD simulation was performed. The FDTD mesh was fine.")
+        self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
+        self.assertIn("FDTD", r.stdout + r.stderr)
+
+    def test_defined_acronym_passes(self):
+        r = self.check("We used finite-difference time-domain (FDTD) simulations. The FDTD mesh was fine.")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_whitelisted_passes(self):
+        r = self.check("DNA was extracted from the cells. The DNA yield was high.")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_state_file_exempts(self):
+        import json
+        (self.dir / "manuscript.json").write_text(json.dumps(
+            {"abbreviations": {"FDTD": "finite-difference time-domain"}, "terms": {}}))
+        r = self.check("The FDTD simulation was performed.", "--state", self.dir)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+
 class SectionSplitTest(unittest.TestCase):
     def setUp(self):
         self.dir = Path(tempfile.mkdtemp())
@@ -197,6 +280,23 @@ class MineCorpusTest(unittest.TestCase):
         self.assertIn("bandgap", text)
         self.assertTrue(any(c.isdigit() for c in text), "overlay must contain measured numbers")
         self.assertIn("sentence", text.lower())
+
+    def test_overlay_has_maturity_flag_and_section_metrics(self):
+        corpus_file = self.dir / "corpus" / "Test Field" / "a.txt"
+        corpus_file.write_text(
+            "Introduction\nThe bandgap matters for devices. "
+            "Methods\nThe film was deposited by sputtering. The film was annealed. "
+            "Results\nThe transmittance increased sharply."
+        )
+        r = run_script(
+            "mine_corpus.py",
+            "--corpus", self.dir / "corpus",
+            "--out", self.out,
+        )
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        text = (self.out / "Test Field.md").read_text()
+        self.assertIn("immature", text)
+        self.assertIn("## Section metrics", text)
 
 
 if __name__ == "__main__":
