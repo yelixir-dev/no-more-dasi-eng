@@ -20,6 +20,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import abbrev_registry
 from check_terms import VARIANT_FAMILIES, normalize
 from section_split import split_sections
 
@@ -244,6 +245,8 @@ def main():
     )
     parser.add_argument("--fields", default=None, help="comma-separated field names")
     parser.add_argument("--limit", type=int, default=None, help="max files per field")
+    parser.add_argument("--registry", default=str(Path(__file__).resolve().parent.parent / "references" / "abbrev-registry.json"))
+    parser.add_argument("--no-registry", action="store_true")
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -252,6 +255,7 @@ def main():
 
     only = set(args.fields.split(",")) if args.fields else None
     generated = []
+    registry = None if args.no_registry else abbrev_registry.load(args.registry)
     for field_dir in sorted(p for p in corpus.iterdir() if p.is_dir()):
         field = field_dir.name
         if only and field not in only:
@@ -274,10 +278,19 @@ def main():
         if not texts:
             print(f"SKIP {field}: no extractable text", file=sys.stderr)
             continue
-        overlay = render_overlay(field, files, failures, "\n".join(texts), aggregate_section_metrics(texts))
+        combined = "\n".join(texts)
+        overlay = render_overlay(field, files, failures, combined, aggregate_section_metrics(texts))
         (out_dir / f"{field}.md").write_text(overlay, encoding="utf-8")
+        if registry is not None:
+            abbrev_registry.scan(registry, combined, field, source="corpus")
         generated.append(field)
         print(f"OK {field}: {len(files)} file(s) -> {out_dir / (field + '.md')}")
+
+    if registry is not None:
+        abbrev_registry.save(args.registry, registry)
+        html_path = Path(args.registry).with_suffix(".html")
+        html_path.write_text(abbrev_registry.render_html(registry), encoding="utf-8")
+        print(f"registry: {len(registry['entries'])} entries -> {args.registry} (+ {html_path})")
 
     print(f"mine_corpus: {len(generated)} overlay(s) generated")
     return 0 if generated else 1

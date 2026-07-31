@@ -123,6 +123,71 @@ class CheckTermsTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
 
+class AbbrevRegistryTest(unittest.TestCase):
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+        self.reg = self.dir / "registry.json"
+
+    def run_reg(self, *args):
+        return run_script("abbrev_registry.py", self.reg, *args)
+
+    def test_record_creates_unverified(self):
+        r = self.run_reg("record", "FDTD", "--field", "Optics and photonics", "--context", "The FDTD mesh was refined.")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        data = json.loads(self.reg.read_text())
+        entry = data["entries"][0]
+        self.assertEqual(entry["acronym"], "FDTD")
+        self.assertEqual(entry["status"], "unverified")
+        self.assertIsNone(entry["expansion"])
+
+    def test_scan_resolves_with_context(self):
+        self.run_reg("record", "FDTD", "--field", "Optics and photonics")
+        f = self.dir / "paper.txt"
+        f.write_text("We used finite-difference time-domain (FDTD) simulations. The FDTD mesh was refined.")
+        r = self.run_reg("scan", f, "--field", "Optics and photonics")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        entry = json.loads(self.reg.read_text())["entries"][0]
+        self.assertEqual(entry["status"], "verified")
+        self.assertEqual(entry["expansion"], "finite-difference time-domain")
+        self.assertTrue(entry["contexts"])
+
+    def test_scan_records_undefined(self):
+        f = self.dir / "paper.txt"
+        f.write_text("The XQZ factor was measured. The XQZ value held. XQZ is stable.")
+        r = self.run_reg("scan", f, "--field", "Physics")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        entries = json.loads(self.reg.read_text())["entries"]
+        xqz = [e for e in entries if e["acronym"] == "XQZ"]
+        self.assertEqual(len(xqz), 1)
+        self.assertEqual(xqz[0]["status"], "unverified")
+        self.assertEqual(xqz[0]["field"], "Physics")
+
+    def test_conflict_on_different_expansion(self):
+        self.run_reg("record", "SPM", "--field", "Physics")
+        f1 = self.dir / "a.txt"
+        f1.write_text("We used scanning probe microscopy (SPM) imaging.")
+        f2 = self.dir / "b.txt"
+        f2.write_text("The surface plasmon microscopy (SPM) signal was weak.")
+        self.run_reg("scan", f1, "--field", "Physics")
+        self.run_reg("scan", f2, "--field", "Physics")
+        import json
+        entry = json.loads(self.reg.read_text())["entries"][0]
+        self.assertEqual(entry["status"], "conflict")
+
+    def test_render_html(self):
+        self.run_reg("record", "FDTD", "--field", "Optics and photonics")
+        html = self.dir / "registry.html"
+        r = self.run_reg("render", html)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        text = html.read_text()
+        self.assertIn("FDTD", text)
+        self.assertIn("Optics and photonics", text)
+
+
 class BenchEditTest(unittest.TestCase):
     def setUp(self):
         self.dir = Path(tempfile.mkdtemp())
@@ -280,6 +345,26 @@ class MineCorpusTest(unittest.TestCase):
         self.assertIn("bandgap", text)
         self.assertTrue(any(c.isdigit() for c in text), "overlay must contain measured numbers")
         self.assertIn("sentence", text.lower())
+
+    def test_registry_hook_records_definitions(self):
+        corpus_file = self.dir / "corpus" / "Test Field" / "a.txt"
+        corpus_file.write_text(
+            "We used finite-difference time-domain (FDTD) simulations. "
+            "The XQZ factor was measured. The XQZ value held. XQZ is stable."
+        )
+        reg = self.dir / "reg.json"
+        r = run_script(
+            "mine_corpus.py",
+            "--corpus", self.dir / "corpus",
+            "--out", self.out,
+            "--registry", reg,
+        )
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        import json
+        entries = {e["acronym"]: e for e in json.loads(reg.read_text())["entries"]}
+        self.assertEqual(entries["FDTD"]["status"], "verified")
+        self.assertEqual(entries["XQZ"]["status"], "unverified")
+        self.assertTrue(reg.with_suffix(".html").exists())
 
     def test_overlay_has_maturity_flag_and_section_metrics(self):
         corpus_file = self.dir / "corpus" / "Test Field" / "a.txt"
