@@ -1,0 +1,1 @@
+The TiO2 thin film exhibited a transmittance of 95.8 % at 550 nm, and its bandgap was estimated to be 3.25 eV from the Tauc plot. Annealing at 673 K decreased the refractive index n from 2.41 to 2.33.

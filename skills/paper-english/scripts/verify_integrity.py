@@ -23,6 +23,15 @@ CITATION_AUTHOR = re.compile(r"\([A-Z][A-Za-zÀ-ÿ' -]+ et al\.?,? \d{4}[a-z]?\)
 DOI = re.compile(r"10\.\d{4,}/\S+")
 NUMBER = re.compile(r"(?<![\w.])\d+(?:\.\d+)?(?:[eE][+-]?\d+)?(?![\w])(?!\.\d)")
 
+_UNIT_BODY = (
+    r"(?:wt%|at%|°C|°K|μM|mM|μL|mL|μm|nm|mm|cm|km|kHz|MHz|GHz|Hz|GPa|MPa"
+    r"|kPa|Pa|kA|mA|kV|mV|kW|mW|kJ|meV|keV|eV|mol|min|rpm|dB|kB|MB|%"
+    r"|[KTAJWVsLhgmN])\d*"
+)
+QUANTITY = re.compile(
+    r"(?<![\w.])(\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)\s*(" + _UNIT_BODY + r"(?:/" + _UNIT_BODY + r")?)?"
+)
+
 ELEMENTS = {
     "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al",
     "Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe",
@@ -54,10 +63,15 @@ def extract_invariants(text):
     stripped = CITATION_BRACKET.sub(" ", text)
     stripped = CITATION_AUTHOR.sub(" ", stripped)
     dois = DOI.findall(stripped)
+    stripped = DOI.sub(" ", stripped)
     numbers = NUMBER.findall(stripped)
+    quantities = Counter(
+        f"{num} {unit}".strip() for num, unit in QUANTITY.findall(stripped)
+    )
     formulas = [t for t in FORMULA.findall(stripped) if is_chemical_formula(t)]
     return {
         "number": Counter(numbers),
+        "quantity": quantities,
         "citation": Counter(citations),
         "formula": Counter(formulas),
         "doi": Counter(dois),
@@ -82,7 +96,7 @@ def main():
     violations = []
     inv_o = extract_invariants(original)
     inv_c = extract_invariants(corrected)
-    for kind in ("number", "citation", "formula", "doi"):
+    for kind in ("number", "quantity", "citation", "formula", "doi"):
         missing = inv_o[kind] - inv_c[kind]
         invented = inv_c[kind] - inv_o[kind]
         for token, count in sorted(missing.items()):
