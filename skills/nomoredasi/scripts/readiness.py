@@ -115,10 +115,12 @@ def load_series(history_path):
     return series
 
 
+# Colorblind-safe categorical palette extending Okabe-Ito with additional
+# hues kept at comparable lightness so lines stay distinguishable on light paper.
 PALETTE = [
-    "#1456b8", "#0e7a5f", "#b45309", "#7c3aed", "#be185d", "#0e7490",
-    "#65a30d", "#dc2626", "#9333ea", "#0369a1", "#b91c1c", "#4d7c0f",
-    "#a16207", "#0f766e",
+    "#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9",
+    "#F0E442", "#7E6148", "#92351B", "#403C8A", "#0DB02B", "#BEB7D7",
+    "#5AA469", "#B31B1B",
 ]
 ALWAYS_LEGEND = {"Physics", "Optics and photonics"}
 
@@ -133,6 +135,20 @@ def nice_step(maxv, target=5):
     return 10 * mag
 
 
+GRID = "#d5dbe4"   # precise, thin gridline
+AXIS = "#3c4c63"   # tick + frame ink
+TEXT = "#24303f"
+MUTED = "#5b6b80"
+THRESH = "#8a97a8"
+# Raw CSS font-family value (used verbatim in the stylesheet); for the SVG
+# font-family attribute the inner double quotes are XML-escaped instead.
+FONT_FAMILY_STACK = (
+    '"Inter", "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, '
+    '"Segoe UI", Roboto, Arial, sans-serif'
+)
+THRESHOLDS = ((60, "usable"), (80, "publishable"))
+
+
 def render_html(history_path, out_path):
     series = load_series(history_path)
     latest = {f: recs[-1] for f, recs in series.items()}
@@ -145,7 +161,7 @@ def render_html(history_path, out_path):
     legend_fields = [f for f in ranked if f in ALWAYS_LEGEND][:2] + [f for f in ranked if f not in ALWAYS_LEGEND][:12]
     color_of = {f: PALETTE[i % len(PALETTE)] for i, f in enumerate(legend_fields)}
 
-    W, H, ML, MR, MT, MB = 1080, 600, 56, 210, 34, 52
+    W, H, ML, MR, MT, MB = 1120, 620, 64, 232, 42, 60
     PW, PH = W - ML - MR, H - MT - MB
 
     def x(p):
@@ -154,22 +170,48 @@ def render_html(history_path, out_path):
     def y(s):
         return MT + PH * (1 - s / y_max)
 
+    attr = 'font-family="' + FONT_FAMILY_STACK.replace('"', '&quot;') + '"'
     svg = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img">']
-    for gy in range(0, 101, 25):
-        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" stroke="#e3e7ed"/>')
-        svg.append(f'<text x="{ML - 8}" y="{y(gy) + 4:.1f}" text-anchor="end" font-size="11" fill="#5a6675">{gy}</text>')
+
+    # Dashed target guide lines (usable / publishable) with small labels.
+    for gy, label in THRESHOLDS:
+        svg.append(
+            f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" '
+            f'stroke="{THRESH}" stroke-width="1" stroke-dasharray="5 4"/>'
+        )
+        # Small italic target tag, left-anchored just above the dashed line.
+        svg.append(
+            f'<text x="{ML + 6}" y="{y(gy) - 6:.1f}" font-size="10" fill="{THRESH}" '
+            f'font-style="italic" text-anchor="start" {attr}>{label} · {gy}</text>'
+        )
+
+    # y gridlines with outward tick marks and labeled ticks.
+    for gy in range(0, 101, 20):
+        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" stroke="{GRID}"/>')
+        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML - 4}" y2="{y(gy):.1f}" stroke="{AXIS}"/>')
+        svg.append(f'<text x="{ML - 8}" y="{y(gy) + 4:.1f}" text-anchor="end" font-size="11" fill="{MUTED}" {attr}>{gy}</text>')
+    # x gridlines with outward tick marks and labeled ticks.
     step = nice_step(x_max)
     xv = 0
     while xv <= x_max:
-        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT}" x2="{x(xv):.1f}" y2="{MT + PH}" stroke="#f0f2f5"/>')
-        svg.append(f'<text x="{x(xv):.1f}" y="{MT + PH + 18}" text-anchor="middle" font-size="11" fill="#5a6675">{xv}</text>')
+        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT}" x2="{x(xv):.1f}" y2="{MT + PH}" stroke="{GRID}"/>')
+        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT + PH}" x2="{x(xv):.1f}" y2="{MT + PH + 4}" stroke="{AXIS}"/>')
+        svg.append(f'<text x="{x(xv):.1f}" y="{MT + PH + 20}" text-anchor="middle" font-size="11" fill="{MUTED}" {attr}>{xv}</text>')
         xv += step
-    svg.append(f'<text x="{ML + PW / 2:.0f}" y="{H - 10}" text-anchor="middle" font-size="13" fill="#1a2332">papers</text>')
-    svg.append(f'<text x="16" y="{MT + PH / 2:.0f}" text-anchor="middle" font-size="13" fill="#1a2332" transform="rotate(-90 16 {MT + PH / 2:.0f})">score</text>')
+
+    # Subtle figure frame around the plot area.
+    svg.append(f'<rect x="{ML}" y="{MT}" width="{PW}" height="{PH}" fill="none" stroke="{AXIS}" stroke-width="1"/>')
+
+    # Axis titles.
+    svg.append(f'<text x="{ML + PW / 2:.0f}" y="{H - 8}" text-anchor="middle" font-size="13" fill="{TEXT}" {attr}>papers</text>')
+    svg.append(
+        f'<text x="16" y="{MT + PH / 2:.0f}" text-anchor="middle" font-size="13" fill="{TEXT}" '
+        f'transform="rotate(-90 16 {MT + PH / 2:.0f})" {attr}>score</text>'
+    )
 
     for field, recs in sorted(series.items()):
-        color = color_of.get(field, "#c3c9d2")
-        width = "2.2" if field in color_of else "1.2"
+        color = color_of.get(field, GRID)
+        width = "2.25" if field in color_of else "1.25"
         pts = " ".join(f"{x(r.get('papers', 0)):.1f},{y(r.get('score', 0)):.1f}" for r in recs)
         svg.append(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="{width}"/>')
         for r in recs:
@@ -177,21 +219,26 @@ def render_html(history_path, out_path):
                 f'<circle cx="{x(r.get("papers", 0)):.1f}" cy="{y(r.get("score", 0)):.1f}" r="3" fill="{color}">'
                 f'<title>{escape(field)} — {r.get("papers", 0)} papers, score {r.get("score", 0)} ({r.get("date", "")})</title></circle>'
             )
-    lx, ly = ML + PW + 16, MT + 8
-    svg.append(f'<text x="{lx}" y="{ly - 8}" font-size="12" font-weight="700" fill="#1a2332">fields (top {len(legend_fields)})</text>')
+
+    # Right-hand field legend.
+    lx, ly = ML + PW + 18, MT + 10
+    svg.append(f'<text x="{lx}" y="{ly - 6}" font-size="11" font-weight="700" fill="{TEXT}" {attr}>fields (top {len(legend_fields)})</text>')
     for i, field in enumerate(legend_fields):
-        yy = ly + 14 + i * 18
-        svg.append(f'<rect x="{lx}" y="{yy - 9}" width="10" height="10" fill="{color_of[field]}"/>')
-        label = escape(field if len(field) <= 24 else field[:23] + "…")
-        svg.append(f'<text x="{lx + 14}" y="{yy}" font-size="11" fill="#1a2332">{label}</text>')
+        yy = ly + 12 + i * 18
+        svg.append(f'<rect x="{lx}" y="{yy - 8}" width="10" height="10" fill="{color_of[field]}"/>')
+        label = escape(field if len(field) <= 22 else field[:21] + "…")
+        svg.append(f'<text x="{lx + 15}" y="{yy}" font-size="11" fill="{TEXT}" {attr}>{label}</text>')
     svg.append("</svg>")
 
     rows = []
     for field in ranked:
         r = latest[field]
         rows.append(
-            f"<tr><td>{escape(field)}</td><td>{r['papers']}</td><td>{r['words']:,}</td>"
-            f"<td>{r['collocations_ge5']}</td><td>{r['sections']}</td><td><b>{r['score']}</b></td></tr>"
+            f"<tr><td>{escape(field)}</td><td class=\"num\">{r['papers']}</td>"
+            f"<td class=\"num\">{r['words']:,}</td>"
+            f"<td class=\"num\">{r['collocations_ge5']}</td>"
+            f"<td class=\"num\">{r['sections']}</td>"
+            f"<td class=\"num score\">{r['score']}</td></tr>"
         )
     html = f"""<!DOCTYPE html>
 <html lang="ko">
@@ -200,27 +247,48 @@ def render_html(history_path, out_path):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Field Readiness — nomoredasi</title>
 <style>
- body {{ font-family: -apple-system, "Pretendard", "Noto Sans KR", sans-serif; background:#f7f8fa; color:#1a2332; margin:0; }}
- .wrap {{ max-width: 1140px; margin: 0 auto; padding: 40px 28px 80px; }}
- h1 {{ font-size: 1.5rem; border-bottom: 3px solid #1a2332; padding-bottom: 12px; }}
- .meta {{ color: #5a6675; font-size: 0.9rem; }}
- .card {{ background:#fff; border:1px solid #e3e7ed; border-radius:12px; padding:20px 24px; margin:18px 0; overflow-x:auto; }}
- table {{ border-collapse: collapse; width: 100%; font-size: 0.9rem; background:#fff; }}
- th, td {{ border-bottom: 1px solid #e3e7ed; padding: 7px 12px; text-align: left; }}
- th {{ background: #eef1f5; }}
+:root {{ --ink: #1c2733; --muted: #5b6b80; --rule: #c9d2dd; --paper: #ffffff; --canvas: #fafbfc; }}
+body {{ font-family: {FONT_FAMILY_STACK}; background: var(--canvas); color: var(--ink); margin: 0; line-height: 1.55; }}
+.wrap {{ max-width: 1000px; margin: 0 auto; padding: 56px 32px 96px; }}
+.kicker {{ font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }}
+h1 {{ font-size: 1.55rem; font-weight: 600; line-height: 1.25; margin: 0 0 8px; }}
+.subtitle {{ font-size: 0.95rem; color: var(--muted); margin: 0 0 26px; max-width: 62ch; }}
+.card {{ background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 26px 28px; margin: 0 0 30px; overflow-x: auto; }}
+svg {{ display: block; max-width: 100%; height: auto; }}
+.figure-title {{ font-size: 0.85rem; font-weight: 700; margin: 0 0 6px; }}
+.figure-caption {{ font-size: 0.8rem; color: var(--muted); margin: 14px 0 0; }}
+table {{ border-collapse: collapse; width: 100%; font-size: 0.84rem; font-variant-numeric: tabular-nums; }}
+th {{ border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); text-align: left; padding: 7px 12px 7px 0; font-weight: 600; font-size: 0.76rem; letter-spacing: 0.04em; }}
+td {{ padding: 6px 12px 6px 0; border-bottom: none; }}
+.num {{ text-align: right; }}
+.score {{ font-weight: 700; }}
+.method-note {{ font-size: 0.78rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin: 34px 0 0; }}
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>Field Readiness — 편수 대비 스킬 준비도</h1>
-<p class="meta">nomoredasi · history: {history_path.name} · updated {updated} · x축 편수, y축 종합 점수(0-100), 범례 분야 · 점에 호버하면 상세 표시</p>
-<div class="card">{''.join(svg)}</div>
+<p class="kicker">nomoredasi · documentation</p>
+<h1>Field Readiness · 편수 대비 스킬 준비도</h1>
+<p class="subtitle">연구 분야별 원고·코퍼스가 실전 교정에 쓸 수 있을 만큼 다져졌는지 0–100 점으로 요약한 지표. x축은 분야별 논문 편수, y축은 종합 점수이며, 점선은 사용 가능(60) 및 게재 가능(80) 목표선. 점에 마우스를 올리면 상세 수치를 확인할 수 있다. (history: {history_path.name}, updated {updated})</p>
+
+<div class="card">
+<p class="figure-title">Figure 1. Field readiness versus papers accumulated</p>
+{''.join(svg)}
+<p class="figure-caption">종합 점수는 편수(25)·연어(25)·섹션(15)·용어 안정성(20)·단어수(15)의 가중 합으로 산출됩니다. 굵은 선은 상위 분야, 옅은 회색은 범례 미포함 분야입니다.</p>
+</div>
+
 <div class="card">
 <table>
-<tr><th>분야</th><th>편수</th><th>단어수</th><th>연어(≥5)</th><th>섹션</th><th>점수</th></tr>
+<thead>
+<tr><th>분야</th><th class="num">편수</th><th class="num">단어수</th><th class="num">연어(≥5)</th><th class="num">섹션</th><th class="num">점수</th></tr>
+</thead>
+<tbody>
 {''.join(rows)}
+</tbody>
 </table>
 </div>
+
+<p class="method-note">방법론: 점수는 다섯 성분의 가중 합(편수 25, 연어 수 25, 섹션 수 15, 상위 용어 안정성 20, 단어수 15)을 0–100 범위로 정규화한 값입니다. 용어 안정성은 직전 기록과의 상위 용어 중복률이며, 연어는 5회 이상 동시출현한 구절 수입니다. 목표선 60(사용 가능)과 80(게재 가능)은 프로젝트 기준입니다.</p>
 </div>
 </body>
 </html>

@@ -93,6 +93,39 @@ class ReadinessTest(unittest.TestCase):
         self.assertEqual(r2.returncode, 0)
         self.assertEqual(first, html_path.read_bytes(), "render must be deterministic for the same history")
 
+    def test_html_scientific_design(self):
+        """New scientific-figure design elements are present and structural."""
+        self.assertEqual(self.run_readiness().returncode, 0)
+        self.assertEqual(self.run_readiness().returncode, 0)
+        html_path = self.dir / "readiness.html"
+        r = subprocess.run(
+            [PY, str(ROOT / "scripts" / "readiness.py"),
+             "--corpus", str(self.corpus), "--history", str(self.history),
+             "--html", str(html_path)],
+            capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        html = html_path.read_text(encoding="utf-8")
+
+        # Dashed threshold guide lines at the target scores.
+        self.assertIn("stroke-dasharray", html)
+        self.assertIn("usable", html)
+        self.assertIn("publishable", html)
+        self.assertIn("60", html)
+        self.assertIn("80", html)
+
+        # Score components documented in the caption / methodology note.
+        self.assertIn("종합 점수는 편수", html)
+        self.assertIn("방법론", html)
+
+        # Journal-style table: tabular numerals and right-aligned numeric cells.
+        self.assertIn("tabular-nums", html)
+        self.assertIn("class=\"num\"", html)
+        self.assertIn("<thead>", html)
+        self.assertIn("<tbody>", html)
+
+        # Colorblind-safe Okabe-Ito first palette color is present (blue #0072B2).
+        self.assertIn("#0072B2", html)
+
 
 if __name__ == "__main__":
     unittest.main()
