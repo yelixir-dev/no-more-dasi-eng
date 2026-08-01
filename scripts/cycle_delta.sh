@@ -43,6 +43,9 @@ DATA_PATHS=(
     "$SKILL/references/overlays"
     "$REGISTRY"
     "$SKILL/references/abbrev-registry.html"
+    "docs/ATTRIBUTIONS.md"
+    "docs/attributions.json"
+    "docs/attributions.html"
     "logs"
 )
 VERIFY_GREEN=0
@@ -99,6 +102,7 @@ fi
 if selected 2; then
     heading 2 "mine"
     "$PY" "$SKILL/scripts/mine_corpus.py"
+    "$PY" "$SKILL/scripts/build_attributions.py"
 fi
 
 if selected 3; then

@@ -17,7 +17,7 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 라이선스 정책
 
-스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 채굴하지 않고 사용자에게 보고한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다.
+스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 채굴하지 않고 사용자에게 보고한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다. 논문별 출처·라이선스 레지스트리는 `docs/attributions.json`(SSOT) + `docs/ATTRIBUTIONS.md`(공개용) + `docs/attributions.html`(뷰)로 관리하며, `build_attributions.py`가 매 사이클 자동 재생성한다(템플릿 원본은 `docs/templates/`).
 
 ## 주 2회 델타 분석 사이클 (1차 목표)
 
@@ -38,4 +38,4 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 버전 관리
 
-로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
+로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `docs/ATTRIBUTIONS.md`, `docs/attributions.json`, `docs/attributions.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
