@@ -11,6 +11,7 @@ Usage: mine_corpus.py [--corpus DIR] [--out DIR] [--fields a,b] [--limit N]
 """
 
 import argparse
+import json
 import re
 import shutil
 import subprocess
@@ -246,6 +247,11 @@ def main():
     parser.add_argument("--limit", type=int, default=None, help="max files per field")
     parser.add_argument("--registry", default=None)
     parser.add_argument("--no-registry", action="store_true")
+    parser.add_argument(
+        "--only-active",
+        default=None,
+        help="attributions.json path: mine only files whose status is 'active' (CC BY gate)",
+    )
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -259,6 +265,14 @@ def main():
         registry_path = out_dir.parent / "abbrev-registry.json"
 
     only = set(args.fields.split(",")) if args.fields else None
+    active = None
+    if args.only_active:
+        attr = json.loads(Path(args.only_active).read_text(encoding="utf-8"))
+        active = {
+            e["relative_pdf_path"]
+            for e in attr.get("entries", [])
+            if e.get("status") == "active" and e.get("relative_pdf_path")
+        }
     corpus_files = sorted(corpus.rglob("*.pdf")) + sorted(corpus.rglob("*.txt"))
     corpus_as_of = max(
         datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).date()
@@ -277,6 +291,8 @@ def main():
         if only and field not in only:
             continue
         files = sorted(field_dir.glob("*.pdf")) + sorted(field_dir.glob("*.txt"))
+        if active is not None:
+            files = [f for f in files if f.relative_to(corpus).as_posix() in active]
         if args.limit:
             files = files[: args.limit]
         if not files:
@@ -318,6 +334,12 @@ def main():
             )
         generated.append(field)
         print(f"OK {field}: {len(files)} file(s) -> {out_dir / (field + '.md')}")
+
+    if active is not None:
+        for stale in out_dir.glob("*.md"):
+            if stale.stem not in generated:
+                stale.unlink()
+                print(f"PRUNE {stale.stem}: no active sources (license gate)")
 
     if registry is not None:
         abbrev_registry.save(registry_path, registry)

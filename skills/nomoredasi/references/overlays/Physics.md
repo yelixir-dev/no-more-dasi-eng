@@ -1,84 +1,85 @@
 # Overlay: Physics (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (5 files, 35,355 words — treat stats as directional, not targets)
-Source: 5 file(s), 35,355 words
+Maturity: immature (3 files, 17,086 words — treat stats as directional, not targets)
+Source: 3 file(s), 17,086 words
 
 ## Corpus stats
 
-- Avg sentence length: 18.2 words
-- Passive voice: 125.6 /10K words
-- First person (we): 10.5 /10K words
+- Avg sentence length: 14.9 words
+- Passive voice: 109.4 /10K words
+- First person (we): 26.9 /10K words
 
 ## Top terms
 
-- `heat` (414)
-- `fusion` (211)
-- `design` (179)
-- `temperature` (149)
-- `sink` (145)
-- `thermal` (138)
-- `energy` (132)
-- `neutron` (113)
-- `nonlinear` (107)
-- `creep` (95)
-- `beam` (92)
-- `sinks` (89)
-- `code` (83)
-- `transfer` (83)
-- `reaction` (78)
-- `parameters` (78)
-- `model` (76)
-- `data` (72)
-- `dissipation` (72)
+- `directional` (104)
+- `system` (103)
+- `nonlinear` (103)
+- `radiative` (93)
+- `emitter` (83)
+- `heat` (81)
+- `transfer` (73)
+- `thermal` (69)
+- `systems` (67)
 - `moving` (67)
-- `beams` (65)
-- `designs` (65)
-- `amplitude` (62)
-- `flow` (61)
-- `material` (60)
-- `nuclear` (60)
-- `analysis` (57)
-- `mass` (57)
-- `phase` (57)
-- `time` (55)
+- `phase` (55)
+- `energy` (54)
+- `beam` (54)
+- `emission` (48)
+- `absorber` (47)
+- `braiding` (45)
+- `response` (42)
+- `phys` (41)
+- `heating` (40)
+- `topological` (39)
+- `mass` (39)
+- `efficiency` (39)
+- `analysis` (39)
+- `rev` (36)
+- `temperature` (36)
+- `stability` (35)
+- `bmlzms` (34)
+- `resonance` (32)
+- `power` (32)
+- `points` (31)
 
 ## Phrase bank (term + verb)
 
-- `recent + increased` (2)
-- `geometries + showed` (2)
-- `newer + showed` (2)
+- `figures + measured` (3)
+- `bulk + measured` (2)
+- `film + deposited` (2)
 - `modulation + obtained` (2)
 - `elastic + demonstrated` (2)
-- `reproduce + measured` (1)
-- `successfully + measured` (1)
-- `applied + measured` (1)
-- `thermonuclear + achieved` (1)
-- `tof + measured` (1)
-- `temperature + measured` (1)
-- `maxwellian + calculated` (1)
-- `modeling + improved` (1)
-- `mcnp + enhanced` (1)
-- `d-t + calculated` (1)
-- `isotropic + observed` (1)
-- `thermal + obtained` (1)
-- `energies + revealed` (1)
-- `only + prepared` (1)
-- `waters + demonstrated` (1)
+- `multiple + demonstrated` (1)
+- `iii + increased` (1)
+- `sample + fabricated` (1)
+- `braiding + revealed` (1)
+- `sample + increased` (1)
+- `conclusion + demonstrated` (1)
+- `experimental + fabricated` (1)
+- `bmlzm + measured` (1)
+- `coupling + measured` (1)
+- `position + measured` (1)
+- `emitter + exhibits` (1)
+- `temperature + exhibits` (1)
+- `directional + exhibits` (1)
+- `consistent + observed` (1)
+- `ambient + obtained` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=45
-- setup: setup=3, set-up=0, set up=1
+- bandgap: bandgap=3, band gap=0, band-gap=0
+- et al.: et al.=0, et al=77
+- photonic crystal: photonic crystal=1, photonic-crystal=0
+- setup: setup=5, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 4 section(s), avg sentence 23.7 words, passive 99.8 /10K
-- conclusion: 5 section(s), avg sentence 16.1 words, passive 65.6 /10K
-- discussion: 1 section(s), avg sentence 23.2 words, passive 118.3 /10K
-- introduction: 5 section(s), avg sentence 22.3 words, passive 153.2 /10K
-- merged: results+discussion: 1 section(s), avg sentence 23.0 words, passive 138.5 /10K
-- methods: 2 section(s), avg sentence 22.2 words, passive 233.2 /10K
-- results: 1 section(s), avg sentence 24.0 words, passive 116.0 /10K
+- abstract: 2 section(s), avg sentence 21.1 words, passive 105.3 /10K
+- conclusion: 1 section(s), avg sentence 32.5 words, passive 76.9 /10K
+- discussion: 2 section(s), avg sentence 22.3 words, passive 119.4 /10K
+- introduction: 2 section(s), avg sentence 23.6 words, passive 107.6 /10K
+- methods: 2 section(s), avg sentence 16.7 words, passive 379.2 /10K
+- results: 2 section(s), avg sentence 18.6 words, passive 164.0 /10K
 
 ## Editor notes (manual curation)
 

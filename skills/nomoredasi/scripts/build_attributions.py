@@ -104,6 +104,7 @@ def build_entries(manifest, licenses, corpus, as_of):
         pdf = corpus / rel if rel else None
         entries.append({
             "record_id": f"ART-{i:04d}",
+            "relative_pdf_path": rel,
             "title": e.get("title", ""),
             "authors": [a.strip() for a in e.get("authors", "").split(";") if a.strip()],
             "journal": e.get("journal", ""),

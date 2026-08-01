@@ -1,54 +1,53 @@
 # Overlay: Microbiology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (5 files, 50,196 words — treat stats as directional, not targets)
-Source: 5 file(s), 50,196 words
+Maturity: immature (3 files, 27,784 words — treat stats as directional, not targets)
+Source: 3 file(s), 27,784 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.1 words
-- Passive voice: 151.8 /10K words
-- First person (we): 14.5 /10K words
+- Avg sentence length: 13.3 words
+- Passive voice: 216.3 /10K words
+- First person (we): 16.9 /10K words
 
 ## Top terms
 
-- `soil` (294)
-- `organic` (234)
-- `microbial` (195)
-- `analysis` (165)
-- `data` (163)
-- `fertilizer` (158)
-- `bacterial` (147)
-- `community` (145)
-- `cancer` (127)
-- `fungal` (124)
-- `associated` (122)
-- `dogs` (122)
-- `diversity` (116)
+- `cancer` (134)
 - `bile` (114)
+- `cells` (113)
+- `org` (104)
 - `vancomycin` (103)
-- `tumor` (102)
-- `org` (98)
-- `acids` (91)
+- `tumor` (103)
+- `smeif` (100)
+- `treatment` (96)
+- `cell` (93)
+- `mansoni` (89)
 - `acid` (88)
-- `leptospirosis` (88)
-- `treatments` (85)
-- `application` (84)
-- `abundance` (80)
-- `group` (76)
-- `functional` (76)
-- `leptospira` (76)
-- `potential` (75)
-- `total` (75)
-- `cells` (74)
-- `cell` (70)
+- `data` (87)
+- `eif` (83)
+- `analysis` (78)
+- `acids` (73)
+- `reduced` (65)
+- `immune` (63)
+- `associated` (62)
+- `mice` (61)
+- `rocaglates` (61)
+- `cervical` (58)
+- `women` (55)
+- `a-a` (55)
+- `silvestrol` (53)
+- `gut` (52)
+- `endpoint` (52)
+- `human` (51)
+- `microbiome` (50)
+- `group` (50)
+- `worms` (50)
 
 ## Phrase bank (term + verb)
 
-- `soil + improved` (6)
 - `group + measured` (4)
 - `excised + measured` (4)
 - `lung + measured` (3)
-- `antifungal + observed` (3)
+- `edu + observed` (3)
 - `xiva + increased` (2)
 - `potential + improved` (2)
 - `vancomycin + increased` (2)
@@ -59,28 +58,28 @@ Source: 5 file(s), 50,196 words
 - `none + observed` (2)
 - `bladder + measured` (2)
 - `vein + measured` (2)
-- `expected + observed` (2)
-- `associated + increased` (2)
-- `high-quality + obtained` (2)
-- `associated + observed` (2)
-- `numerous + observed` (2)
+- `rna + demonstrated` (2)
+- `mansoni + showed` (2)
+- `inactive + showed` (2)
+- `following + observed` (2)
+- `adult + observed` (2)
+- `apoptotic + observed` (2)
 
 ## Notation watch
 
+- x-ray: x-ray=1, x ray=0, xray=0
 - in situ: in situ=1, in-situ=0
-- ex situ: ex situ=1, ex-situ=0
-- in vivo: in vivo=6, in-vivo=0
-- in vitro: in vitro=2, in-vitro=0
-- et al.: et al.=0, et al=310
+- in vivo: in vivo=9, in-vivo=0
+- in vitro: in vitro=39, in-vitro=1
+- et al.: et al.=0, et al=190
 
 ## Section metrics
 
-- abstract: 5 section(s), avg sentence 20.0 words, passive 157.0 /10K
-- conclusion: 1 section(s), avg sentence 16.0 words, passive 0.0 /10K
-- discussion: 5 section(s), avg sentence 21.4 words, passive 93.2 /10K
-- introduction: 5 section(s), avg sentence 25.1 words, passive 98.5 /10K
-- methods: 9 section(s), avg sentence 17.5 words, passive 280.0 /10K
-- results: 6 section(s), avg sentence 17.6 words, passive 149.6 /10K
+- abstract: 2 section(s), avg sentence 19.9 words, passive 150.4 /10K
+- discussion: 3 section(s), avg sentence 21.6 words, passive 145.1 /10K
+- introduction: 2 section(s), avg sentence 24.4 words, passive 118.6 /10K
+- methods: 5 section(s), avg sentence 18.5 words, passive 479.0 /10K
+- results: 3 section(s), avg sentence 18.4 words, passive 230.6 /10K
 
 ## Editor notes (manual curation)
 

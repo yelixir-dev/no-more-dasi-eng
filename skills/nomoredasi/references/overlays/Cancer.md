@@ -1,87 +1,86 @@
 # Overlay: Cancer (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (5 files, 42,240 words — treat stats as directional, not targets)
-Source: 5 file(s), 42,240 words
+Maturity: immature (5 files, 47,433 words — treat stats as directional, not targets)
+Source: 5 file(s), 47,433 words
 
 ## Corpus stats
 
-- Avg sentence length: 18.3 words
-- Passive voice: 137.5 /10K words
-- First person (we): 20.8 /10K words
+- Avg sentence length: 15.7 words
+- Passive voice: 166.3 /10K words
+- First person (we): 21.7 /10K words
 
 ## Top terms
 
-- `cells` (402)
-- `cell` (322)
-- `model` (195)
-- `cancer` (194)
-- `data` (167)
-- `tumor` (157)
-- `analysis` (113)
-- `org` (107)
-- `myeloid` (106)
-- `resection` (93)
-- `survival` (90)
-- `lung` (90)
-- `mice` (87)
-- `clinical` (85)
-- `models` (84)
+- `cells` (496)
+- `cell` (466)
+- `tumor` (252)
+- `cancer` (250)
+- `org` (230)
+- `data` (149)
+- `mice` (148)
+- `lycopene` (143)
+- `analysis` (139)
+- `bile` (114)
+- `tumors` (111)
+- `immune` (109)
+- `myeloid` (107)
+- `vancomycin` (103)
+- `human` (100)
+- `resection` (92)
+- `group` (88)
+- `survival` (82)
+- `model` (80)
+- `lines` (80)
+- `acid` (80)
 - `teff` (79)
-- `learning` (79)
-- `test` (78)
+- `associated` (78)
+- `treatment` (77)
 - `tim` (77)
-- `patients` (70)
-- `accuracy` (70)
-- `expression` (68)
+- `activity` (75)
+- `expression` (70)
+- `acids` (69)
+- `reduced` (67)
 - `resected` (67)
-- `tcm` (66)
-- `tumors` (65)
-- `neoadjuvant` (64)
-- `treatment` (64)
-- `unresected` (63)
-- `training` (61)
-- `prediction` (59)
 
 ## Phrase bank (term + verb)
 
+- `antiproliferative + observed` (6)
+- `group + measured` (4)
+- `excised + measured` (4)
+- `values + observed` (4)
 - `teff + exhibited` (3)
 - `associated + increased` (3)
-- `agreement + observed` (3)
+- `lung + measured` (3)
+- `cells + increased` (2)
 - `tme + revealed` (2)
 - `trem + enhanced` (2)
+- `tumors + increased` (2)
 - `car-t + improved` (2)
-- `model + demonstrated` (2)
-- `sh-ep + exhibited` (2)
-- `tukey + confirmed` (2)
-- `baseline + estimated` (2)
-- `month + showed` (2)
-- `differentiation + enhanced` (1)
-- `growing + indicates` (1)
-- `agonist + achieved` (1)
-- `postoperative + enhanced` (1)
-- `tam + increased` (1)
-- `tumors + exhibited` (1)
-- `bearing + observed` (1)
-- `monocytes + increased` (1)
-- `increased + decreased` (1)
+- `xiva + increased` (2)
+- `potential + improved` (2)
+- `vancomycin + increased` (2)
+- `cells + enhanced` (2)
+- `cell + observed` (2)
+- `water + measured` (2)
+- `abx + prepared` (2)
+- `conditions + measured` (2)
 
 ## Notation watch
 
-- x-ray: x-ray=1, x ray=0, xray=0
 - in situ: in situ=2, in-situ=0
-- in vivo: in vivo=17, in-vivo=1
-- in vitro: in vitro=4, in-vitro=0
-- et al.: et al.=8, et al=177
+- in vivo: in vivo=27, in-vivo=1
+- in vitro: in vitro=12, in-vitro=0
+- et al.: et al.=8, et al=269
 
 ## Section metrics
 
-- abstract: 5 section(s), avg sentence 21.9 words, passive 122.0 /10K
-- conclusion: 2 section(s), avg sentence 20.9 words, passive 116.1 /10K
-- discussion: 4 section(s), avg sentence 23.6 words, passive 103.5 /10K
-- introduction: 5 section(s), avg sentence 22.8 words, passive 200.4 /10K
-- merged: results+discussion: 1 section(s), avg sentence 30.6 words, passive 129.2 /10K
-- methods: 5 section(s), avg sentence 21.0 words, passive 419.1 /10K
-- results: 4 section(s), avg sentence 20.5 words, passive 109.7 /10K
+- abstract: 5 section(s), avg sentence 21.0 words, passive 95.3 /10K
+- conclusion: 1 section(s), avg sentence 15.1 words, passive 88.1 /10K
+- discussion: 4 section(s), avg sentence 25.3 words, passive 96.9 /10K
+- introduction: 5 section(s), avg sentence 22.9 words, passive 254.7 /10K
+- merged: results+discussion: 1 section(s), avg sentence 26.4 words, passive 200.0 /10K
+- methods: 6 section(s), avg sentence 20.1 words, passive 461.9 /10K
+- results: 4 section(s), avg sentence 20.2 words, passive 117.7 /10K
 
 ## Editor notes (manual curation)
 

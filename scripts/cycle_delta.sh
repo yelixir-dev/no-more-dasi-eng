@@ -101,8 +101,8 @@ fi
 
 if selected 2; then
     heading 2 "mine"
-    "$PY" "$SKILL/scripts/mine_corpus.py"
     "$PY" "$SKILL/scripts/build_attributions.py"
+    "$PY" "$SKILL/scripts/mine_corpus.py" --only-active docs/attributions.json
 fi
 
 if selected 3; then

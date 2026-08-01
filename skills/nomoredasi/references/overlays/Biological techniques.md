@@ -1,87 +1,84 @@
-# Overlay: Biological techniques (AUTO-DRAFT 2026-08-01)
+# Overlay: Biological techniques (AUTO-DRAFT 2026-07-31)
 
-Maturity: immature (5 files, 35,172 words — treat stats as directional, not targets)
-Source: 5 file(s), 35,172 words
+Maturity: immature (1 files, 6,727 words — treat stats as directional, not targets)
+Source: 1 file(s), 6,727 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.8 words
-- Passive voice: 179.1 /10K words
-- First person (we): 29.9 /10K words
+- Avg sentence length: 15.4 words
+- Passive voice: 151.6 /10K words
+- First person (we): 53.5 /10K words
 
 ## Top terms
 
-- `epithelia` (121)
-- `microwave` (109)
-- `activity` (96)
 - `tyr` (92)
-- `cells` (90)
-- `nasal` (86)
 - `hps` (84)
-- `antioxidant` (78)
-- `growth` (78)
-- `concentration` (77)
-- `org` (76)
-- `extraction` (70)
-- `essential` (68)
-- `mouse` (65)
-- `compounds` (63)
-- `cortisol` (61)
-- `analysis` (60)
-- `cell` (60)
-- `differentiation` (60)
-- `cassia` (59)
-- `oil` (58)
-- `oils` (55)
-- `eos` (53)
-- `chemical` (52)
-- `optical` (52)
-- `conditions` (51)
-- `antibacterial` (50)
 - `laevis` (49)
-- `activities` (48)
-- `acid` (46)
+- `xenopus` (45)
+- `slc` (45)
+- `cas` (38)
+- `pigmentation` (33)
+- `embryos` (33)
+- `tadpoles` (30)
+- `iridescent` (26)
+- `editing` (25)
+- `gene` (25)
+- `fluorescence` (24)
+- `pigment` (24)
+- `grnas` (24)
+- `targeting` (21)
+- `pigments` (20)
+- `genes` (20)
+- `translucent` (19)
+- `imaging` (19)
+- `loss` (19)
+- `individuals` (19)
+- `analysis` (19)
+- `grna` (18)
+- `stage` (18)
+- `wild-type` (18)
+- `transparent` (17)
+- `knockout` (17)
+- `egfp` (17)
+- `multiplex` (16)
 
 ## Phrase bank (term + verb)
 
-- `component + calculated` (3)
-- `teer + observed` (3)
-- `ali + observed` (3)
-- `shse + exhibited` (2)
-- `yields + obtained` (2)
-- `mean + calculated` (2)
-- `mixture + measured` (2)
-- `eos + exhibited` (2)
-- `vis + obtained` (2)
-- `contrast + exhibited` (2)
-- `spatial + indicates` (2)
 - `iridescent + increased` (2)
-- `conditions + obtained` (2)
-- `minutes + measured` (2)
-- `teer + increased` (2)
-- `mouse + observed` (2)
-- `mucus + observed` (2)
-- `epithelia + observed` (2)
-- `cmpared + obtained` (1)
-- `chromatography-mass + obtained` (1)
+- `tyr + improved` (1)
+- `tropicalis + achieved` (1)
+- `privacy + exhibits` (1)
+- `xanthophores + exhibits` (1)
+- `crrna + enhanced` (1)
+- `transgenic + demonstrated` (1)
+- `optical + achieved` (1)
+- `contrast + exhibited` (1)
+- `source + observed` (1)
+- `frogs + increased` (1)
+- `ivt + improved` (1)
+- `example + demonstrated` (1)
+- `iridescent + improved` (1)
+- `reducing + showed` (1)
+- `some + increased` (1)
+- `phenotype + confirmed` (1)
+- `pigment + exhibited` (1)
+- `gfp + revealed` (1)
+- `early + deposited` (1)
 
 ## Notation watch
 
 - in situ: in situ=1, in-situ=0
-- in vivo: in vivo=13, in-vivo=0
-- in vitro: in vitro=17, in-vitro=0
-- et al.: et al.=0, et al=99
-- setup: setup=2, set-up=0, set up=0
+- in vivo: in vivo=9, in-vivo=0
+- in vitro: in vitro=6, in-vitro=0
+- et al.: et al.=0, et al=28
 
 ## Section metrics
 
-- abstract: 4 section(s), avg sentence 18.1 words, passive 42.5 /10K
-- conclusion: 3 section(s), avg sentence 23.1 words, passive 105.4 /10K
-- discussion: 3 section(s), avg sentence 20.3 words, passive 259.0 /10K
-- introduction: 4 section(s), avg sentence 23.0 words, passive 140.7 /10K
-- merged: results+discussion: 2 section(s), avg sentence 21.0 words, passive 108.9 /10K
-- methods: 3 section(s), avg sentence 20.2 words, passive 394.8 /10K
-- results: 3 section(s), avg sentence 19.1 words, passive 129.7 /10K
+- abstract: 1 section(s), avg sentence 17.1 words, passive 0.0 /10K
+- discussion: 1 section(s), avg sentence 18.0 words, passive 127.0 /10K
+- introduction: 1 section(s), avg sentence 18.9 words, passive 144.0 /10K
+- methods: 1 section(s), avg sentence 18.3 words, passive 441.0 /10K
+- results: 1 section(s), avg sentence 21.7 words, passive 65.9 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,85 +1,84 @@
 # Overlay: Mathematics and computing (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (5 files, 59,018 words — treat stats as directional, not targets)
-Source: 5 file(s), 59,018 words
+Maturity: immature (5 files, 42,944 words — treat stats as directional, not targets)
+Source: 5 file(s), 42,944 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.1 words
-- Passive voice: 127.2 /10K words
-- First person (we): 8.1 /10K words
+- Avg sentence length: 19.7 words
+- Passive voice: 98.3 /10K words
+- First person (we): 26.8 /10K words
 
 ## Top terms
 
-- `learning` (358)
-- `graph` (286)
-- `framework` (247)
-- `structural` (204)
-- `model` (198)
-- `network` (173)
-- `prediction` (169)
-- `link` (166)
-- `node` (161)
-- `networks` (156)
-- `competitive` (155)
-- `lung` (154)
-- `accuracy` (143)
-- `information` (138)
-- `analysis` (133)
-- `classification` (126)
-- `data` (116)
-- `neural` (114)
-- `dataset` (113)
-- `deep` (112)
-- `models` (111)
-- `segmentation` (108)
-- `efficiency` (105)
-- `score` (105)
-- `errors` (101)
-- `datasets` (94)
-- `hierarchical` (92)
-- `images` (92)
-- `community` (91)
-- `resnet` (91)
+- `android` (187)
+- `model` (181)
+- `malware` (178)
+- `age` (176)
+- `analysis` (153)
+- `feature` (152)
+- `traffic` (150)
+- `detection` (147)
+- `network` (146)
+- `data` (145)
+- `dataset` (142)
+- `system` (135)
+- `time` (133)
+- `congestion` (127)
+- `features` (111)
+- `routing` (109)
+- `nonlinear` (103)
+- `dynamic` (98)
+- `multimorbidity` (97)
+- `org` (95)
+- `accuracy` (91)
+- `models` (88)
+- `datasets` (85)
+- `cicmaldroid` (84)
+- `node` (79)
+- `lightweight` (78)
+- `nature` (78)
+- `state` (76)
+- `training` (75)
+- `moving` (71)
 
 ## Phrase bank (term + verb)
 
-- `graph + observed` (2)
-- `learning + demonstrated` (2)
-- `denotes + observed` (2)
-- `dataset + observed` (2)
-- `vgg + achieved` (2)
-- `threshold + indicates` (2)
-- `recall + showed` (2)
-- `vgg + demonstrated` (2)
-- `capability + observed` (2)
-- `dmu + exhibits` (2)
-- `depicts + obtained` (2)
-- `multi-level + improved` (1)
-- `topology + demonstrated` (1)
-- `graph + demonstrated` (1)
-- `existence + indicates` (1)
-- `deep + achieved` (1)
-- `networks + demonstrated` (1)
-- `diffpool + showed` (1)
-- `diffpool + improved` (1)
-- `structural + enhanced` (1)
+- `years + showed` (3)
+- `feature + decreased` (3)
+- `original + achieved` (2)
+- `overall + achieved` (2)
+- `emission + estimated` (2)
+- `testing + measured` (2)
+- `svm + showed` (2)
+- `cicmaldroid + achieved` (2)
+- `indicating + improved` (2)
+- `cicmaldroid + decreased` (2)
+- `testing + decreased` (2)
+- `seconds + decreased` (2)
+- `modulation + obtained` (2)
+- `elastic + demonstrated` (2)
+- `recent + demonstrated` (1)
+- `architectures + improved` (1)
+- `biological + demonstrated` (1)
+- `wang + showed` (1)
+- `zhang + demonstrated` (1)
+- `models + achieved` (1)
 
 ## Notation watch
 
-- x-ray: x-ray=6, x ray=0, xray=0
-- in situ: in situ=0, in-situ=1
-- et al.: et al.=12, et al=140
-- setup: setup=78, set-up=0, set up=2
+- et al.: et al.=2, et al=55
+- buildup: buildup=1, build-up=0, build up=0
+- setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 4 section(s), avg sentence 23.3 words, passive 147.1 /10K
-- conclusion: 4 section(s), avg sentence 15.1 words, passive 96.9 /10K
-- discussion: 1 section(s), avg sentence 37.4 words, passive 146.0 /10K
-- introduction: 5 section(s), avg sentence 22.0 words, passive 159.1 /10K
-- merged: results+discussion: 2 section(s), avg sentence 23.9 words, passive 64.3 /10K
-- methods: 5 section(s), avg sentence 26.3 words, passive 134.3 /10K
+- abstract: 3 section(s), avg sentence 21.0 words, passive 86.6 /10K
+- conclusion: 4 section(s), avg sentence 21.0 words, passive 57.6 /10K
+- discussion: 4 section(s), avg sentence 22.9 words, passive 42.1 /10K
+- introduction: 4 section(s), avg sentence 21.0 words, passive 118.7 /10K
+- methods: 4 section(s), avg sentence 21.6 words, passive 182.7 /10K
+- results: 2 section(s), avg sentence 21.1 words, passive 55.7 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,46 +1,46 @@
 # Overlay: Nanoscience and technology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (5 files, 35,991 words — treat stats as directional, not targets)
-Source: 5 file(s), 35,991 words
+Maturity: immature (4 files, 30,058 words — treat stats as directional, not targets)
+Source: 4 file(s), 30,058 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.7 words
-- Passive voice: 133.6 /10K words
-- First person (we): 14.7 /10K words
+- Avg sentence length: 17.1 words
+- Passive voice: 137.4 /10K words
+- First person (we): 12.3 /10K words
 
 ## Top terms
 
-- `model` (157)
-- `thermal` (105)
+- `model` (147)
+- `thermal` (101)
 - `degradation` (101)
 - `tio` (88)
-- `data` (86)
-- `temperature` (70)
+- `data` (78)
 - `copper` (68)
 - `photocatalytic` (67)
-- `training` (66)
-- `materials` (65)
-- `values` (62)
-- `tactile` (58)
+- `materials` (64)
+- `values` (61)
 - `zno` (58)
-- `time` (56)
-- `layer` (55)
+- `training` (58)
 - `conductivity` (53)
-- `surface` (49)
-- `analysis` (49)
+- `time` (51)
+- `layer` (49)
 - `sintering` (49)
-- `pressure` (48)
-- `size` (47)
-- `models` (46)
+- `surface` (48)
+- `analysis` (46)
 - `braiding` (45)
-- `samples` (45)
 - `concentration` (45)
-- `system` (44)
-- `spike` (44)
-- `learning` (44)
+- `models` (45)
+- `samples` (44)
 - `agcumnh` (44)
-- `electrical` (42)
+- `size` (42)
+- `learning` (42)
+- `efficiency` (41)
+- `catalyst` (41)
+- `phase` (39)
+- `temperature` (39)
+- `electrical` (39)
+- `test` (38)
 
 ## Phrase bank (term + verb)
 
@@ -67,22 +67,22 @@ Source: 5 file(s), 35,991 words
 
 ## Notation watch
 
-- bandgap: bandgap=5, band gap=2, band-gap=0
+- bandgap: bandgap=5, band gap=1, band-gap=0
 - x-ray: x-ray=13, x ray=0, xray=0
 - in vivo: in vivo=1, in-vivo=0
-- et al.: et al.=0, et al=127
+- et al.: et al.=0, et al=93
 - photonic crystal: photonic crystal=1, photonic-crystal=0
 - setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 23.8 words, passive 84.0 /10K
+- abstract: 2 section(s), avg sentence 23.1 words, passive 91.3 /10K
 - conclusion: 2 section(s), avg sentence 24.7 words, passive 139.1 /10K
-- discussion: 3 section(s), avg sentence 25.8 words, passive 52.9 /10K
-- introduction: 3 section(s), avg sentence 22.9 words, passive 91.8 /10K
+- discussion: 2 section(s), avg sentence 27.3 words, passive 62.9 /10K
+- introduction: 2 section(s), avg sentence 22.6 words, passive 98.4 /10K
 - merged: results+discussion: 2 section(s), avg sentence 22.6 words, passive 165.5 /10K
-- methods: 5 section(s), avg sentence 15.5 words, passive 232.8 /10K
-- results: 3 section(s), avg sentence 20.0 words, passive 124.4 /10K
+- methods: 4 section(s), avg sentence 15.2 words, passive 223.4 /10K
+- results: 2 section(s), avg sentence 19.5 words, passive 120.3 /10K
 
 ## Editor notes (manual curation)
 
