@@ -66,6 +66,8 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 3. `scripts/check_abbrev.py <교정본> [--state <폴터>]` — 미정의 약어 탐지. exit 1이면 최초 사용 시 정의를 추가하거나 manuscript.json과 대조. 미검증 약어(전개형을 모르는 약어)는 `scripts/abbrev_registry.py references/abbrev-registry.json record <ABBR> --field <분야> --context <문장>`으로 레지스트리에 기록한다. 이후 같은 분야 텍스트에서 같은 약어의 전개형이 관측되면(`scan`) 맥락 문장과 함께 verified로 갱신되고, 다른 전개형이 관측되면 conflict로 표시된다 — conflict는 사용자에게 확인을 요청한다. 사람용 뷰는 `references/abbrev-registry.html`(자동 재생성, 편집 금지; SSOT는 json).
 4. 부분 윤문이면 위 검사들을 해당 구간 기준으로 실행한다.
 
+납품 시 `scripts/log_edit.py <분야> <route_hint> <A|B> <원고> <교정본>`으로 교정 쌍을 logs/edits/에 기록한다(품질 벤치 실측과 pitfalls 파이프라인 입력).
+
 ## 품질 측정 (스킬 자체 개선용)
 
 `scripts/bench_edit.py <원고> <교정본>` — 교정 전후 위반/100단어(AI-tell·중첩 헤징·과장 수식·도표 시제·장문·전이부사 과밀·표기 불일치)를 비교한다. 납품 게이트가 아니라 스킬 성능 측정 장치: 월/목 델타 사이클에서 golden 케이스와 실제 교정 로그에 적용해 위반율이 회귀(exit 1)하면 오버레이/규칙 변경을 되돌아본다.
