@@ -1,87 +1,95 @@
 # Overlay: Optics and photonics (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (4 files, 25,019 words — treat stats as directional, not targets)
-Source: 4 file(s), 25,019 words
+Maturity: mature (54 files, 409,234 words)
+Source: 54 file(s), 409,234 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.8 words
-- Passive voice: 156.3 /10K words
-- First person (we): 26.0 /10K words
+- Avg sentence length: 17.2 words
+- Passive voice: 143.4 /10K words
+- First person (we): 18.7 /10K words
 
 ## Top terms
 
-- `bone` (198)
-- `synchronization` (117)
-- `quantum` (115)
-- `cluster` (87)
-- `system` (74)
-- `cavity` (74)
-- `density` (73)
-- `gas` (71)
-- `mechanical` (68)
-- `lacunae` (67)
-- `analysis` (66)
-- `implant` (65)
-- `optomechanical` (62)
-- `osteocyte` (61)
-- `sample` (57)
-- `loading` (57)
-- `peri-i` (56)
-- `number` (52)
-- `edentulous` (52)
-- `data` (51)
-- `xenon` (51)
-- `polarization` (49)
-- `atomic` (48)
-- `group` (48)
-- `phys` (47)
-- `years` (47)
-- `samples` (46)
-- `matrix` (43)
-- `peri-implant` (43)
-- `size` (41)
+- `optical` (1347)
+- `inline-eq-ieq` (995)
+- `org` (831)
+- `model` (714)
+- `analysis` (694)
+- `quantum` (680)
+- `image` (626)
+- `values` (616)
+- `data` (602)
+- `intensity` (555)
+- `imaging` (547)
+- `laser` (534)
+- `images` (529)
+- `design` (520)
+- `detection` (515)
+- `light` (494)
+- `time` (478)
+- `system` (460)
+- `structure` (458)
+- `range` (457)
+- `surface` (457)
+- `material` (455)
+- `sensitivity` (446)
+- `conditions` (445)
+- `spectral` (443)
+- `phase` (443)
+- `signal` (437)
+- `parameters` (435)
+- `polarization` (423)
+- `resonance` (416)
 
 ## Phrase bank (term + verb)
 
-- `quantum + enhanced` (4)
-- `variation + observed` (3)
-- `bone + observed` (3)
-- `implant + observed` (2)
-- `blood + observed` (2)
-- `average + observed` (2)
-- `licenses + enhanced` (1)
-- `reveal + exhibits` (1)
-- `entanglement + enhanced` (1)
-- `improves + increased` (1)
-- `photon-hopping + demonstrated` (1)
-- `quantum + revealed` (1)
-- `steady-state + obtained` (1)
-- `hybrid + obtained` (1)
-- `stable + achieved` (1)
-- `larger + indicates` (1)
-- `synchronization + indicates` (1)
-- `figs + exhibits` (1)
-- `drift + exhibits` (1)
-- `synchronization-based + improved` (1)
+- `noisy + enhanced` (7)
+- `scanner + observed` (6)
+- `gray + indicates` (6)
+- `contribute + observed` (6)
+- `similar + observed` (5)
+- `snr + calculated` (5)
+- `n-si + exhibits` (5)
+- `spectral + observed` (4)
+- `comparison + measured` (4)
+- `layer + deposited` (4)
+- `reference + obtained` (4)
+- `coordinates + observed` (4)
+- `standard + calculated` (4)
+- `consistent + observed` (4)
+- `nqqr + calculated` (4)
+- `clearly + observed` (4)
+- `n-si + exhibited` (4)
+- `n-si + improved` (4)
+- `btlsc + calculated` (4)
+- `nanowires + enhanced` (4)
 
 ## Notation watch
 
-- x-ray: x-ray=3, x ray=0, xray=0
-- in vivo: in vivo=17, in-vivo=0
-- et al.: et al.=2, et al=64
-- buildup: buildup=6, build-up=1, build up=0
-- setup: setup=11, set-up=0, set up=0
+- bandgap: bandgap=39, band gap=25, band-gap=3
+- thin film: thin film=26, thin-film=13, thinfilm=0
+- x-ray: x-ray=136, x ray=0, xray=1
+- in situ: in situ=14, in-situ=8
+- ex situ: ex situ=0, ex-situ=1
+- in vivo: in vivo=60, in-vivo=1
+- in vitro: in vitro=5, in-vitro=1
+- et al.: et al.=33, et al=1006
+- quantum dot: quantum dot=10, quantum-dot=10
+- photonic crystal: photonic crystal=106, photonic-crystal=5
+- buildup: buildup=6, build-up=2, build up=1
+- setup: setup=114, set-up=2, set up=0
 
 ## Section metrics
 
-- abstract: 4 section(s), avg sentence 22.9 words, passive 131.0 /10K
-- conclusion: 3 section(s), avg sentence 22.5 words, passive 71.2 /10K
-- discussion: 2 section(s), avg sentence 29.2 words, passive 123.1 /10K
-- introduction: 4 section(s), avg sentence 22.8 words, passive 201.0 /10K
-- merged: results+discussion: 2 section(s), avg sentence 18.1 words, passive 111.1 /10K
-- methods: 1 section(s), avg sentence 24.3 words, passive 381.2 /10K
-- results: 2 section(s), avg sentence 22.5 words, passive 171.2 /10K
+- abstract: 28 section(s), avg sentence 25.4 words, passive 178.2 /10K
+- body: 1 section(s), avg sentence 20.3 words, passive 142.7 /10K
+- conclusion: 34 section(s), avg sentence 16.3 words, passive 101.2 /10K
+- discussion: 24 section(s), avg sentence 23.7 words, passive 132.1 /10K
+- introduction: 35 section(s), avg sentence 22.8 words, passive 157.5 /10K
+- merged: results+discussion: 16 section(s), avg sentence 20.7 words, passive 149.8 /10K
+- methods: 40 section(s), avg sentence 20.1 words, passive 236.7 /10K
+- results: 25 section(s), avg sentence 20.7 words, passive 151.8 /10K
 
 ## Editor notes (manual curation)
 
