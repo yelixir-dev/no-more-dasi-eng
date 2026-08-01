@@ -141,6 +141,49 @@
   },
   {
    "record_id": "ART-0004",
+   "relative_pdf_path": "Biochemistry/s41598-026-64366-2.pdf",
+   "title": "Effects of diets containing fish proteins or poultry proteins on one-carbon metabolites in domestic dogs. A randomised, double-blind, two-period cross-over study",
+   "authors": [
+    "Olivia Bysheim Helland",
+    "Henriette Johansen Syrrist",
+    "Øystein Ahlstrøm",
+    "Nicole Frost Nyquist",
+    "Svein Are Mjøs",
+    "Per Magne Ueland",
+    "Oddrun Anita Gudbrandsen"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biochemistry",
+   "doi": "10.1038/s41598-026-64366-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64366-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:00:12.748Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "03e8d2d3b8e5d3ef7adcf2967b63a75d830ffe0e",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0005",
    "relative_pdf_path": "Biochemistry/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -182,7 +225,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0005",
+   "record_id": "ART-0006",
    "relative_pdf_path": "Biogeochemistry/s41467-026-76093-3.pdf",
    "title": "Decadal sink-source shifts of forest aboveground carbon since 1988",
    "authors": [
@@ -219,7 +262,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0006",
+   "record_id": "ART-0007",
    "relative_pdf_path": "Biological techniques/s41598-026-60601-y.pdf",
    "title": "Synthetic gRNA-mediated multiplex CRISPR enables the generation of translucent F0 Xenopus laevis for in vivo imaging",
    "authors": [
@@ -261,7 +304,179 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0007",
+   "record_id": "ART-0008",
+   "relative_pdf_path": "Biological techniques/s41598-026-63122-w.pdf",
+   "title": "Optimizing tissue lysis and DNA extraction protocols to enhance bacterial diversity profiling in the Drosophila melanogaster gut microbiome",
+   "authors": [
+    "Carlos L. Quiñones-Sanchez",
+    "Jan L. Bilbao-Del Valle",
+    "Miguel A. Urdaneta-Colon",
+    "Tasha M. Santiago-Rodriguez",
+    "Imilce A. Rodriguez-Fernandez"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biological techniques",
+   "doi": "10.1038/s41598-026-63122-w",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63122-w",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:03:24.644Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d7ad38a2bfa001e139ea901d293733ef081085c1",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0009",
+   "relative_pdf_path": "Biological techniques/s41598-026-63313-5.pdf",
+   "title": "Extracellular vesicle-derived candidate biomarker in metabolic dysfunction-associated steatotic liver disease: systematic review and exploratory meta-analysis",
+   "authors": [
+    "Swasthika Gurjar",
+    "Saraswathi N Bhat",
+    "Ramanarayana Bhat A",
+    "Athish Shetty",
+    "Raghavendra Upadhya",
+    "Asha Kamath",
+    "Shwetha Kamath",
+    "Varashree B S",
+    "Madhukar Mallya H",
+    "Ramesh Chandrababu",
+    "Revathi P Shenoy"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biological techniques",
+   "doi": "10.1038/s41598-026-63313-5",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63313-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:04:31.164Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "20bc4fb255a825037c546423c1a80de229a7f65c",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0010",
+   "relative_pdf_path": "Biological techniques/s41598-026-63395-1.pdf",
+   "title": "Comparative metabolomics of serum and serum extracellular vesicles of melanoma and triple-negative breast cancer utilizing biobank samples",
+   "authors": [
+    "Zeynep Tavukcuoglu",
+    "Olli Kärkkäinen",
+    "Reijo Käkelä",
+    "Seppo Auriola",
+    "Saara Laitinen",
+    "Mari Palviainen",
+    "Pia R.-M. Siljander"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biological techniques",
+   "doi": "10.1038/s41598-026-63395-1",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63395-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:02:22.168Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d5f518e138b4669e14a7f9e7ccc5f372cf300ee2",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0011",
+   "relative_pdf_path": "Biological techniques/s41598-026-64514-8.pdf",
+   "title": "A novel CD69 binding ankyrin repeat protein (Ankyron®) enables detection of early activated and antigen-specific T cells in pigs",
+   "authors": [
+    "Leonie Bettin",
+    "Tamara Borysova",
+    "Theresa Dangl",
+    "Juan B. Odasso",
+    "Tobias Käser"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biological techniques",
+   "doi": "10.1038/s41598-026-64514-8",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64514-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:01:18.759Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "12b6e1ace3a4e5844b7adf11557e081191feaa68",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0012",
    "relative_pdf_path": "Biophysics/s41467-026-75561-0.pdf",
    "title": "Screening of amphipathic helices identifies features linked to inner nuclear membrane properties",
    "authors": [
@@ -304,7 +519,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0008",
+   "record_id": "ART-0013",
    "relative_pdf_path": "Biophysics/s41467-026-76103-4.pdf",
    "title": "Low-intensity pulsed ultrasound-mediated nose-to-brain co-delivery of β-blockers and aPD-L1 enhances glioblastoma immunotherapy",
    "authors": [
@@ -361,7 +576,46 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0009",
+   "record_id": "ART-0014",
+   "relative_pdf_path": "Biophysics/s41598-026-62691-0.pdf",
+   "title": "Hybrid modeling of electroporation and impedance spectroscopy for label free characterization of stem cells",
+   "authors": [
+    "Sameh Sherif",
+    "Yehya H. Ghallab",
+    "Yehea Ismail"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biophysics",
+   "doi": "10.1038/s41598-026-62691-0",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-62691-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:05:38.362Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "369a154fe8dba2ba1be5c7e70781d1b7107e25fe",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0015",
    "relative_pdf_path": "Biophysics/s41598-026-63712-8.pdf",
    "title": "Multiple action potentials and complex calcium dynamics following electroporation of S-HEK cells depend on gap junction coupling",
    "authors": [
@@ -403,7 +657,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0010",
+   "record_id": "ART-0016",
    "relative_pdf_path": "Biophysics/s41598-026-64340-y.pdf",
    "title": "Conformational changes in insulin receptor illuminated by live-cell linear dichroism imaging and a FLIP biosensor",
    "authors": [
@@ -449,7 +703,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0011",
+   "record_id": "ART-0017",
    "relative_pdf_path": "Biotechnology/s41598-026-60601-y.pdf",
    "title": "Synthetic gRNA-mediated multiplex CRISPR enables the generation of translucent F0 Xenopus laevis for in vivo imaging",
    "authors": [
@@ -491,7 +745,49 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0012",
+   "record_id": "ART-0018",
+   "relative_pdf_path": "Biotechnology/s41598-026-62694-x.pdf",
+   "title": "Silicon nanoparticle morphology and aggregation state modulate plant antioxidant responses under abiotic stress: a meta-analysis",
+   "authors": [
+    "Emilaine da Rocha Prado",
+    "Renato de Mello Prado",
+    "Reginaldo de Oliveira",
+    "Carlos Vital Gonzalez-Porras",
+    "Lara Yassuko Nakamura",
+    "Priscila Lupino Gratão"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biotechnology",
+   "doi": "10.1038/s41598-026-62694-x",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-62694-x",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:07:51.933Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "3703965bd4558d300c20e6ef4a3c3a59a1b41ba1",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0019",
    "relative_pdf_path": "Biotechnology/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -539,7 +835,94 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0013",
+   "record_id": "ART-0020",
+   "relative_pdf_path": "Biotechnology/s41598-026-64514-8.pdf",
+   "title": "A novel CD69 binding ankyrin repeat protein (Ankyron®) enables detection of early activated and antigen-specific T cells in pigs",
+   "authors": [
+    "Leonie Bettin",
+    "Tamara Borysova",
+    "Theresa Dangl",
+    "Juan B. Odasso",
+    "Tobias Käser"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biotechnology",
+   "doi": "10.1038/s41598-026-64514-8",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64514-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:01:18.759Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "12b6e1ace3a4e5844b7adf11557e081191feaa68",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0021",
+   "relative_pdf_path": "Biotechnology/s41598-026-64584-8.pdf",
+   "title": "Development of shelf stable formulation for adenovirus vectored vaccines and therapeutics",
+   "authors": [
+    "Jeremy A. Iwashkiw",
+    "Aaisha Ameen",
+    "Natallia Kazhdan",
+    "Sam Afkhami",
+    "Michael R. D’Agostino",
+    "Kyle Amaral",
+    "Matthew S. Miller",
+    "Jody E. Beecher",
+    "Carlos D. M. Filipe",
+    "Brian D. Lichty"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Biotechnology",
+   "doi": "10.1038/s41598-026-64584-8",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64584-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:06:40.916Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "46665643ba470c278cea046c2a592a51cd4be0ad",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0022",
    "relative_pdf_path": "Cancer/s41467-026-76206-y.pdf",
    "title": "Perioperative myeloid cell remodeling shapes CAR-T cell efficacy in glioblastoma",
    "authors": [
@@ -592,7 +975,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0014",
+   "record_id": "ART-0023",
    "relative_pdf_path": "Cancer/s41598-026-59669-3.pdf",
    "title": "Reduction of secondary bile acids following microbiome pre-conditioning was associated with reduced breast cancer progression",
    "authors": [
@@ -640,7 +1023,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0015",
+   "record_id": "ART-0024",
    "relative_pdf_path": "Cancer/s41598-026-63488-x.pdf",
    "title": "RAS inhibition limits oncogenic signaling and tumorigenesis in neuroblastoma regardless of RAS mutational status",
    "authors": [
@@ -691,7 +1074,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0016",
+   "record_id": "ART-0025",
    "relative_pdf_path": "Cancer/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -735,7 +1118,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0017",
+   "record_id": "ART-0026",
    "relative_pdf_path": "Cancer/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -777,7 +1160,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0018",
+   "record_id": "ART-0027",
    "relative_pdf_path": "Cell biology/s41598-026-63488-x.pdf",
    "title": "RAS inhibition limits oncogenic signaling and tumorigenesis in neuroblastoma regardless of RAS mutational status",
    "authors": [
@@ -828,7 +1211,178 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0019",
+   "record_id": "ART-0028",
+   "relative_pdf_path": "Cell biology/s41598-026-63726-2.pdf",
+   "title": "The tRNA methylation activity and specificity of NSUN2 are independent of Archease",
+   "authors": [
+    "Valentina Stuchlik",
+    "Maria Waldl",
+    "Anming Huang",
+    "Moritz Kleinwächter",
+    "Anna Rocchegiani",
+    "Fatinah El-Isa",
+    "Ivo L. Hofacker",
+    "Javier Martinez",
+    "Alexandra Lusser",
+    "Elisa Vilardo"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Cell biology",
+   "doi": "10.1038/s41598-026-63726-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63726-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:11:08.519Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "346ae9dabf96976dc091fdba1b118e76421b9969",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0029",
+   "relative_pdf_path": "Cell biology/s41598-026-64514-8.pdf",
+   "title": "A novel CD69 binding ankyrin repeat protein (Ankyron®) enables detection of early activated and antigen-specific T cells in pigs",
+   "authors": [
+    "Leonie Bettin",
+    "Tamara Borysova",
+    "Theresa Dangl",
+    "Juan B. Odasso",
+    "Tobias Käser"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Cell biology",
+   "doi": "10.1038/s41598-026-64514-8",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64514-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:01:18.759Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "12b6e1ace3a4e5844b7adf11557e081191feaa68",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0030",
+   "relative_pdf_path": "Cell biology/s41598-026-64537-1.pdf",
+   "title": "TIMAP depletion impairs BMP signaling by accelerating SMURF1-mediated SMAD degradation in neuroblastoma cells",
+   "authors": [
+    "Márton Fonódi",
+    "Bálint Bécsi",
+    "Krisztina Tar",
+    "Anita Boratkó"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Cell biology",
+   "doi": "10.1038/s41598-026-64537-1",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64537-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:08:58.371Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "e5c4f18c5e9bf8c9e59f6d38dfa3eceeeb10e935",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0031",
+   "relative_pdf_path": "Cell biology/s41598-026-64795-z.pdf",
+   "title": "A contact lens delivering a combination of PDRN and DMPC enhances corneal wound healing and alleviates dry eye in a rabbit model",
+   "authors": [
+    "Hye-Jin Son",
+    "Se Hyun Choi",
+    "Sooyoung Choe",
+    "Mi Youn Seol",
+    "Yunkyoung Ryu",
+    "Jae Hwi Lee",
+    "Gui Bae Kim",
+    "Young Joo Shin"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Cell biology",
+   "doi": "10.1038/s41598-026-64795-z",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64795-z",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:10:04.759Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "a59041e1b777ce592c33bc73bae19b9d633016ef",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0032",
    "relative_pdf_path": "Chemical biology/s41598-026-64956-0.pdf",
    "title": "Characteristics and patterns of sweetener use in ultra-processed food products available in Brazilian supermarkets",
    "authors": [
@@ -865,7 +1419,48 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0020",
+   "record_id": "ART-0033",
+   "relative_pdf_path": "Chemistry/s41598-026-58633-5.pdf",
+   "title": "On the Sombor index of corona product of certain graphs and honeycomb networks",
+   "authors": [
+    "C. Surabhi",
+    "Ahmad Asiri",
+    "S. Santhakumar",
+    "Radha R. Iyer",
+    "K. S. Sreeranjini"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41598-026-58633-5",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-58633-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:12:16.306Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "8539d14e3750855abea78a86e6d5614bfb056985",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0034",
    "relative_pdf_path": "Chemistry/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -909,7 +1504,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0021",
+   "record_id": "ART-0035",
    "relative_pdf_path": "Chemistry/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -957,7 +1552,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0022",
+   "record_id": "ART-0036",
    "relative_pdf_path": "Chemistry/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -997,7 +1592,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0023",
+   "record_id": "ART-0037",
    "relative_pdf_path": "Chemistry/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -1039,7 +1634,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0024",
+   "record_id": "ART-0038",
    "relative_pdf_path": "Diseases/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -1083,7 +1678,50 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0025",
+   "record_id": "ART-0039",
+   "relative_pdf_path": "Diseases/s41598-026-63728-0.pdf",
+   "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
+   "authors": [
+    "Ahmed J. Alzahrani",
+    "Sara Aloliyan",
+    "Deem Albakran",
+    "Aljohara Alhoshan",
+    "Rama Alaklabi",
+    "Sarah Aljalajel",
+    "Tala Alfraih"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Diseases",
+   "doi": "10.1038/s41598-026-63728-0",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63728-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:13:18.585Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "7e366c855b8e60353cf5e2e08182a9c5c1235d7d",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0040",
    "relative_pdf_path": "Diseases/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -1127,7 +1765,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0026",
+   "record_id": "ART-0041",
    "relative_pdf_path": "Diseases/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -1167,7 +1805,49 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0027",
+   "record_id": "ART-0042",
+   "relative_pdf_path": "Diseases/s41598-026-65032-3.pdf",
+   "title": "A one health analysis of the reemergence of dog-mediated human rabies in Peru",
+   "authors": [
+    "Ricardo Castillo-Neyra",
+    "Lizzie Ortiz-Cam",
+    "Elvis W. Díaz",
+    "Jorge L. Cañari-Casaño",
+    "Sergio E. Recuenco",
+    "Valerie A. Paz-Soldán"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Diseases",
+   "doi": "10.1038/s41598-026-65032-3",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-65032-3",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:14:22.330Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "353daf02e3089f0f8bab81ec648850c98046c73a",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0043",
    "relative_pdf_path": "Ecology/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -1204,7 +1884,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0028",
+   "record_id": "ART-0044",
    "relative_pdf_path": "Endocrinology/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -1241,7 +1921,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0029",
+   "record_id": "ART-0045",
    "relative_pdf_path": "Energy and society/s41467-026-75910-z.pdf",
    "title": "Uranium in cobalt-hydroxide exports from the Democratic Republic of the Congo",
    "authors": [
@@ -1278,7 +1958,48 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0030",
+   "record_id": "ART-0046",
+   "relative_pdf_path": "Energy science and technology/s41598-026-59705-2.pdf",
+   "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
+   "authors": [
+    "Maxim Wischnewski",
+    "Joel Joseph",
+    "Makoto Ohtsuka",
+    "Hiroyuki Miki",
+    "Manfred Kohl"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Energy science and technology",
+   "doi": "10.1038/s41598-026-59705-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-59705-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:17:44.530Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d69924df0c57a69ce2fde0acfa7edf2c91519ad0",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0047",
    "relative_pdf_path": "Energy science and technology/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -1322,7 +2043,163 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0031",
+   "record_id": "ART-0048",
+   "relative_pdf_path": "Energy science and technology/s41598-026-63564-2.pdf",
+   "title": "Fault-controlled reservoir compartmentalization as a control on CO2 storage potential in Jurassic Safa reservoirs, Obaiyed Field, Western Desert, Egypt",
+   "authors": [
+    "Walaa A. Ali",
+    "Abdelrazek Mohamed",
+    "Sherif Farouk"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Energy science and technology",
+   "doi": "10.1038/s41598-026-63564-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63564-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:15:31.995Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "b626a0a6b90b64652d9ea1e448476d493bbc1b0d",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0049",
+   "relative_pdf_path": "Energy science and technology/s41598-026-64402-1.pdf",
+   "title": "Highly efficient atmospheric water harvesting via a biomimetic condensation structure integrated with passive radiative cooling",
+   "authors": [
+    "Guangqin Xie",
+    "Wenlong Zeng",
+    "Dan Xu",
+    "Hong Zhong"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Energy science and technology",
+   "doi": "10.1038/s41598-026-64402-1",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64402-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:18:48.077Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "64431b0165002fb44a13da3d73422c95e6509e0e",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0050",
+   "relative_pdf_path": "Energy science and technology/s41598-026-64771-7.pdf",
+   "title": "Detection of coal seam floor failure depth through borehole direct current resistivity monitoring",
+   "authors": [
+    "Yaoning Liu",
+    "Liang Du",
+    "Shaohua Li"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Energy science and technology",
+   "doi": "10.1038/s41598-026-64771-7",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64771-7",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:16:36.867Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d206864c0d92aa48f69dc8fdc63da2a8f46e4dbf",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0051",
+   "relative_pdf_path": "Engineering/s41598-026-62679-w.pdf",
+   "title": "Uncovering reliability blind spots in transportation AI: an edge-case-based validation approach for transportation systems",
+   "authors": [
+    "June Young Kim",
+    "Donghyun Lee"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Engineering",
+   "doi": "10.1038/s41598-026-62679-w",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-62679-w",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:21:00.760Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "2505c6162f4ca2c0c7018d270e089d9c107135fa",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0052",
    "relative_pdf_path": "Engineering/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -1361,7 +2238,52 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0032",
+   "record_id": "ART-0053",
+   "relative_pdf_path": "Engineering/s41598-026-63471-6.pdf",
+   "title": "A bilateral US-UK airplane wastewater monitoring pilot demonstrates the feasibility of an international wastewater surveillance network",
+   "authors": [
+    "Matthew J. Wade",
+    "Ian Ruskey",
+    "Elizabeth Perry",
+    "Valerie Meehan",
+    "Andrew P. Rothstein",
+    "Dawn Gratalo",
+    "Sarah Rush",
+    "Birgitte Simen",
+    "Cindy R. Friedman"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Engineering",
+   "doi": "10.1038/s41598-026-63471-6",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63471-6",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:19:54.745Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d46caf85b15eabc5e09d723f30c48fc8e28ba9ec",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0054",
    "relative_pdf_path": "Engineering/s41598-026-64757-5.pdf",
    "title": "Effects of real-time and potential traffic congestion on network throughput",
    "authors": [
@@ -1399,7 +2321,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0033",
+   "record_id": "ART-0055",
    "relative_pdf_path": "Engineering/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -1439,7 +2361,51 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0034",
+   "record_id": "ART-0056",
+   "relative_pdf_path": "Environmental sciences/s41598-026-57983-4.pdf",
+   "title": "Cross-sectional associations between drinking water arsenic and health outcomes in a South Texas Colonias pilot study",
+   "authors": [
+    "Lindsay Sansom",
+    "Taehyun Roh",
+    "Tiffany Radcliff",
+    "Luis Gomez",
+    "Kayla Morales",
+    "Nandita Sarker",
+    "Zak Kobs",
+    "Garett T. Sansom"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Environmental sciences",
+   "doi": "10.1038/s41598-026-57983-4",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-57983-4",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:22:02.549Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "fbe1e73046b7ebf3cab47dda3408ee4e4605e6af",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0057",
    "relative_pdf_path": "Environmental sciences/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -1483,7 +2449,52 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0035",
+   "record_id": "ART-0058",
+   "relative_pdf_path": "Environmental sciences/s41598-026-63471-6.pdf",
+   "title": "A bilateral US-UK airplane wastewater monitoring pilot demonstrates the feasibility of an international wastewater surveillance network",
+   "authors": [
+    "Matthew J. Wade",
+    "Ian Ruskey",
+    "Elizabeth Perry",
+    "Valerie Meehan",
+    "Andrew P. Rothstein",
+    "Dawn Gratalo",
+    "Sarah Rush",
+    "Birgitte Simen",
+    "Cindy R. Friedman"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Environmental sciences",
+   "doi": "10.1038/s41598-026-63471-6",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63471-6",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:19:54.745Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d46caf85b15eabc5e09d723f30c48fc8e28ba9ec",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0059",
    "relative_pdf_path": "Environmental sciences/s41598-026-64506-8.pdf",
    "title": "A study on the lifespan of burnt logs used in nature-based solutions for post-fire anti-erosion barriers and forest regeneration promotion",
    "authors": [
@@ -1520,7 +2531,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0036",
+   "record_id": "ART-0060",
    "relative_pdf_path": "Environmental sciences/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -1560,7 +2571,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0037",
+   "record_id": "ART-0061",
    "relative_pdf_path": "Evolution/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -1597,7 +2608,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0038",
+   "record_id": "ART-0062",
    "relative_pdf_path": "Forestry/s41467-026-76226-8.pdf",
    "title": "Forests in protected areas worldwide face increased thermal pressure from urbanization",
    "authors": [
@@ -1634,7 +2645,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0039",
+   "record_id": "ART-0063",
    "relative_pdf_path": "Geography/s41598-026-63675-w.pdf",
    "title": "A machine learning and agent-based modeling framework for tourism crisis management",
    "authors": [
@@ -1671,7 +2682,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0040",
+   "record_id": "ART-0064",
    "relative_pdf_path": "Health care/s41598-026-58631-7.pdf",
    "title": "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images",
    "authors": [
@@ -1710,7 +2721,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0041",
+   "record_id": "ART-0065",
    "relative_pdf_path": "Health care/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -1749,7 +2760,50 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0042",
+   "record_id": "ART-0066",
+   "relative_pdf_path": "Health care/s41598-026-63728-0.pdf",
+   "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
+   "authors": [
+    "Ahmed J. Alzahrani",
+    "Sara Aloliyan",
+    "Deem Albakran",
+    "Aljohara Alhoshan",
+    "Rama Alaklabi",
+    "Sarah Aljalajel",
+    "Tala Alfraih"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Health care",
+   "doi": "10.1038/s41598-026-63728-0",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63728-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:13:18.585Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "7e366c855b8e60353cf5e2e08182a9c5c1235d7d",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0067",
    "relative_pdf_path": "Health care/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -1789,7 +2843,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0043",
+   "record_id": "ART-0068",
    "relative_pdf_path": "Health care/s41598-026-65304-y.pdf",
    "title": "Loneliness and social isolation as predictors of pain medication use transitions in older adults",
    "authors": [
@@ -1830,7 +2884,52 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0044",
+   "record_id": "ART-0069",
+   "relative_pdf_path": "Materials science/s41598-026-54704-9.pdf",
+   "title": "Radiation resistance of additively manufactured CrMoTaTiV compositionally complex alloys with enhanced mechanical properties",
+   "authors": [
+    "E. Aydogan",
+    "O. U. Tukac",
+    "A. Ozalp",
+    "O. El-Atwani",
+    "M. R. Chancey",
+    "H. Kim",
+    "Y. Q. Wang",
+    "B. T. Camic",
+    "S. Ozturk"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Materials science",
+   "doi": "10.1038/s41598-026-54704-9",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-54704-9",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:23:05.718Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "5478231b1a504557a76035cbdfbde15121aebdc8",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0070",
    "relative_pdf_path": "Materials science/s41598-026-58761-y.pdf",
    "title": "Development of hybrid polypropylene composites reinforced with chemically modified rice straw and foxtail millet husk for EV automotive applications",
    "authors": [
@@ -1869,7 +2968,48 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0045",
+   "record_id": "ART-0071",
+   "relative_pdf_path": "Materials science/s41598-026-59705-2.pdf",
+   "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
+   "authors": [
+    "Maxim Wischnewski",
+    "Joel Joseph",
+    "Makoto Ohtsuka",
+    "Hiroyuki Miki",
+    "Manfred Kohl"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Materials science",
+   "doi": "10.1038/s41598-026-59705-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-59705-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:17:44.530Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d69924df0c57a69ce2fde0acfa7edf2c91519ad0",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0072",
    "relative_pdf_path": "Materials science/s41598-026-64292-3.pdf",
    "title": "Silver-copper hybrid nanocomposite thermal interface materials for power electronic device packaging",
    "authors": [
@@ -1910,7 +3050,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0046",
+   "record_id": "ART-0073",
    "relative_pdf_path": "Materials science/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -1950,7 +3090,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0047",
+   "record_id": "ART-0074",
    "relative_pdf_path": "Mathematics and computing/s41598-026-58631-7.pdf",
    "title": "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images",
    "authors": [
@@ -1989,7 +3129,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0048",
+   "record_id": "ART-0075",
    "relative_pdf_path": "Mathematics and computing/s41598-026-62471-w.pdf",
    "title": "Hidden multistate models to study multimorbidity trajectories",
    "authors": [
@@ -2030,7 +3170,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0049",
+   "record_id": "ART-0076",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64209-0.pdf",
    "title": "LAMDEX: an explainable lightweight Android malware detection system for enhancing IoT APP security",
    "authors": [
@@ -2072,7 +3212,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0050",
+   "record_id": "ART-0077",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64757-5.pdf",
    "title": "Effects of real-time and potential traffic congestion on network throughput",
    "authors": [
@@ -2110,7 +3250,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0051",
+   "record_id": "ART-0078",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64773-5.pdf",
    "title": "Nonlinear dynamic transitions and equilibrium topology of a beam under sequential moving masses",
    "authors": [
@@ -2154,7 +3294,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0052",
+   "record_id": "ART-0079",
    "relative_pdf_path": "Medical research/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -2198,7 +3338,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0053",
+   "record_id": "ART-0080",
    "relative_pdf_path": "Medical research/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -2237,7 +3377,50 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0054",
+   "record_id": "ART-0081",
+   "relative_pdf_path": "Medical research/s41598-026-63728-0.pdf",
+   "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
+   "authors": [
+    "Ahmed J. Alzahrani",
+    "Sara Aloliyan",
+    "Deem Albakran",
+    "Aljohara Alhoshan",
+    "Rama Alaklabi",
+    "Sarah Aljalajel",
+    "Tala Alfraih"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Medical research",
+   "doi": "10.1038/s41598-026-63728-0",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63728-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:13:18.585Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "7e366c855b8e60353cf5e2e08182a9c5c1235d7d",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0082",
    "relative_pdf_path": "Medical research/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -2281,7 +3464,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0055",
+   "record_id": "ART-0083",
    "relative_pdf_path": "Medical research/s41598-026-65304-y.pdf",
    "title": "Loneliness and social isolation as predictors of pain medication use transitions in older adults",
    "authors": [
@@ -2322,7 +3505,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0056",
+   "record_id": "ART-0084",
    "relative_pdf_path": "Microbiology/s41598-026-59669-3.pdf",
    "title": "Reduction of secondary bile acids following microbiome pre-conditioning was associated with reduced breast cancer progression",
    "authors": [
@@ -2370,7 +3553,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0057",
+   "record_id": "ART-0085",
    "relative_pdf_path": "Microbiology/s41598-026-63203-w.pdf",
    "title": "Rocaglates and pateamines target the DEAD-box RNA helicase eIF4A from Schistosoma mansoni and demonstrate anti-schistosomal activity in vitro",
    "authors": [
@@ -2414,7 +3597,52 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0058",
+   "record_id": "ART-0086",
+   "relative_pdf_path": "Microbiology/s41598-026-64379-x.pdf",
+   "title": "Anti-obesity effects of heat-killed Apilactobacillus kosoi, a FLAB-derived postbiotic, in high-fat diet-induced obese mice",
+   "authors": [
+    "Shizuka Matsuyama",
+    "Satsuki Moriyama",
+    "Chiaki Matsuzaki",
+    "Sachi Tanaka",
+    "Tsukasa Shiraishi",
+    "Shin-ichi Yokota",
+    "Kenji Yamamoto",
+    "Tomoya Takahashi",
+    "Tai-Ying Chiou"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Microbiology",
+   "doi": "10.1038/s41598-026-64379-x",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64379-x",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:32:07.123Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "2fbae264c510006864fd7f4398cfa63fec55dc53",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0087",
    "relative_pdf_path": "Microbiology/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -2458,7 +3686,47 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0059",
+   "record_id": "ART-0088",
+   "relative_pdf_path": "Microbiology/s41598-026-64952-4.pdf",
+   "title": "Rare ST124 and ST586 lineages co-circulate with the dominant ST2 clone among extensively drug-resistant Acinetobacter baumannii in Iran",
+   "authors": [
+    "Shaho Menbari",
+    "Himen Salimizand",
+    "Daem Roshani",
+    "Fariba Lahoorpour"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Microbiology",
+   "doi": "10.1038/s41598-026-64952-4",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64952-4",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:30:57.873Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "ac88ef12703c9a75d2d6a6cdd2f33394a284a15f",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0089",
    "relative_pdf_path": "Molecular medicine/s41598-026-53528-x.pdf",
    "title": "The impacts of beta globin gene mutations and Xmn IGγ polymorphism (HBG2 c. -211 C > T) on the clinical features of Hb Eβ-thalassemia patients in Bangladesh",
    "authors": [
@@ -2495,7 +3763,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0060",
+   "record_id": "ART-0090",
    "relative_pdf_path": "Nanoscience and technology/s41467-026-75765-4.pdf",
    "title": "Direct observation of braiding of Majorana-like zero modes in real space",
    "authors": [
@@ -2536,7 +3804,48 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0061",
+   "record_id": "ART-0091",
+   "relative_pdf_path": "Nanoscience and technology/s41598-026-59705-2.pdf",
+   "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
+   "authors": [
+    "Maxim Wischnewski",
+    "Joel Joseph",
+    "Makoto Ohtsuka",
+    "Hiroyuki Miki",
+    "Manfred Kohl"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Nanoscience and technology",
+   "doi": "10.1038/s41598-026-59705-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-59705-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:17:44.530Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d69924df0c57a69ce2fde0acfa7edf2c91519ad0",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0092",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -2584,7 +3893,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0062",
+   "record_id": "ART-0093",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-64292-3.pdf",
    "title": "Silver-copper hybrid nanocomposite thermal interface materials for power electronic device packaging",
    "authors": [
@@ -2625,7 +3934,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0063",
+   "record_id": "ART-0094",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -2665,7 +3974,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0064",
+   "record_id": "ART-0095",
    "relative_pdf_path": "Natural hazards/s41598-026-64506-8.pdf",
    "title": "A study on the lifespan of burnt logs used in nature-based solutions for post-fire anti-erosion barriers and forest regeneration promotion",
    "authors": [
@@ -2702,7 +4011,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0065",
+   "record_id": "ART-0096",
    "relative_pdf_path": "Neurology/s41598-026-63866-5.pdf",
    "title": "Effects of early adulthood chronic sleep disruption on late life cognition, brain pathology, and microglial reactivity in the PS19 mouse model of tauopathy",
    "authors": [
@@ -2739,7 +4048,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0066",
+   "record_id": "ART-0097",
    "relative_pdf_path": "Neuroscience/s41598-026-59055-z.pdf",
    "title": "Categorization-driven perceptual learning changes perceived similarity in the naturalistic domain of skin lesion diagnosis",
    "authors": [
@@ -2777,7 +4086,47 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0067",
+   "record_id": "ART-0098",
+   "relative_pdf_path": "Neuroscience/s41598-026-61361-5.pdf",
+   "title": "The effect of dynamic motion and simultaneous presentation on the statistical learning of nonadjacent dependencies in manual gesture sequences",
+   "authors": [
+    "Ágnes Lukács",
+    "Péter Rácz",
+    "Péter Varga",
+    "Krisztina Sára Lukics"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Neuroscience",
+   "doi": "10.1038/s41598-026-61361-5",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-61361-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:33:10.199Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "b70fb8b9ab5ba4289f8f31392802ad0036a82982",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0099",
    "relative_pdf_path": "Neuroscience/s41598-026-63866-5.pdf",
    "title": "Effects of early adulthood chronic sleep disruption on late life cognition, brain pathology, and microglial reactivity in the PS19 mouse model of tauopathy",
    "authors": [
@@ -2814,7 +4163,87 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0068",
+   "record_id": "ART-0100",
+   "relative_pdf_path": "Neuroscience/s41598-026-64537-1.pdf",
+   "title": "TIMAP depletion impairs BMP signaling by accelerating SMURF1-mediated SMAD degradation in neuroblastoma cells",
+   "authors": [
+    "Márton Fonódi",
+    "Bálint Bécsi",
+    "Krisztina Tar",
+    "Anita Boratkó"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Neuroscience",
+   "doi": "10.1038/s41598-026-64537-1",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64537-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:08:58.371Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "e5c4f18c5e9bf8c9e59f6d38dfa3eceeeb10e935",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0101",
+   "relative_pdf_path": "Neuroscience/s41598-026-64569-7.pdf",
+   "title": "Observing positive and negative social touch triggers topographically distinct physical and emotional reactions in the body",
+   "authors": [
+    "Justyna Świdrak",
+    "Wenhan Sun",
+    "Pinar Ekin",
+    "Merle T. Fairhurst"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Neuroscience",
+   "doi": "10.1038/s41598-026-64569-7",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64569-7",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:34:13.564Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "f98cead867bea6611cb05edc623d4dcff90be60b",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0102",
    "relative_pdf_path": "Oncology/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -2851,7 +4280,233 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0069",
+   "record_id": "ART-0103",
+   "relative_pdf_path": "Optics and photonics/s41598-026-60504-y.pdf",
+   "title": "Crystalline lens geometry from a clinical OCT-based biometer in pre-cataract surgery patients",
+   "authors": [
+    "Javier Rodriguez-Sanchez",
+    "Derick Owusu Ansah",
+    "Alberto de Castro",
+    "Gonzalo Velarde-Rodríguez",
+    "Yue Zhao",
+    "Ugur Celik",
+    "Mujdat Cetin",
+    "Dylan McBee",
+    "Jen-Li Dong",
+    "Yuli Lim",
+    "Li Wang",
+    "Douglas Donald Koch",
+    "Scott MacRae",
+    "Ramya Natarajan",
+    "Pravin Vaddavalli",
+    "Nicolás Alejandre-Alba",
+    "Eduardo Martinez-Enriquez",
+    "Susana Marcos"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41598-026-60504-y",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-60504-y",
+   "license_name": "CC BY-NC-ND 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:38:37.143Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "08a4d5862275a98e8bf6b4b5d47a1697e20772f9",
+   "status": "excluded"
+  },
+  {
+   "record_id": "ART-0104",
+   "relative_pdf_path": "Optics and photonics/s41598-026-63320-6.pdf",
+   "title": "Quantum synchronization enhanced via photon hopping in an optomechanical system",
+   "authors": [
+    "Habtamu Dagnaw Mekonnen",
+    "Tesfay Gebremariam Tesfahannes",
+    "Abdelkader Hidki",
+    "Melkamu Belayneh",
+    "Abeba Teklie"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41598-026-63320-6",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63320-6",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:35:23.112Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "fb4f940eefe48cffcc96668c074501b0f37b00c4",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0105",
+   "relative_pdf_path": "Optics and photonics/s41598-026-63386-2.pdf",
+   "title": "Hyperpolarized 129Xe MRI using dissolution dNP on a commercial polarizer: from solid-state optimization to in vivo lung imaging",
+   "authors": [
+    "Emma Wiström",
+    "Jean-Noël Hyacinthe",
+    "Esben Søvsø Szocska Hanssen",
+    "Michael Vaeggemose",
+    "Christoffer Laustsen",
+    "Andrea Capozzi"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41598-026-63386-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63386-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:41:46.186Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "b886c267feb56dfd17d18b6e7d828dc23c460899",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0106",
+   "relative_pdf_path": "Optics and photonics/s41598-026-64203-6.pdf",
+   "title": "All-optical single-shot mapping of cluster radius and density in an axisymmetric gas jet",
+   "authors": [
+    "Seongmin Lee",
+    "Jaehyun Song",
+    "Youhwan Noh",
+    "Hyeong-il Kim",
+    "Yonghun Noh",
+    "Jun Sim",
+    "Woosuk Bang"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41598-026-64203-6",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64203-6",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:36:20.152Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "fbfb3886adc08f4d294fe910473310fdb08d9094",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0107",
+   "relative_pdf_path": "Optics and photonics/s41598-026-64441-8.pdf",
+   "title": "Retrospective clinical artificial intelligence-assisted study of loaded peri-implant versus edentulous bone",
+   "authors": [
+    "Nicole Riberti",
+    "Emira D’Amico",
+    "Chiara Cinquini",
+    "Michele Furlani",
+    "Tania Vanessa Pierfelice",
+    "Giovanna Iezzi",
+    "Elena Longo",
+    "Michele Covelli",
+    "Antonio Barone",
+    "Alessandra Giuliani"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41598-026-64441-8",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-64441-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:37:58.863Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "c46e72b0cd4549f6d17e42aa62b9135fbbda26c6",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0108",
    "relative_pdf_path": "Physics/s41467-026-75765-4.pdf",
    "title": "Direct observation of braiding of Majorana-like zero modes in real space",
    "authors": [
@@ -2892,7 +4547,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0070",
+   "record_id": "ART-0109",
    "relative_pdf_path": "Physics/s41467-026-76043-z.pdf",
    "title": "Directional thermal emission enables efficient energy savings",
    "authors": [
@@ -2943,7 +4598,89 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0071",
+   "record_id": "ART-0110",
+   "relative_pdf_path": "Physics/s41598-026-59705-2.pdf",
+   "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
+   "authors": [
+    "Maxim Wischnewski",
+    "Joel Joseph",
+    "Makoto Ohtsuka",
+    "Hiroyuki Miki",
+    "Manfred Kohl"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Physics",
+   "doi": "10.1038/s41598-026-59705-2",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-59705-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:17:44.530Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d69924df0c57a69ce2fde0acfa7edf2c91519ad0",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0111",
+   "relative_pdf_path": "Physics/s41598-026-63320-6.pdf",
+   "title": "Quantum synchronization enhanced via photon hopping in an optomechanical system",
+   "authors": [
+    "Habtamu Dagnaw Mekonnen",
+    "Tesfay Gebremariam Tesfahannes",
+    "Abdelkader Hidki",
+    "Melkamu Belayneh",
+    "Abeba Teklie"
+   ],
+   "journal": "Scientific Reports",
+   "publication_year": "2026",
+   "subject": "Physics",
+   "doi": "10.1038/s41598-026-63320-6",
+   "canonical_url": "https://www.nature.com/articles/s41598-026-63320-6",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-01",
+   "retrieved_at": "2026-08-01T11:35:23.112Z",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "fb4f940eefe48cffcc96668c074501b0f37b00c4",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0112",
    "relative_pdf_path": "Physics/s41598-026-64773-5.pdf",
    "title": "Nonlinear dynamic transitions and equilibrium topology of a beam under sequential moving masses",
    "authors": [
@@ -2987,7 +4724,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0072",
+   "record_id": "ART-0113",
    "relative_pdf_path": "Scientific community/s41598-026-57530-1.pdf",
    "title": "Estimated HIV cases and costs in South Africa due to global warming from 2000 to 2050: a modeling study",
    "authors": [
@@ -3024,7 +4761,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0073",
+   "record_id": "ART-0114",
    "relative_pdf_path": "Social sciences/s41467-026-75625-1.pdf",
    "title": "Global trade responses to shark finning regulations",
    "authors": [
@@ -3061,7 +4798,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0074",
+   "record_id": "ART-0115",
    "relative_pdf_path": "Zoology/s41598-026-63940-y.pdf",
    "title": "Prevalence and impact of bopyrid isopod infestation on mud shrimp populations in the eastern Yellow Sea",
    "authors": [

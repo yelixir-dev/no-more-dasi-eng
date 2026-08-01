@@ -1,82 +1,88 @@
-# Overlay: Energy science and technology (AUTO-DRAFT 2026-07-31)
+# Overlay: Energy science and technology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (1 files, 7,658 words — treat stats as directional, not targets)
-Source: 1 file(s), 7,658 words
+Maturity: immature (5 files, 42,819 words — treat stats as directional, not targets)
+Source: 5 file(s), 42,819 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.5 words
-- Passive voice: 125.4 /10K words
-- First person (we): 1.3 /10K words
+- Avg sentence length: 17.9 words
+- Passive voice: 143.6 /10K words
+- First person (we): 5.6 /10K words
 
 ## Top terms
 
 - `leaching` (260)
-- `coal` (184)
-- `acid` (178)
+- `coal` (243)
+- `water` (216)
+- `acid` (180)
+- `failure` (172)
+- `efficiency` (171)
+- `storage` (165)
+- `resistivity` (160)
+- `reservoir` (159)
+- `heat` (154)
+- `inline-eq-ieq` (152)
+- `temperature` (148)
+- `safa` (143)
+- `layer` (135)
+- `surface` (126)
 - `gangue` (124)
+- `energy` (123)
+- `org` (119)
 - `citric` (117)
-- `rare` (69)
-- `roasted` (67)
-- `earth` (64)
-- `mol` (58)
-- `efficiency` (56)
-- `elements` (46)
-- `hydrochloric` (31)
-- `solution` (30)
-- `min` (30)
-- `concentration` (29)
-- `ratio` (25)
-- `recovery` (24)
-- `ions` (23)
-- `journal` (23)
-- `analysis` (22)
-- `surface` (22)
-- `increased` (21)
-- `time` (20)
-- `temperature` (20)
-- `behavior` (19)
-- `chemical` (19)
-- `potential` (18)
-- `organic` (18)
-- `ash` (18)
-- `liquid-to-solid` (17)
+- `floor` (115)
+- `structure` (108)
+- `geological` (104)
+- `fault` (103)
+- `structural` (100)
+- `biomimetic` (99)
+- `model` (87)
+- `piezoelectric` (84)
+- `cantilever` (82)
+- `harvesting` (82)
+- `thermal` (82)
 
 ## Phrase bank (term + verb)
 
 - `rey + increased` (6)
+- `safa + exhibits` (4)
 - `leaching + increased` (3)
+- `upper + exhibits` (3)
+- `spatial + calculated` (3)
+- `passive + exhibited` (3)
+- `red + indicates` (3)
+- `resonant + demonstrated` (2)
 - `coal + increased` (2)
 - `leaching + obtained` (2)
-- `hrey + achieved` (1)
-- `fixed + showed` (1)
-- `approximately + achieved` (1)
-- `solid + increased` (1)
-- `wang + confirmed` (1)
-- `malic + exhibited` (1)
-- `ignition + indicates` (1)
-- `x-ray + indicates` (1)
-- `microscopic + revealed` (1)
-- `coal + calculated` (1)
-- `reached + calculated` (1)
-- `citric + increased` (1)
-- `liquid-to-solid + increased` (1)
-- `efficiency + increased` (1)
-- `constant + increased` (1)
-- `efficiencies + increased` (1)
+- `calculated + obtained` (2)
+- `safa + increased` (2)
+- `biomimetic + measured` (2)
+- `variation-rate + improved` (2)
+- `floor + exhibits` (2)
+- `energy + achieved` (1)
+- `availability + enhanced` (1)
+- `layer + fabricated` (1)
+- `films + deposited` (1)
+- `magnetization + exhibits` (1)
 
 ## Notation watch
 
+- thin film: thin film=1, thin-film=0, thinfilm=0
 - x-ray: x-ray=3, x ray=0, xray=0
-- et al.: et al.=0, et al=41
+- in situ: in situ=0, in-situ=12
+- et al.: et al.=0, et al=89
+- buildup: buildup=4, build-up=1, build up=0
+- setup: setup=4, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 21.4 words, passive 71.9 /10K
-- conclusion: 1 section(s), avg sentence 13.6 words, passive 84.7 /10K
-- introduction: 1 section(s), avg sentence 21.0 words, passive 127.6 /10K
-- merged: results+discussion: 1 section(s), avg sentence 21.5 words, passive 128.6 /10K
-- methods: 1 section(s), avg sentence 20.2 words, passive 337.2 /10K
+- abstract: 2 section(s), avg sentence 22.9 words, passive 62.5 /10K
+- conclusion: 5 section(s), avg sentence 12.5 words, passive 91.2 /10K
+- discussion: 3 section(s), avg sentence 23.7 words, passive 131.6 /10K
+- introduction: 3 section(s), avg sentence 21.9 words, passive 102.4 /10K
+- merged: results+discussion: 2 section(s), avg sentence 22.1 words, passive 154.1 /10K
+- methods: 6 section(s), avg sentence 21.3 words, passive 285.8 /10K
+- results: 2 section(s), avg sentence 20.8 words, passive 124.9 /10K
 
 ## Editor notes (manual curation)
 

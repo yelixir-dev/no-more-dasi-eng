@@ -1,46 +1,46 @@
 # Overlay: Medical research (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (4 files, 25,601 words — treat stats as directional, not targets)
-Source: 4 file(s), 25,601 words
+Maturity: immature (5 files, 30,503 words — treat stats as directional, not targets)
+Source: 5 file(s), 30,503 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.6 words
-- Passive voice: 138.7 /10K words
-- First person (we): 21.9 /10K words
+- Avg sentence length: 18.0 words
+- Passive voice: 136.4 /10K words
+- First person (we): 20.0 /10K words
 
 ## Top terms
 
-- `data` (152)
-- `social` (104)
-- `org` (86)
+- `data` (160)
+- `social` (117)
+- `org` (110)
+- `health` (108)
 - `pain` (85)
+- `disease` (78)
+- `awareness` (77)
 - `loneliness` (75)
 - `kidney` (73)
-- `medicine` (70)
+- `medicine` (71)
+- `years` (71)
+- `associated` (69)
 - `medicines` (69)
 - `medication` (66)
-- `disease` (65)
-- `associated` (65)
 - `therapy` (63)
 - `time` (63)
-- `health` (61)
 - `patients` (60)
 - `isolation` (60)
 - `combination` (59)
 - `cervical` (58)
-- `women` (54)
-- `risk` (53)
+- `risk` (57)
+- `women` (55)
+- `participants` (54)
 - `cohort` (52)
-- `years` (52)
+- `review` (50)
 - `memory` (49)
 - `monotherapy` (48)
-- `diabetes` (44)
-- `adults` (43)
-- `reuse` (43)
-- `review` (42)
-- `older` (42)
-- `ethiopia` (42)
+- `older` (48)
+- `sample` (48)
+- `public` (47)
 
 ## Phrase bank (term + verb)
 
@@ -68,17 +68,17 @@ Source: 4 file(s), 25,601 words
 ## Notation watch
 
 - in situ: in situ=1, in-situ=2
-- et al.: et al.=0, et al=32
+- et al.: et al.=0, et al=53
 - setup: setup=2, set-up=1, set up=0
 
 ## Section metrics
 
-- abstract: 4 section(s), avg sentence 21.5 words, passive 106.8 /10K
+- abstract: 5 section(s), avg sentence 21.5 words, passive 103.9 /10K
 - conclusion: 1 section(s), avg sentence 7.4 words, passive 39.7 /10K
-- discussion: 3 section(s), avg sentence 21.5 words, passive 207.4 /10K
-- introduction: 3 section(s), avg sentence 22.0 words, passive 136.1 /10K
-- methods: 5 section(s), avg sentence 21.4 words, passive 280.5 /10K
-- results: 3 section(s), avg sentence 19.8 words, passive 201.6 /10K
+- discussion: 4 section(s), avg sentence 21.9 words, passive 187.7 /10K
+- introduction: 4 section(s), avg sentence 22.5 words, passive 122.3 /10K
+- methods: 6 section(s), avg sentence 21.4 words, passive 295.7 /10K
+- results: 4 section(s), avg sentence 20.9 words, passive 177.9 /10K
 
 ## Editor notes (manual curation)
 

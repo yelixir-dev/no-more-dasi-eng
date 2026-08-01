@@ -1,52 +1,54 @@
 # Overlay: Physics (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 17,086 words — treat stats as directional, not targets)
-Source: 3 file(s), 17,086 words
+Maturity: immature (5 files, 31,200 words — treat stats as directional, not targets)
+Source: 5 file(s), 31,200 words
 
 ## Corpus stats
 
 - Avg sentence length: 14.9 words
-- Passive voice: 109.4 /10K words
-- First person (we): 26.9 /10K words
+- Passive voice: 126.6 /10K words
+- First person (we): 24.7 /10K words
 
 ## Top terms
 
+- `heat` (223)
+- `system` (166)
+- `layer` (159)
+- `thermal` (157)
+- `inline-eq-ieq` (152)
+- `energy` (135)
+- `quantum` (128)
+- `temperature` (127)
+- `synchronization` (118)
+- `nonlinear` (116)
+- `transfer` (109)
 - `directional` (104)
-- `system` (103)
-- `nonlinear` (103)
+- `systems` (95)
 - `radiative` (93)
+- `power` (86)
+- `phys` (84)
+- `piezoelectric` (84)
 - `emitter` (83)
-- `heat` (81)
-- `transfer` (73)
-- `thermal` (69)
-- `systems` (67)
+- `cantilever` (82)
+- `cavity` (78)
+- `phase` (75)
+- `mechanical` (68)
+- `mass` (67)
+- `damping` (67)
 - `moving` (67)
-- `phase` (55)
-- `energy` (54)
-- `beam` (54)
-- `emission` (48)
-- `absorber` (47)
-- `braiding` (45)
-- `response` (42)
-- `phys` (41)
-- `heating` (40)
-- `topological` (39)
-- `mass` (39)
-- `efficiency` (39)
-- `analysis` (39)
-- `rev` (36)
-- `temperature` (36)
-- `stability` (35)
-- `bmlzms` (34)
-- `resonance` (32)
-- `power` (32)
-- `points` (31)
+- `coupling` (62)
+- `optomechanical` (62)
+- `org` (57)
+- `modes` (56)
+- `rev` (56)
 
 ## Phrase bank (term + verb)
 
+- `quantum + enhanced` (4)
 - `figures + measured` (3)
 - `bulk + measured` (2)
 - `film + deposited` (2)
+- `resonant + demonstrated` (2)
 - `modulation + obtained` (2)
 - `elastic + demonstrated` (2)
 - `multiple + demonstrated` (1)
@@ -62,24 +64,24 @@ Source: 3 file(s), 17,086 words
 - `emitter + exhibits` (1)
 - `temperature + exhibits` (1)
 - `directional + exhibits` (1)
-- `consistent + observed` (1)
-- `ambient + obtained` (1)
 
 ## Notation watch
 
 - bandgap: bandgap=3, band gap=0, band-gap=0
-- et al.: et al.=0, et al=77
+- thin film: thin film=1, thin-film=0, thinfilm=0
+- et al.: et al.=2, et al=113
 - photonic crystal: photonic crystal=1, photonic-crystal=0
-- setup: setup=5, set-up=0, set up=0
+- setup: setup=10, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 21.1 words, passive 105.3 /10K
-- conclusion: 1 section(s), avg sentence 32.5 words, passive 76.9 /10K
-- discussion: 2 section(s), avg sentence 22.3 words, passive 119.4 /10K
-- introduction: 2 section(s), avg sentence 23.6 words, passive 107.6 /10K
-- methods: 2 section(s), avg sentence 16.7 words, passive 379.2 /10K
-- results: 2 section(s), avg sentence 18.6 words, passive 164.0 /10K
+- abstract: 3 section(s), avg sentence 21.3 words, passive 112.6 /10K
+- conclusion: 3 section(s), avg sentence 26.8 words, passive 124.5 /10K
+- discussion: 3 section(s), avg sentence 20.5 words, passive 118.7 /10K
+- introduction: 3 section(s), avg sentence 22.6 words, passive 123.4 /10K
+- merged: results+discussion: 1 section(s), avg sentence 17.2 words, passive 69.1 /10K
+- methods: 3 section(s), avg sentence 18.4 words, passive 361.8 /10K
+- results: 3 section(s), avg sentence 19.8 words, passive 157.5 /10K
 
 ## Editor notes (manual curation)
 

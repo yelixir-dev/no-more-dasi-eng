@@ -1,46 +1,46 @@
 # Overlay: Materials science (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 26,496 words — treat stats as directional, not targets)
-Source: 3 file(s), 26,496 words
+Maturity: immature (5 files, 43,255 words — treat stats as directional, not targets)
+Source: 5 file(s), 43,255 words
 
 ## Corpus stats
 
-- Avg sentence length: 18.8 words
-- Passive voice: 141.9 /10K words
-- First person (we): 6.8 /10K words
+- Avg sentence length: 17.6 words
+- Passive voice: 151.2 /10K words
+- First person (we): 5.3 /10K words
 
 ## Top terms
 
-- `model` (138)
-- `degradation` (106)
-- `thermal` (106)
-- `composites` (103)
+- `thermal` (184)
+- `heat` (156)
+- `layer` (153)
+- `model` (153)
+- `temperature` (152)
+- `inline-eq-ieq` (152)
+- `degradation` (107)
+- `energy` (106)
+- `composites` (105)
+- `materials` (104)
+- `mechanical` (102)
 - `fiber` (100)
-- `hybrid` (86)
+- `alloys` (97)
+- `phase` (96)
+- `hybrid` (88)
+- `strength` (86)
 - `tio` (86)
-- `surface` (74)
-- `materials` (71)
-- `values` (68)
-- `photocatalytic` (67)
-- `mpa` (65)
-- `strength` (63)
-- `data` (62)
-- `training` (58)
-- `zno` (57)
-- `rice` (56)
-- `composite` (53)
-- `conductivity` (53)
-- `fibers` (52)
-- `time` (50)
-- `straw` (49)
-- `sintering` (49)
-- `mechanical` (47)
-- `efficiency` (47)
-- `samples` (45)
-- `analysis` (44)
-- `agcumnh` (44)
-- `tannic` (43)
-- `models` (43)
+- `power` (85)
+- `piezoelectric` (84)
+- `size` (83)
+- `cantilever` (82)
+- `irradiation` (81)
+- `matrix` (81)
+- `surface` (81)
+- `values` (80)
+- `mater` (76)
+- `data` (75)
+- `mpa` (72)
+- `org` (71)
+- `density` (70)
 
 ## Phrase bank (term + verb)
 
@@ -48,6 +48,7 @@ Source: 3 file(s), 26,496 words
 - `sintered + prepared` (3)
 - `although + achieved` (3)
 - `composites + obtained` (2)
+- `resonant + demonstrated` (2)
 - `agcumnh + prepared` (2)
 - `micrographs + prepared` (2)
 - `sample + prepared` (2)
@@ -57,27 +58,31 @@ Source: 3 file(s), 26,496 words
 - `power + fabricated` (2)
 - `value + calculated` (2)
 - `ann + showed` (2)
-- `containing + fabricated` (1)
-- `transform + confirmed` (1)
-- `scanning + revealed` (1)
-- `electron + enhanced` (1)
-- `surface + improved` (1)
-- `matrix + demonstrated` (1)
-- `flexural + enhanced` (1)
+- `compositionally + enhanced` (1)
+- `complex + fabricated` (1)
+- `microstructural + revealed` (1)
+- `ductility + improved` (1)
+- `compressive + observed` (1)
+- `irradiation + demonstrated` (1)
 
 ## Notation watch
 
 - bandgap: bandgap=3, band gap=1, band-gap=0
-- x-ray: x-ray=3, x ray=0, xray=0
-- et al.: et al.=0, et al=48
+- thin film: thin film=2, thin-film=0, thinfilm=0
+- x-ray: x-ray=7, x ray=0, xray=0
+- in situ: in situ=1, in-situ=2
+- et al.: et al.=7, et al=114
+- setup: setup=3, set-up=0, set up=0
 
 ## Section metrics
 
 - abstract: 2 section(s), avg sentence 23.4 words, passive 136.2 /10K
-- conclusion: 2 section(s), avg sentence 24.7 words, passive 139.1 /10K
+- conclusion: 4 section(s), avg sentence 24.0 words, passive 166.4 /10K
+- discussion: 2 section(s), avg sentence 21.1 words, passive 136.7 /10K
 - introduction: 3 section(s), avg sentence 19.2 words, passive 177.6 /10K
 - merged: results+discussion: 3 section(s), avg sentence 22.3 words, passive 144.8 /10K
-- methods: 2 section(s), avg sentence 15.4 words, passive 190.3 /10K
+- methods: 3 section(s), avg sentence 16.2 words, passive 229.2 /10K
+- results: 2 section(s), avg sentence 19.6 words, passive 143.2 /10K
 
 ## Editor notes (manual curation)
 
