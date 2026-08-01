@@ -33,7 +33,7 @@ while (($#)); do
 done
 
 PY=.venv/bin/python
-SKILL=skills/paper-english
+SKILL=skills/nomoredasi
 TODAY=$(date +%F)
 CYCLE_LOG=logs/cycle
 DELTA_LOG=$CYCLE_LOG/$TODAY-delta.txt
@@ -78,6 +78,14 @@ if selected 0; then
         echo "cycle_delta: corpus is not a readable directory: $HOME/Documents/papers" >&2
         exit 1
     }
+    REGISTERED="$HOME/.agents/skills/nomoredasi"
+    if [[ -L "$REGISTERED" && -e "$REGISTERED/SKILL.md" ]]; then
+        echo "pre-flight: registered skill link OK ($REGISTERED)"
+    else
+        mkdir -p "$HOME/.agents/skills"
+        ln -sfn "$ROOT/$SKILL" "$REGISTERED"
+        echo "pre-flight: repaired registered skill link -> $REGISTERED"
+    fi
     echo "pre-flight: Python and papers corpus are available"
     echo "scheduler reminder: re-arm scripts/corpus-delta-scheduler.sh after any session restart"
 fi

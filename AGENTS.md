@@ -1,5 +1,7 @@
 # paper-english 프로젝트 지침
 
+프로젝트명은 paper-english, 스킬명은 **nomoredasi** (디렉터리 `skills/nomoredasi/`, 트리거 별칭 `nmd`). senpi 등록: `~/.agents/skills/nomoredasi` 심링크 — 레포가 SSOT이므로 스킬 갱신은 레포 커밋만으로 등록본에 자동 반영된다 (cycle_delta.sh Step 0가 링크를 점검·복구).
+
 Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행에 맞게 교정하는 Agent Skill을 만드는 프로젝트.
 
 ## 핵심 참조 문서
@@ -32,4 +34,4 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 버전 관리
 
-로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/paper-english/references/overlays/`, `skills/paper-english/references/abbrev-registry.json`, `skills/paper-english/references/abbrev-registry.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
+로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
