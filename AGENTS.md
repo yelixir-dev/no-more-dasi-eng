@@ -15,11 +15,15 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 주 2회 델타 분석 사이클 (1차 목표)
 
-매주 월·목 16:00 KST에 신규 PDF 델타 분석 → 오버레이/코어 개선 → git 커밋을 수행한다.
+매주 월·목 16:00 KST에 `bash scripts/cycle_delta.sh`로 다음 7단계를 실행한다.
 
-- 이 세션(상시 가동)에 인-세션 스케줄러를 monitor로 띄워 둔다.
-- **세션 재시작 등으로 스케줄러가 없으면, 이 지침을 읽은 세션이 즉시 재무장한다.** 명령은 work_logs/ 최신 로그의 "결정 6" 또는 사용자에게 문의.
-- 실행 내용: 전 주기 이후 `~/Documents/papers/`에 추가된 PDF를 분야별로 분석해 용어·연어·문체 지표를 갱신하고, 스킬 오버레이를 개선한 뒤 커밋.
+0. 프리플라이트: `.venv` Python과 코퍼스 읽기 권한을 확인하고 세션 재시작 후 스케줄러 재무장을 안내한다.
+1. 델타 인벤토리: 코퍼스 매니페스트 diff를 `logs/cycle/<date>-delta.txt`에 기록한다.
+2. 채굴: 전체 코퍼스에서 오버레이와 약어 레지스트리를 재생성한다.
+3. 검증: unittest와 golden runner가 모두 통과해야 다음 단계로 진행한다.
+4. diff 검토: references diff 통계와 레지스트리 상태 수를 `logs/cycle/<date>-diff.txt`에 기록한다.
+5. 정책 커밋: 검증 및 데이터 안전 조건이 충족되고 실제 데이터 diff가 있을 때만 허용 경로를 자동 커밋한다. diff가 없으면 no-op으로 끝낸다.
+6. 워크로그: `work_logs/<date>.html` 작성 여부를 확인하고 누락 시 작성을 안내한다.
 
 ## 작업 방식
 
@@ -28,4 +32,4 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 버전 관리
 
-로컬 git 레포 사용. 커밋은 사용자가 명시 요청한 경우에만. GitHub 원격은 추후 연결 예정.
+로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/paper-english/references/overlays/`, `skills/paper-english/references/abbrev-registry.json`, `skills/paper-english/references/abbrev-registry.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
