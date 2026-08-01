@@ -57,6 +57,30 @@ class LicenseGateTest(unittest.TestCase):
         self.assertNotIn("ZQXWSENTINEL", text)
         self.assertFalse((self.out / "Field B.md").exists(), "stale overlay for a fully-excluded field must be pruned")
 
+    def test_quarantine_moves_non_by_files(self):
+        import subprocess as sp
+        script = ROOT / "scripts" / "build_attributions.py"
+        manifest = self.dir / "manifest.json"
+        manifest.write_text(json.dumps([{
+            "Subject": "Field B", "title": "NC paper", "authors": "X",
+            "journal": "J", "publication_date": "2026-01-01",
+            "received_at": "2026-01-02", "DOI": "10.1/nc",
+            "original_url": "https://x", "relative_pdf_path": "Field B/c.txt",
+        }]))
+        scan = self.dir / "scan.json"
+        scan.write_text(json.dumps({"Field B/c.txt": "CC BY-NC-ND 4.0"}))
+        quar = self.dir / "quar"
+        r = sp.run(
+            [PY, str(script), "--manifest", str(manifest), "--scan", str(scan),
+             "--out", str(self.dir / "attrout2"), "--as-of", "2026-08-01",
+             "--corpus", str(self.corpus), "--quarantine", str(quar)],
+            capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertFalse((self.corpus / "Field B" / "c.txt").exists(), "NC file must leave the corpus")
+        self.assertTrue((quar / "Field B" / "c.txt").exists(), "NC file must land in quarantine")
+        data = json.loads((self.dir / "attrout2" / "attributions.json").read_text())
+        self.assertEqual(data["entries"][0]["status"], "quarantined")
+
     def test_attribution_entries_carry_relative_path(self):
         script = ROOT / "scripts" / "build_attributions.py"
         manifest = self.dir / "manifest.json"

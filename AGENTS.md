@@ -17,7 +17,11 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 라이선스 정책
 
-스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 채굴하지 않고 사용자에게 보고한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다. 논문별 출처·라이선스 레지스트리는 `docs/attributions.json`(SSOT) + `docs/ATTRIBUTIONS.md`(공개용) + `docs/attributions.html`(뷰)로 관리하며, `build_attributions.py`가 매 사이클 자동 재생성한다(템플릿 원본은 `docs/templates/`).
+스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 **`build_attributions.py --quarantine`이 원본을 `~/Documents/papers-quarantine/`으로 격리**하고 status를 quarantined로 기록한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다. 논문별 출처·라이선스 레지스트리는 `docs/attributions.json`(SSOT) + `docs/ATTRIBUTIONS.md`(공개용) + `docs/attributions.html`(뷰)로 관리하며, `build_attributions.py`가 매 사이클 자동 재생성한다(템플릿 원본은 `docs/templates/`).
+
+## 성숙도 점수 (readiness)
+
+`scripts/readiness.py`가 분야별 준비도 점수(0-100: 편수·단어수·연어 깊이·섹션 커버리지·용어 안정성 가중합)를 계산해 `logs/readiness.jsonl` 시계열로 기록한다. 매 사이클 Step 4에서 실행되며, 점수-편수 곡선으로 "몇 편이면 쓸만한가"를 실측 분석하는 데 쓴다 (향후 다른 언어·분야 스킬에도 재사용).
 
 ## 주 2회 델타 분석 사이클 (1차 목표)
 

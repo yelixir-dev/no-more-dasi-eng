@@ -369,13 +369,12 @@ The repository's software license does not replace, narrow, or relicense the CC 
 
 > "Prevalence and impact of bopyrid isopod infestation on mud shrimp populations in the eastern Yellow Sea" by Sungtae Kim, Chae-Lin Lee, Chul Yu, Taewon Kim & Jae-Sang Hong, *Scientific Reports* (01 A), https://doi.org/10.1038/s41598-026-63940-y. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: PDF converted to plain text; used for writing-style statistics and linguistic feature extraction (term lists, collocations, register metrics). No article text, figures, or excerpts are reproduced.
 
-## Excluded records (1)
+## Excluded records (0)
 
 Records present in the source corpus but excluded from use because the license is not CC BY 4.0 or could not be verified:
 
 | Record ID | Article | DOI | License found |
 |---|---|---|---|
-| ART-0103 | Crystalline lens geometry from a clinical OCT-based biometer in pre-cataract surgery patients | 10.1038/s41598-026-60504-y | CC BY-NC-ND 4.0 |
 
 ## 9. Reference guidance
 

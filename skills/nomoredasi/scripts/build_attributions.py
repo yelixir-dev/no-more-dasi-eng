@@ -284,6 +284,11 @@ def main():
     parser.add_argument("--scan", default=None, help="precomputed file->license json map")
     parser.add_argument("--out", default=str(repo_root / "docs"))
     parser.add_argument("--as-of", default=None)
+    parser.add_argument(
+        "--quarantine",
+        default=None,
+        help="directory: move non-CC-BY PDFs out of the corpus into QUARANTINE/<relative path>",
+    )
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -300,6 +305,21 @@ def main():
 
     as_of = args.as_of or default_as_of(corpus, manifest)
     entries = build_entries(manifest, licenses, corpus, as_of)
+
+    if args.quarantine:
+        import shutil
+        quar = Path(args.quarantine)
+        for e in entries:
+            rel = e.get("relative_pdf_path") or ""
+            if e["status"] == "active" or not rel:
+                continue
+            src = corpus / rel
+            if src.exists():
+                dst = quar / rel
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(src), str(dst))
+                e["status"] = "quarantined"
+                print(f"QUARANTINE {rel} ({e['license_name']})")
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
