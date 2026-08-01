@@ -1,46 +1,46 @@
 # Overlay: Mathematics and computing (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 34,148 words — treat stats as directional, not targets)
-Source: 3 file(s), 34,148 words
+Maturity: immature (5 files, 59,018 words — treat stats as directional, not targets)
+Source: 5 file(s), 59,018 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.4 words
-- Passive voice: 126.5 /10K words
-- First person (we): 12.3 /10K words
+- Avg sentence length: 19.1 words
+- Passive voice: 127.2 /10K words
+- First person (we): 8.1 /10K words
 
 ## Top terms
 
+- `learning` (358)
 - `graph` (286)
-- `learning` (251)
-- `framework` (222)
-- `structural` (200)
-- `link` (163)
+- `framework` (247)
+- `structural` (204)
+- `model` (198)
+- `network` (173)
+- `prediction` (169)
+- `link` (166)
 - `node` (161)
-- `prediction` (158)
-- `competitive` (153)
-- `network` (151)
-- `networks` (131)
-- `information` (120)
-- `model` (117)
-- `neural` (95)
-- `hierarchical` (91)
+- `networks` (156)
+- `competitive` (155)
+- `lung` (154)
+- `accuracy` (143)
+- `information` (138)
+- `analysis` (133)
+- `classification` (126)
+- `data` (116)
+- `neural` (114)
+- `dataset` (113)
+- `deep` (112)
+- `models` (111)
+- `segmentation` (108)
+- `efficiency` (105)
+- `score` (105)
+- `errors` (101)
+- `datasets` (94)
+- `hierarchical` (92)
+- `images` (92)
 - `community` (91)
-- `heuristic` (85)
-- `representation` (84)
-- `efficiency` (82)
-- `score` (82)
-- `power` (75)
-- `upstream` (75)
-- `agent` (74)
-- `influence` (73)
-- `construction` (73)
-- `supergraph` (72)
-- `environment` (68)
-- `state` (66)
-- `local` (65)
-- `data` (65)
-- `competitiveness` (65)
+- `resnet` (91)
 
 ## Phrase bank (term + verb)
 
@@ -48,6 +48,10 @@ Source: 3 file(s), 34,148 words
 - `learning + demonstrated` (2)
 - `denotes + observed` (2)
 - `dataset + observed` (2)
+- `vgg + achieved` (2)
+- `threshold + indicates` (2)
+- `recall + showed` (2)
+- `vgg + demonstrated` (2)
 - `capability + observed` (2)
 - `dmu + exhibits` (2)
 - `depicts + obtained` (2)
@@ -60,23 +64,22 @@ Source: 3 file(s), 34,148 words
 - `diffpool + showed` (1)
 - `diffpool + improved` (1)
 - `structural + enhanced` (1)
-- `score + obtained` (1)
-- `complex + obtained` (1)
-- `centralities + demonstrated` (1)
-- `initial + obtained` (1)
 
 ## Notation watch
 
+- x-ray: x-ray=6, x ray=0, xray=0
 - in situ: in situ=0, in-situ=1
-- et al.: et al.=10, et al=44
-- setup: setup=2, set-up=0, set up=2
+- et al.: et al.=12, et al=140
+- setup: setup=78, set-up=0, set up=2
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 23.1 words, passive 129.9 /10K
-- conclusion: 2 section(s), avg sentence 21.2 words, passive 214.1 /10K
-- introduction: 3 section(s), avg sentence 21.6 words, passive 157.6 /10K
+- abstract: 4 section(s), avg sentence 23.3 words, passive 147.1 /10K
+- conclusion: 4 section(s), avg sentence 15.1 words, passive 96.9 /10K
+- discussion: 1 section(s), avg sentence 37.4 words, passive 146.0 /10K
+- introduction: 5 section(s), avg sentence 22.0 words, passive 159.1 /10K
 - merged: results+discussion: 2 section(s), avg sentence 23.9 words, passive 64.3 /10K
+- methods: 5 section(s), avg sentence 26.3 words, passive 134.3 /10K
 
 ## Editor notes (manual curation)
 

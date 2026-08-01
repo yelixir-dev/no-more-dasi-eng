@@ -16,7 +16,7 @@ import shutil
 import subprocess
 import sys
 from collections import Counter
-from datetime import date
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -152,7 +152,7 @@ def notation_watch(text):
     return rows
 
 
-def render_overlay(field, files, failures, text, section_metrics=None):
+def render_overlay(field, files, failures, text, as_of, section_metrics=None):
     stats = field_stats(text)
     terms = top_terms(text)
     phrases = phrase_bank(text)
@@ -165,7 +165,7 @@ def render_overlay(field, files, failures, text, section_metrics=None):
         + ")"
     )
     lines = [
-        f"# Overlay: {field} (AUTO-DRAFT {date.today().isoformat()})",
+        f"# Overlay: {field} (AUTO-DRAFT {as_of})",
         "",
         maturity,
         f"Source: {len(files)} file(s), {stats['words']:,} words"
@@ -237,25 +237,41 @@ def aggregate_section_metrics(texts):
 
 
 def main():
+    references = Path(__file__).resolve().parent.parent / "references"
+    default_out = references / "overlays"
     parser = argparse.ArgumentParser(description="mine papers/ corpus into overlay drafts")
     parser.add_argument("--corpus", default=str(Path.home() / "Documents" / "papers"))
-    parser.add_argument(
-        "--out",
-        default=str(Path(__file__).resolve().parent.parent / "references" / "overlays"),
-    )
+    parser.add_argument("--out", default=str(default_out))
     parser.add_argument("--fields", default=None, help="comma-separated field names")
     parser.add_argument("--limit", type=int, default=None, help="max files per field")
-    parser.add_argument("--registry", default=str(Path(__file__).resolve().parent.parent / "references" / "abbrev-registry.json"))
+    parser.add_argument("--registry", default=None)
     parser.add_argument("--no-registry", action="store_true")
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
+    if args.registry:
+        registry_path = Path(args.registry)
+    elif out_dir.resolve() == default_out.resolve():
+        registry_path = references / "abbrev-registry.json"
+    else:
+        registry_path = out_dir.parent / "abbrev-registry.json"
 
     only = set(args.fields.split(",")) if args.fields else None
+    corpus_files = sorted(corpus.rglob("*.pdf")) + sorted(corpus.rglob("*.txt"))
+    corpus_as_of = max(
+        datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).date()
+        for path in corpus_files
+    ).isoformat()
     generated = []
-    registry = None if args.no_registry else abbrev_registry.load(args.registry)
+    registry = None if args.no_registry else abbrev_registry.load(registry_path)
+    if registry is not None:
+        registry["entries"] = [
+            entry
+            for entry in registry["entries"]
+            if entry.get("provenance", "corpus") == "manual"
+        ]
     for field_dir in sorted(p for p in corpus.iterdir() if p.is_dir()):
         field = field_dir.name
         if only and field not in only:
@@ -279,18 +295,38 @@ def main():
             print(f"SKIP {field}: no extractable text", file=sys.stderr)
             continue
         combined = "\n".join(texts)
-        overlay = render_overlay(field, files, failures, combined, aggregate_section_metrics(texts))
+        field_as_of = max(
+            datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).date()
+            for path in files
+        ).isoformat()
+        overlay = render_overlay(
+            field,
+            files,
+            failures,
+            combined,
+            field_as_of,
+            aggregate_section_metrics(texts),
+        )
         (out_dir / f"{field}.md").write_text(overlay, encoding="utf-8")
         if registry is not None:
-            abbrev_registry.scan(registry, combined, field, source="corpus")
+            abbrev_registry.scan(
+                registry,
+                combined,
+                field,
+                source="corpus",
+                as_of=corpus_as_of,
+            )
         generated.append(field)
         print(f"OK {field}: {len(files)} file(s) -> {out_dir / (field + '.md')}")
 
     if registry is not None:
-        abbrev_registry.save(args.registry, registry)
-        html_path = Path(args.registry).with_suffix(".html")
-        html_path.write_text(abbrev_registry.render_html(registry), encoding="utf-8")
-        print(f"registry: {len(registry['entries'])} entries -> {args.registry} (+ {html_path})")
+        abbrev_registry.save(registry_path, registry)
+        html_path = registry_path.with_suffix(".html")
+        html_path.write_text(
+            abbrev_registry.render_html(registry, as_of=corpus_as_of),
+            encoding="utf-8",
+        )
+        print(f"registry: {len(registry['entries'])} entries -> {registry_path} (+ {html_path})")
 
     print(f"mine_corpus: {len(generated)} overlay(s) generated")
     return 0 if generated else 1

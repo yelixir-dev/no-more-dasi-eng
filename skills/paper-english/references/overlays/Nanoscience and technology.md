@@ -1,88 +1,88 @@
 # Overlay: Nanoscience and technology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 24,102 words — treat stats as directional, not targets)
-Source: 3 file(s), 24,102 words
+Maturity: immature (5 files, 35,991 words — treat stats as directional, not targets)
+Source: 5 file(s), 35,991 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.4 words
-- Passive voice: 138.2 /10K words
-- First person (we): 10.8 /10K words
+- Avg sentence length: 16.7 words
+- Passive voice: 133.6 /10K words
+- First person (we): 14.7 /10K words
 
 ## Top terms
 
-- `model` (143)
-- `degradation` (100)
+- `model` (157)
+- `thermal` (105)
+- `degradation` (101)
 - `tio` (88)
-- `data` (75)
+- `data` (86)
+- `temperature` (70)
+- `copper` (68)
 - `photocatalytic` (67)
+- `training` (66)
+- `materials` (65)
+- `values` (62)
+- `tactile` (58)
 - `zno` (58)
-- `training` (58)
-- `values` (57)
-- `copper` (57)
-- `time` (49)
+- `time` (56)
+- `layer` (55)
+- `conductivity` (53)
+- `surface` (49)
+- `analysis` (49)
+- `sintering` (49)
+- `pressure` (48)
+- `size` (47)
+- `models` (46)
 - `braiding` (45)
+- `samples` (45)
 - `concentration` (45)
-- `models` (45)
-- `layer` (44)
-- `learning` (42)
-- `catalyst` (41)
-- `surface` (40)
-- `efficiency` (40)
-- `analysis` (40)
-- `phase` (38)
-- `topological` (37)
-- `bmlzms` (34)
-- `water` (34)
-- `org` (33)
-- `predicted` (32)
-- `size` (32)
-- `parameters` (32)
-- `plant` (32)
-- `cu-cnas` (32)
-- `error` (32)
+- `system` (44)
+- `spike` (44)
+- `learning` (44)
+- `agcumnh` (44)
+- `electrical` (42)
 
 ## Phrase bank (term + verb)
 
 - `figures + measured` (3)
+- `bulk + measured` (3)
+- `sintered + measured` (3)
+- `sintered + prepared` (3)
 - `although + achieved` (3)
-- `bulk + measured` (2)
 - `mean + indicates` (2)
 - `indicates + indicates` (2)
+- `agcumnh + prepared` (2)
+- `micrographs + prepared` (2)
+- `sample + prepared` (2)
+- `thermal + increased` (2)
+- `junction + fabricated` (2)
+- `function + fabricated` (2)
+- `power + fabricated` (2)
 - `value + calculated` (2)
 - `ann + showed` (2)
 - `multiple + demonstrated` (1)
 - `iii + increased` (1)
 - `sample + fabricated` (1)
 - `braiding + revealed` (1)
-- `sample + increased` (1)
-- `conclusion + demonstrated` (1)
-- `experimental + fabricated` (1)
-- `bmlzm + measured` (1)
-- `coupling + measured` (1)
-- `position + measured` (1)
-- `vitamin + confirmed` (1)
-- `control + revealed` (1)
-- `accelerated + increased` (1)
 
 ## Notation watch
 
-- bandgap: bandgap=4, band gap=1, band-gap=0
+- bandgap: bandgap=5, band gap=2, band-gap=0
 - x-ray: x-ray=13, x ray=0, xray=0
 - in vivo: in vivo=1, in-vivo=0
-- et al.: et al.=0, et al=81
+- et al.: et al.=0, et al=127
 - photonic crystal: photonic crystal=1, photonic-crystal=0
 - setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 23.1 words, passive 91.3 /10K
-- conclusion: 1 section(s), avg sentence 24.0 words, passive 147.1 /10K
-- discussion: 2 section(s), avg sentence 27.3 words, passive 62.9 /10K
-- introduction: 2 section(s), avg sentence 22.6 words, passive 98.4 /10K
-- merged: results+discussion: 1 section(s), avg sentence 21.6 words, passive 169.5 /10K
-- methods: 3 section(s), avg sentence 14.8 words, passive 208.8 /10K
-- results: 2 section(s), avg sentence 19.5 words, passive 120.3 /10K
+- abstract: 3 section(s), avg sentence 23.8 words, passive 84.0 /10K
+- conclusion: 2 section(s), avg sentence 24.7 words, passive 139.1 /10K
+- discussion: 3 section(s), avg sentence 25.8 words, passive 52.9 /10K
+- introduction: 3 section(s), avg sentence 22.9 words, passive 91.8 /10K
+- merged: results+discussion: 2 section(s), avg sentence 22.6 words, passive 165.5 /10K
+- methods: 5 section(s), avg sentence 15.5 words, passive 232.8 /10K
+- results: 3 section(s), avg sentence 20.0 words, passive 124.4 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,86 +1,88 @@
 # Overlay: Chemistry (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 27,264 words — treat stats as directional, not targets)
-Source: 3 file(s), 27,264 words
+Maturity: immature (5 files, 42,668 words — treat stats as directional, not targets)
+Source: 5 file(s), 42,668 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.3 words
-- Passive voice: 135.0 /10K words
-- First person (we): 4.4 /10K words
+- Avg sentence length: 16.1 words
+- Passive voice: 140.9 /10K words
+- First person (we): 7.0 /10K words
 
 ## Top terms
 
 - `leaching` (261)
-- `acid` (195)
+- `acid` (200)
 - `coal` (185)
-- `model` (136)
+- `min` (162)
+- `model` (143)
+- `lycopene` (143)
 - `gangue` (124)
 - `citric` (117)
-- `degradation` (100)
-- `efficiency` (96)
+- `cell` (107)
+- `degradation` (103)
+- `values` (101)
+- `time` (99)
+- `efficiency` (99)
+- `data` (96)
+- `analysis` (95)
+- `concentration` (94)
+- `org` (92)
 - `tio` (89)
-- `data` (75)
-- `concentration` (74)
+- `irradiation` (75)
+- `mol` (75)
+- `fluorescence` (73)
+- `photocatalytic` (69)
 - `rare` (69)
-- `time` (68)
+- `conditions` (68)
+- `bt-py-ptc` (67)
 - `roasted` (67)
-- `photocatalytic` (67)
 - `earth` (64)
-- `analysis` (62)
-- `mol` (62)
-- `surface` (61)
-- `values` (59)
+- `surface` (62)
+- `solution` (59)
 - `zno` (58)
-- `training` (58)
-- `copper` (57)
-- `elements` (50)
-- `solution` (47)
-- `min` (47)
-- `models` (45)
-- `learning` (42)
-- `range` (41)
-- `catalyst` (41)
 
 ## Phrase bank (term + verb)
 
 - `rey + increased` (6)
+- `antiproliferative + observed` (6)
+- `values + observed` (4)
 - `leaching + increased` (3)
 - `although + achieved` (3)
+- `four + exhibited` (2)
+- `increased + decreased` (2)
+- `bt-py-ptc + exhibited` (2)
 - `coal + increased` (2)
 - `leaching + obtained` (2)
+- `contrast + exhibited` (2)
 - `mean + indicates` (2)
 - `indicates + indicates` (2)
 - `value + calculated` (2)
 - `ann + showed` (2)
-- `hrey + achieved` (1)
-- `fixed + showed` (1)
-- `approximately + achieved` (1)
-- `solid + increased` (1)
-- `wang + confirmed` (1)
-- `malic + exhibited` (1)
-- `ignition + indicates` (1)
-- `x-ray + indicates` (1)
-- `microscopic + revealed` (1)
-- `coal + calculated` (1)
-- `reached + calculated` (1)
+- `contrast + showed` (2)
+- `phenotypic + showed` (2)
+- `human + showed` (2)
+- `relatively + observed` (2)
+- `docking + obtained` (2)
 
 ## Notation watch
 
 - bandgap: bandgap=2, band gap=1, band-gap=0
-- x-ray: x-ray=16, x ray=0, xray=0
-- in vivo: in vivo=1, in-vivo=0
-- et al.: et al.=0, et al=92
+- x-ray: x-ray=18, x ray=0, xray=0
+- in situ: in situ=0, in-situ=1
+- in vivo: in vivo=6, in-vivo=0
+- in vitro: in vitro=6, in-vitro=0
+- et al.: et al.=1, et al=126
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 22.4 words, passive 83.8 /10K
-- conclusion: 2 section(s), avg sentence 17.7 words, passive 118.1 /10K
-- discussion: 1 section(s), avg sentence 29.7 words, passive 48.1 /10K
-- introduction: 3 section(s), avg sentence 22.0 words, passive 109.4 /10K
-- merged: results+discussion: 2 section(s), avg sentence 21.6 words, passive 155.1 /10K
-- methods: 3 section(s), avg sentence 15.5 words, passive 217.2 /10K
-- results: 1 section(s), avg sentence 21.5 words, passive 74.7 /10K
+- abstract: 4 section(s), avg sentence 22.8 words, passive 76.7 /10K
+- conclusion: 3 section(s), avg sentence 17.1 words, passive 111.2 /10K
+- discussion: 2 section(s), avg sentence 28.9 words, passive 48.0 /10K
+- introduction: 5 section(s), avg sentence 22.8 words, passive 118.6 /10K
+- merged: results+discussion: 3 section(s), avg sentence 22.6 words, passive 166.2 /10K
+- methods: 5 section(s), avg sentence 16.5 words, passive 282.8 /10K
+- results: 2 section(s), avg sentence 20.6 words, passive 84.0 /10K
 
 ## Editor notes (manual curation)
 

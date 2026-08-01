@@ -12,7 +12,7 @@ sightings of still-undefined acronyms.
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from html import escape
 from pathlib import Path
 
@@ -43,7 +43,10 @@ def plausible_expansion(expansion):
 def load(path):
     p = Path(path)
     if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
+        data = json.loads(p.read_text(encoding="utf-8"))
+        for entry in data["entries"]:
+            entry.setdefault("provenance", "corpus")
+        return data
     return {"entries": []}
 
 
@@ -51,20 +54,47 @@ def save(path, data):
     Path(path).write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def find_entry(data, acronym, field):
-    for e in data["entries"]:
-        if e["acronym"] == acronym and e["field"] == field:
-            return e
+def find_entry(data, acronym, field, provenance):
+    for entry in data["entries"]:
+        if (
+            entry["acronym"] == acronym
+            and entry["field"] == field
+            and entry.get("provenance", "corpus") == provenance
+        ):
+            return entry
     return None
 
 
-def add_context(entry, context, source):
+def entry_date(provenance, as_of):
+    if provenance == "manual":
+        return date.today().isoformat()
+    if as_of is None:
+        raise ValueError("corpus registry updates require an as-of date")
+    return as_of
+
+
+def add_context(entry, context, source, observed_on):
     if context:
-        entry["contexts"].append({"text": context.strip(), "source": source or "", "date": date.today().isoformat()})
+        entry["contexts"].append(
+            {
+                "text": context.strip(),
+                "source": source or "",
+                "date": observed_on,
+            }
+        )
 
 
-def record(data, acronym, field, context=None, source=None):
-    entry = find_entry(data, acronym, field)
+def record(
+    data,
+    acronym,
+    field,
+    context=None,
+    source=None,
+    provenance="manual",
+    as_of=None,
+):
+    observed_on = entry_date(provenance, as_of)
+    entry = find_entry(data, acronym, field, provenance)
     if entry is None:
         entry = {
             "acronym": acronym,
@@ -73,12 +103,24 @@ def record(data, acronym, field, context=None, source=None):
             "expansion": None,
             "expansions_seen": [],
             "contexts": [],
-            "first_seen": date.today().isoformat(),
+            "first_seen": observed_on,
             "sightings": 0,
+            "provenance": provenance,
         }
-        data["entries"].append(entry)
+        if provenance == "corpus":
+            first_manual = next(
+                (
+                    index
+                    for index, existing in enumerate(data["entries"])
+                    if existing.get("provenance", "corpus") == "manual"
+                ),
+                len(data["entries"]),
+            )
+            data["entries"].insert(first_manual, entry)
+        else:
+            data["entries"].append(entry)
     entry["sightings"] += 1
-    add_context(entry, context, source)
+    add_context(entry, context, source, observed_on)
     return entry
 
 
@@ -87,11 +129,27 @@ def same_expansion(a, b):
     return na == nb or na in nb or nb in na
 
 
-def resolve(data, acronym, field, expansion, context=None, source=None):
-    entry = find_entry(data, acronym, field)
+def resolve(
+    data,
+    acronym,
+    field,
+    expansion,
+    context=None,
+    source=None,
+    provenance="manual",
+    as_of=None,
+):
+    observed_on = entry_date(provenance, as_of)
+    entry = find_entry(data, acronym, field, provenance)
     if entry is None:
-        entry = record(data, acronym, field)
-    add_context(entry, context, source)
+        entry = record(
+            data,
+            acronym,
+            field,
+            provenance=provenance,
+            as_of=as_of,
+        )
+    add_context(entry, context, source, observed_on)
     if entry["status"] == "conflict":
         return entry
     if entry["expansion"] is None:
@@ -116,17 +174,33 @@ def definition_contexts(text):
         yield abbr, m.group(2).strip(), text[start : m.end()].replace("\n", " ")[-160:]
 
 
-def scan(data, text, field, source=None):
+def scan(data, text, field, source=None, as_of=None):
     resolved, recorded = [], []
     for abbr, expansion, context in definition_contexts(text):
         if abbr in ACRONYM_STOPWORDS or abbr in ELEMENTS or not plausible_expansion(expansion):
             continue
-        resolve(data, abbr, field, expansion, context, source)
+        resolve(
+            data,
+            abbr,
+            field,
+            expansion,
+            context,
+            source,
+            provenance="corpus",
+            as_of=as_of,
+        )
         resolved.append(abbr)
     for abbr, count in find_undefined(text).items():
         if abbr in ACRONYM_STOPWORDS or abbr in ELEMENTS:
             continue
-        entry = record(data, abbr, field, source=source)
+        entry = record(
+            data,
+            abbr,
+            field,
+            source=source,
+            provenance="corpus",
+            as_of=as_of,
+        )
         entry["sightings"] += count - 1
         recorded.append(abbr)
     return resolved, recorded
@@ -158,14 +232,21 @@ HTML_HEAD = """<!DOCTYPE html>
 """
 
 
-def render_html(data):
+def render_html(data, as_of=None):
+    if as_of is None:
+        corpus_dates = [
+            entry["first_seen"]
+            for entry in data["entries"]
+            if entry.get("provenance", "corpus") == "corpus"
+        ]
+        as_of = max(corpus_dates, default=date.today().isoformat())
     by_field = {}
     for e in data["entries"]:
         by_field.setdefault(e["field"], []).append(e)
     parts = [
         HTML_HEAD,
         "<h1>Abbreviation Registry — paper-english</h1>",
-        f'<p class="meta">갱신: {date.today().isoformat()} · 항목 {len(data["entries"])}개 · '
+        f'<p class="meta">갱신: {as_of} · 항목 {len(data["entries"])}개 · '
         "미검증 약어와 같은 분야에서 관측된 전개형을 관리한다. 기계 판독 SSOT는 abbrev-registry.json.</p>",
     ]
     for field in sorted(by_field):
@@ -204,9 +285,19 @@ def main():
         print(f"recorded {acronym} [{entry['status']}] sightings={entry['sightings']}")
         return 0
     if cmd == "scan":
-        with open(sys.argv[3], encoding="utf-8") as f:
+        scan_path = Path(sys.argv[3])
+        with scan_path.open(encoding="utf-8") as f:
             text = f.read()
-        resolved, recorded = scan(data, text, opt("--field", "(unspecified)"), opt("--source"))
+        as_of = datetime.fromtimestamp(
+            scan_path.stat().st_mtime, timezone.utc
+        ).date().isoformat()
+        resolved, recorded = scan(
+            data,
+            text,
+            opt("--field", "(unspecified)"),
+            opt("--source"),
+            as_of=as_of,
+        )
         save(registry_path, data)
         print(f"scan: resolved {len(resolved)} ({', '.join(sorted(set(resolved))) or '-'}), "
               f"recorded {len(recorded)} ({', '.join(sorted(set(recorded))) or '-'})")

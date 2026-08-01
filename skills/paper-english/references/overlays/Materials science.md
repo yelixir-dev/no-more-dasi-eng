@@ -1,49 +1,54 @@
 # Overlay: Materials science (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 24,132 words — treat stats as directional, not targets)
-Source: 3 file(s), 24,132 words
+Maturity: immature (5 files, 37,712 words — treat stats as directional, not targets)
+Source: 5 file(s), 37,712 words
 
 ## Corpus stats
 
-- Avg sentence length: 18.2 words
-- Passive voice: 131.4 /10K words
-- First person (we): 2.5 /10K words
+- Avg sentence length: 18.1 words
+- Passive voice: 138.7 /10K words
+- First person (we): 2.1 /10K words
 
 ## Top terms
 
 - `fusion` (209)
-- `competitive` (140)
+- `competitive` (141)
+- `composites` (138)
+- `surface` (135)
 - `neutron` (113)
-- `data` (82)
-- `surface` (82)
+- `dielectric` (106)
+- `composite` (102)
+- `data` (101)
+- `fiber` (100)
+- `nanoparticles` (94)
+- `energy` (89)
+- `efficiency` (86)
+- `analysis` (82)
 - `code` (81)
-- `reaction` (78)
-- `efficiency` (77)
+- `reaction` (79)
 - `upstream` (75)
+- `model` (71)
 - `power` (68)
-- `model` (67)
 - `construction` (67)
+- `temperature` (66)
+- `hybrid` (65)
 - `competitiveness` (65)
-- `composite` (64)
-- `energy` (59)
+- `dimensions` (61)
+- `material` (59)
 - `nuclear` (59)
-- `dimensions` (59)
+- `values` (58)
+- `materials` (57)
+- `rice` (56)
 - `network` (56)
 - `capabilities` (55)
-- `market` (53)
-- `modeling` (52)
-- `downstream` (52)
-- `capability` (51)
-- `stage` (51)
-- `conduct-related` (50)
-- `five` (48)
-- `two-stage` (48)
-- `thermonuclear` (45)
-- `transformation` (45)
-- `spectrum` (44)
 
 ## Phrase bank (term + verb)
 
+- `nanoparticles + prepared` (3)
+- `increasing + improved` (2)
+- `composites + obtained` (2)
+- `precipitate + obtained` (2)
+- `cmc + improved` (2)
 - `capability + observed` (2)
 - `dmu + exhibits` (2)
 - `immersion + decreased` (2)
@@ -59,27 +64,24 @@ Source: 3 file(s), 24,132 words
 - `d-t + calculated` (1)
 - `isotropic + observed` (1)
 - `thermal + obtained` (1)
-- `energies + revealed` (1)
-- `only + prepared` (1)
-- `waters + demonstrated` (1)
-- `des + improved` (1)
-- `construction + exhibits` (1)
 
 ## Notation watch
 
+- bandgap: bandgap=0, band gap=4, band-gap=1
+- x-ray: x-ray=5, x ray=1, xray=0
 - in situ: in situ=0, in-situ=1
 - in vitro: in vitro=5, in-vitro=0
-- et al.: et al.=0, et al=29
+- et al.: et al.=0, et al=42
 - setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 20.1 words, passive 142.3 /10K
-- conclusion: 3 section(s), avg sentence 22.1 words, passive 183.2 /10K
-- discussion: 2 section(s), avg sentence 25.0 words, passive 144.4 /10K
-- introduction: 3 section(s), avg sentence 25.0 words, passive 138.2 /10K
-- merged: results+discussion: 1 section(s), avg sentence 24.2 words, passive 102.5 /10K
-- methods: 1 section(s), avg sentence 21.0 words, passive 486.3 /10K
+- abstract: 5 section(s), avg sentence 23.1 words, passive 110.9 /10K
+- conclusion: 4 section(s), avg sentence 22.1 words, passive 169.0 /10K
+- discussion: 3 section(s), avg sentence 24.8 words, passive 147.1 /10K
+- introduction: 5 section(s), avg sentence 23.1 words, passive 151.2 /10K
+- merged: results+discussion: 2 section(s), avg sentence 22.7 words, passive 91.5 /10K
+- methods: 2 section(s), avg sentence 22.0 words, passive 300.5 /10K
 - results: 1 section(s), avg sentence 20.9 words, passive 239.0 /10K
 
 ## Editor notes (manual curation)

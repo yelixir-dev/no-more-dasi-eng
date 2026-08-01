@@ -1,85 +1,85 @@
 # Overlay: Health care (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 15,261 words — treat stats as directional, not targets)
-Source: 3 file(s), 15,261 words
+Maturity: immature (5 files, 26,577 words — treat stats as directional, not targets)
+Source: 5 file(s), 26,577 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.2 words
-- Passive voice: 171.0 /10K words
-- First person (we): 5.2 /10K words
+- Avg sentence length: 17.9 words
+- Passive voice: 151.3 /10K words
+- First person (we): 15.1 /10K words
 
 ## Top terms
 
+- `pain` (137)
+- `group` (115)
+- `org` (114)
+- `social` (108)
+- `muscle` (105)
+- `side` (91)
 - `academic` (84)
 - `surface` (81)
-- `group` (67)
+- `loneliness` (75)
+- `health` (74)
+- `patients` (72)
+- `model` (67)
+- `groups` (65)
+- `data` (62)
 - `foot` (61)
-- `scale` (56)
+- `isolation` (61)
+- `scale` (60)
+- `medication` (55)
+- `associated` (53)
 - `modeling` (52)
+- `lumbar` (51)
+- `involved` (51)
+- `analysis` (50)
 - `students` (49)
-- `groups` (48)
-- `health` (46)
+- `clinical` (48)
+- `body` (46)
+- `risk` (45)
 - `composite` (45)
 - `stress` (45)
-- `composites` (44)
-- `independent` (39)
-- `body` (39)
-- `org` (38)
-- `values` (38)
-- `pain` (38)
-- `roughness` (36)
-- `point` (35)
-- `liquid` (33)
-- `mean` (33)
-- `thermal` (33)
-- `microhardness` (32)
-- `diabetic` (32)
-- `sustainable` (32)
-- `clinical` (31)
-- `brain` (30)
-- `ratio` (29)
-- `perceived` (29)
-- `fog` (29)
+- `values` (44)
 
 ## Phrase bank (term + verb)
 
 - `normal + increased` (5)
+- `associated + increased` (4)
+- `statistically + observed` (3)
 - `abdominal + increased` (3)
+- `loneliness + increased` (3)
+- `team + demonstrated` (2)
+- `differences + observed` (2)
 - `group + showed` (2)
 - `immersion + decreased` (2)
 - `female + demonstrated` (2)
 - `normal + achieved` (2)
-- `contrast + exhibited` (1)
-- `materials + increased` (1)
-- `total + fabricated` (1)
-- `preparation + fabricated` (1)
-- `five + prepared` (1)
-- `solution + prepared` (1)
-- `average + calculated` (1)
-- `vickers + measured` (1)
-- `test + exhibited` (1)
-- `composites + exhibited` (1)
-- `immersion + increased` (1)
-- `gly + showed` (1)
-- `phases + showed` (1)
-- `notably + exhibited` (1)
+- `levels + observed` (1)
+- `tomography + exhibits` (1)
+- `positive + observed` (1)
+- `reliability + improved` (1)
+- `patient + obtained` (1)
+- `assess + measured` (1)
+- `test + achieved` (1)
+- `psm + observed` (1)
+- `ldh + measured` (1)
 
 ## Notation watch
 
 - in vitro: in vitro=5, in-vitro=0
-- et al.: et al.=0, et al=26
+- et al.: et al.=0, et al=61
 - setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 18.2 words, passive 203.2 /10K
+- abstract: 4 section(s), avg sentence 20.0 words, passive 189.6 /10K
 - body: 1 section(s), avg sentence 18.2 words, passive 194.1 /10K
-- conclusion: 2 section(s), avg sentence 22.7 words, passive 76.5 /10K
-- discussion: 2 section(s), avg sentence 27.5 words, passive 143.9 /10K
-- introduction: 2 section(s), avg sentence 27.5 words, passive 139.9 /10K
-- methods: 2 section(s), avg sentence 21.8 words, passive 416.1 /10K
-- results: 2 section(s), avg sentence 23.7 words, passive 185.4 /10K
+- conclusion: 4 section(s), avg sentence 9.4 words, passive 34.4 /10K
+- discussion: 4 section(s), avg sentence 25.7 words, passive 146.8 /10K
+- introduction: 4 section(s), avg sentence 24.7 words, passive 115.7 /10K
+- methods: 4 section(s), avg sentence 22.7 words, passive 343.6 /10K
+- results: 4 section(s), avg sentence 23.1 words, passive 164.7 /10K
 
 ## Editor notes (manual curation)
 

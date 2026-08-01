@@ -1,46 +1,46 @@
 # Overlay: Microbiology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 35,582 words — treat stats as directional, not targets)
-Source: 3 file(s), 35,582 words
+Maturity: immature (5 files, 50,196 words — treat stats as directional, not targets)
+Source: 5 file(s), 50,196 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.2 words
-- Passive voice: 155.7 /10K words
-- First person (we): 11.5 /10K words
+- Avg sentence length: 14.1 words
+- Passive voice: 151.8 /10K words
+- First person (we): 14.5 /10K words
 
 ## Top terms
 
-- `soil` (290)
+- `soil` (294)
 - `organic` (234)
-- `microbial` (194)
+- `microbial` (195)
+- `analysis` (165)
+- `data` (163)
 - `fertilizer` (158)
-- `bacterial` (144)
-- `community` (137)
-- `analysis` (130)
+- `bacterial` (147)
+- `community` (145)
+- `cancer` (127)
 - `fungal` (124)
+- `associated` (122)
+- `dogs` (122)
+- `diversity` (116)
 - `bile` (114)
-- `diversity` (107)
 - `vancomycin` (103)
 - `tumor` (102)
-- `cancer` (94)
+- `org` (98)
 - `acids` (91)
-- `associated` (88)
-- `org` (87)
-- `acid` (86)
+- `acid` (88)
+- `leptospirosis` (88)
 - `treatments` (85)
-- `application` (83)
+- `application` (84)
 - `abundance` (80)
+- `group` (76)
 - `functional` (76)
-- `data` (71)
-- `total` (71)
-- `cells` (69)
-- `potential` (69)
-- `nitrogen` (69)
-- `cell` (68)
-- `fertilization` (68)
-- `metabolites` (65)
-- `chemical` (64)
+- `leptospira` (76)
+- `potential` (75)
+- `total` (75)
+- `cells` (74)
+- `cell` (70)
 
 ## Phrase bank (term + verb)
 
@@ -59,26 +59,28 @@ Source: 3 file(s), 35,582 words
 - `none + observed` (2)
 - `bladder + measured` (2)
 - `vein + measured` (2)
+- `expected + observed` (2)
+- `associated + increased` (2)
 - `high-quality + obtained` (2)
 - `associated + observed` (2)
 - `numerous + observed` (2)
-- `representing + obtained` (2)
-- `application + increased` (2)
 
 ## Notation watch
 
+- in situ: in situ=1, in-situ=0
 - ex situ: ex situ=1, ex-situ=0
 - in vivo: in vivo=6, in-vivo=0
 - in vitro: in vitro=2, in-vitro=0
-- et al.: et al.=0, et al=236
+- et al.: et al.=0, et al=310
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 22.5 words, passive 111.0 /10K
-- discussion: 3 section(s), avg sentence 24.0 words, passive 95.6 /10K
-- introduction: 3 section(s), avg sentence 26.3 words, passive 78.6 /10K
-- methods: 5 section(s), avg sentence 16.8 words, passive 252.0 /10K
-- results: 4 section(s), avg sentence 19.5 words, passive 150.7 /10K
+- abstract: 5 section(s), avg sentence 20.0 words, passive 157.0 /10K
+- conclusion: 1 section(s), avg sentence 16.0 words, passive 0.0 /10K
+- discussion: 5 section(s), avg sentence 21.4 words, passive 93.2 /10K
+- introduction: 5 section(s), avg sentence 25.1 words, passive 98.5 /10K
+- methods: 9 section(s), avg sentence 17.5 words, passive 280.0 /10K
+- results: 6 section(s), avg sentence 17.6 words, passive 149.6 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,49 +1,52 @@
 # Overlay: Optics and photonics (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 19,942 words — treat stats as directional, not targets)
-Source: 3 file(s), 19,942 words
+Maturity: immature (5 files, 36,288 words — treat stats as directional, not targets)
+Source: 5 file(s), 36,288 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.6 words
-- Passive voice: 140.9 /10K words
+- Avg sentence length: 15.3 words
+- Passive voice: 129.2 /10K words
 - First person (we): 25.6 /10K words
 
 ## Top terms
 
-- `optical` (207)
-- `data` (80)
-- `signal` (79)
-- `computing` (70)
-- `light` (68)
-- `energy` (65)
-- `excitation` (64)
+- `optical` (281)
+- `light` (179)
+- `coding` (133)
+- `computing` (124)
+- `microwave` (111)
+- `data` (102)
+- `signal` (98)
+- `reservoir` (94)
+- `bipolar` (92)
+- `energy` (90)
+- `parallel` (90)
+- `power` (83)
+- `response` (72)
+- `processing` (71)
+- `nat` (70)
+- `excitation` (69)
+- `system` (69)
+- `state` (68)
+- `frequency` (67)
+- `wavelength` (62)
 - `broadcasting` (61)
-- `wavelength` (57)
-- `power` (56)
-- `number` (53)
-- `analog` (51)
-- `nat` (50)
-- `convolution` (49)
-- `emission` (47)
-- `resonances` (47)
-- `computational` (46)
-- `soliton` (46)
-- `photonics` (44)
-- `channels` (41)
-- `core` (40)
-- `red` (39)
-- `processing` (39)
-- `pumping` (37)
-- `nays` (37)
-- `speed` (36)
-- `system` (36)
-- `resonator` (36)
-- `laser` (35)
-- `parallel` (35)
+- `cortisol` (61)
+- `systems` (58)
+- `number` (57)
+- `red` (56)
+- `computational` (56)
+- `time` (55)
+- `optoelectronic` (53)
+- `analog` (53)
+- `device` (51)
 
 ## Phrase bank (term + verb)
 
+- `light + measured` (2)
+- `vis + obtained` (2)
+- `spatial + indicates` (2)
 - `emissions + enhanced` (1)
 - `target + demonstrated` (1)
 - `gas + exhibited` (1)
@@ -61,26 +64,25 @@ Source: 3 file(s), 19,942 words
 - `multiband + observed` (1)
 - `produces + confirmed` (1)
 - `negligible + observed` (1)
-- `risks + exhibits` (1)
-- `cell + exhibits` (1)
-- `normalized + achieved` (1)
 
 ## Notation watch
 
 - bandgap: bandgap=1, band gap=1, band-gap=2
-- x-ray: x-ray=2, x ray=0, xray=0
-- in situ: in situ=1, in-situ=0
+- thin film: thin film=3, thin-film=1, thinfilm=0
+- x-ray: x-ray=6, x ray=0, xray=0
+- in situ: in situ=4, in-situ=3
 - in vivo: in vivo=2, in-vivo=0
-- et al.: et al.=0, et al=124
-- setup: setup=9, set-up=0, set up=0
+- et al.: et al.=0, et al=200
+- setup: setup=12, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 24.8 words, passive 0.0 /10K
-- discussion: 1 section(s), avg sentence 21.3 words, passive 268.5 /10K
-- introduction: 3 section(s), avg sentence 25.2 words, passive 50.4 /10K
-- methods: 2 section(s), avg sentence 24.3 words, passive 349.9 /10K
-- results: 3 section(s), avg sentence 20.4 words, passive 187.5 /10K
+- abstract: 2 section(s), avg sentence 22.9 words, passive 33.6 /10K
+- conclusion: 1 section(s), avg sentence 19.9 words, passive 125.5 /10K
+- discussion: 3 section(s), avg sentence 21.9 words, passive 93.9 /10K
+- introduction: 5 section(s), avg sentence 24.7 words, passive 68.8 /10K
+- methods: 4 section(s), avg sentence 19.5 words, passive 326.7 /10K
+- results: 5 section(s), avg sentence 19.8 words, passive 153.9 /10K
 
 ## Editor notes (manual curation)
 

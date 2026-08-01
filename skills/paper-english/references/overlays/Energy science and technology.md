@@ -1,46 +1,46 @@
 # Overlay: Energy science and technology (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 23,699 words — treat stats as directional, not targets)
-Source: 3 file(s), 23,699 words
+Maturity: immature (5 files, 44,129 words — treat stats as directional, not targets)
+Source: 5 file(s), 44,129 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.3 words
-- Passive voice: 132.1 /10K words
-- First person (we): 10.1 /10K words
+- Avg sentence length: 18.0 words
+- Passive voice: 129.6 /10K words
+- First person (we): 6.6 /10K words
 
 ## Top terms
 
+- `fracture` (265)
+- `power` (260)
 - `leaching` (260)
 - `coal` (184)
 - `acid` (178)
-- `surface` (143)
+- `water` (167)
+- `production` (146)
+- `surface` (144)
+- `energy` (138)
 - `gangue` (124)
-- `energy` (121)
+- `gas` (120)
+- `system` (120)
 - `citric` (117)
-- `power` (115)
+- `matrix` (114)
+- `formation` (113)
+- `oil` (110)
+- `layer` (106)
+- `harmonic` (106)
+- `control` (105)
+- `sharing` (102)
+- `permeability` (100)
+- `analysis` (98)
 - `hydropower` (98)
-- `output` (95)
-- `generation` (94)
+- `pressure` (98)
+- `generation` (97)
+- `output` (97)
+- `distributed` (91)
+- `reactive` (90)
 - `photovoltaic` (87)
-- `system` (77)
-- `analysis` (74)
-- `rare` (70)
-- `roasted` (67)
-- `efficiency` (64)
-- `earth` (64)
-- `pumped-storage` (59)
-- `mol` (58)
-- `materials` (52)
-- `solar` (52)
-- `hybrid` (51)
-- `decomposition` (49)
-- `elements` (47)
-- `atomic` (46)
-- `reaction` (44)
-- `conditions` (43)
-- `solid` (43)
-- `complementary` (43)
+- `model` (86)
 
 ## Phrase bank (term + verb)
 
@@ -68,17 +68,18 @@ Source: 3 file(s), 23,699 words
 ## Notation watch
 
 - x-ray: x-ray=9, x ray=0, xray=0
-- in situ: in situ=1, in-situ=0
+- in situ: in situ=1, in-situ=1
 - ex situ: ex situ=0, ex-situ=1
-- et al.: et al.=1, et al=91
+- et al.: et al.=1, et al=112
+- setup: setup=4, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 3 section(s), avg sentence 25.0 words, passive 71.4 /10K
-- conclusion: 2 section(s), avg sentence 18.7 words, passive 72.3 /10K
-- introduction: 3 section(s), avg sentence 24.8 words, passive 164.0 /10K
-- merged: results+discussion: 2 section(s), avg sentence 21.6 words, passive 121.1 /10K
-- methods: 2 section(s), avg sentence 20.6 words, passive 381.7 /10K
+- abstract: 4 section(s), avg sentence 25.0 words, passive 75.7 /10K
+- conclusion: 4 section(s), avg sentence 13.3 words, passive 112.9 /10K
+- introduction: 5 section(s), avg sentence 22.3 words, passive 161.7 /10K
+- merged: results+discussion: 3 section(s), avg sentence 23.4 words, passive 107.5 /10K
+- methods: 3 section(s), avg sentence 23.6 words, passive 294.8 /10K
 
 ## Editor notes (manual curation)
 

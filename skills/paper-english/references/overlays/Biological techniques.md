@@ -1,46 +1,46 @@
 # Overlay: Biological techniques (AUTO-DRAFT 2026-08-01)
 
-Maturity: immature (3 files, 23,734 words — treat stats as directional, not targets)
-Source: 3 file(s), 23,734 words
+Maturity: immature (5 files, 35,172 words — treat stats as directional, not targets)
+Source: 5 file(s), 35,172 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.5 words
-- Passive voice: 198.9 /10K words
-- First person (we): 42.1 /10K words
+- Avg sentence length: 16.8 words
+- Passive voice: 179.1 /10K words
+- First person (we): 29.9 /10K words
 
 ## Top terms
 
 - `epithelia` (121)
+- `microwave` (109)
+- `activity` (96)
 - `tyr` (92)
-- `cells` (87)
+- `cells` (90)
 - `nasal` (86)
 - `hps` (84)
-- `growth` (75)
-- `activity` (67)
-- `org` (65)
+- `antioxidant` (78)
+- `growth` (78)
+- `concentration` (77)
+- `org` (76)
+- `extraction` (70)
+- `essential` (68)
 - `mouse` (65)
-- `essential` (60)
+- `compounds` (63)
+- `cortisol` (61)
+- `analysis` (60)
+- `cell` (60)
+- `differentiation` (60)
 - `cassia` (59)
-- `cell` (57)
-- `oil` (55)
+- `oil` (58)
+- `oils` (55)
 - `eos` (53)
-- `oils` (49)
+- `chemical` (52)
+- `optical` (52)
+- `conditions` (51)
+- `antibacterial` (50)
 - `laevis` (49)
-- `differentiation` (46)
-- `xenopus` (45)
-- `slc` (45)
-- `bark` (44)
-- `primary` (42)
-- `apical` (41)
-- `extraction` (40)
-- `antioxidant` (39)
-- `cas` (38)
-- `analysis` (37)
-- `concentration` (37)
-- `epithelial` (37)
-- `medium` (34)
-- `days` (34)
+- `activities` (48)
+- `acid` (46)
 
 ## Phrase bank (term + verb)
 
@@ -52,35 +52,36 @@ Source: 3 file(s), 23,734 words
 - `mean + calculated` (2)
 - `mixture + measured` (2)
 - `eos + exhibited` (2)
+- `vis + obtained` (2)
+- `contrast + exhibited` (2)
+- `spatial + indicates` (2)
 - `iridescent + increased` (2)
 - `conditions + obtained` (2)
+- `minutes + measured` (2)
 - `teer + increased` (2)
 - `mouse + observed` (2)
 - `mucus + observed` (2)
 - `epithelia + observed` (2)
 - `cmpared + obtained` (1)
 - `chromatography-mass + obtained` (1)
-- `antioxidant + demonstrated` (1)
-- `industries + confirmed` (1)
-- `strains + increased` (1)
-- `modified + improved` (1)
 
 ## Notation watch
 
 - in situ: in situ=1, in-situ=0
 - in vivo: in vivo=13, in-vivo=0
-- in vitro: in vitro=16, in-vitro=0
-- et al.: et al.=0, et al=68
+- in vitro: in vitro=17, in-vitro=0
+- et al.: et al.=0, et al=99
+- setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 17.4 words, passive 28.8 /10K
-- conclusion: 1 section(s), avg sentence 24.3 words, passive 68.5 /10K
-- discussion: 2 section(s), avg sentence 20.0 words, passive 306.2 /10K
-- introduction: 2 section(s), avg sentence 22.2 words, passive 128.6 /10K
-- merged: results+discussion: 1 section(s), avg sentence 19.1 words, passive 148.6 /10K
-- methods: 1 section(s), avg sentence 18.3 words, passive 441.0 /10K
-- results: 2 section(s), avg sentence 19.6 words, passive 155.1 /10K
+- abstract: 4 section(s), avg sentence 18.1 words, passive 42.5 /10K
+- conclusion: 3 section(s), avg sentence 23.1 words, passive 105.4 /10K
+- discussion: 3 section(s), avg sentence 20.3 words, passive 259.0 /10K
+- introduction: 4 section(s), avg sentence 23.0 words, passive 140.7 /10K
+- merged: results+discussion: 2 section(s), avg sentence 21.0 words, passive 108.9 /10K
+- methods: 3 section(s), avg sentence 20.2 words, passive 394.8 /10K
+- results: 3 section(s), avg sentence 19.1 words, passive 129.7 /10K
 
 ## Editor notes (manual curation)
 
