@@ -68,6 +68,31 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("Field A", r.stdout)
         self.assertIn("score", r.stdout.lower())
 
+    def test_html_render_with_chart(self):
+        self.assertEqual(self.run_readiness().returncode, 0)
+        self.assertEqual(self.run_readiness().returncode, 0)
+        html_path = self.dir / "readiness.html"
+        r = subprocess.run(
+            [PY, str(ROOT / "scripts" / "readiness.py"),
+             "--corpus", str(self.corpus), "--history", str(self.history),
+             "--html", str(html_path)],
+            capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        html = html_path.read_text(encoding="utf-8")
+        self.assertIn("<svg", html)
+        self.assertIn("<polyline", html)
+        self.assertIn("Field A", html)
+        self.assertIn("score", html.lower())
+        self.assertIn("papers", html.lower())
+        first = html_path.read_bytes()
+        r2 = subprocess.run(
+            [PY, str(ROOT / "scripts" / "readiness.py"),
+             "--corpus", str(self.corpus), "--history", str(self.history),
+             "--html", str(html_path)],
+            capture_output=True, text=True)
+        self.assertEqual(r2.returncode, 0)
+        self.assertEqual(first, html_path.read_bytes(), "render must be deterministic for the same history")
+
 
 if __name__ == "__main__":
     unittest.main()

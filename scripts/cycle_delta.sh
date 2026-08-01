@@ -46,6 +46,7 @@ DATA_PATHS=(
     "docs/ATTRIBUTIONS.md"
     "docs/attributions.json"
     "docs/attributions.html"
+    "docs/readiness.html"
     "logs"
 )
 VERIFY_GREEN=0
@@ -133,7 +134,7 @@ for status in sorted(counts):
     print(f"registry status {status}: {counts[status]}")
 PY
     } | tee "$DIFF_LOG"
-    "$PY" "$SKILL/scripts/readiness.py" | tee -a "$DIFF_LOG"
+    "$PY" "$SKILL/scripts/readiness.py" --html docs/readiness.html | tee -a "$DIFF_LOG"
 fi
 
 if selected 5; then
