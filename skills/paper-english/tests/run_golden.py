@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Golden-case runner: for every tests/golden/<field>/ case,
-verify_integrity(input, expected) must PASS (exit 0) and
-verify_integrity(input, expected_failure) must FAIL (exit 1).
+verify_integrity(input, expected) must PASS (exit 0),
+verify_integrity(input, expected_failure) must FAIL (exit 1), and
+bench_edit(input, expected) must PASS (exit 0).
 """
 
 import subprocess
@@ -11,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GOLDEN = ROOT / "tests" / "golden"
 VERIFY = ROOT / "scripts" / "verify_integrity.py"
+BENCH = ROOT / "scripts" / "bench_edit.py"
 
 
 def main():
@@ -31,8 +33,14 @@ def main():
             failures.append(f"{case.name}: expected pair FAILED to pass\n{r_ok.stdout}{r_ok.stderr}")
         if r_bad.returncode != 1:
             failures.append(f"{case.name}: expected_failure pair did NOT fail\n{r_bad.stdout}{r_bad.stderr}")
-        status = "OK" if r_ok.returncode == 0 and r_bad.returncode == 1 else "FAIL"
-        print(f"{status} {case.name}")
+        r_bench = subprocess.run(
+            [sys.executable, str(BENCH), str(inp), str(exp)], capture_output=True, text=True
+        )
+        if r_bench.returncode != 0:
+            failures.append(f"{case.name}: bench regression\n{r_bench.stdout}{r_bench.stderr}")
+        bench_status = "OK" if r_bench.returncode == 0 else "FAIL"
+        status = "OK" if r_ok.returncode == 0 and r_bad.returncode == 1 and r_bench.returncode == 0 else "FAIL"
+        print(f"{status} {case.name} (bench {bench_status})")
     if failures:
         print("\n".join(failures))
         print(f"run_golden: {len(failures)} failure(s) across {len(cases)} case(s)")
