@@ -42240,6 +42240,950 @@
    "provenance": "corpus"
   },
   {
+   "acronym": "EDL",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "electrical double layer",
+   "expansions_seen": [
+    "electrical double layer",
+    "electric double layer"
+   ],
+   "contexts": [
+    {
+     "text": "ical reactions and device operation1–3. At the electrode/electrolyte interface, the electrical double layer (EDL)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "d (CPM), as shown in Fig. 2a. The simulation explicitly captures the potential- dependent restructuring of the electrical double layer (EDL)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "y in NaOH, correlating with hydration radii (Li+ (~3.82 Å) > Na+ (~2.76 Å) and  associated electric double layer (EDL)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SEI",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "solid electrolyte interphase",
+   "expansions_seen": [
+    "solid electrolyte interphase"
+   ],
+   "contexts": [
+    {
+     "text": "duction reac- tions that ultimately govern the formation and composition of the solid electrolyte interphase (SEI)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "LIBs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "lithium-ion batteries",
+   "expansions_seen": [
+    "lithium-ion batteries"
+   ],
+   "contexts": [
+    {
+     "text": "govern the formation and composition of the solid electrolyte interphase (SEI) in lithium-ion batteries (LIBs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AI4EC",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "AI for Electrochemistry",
+   "expansions_seen": [
+    "AI for Electrochemistry"
+   ],
+   "contexts": [
+    {
+     "text": "f Chemistry and Chemical Engineering, Xiamen University, Xiamen 361005, China. 2Laboratory of AI for Electrochemistry (AI4EC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SSIPs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "solvent-separated ion pairs",
+   "expansions_seen": [
+    "solvent-separated ion pairs"
+   ],
+   "contexts": [
+    {
+     "text": "solvents, and cations gives rise to three distinct cation solvation structures: solvent-separated ion pairs (SSIPs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CIPs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "contact ion pairs",
+   "expansions_seen": [
+    "contact ion pairs"
+   ],
+   "contexts": [
+    {
+     "text": "hree distinct cation solvation structures: solvent-separated ion pairs (SSIPs), contact ion pairs (CIPs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AGGs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "aggregates",
+   "expansions_seen": [
+    "aggregates"
+   ],
+   "contexts": [
+    {
+     "text": "structures: solvent-separated ion pairs (SSIPs), contact ion pairs (CIPs), and aggregates (AGGs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AIMD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "and ab initio molecular dynamics",
+   "expansions_seen": [
+    "and ab initio molecular dynamics"
+   ],
+   "contexts": [
+    {
+     "text": "ves to predict electrolyte performance25–27. Classical molecular dynamics (CMD) and ab initio molecular dynamics (AIMD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CPM",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Constant Potential Method",
+   "expansions_seen": [
+    "Constant Potential Method"
+   ],
+   "contexts": [
+    {
+     "text": "u spectro- scopic characterization with molecular dynamics simulations based on the Constant Potential Method (CPM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "l structure and corroborate the experimental inferences, we performed molecular dynamics simulations using the Constant Potential Method (CPM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EIS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "electrochemical impedance spectroscopy",
+   "expansions_seen": [
+    "electrochemical impedance spectroscopy"
+   ],
+   "contexts": [
+    {
+     "text": "ome signiﬁcant. The differential capacitance was measured using real-time, non- invasive electrochemical impedance spectroscopy (EIS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "s ~600 µL, and all reported potentials were referenced to the Li⁺/Li electrode. Electrochemical impedance spectroscopy (EIS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "tion (CHI 660e) was used to characterize  ARTICLE IN PRESS ARTICLE IN PRESS     the electrochemical impedance spectroscopy (EIS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "Cad",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "capacitance",
+   "expansions_seen": [
+    "capacitance"
+   ],
+   "contexts": [
+    {
+     "text": "potentials for different electrolyte concentrations (Supplementary Figs. 2–6). The adsorption capacitance (Cad)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "Cdl",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "capacitance",
+   "expansions_seen": [
+    "capacitance"
+   ],
+   "contexts": [
+    {
+     "text": "Supplementary Figs. 2–6). The adsorption capacitance (Cad) and the double-layer capacitance (Cdl)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CV",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Cyclic voltammetry",
+   "expansions_seen": [
+    "Cyclic voltammetry"
+   ],
+   "contexts": [
+    {
+     "text": "de to tetraglyme) with a diluted counterpart, [Li(G4)3][FSI] (1:3 molar ratio). Cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "Cu-O-Mn bond formation and lattice strain,  in agreement with the XRD analysis. Cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "m in diameter, SGC-certified, GDMS- tested) and dried under ambient conditions. The working electrode for cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "phate solution (pH = 5.8) at room  temperature using an H-type cell at 800 rpm. By comparing the cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "g that the reaction kinetics are controlled by an  electron transfer process.38 Cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "vatives.  ARTICLE IN PRESS ARTICLE IN PRESS     Methods  Materials preparation  A CV-Ag electrode was obtained via cyclic voltammetry (CV)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PZC",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "potential of zero charge",
+   "expansions_seen": [
+    "potential of zero charge",
+    "point of zero charge"
+   ],
+   "contexts": [
+    {
+     "text": "nalysis of the cation solvation structure will be presented in a later section. The potential of zero charge (PZC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "re, for the purpose of investigating the effect of pH on the  photodegradation, we need to calculate the point of zero charge (PZC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ntative snapshots from the simulation at −1.0 V, 0 V and +1.0 V relative to the PZC (bottom row)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ntative snapshots from the simulation at −1.0 V, 0 V and +1.0 V relative to the PZC (bottom row)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HOPG",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "highly oriented pyrolytic graphite",
+   "expansions_seen": [
+    "highly oriented pyrolytic graphite"
+   ],
+   "contexts": [
+    {
+     "text": "c, d Nyquist plots of Li(G4)FSI (c) and Li(G4)3FSI (d) at different potentials. e Cad-E curves of highly oriented pyrolytic graphite (HOPG)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AFM",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "atomic force microscopy",
+   "expansions_seen": [
+    "atomic force microscopy"
+   ],
+   "contexts": [
+    {
+     "text": "To elucidate the impact of concentration variations on Li+ solvation structure, we employed in situ atomic force microscopy (AFM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "Figure 1. Transmission electron microscopy (TEM) and atomic force microscopy (AFM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SERS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Surface-enhanced Raman spectroscopy",
+   "expansions_seen": [
+    "Surface-enhanced Raman spectroscopy"
+   ],
+   "contexts": [
+    {
+     "text": "nt and provided direct evidence of potential-dependent interfacial structuring. Surface-enhanced Raman spectroscopy (SERS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "transfer pathways.21-23 As a result, we herein employ in situ surface-enhanced  Raman spectroscopy (SERS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HCEs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "High-concentration electrolytes",
+   "expansions_seen": [
+    "High-concentration electrolytes"
+   ],
+   "contexts": [
+    {
+     "text": "(Sup- plementary Fig. 20). Aggregated anionic structures in the Non-GCS Regime High-concentration electrolytes (HCEs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MLMD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "machine learning molecular dynamics",
+   "expansions_seen": [
+    "machine learning molecular dynamics"
+   ],
+   "contexts": [
+    {
+     "text": "ss and transport kinetics. To investigate these effects at the molecular scale, we used machine learning molecular dynamics (MLMD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "functions and coordination numbers of [Li(G4)][FSI] (c) and [Li(G4)3][FSI] (d) from machine learning molecular dynamics (MLMD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HCE",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "highly concentrated electrolyte",
+   "expansions_seen": [
+    "highly concentrated electrolyte"
+   ],
+   "contexts": [
+    {
+     "text": "ransfer process in electrolytes with different concentrations. Left: Purple, in the highly concentrated electrolyte (HCE)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CGC",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "capacitance",
+   "expansions_seen": [
+    "capacitance"
+   ],
+   "contexts": [
+    {
+     "text": "ransition from the non-GCS regime to the classical GCS regime through the rela- tionship between the diffuse-layer capacitance (CGC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CMD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Classical Molecular Dynamics",
+   "expansions_seen": [
+    "Classical Molecular Dynamics"
+   ],
+   "contexts": [
+    {
+     "text": "ectrochemical mea- surements were carried out at 298 ± 1 K. Calculation methods Classical Molecular Dynamics (CMD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ERC",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "European Research Council",
+   "expansions_seen": [
+    "European Research Council"
+   ],
+   "contexts": [
+    {
+     "text": "by the National Natural Science Foundation of China (Grant No. 22225302). J.H. is supported by the European Research Council (ERC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HAADF",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "high-angle annular dark field",
+   "expansions_seen": [
+    "high-angle annular dark field",
+    "high angle annular dark field"
+   ],
+   "contexts": [
+    {
+     "text": "i-δ-MnO2 reaching ~650 F g-1 even at a high specific current of 70 A g-1.24-26  From high-angle annular dark field (HAADF)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "anning transmission electron microscopy (STEM) analysis is around 28 mrad. The  collection angle for high angle annular dark field (HAADF)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SAED",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "selected area electron diffraction",
+   "expansions_seen": [
+    "selected area electron diffraction"
+   ],
+   "contexts": [
+    {
+     "text": "specific current of 70 A g-1.24-26  From high-angle annular dark field (HAADF), selected area electron diffraction (SAED)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "in 1.5 mL centrifuge tubes for Raman and CV tests.  Materials characterization  Selected area electron diffraction (SAED)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DFT",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "density functional theory",
+   "expansions_seen": [
+    "density functional theory"
+   ],
+   "contexts": [
+    {
+     "text": "+ pre-insertion (Fig. 1c-e and Supplementary Figs. 1-2; a trend also predicted  in density functional theory (DFT)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ns and electronic structure calculations were carried out using spin-polarized  density functional theory (DFT)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ble in acidic solutions (Supplementary Fig. 2  and Supplementary Note 2). Thus, density functional theory (DFT)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "roduct. The product was detected via 1H NMR.  Computational models and methods  All density functional theory (DFT)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "rsors that distinct from previous photocatalyst required reports. In addition,  we have conducted detailed density functional theory (DFT)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ABF",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Annular bright field",
+   "expansions_seen": [
+    "Annular bright field"
+   ],
+   "contexts": [
+    {
+     "text": "acing decreasing from 0.72 to 0.64 nm upon  complete cation exchange, Fig. 1f). Annular bright field (ABF)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "around 28 mrad. The  collection angle for high angle annular dark field (HAADF) imaging and annular bright field (ABF)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XRD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "X-ray diffraction",
+   "expansions_seen": [
+    "X-ray diffraction"
+   ],
+   "contexts": [
+    {
+     "text": "show a uniform elemental  distribution and partial substitution of K+ by Cu2+. X-ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "measured spectra. Data analysis was performed using Thermo Avantage  software. X-ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "h indicates that this coal gangue  contains a certain amount of organic matter. X-ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "t% whereas Cu-Cys had a  larger content of 72 wt% (Supplementary Figure 2).     X-Ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "supported on CeO2 were characterized  using various physicochemical techniques. X-ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ructure and phase composition of the CeO2-supported catalysts calcined at 600  °C were investigated by X-ray diffraction (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": ". In order to investigate the  crystal structure of the obtained nanoparticles, X-ray diffraction analysis (XRD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XPS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "X-ray photoelectron spectroscopy",
+   "expansions_seen": [
+    "X-ray photoelectron spectroscopy"
+   ],
+   "contexts": [
+    {
+     "text": "lieved to contribute to reduced lattice strain during  electrochemical cycling. X-ray photoelectron spectroscopy (XPS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "imaging and annular bright field (ABF)  imaging is 90-250 mrad and 11-22 mrad. X-ray photoelectron spectroscopy (XPS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "nd surface chemical states of CV-Ag were confirmed via X-ray diffraction  (XRD) and X-ray photoelectron spectroscopy (XPS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "(B).  Powder X-ray diffraction (PXRD) patterns for Cu-Cys (G) and  Cu-CNAs (C). X-Ray Photoelectron spectroscopy (XPS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "GCD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Galvanostatic charge-discharge",
+   "expansions_seen": [
+    "Galvanostatic charge-discharge"
+   ],
+   "contexts": [
+    {
+     "text": "nOOH + OH-, mediated by confined water molecules within the layered  structure. Galvanostatic charge-discharge (GCD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "king electrode for cyclic voltammetry (CV) contained  only the active material, whereas that for galvanostatic charge-discharge (GCD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PCET",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "proton-coupled electron transfer",
+   "expansions_seen": [
+    "proton-coupled electron transfer"
+   ],
+   "contexts": [
+    {
+     "text": "r, indicative of improved reaction kinetics (Figs. 3c,d). CV and in situ Raman  spectroscopy reveal a proton-coupled electron transfer (PCET)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NPs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "nm Au nanoparticles",
+   "expansions_seen": [
+    "nm Au nanoparticles"
+   ],
+   "contexts": [
+    {
+     "text": "bsequent steps followed the same procedure as  described above.  Synthesis of 55nm Au nanoparticles (NPs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SDDs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "silicon drift detectors",
+   "expansions_seen": [
+    "silicon drift detectors"
+   ],
+   "contexts": [
+    {
+     "text": "e probe corrected ARM 200CF, which is operated at 200 keV. This microscope was  equipped with dual silicon drift detectors (SDDs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EDS",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "energy-dispersive spectroscopy",
+   "expansions_seen": [
+    "energy-dispersive spectroscopy",
+    "energy-dispersive X-ray spectroscopy"
+   ],
+   "contexts": [
+    {
+     "text": "SDD, the area is 100 mm2 and the total  ARTICLE IN PRESS ARTICLE IN PRESS       collection solid angle for energy-dispersive spectroscopy (EDS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ere examined using scanning electron microscopy (SEM, FEI Quanta 400) equipped  with energy-dispersive X-ray spectroscopy (EDS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": ".2 Metal mapping of CeO2 supported catalysts Scanning Electron Microscopy (SEM) coupled with Energy Dispersive X-ray Spectroscopy (EDS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "STEM",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "scanning transmission electron microscopy",
+   "expansions_seen": [
+    "scanning transmission electron microscopy"
+   ],
+   "contexts": [
+    {
+     "text": "e for energy-dispersive spectroscopy (EDS) acquisition is around 1.5 sr. The  convergence angle for scanning transmission electron microscopy (STEM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RENISHAW",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Raman system",
+   "expansions_seen": [
+    "Raman system"
+   ],
+   "contexts": [
+    {
+     "text": "nalysis was carried out using a Smartlab 3kW Gen2 system. In situ  Raman spectroscopy was carried out with a confocal microscope Raman system (RENISHAW)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "level visualization. Electrochemical Raman measurements were performed using a  confocal microscope Raman system (RENISHAW)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RHE",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "reversible hydrogen electrode",
+   "expansions_seen": [
+    "reversible hydrogen electrode"
+   ],
+   "contexts": [
+    {
+     "text": "µg by controlling the suspension concentration. All potentials were referenced  to the reversible hydrogen electrode (RHE)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ICP",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "inductively coupled plasma",
+   "expansions_seen": [
+    "inductively coupled plasma"
+   ],
+   "contexts": [
+    {
+     "text": "tuting K+ with Cu2+, in approximate  accordance with the K+/Cu2+ ratio of 1:0.8 determined from inductively coupled plasma (ICP)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "VASP",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Vienna Ab Initio Simulation Package",
+   "expansions_seen": [
+    "Vienna Ab Initio Simulation Package"
+   ],
+   "contexts": [
+    {
+     "text": "ulations were carried out using spin-polarized  density functional theory (DFT) as implemented in the Vienna Ab Initio Simulation Package (VASP)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PAW",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "projector augmented-wave",
+   "expansions_seen": [
+    "projector augmented-wave"
+   ],
+   "contexts": [
+    {
+     "text": "(DFT) as implemented in the Vienna Ab Initio Simulation Package (VASP).31 The  projector augmented-wave (PAW)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
    "acronym": "FE",
    "field": "Chemistry",
    "status": "verified",
@@ -42279,65 +43223,6 @@
    "contexts": [
     {
      "text": "rosobenzene (Ph-NO), the condensation of Ph-NO with Ph- NHOH into azoxybenzene, and the hydrogen evolution reaction (HER)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "DFT",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "density functional theory",
-   "expansions_seen": [
-    "density functional theory"
-   ],
-   "contexts": [
-    {
-     "text": "ble in acidic solutions (Supplementary Fig. 2  and Supplementary Note 2). Thus, density functional theory (DFT)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "roduct. The product was detected via 1H NMR.  Computational models and methods  All density functional theory (DFT)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "rsors that distinct from previous photocatalyst required reports. In addition,  we have conducted detailed density functional theory (DFT)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "CV",
-   "field": "Chemistry",
-   "status": "conflict",
-   "expansion": "comparing the cyclic voltammetry",
-   "expansions_seen": [
-    "comparing the cyclic voltammetry",
-    "CV-Ag electrode was obtained via cyclic voltammetry"
-   ],
-   "contexts": [
-    {
-     "text": "phate solution (pH = 5.8) at room  temperature using an H-type cell at 800 rpm. By comparing the cyclic voltammetry (CV)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "g that the reaction kinetics are controlled by an  electron transfer process.38 Cyclic voltammetry (CV)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "vatives.  ARTICLE IN PRESS ARTICLE IN PRESS     Methods  Materials preparation  A CV-Ag electrode was obtained via cyclic voltammetry (CV)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -42400,30 +43285,6 @@
    "contexts": [
     {
      "text": "nanoparticles averaging 68 nm in diameter (Fig. 4a and Supplementary  Fig. 17). High-resolution transmission electron microscopy (HRTEM)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "XPS",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "X-ray photoelectron spectroscopy",
-   "expansions_seen": [
-    "X-ray photoelectron spectroscopy"
-   ],
-   "contexts": [
-    {
-     "text": "nd surface chemical states of CV-Ag were confirmed via X-ray diffraction  (XRD) and X-ray photoelectron spectroscopy (XPS)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "(B).  Powder X-ray diffraction (PXRD) patterns for Cu-Cys (G) and  Cu-CNAs (C). X-Ray Photoelectron spectroscopy (XPS)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -42673,6 +43534,177 @@
    "provenance": "corpus"
   },
   {
+   "acronym": "HSAB",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Hard and Soft Acids and Bases",
+   "expansions_seen": [
+    "Hard and Soft Acids and Bases"
+   ],
+   "contexts": [
+    {
+     "text": "potential strategy to fine-tune carbene properties. Such  electronic modulation is conceptually related to the Hard and Soft Acids and Bases (HSAB)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TMSCN",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "trimethylsilyl cyanide",
+   "expansions_seen": [
+    "trimethylsilyl cyanide"
+   ],
+   "contexts": [
+    {
+     "text": "io)thiocarbonate ((CF3S)2C=S)40 via a two-step  addition-substitution sequence. By gradually adding trimethylsilyl cyanide (TMSCN)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "BBr3",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "boron tribromide",
+   "expansions_seen": [
+    "boron tribromide"
+   ],
+   "contexts": [
+    {
+     "text": "performed in a well-ventilated fume hood due to HCN  generation. Subsequently, using boron tribromide (BBr3)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "S0",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "singlet trans-cis conformer",
+   "expansions_seen": [
+    "singlet trans-cis conformer"
+   ],
+   "contexts": [
+    {
+     "text": "ormer (S0) is 0.6 kcal/mol lower than that of the trans-trans  conformer (S0'). In the singlet trans-cis conformer (S0)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HRMS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "High resolution mass spectrometry",
+   "expansions_seen": [
+    "High resolution mass spectrometry"
+   ],
+   "contexts": [
+    {
+     "text": "romatography was carried out using 300- 400 mesh silica gel at medium pressure. High resolution mass spectrometry (HRMS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EI",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "electron impact",
+   "expansions_seen": [
+    "electron impact"
+   ],
+   "contexts": [
+    {
+     "text": "gel at medium pressure. High resolution mass spectrometry (HRMS) was  performed on a Waters Premier GC-TOF MS instrument with electron impact (EI)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CF3S",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "carben",
+   "expansions_seen": [
+    "carben"
+   ],
+   "contexts": [
+    {
+     "text": "j.isci.2020.101467 (2020).  38  Dorra, M. & Haas, A. Bis(trifluormethylsulfanyl)carben (CF3S)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "LU",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "lowest unoccupied",
+   "expansions_seen": [
+    "lowest unoccupied"
+   ],
+   "contexts": [
+    {
+     "text": "EHO)2/[8(ELU − EHO)] and η = ELU − EHO,  ARTICLE IN PRESS ARTICLE IN PRESS     where ELU and EHO are the lowest unoccupied (LU)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HO",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "highest occupied",
+   "expansions_seen": [
+    "highest occupied"
+   ],
+   "contexts": [
+    {
+     "text": "IN PRESS ARTICLE IN PRESS     where ELU and EHO are the lowest unoccupied (LU) and highest occupied (HO)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
    "acronym": "RAEs",
    "field": "Chemistry",
    "status": "verified",
@@ -42802,6 +43834,395 @@
    "contexts": [
     {
      "text": "ering a stabilized carbon radical intermediate C. Then, C rapidly undergoes an  intramolecular radical homolytic substitution (SH2)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IWHs",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "ionic weaving hydrogels",
+   "expansions_seen": [
+    "ionic weaving hydrogels"
+   ],
+   "contexts": [
+    {
+     "text": "ronmental stability by employing an ionic weaving strategy. The core design of  ionic weaving hydrogels (IWHs)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AM",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "acrylamide",
+   "expansions_seen": [
+    "acrylamide"
+   ],
+   "contexts": [
+    {
+     "text": "our design strategy, the polymer network of the model hydrogel was obtained by  copolymerizing acrylamide (AM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "an avenue for the design of intelligent soft materials.    Methods  Materials  Acrylamide (AM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AA",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "and acrylic acid",
+   "expansions_seen": [
+    "and acrylic acid"
+   ],
+   "contexts": [
+    {
+     "text": "r network of the model hydrogel was obtained by  copolymerizing acrylamide (AM) and acrylic acid (AA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "e design of intelligent soft materials.    Methods  Materials  Acrylamide (AM), acrylic acid (AA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MCH",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "metal-coordination hydrogel",
+   "expansions_seen": [
+    "metal-coordination hydrogel"
+   ],
+   "contexts": [
+    {
+     "text": "ncreasing AA content and Fe3+ concentration  (Supplementary Fig. 1). Meanwhile, a traditional metal-coordination hydrogel (MCH)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "to remove excess Fe3+ ions, yielding the ionic weaving hydrogel (IWH). For the  traditional metal-coordination hydrogel (MCH)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FTIR",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Fourier-transform infrared",
+   "expansions_seen": [
+    "Fourier-transform infrared"
+   ],
+   "contexts": [
+    {
+     "text": "btained by our ionic weaving method and the traditional soaking method.  First, Fourier-transform infrared (FTIR)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ssion spectra for Cu-Cys (E) and Cu-CNA (A) at 333 nm and 343 nm excitation. B) Fourier-transform infrared (FTIR)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SAXS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "small-angle X-ray scattering",
+   "expansions_seen": [
+    "small-angle X-ray scattering"
+   ],
+   "contexts": [
+    {
+     "text": "de I and amide II bands (Fig. 2a, 2b, and Supplementary Fig. 3).  Subsequently, small-angle X-ray scattering (SAXS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "scanning electron microscope (SEM) at an accelerating voltage of 10 kV. Small- angle X-ray scattering (SAXS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "WAXS",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "wide-angle X-ray scattering",
+   "expansions_seen": [
+    "wide-angle X-ray scattering"
+   ],
+   "contexts": [
+    {
+     "text": "coordination network (Fig. 1a). The correlation between polymer chains can be  further analyzed through wide-angle X-ray scattering (WAXS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "(SEM) at an accelerating voltage of 10 kV. Small- angle X-ray scattering (SAXS) and wide-angle X-ray scattering (WAXS)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DSC",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "differential scanning calorimetry",
+   "expansions_seen": [
+    "differential scanning calorimetry"
+   ],
+   "contexts": [
+    {
+     "text": "ing the IWH to exhibit good anti-freezing capability. As displayed in Fig.  3l, the results of differential scanning calorimetry (DSC)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MAA",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "methacrylic acid",
+   "expansions_seen": [
+    "methacrylic acid"
+   ],
+   "contexts": [
+    {
+     "text": "ing the types of monomers and metal ions. First, we substituted the AA monomer  with methacrylic acid (MAA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IA",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "itaconic acid",
+   "expansions_seen": [
+    "itaconic acid"
+   ],
+   "contexts": [
+    {
+     "text": "metal ions. First, we substituted the AA monomer  with methacrylic acid (MAA), itaconic acid (IA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MA",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "maleic acid",
+   "expansions_seen": [
+    "maleic acid"
+   ],
+   "contexts": [
+    {
+     "text": "we substituted the AA monomer  with methacrylic acid (MAA), itaconic acid (IA), and maleic acid (MA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DLP",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Digital light processing",
+   "expansions_seen": [
+    "Digital light processing"
+   ],
+   "contexts": [
+    {
+     "text": "te increases, causing the resistance to slowly decrease and finally stabilize.  Digital light processing (DLP)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MBAA",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "methylenebisacrylamide",
+   "expansions_seen": [
+    "methylenebisacrylamide"
+   ],
+   "contexts": [
+    {
+     "text": "mide (AM), acrylic acid (AA), 2-hydroxy-2-methylpropiophenone (HMPP), and N,N'- methylenebisacrylamide (MBAA)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FeCl3",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "Ferric chloride",
+   "expansions_seen": [
+    "Ferric chloride"
+   ],
+   "contexts": [
+    {
+     "text": "ne (HMPP), and N,N'- methylenebisacrylamide (MBAA) were purchased from Macklin. Ferric chloride (FeCl3)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IWH",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "ionic weaving hydrogel",
+   "expansions_seen": [
+    "ionic weaving hydrogel",
+    "right"
+   ],
+   "contexts": [
+    {
+     "text": "hydrogel was soaked in deionized water  for one day to remove excess Fe3+ ions, yielding the ionic weaving hydrogel (IWH)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "le bar: 1 cm. d 3D-printed P(AM-co-AA) (left), dried P(AM- co-AA) (middle), and IWH (right)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SEM",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "scanning electron microscope",
+   "expansions_seen": [
+    "scanning electron microscope",
+    "standard error of the mean"
+   ],
+   "contexts": [
+    {
+     "text": "atment. The microscopic morphology of the samples was observed using a thermal  field-emission scanning electron microscope (SEM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "S, Thermo Orbitrap).     Statistical analysis.  Data are presented as averages, with standard error of the mean (SEM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "h varying Ni loadings (5-15 wt%). 3.2 Metal mapping of CeO2 supported catalysts Scanning Electron Microscopy (SEM)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SD",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "standard deviation",
+   "expansions_seen": [
+    "standard deviation"
+   ],
+   "contexts": [
+    {
+     "text": "rformed in  triplicate for each thickness, and the data are presented as mean ± standard deviation (SD)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "GF",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "gauge factor",
+   "expansions_seen": [
+    "gauge factor"
+   ],
+   "contexts": [
+    {
+     "text": "ial resistance, and 𝑅 represented the real-time resistance during  measurement. The gauge factor (GF)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -43118,45 +44539,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "XRD",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "X-ray diffraction",
-   "expansions_seen": [
-    "X-ray diffraction"
-   ],
-   "contexts": [
-    {
-     "text": "h indicates that this coal gangue  contains a certain amount of organic matter. X-ray diffraction (XRD)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "t% whereas Cu-Cys had a  larger content of 72 wt% (Supplementary Figure 2).     X-Ray diffraction (XRD)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "supported on CeO2 were characterized  using various physicochemical techniques. X-ray diffraction (XRD)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "ructure and phase composition of the CeO2-supported catalysts calcined at 600  °C were investigated by X-ray diffraction (XRD)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": ". In order to investigate the  crystal structure of the obtained nanoparticles, X-ray diffraction analysis (XRD)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "REEs",
    "field": "Chemistry",
    "status": "verified",
@@ -43215,44 +44597,6 @@
    "contexts": [
     {
      "text": "Figure 1. Transmission electron microscopy (TEM)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "AFM",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "and atomic force microscopy",
-   "expansions_seen": [
-    "and atomic force microscopy"
-   ],
-   "contexts": [
-    {
-     "text": "Figure 1. Transmission electron microscopy (TEM) and atomic force microscopy (AFM)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "FTIR",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "Fourier-transform infrared",
-   "expansions_seen": [
-    "Fourier-transform infrared"
-   ],
-   "contexts": [
-    {
-     "text": "ssion spectra for Cu-Cys (E) and Cu-CNA (A) at 333 nm and 343 nm excitation. B) Fourier-transform infrared (FTIR)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -43338,31 +44682,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "SEM",
-   "field": "Chemistry",
-   "status": "conflict",
-   "expansion": "standard error of the mean",
-   "expansions_seen": [
-    "standard error of the mean",
-    "Scanning Electron Microscopy"
-   ],
-   "contexts": [
-    {
-     "text": "S, Thermo Orbitrap).     Statistical analysis.  Data are presented as averages, with standard error of the mean (SEM)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": "h varying Ni loadings (5-15 wt%). 3.2 Metal mapping of CeO2 supported catalysts Scanning Electron Microscopy (SEM)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "MDR",
    "field": "Chemistry",
    "status": "verified",
@@ -43430,31 +44749,6 @@
    "contexts": [
     {
      "text": "e prepared via the  impregnation method. Each metal nitrate was dissolved in 10 mL of reverse osmosis (RO)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "EDS",
-   "field": "Chemistry",
-   "status": "conflict",
-   "expansion": "energy-dispersive X-ray spectroscopy",
-   "expansions_seen": [
-    "energy-dispersive X-ray spectroscopy",
-    "Energy Dispersive X-ray Spectroscopy"
-   ],
-   "contexts": [
-    {
-     "text": "ere examined using scanning electron microscopy (SEM, FEI Quanta 400) equipped  with energy-dispersive X-ray spectroscopy (EDS)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    },
-    {
-     "text": ".2 Metal mapping of CeO2 supported catalysts Scanning Electron Microscopy (SEM) coupled with Energy Dispersive X-ray Spectroscopy (EDS)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -43757,25 +45051,6 @@
    "contexts": [
     {
      "text": "ning models: Support  Vector regression (SVR), artificial neural network (ANN), and Random Forest (RF)",
-     "source": "corpus",
-     "date": "2026-08-02"
-    }
-   ],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "PZC",
-   "field": "Chemistry",
-   "status": "verified",
-   "expansion": "point of zero charge",
-   "expansions_seen": [
-    "point of zero charge"
-   ],
-   "contexts": [
-    {
-     "text": "re, for the purpose of investigating the effect of pH on the  photodegradation, we need to calculate the point of zero charge (PZC)",
      "source": "corpus",
      "date": "2026-08-02"
     }
@@ -44165,6 +45440,169 @@
    "provenance": "corpus"
   },
   {
+   "acronym": "G4",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "green",
+   "expansions_seen": [
+    "green"
+   ],
+   "contexts": [
+    {
+     "text": "shown on the left. The corresponding ion number density proﬁles of FSI– (red), G4 (green)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "shown on the left. The corresponding ion number density proﬁles of FSI– (red), G4 (green)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CIP",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "pink",
+   "expansions_seen": [
+    "pink"
+   ],
+   "contexts": [
+    {
+     "text": "a of coordination structures. c, d Potential-dependent contents of SSIP (blue), CIP (pink)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AGG",
+   "field": "Chemistry",
+   "status": "conflict",
+   "expansion": "orange",
+   "expansions_seen": [
+    "orange",
+    "purple"
+   ],
+   "contexts": [
+    {
+     "text": "tra of coordination structures. c–e Potential-dependent contents of SSIP (blue),AGG (orange)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    },
+    {
+     "text": "ctures. c–e Potential-dependent contents of SSIP (blue),AGG (orange), and CIP + AGG (purple)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MnO2",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "birnessite",
+   "expansions_seen": [
+    "birnessite"
+   ],
+   "contexts": [
+    {
+     "text": "Results   Structure-performance in δ-MnO2 and transition-metal-doped δ-MnO2  δ-MnO2 (birnessite)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "THF",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "tetrahydrofuran",
+   "expansions_seen": [
+    "tetrahydrofuran"
+   ],
+   "contexts": [
+    {
+     "text": "entary Table 1,  see Supplementary Information for details). Through screening, THF (tetrahydrofuran)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "Captions",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "for main text figures",
+   "expansions_seen": [
+    "for main text figures"
+   ],
+   "contexts": [
+    {
+     "text": "authors confirm that no tables are included in the main text.    Figure Legends/Captions (for main text figures)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH2",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "singlet",
+   "expansions_seen": [
+    "singlet"
+   ],
+   "contexts": [
+    {
+     "text": "bsolute hardness (η). ΔEstab is defined as the −ΔE for the isodesmic  reaction :CH2 (singlet)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CXY",
+   "field": "Chemistry",
+   "status": "verified",
+   "expansion": "singlet",
+   "expansions_seen": [
+    "singlet"
+   ],
+   "contexts": [
+    {
+     "text": "defined as the −ΔE for the isodesmic  reaction :CH2 (singlet) + CH3X + CH3Y → :CXY (singlet)",
+     "source": "corpus",
+     "date": "2026-08-02"
+    }
+   ],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
    "acronym": "Al2O3",
    "field": "Chemistry",
    "status": "verified",
@@ -44500,6 +45938,963 @@
    "provenance": "corpus"
   },
   {
+   "acronym": "IKKEM",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IET",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RWTH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FSI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 92,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SO2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 7,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SSIP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 20,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MD",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 7,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OPLS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "VG1500",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "H2O",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 25,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "O2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "STAR",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH4",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PMMA",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "K65",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NIR",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XU",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MIKROUNA",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CHI660E",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CSG30",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ZYB",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CHI760E",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PGSTAT128N",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "KG",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CR2016",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "LANHE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CT2001A",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "B3LYP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "S32",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ILFF",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OFSI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NVE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TRAVIS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ACS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 32,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FTFSI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MRS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SPM",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "STM",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PEO",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SHINERS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "A74",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "A82",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TFSI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NO3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 7,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "W331",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "W336",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MESO",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CAT",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IL",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 25,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "KOH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 33,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "JCPDS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OES",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "K0",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CHI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "K2C2O4",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ARM",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SDD",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NEXSA",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "G2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 6,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HNO3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SGC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "GDMS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "D3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "BJ",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CI",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NEB",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RSC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IR",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EPIC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RRID",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NUANCE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NSF",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ECCS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "IIN",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MRSEC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DMR",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DOE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "AC02",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "BES",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
    "acronym": "NO2",
    "field": "Chemistry",
    "status": "unverified",
@@ -44507,7 +46902,7 @@
    "expansions_seen": [],
    "contexts": [],
    "first_seen": "2026-08-02",
-   "sightings": 58,
+   "sightings": 64,
    "provenance": "corpus"
   },
   {
@@ -44551,40 +46946,7 @@
    "expansions_seen": [],
    "contexts": [],
    "first_seen": "2026-08-02",
-   "sightings": 15,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "RHE",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 8,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "ATR",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 7,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "IR",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 4,
+   "sightings": 16,
    "provenance": "corpus"
   },
   {
@@ -44742,28 +47104,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "KOH",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "AA",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "SHE",
    "field": "Chemistry",
    "status": "unverified",
@@ -44805,17 +47145,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 3,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "H2O",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 8,
    "provenance": "corpus"
   },
   {
@@ -44874,17 +47203,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "ACS",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 20,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "CCS",
    "field": "Chemistry",
    "status": "unverified",
@@ -44914,7 +47232,7 @@
    "expansions_seen": [],
    "contexts": [],
    "first_seen": "2026-08-02",
-   "sightings": 148,
+   "sightings": 149,
    "provenance": "corpus"
   },
   {
@@ -45046,7 +47364,7 @@
    "expansions_seen": [],
    "contexts": [],
    "first_seen": "2026-08-02",
-   "sightings": 1,
+   "sightings": 25,
    "provenance": "corpus"
   },
   {
@@ -45062,6 +47380,633 @@
   },
   {
    "acronym": "COCH3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "RG42",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "UK",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SCF3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 237,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HCN",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DLPNO",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CCSD",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "QZVPP43",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "M06",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "QZVP43",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "T1",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "C3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 18,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HSCF3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CF2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH3X",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH3Y",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "B3LYP60",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HF",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MP2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "ELU",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 8,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "EHO",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 8,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TLC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TOF",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FTMS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "KF",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DCM",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "N2",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 19,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "P450",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "D4CS00742E",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TMSCF2X",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "S0040",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "D5CS00278H",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "S0304",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "JACS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "US3117985",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XX",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XXIII",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XII",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "BF00533485",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XDB0590000",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XDB1640000",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "FG",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 6,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "TMS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "R1",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 25,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "R3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 25,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "R1S",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 7,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "R4",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SR1",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OTMS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH2CH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "OCF3",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "F3C",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 4,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SCN",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "H3C",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CH2OH",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "NC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "O2N",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PRES",
    "field": "Chemistry",
    "status": "unverified",
    "expansion": null,
@@ -45124,17 +48069,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 22,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "S2",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 11,
    "provenance": "corpus"
   },
   {
@@ -45270,17 +48204,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "HRMS",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "MOE",
    "field": "Chemistry",
    "status": "unverified",
@@ -45333,17 +48256,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "N2",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 11,
    "provenance": "corpus"
   },
   {
@@ -45402,6 +48314,182 @@
    "provenance": "corpus"
   },
   {
+   "acronym": "COO",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 5,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MJ",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 3,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PDMS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "UP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "DOWN",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CALL",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SAVE",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "SOS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "HELP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MCR",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "LAP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "CP",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "M120",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "MTT",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 2,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "PBS",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
+   "acronym": "XRC",
+   "field": "Chemistry",
+   "status": "unverified",
+   "expansion": null,
+   "expansions_seen": [],
+   "contexts": [],
+   "first_seen": "2026-08-02",
+   "sightings": 1,
+   "provenance": "corpus"
+  },
+  {
    "acronym": "AG",
    "field": "Chemistry",
    "status": "unverified",
@@ -45443,17 +48531,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 46,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "C3",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 15,
    "provenance": "corpus"
   },
   {
@@ -45699,28 +48776,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "THF",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "DCM",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "RUG",
    "field": "Chemistry",
    "status": "unverified",
@@ -45729,17 +48784,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "R1",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 3,
    "provenance": "corpus"
   },
   {
@@ -45773,17 +48817,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 12,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "CCDC",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
    "provenance": "corpus"
   },
   {
@@ -45864,17 +48897,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "FG",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 4,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "NIS",
    "field": "Chemistry",
    "status": "unverified",
@@ -45949,28 +48971,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "NC",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "CF3",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
    "provenance": "corpus"
   },
   {
@@ -46103,17 +49103,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 6,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "G2",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 5,
    "provenance": "corpus"
   },
   {
@@ -46304,17 +49293,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "SO2",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "K2O",
    "field": "Chemistry",
    "status": "unverified",
@@ -46337,29 +49315,7 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "ICP",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 8,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "RQ",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "OES",
    "field": "Chemistry",
    "status": "unverified",
    "expansion": null,
@@ -46601,17 +49557,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "OH",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 7,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "NDVI",
    "field": "Chemistry",
    "status": "unverified",
@@ -46712,17 +49657,6 @@
   },
   {
    "acronym": "DA",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "UK",
    "field": "Chemistry",
    "status": "unverified",
    "expansion": null,
@@ -46920,17 +49854,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "RSC",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "BMC",
    "field": "Chemistry",
    "status": "unverified",
@@ -46950,17 +49873,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "AM",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 8,
    "provenance": "corpus"
   },
   {
@@ -47038,17 +49950,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "O2",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
    "provenance": "corpus"
   },
   {
@@ -47151,17 +50052,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "JCPDS",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "CO32",
    "field": "Chemistry",
    "status": "unverified",
@@ -47170,17 +50060,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "NO3",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 3,
    "provenance": "corpus"
   },
   {
@@ -47437,17 +50316,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "EC",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "AH",
    "field": "Chemistry",
    "status": "unverified",
@@ -47690,17 +50558,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "SE",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "C3N4",
    "field": "Chemistry",
    "status": "unverified",
@@ -47756,17 +50613,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "CP",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "GO",
    "field": "Chemistry",
    "status": "unverified",
@@ -47797,28 +50643,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "MAA",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "MA",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 5,
    "provenance": "corpus"
   },
   {
@@ -47973,17 +50797,6 @@
    "contexts": [],
    "first_seen": "2026-08-02",
    "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "MD",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 2,
    "provenance": "corpus"
   },
   {
@@ -48867,17 +51680,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "T1",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "NCC",
    "field": "Chemistry",
    "status": "unverified",
@@ -49208,17 +52010,6 @@
    "provenance": "corpus"
   },
   {
-   "acronym": "SD",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
    "acronym": "PROTAC",
    "field": "Chemistry",
    "status": "unverified",
@@ -49253,17 +52044,6 @@
   },
   {
    "acronym": "CDK",
-   "field": "Chemistry",
-   "status": "unverified",
-   "expansion": null,
-   "expansions_seen": [],
-   "contexts": [],
-   "first_seen": "2026-08-02",
-   "sightings": 1,
-   "provenance": "corpus"
-  },
-  {
-   "acronym": "D3",
    "field": "Chemistry",
    "status": "unverified",
    "expansion": null,
