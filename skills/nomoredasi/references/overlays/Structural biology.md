@@ -1,82 +1,86 @@
 # Overlay: Structural biology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 10,585 words — treat stats as directional, not targets)
-Source: 1 file(s), 10,585 words
+Maturity: immature (3 files, 34,918 words — treat stats as directional, not targets)
+Source: 3 file(s), 34,918 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.4 words
-- Passive voice: 172.9 /10K words
-- First person (we): 31.2 /10K words
+- Avg sentence length: 15.1 words
+- Passive voice: 158.9 /10K words
+- First person (we): 35.5 /10K words
 
 ## Top terms
 
-- `membrane` (117)
+- `membrane` (298)
+- `org` (197)
+- `lipid` (150)
+- `binding` (149)
+- `nuclear` (131)
+- `ahs` (131)
+- `insulin` (128)
+- `cells` (124)
+- `cell` (119)
+- `protein` (109)
+- `data` (109)
+- `structure` (106)
+- `domain` (97)
+- `proteins` (84)
+- `hydrophobic` (79)
+- `packing` (73)
+- `defects` (67)
+- `membranes` (66)
 - `filaments` (65)
-- `domain` (61)
-- `lipid` (52)
-- `structure` (52)
-- `caveolar` (48)
-- `caveolae` (41)
-- `helical` (40)
-- `curvature` (36)
-- `g-domain` (34)
-- `neck` (32)
-- `density` (31)
-- `map` (28)
-- `filament` (28)
-- `domains` (27)
-- `n-terminal` (27)
-- `model` (26)
-- `particles` (26)
-- `biol` (26)
-- `dimer` (24)
-- `nature` (23)
-- `n-terminus` (23)
-- `crystal` (22)
-- `bilayer` (22)
-- `protein` (21)
-- `surface` (21)
-- `loop` (21)
-- `resolution` (20)
-- `structural` (19)
-- `dimers` (19)
+- `curvature` (62)
+- `receptor` (61)
+- `analysis` (60)
+- `density` (58)
+- `helical` (56)
+- `residues` (55)
+- `biol` (54)
+- `localization` (53)
+- `peptide` (53)
+- `model` (49)
+- `molecular` (49)
 
 ## Phrase bank (term + verb)
 
+- `membrane + increased` (3)
+- `categories + calculated` (2)
+- `intervals + obtained` (2)
+- `plot + estimated` (2)
 - `ehd + increased` (2)
 - `ehd + exhibited` (2)
-- `display + increased` (1)
-- `lipid + increased` (1)
-- `ehd + achieved` (1)
-- `liposomes + observed` (1)
-- `membrane + increased` (1)
-- `classification + revealed` (1)
-- `obtain + calculated` (1)
-- `sta-cryo- + revealed` (1)
-- `tubules + measured` (1)
-- `helical + observed` (1)
-- `tubule + showed` (1)
-- `contrast + observed` (1)
-- `angle + observed` (1)
-- `resin- + obtained` (1)
-- `caveolar + observed` (1)
-- `explain + observed` (1)
-- `membrane + demonstrated` (1)
-- `lipid + measured` (1)
+- `detection + revealed` (2)
+- `changes + observed` (2)
+- `probe + observed` (2)
+- `mammalian + revealed` (1)
+- `tmhmm + confirmed` (1)
+- `combined + showed` (1)
+- `ahs + showed` (1)
+- `categories + showed` (1)
+- `input + showed` (1)
+- `line + calculated` (1)
+- `data + indicates` (1)
+- `vitro + demonstrated` (1)
+- `lowers + showed` (1)
+- `tmem + increased` (1)
 
 ## Notation watch
 
+- x-ray: x-ray=2, x ray=0, xray=0
 - in situ: in situ=3, in-situ=0
-- in vitro: in vitro=2, in-vitro=0
-- et al.: et al.=0, et al=39
-- setup: setup=1, set-up=0, set up=0
+- in vivo: in vivo=3, in-vivo=0
+- in vitro: in vitro=8, in-vitro=0
+- et al.: et al.=0, et al=140
+- setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 22.1 words, passive 85.4 /10K
-- methods: 1 section(s), avg sentence 17.4 words, passive 351.2 /10K
-- results: 1 section(s), avg sentence 18.8 words, passive 111.9 /10K
+- abstract: 2 section(s), avg sentence 19.9 words, passive 52.8 /10K
+- discussion: 3 section(s), avg sentence 15.9 words, passive 67.3 /10K
+- introduction: 2 section(s), avg sentence 21.4 words, passive 261.1 /10K
+- methods: 2 section(s), avg sentence 19.8 words, passive 395.0 /10K
+- results: 3 section(s), avg sentence 20.1 words, passive 94.7 /10K
 
 ## Editor notes (manual curation)
 

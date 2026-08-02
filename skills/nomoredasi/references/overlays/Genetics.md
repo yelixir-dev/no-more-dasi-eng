@@ -1,51 +1,52 @@
 # Overlay: Genetics (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,391 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,391 words
+Maturity: immature (2 files, 15,176 words — treat stats as directional, not targets)
+Source: 2 file(s), 15,176 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.0 words
-- Passive voice: 134.7 /10K words
-- First person (we): 26.2 /10K words
+- Avg sentence length: 14.1 words
+- Passive voice: 135.1 /10K words
+- First person (we): 21.7 /10K words
 
 ## Top terms
 
-- `colonies` (118)
+- `colonies` (119)
 - `mellifera` (106)
+- `baumannii` (91)
 - `honey` (88)
+- `resistance` (85)
+- `population` (79)
 - `introgression` (75)
-- `population` (72)
+- `data` (71)
+- `acinetobacter` (71)
 - `irish` (67)
 - `bee` (66)
+- `isolates` (62)
 - `bees` (58)
-- `data` (56)
+- `blaoxa-` (47)
+- `molecular` (46)
 - `ireland` (44)
 - `conservation` (43)
-- `populations` (34)
+- `iran` (43)
+- `genetic` (39)
+- `clinical` (38)
+- `populations` (36)
+- `analysis` (35)
 - `swiss` (31)
 - `native` (30)
 - `introgressed` (29)
+- `org` (28)
 - `subspecies` (27)
+- `patients` (26)
+- `sampled` (25)
 - `colony` (25)
-- `sampled` (24)
-- `apis` (23)
-- `genetic` (22)
-- `org` (21)
-- `network` (21)
-- `european` (21)
-- `levels` (21)
-- `samples` (21)
-- `lineage` (19)
-- `area` (17)
-- `c-lineage` (17)
-- `sequencing` (15)
-- `included` (15)
 
 ## Phrase bank (term + verb)
 
 - `colonies + showed` (2)
 - `irish + showed` (2)
+- `informed + obtained` (2)
 - `browne + obtained` (1)
 - `carried + improved` (1)
 - `colony + estimated` (1)
@@ -63,20 +64,20 @@ Source: 1 file(s), 8,391 words
 - `irish + exhibited` (1)
 - `honey + showed` (1)
 - `swiss + showed` (1)
-- `selection + showed` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=34
+- in vitro: in vitro=1, in-vitro=0
+- et al.: et al.=0, et al=81
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 17.2 words, passive 72.5 /10K
-- conclusion: 1 section(s), avg sentence 13.6 words, passive 0.0 /10K
-- discussion: 1 section(s), avg sentence 22.6 words, passive 119.5 /10K
-- introduction: 1 section(s), avg sentence 18.5 words, passive 124.0 /10K
-- methods: 1 section(s), avg sentence 20.2 words, passive 353.4 /10K
-- results: 1 section(s), avg sentence 18.6 words, passive 109.1 /10K
+- abstract: 2 section(s), avg sentence 14.8 words, passive 153.4 /10K
+- conclusion: 2 section(s), avg sentence 16.4 words, passive 92.6 /10K
+- discussion: 2 section(s), avg sentence 21.1 words, passive 125.8 /10K
+- introduction: 2 section(s), avg sentence 18.4 words, passive 107.1 /10K
+- methods: 2 section(s), avg sentence 20.1 words, passive 385.4 /10K
+- results: 2 section(s), avg sentence 19.4 words, passive 103.0 /10K
 
 ## Editor notes (manual curation)
 

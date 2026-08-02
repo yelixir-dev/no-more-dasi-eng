@@ -1,81 +1,83 @@
-# Overlay: Geography (AUTO-DRAFT 2026-08-01)
+# Overlay: Geography (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 21,370 words — treat stats as directional, not targets)
-Source: 1 file(s), 21,370 words
+Maturity: immature (2 files, 32,422 words — treat stats as directional, not targets)
+Source: 2 file(s), 32,422 words
 
 ## Corpus stats
 
-- Avg sentence length: 23.9 words
-- Passive voice: 226.5 /10K words
-- First person (we): 9.8 /10K words
+- Avg sentence length: 19.4 words
+- Passive voice: 185.7 /10K words
+- First person (we): 25.3 /10K words
 
 ## Top terms
 
-- `data` (132)
+- `population` (236)
+- `urban` (190)
+- `data` (165)
+- `density` (151)
+- `city` (136)
 - `recovery` (125)
+- `model` (121)
 - `tourism` (117)
-- `crisis` (113)
-- `model` (101)
+- `crisis` (115)
+- `cities` (102)
 - `destination` (96)
-- `resilience` (70)
-- `analysis` (65)
+- `time` (79)
+- `analysis` (76)
+- `growth` (73)
+- `resilience` (71)
+- `scaling` (68)
+- `framework` (65)
 - `destinations` (63)
 - `validation` (62)
+- `models` (61)
 - `simulation` (61)
-- `framework` (60)
-- `time` (60)
-- `models` (55)
-- `accuracy` (53)
-- `policy` (53)
+- `areas` (58)
+- `policy` (58)
+- `accuracy` (54)
+- `forecast` (52)
+- `radial` (51)
+- `indicators` (51)
+- `values` (51)
 - `sentiment` (51)
-- `forecast` (51)
 - `agent-based` (49)
-- `indicators` (48)
-- `baseline` (47)
-- `months` (45)
-- `learning` (43)
-- `ensemble` (43)
-- `decision` (42)
-- `month` (42)
-- `training` (42)
-- `information` (40)
-- `network` (39)
-- `stakeholder` (39)
 
 ## Phrase bank (term + verb)
 
+- `city + calculated` (2)
+- `population + estimated` (2)
 - `baseline + observed` (2)
-- `draf + estimated` (1)
-- `regain + estimated` (1)
-- `economic + revealed` (1)
-- `state + demonstrated` (1)
-- `measures + measured` (1)
-- `entropy + obtained` (1)
-- `source-specific + achieved` (1)
-- `infrastructure + measured` (1)
-- `indicators + obtained` (1)
-- `standardized + calculated` (1)
-- `month-of-year + estimated` (1)
-- `standard + calculated` (1)
-- `data + obtained` (1)
-- `stopping + calculated` (1)
-- `criterion + estimated` (1)
-- `loss + estimated` (1)
-- `recovery + observed` (1)
-- `sentiment + measured` (1)
-- `central + calculated` (1)
+- `city + increased` (1)
+- `widely + measured` (1)
+- `mexico + increased` (1)
+- `country + increased` (1)
+- `number + decreased` (1)
+- `similar + observed` (1)
+- `living + decreased` (1)
+- `parts + decreased` (1)
+- `ownership + increased` (1)
+- `general + observed` (1)
+- `population + obtained` (1)
+- `always + increased` (1)
+- `although + observed` (1)
+- `loss + observed` (1)
+- `only + observed` (1)
+- `frequently + observed` (1)
+- `relevant + observed` (1)
 
 ## Notation watch
 
+- et al.: et al.=0, et al=14
 - setup: setup=1, set-up=0, set up=1
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 30.3 words, passive 47.2 /10K
+- abstract: 2 section(s), avg sentence 25.4 words, passive 30.3 /10K
 - conclusion: 1 section(s), avg sentence 25.5 words, passive 93.5 /10K
-- discussion: 1 section(s), avg sentence 28.4 words, passive 203.6 /10K
-- introduction: 1 section(s), avg sentence 24.5 words, passive 276.2 /10K
-- results: 1 section(s), avg sentence 25.6 words, passive 190.2 /10K
+- discussion: 2 section(s), avg sentence 26.6 words, passive 162.5 /10K
+- introduction: 2 section(s), avg sentence 24.3 words, passive 263.1 /10K
+- methods: 1 section(s), avg sentence 23.4 words, passive 194.1 /10K
+- results: 2 section(s), avg sentence 23.0 words, passive 167.9 /10K
 
 ## Editor notes (manual curation)
 

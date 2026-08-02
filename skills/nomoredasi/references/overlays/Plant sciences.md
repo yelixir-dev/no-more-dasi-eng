@@ -1,82 +1,85 @@
 # Overlay: Plant sciences (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 6,730 words — treat stats as directional, not targets)
-Source: 1 file(s), 6,730 words
+Maturity: immature (3 files, 21,783 words — treat stats as directional, not targets)
+Source: 3 file(s), 21,783 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.7 words
-- Passive voice: 181.3 /10K words
-- First person (we): 1.5 /10K words
+- Avg sentence length: 17.6 words
+- Passive voice: 143.2 /10K words
+- First person (we): 7.8 /10K words
 
 ## Top terms
 
 - `fruit` (93)
-- `treatment` (70)
-- `hydrogen` (55)
+- `treatment` (91)
+- `plant` (78)
+- `stress` (70)
+- `data` (63)
+- `hydrogen` (59)
+- `copper` (57)
+- `studies` (56)
+- `yield` (56)
 - `garlic` (55)
 - `cyanamide` (53)
+- `sio` (52)
 - `apple` (52)
-- `cultivar` (49)
+- `cultivar` (51)
+- `cultivars` (49)
 - `bud` (48)
-- `cultivars` (46)
-- `yield` (43)
-- `extract` (39)
+- `analysis` (46)
+- `lnrr` (46)
+- `control` (45)
+- `growth` (42)
+- `extract` (42)
+- `treatments` (41)
+- `conditions` (40)
+- `plants` (39)
+- `acid` (38)
+- `size` (38)
 - `tree` (38)
+- `response` (37)
+- `number` (37)
 - `chilling` (37)
-- `break` (36)
-- `dormancy-breaking` (33)
-- `dormancy` (32)
-- `flowering` (30)
-- `treatments` (29)
-- `number` (29)
-- `trees` (27)
-- `combined` (25)
-- `low-chill` (23)
-- `conditions` (23)
-- `experimental` (23)
-- `control` (22)
-- `total` (20)
-- `chill` (20)
-- `ethiopia` (19)
-- `journal` (18)
-- `production` (17)
 
 ## Phrase bank (term + verb)
 
+- `lnrr + indicates` (2)
+- `dashed + indicates` (2)
+- `mean + indicates` (2)
+- `indicates + indicates` (2)
 - `cultivar + observed` (2)
 - `cultivars + exhibited` (2)
 - `control + increased` (2)
 - `garlic + improved` (2)
-- `period + estimated` (1)
-- `dormancy + calculated` (1)
-- `plant + obtained` (1)
-- `preparation + prepared` (1)
-- `area + obtained` (1)
-- `purposes + obtained` (1)
-- `diluted + measured` (1)
-- `wetting + prepared` (1)
-- `blooming + calculated` (1)
-- `flowering + calculated` (1)
-- `fruit + measured` (1)
-- `soluble + measured` (1)
-- `yijkl + observed` (1)
-- `degrees + estimated` (1)
-- `roger + obtained` (1)
-- `statistically + measured` (1)
+- `likelihood + revealed` (1)
+- `literature + confirmed` (1)
+- `markers + enhanced` (1)
+- `nps + measured` (1)
+- `root + improved` (1)
+- `proline + showed` (1)
+- `change + showed` (1)
+- `fallback + indicates` (1)
+- `cat + showed` (1)
+- `responses + increased` (1)
+- `omnibus + confirmed` (1)
+- `correspondingly + increased` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=6
+- x-ray: x-ray=10, x ray=0, xray=0
+- in vivo: in vivo=1, in-vivo=0
+- in vitro: in vitro=1, in-vitro=0
+- et al.: et al.=7, et al=47
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 18.8 words, passive 132.7 /10K
-- conclusion: 1 section(s), avg sentence 21.9 words, passive 101.5 /10K
-- discussion: 1 section(s), avg sentence 31.8 words, passive 142.4 /10K
-- introduction: 1 section(s), avg sentence 26.9 words, passive 99.0 /10K
-- methods: 1 section(s), avg sentence 21.9 words, passive 380.0 /10K
-- results: 1 section(s), avg sentence 20.7 words, passive 205.1 /10K
+- abstract: 14 section(s), avg sentence 17.7 words, passive 69.0 /10K
+- conclusion: 2 section(s), avg sentence 21.2 words, passive 102.4 /10K
+- discussion: 18 section(s), avg sentence 29.3 words, passive 120.2 /10K
+- introduction: 14 section(s), avg sentence 21.8 words, passive 62.3 /10K
+- methods: 14 section(s), avg sentence 22.2 words, passive 343.6 /10K
+- results: 13 section(s), avg sentence 19.5 words, passive 101.4 /10K
 
 ## Editor notes (manual curation)
 

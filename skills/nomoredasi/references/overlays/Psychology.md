@@ -1,82 +1,82 @@
 # Overlay: Psychology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 10,077 words — treat stats as directional, not targets)
-Source: 1 file(s), 10,077 words
+Maturity: immature (3 files, 25,482 words — treat stats as directional, not targets)
+Source: 3 file(s), 25,482 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.9 words
-- Passive voice: 87.3 /10K words
-- First person (we): 23.8 /10K words
+- Avg sentence length: 16.9 words
+- Passive voice: 117.7 /10K words
+- First person (we): 48.7 /10K words
 
 ## Top terms
 
-- `learning` (188)
-- `presentation` (145)
-- `type` (104)
+- `learning` (288)
+- `similarity` (146)
+- `presentation` (146)
+- `category` (136)
+- `touch` (131)
+- `perceptual` (123)
+- `type` (120)
+- `participants` (117)
+- `body` (109)
+- `visual` (106)
+- `training` (105)
 - `dynamicity` (86)
-- `visual` (85)
-- `online` (75)
-- `statistical` (74)
+- `org` (83)
+- `categories` (81)
+- `statistical` (80)
+- `accuracy` (79)
+- `online` (79)
+- `block` (68)
 - `language` (67)
-- `block` (66)
 - `target` (65)
+- `changes` (64)
 - `simultaneous` (64)
-- `accuracy` (53)
-- `reaction` (52)
-- `dynamic` (48)
-- `time` (46)
-- `model` (44)
-- `sign` (44)
-- `conditions` (43)
-- `training` (42)
-- `sequences` (41)
-- `serial` (40)
-- `offline` (39)
-- `sex` (39)
-- `participants` (38)
-- `org` (34)
-- `stimuli` (33)
-- `position` (33)
-- `non-adjacent` (32)
-- `trial` (32)
-- `dependencies` (31)
+- `change` (61)
+- `reaction` (58)
+- `stimuli` (57)
+- `emotional` (57)
+- `task` (56)
+- `model` (54)
+- `physical` (54)
+- `maps` (52)
 
 ## Phrase bank (term + verb)
 
 - `predictors + improved` (3)
+- `training + increased` (2)
+- `wart + obtained` (2)
+- `increased + decreased` (2)
+- `change + calculated` (2)
+- `participants + showed` (2)
 - `adding + improved` (2)
-- `task + showed` (1)
-- `underlying + decreased` (1)
-- `times + increased` (1)
-- `emberson + showed` (1)
-- `benefit + observed` (1)
-- `wide + indicates` (1)
-- `der + showed` (1)
-- `visual + improved` (1)
-- `baldwin + showed` (1)
-- `later + confirmed` (1)
-- `detection + measured` (1)
-- `types + measured` (1)
-- `interpreted + improved` (1)
-- `conducted + estimated` (1)
-- `accuracy + estimated` (1)
-- `disruption-phase + estimated` (1)
-- `offline + estimated` (1)
-- `training + revealed` (1)
+- `pairs + decreased` (1)
+- `false-alarm + showed` (1)
+- `decision-making + demonstrated` (1)
+- `observers + enhanced` (1)
+- `neural + achieved` (1)
+- `perceptual + showed` (1)
+- `reviewed + indicates` (1)
+- `category + increased` (1)
+- `difference + observed` (1)
+- `skin + measured` (1)
+- `accounts + measured` (1)
+- `learning + measured` (1)
+- `images + obtained` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=40
+- et al.: et al.=0, et al=85
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 18.8 words, passive 106.4 /10K
-- conclusion: 1 section(s), avg sentence 30.4 words, passive 182.5 /10K
-- discussion: 1 section(s), avg sentence 25.6 words, passive 65.2 /10K
+- abstract: 2 section(s), avg sentence 22.4 words, passive 124.1 /10K
+- conclusion: 2 section(s), avg sentence 27.7 words, passive 194.5 /10K
+- discussion: 3 section(s), avg sentence 24.6 words, passive 87.9 /10K
 - introduction: 1 section(s), avg sentence 25.0 words, passive 75.3 /10K
-- methods: 2 section(s), avg sentence 14.1 words, passive 121.4 /10K
-- results: 1 section(s), avg sentence 22.7 words, passive 85.6 /10K
+- methods: 4 section(s), avg sentence 15.5 words, passive 203.4 /10K
+- results: 3 section(s), avg sentence 20.2 words, passive 131.4 /10K
 
 ## Editor notes (manual curation)
 

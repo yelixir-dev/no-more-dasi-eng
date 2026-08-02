@@ -1,51 +1,55 @@
 # Overlay: Space physics (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 9,765 words — treat stats as directional, not targets)
-Source: 1 file(s), 9,765 words
+Maturity: immature (2 files, 16,987 words — treat stats as directional, not targets)
+Source: 2 file(s), 16,987 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.2 words
-- Passive voice: 87.0 /10K words
-- First person (we): 46.1 /10K words
+- Avg sentence length: 15.5 words
+- Passive voice: 107.7 /10K words
+- First person (we): 40.0 /10K words
 
 ## Top terms
 
+- `space` (138)
+- `magnetic` (118)
+- `data` (114)
 - `chorus` (95)
-- `data` (68)
-- `occurrence` (59)
-- `waves` (58)
-- `distribution` (55)
-- `space` (54)
-- `time` (52)
-- `geophys` (51)
-- `res` (50)
+- `time` (81)
+- `geomagnetic` (77)
+- `radcube` (71)
+- `observations` (64)
+- `geophys` (64)
+- `measurements` (63)
+- `res` (62)
+- `occurrence` (61)
+- `waves` (59)
+- `density` (57)
+- `distribution` (56)
+- `weather` (53)
+- `solar` (51)
 - `mlat` (47)
 - `amplitudes` (46)
-- `probability` (41)
-- `measurements` (40)
-- `spacecraft` (39)
-- `wave` (38)
+- `region` (45)
+- `spacecraft` (44)
+- `probability` (42)
+- `storm` (41)
+- `wave` (39)
+- `latitudes` (39)
+- `wind` (38)
+- `average` (36)
 - `phys` (36)
-- `region` (35)
-- `detections` (33)
-- `latitudes` (33)
-- `set` (32)
-- `density` (32)
-- `value` (32)
-- `van` (31)
-- `allen` (31)
-- `average` (31)
-- `magnetic` (31)
-- `delay` (30)
-- `noon` (29)
-- `squared` (29)
-- `number` (29)
+- `latitude` (34)
+- `value` (34)
 
 ## Phrase bank (term + verb)
 
+- `magnetic + observed` (6)
+- `solar + observed` (3)
 - `long-term + obtained` (2)
 - `detections + obtained` (2)
+- `magnetic + measured` (2)
+- `event + measured` (2)
 - `investigation + demonstrated` (1)
 - `whistler + observed` (1)
 - `low- + observed` (1)
@@ -60,20 +64,19 @@ Source: 1 file(s), 9,765 words
 - `sources + calculated` (1)
 - `dotted + estimated` (1)
 - `side + obtained` (1)
-- `sectors + observed` (1)
-- `cycle + observed` (1)
-- `expected + estimated` (1)
-- `delay + estimated` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=35
+- in situ: in situ=1, in-situ=0
+- et al.: et al.=0, et al=74
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 26.0 words, passive 64.0 /10K
-- methods: 1 section(s), avg sentence 23.3 words, passive 144.9 /10K
-- results: 1 section(s), avg sentence 21.4 words, passive 85.5 /10K
+- abstract: 1 section(s), avg sentence 24.1 words, passive 46.1 /10K
+- discussion: 2 section(s), avg sentence 25.2 words, passive 107.3 /10K
+- introduction: 1 section(s), avg sentence 26.0 words, passive 167.5 /10K
+- methods: 2 section(s), avg sentence 23.7 words, passive 160.4 /10K
+- results: 2 section(s), avg sentence 21.7 words, passive 122.6 /10K
 
 ## Editor notes (manual curation)
 

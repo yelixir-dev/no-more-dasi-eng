@@ -1,51 +1,56 @@
 # Overlay: Anatomy (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,968 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,968 words
+Maturity: immature (2 files, 18,840 words — treat stats as directional, not targets)
+Source: 2 file(s), 18,840 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.1 words
-- Passive voice: 158.3 /10K words
-- First person (we): 22.3 /10K words
+- Avg sentence length: 18.5 words
+- Passive voice: 178.3 /10K words
+- First person (we): 15.4 /10K words
 
 ## Top terms
 
-- `muscle` (116)
-- `shape` (72)
-- `loss` (66)
+- `bone` (198)
+- `muscle` (117)
+- `shape` (98)
+- `analysis` (88)
+- `loss` (72)
+- `lacunae` (67)
+- `implant` (65)
 - `ambulation` (64)
+- `group` (62)
+- `osteocyte` (61)
+- `volume` (58)
 - `muscles` (57)
-- `volume` (45)
-- `descriptors` (41)
+- `peri-i` (56)
+- `years` (54)
+- `loading` (54)
+- `edentulous` (52)
+- `patients` (51)
+- `data` (50)
+- `peri-implant` (43)
+- `descriptors` (42)
 - `fat` (39)
-- `disease` (36)
+- `samples` (39)
+- `disease` (38)
+- `surface` (37)
+- `correlation` (36)
 - `muscular` (34)
-- `analysis` (32)
-- `dystrophy` (30)
-- `duchenne` (29)
-- `replacement` (27)
-- `controls` (25)
-- `inclusion` (25)
-- `biomarkers` (24)
-- `mean` (23)
-- `distance` (23)
-- `relative` (23)
-- `patients` (22)
-- `surface` (21)
-- `control` (20)
-- `correlation` (20)
-- `force` (20)
-- `correlations` (19)
-- `groups` (19)
-- `measurements` (19)
-- `feature` (19)
-- `absolute` (18)
+- `distribution` (34)
+- `mean` (34)
+- `parameters` (34)
+- `groups` (33)
 
 ## Phrase bank (term + verb)
 
+- `similar + observed` (3)
+- `bone + observed` (3)
 - `shape + showed` (2)
-- `similar + observed` (2)
+- `variation + observed` (2)
+- `implant + observed` (2)
+- `blood + observed` (2)
+- `average + observed` (2)
 - `distinct + increased` (1)
 - `mri + measured` (1)
 - `age + confirmed` (1)
@@ -59,24 +64,22 @@ Source: 1 file(s), 8,968 words
 - `average + obtained` (1)
 - `local + measured` (1)
 - `smaller + observed` (1)
-- `controls + observed` (1)
-- `loss + showed` (1)
-- `statistical + revealed` (1)
-- `group + indicates` (1)
-- `strong + observed` (1)
 
 ## Notation watch
 
-- et al.: et al.=1, et al=35
+- x-ray: x-ray=2, x ray=0, xray=0
+- in vivo: in vivo=1, in-vivo=0
+- et al.: et al.=1, et al=52
+- setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 25.3 words, passive 226.0 /10K
+- abstract: 2 section(s), avg sentence 24.1 words, passive 181.3 /10K
 - conclusion: 1 section(s), avg sentence 17.8 words, passive 97.6 /10K
-- discussion: 1 section(s), avg sentence 26.0 words, passive 107.2 /10K
-- introduction: 1 section(s), avg sentence 23.9 words, passive 215.5 /10K
-- methods: 1 section(s), avg sentence 22.3 words, passive 305.1 /10K
-- results: 1 section(s), avg sentence 21.4 words, passive 116.6 /10K
+- discussion: 2 section(s), avg sentence 27.9 words, passive 115.3 /10K
+- introduction: 2 section(s), avg sentence 24.5 words, passive 175.0 /10K
+- methods: 2 section(s), avg sentence 23.2 words, passive 343.4 /10K
+- results: 2 section(s), avg sentence 22.3 words, passive 161.3 /10K
 
 ## Editor notes (manual curation)
 

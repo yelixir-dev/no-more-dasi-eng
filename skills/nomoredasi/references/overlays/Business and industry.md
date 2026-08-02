@@ -1,79 +1,82 @@
 # Overlay: Business and industry (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 12,530 words — treat stats as directional, not targets)
-Source: 1 file(s), 12,530 words
+Maturity: immature (3 files, 31,441 words — treat stats as directional, not targets)
+Source: 3 file(s), 31,441 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.0 words
-- Passive voice: 91.8 /10K words
-- First person (we): 94.2 /10K words
+- Avg sentence length: 16.9 words
+- Passive voice: 107.5 /10K words
+- First person (we): 82.1 /10K words
 
 ## Top terms
 
+- `models` (151)
+- `model` (131)
 - `indicators` (101)
+- `org` (98)
 - `companies` (98)
-- `transparency` (84)
+- `animals` (95)
+- `human` (94)
+- `speciesist` (93)
+- `transparency` (85)
+- `data` (82)
+- `language` (79)
+- `llms` (79)
+- `see` (68)
 - `corporate` (62)
+- `dataset` (60)
 - `reporting` (60)
+- `nature` (58)
+- `reasoning` (56)
 - `emissions` (56)
+- `moral` (53)
+- `statements` (48)
+- `number` (48)
+- `information` (48)
+- `value` (47)
+- `speciesism` (47)
+- `communications` (46)
 - `sustainability` (46)
-- `data` (43)
-- `reports` (42)
-- `dataset` (41)
-- `scope` (40)
-- `indicator` (40)
-- `company` (37)
-- `framework` (35)
-- `model` (34)
-- `analysis` (32)
-- `number` (32)
-- `org` (31)
-- `topics` (31)
-- `top` (31)
-- `see` (31)
-- `environmental` (30)
-- `information` (30)
-- `yes` (30)
-- `total` (29)
-- `value` (29)
-- `year` (28)
-- `climate` (26)
-- `ratings` (26)
-- `social` (24)
+- `scope` (44)
+- `reports` (43)
+- `framework` (43)
 
 ## Phrase bank (term + verb)
 
 - `overall + increased` (2)
-- `increase + improved` (1)
-- `improvements + achieved` (1)
-- `alone + improved` (1)
-- `extracted + obtained` (1)
-- `company + observed` (1)
-- `disclosed + increased` (1)
-- `topics + measured` (1)
-- `gaps + confirmed` (1)
-- `energy + indicates` (1)
-- `decile + measured` (1)
-- `indicators + observed` (1)
-- `instance + increased` (1)
-- `top + increased` (1)
-- `incidents + decreased` (1)
-- `collective + decreased` (1)
-- `highest-paid + increased` (1)
-- `fatalities + increased` (1)
-- `expected + measured` (1)
-- `msci + measured` (1)
+- `extensive + demonstrated` (1)
+- `psycho- + confirmed` (1)
+- `task + obtained` (1)
+- `debated + showed` (1)
+- `consistent + improved` (1)
+- `clear + observed` (1)
+- `contrast + exhibits` (1)
+- `overall + showed` (1)
+- `speciesism + revealed` (1)
+- `conditions + showed` (1)
+- `six + observed` (1)
+- `capacities + showed` (1)
+- `dilemmas + showed` (1)
+- `capacity + exhibited` (1)
+- `settings + demonstrated` (1)
+- `model + improved` (1)
+- `dogs + showed` (1)
+- `capacity + showed` (1)
+- `vice + indicates` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=16
+- x-ray: x-ray=1, x ray=0, xray=0
+- in situ: in situ=2, in-situ=2
+- et al.: et al.=3, et al=63
+- setup: setup=3, set-up=0, set up=0
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 27.5 words, passive 58.4 /10K
-- methods: 1 section(s), avg sentence 19.4 words, passive 203.2 /10K
-- results: 2 section(s), avg sentence 20.2 words, passive 85.9 /10K
+- discussion: 3 section(s), avg sentence 24.8 words, passive 58.1 /10K
+- methods: 3 section(s), avg sentence 21.6 words, passive 210.9 /10K
+- results: 4 section(s), avg sentence 20.5 words, passive 100.8 /10K
 
 ## Editor notes (manual curation)
 

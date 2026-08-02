@@ -1,82 +1,82 @@
-# Overlay: Ecology (AUTO-DRAFT 2026-08-01)
+# Overlay: Ecology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,391 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,391 words
+Maturity: immature (4 files, 35,855 words — treat stats as directional, not targets)
+Source: 4 file(s), 35,855 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.0 words
-- Passive voice: 134.7 /10K words
-- First person (we): 26.2 /10K words
+- Avg sentence length: 15.5 words
+- Passive voice: 130.2 /10K words
+- First person (we): 20.9 /10K words
 
 ## Top terms
 
+- `data` (175)
+- `species` (164)
+- `shrimp` (142)
+- `mud` (126)
+- `population` (126)
 - `colonies` (118)
+- `org` (111)
+- `model` (111)
 - `mellifera` (106)
+- `rabies` (106)
 - `honey` (88)
+- `ovalis` (82)
+- `jugyo` (82)
+- `populations` (80)
+- `self-training` (79)
 - `introgression` (75)
-- `population` (72)
+- `classification` (74)
+- `prevalence` (74)
+- `host` (74)
+- `health` (74)
+- `dog` (71)
+- `infested` (70)
+- `upogebia` (68)
+- `seonjaedo` (68)
 - `irish` (67)
 - `bee` (66)
+- `infestation` (61)
 - `bees` (58)
-- `data` (56)
-- `ireland` (44)
-- `conservation` (43)
-- `populations` (34)
-- `swiss` (31)
-- `native` (30)
-- `introgressed` (29)
-- `subspecies` (27)
-- `colony` (25)
-- `sampled` (24)
-- `apis` (23)
-- `genetic` (22)
-- `org` (21)
-- `network` (21)
-- `european` (21)
-- `levels` (21)
-- `samples` (21)
-- `lineage` (19)
-- `area` (17)
-- `c-lineage` (17)
-- `sequencing` (15)
-- `included` (15)
+- `schools` (56)
+- `training` (56)
 
 ## Phrase bank (term + verb)
 
+- `sardine + increased` (2)
+- `labels + increased` (2)
+- `species + indicates` (2)
+- `truly + indicates` (2)
+- `multispecies + increased` (2)
+- `infested + observed` (2)
+- `jugyo + increased` (2)
+- `sex-related + observed` (2)
+- `sites + indicates` (2)
+- `hasselblad + estimated` (2)
+- `horizontal + indicates` (2)
 - `colonies + showed` (2)
 - `irish + showed` (2)
-- `browne + obtained` (1)
-- `carried + improved` (1)
-- `colony + estimated` (1)
-- `drx + showed` (1)
-- `usa + measured` (1)
-- `c-lineage + estimated` (1)
-- `network + enhanced` (1)
-- `fst + showed` (1)
-- `managed + showed` (1)
-- `mixture + showed` (1)
-- `mellifera + showed` (1)
-- `introgression + observed` (1)
-- `core + exhibited` (1)
-- `five + obtained` (1)
-- `irish + exhibited` (1)
-- `honey + showed` (1)
-- `swiss + showed` (1)
-- `selection + showed` (1)
+- `coverage + indicates` (2)
+- `data + observed` (1)
+- `bay + improved` (1)
+- `species + enhanced` (1)
+- `species + achieved` (1)
+- `initially + obtained` (1)
+- `model + estimated` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=34
+- et al.: et al.=0, et al=93
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 17.2 words, passive 72.5 /10K
-- conclusion: 1 section(s), avg sentence 13.6 words, passive 0.0 /10K
-- discussion: 1 section(s), avg sentence 22.6 words, passive 119.5 /10K
-- introduction: 1 section(s), avg sentence 18.5 words, passive 124.0 /10K
-- methods: 1 section(s), avg sentence 20.2 words, passive 353.4 /10K
-- results: 1 section(s), avg sentence 18.6 words, passive 109.1 /10K
+- abstract: 5 section(s), avg sentence 17.1 words, passive 39.6 /10K
+- conclusion: 2 section(s), avg sentence 21.0 words, passive 93.6 /10K
+- discussion: 4 section(s), avg sentence 15.9 words, passive 107.5 /10K
+- introduction: 4 section(s), avg sentence 21.8 words, passive 184.1 /10K
+- methods: 4 section(s), avg sentence 24.8 words, passive 279.4 /10K
+- results: 4 section(s), avg sentence 20.1 words, passive 131.1 /10K
 
 ## Editor notes (manual curation)
 

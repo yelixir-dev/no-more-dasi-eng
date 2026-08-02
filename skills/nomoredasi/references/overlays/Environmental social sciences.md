@@ -1,46 +1,46 @@
 # Overlay: Environmental social sciences (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 9,494 words — treat stats as directional, not targets)
-Source: 1 file(s), 9,494 words
+Maturity: immature (2 files, 18,212 words — treat stats as directional, not targets)
+Source: 2 file(s), 18,212 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.9 words
-- Passive voice: 132.7 /10K words
-- First person (we): 60.0 /10K words
+- Avg sentence length: 17.0 words
+- Passive voice: 109.8 /10K words
+- First person (we): 71.4 /10K words
 
 ## Top terms
 
+- `uranium` (203)
 - `shark` (188)
-- `trade` (154)
-- `countries` (126)
+- `trade` (158)
+- `cobalt` (154)
+- `countries` (127)
 - `regulations` (100)
-- `products` (79)
+- `products` (82)
 - `finning` (74)
-- `country` (71)
-- `global` (63)
-- `regulation` (48)
-- `species` (46)
-- `network` (46)
-- `data` (43)
+- `country` (74)
+- `global` (73)
+- `exports` (72)
+- `data` (68)
+- `org` (63)
+- `regulation` (50)
+- `species` (49)
+- `network` (48)
+- `imports` (44)
+- `removal` (44)
 - `consumption` (41)
-- `exports` (39)
+- `year` (40)
 - `domestic` (38)
-- `year` (36)
+- `production` (37)
 - `sharks` (35)
 - `adopted` (35)
-- `imports` (34)
+- `nature` (35)
+- `analysis` (34)
+- `years` (33)
+- `copperbelt` (33)
 - `centrality` (32)
-- `analysis` (31)
-- `org` (29)
-- `years` (27)
-- `fishing` (26)
-- `out-degree` (24)
-- `trends` (23)
-- `time` (23)
-- `in-degree` (23)
-- `traded` (22)
-- `spain` (22)
+- `mining` (32)
 
 ## Phrase bank (term + verb)
 
@@ -67,13 +67,13 @@ Source: 1 file(s), 9,494 words
 
 ## Notation watch
 
-- et al.: et al.=1, et al=26
+- et al.: et al.=1, et al=42
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 28.9 words, passive 192.4 /10K
-- methods: 2 section(s), avg sentence 25.5 words, passive 228.3 /10K
-- results: 1 section(s), avg sentence 25.8 words, passive 66.8 /10K
+- discussion: 2 section(s), avg sentence 28.0 words, passive 178.6 /10K
+- methods: 3 section(s), avg sentence 23.8 words, passive 166.4 /10K
+- results: 2 section(s), avg sentence 21.4 words, passive 101.6 /10K
 
 ## Editor notes (manual curation)
 

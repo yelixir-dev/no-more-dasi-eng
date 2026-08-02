@@ -1,83 +1,84 @@
 # Overlay: Biomarkers (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 5,351 words — treat stats as directional, not targets)
-Source: 1 file(s), 5,351 words
+Maturity: immature (2 files, 14,786 words — treat stats as directional, not targets)
+Source: 2 file(s), 14,786 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.4 words
-- Passive voice: 181.3 /10K words
-- First person (we): 5.6 /10K words
+- Avg sentence length: 19.4 words
+- Passive voice: 193.4 /10K words
+- First person (we): 10.1 /10K words
 
 ## Top terms
 
+- `group` (112)
 - `glaucoma` (104)
+- `herpro` (103)
+- `poupro` (101)
+- `dogs` (100)
+- `diet` (68)
+- `proteins` (67)
+- `food` (57)
+- `poultry` (56)
+- `homocysteine` (54)
+- `concentration` (52)
+- `serum` (48)
 - `advanced` (48)
+- `intake` (47)
 - `volume` (47)
+- `dog` (46)
+- `herring` (46)
+- `groups` (42)
+- `protein` (40)
 - `right` (40)
 - `left` (40)
-- `visual` (37)
-- `early` (36)
-- `patients` (25)
-- `brain` (22)
-- `groups` (21)
-- `control` (20)
-- `analysis` (19)
-- `side` (18)
-- `measurements` (18)
-- `pathway` (17)
-- `disease` (16)
-- `central` (16)
-- `imaging` (16)
-- `mean` (16)
-- `differences` (16)
-- `group` (16)
-- `changes` (15)
-- `test` (15)
-- `comparison` (14)
-- `structural` (14)
-- `lublin` (13)
-- `retinal` (13)
-- `p-value` (13)
-- `volumetric` (12)
-- `structures` (12)
+- `early` (38)
+- `concentrations` (38)
+- `pathway` (38)
+- `visual` (38)
+- `changes` (36)
+- `patients` (36)
+- `diets` (35)
+- `experimental` (35)
+- `acid` (35)
 
 ## Phrase bank (term + verb)
 
+- `concentration + increased` (3)
+- `urine + measured` (3)
+- `herpro + increased` (3)
+- `written + obtained` (2)
+- `concentration + decreased` (2)
+- `symmetric + increased` (2)
+- `associated + increased` (2)
+- `fasting + measured` (2)
 - `lgn + observed` (2)
-- `inferior + decreased` (1)
-- `volumetric + observed` (1)
-- `mri + enhanced` (1)
-- `group + improved` (1)
-- `volumetric + demonstrated` (1)
-- `written + obtained` (1)
-- `quality + achieved` (1)
-- `thinning + confirmed` (1)
-- `acquisition + obtained` (1)
-- `mt-weighted + obtained` (1)
-- `hemisphere + calculated` (1)
-- `lgn + calculated` (1)
-- `volumes + obtained` (1)
-- `differences + observed` (1)
-- `temporal + showed` (1)
-- `right + obtained` (1)
-- `tables + showed` (1)
-- `side + demonstrated` (1)
-- `region + showed` (1)
+- `serum + increased` (1)
+- `herring + decreased` (1)
+- `decreased + increased` (1)
+- `scarce + demonstrated` (1)
+- `telephone + confirmed` (1)
+- `morning + measured` (1)
+- `preceding + confirmed` (1)
+- `run-in + estimated` (1)
+- `experimental + calculated` (1)
+- `n-methylglycine + measured` (1)
+- `dimethylarginine + measured` (1)
 
 ## Notation watch
 
 - in vivo: in vivo=2, in-vivo=0
-- et al.: et al.=0, et al=15
+- et al.: et al.=0, et al=27
+- setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 19.4 words, passive 214.6 /10K
-- conclusion: 1 section(s), avg sentence 28.5 words, passive 263.2 /10K
-- discussion: 1 section(s), avg sentence 24.2 words, passive 175.2 /10K
-- introduction: 1 section(s), avg sentence 26.7 words, passive 125.0 /10K
-- methods: 2 section(s), avg sentence 13.0 words, passive 238.5 /10K
-- results: 1 section(s), avg sentence 22.8 words, passive 149.9 /10K
+- abstract: 2 section(s), avg sentence 20.2 words, passive 277.2 /10K
+- conclusion: 2 section(s), avg sentence 20.2 words, passive 216.1 /10K
+- discussion: 2 section(s), avg sentence 28.1 words, passive 167.8 /10K
+- introduction: 2 section(s), avg sentence 25.6 words, passive 164.8 /10K
+- methods: 3 section(s), avg sentence 17.7 words, passive 289.7 /10K
+- results: 2 section(s), avg sentence 23.3 words, passive 201.2 /10K
 
 ## Editor notes (manual curation)
 

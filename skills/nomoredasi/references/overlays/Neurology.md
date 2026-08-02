@@ -1,46 +1,46 @@
-# Overlay: Neurology (AUTO-DRAFT 2026-08-01)
+# Overlay: Neurology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,898 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,898 words
+Maturity: immature (2 files, 14,249 words — treat stats as directional, not targets)
+Source: 2 file(s), 14,249 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.8 words
-- Passive voice: 139.4 /10K words
-- First person (we): 46.1 /10K words
+- Avg sentence length: 17.3 words
+- Passive voice: 155.1 /10K words
+- First person (we): 30.9 /10K words
 
 ## Top terms
 
 - `sleep` (218)
+- `glaucoma` (104)
 - `mice` (102)
+- `early` (87)
 - `disruption` (73)
 - `chronic` (66)
 - `months` (59)
-- `early` (51)
+- `org` (56)
+- `volume` (55)
 - `tau` (51)
-- `org` (50)
+- `advanced` (51)
 - `day` (48)
 - `adulthood` (47)
+- `left` (46)
+- `right` (46)
+- `cell` (44)
 - `mouse` (43)
-- `condition` (38)
+- `brain` (41)
+- `condition` (39)
+- `visual` (39)
 - `genotype` (38)
-- `cell` (36)
+- `group` (34)
+- `differences` (34)
+- `age` (33)
+- `positive` (33)
 - `main` (33)
-- `age` (31)
-- `positive` (31)
-- `cells` (30)
+- `cells` (32)
+- `groups` (31)
+- `hippocampus` (30)
 - `learning` (29)
-- `hippocampus` (28)
-- `density` (27)
-- `life` (26)
-- `memory` (23)
-- `lib` (23)
-- `iba` (22)
-- `area` (22)
-- `tauopathy` (21)
-- `maze` (21)
-- `supplemental` (21)
-- `spatial` (21)
 
 ## Phrase bank (term + verb)
 
@@ -49,6 +49,8 @@ Source: 1 file(s), 8,898 words
 - `condition + observed` (2)
 - `disruption + increased` (2)
 - `mice + showed` (2)
+- `differences + observed` (2)
+- `lgn + observed` (2)
 - `adulthood + improved` (1)
 - `hippocampal + increased` (1)
 - `positive + increased` (1)
@@ -62,18 +64,22 @@ Source: 1 file(s), 8,898 words
 - `detected + confirmed` (1)
 - `spindles + showed` (1)
 - `wakefulness + confirmed` (1)
-- `total + measured` (1)
-- `anesthesia + prepared` (1)
 
 ## Notation watch
 
 - in situ: in situ=1, in-situ=0
-- in vivo: in vivo=2, in-vivo=0
-- et al.: et al.=0, et al=31
+- in vivo: in vivo=4, in-vivo=0
+- et al.: et al.=0, et al=46
 
 ## Section metrics
 
+- abstract: 1 section(s), avg sentence 19.4 words, passive 214.6 /10K
 - body: 1 section(s), avg sentence 17.8 words, passive 139.4 /10K
+- conclusion: 1 section(s), avg sentence 28.5 words, passive 263.2 /10K
+- discussion: 1 section(s), avg sentence 24.2 words, passive 175.2 /10K
+- introduction: 1 section(s), avg sentence 26.7 words, passive 125.0 /10K
+- methods: 2 section(s), avg sentence 13.0 words, passive 238.5 /10K
+- results: 1 section(s), avg sentence 22.8 words, passive 149.9 /10K
 
 ## Editor notes (manual curation)
 

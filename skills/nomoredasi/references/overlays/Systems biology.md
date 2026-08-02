@@ -1,46 +1,46 @@
 # Overlay: Systems biology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 15,185 words — treat stats as directional, not targets)
-Source: 1 file(s), 15,185 words
+Maturity: immature (2 files, 22,051 words — treat stats as directional, not targets)
+Source: 2 file(s), 22,051 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.1 words
-- Passive voice: 112.6 /10K words
-- First person (we): 71.1 /10K words
+- Avg sentence length: 16.4 words
+- Passive voice: 101.1 /10K words
+- First person (we): 62.6 /10K words
 
 ## Top terms
 
 - `resistance` (252)
 - `evolution` (180)
 - `antibiotic` (83)
-- `gene` (80)
+- `gene` (81)
+- `delays` (80)
 - `mutations` (78)
 - `strains` (74)
+- `checkpoint` (74)
+- `model` (73)
+- `initial` (65)
+- `inhibition` (62)
 - `antibiotics` (61)
 - `strain` (60)
-- `initial` (58)
+- `mad` (59)
 - `growth` (56)
+- `robustness` (56)
 - `genes` (55)
+- `delay` (54)
 - `epistasis` (52)
+- `time` (52)
 - `populations` (52)
+- `inline-eq-ieq` (52)
 - `experiments` (51)
+- `template` (51)
 - `genetic` (48)
 - `reference` (48)
-- `deletions` (43)
-- `data` (42)
-- `global` (41)
-- `experiment` (41)
-- `evolved` (41)
-- `gene-deletion` (39)
-- `deletion` (37)
-- `coli` (36)
-- `evolutionary` (35)
-- `rate` (35)
-- `trajectories` (33)
-- `model` (33)
-- `background` (31)
-- `time` (31)
+- `data` (46)
+- `rate` (46)
+- `bistable` (46)
+- `global` (43)
 
 ## Phrase bank (term + verb)
 
@@ -67,15 +67,16 @@ Source: 1 file(s), 15,185 words
 
 ## Notation watch
 
-- in vivo: in vivo=1, in-vivo=0
-- et al.: et al.=0, et al=32
+- in vivo: in vivo=2, in-vivo=0
+- et al.: et al.=0, et al=37
 - setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 19.1 words, passive 96.1 /10K
-- methods: 1 section(s), avg sentence 21.2 words, passive 207.0 /10K
-- results: 1 section(s), avg sentence 20.0 words, passive 49.1 /10K
+- conclusion: 1 section(s), avg sentence 26.5 words, passive 53.9 /10K
+- discussion: 2 section(s), avg sentence 19.4 words, passive 75.9 /10K
+- methods: 2 section(s), avg sentence 21.2 words, passive 207.1 /10K
+- results: 2 section(s), avg sentence 20.6 words, passive 50.4 /10K
 
 ## Editor notes (manual curation)
 

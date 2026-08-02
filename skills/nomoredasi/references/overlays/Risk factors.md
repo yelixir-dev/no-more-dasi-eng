@@ -1,81 +1,83 @@
 # Overlay: Risk factors (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 5,142 words — treat stats as directional, not targets)
-Source: 1 file(s), 5,142 words
+Maturity: immature (3 files, 14,752 words — treat stats as directional, not targets)
+Source: 3 file(s), 14,752 words
 
 ## Corpus stats
 
-- Avg sentence length: 13.2 words
-- Passive voice: 155.6 /10K words
-- First person (we): 1.9 /10K words
+- Avg sentence length: 14.6 words
+- Passive voice: 151.8 /10K words
+- First person (we): 21.7 /10K words
 
 ## Top terms
 
+- `data` (107)
+- `social` (106)
 - `cataract` (93)
+- `health` (86)
+- `pain` (85)
+- `org` (79)
+- `associated` (77)
+- `loneliness` (75)
 - `surgery` (66)
-- `health` (48)
-- `data` (48)
-- `age` (42)
-- `screening` (36)
-- `diabetes` (32)
-- `factors` (31)
-- `alcohol` (30)
-- `mellitus` (28)
-- `hypertension` (26)
-- `risk` (24)
-- `cases` (23)
-- `associated` (22)
-- `japan` (21)
-- `consumption` (21)
-- `controls` (19)
-- `renal` (18)
-- `dysfunction` (18)
-- `individuals` (18)
-- `adults` (17)
-- `hyperuricemia` (17)
-- `years` (17)
-- `lifestyle` (16)
-- `working` (15)
-- `analyses` (15)
-- `because` (15)
-- `disease` (15)
-- `progression` (14)
-- `japanese` (14)
+- `medication` (62)
+- `age` (60)
+- `risk` (60)
+- `isolation` (60)
+- `cervical` (58)
+- `screening` (58)
+- `adults` (56)
+- `women` (55)
+- `factors` (55)
+- `missing` (48)
+- `model` (47)
+- `older` (47)
+- `ethiopia` (42)
+- `opioid` (37)
+- `prevalence` (35)
+- `cancer` (35)
+- `alcohol` (34)
+- `diabetes` (34)
+- `ref` (33)
+- `yes` (32)
+- `transitions` (31)
 
 ## Phrase bank (term + verb)
 
+- `associated + increased` (7)
+- `loneliness + increased` (3)
 - `diabetes + decreased` (2)
+- `women + showed` (1)
+- `developing + increased` (1)
+- `sample + calculated` (1)
+- `odds + estimated` (1)
+- `adjusted + estimated` (1)
+- `prevalence + observed` (1)
+- `variation + observed` (1)
+- `cohort + demonstrated` (1)
+- `uptake + observed` (1)
+- `cytological + demonstrated` (1)
+- `cohort + observed` (1)
+- `cytology + confirmed` (1)
 - `surgery + showed` (1)
 - `cataracts + estimated` (1)
 - `characteristics + showed` (1)
 - `age + confirmed` (1)
 - `lens + increased` (1)
-- `iwundu + increased` (1)
-- `analysis + demonstrated` (1)
-- `association + observed` (1)
-- `rather + observed` (1)
-- `observation + observed` (1)
-- `smaller + observed` (1)
-- `screening + revealed` (1)
-- `individuals + demonstrated` (1)
-- `risk + observed` (1)
-- `associated + increased` (1)
-- `affect + observed` (1)
-- `diabetic + increased` (1)
-- `intervention + observed` (1)
-- `hypertension + showed` (1)
 
 ## Notation watch
 
-- et al.: et al.=5, et al=34
+- in situ: in situ=1, in-situ=0
+- et al.: et al.=5, et al=60
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 16.1 words, passive 226.0 /10K
-- discussion: 1 section(s), avg sentence 25.4 words, passive 150.4 /10K
-- introduction: 1 section(s), avg sentence 17.5 words, passive 43.9 /10K
-- methods: 1 section(s), avg sentence 18.9 words, passive 364.2 /10K
-- results: 1 section(s), avg sentence 24.2 words, passive 171.8 /10K
+- abstract: 3 section(s), avg sentence 18.3 words, passive 246.5 /10K
+- conclusion: 1 section(s), avg sentence 7.4 words, passive 39.7 /10K
+- discussion: 3 section(s), avg sentence 22.6 words, passive 163.2 /10K
+- introduction: 3 section(s), avg sentence 21.3 words, passive 117.1 /10K
+- methods: 5 section(s), avg sentence 19.2 words, passive 318.3 /10K
+- results: 3 section(s), avg sentence 20.2 words, passive 229.1 /10K
 
 ## Editor notes (manual curation)
 
