@@ -178,6 +178,22 @@ PY
             git commit -m "data(cycle): $TODAY delta ($arrivals arrivals)" -- "${ACTIVE_PATHS[@]}"
         fi
     fi
+
+    heading 5.5 "publish (github push + share backup)"
+    if git remote get-url origin >/dev/null 2>&1; then
+        git push origin main || echo "cycle_delta: push failed (offline or auth) — continuing" >&2
+    else
+        echo "publish: no origin remote yet, skipping push"
+    fi
+    if [[ -d /Volumes/share/paper-english-backup ]]; then
+        rsync -a --delete --exclude '.venv/' "$ROOT/" /Volumes/share/paper-english-backup/paper-english/ >/dev/null \
+            && echo "publish: workspace backed up to /Volumes/share"
+        [[ -d "$HOME/Documents/papers" ]] \
+            && rsync -a --delete "$HOME/Documents/papers/" /Volumes/share/paper-english-backup/papers/ >/dev/null \
+            && echo "publish: corpus backed up to /Volumes/share"
+    else
+        echo "publish: /Volumes/share not mounted, skipping backup" >&2
+    fi
 fi
 
 if selected 6; then

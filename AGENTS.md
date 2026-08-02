@@ -42,4 +42,4 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 버전 관리
 
-로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `docs/ATTRIBUTIONS.md`, `docs/attributions.json`, `docs/attributions.html`, `docs/readiness.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
+로컬 git 레포 + GitHub 비공개 원격(origin) 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `docs/ATTRIBUTIONS.md`, `docs/attributions.json`, `docs/attributions.html`, `docs/readiness.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. **매 사이클 Step 5.5에서 ① origin/main 푸시(원격 있으면) ② `/Volumes/share/paper-english-backup/`에 워크스페이스+코퍼스 전체 rsync 백업을 항상 수행한다** (둘 다 실패필수가 아니라 경고 후 계속).
