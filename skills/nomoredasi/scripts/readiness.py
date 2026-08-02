@@ -111,7 +111,10 @@ def load_series(history_path):
         seen.add(key)
         series.setdefault(rec.get("field"), []).append(rec)
     for field in series:
-        series[field].sort(key=lambda r: (r.get("papers", 0), r.get("date", "")))
+        by_papers = {}
+        for rec in series[field]:
+            by_papers[rec.get("papers", 0)] = rec
+        series[field] = sorted(by_papers.values(), key=lambda r: (r.get("papers", 0), r.get("date", "")))
     return series
 
 

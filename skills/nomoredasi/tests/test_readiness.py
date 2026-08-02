@@ -87,6 +87,25 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("55 papers, score 86.0", html, "same-day later state must be rendered")
         self.assertEqual(html.count("55 papers, score 86.0"), 1, "exact duplicates must stay deduped")
 
+    def test_same_papers_keeps_latest_only(self):
+        history = self.dir / "wobble.jsonl"
+        recs = [
+            {"date": "2026-08-01", "field": "Field A", "papers": 55, "words": 1, "collocations_ge5": 1, "sections": 5, "term_overlap": None, "score": 73.6, "top_terms": []},
+            {"date": "2026-08-02", "field": "Field A", "papers": 55, "words": 1, "collocations_ge5": 1, "sections": 5, "term_overlap": None, "score": 86.2, "top_terms": []},
+            {"date": "2026-08-02", "field": "Field A", "papers": 90, "words": 1, "collocations_ge5": 1, "sections": 5, "term_overlap": None, "score": 91.2, "top_terms": []},
+        ]
+        history.write_text("\n".join(json.dumps(r) for r in recs), encoding="utf-8")
+        html_path = self.dir / "wobble.html"
+        r = subprocess.run(
+            [PY, str(ROOT / "scripts" / "readiness.py"),
+             "--corpus", str(self.corpus), "--history", str(history),
+             "--html", str(html_path)],
+            capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        html = html_path.read_text(encoding="utf-8")
+        self.assertIn("55 papers, score 86.2", html)
+        self.assertNotIn("score 73.6", html, "older same-papers record must be collapsed")
+
     def test_html_render_with_chart(self):
         self.assertEqual(self.run_readiness().returncode, 0)
         self.assertEqual(self.run_readiness().returncode, 0)
