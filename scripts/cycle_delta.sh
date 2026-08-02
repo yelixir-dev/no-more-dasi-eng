@@ -6,15 +6,20 @@ ROOT=${CYCLE_ROOT:-$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)}
 cd "$ROOT"
 
 usage() {
-    echo "Usage: bash scripts/cycle_delta.sh [--dry-run] [--only <0-6>]" >&2
+    echo "Usage: bash scripts/cycle_delta.sh [--dry-run] [--only <0-6>] [--with-backup]" >&2
 }
 
 DRY_RUN=0
 ONLY=""
+WITH_BACKUP=0
 while (($#)); do
     case "$1" in
         --dry-run)
             DRY_RUN=1
+            shift
+            ;;
+        --with-backup)
+            WITH_BACKUP=1
             shift
             ;;
         --only)
@@ -185,14 +190,16 @@ PY
     else
         echo "publish: no origin remote yet, skipping push"
     fi
-    if [[ -d /Volumes/share/paper-english-backup ]]; then
+    if [[ -d /Volumes/share/paper-english-backup && "$WITH_BACKUP" -eq 1 ]]; then
         rsync -a --delete --exclude '.venv/' "$ROOT/" /Volumes/share/paper-english-backup/paper-english/ >/dev/null \
             && echo "publish: workspace backed up to /Volumes/share"
         [[ -d "$HOME/Documents/papers" ]] \
             && rsync -a --delete "$HOME/Documents/papers/" /Volumes/share/paper-english-backup/papers/ >/dev/null \
             && echo "publish: corpus backed up to /Volumes/share"
-    else
+    elif [[ "$WITH_BACKUP" -eq 1 ]]; then
         echo "publish: /Volumes/share not mounted, skipping backup" >&2
+    else
+        echo "publish: share backup skipped (scheduled Mon/Thu runs use --with-backup)"
     fi
 fi
 
