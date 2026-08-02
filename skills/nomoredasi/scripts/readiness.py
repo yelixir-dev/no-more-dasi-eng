@@ -271,19 +271,19 @@ td {{ padding: 6px 12px 6px 0; border-bottom: none; }}
 <body>
 <div class="wrap">
 <p class="kicker">nomoredasi · documentation</p>
-<h1>Field Readiness · 편수 대비 스킬 준비도</h1>
-<p class="subtitle">연구 분야별 원고·코퍼스가 실전 교정에 쓸 수 있을 만큼 다져졌는지 0–100 점으로 요약한 지표. x축은 분야별 논문 편수, y축은 종합 점수이며, 점선은 사용 가능(60) 및 게재 가능(80) 목표선. 점에 마우스를 올리면 상세 수치를 확인할 수 있다. (history: {history_path.name}, updated {updated})</p>
+<h1>Field Readiness · score versus papers accumulated</h1>
+<p class="subtitle">A 0-100 summary of how field-ready the mined corpus is for production proofreading. x-axis: papers per field; y-axis: composite score. Dashed lines mark the usable (60) and publishable (80) targets. Hover any point for details. (history: {history_path.name}, updated {updated})</p>
 
 <div class="card">
 <p class="figure-title">Figure 1. Field readiness versus papers accumulated</p>
 {''.join(svg)}
-<p class="figure-caption">종합 점수는 편수(25)·연어(25)·섹션(15)·용어 안정성(20)·단어수(15)의 가중 합으로 산출됩니다. 굵은 선은 상위 분야, 옅은 회색은 범례 미포함 분야입니다.</p>
+<p class="figure-caption">Composite score = papers (25) + collocations (25) + sections (15) + top-term stability (20) + words (15). Bold lines are legend fields; faint gray lines are all remaining fields.</p>
 </div>
 
 <div class="card">
 <table>
 <thead>
-<tr><th>분야</th><th class="num">편수</th><th class="num">단어수</th><th class="num">연어(≥5)</th><th class="num">섹션</th><th class="num">점수</th></tr>
+<tr><th>Field</th><th class="num">Papers</th><th class="num">Words</th><th class="num">Collocations (≥5)</th><th class="num">Sections</th><th class="num">Score</th></tr>
 </thead>
 <tbody>
 {''.join(rows)}
@@ -291,7 +291,7 @@ td {{ padding: 6px 12px 6px 0; border-bottom: none; }}
 </table>
 </div>
 
-<p class="method-note">방법론: 점수는 다섯 성분의 가중 합(편수 25, 연어 수 25, 섹션 수 15, 상위 용어 안정성 20, 단어수 15)을 0–100 범위로 정규화한 값입니다. 용어 안정성은 직전 기록과의 상위 용어 중복률이며, 연어는 5회 이상 동시출현한 구절 수입니다. 목표선 60(사용 가능)과 80(게재 가능)은 프로젝트 기준입니다.</p>
+<p class="method-note">Method: the score normalizes a weighted sum of five components (papers 25, collocations 25, sections 15, top-term stability 20, words 15) to 0-100. Stability is the top-term overlap with the previous record; collocations count phrases seen 5+ times. The 60 (usable) and 80 (publishable) thresholds are project targets.</p>
 </div>
 </body>
 </html>

@@ -85,12 +85,12 @@ class BuildAttributionsTest(unittest.TestCase):
         html = (self.out / "attributions.html").read_text(encoding="utf-8")
         self.assertIn("<details", html, "subjects must fold")
         self.assertNotIn("<details open", html, "folds default to collapsed")
-        self.assertIn("Optics and photonics (1편)", html)
+        self.assertIn("Optics and photonics (1 paper)", html)
         self.assertIn("<svg", html, "pie chart expected")
         md = (self.out / "ATTRIBUTIONS.md").read_text(encoding="utf-8")
-        self.assertIn("Optics and photonics (1편)", md)
+        self.assertIn("Optics and photonics (1 paper)", md)
         self.assertIn("<details>", md, "GitHub-renderable fold in md")
-        self.assertIn("| 분야 | 편수 |", md, "md gets the counts table instead of a pie")
+        self.assertIn("| Field | Papers |", md, "md gets the counts table instead of a pie")
 
     def test_deterministic(self):
         self.assertEqual(self.run_build().returncode, 0)

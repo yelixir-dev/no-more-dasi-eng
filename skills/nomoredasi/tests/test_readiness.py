@@ -152,8 +152,8 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("80", html)
 
         # Score components documented in the caption / methodology note.
-        self.assertIn("종합 점수는 편수", html)
-        self.assertIn("방법론", html)
+        self.assertIn("Composite score", html)
+        self.assertIn("Method", html)
 
         # Journal-style table: tabular numerals and right-aligned numeric cells.
         self.assertIn("tabular-nums", html)
