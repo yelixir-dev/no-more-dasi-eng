@@ -2,15 +2,25 @@
 """Deterministic fidelity gate for paper-english edits.
 
 Compares an original manuscript with its corrected version:
-  1. Invariants (numbers, citations, chemical formulas, DOIs) must be
-     preserved as multisets — anything missing or invented fails.
+  1. Invariants (numbers, quantities, citations, chemical formulas, DOIs,
+     equations, overlay terms) must be preserved as multisets — anything
+     missing or invented fails.
   2. Change rate (word-level) warns above 30% and fails above 50%.
+  3. --repeat N re-reads both files and re-runs the whole comparison N times
+     (default 2) to guard against mid-write file races; every pass must pass.
+  4. --report PATH writes a self-contained HTML diff report (verdict banner,
+     per-category table, change rate, repeat pass count, word-level diff).
+  5. --overlay PATH optionally parses the overlay file's "## Top terms"
+     section; any term present in the original must survive verbatim.
 
-Usage: verify_integrity.py ORIGINAL CORRECTED
-Exit: 0 = pass (warnings allowed), 1 = violation.
+Usage: verify_integrity.py ORIGINAL CORRECTED [--overlay PATH]
+       [--repeat N] [--report PATH]
+Exit: 0 = pass (warnings allowed), 1 = violation, 2 = usage error.
 """
 
+import argparse
 import difflib
+import html
 import re
 import sys
 from collections import Counter
@@ -45,6 +55,16 @@ ELEMENTS = {
 FORMULA = re.compile(r"\b(?:[A-Z][a-z]?\d*){2,}\b")
 FORMULA_PART = re.compile(r"[A-Z][a-z]?\d*")
 
+# Equation heuristics.
+EQUAL_OPS = "=≈≃∝"          # anchors an equation segment
+JOIN_OPS = "+−‑×·±*/"        # continue an equation segment (space-separated)
+SPAN_OPS = EQUAL_OPS + JOIN_OPS
+GREEK = "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ"
+_MATH_CHARS = GREEK + "√∫∂"
+_SUPER = "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻ"
+_SUB = "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓ" + "ₔₕₖₗₘₙₚₛₜ"
+_MATH_UNICODE = _SUPER + _SUB
+
 
 def is_chemical_formula(token):
     parts = FORMULA_PART.findall(token)
@@ -58,7 +78,93 @@ def is_chemical_formula(token):
     ) or len(parts) >= 3
 
 
-def extract_invariants(text):
+def has_math_char(token):
+    return any(c in _MATH_CHARS or c in _MATH_UNICODE for c in token)
+
+
+def _is_plain_operand(token):
+    """True for math operands: digits, math glyphs, underscore identifiers,
+    or single Latin-letter variables. Long plain words like 'and', 'where',
+    'is' are rejected (fixed <=2 fallback below) to keep prose out of spans.
+    Surrounding punctuation is ignored for classification."""
+    core = token.strip("()[],.;:!?")
+    if has_math_char(core):
+        return True
+    if re.search(r"\d", core):
+        return True
+    if "_" in token:
+        return True
+    if len(core) == 1 and core.isalpha():
+        return True
+    return False
+
+
+def _is_atom(token):
+    """A token is part of an equation if it carries an operator or is a
+    math operand (only admitted inside a span anchored by an equality op)."""
+    if any(c in SPAN_OPS for c in token):
+        return True
+    return _is_plain_operand(token)
+
+
+def _trim_punct(s):
+    s = re.sub(r"^[\s(\[,.;:!?]+", "", s)
+    return re.sub(r"[\s),.;:!?]+$", "", s)
+
+
+def extract_equations(text):
+    """Return a Counter of whitespace-normalized equation strings.
+
+    Only runs anchored by an equality-ish operator (= ≈ ≃ ∝) are considered,
+    so a plain prose sentence yields zero equations. Surrounding math atoms
+    (Greek letters, √ ∫ ∂, unicode super/subscripts, join operators, numeric
+    or single-letter operands) extend the segment contiguously on each side;
+    long connective words ('and', 'where', 'is') terminate the span.
+    """
+    tokens = text.split()
+    n = len(tokens)
+    equations = []
+    i = 0
+    while i < n:
+        if any(c in EQUAL_OPS for c in tokens[i]):
+            start = i
+            while start - 1 >= 0 and _is_atom(tokens[start - 1]):
+                start -= 1
+            end = i + 1
+            while end < n and _is_atom(tokens[end]):
+                end += 1
+            span = tokens[start:end]
+            while len(span) > 1 and len(span[0]) == 1 and span[0] in JOIN_OPS:
+                span.pop(0)
+            while len(span) > 1 and len(span[-1]) == 1 and span[-1] in JOIN_OPS:
+                span.pop()
+            if span:
+                equation = _trim_punct(" ".join(span))
+                if any(c in EQUAL_OPS for c in equation):
+                    equations.append(equation)
+            i = end
+        else:
+            i += 1
+    return Counter(equations)
+
+
+def extract_terms(overlay_path):
+    """Parse the overlay's \"## Top terms\" section for backticked terms."""
+    with open(overlay_path, encoding="utf-8") as f:
+        lines = f.read().splitlines()
+    in_section = False
+    terms = []
+    for line in lines:
+        if line.startswith("## "):
+            in_section = line.strip().lower() == "## top terms"
+            continue
+        if in_section:
+            for m in re.findall(r"`([^`]+)`", line):
+                terms.append(m)
+    return terms
+
+
+def extract_invariants(text, overlay_path=None):
     citations = CITATION_BRACKET.findall(text) + CITATION_AUTHOR.findall(text)
     stripped = CITATION_BRACKET.sub(" ", text)
     stripped = CITATION_AUTHOR.sub(" ", stripped)
@@ -69,13 +175,19 @@ def extract_invariants(text):
         f"{num} {unit}".strip() for num, unit in QUANTITY.findall(stripped)
     )
     formulas = [t for t in FORMULA.findall(stripped) if is_chemical_formula(t)]
-    return {
+    invariants = {
         "number": Counter(numbers),
         "quantity": quantities,
         "citation": Counter(citations),
         "formula": Counter(formulas),
         "doi": Counter(dois),
+        "equation": extract_equations(text),
     }
+    if overlay_path is not None:
+        terms = extract_terms(overlay_path)
+        present = {t for t in terms if t in text}
+        invariants["term"] = Counter({t: 1 for t in sorted(present)})
+    return invariants
 
 
 def change_rate(original, corrected):
@@ -84,21 +196,16 @@ def change_rate(original, corrected):
     return 1.0 - difflib.SequenceMatcher(None, a, b).ratio()
 
 
-def main():
-    if len(sys.argv) != 3:
-        print("usage: verify_integrity.py ORIGINAL CORRECTED", file=sys.stderr)
-        return 2
-    with open(sys.argv[1], encoding="utf-8") as f:
-        original = f.read()
-    with open(sys.argv[2], encoding="utf-8") as f:
-        corrected = f.read()
-
+def compare_once(original, corrected, overlay_path, order):
+    """Single comparison pass. Returns (violations, rate)."""
     violations = []
-    inv_o = extract_invariants(original)
-    inv_c = extract_invariants(corrected)
-    for kind in ("number", "quantity", "citation", "formula", "doi"):
-        missing = inv_o[kind] - inv_c[kind]
-        invented = inv_c[kind] - inv_o[kind]
+    inv_o = extract_invariants(original, overlay_path)
+    inv_c = extract_invariants(corrected, overlay_path)
+    for kind in ("number", "quantity", "citation", "formula", "doi", "equation", "term"):
+        if kind not in inv_o:
+            continue
+        missing = inv_o[kind] - inv_c.get(kind, Counter())
+        invented = inv_c.get(kind, Counter()) - inv_o[kind]
         for token, count in sorted(missing.items()):
             violations.append(f"MISSING {kind}: {token!r} (x{count})")
         for token, count in sorted(invented.items()):
@@ -107,15 +214,146 @@ def main():
     rate = change_rate(original, corrected)
     if rate > STOP_RATE:
         violations.append(f"CHANGE RATE {rate:.0%} exceeds stop gate {STOP_RATE:.0%}")
+    return violations, rate
 
-    for v in violations:
+
+def category_stats(inv_o, inv_c, kinds):
+    stats = {}
+    for kind in kinds:
+        o = inv_o.get(kind, Counter())
+        c = inv_c.get(kind, Counter())
+        stats[kind] = {
+            "original": int(sum(o.values())),
+            "corrected": int(sum(c.values())),
+            "missing": int(sum((o - c).values())),
+            "invented": int(sum((c - o).values())),
+        }
+    return stats
+
+
+def render_report(path, original, corrected, stats, rate, passes, total_passes,
+                  violations):
+    verdict = "PASS" if not violations else "FAIL"
+    banner_color = "#1a7f37" if not violations else "#cf222e"
+    diff = difflib.HtmlDiff(wrapcolumn=100)
+    diff_html = diff.make_file(
+        original.splitlines(), corrected.splitlines(),
+        fromdesc="Original", todesc="Corrected", context=False,
+    )
+
+    rows = []
+    for kind in ("number", "quantity", "citation", "formula", "doi", "equation", "term"):
+        if kind not in stats:
+            continue
+        s = stats[kind]
+        rows.append(
+            f"<tr><td><code>{html.escape(kind)}</code></td>"
+            f"<td>{s['original']}</td><td>{s['corrected']}</td>"
+            f"<td>{s['missing']}</td><td>{s['invented']}</td></tr>"
+        )
+
+    violation_items = "".join(
+        f"<li>{html.escape(v)}</li>" for v in violations
+    ) or "<li>none</li>"
+
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>verify_integrity report</title>
+<style>
+  body {{ font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        margin: 2rem; max-width: 960px; margin-left: auto; margin-right: auto; }}
+  .banner {{ color: #fff; background: {banner_color}; padding: 1rem 1.5rem;
+           border-radius: 6px; font-size: 1.4rem; font-weight: 700; }}
+  table {{ border-collapse: collapse; margin: 1rem 0; width: 100%; }}
+  th, td {{ border: 1px solid #d0d7de; padding: 6px 12px; text-align: left; }}
+  th {{ background: #f6f8fa; }}
+  .meta {{ color: #57606a; }}
+</style>
+</head>
+<body>
+  <div class="banner">Integrity gate: {verdict}</div>
+  <p class="meta">Change rate: {rate:.0%} &nbsp;•&nbsp; repeated comparison:
+     {passes}/{total_passes} passes</p>
+  <h2>Invariant categories</h2>
+  <table>
+    <tr><th>category</th><th>original</th><th>corrected</th>
+        <th>missing</th><th>invented</th></tr>
+    {''.join(rows)}
+  </table>
+  <h2>Violations</h2>
+  <ul>{violation_items}</ul>
+  <h2>Word-level diff</h2>
+  {diff_html}
+</body>
+</html>
+"""
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(page)
+
+
+def build_parser():
+    p = argparse.ArgumentParser(
+        prog="verify_integrity.py",
+        description="Deterministic fidelity gate: compare ORIGINAL vs CORRECTED.",
+    )
+    p.add_argument("original")
+    p.add_argument("corrected")
+    p.add_argument("--overlay", default=None, help="overlay .md with a "
+                   "'## Top terms' section; enforces term invariants")
+    p.add_argument("--repeat", type=int, default=2,
+                   help="re-read and re-compare N times (default 2)")
+    p.add_argument("--report", default=None,
+                   help="write a self-contained HTML report to PATH")
+    return p
+
+
+def main(argv=None):
+    args = build_parser().parse_args(argv)
+    if args.repeat < 1:
+        print("verify_integrity: --repeat must be >= 1", file=sys.stderr)
+        return 2
+
+    def _load(path):
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+
+    all_violations = None
+    rate = 0.0
+    passes = 0
+    for _ in range(args.repeat):
+        original = _load(args.original)
+        corrected = _load(args.corrected)
+        violations, this_rate = compare_once(original, corrected, args.overlay, _)
+        rate = this_rate
+        if all_violations is None:
+            all_violations = violations
+        if not violations:
+            passes += 1
+
+    total = args.repeat
+    all_violations = all_violations or []
+
+    if args.report:
+        original = _load(args.original)
+        corrected = _load(args.corrected)
+        inv_o = extract_invariants(original, args.overlay)
+        inv_c = extract_invariants(corrected, args.overlay)
+        kinds = list(inv_o.keys())
+        stats = category_stats(inv_o, inv_c, kinds)
+        render_report(args.report, original, corrected, stats, rate, passes,
+                      total, all_violations)
+
+    for v in all_violations:
         print(f"FAIL {v}")
-    if not violations and rate > WARN_RATE:
+    if not all_violations and rate > WARN_RATE:
         print(f"WARN change rate {rate:.0%} above {WARN_RATE:.0%}", file=sys.stderr)
-    if violations:
-        print(f"verify_integrity: {len(violations)} violation(s), change rate {rate:.0%}")
+    print(f"verify_integrity: {passes}/{total} comparison passes, "
+          f"change rate {rate:.0%}")
+    if all_violations:
+        print(f"verify_integrity: {len(all_violations)} violation(s)")
         return 1
-    print(f"verify_integrity: PASS (change rate {rate:.0%})")
     return 0
 
 
