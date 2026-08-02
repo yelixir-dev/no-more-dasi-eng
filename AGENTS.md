@@ -37,9 +37,9 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 작업 방식
 
-- 서브에이전트 병렬 활용을 적극 권장. 단순·저비중 작업은 저렴한 모델(quick 카테고리 = luna)로 라우팅.
+- 서브에이전트 병렬 활용을 적극 권장. 노동은 worker 모델(DeepSeek v4 Flash, gpt-5.6-luna high)로 라우팅하고, 메인(k3)은 판단·검증·해결사 역할에 집중한다 (글로벌 오케스트레이션 정책 참조).
 - 코퍼스 텍스트 추출에는 `pdftotext`(poppler) 필요 — 미설치 시 `brew install poppler`.
 
 ## 버전 관리
 
-로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `docs/ATTRIBUTIONS.md`, `docs/attributions.json`, `docs/attributions.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
+로컬 git 레포 사용. 사이클 자동커밋은 데이터 경로(`skills/nomoredasi/references/overlays/`, `skills/nomoredasi/references/abbrev-registry.json`, `skills/nomoredasi/references/abbrev-registry.html`, `docs/ATTRIBUTIONS.md`, `docs/attributions.json`, `docs/attributions.html`, `docs/readiness.html`, `logs/`)에 한정하며 diff가 있을 때만 수행한다. 규칙 파일(`SKILL.md`, `references/core/`, `tests/golden/`, `AGENTS.md`)은 사람만 커밋한다. GitHub 원격은 추후 연결 예정.
