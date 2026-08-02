@@ -97,7 +97,7 @@ fi
 if selected 1; then
     heading 1 "delta inventory"
     mkdir -p "$CYCLE_LOG"
-    "$PY" "$SKILL/scripts/corpus_manifest.py" diff | tee "$DELTA_LOG"
+    "$PY" "$SKILL/scripts/corpus_manifest.py" diff --save | tee "$DELTA_LOG"
 fi
 
 if selected 2; then
