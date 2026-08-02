@@ -79,6 +79,19 @@ class BuildAttributionsTest(unittest.TestCase):
         html = (self.out / "attributions.html").read_text(encoding="utf-8")
         self.assertIn("Soliton microcombs", html)
 
+    def test_folded_subjects_and_pie(self):
+        r = self.run_build()
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        html = (self.out / "attributions.html").read_text(encoding="utf-8")
+        self.assertIn("<details", html, "subjects must fold")
+        self.assertNotIn("<details open", html, "folds default to collapsed")
+        self.assertIn("Optics and photonics (1편)", html)
+        self.assertIn("<svg", html, "pie chart expected")
+        md = (self.out / "ATTRIBUTIONS.md").read_text(encoding="utf-8")
+        self.assertIn("Optics and photonics (1편)", md)
+        self.assertIn("<details>", md, "GitHub-renderable fold in md")
+        self.assertIn("| 분야 | 편수 |", md, "md gets the counts table instead of a pie")
+
     def test_deterministic(self):
         self.assertEqual(self.run_build().returncode, 0)
         first = (self.out / "attributions.json").read_bytes()
