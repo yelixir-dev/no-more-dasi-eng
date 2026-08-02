@@ -1,49 +1,50 @@
 # Overlay: Agriculture (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (3 files, 32,809 words — treat stats as directional, not targets)
-Source: 3 file(s), 32,809 words
+Maturity: immature (4 files, 40,950 words — treat stats as directional, not targets)
+Source: 4 file(s), 40,950 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.5 words
-- Passive voice: 118.3 /10K words
-- First person (we): 25.9 /10K words
+- Avg sentence length: 16.2 words
+- Passive voice: 128.4 /10K words
+- First person (we): 21.0 /10K words
 
 ## Top terms
 
+- `climate` (247)
 - `exposure` (166)
-- `climate` (153)
-- `plant` (138)
+- `suitability` (160)
+- `change` (153)
+- `plant` (140)
 - `yield` (128)
+- `global` (127)
 - `traits` (125)
-- `cropland` (119)
-- `global` (117)
+- `wheat` (123)
+- `cropland` (120)
+- `data` (118)
+- `crop` (116)
+- `regions` (112)
 - `arbuscules` (100)
 - `arbuscule` (96)
-- `regions` (95)
-- `vulnerability` (92)
-- `data` (87)
-- `wheat` (86)
-- `change` (85)
+- `future` (96)
+- `vulnerability` (95)
+- `org` (84)
 - `phosphate` (82)
 - `breeding` (82)
 - `rice` (80)
 - `leaf` (79)
+- `crops` (79)
+- `source` (78)
 - `cultivars` (78)
+- `changes` (77)
 - `grain` (77)
-- `source` (75)
-- `crop` (68)
-- `future` (62)
-- `risk` (62)
-- `compound` (61)
-- `org` (60)
-- `plants` (60)
-- `events` (57)
-- `sink` (57)
-- `spike` (55)
+- `projected` (76)
+- `water` (70)
+- `land` (70)
 
 ## Phrase bank (term + verb)
 
+- `robustness + indicates` (3)
 - `symbiotic + observed` (2)
 - `arbuscules + measured` (2)
 - `breeding + increased` (2)
@@ -63,21 +64,21 @@ Source: 3 file(s), 32,809 words
 - `lifespan + observed` (1)
 - `ai-ii + showed` (1)
 - `mrfp + revealed` (1)
-- `branch + measured` (1)
 
 ## Notation watch
 
 - in vivo: in vivo=1, in-vivo=0
-- et al.: et al.=12, et al=154
+- et al.: et al.=29, et al=194
 - setup: setup=1, set-up=1, set up=0
 
 ## Section metrics
 
 - abstract: 1 section(s), avg sentence 26.9 words, passive 53.2 /10K
-- discussion: 3 section(s), avg sentence 24.9 words, passive 73.2 /10K
+- conclusion: 1 section(s), avg sentence 27.7 words, passive 209.1 /10K
+- discussion: 4 section(s), avg sentence 25.3 words, passive 93.1 /10K
 - introduction: 1 section(s), avg sentence 24.7 words, passive 87.9 /10K
 - methods: 3 section(s), avg sentence 21.7 words, passive 288.6 /10K
-- results: 3 section(s), avg sentence 21.6 words, passive 95.1 /10K
+- results: 4 section(s), avg sentence 21.9 words, passive 107.4 /10K
 
 ## Editor notes (manual curation)
 

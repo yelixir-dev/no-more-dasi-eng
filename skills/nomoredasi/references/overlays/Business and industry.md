@@ -1,46 +1,46 @@
 # Overlay: Business and industry (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (3 files, 31,441 words — treat stats as directional, not targets)
-Source: 3 file(s), 31,441 words
+Maturity: immature (4 files, 39,102 words — treat stats as directional, not targets)
+Source: 4 file(s), 39,102 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.9 words
-- Passive voice: 107.5 /10K words
-- First person (we): 82.1 /10K words
+- Avg sentence length: 16.6 words
+- Passive voice: 97.4 /10K words
+- First person (we): 96.7 /10K words
 
 ## Top terms
 
-- `models` (151)
-- `model` (131)
-- `indicators` (101)
-- `org` (98)
+- `models` (175)
+- `model` (170)
+- `temperature` (131)
+- `data` (125)
+- `org` (119)
+- `indicators` (102)
 - `companies` (98)
 - `animals` (95)
-- `human` (94)
+- `human` (95)
 - `speciesist` (93)
+- `climate` (88)
 - `transparency` (85)
-- `data` (82)
 - `language` (79)
 - `llms` (79)
-- `see` (68)
+- `see` (76)
+- `nature` (76)
+- `annual` (72)
+- `dataset` (66)
+- `mean` (62)
+- `reporting` (62)
 - `corporate` (62)
-- `dataset` (60)
-- `reporting` (60)
-- `nature` (58)
+- `analysis` (61)
+- `communications` (57)
 - `reasoning` (56)
+- `number` (56)
+- `economic` (56)
+- `change` (56)
 - `emissions` (56)
-- `moral` (53)
-- `statements` (48)
-- `number` (48)
-- `information` (48)
-- `value` (47)
-- `speciesism` (47)
-- `communications` (46)
-- `sustainability` (46)
-- `scope` (44)
-- `reports` (43)
-- `framework` (43)
+- `information` (55)
+- `growth` (55)
 
 ## Phrase bank (term + verb)
 
@@ -69,14 +69,14 @@ Source: 3 file(s), 31,441 words
 
 - x-ray: x-ray=1, x ray=0, xray=0
 - in situ: in situ=2, in-situ=2
-- et al.: et al.=3, et al=63
+- et al.: et al.=3, et al=71
 - setup: setup=3, set-up=0, set up=0
 
 ## Section metrics
 
-- discussion: 3 section(s), avg sentence 24.8 words, passive 58.1 /10K
-- methods: 3 section(s), avg sentence 21.6 words, passive 210.9 /10K
-- results: 4 section(s), avg sentence 20.5 words, passive 100.8 /10K
+- discussion: 4 section(s), avg sentence 25.0 words, passive 58.1 /10K
+- methods: 4 section(s), avg sentence 20.8 words, passive 187.4 /10K
+- results: 5 section(s), avg sentence 19.8 words, passive 88.6 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,79 +1,81 @@
-# Overlay: Scientific community (AUTO-DRAFT 2026-08-01)
+# Overlay: Scientific community (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 4,417 words — treat stats as directional, not targets)
-Source: 1 file(s), 4,417 words
+Maturity: immature (2 files, 10,464 words — treat stats as directional, not targets)
+Source: 2 file(s), 10,464 words
 
 ## Corpus stats
 
-- Avg sentence length: 13.1 words
-- Passive voice: 86.0 /10K words
-- First person (we): 77.0 /10K words
+- Avg sentence length: 18.2 words
+- Passive voice: 89.8 /10K words
+- First person (we): 91.7 /10K words
 
 ## Top terms
 
 - `climate` (57)
+- `funding` (52)
+- `org` (42)
+- `career` (41)
 - `africa` (41)
+- `award` (39)
+- `income` (38)
+- `applicants` (37)
 - `south` (37)
-- `org` (33)
-- `costs` (29)
+- `scientific` (36)
+- `analysis` (36)
+- `early` (34)
+- `female` (34)
+- `data` (34)
+- `health` (34)
+- `researchers` (31)
+- `costs` (31)
+- `available` (29)
+- `male` (28)
+- `publications` (28)
+- `year` (28)
 - `temperatures` (28)
+- `number` (27)
 - `cases` (27)
-- `temperature` (24)
-- `health` (22)
-- `million` (21)
-- `available` (21)
-- `pubmed` (20)
-- `change` (17)
-- `model` (16)
-- `internet` (15)
-- `cited` (15)
-- `global` (14)
-- `prevalence` (14)
-- `associated` (13)
-- `increases` (13)
-- `adaptation` (13)
-- `predicted` (12)
-- `estimated` (11)
-- `development` (11)
-- `penalty` (11)
-- `www` (11)
-- `cost` (11)
-- `reports` (10)
-- `increase` (10)
-- `billion` (10)
+- `successful` (26)
+- `submission` (26)
+- `average` (26)
+- `sample` (25)
+- `score` (24)
+- `million` (24)
 
 ## Phrase bank (term + verb)
 
 - `ssp + observed` (3)
+- `receiving + observed` (2)
+- `researchers + revealed` (1)
+- `grants + showed` (1)
+- `funding + obtained` (1)
+- `analysis + observed` (1)
+- `differences + observed` (1)
+- `relevant + observed` (1)
+- `plots + estimated` (1)
+- `male + estimated` (1)
+- `overall + estimated` (1)
+- `similar + observed` (1)
+- `consider + observed` (1)
+- `scientific + measured` (1)
+- `score + estimated` (1)
+- `assess + observed` (1)
+- `org + obtained` (1)
 - `reports + estimated` (1)
 - `known + estimated` (1)
 - `rising + estimated` (1)
-- `former + estimated` (1)
-- `art + increased` (1)
-- `plhiv-t + increased` (1)
-- `potential + estimated` (1)
-- `temperature + estimated` (1)
-- `transmission + calculated` (1)
-- `africa + increased` (1)
-- `land + estimated` (1)
-- `associated + estimated` (1)
-- `art + estimated` (1)
-- `number + increased` (1)
-- `tests + calculated` (1)
-- `climate + estimated` (1)
-- `millions + observed` (1)
-- `applicable + observed` (1)
-- `difference + calculated` (1)
 
 ## Notation watch
 
-- et al.: et al.=1, et al=17
+- et al.: et al.=1, et al=21
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 20.1 words, passive 129.9 /10K
-- methods: 1 section(s), avg sentence 31.2 words, passive 80.0 /10K
-- results: 1 section(s), avg sentence 15.3 words, passive 157.1 /10K
+- abstract: 1 section(s), avg sentence 20.4 words, passive 0.0 /10K
+- discussion: 2 section(s), avg sentence 23.0 words, passive 99.4 /10K
+- introduction: 1 section(s), avg sentence 44.7 words, passive 51.6 /10K
+- methods: 2 section(s), avg sentence 27.7 words, passive 141.3 /10K
+- results: 2 section(s), avg sentence 21.5 words, passive 91.2 /10K
 
 ## Editor notes (manual curation)
 
