@@ -68,6 +68,25 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("Field A", r.stdout)
         self.assertIn("score", r.stdout.lower())
 
+    def test_same_day_distinct_states_are_kept(self):
+        history = self.dir / "multi.jsonl"
+        recs = [
+            {"date": "2026-08-02", "field": "Field A", "papers": 5, "words": 40000, "collocations_ge5": 2, "sections": 6, "term_overlap": None, "score": 40.0, "top_terms": []},
+            {"date": "2026-08-02", "field": "Field A", "papers": 55, "words": 400000, "collocations_ge5": 9, "sections": 7, "term_overlap": 0.8, "score": 86.0, "top_terms": []},
+            {"date": "2026-08-02", "field": "Field A", "papers": 55, "words": 400000, "collocations_ge5": 9, "sections": 7, "term_overlap": 0.8, "score": 86.0, "top_terms": []},
+        ]
+        history.write_text("\n".join(json.dumps(r) for r in recs), encoding="utf-8")
+        html_path = self.dir / "multi.html"
+        r = subprocess.run(
+            [PY, str(ROOT / "scripts" / "readiness.py"),
+             "--corpus", str(self.corpus), "--history", str(history),
+             "--html", str(html_path)],
+            capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        html = html_path.read_text(encoding="utf-8")
+        self.assertIn("55 papers, score 86.0", html, "same-day later state must be rendered")
+        self.assertEqual(html.count("55 papers, score 86.0"), 1, "exact duplicates must stay deduped")
+
     def test_html_render_with_chart(self):
         self.assertEqual(self.run_readiness().returncode, 0)
         self.assertEqual(self.run_readiness().returncode, 0)

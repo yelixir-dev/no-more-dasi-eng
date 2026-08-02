@@ -105,7 +105,7 @@ def load_series(history_path):
             rec = json.loads(line)
         except json.JSONDecodeError:
             continue
-        key = (rec.get("field"), rec.get("date"))
+        key = (rec.get("field"), rec.get("date"), rec.get("papers"), rec.get("score"))
         if key in seen:
             continue
         seen.add(key)
