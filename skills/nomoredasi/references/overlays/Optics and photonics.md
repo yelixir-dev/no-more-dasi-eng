@@ -1,55 +1,55 @@
 # Overlay: Optics and photonics (AUTO-DRAFT 2026-08-03)
 
-Maturity: mature (61 files, 455,220 words)
-Source: 61 file(s), 455,220 words
+Maturity: mature (64 files, 471,610 words)
+Source: 64 file(s), 471,610 words
 
 ## Corpus stats
 
 - Avg sentence length: 16.8 words
-- Passive voice: 143.6 /10K words
-- First person (we): 21.9 /10K words
+- Passive voice: 142.9 /10K words
+- First person (we): 22.1 /10K words
 
 ## Top terms
 
-- `optical` (1480)
+- `optical` (1512)
 - `inline-eq-ieq` (1044)
-- `org` (903)
-- `quantum` (770)
-- `model` (747)
-- `laser` (733)
-- `analysis` (723)
-- `data` (655)
-- `image` (645)
-- `values` (634)
-- `intensity` (605)
-- `imaging` (585)
-- `system` (579)
-- `light` (558)
-- `images` (555)
-- `phase` (551)
-- `energy` (540)
-- `design` (536)
-- `time` (525)
-- `detection` (521)
-- `material` (500)
-- `range` (497)
-- `structure` (497)
-- `spectral` (491)
+- `org` (921)
+- `quantum` (900)
+- `laser` (765)
+- `model` (753)
+- `analysis` (732)
+- `data` (672)
+- `image` (656)
+- `values` (639)
+- `system` (611)
+- `intensity` (608)
+- `imaging` (589)
+- `light` (578)
+- `images` (567)
+- `time` (563)
+- `phase` (561)
+- `detection` (557)
+- `energy` (549)
+- `design` (543)
+- `material` (525)
+- `range` (510)
+- `structure` (506)
+- `spectral` (492)
 - `surface` (488)
-- `conditions` (478)
-- `measurements` (473)
-- `parameters` (460)
-- `wavelength` (456)
-- `experimental` (454)
+- `conditions` (481)
+- `measurements` (480)
+- `parameters` (471)
+- `wavelength` (463)
+- `experimental` (462)
 
 ## Phrase bank (term + verb)
 
 - `noisy + enhanced` (7)
+- `consistent + observed` (6)
 - `similar + observed` (6)
 - `scanner + observed` (6)
 - `gray + indicates` (6)
 - `contribute + observed` (6)
-- `consistent + observed` (5)
 - `snr + calculated` (5)
 - `n-si + exhibits` (5)
 - `sem + fabricated` (4)
@@ -67,28 +67,28 @@ Source: 61 file(s), 455,220 words
 
 ## Notation watch
 
-- bandgap: bandgap=42, band gap=26, band-gap=3
-- thin film: thin film=27, thin-film=14, thinfilm=0
+- bandgap: bandgap=43, band gap=26, band-gap=3
+- thin film: thin film=28, thin-film=15, thinfilm=0
 - x-ray: x-ray=138, x ray=0, xray=1
-- in situ: in situ=17, in-situ=9
+- in situ: in situ=17, in-situ=11
 - ex situ: ex situ=0, ex-situ=1
 - in vivo: in vivo=60, in-vivo=1
 - in vitro: in vitro=6, in-vitro=1
-- et al.: et al.=33, et al=1158
-- quantum dot: quantum dot=11, quantum-dot=10
+- et al.: et al.=33, et al=1261
+- quantum dot: quantum dot=12, quantum-dot=10
 - photonic crystal: photonic crystal=111, photonic-crystal=5
 - buildup: buildup=6, build-up=2, build up=1
-- setup: setup=129, set-up=4, set up=1
+- setup: setup=138, set-up=4, set up=1
 
 ## Section metrics
 
-- abstract: 31 section(s), avg sentence 25.4 words, passive 173.8 /10K
+- abstract: 32 section(s), avg sentence 25.4 words, passive 174.0 /10K
 - conclusion: 34 section(s), avg sentence 20.1 words, passive 102.1 /10K
-- discussion: 30 section(s), avg sentence 24.1 words, passive 132.5 /10K
-- introduction: 40 section(s), avg sentence 23.0 words, passive 154.9 /10K
+- discussion: 33 section(s), avg sentence 24.1 words, passive 130.8 /10K
+- introduction: 42 section(s), avg sentence 23.0 words, passive 153.8 /10K
 - merged: results+discussion: 17 section(s), avg sentence 20.6 words, passive 155.0 /10K
-- methods: 47 section(s), avg sentence 18.2 words, passive 239.8 /10K
-- results: 31 section(s), avg sentence 20.7 words, passive 149.5 /10K
+- methods: 50 section(s), avg sentence 17.7 words, passive 237.3 /10K
+- results: 34 section(s), avg sentence 20.9 words, passive 152.0 /10K
 
 ## Editor notes (manual curation)
 
