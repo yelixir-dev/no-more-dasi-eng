@@ -189,10 +189,10 @@ class LogEditLevelTest(unittest.TestCase):
         entry = list(self.log_root.glob("*/001-optics-and-photonics"))[0]
         return json.loads((entry / "meta.json").read_text(encoding="utf-8"))
 
-    def test_default_level_is_mid(self):
+    def test_default_level_is_low(self):
         r = self.run_log()
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        self.assertEqual(self._meta_of()["level"], "mid")
+        self.assertEqual(self._meta_of()["level"], "low")
 
     def test_explicit_level_recorded(self):
         r = self.run_log("--level", "high")

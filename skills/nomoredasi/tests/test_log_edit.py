@@ -53,7 +53,7 @@ class LogEditTest(unittest.TestCase):
             set(meta),
             {"date", "field", "route_hint", "type", "skill_version", "change_rate", "level"},
         )
-        self.assertEqual(meta["level"], "mid")
+        self.assertEqual(meta["level"], "low")
         self.assertEqual(meta["field"], "Optics and photonics")
         self.assertEqual(meta["route_hint"], "standard")
         self.assertEqual(meta["type"], "B")
