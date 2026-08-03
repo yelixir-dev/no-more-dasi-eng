@@ -43,6 +43,8 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 - **standard (2패스)** — 일반적 케이스. 1패스: 코어 3층 규칙(① 일반 학술 영어 — 시제·관사·수 일치 ② 분야 용어 표기 통일 — 오버레이 Notation watch ③ 저널 레지스터). 2패스: 자체 검토 + 검증 스크립트.
 - **heavy (3패스+)** — 번역투/AI-tell 다수, 구조적 어색함. 패스1: 유형별 전처리(pitfalls 또는 ai-tell). 패스2: 코어 3층 규칙. 패스3: 문단 흐름·전개 다듬기. 그 후 검증.
 
+**교정 강도 예산 축 (level):** route_hint는 원고 상태라는 *진단*(변경 금지, 에이전트 판단)이고, **level은 사용자가 선택하는 변경 예산(기본 중/mid)** 이다. `verify_integrity.py --level {low,mid,high}`(`log_edit.py --level`으로 기록)로 입력하며 low=하/10-30%, mid=중/20-50%, high=상/30-50% 임계를 적용한다(내장 게이트보다 강할 수 없다). **유효 작업량 = min(진단, 예산)** — 예산은 진단이 요구하는 강도를 낮출 수 있어도 결코 그보다 높게 끌어올리지 않는다. 요청 예산과 진단이 어긋나면 사용자에게 명시적으로 고지한다(예: “원고는 heavy 진단이나 하 요청으로 코어 위반만 교정했습니다”), 같은 원고를 light 목표로 도약하려면 재문의한다.
+
 ## Phase 3: 섹션 인식 교정
 
 원고를 `scripts/section_split.py`로 나눠 인식한다 (IMRaD + Results and Discussion 병합, Experimental Section 등 변형 대응). 학회·논문집마다 구조는 다르지만 거시 구조는 요약/서론/본론/결과/결론의 선택이며, 병합형(Results+Discussion, 본론+결과)은 오류가 아니니 교정으로 "정규화"하지 않는다. 섹션별 시제·수동태 규칙과 전개·호흡 규칙은 `references/core/academic-en.md` §3·§8을 따른다.

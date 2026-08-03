@@ -12,9 +12,11 @@ Compares an original manuscript with its corrected version:
      per-category table, change rate, repeat pass count, word-level diff).
   5. --overlay PATH optionally parses the overlay file's "## Top terms"
      section; any term present in the original must survive verbatim.
+  6. --level {low,mid,high} selects an edit-intensity budget that only
+     tightens the change-rate gates (default: built-in WARN_RATE/STOP_RATE).
 
 Usage: verify_integrity.py ORIGINAL CORRECTED [--overlay PATH]
-       [--repeat N] [--report PATH]
+       [--repeat N] [--report PATH] [--level {low,mid,high}]
 Exit: 0 = pass (warnings allowed), 1 = violation, 2 = usage error.
 """
 
@@ -31,6 +33,15 @@ from section_split import body_text
 
 WARN_RATE = 0.30
 STOP_RATE = 0.50
+
+# Edit-intensity budget axis: warn/stop thresholds per `--level`. Each value
+# is clamped to the built-in WARN_RATE/STOP_RATE upper bound (levels only
+# tighten, never loosen).
+LEVELS = {
+    "low": (0.10, 0.30),
+    "mid": (0.20, 0.50),
+    "high": (0.30, 0.50),
+}
 
 CITATION_BRACKET = re.compile(r"\[[\d,\s\-–]+\]")
 CITATION_AUTHOR = re.compile(r"\([A-Z][A-Za-zÀ-ÿ' -]+ et al\.?,? \d{4}[a-z]?\)")
@@ -200,7 +211,20 @@ def change_rate(original, corrected):
     return 1.0 - difflib.SequenceMatcher(None, a, b).ratio()
 
 
-def compare_once(original, corrected, overlay_path, order):
+def level_thresholds(level):
+    """Return (warn, stop) for the active level. When no level is selected
+    (None) the built-in WARN_RATE/STOP_RATE are used unchanged, keeping
+    default behavior byte-identical to the pre-level implementation. Given a
+    level, the built-in gates are the ceiling: user levels can only tighten
+    the thresholds, never loosen them.
+    """
+    if level is None:
+        return WARN_RATE, STOP_RATE
+    warn, stop = LEVELS[level]
+    return min(warn, WARN_RATE), min(stop, STOP_RATE)
+
+
+def compare_once(original, corrected, overlay_path, order, stop_rate=STOP_RATE):
     """Single comparison pass. Returns (violations, rate)."""
     violations = []
     inv_o = extract_invariants(original, overlay_path)
@@ -218,8 +242,8 @@ def compare_once(original, corrected, overlay_path, order):
     # Change rate is computed on the body only so that identical (long)
     # references sections do not dilute the measured edit intensity.
     rate = change_rate(body_text(original), body_text(corrected))
-    if rate > STOP_RATE:
-        violations.append(f"CHANGE RATE {rate:.0%} exceeds stop gate {STOP_RATE:.0%}")
+    if rate > stop_rate:
+        violations.append(f"CHANGE RATE {rate:.0%} exceeds stop gate {stop_rate:.0%}")
     return violations, rate
 
 
@@ -238,7 +262,7 @@ def category_stats(inv_o, inv_c, kinds):
 
 
 def render_report(path, original, corrected, stats, rate, passes, total_passes,
-                  violations):
+                  violations, level="default"):
     verdict = "PASS" if not violations else "FAIL"
     banner_color = "#1a7f37" if not violations else "#cf222e"
     diff = difflib.HtmlDiff(wrapcolumn=100)
@@ -280,8 +304,8 @@ def render_report(path, original, corrected, stats, rate, passes, total_passes,
 </head>
 <body>
   <div class="banner">Integrity gate: {verdict}</div>
-  <p class="meta">Change rate: {rate:.0%} &nbsp;•&nbsp; repeated comparison:
-     {passes}/{total_passes} passes</p>
+  <p class="meta">Change rate: {rate:.0%} &nbsp;•&nbsp; level: {level}
+     &nbsp;•&nbsp; repeated comparison: {passes}/{total_passes} passes</p>
   <h2>Invariant categories</h2>
   <table>
     <tr><th>category</th><th>original</th><th>corrected</th>
@@ -312,6 +336,9 @@ def build_parser():
                    help="re-read and re-compare N times (default 2)")
     p.add_argument("--report", default=None,
                    help="write a self-contained HTML report to PATH")
+    p.add_argument("--level", choices=sorted(LEVELS), default=None,
+                   help="edit-intensity budget low/mid/high; when absent the "
+                        "built-in WARN_RATE/STOP_RATE apply")
     return p
 
 
@@ -320,6 +347,10 @@ def main(argv=None):
     if args.repeat < 1:
         print("verify_integrity: --repeat must be >= 1", file=sys.stderr)
         return 2
+
+    # Absent --level -> built-in gates (byte-identical to pre-level behavior).
+    level = args.level or "default"
+    warn, stop = level_thresholds(args.level)
 
     def _load(path):
         with open(path, encoding="utf-8") as f:
@@ -331,7 +362,8 @@ def main(argv=None):
     for _ in range(args.repeat):
         original = _load(args.original)
         corrected = _load(args.corrected)
-        violations, this_rate = compare_once(original, corrected, args.overlay, _)
+        violations, this_rate = compare_once(original, corrected, args.overlay, _,
+                                             stop_rate=stop)
         rate = this_rate
         if all_violations is None:
             all_violations = violations
@@ -349,14 +381,14 @@ def main(argv=None):
         kinds = list(inv_o.keys())
         stats = category_stats(inv_o, inv_c, kinds)
         render_report(args.report, original, corrected, stats, rate, passes,
-                      total, all_violations)
+                      total, all_violations, level=level)
 
     for v in all_violations:
         print(f"FAIL {v}")
-    if not all_violations and rate > WARN_RATE:
-        print(f"WARN change rate {rate:.0%} above {WARN_RATE:.0%}", file=sys.stderr)
+    if not all_violations and rate > warn:
+        print(f"WARN change rate {rate:.0%} above {warn:.0%}", file=sys.stderr)
     print(f"verify_integrity: {passes}/{total} comparison passes, "
-          f"change rate {rate:.0%}")
+          f"change rate {rate:.0%}, level {level}")
     if all_violations:
         print(f"verify_integrity: {len(all_violations)} violation(s)")
         return 1

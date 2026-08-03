@@ -4,7 +4,8 @@
 Creates a dated, field-scoped entry containing the source text, corrected
 text, and delivery metadata. Usage:
   log_edit.py FIELD ROUTE_HINT TYPE INPUT CORRECTED [--root logs/edits]
-TYPE must be A or B.
+                 [--level low|mid|high]
+TYPE must be A or B. --level records the edit-intensity budget (default mid).
 """
 
 import argparse
@@ -72,6 +73,9 @@ def parse_args():
     parser.add_argument("input", metavar="INPUT", type=existing_file)
     parser.add_argument("corrected", metavar="CORRECTED", type=existing_file)
     parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
+    parser.add_argument("--level", choices=("low", "mid", "high"),
+                        default="mid",
+                        help="edit-intensity budget low/mid/high (default mid)")
     return parser.parse_args()
 
 
@@ -94,6 +98,7 @@ def main():
         "type": args.type,
         "skill_version": skill_version(),
         "change_rate": change_rate(original, corrected),
+        "level": args.level,
     }
     (entry_dir / "meta.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n",

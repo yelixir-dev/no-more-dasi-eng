@@ -51,8 +51,9 @@ class LogEditTest(unittest.TestCase):
         meta = json.loads((entry / "meta.json").read_text(encoding="utf-8"))
         self.assertEqual(
             set(meta),
-            {"date", "field", "route_hint", "type", "skill_version", "change_rate"},
+            {"date", "field", "route_hint", "type", "skill_version", "change_rate", "level"},
         )
+        self.assertEqual(meta["level"], "mid")
         self.assertEqual(meta["field"], "Optics and photonics")
         self.assertEqual(meta["route_hint"], "standard")
         self.assertEqual(meta["type"], "B")
