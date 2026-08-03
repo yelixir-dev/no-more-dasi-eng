@@ -1,81 +1,81 @@
 # Overlay: Social sciences (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (2 files, 20,546 words — treat stats as directional, not targets)
-Source: 2 file(s), 20,546 words
+Maturity: immature (5 files, 48,358 words — treat stats as directional, not targets)
+Source: 5 file(s), 48,358 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.4 words
-- Passive voice: 118.8 /10K words
-- First person (we): 57.4 /10K words
+- Avg sentence length: 16.9 words
+- Passive voice: 107.5 /10K words
+- First person (we): 51.3 /10K words
 
 ## Top terms
 
-- `population` (233)
+- `population` (282)
+- `cities` (263)
+- `urban` (235)
+- `city` (211)
+- `data` (195)
 - `shark` (188)
-- `urban` (183)
-- `trade` (155)
-- `density` (155)
-- `city` (134)
-- `countries` (130)
-- `cities` (102)
-- `regulations` (101)
-- `products` (80)
-- `data` (76)
-- `global` (74)
+- `density` (172)
+- `trade` (164)
+- `countries` (141)
+- `analysis` (119)
+- `life` (116)
+- `global` (115)
+- `transport` (112)
+- `org` (108)
+- `regulations` (103)
+- `trajectories` (101)
+- `car` (93)
+- `actions` (90)
+- `areas` (85)
+- `products` (85)
+- `change` (81)
+- `growth` (79)
+- `action` (77)
+- `country` (76)
+- `yes` (75)
+- `model` (74)
 - `finning` (74)
-- `country` (74)
-- `growth` (69)
-- `scaling` (62)
-- `areas` (54)
-- `year` (53)
-- `org` (51)
-- `radial` (51)
-- `regulation` (49)
-- `expansion` (47)
-- `species` (46)
-- `network` (46)
-- `mexico` (46)
-- `average` (44)
-- `analysis` (42)
-- `time` (42)
-- `years` (42)
-- `consumption` (41)
+- `years` (71)
+- `nature` (70)
+- `time` (69)
 
 ## Phrase bank (term + verb)
 
 - `year + calculated` (3)
+- `city + calculated` (3)
+- `values + observed` (2)
+- `separation + calculated` (2)
 - `network + measured` (2)
 - `plot + estimated` (2)
 - `long-term + observed` (2)
-- `city + calculated` (2)
 - `population + estimated` (2)
-- `deeper + observed` (1)
-- `shark + estimated` (1)
-- `steeper + observed` (1)
-- `zealand + showed` (1)
-- `global + decreased` (1)
-- `time + increased` (1)
-- `years + increased` (1)
-- `country + estimated` (1)
-- `similarly + showed` (1)
-- `years + observed` (1)
-- `sustained + observed` (1)
-- `countries + exhibited` (1)
-- `trade + observed` (1)
-- `relatively + indicates` (1)
+- `trajectory + observed` (1)
+- `phase + indicates` (1)
+- `residential + indicates` (1)
+- `graphical + demonstrated` (1)
+- `how + measured` (1)
+- `individual + observed` (1)
+- `life + measured` (1)
+- `individual + measured` (1)
+- `estimated + observed` (1)
+- `local + measured` (1)
+- `value + indicates` (1)
+- `specific + measured` (1)
 
 ## Notation watch
 
-- et al.: et al.=1, et al=40
+- et al.: et al.=1, et al=67
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 19.7 words, passive 0.0 /10K
-- discussion: 2 section(s), avg sentence 26.9 words, passive 155.6 /10K
-- introduction: 1 section(s), avg sentence 22.5 words, passive 123.1 /10K
-- methods: 3 section(s), avg sentence 24.5 words, passive 213.5 /10K
-- results: 2 section(s), avg sentence 21.4 words, passive 95.1 /10K
+- abstract: 2 section(s), avg sentence 20.9 words, passive 28.2 /10K
+- discussion: 5 section(s), avg sentence 29.1 words, passive 114.9 /10K
+- introduction: 2 section(s), avg sentence 24.9 words, passive 100.2 /10K
+- methods: 7 section(s), avg sentence 25.3 words, passive 180.9 /10K
+- results: 5 section(s), avg sentence 22.6 words, passive 91.3 /10K
 
 ## Editor notes (manual curation)
 

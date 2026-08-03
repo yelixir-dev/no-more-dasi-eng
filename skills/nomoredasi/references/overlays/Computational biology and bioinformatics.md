@@ -1,51 +1,61 @@
 # Overlay: Computational biology and bioinformatics (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 7,463 words — treat stats as directional, not targets)
-Source: 1 file(s), 7,463 words
+Maturity: immature (5 files, 42,337 words — treat stats as directional, not targets)
+Source: 5 file(s), 42,337 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.4 words
-- Passive voice: 75.0 /10K words
-- First person (we): 54.9 /10K words
+- Avg sentence length: 18.6 words
+- Passive voice: 146.4 /10K words
+- First person (we): 30.9 /10K words
 
 ## Top terms
 
-- `age` (152)
-- `data` (59)
-- `facial` (57)
-- `estimation` (52)
-- `face` (52)
-- `augmentation` (50)
-- `images` (45)
-- `model` (37)
-- `models` (35)
-- `dataset` (35)
-- `synthetic` (31)
-- `dinov` (31)
-- `biological` (28)
-- `years` (28)
-- `utkface` (27)
-- `datasets` (26)
-- `feature` (25)
-- `imdb-wiki` (25)
-- `samples` (25)
-- `stylegan` (24)
-- `vision` (24)
-- `image` (24)
-- `learning` (22)
-- `original` (20)
-- `imbalance` (19)
-- `xgboost` (19)
-- `arxiv` (19)
-- `augmented` (18)
-- `faceage` (17)
-- `elderly` (17)
+- `age` (169)
+- `analysis` (150)
+- `org` (149)
+- `model` (142)
+- `data` (132)
+- `contact` (118)
+- `score` (106)
+- `variants` (104)
+- `days` (104)
+- `contacts` (99)
+- `dataset` (89)
+- `genes` (87)
+- `number` (85)
+- `immune` (83)
+- `period` (81)
+- `cell` (79)
+- `gingival` (75)
+- `groups` (73)
+- `prognostic` (73)
+- `population` (72)
+- `segmentation` (72)
+- `infectious` (70)
+- `models` (69)
+- `clinical` (68)
+- `distribution` (67)
+- `images` (66)
+- `risk` (65)
+- `pathogenic` (65)
+- `augmentation` (64)
+- `cancer` (62)
 
 ## Phrase bank (term + verb)
 
+- `high-risk + exhibited` (4)
+- `distribution + observed` (3)
+- `total + observed` (3)
+- `fabp + increased` (3)
 - `original + achieved` (2)
 - `years + showed` (2)
+- `overall + showed` (2)
+- `predicted + observed` (2)
+- `strongest + observed` (2)
+- `whereas + showed` (2)
+- `cell + demonstrated` (2)
+- `scrna-seq + demonstrated` (2)
 - `recent + demonstrated` (1)
 - `architectures + improved` (1)
 - `biological + demonstrated` (1)
@@ -54,30 +64,22 @@ Source: 1 file(s), 7,463 words
 - `models + achieved` (1)
 - `elderly + confirmed` (1)
 - `deep + achieved` (1)
-- `load + obtained` (1)
-- `synthetic + enhanced` (1)
-- `trained + achieved` (1)
-- `original-data + showed` (1)
-- `instance + improved` (1)
-- `models + exhibited` (1)
-- `values + indicates` (1)
-- `augmented + indicates` (1)
-- `overall + achieved` (1)
-- `augmented + achieved` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=15
+- in vivo: in vivo=1, in-vivo=0
+- in vitro: in vitro=2, in-vitro=0
+- et al.: et al.=0, et al=154
 - setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 20.3 words, passive 44.8 /10K
-- conclusion: 1 section(s), avg sentence 18.9 words, passive 0.0 /10K
-- discussion: 1 section(s), avg sentence 24.3 words, passive 109.9 /10K
-- introduction: 1 section(s), avg sentence 19.9 words, passive 73.7 /10K
-- methods: 1 section(s), avg sentence 20.8 words, passive 148.0 /10K
-- results: 1 section(s), avg sentence 17.4 words, passive 53.9 /10K
+- abstract: 3 section(s), avg sentence 19.5 words, passive 96.0 /10K
+- conclusion: 3 section(s), avg sentence 21.8 words, passive 43.7 /10K
+- discussion: 5 section(s), avg sentence 25.4 words, passive 132.8 /10K
+- introduction: 3 section(s), avg sentence 21.8 words, passive 74.2 /10K
+- methods: 5 section(s), avg sentence 21.2 words, passive 260.2 /10K
+- results: 5 section(s), avg sentence 19.9 words, passive 158.1 /10K
 
 ## Editor notes (manual curation)
 

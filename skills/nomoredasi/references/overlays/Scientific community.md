@@ -1,46 +1,46 @@
 # Overlay: Scientific community (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (3 files, 25,731 words — treat stats as directional, not targets)
-Source: 3 file(s), 25,731 words
+Maturity: immature (4 files, 31,913 words — treat stats as directional, not targets)
+Source: 4 file(s), 31,913 words
 
 ## Corpus stats
 
-- Avg sentence length: 19.0 words
-- Passive voice: 100.3 /10K words
-- First person (we): 44.3 /10K words
+- Avg sentence length: 19.1 words
+- Passive voice: 91.2 /10K words
+- First person (we): 46.4 /10K words
 
 ## Top terms
 
 - `team` (215)
-- `data` (154)
+- `data` (179)
+- `lithium` (163)
 - `kidney` (123)
-- `model` (106)
+- `model` (121)
+- `models` (95)
+- `analysis` (92)
+- `costs` (92)
 - `segmentation` (91)
-- `models` (91)
+- `production` (89)
 - `competition` (84)
 - `training` (79)
-- `analysis` (77)
+- `org` (76)
 - `test` (70)
-- `org` (69)
 - `datasets` (67)
+- `cost` (65)
+- `number` (62)
+- `loss` (62)
 - `teams` (62)
-- `loss` (61)
-- `number` (60)
-- `climate` (57)
-- `funding` (54)
+- `geothermal` (58)
+- `climate` (58)
+- `funding` (57)
 - `dataset` (54)
 - `standard` (54)
 - `vessels` (50)
 - `private` (50)
-- `available` (47)
-- `public` (46)
-- `set` (44)
-- `human` (43)
-- `hip-ct` (43)
-- `scientific` (42)
-- `image` (42)
-- `gold` (42)
-- `career` (41)
+- `available` (48)
+- `brine` (48)
+- `public` (47)
+- `set` (45)
 
 ## Phrase bank (term + verb)
 
@@ -68,16 +68,16 @@ Source: 3 file(s), 25,731 words
 ## Notation watch
 
 - x-ray: x-ray=6, x ray=0, xray=0
-- et al.: et al.=1, et al=66
+- et al.: et al.=1, et al=77
 - setup: setup=6, set-up=4, set up=1
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 22.8 words, passive 33.8 /10K
-- discussion: 3 section(s), avg sentence 25.1 words, passive 88.4 /10K
-- introduction: 2 section(s), avg sentence 36.8 words, passive 79.5 /10K
-- methods: 3 section(s), avg sentence 22.2 words, passive 179.1 /10K
-- results: 3 section(s), avg sentence 25.6 words, passive 80.7 /10K
+- abstract: 3 section(s), avg sentence 23.6 words, passive 44.6 /10K
+- discussion: 4 section(s), avg sentence 24.8 words, passive 80.5 /10K
+- introduction: 3 section(s), avg sentence 34.3 words, passive 76.7 /10K
+- methods: 4 section(s), avg sentence 23.4 words, passive 160.8 /10K
+- results: 4 section(s), avg sentence 26.3 words, passive 78.4 /10K
 
 ## Editor notes (manual curation)
 

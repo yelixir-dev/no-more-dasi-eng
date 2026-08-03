@@ -1,51 +1,60 @@
-# Overlay: Plant sciences (AUTO-DRAFT 2026-08-02)
+# Overlay: Plant sciences (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (3 files, 21,783 words — treat stats as directional, not targets)
-Source: 3 file(s), 21,783 words
+Maturity: immature (5 files, 40,629 words — treat stats as directional, not targets)
+Source: 5 file(s), 40,629 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.6 words
-- Passive voice: 143.2 /10K words
-- First person (we): 7.8 /10K words
+- Avg sentence length: 16.6 words
+- Passive voice: 149.2 /10K words
+- First person (we): 7.4 /10K words
 
 ## Top terms
 
+- `plant` (236)
+- `org` (212)
+- `stress` (142)
+- `treatment` (127)
+- `analysis` (102)
+- `biochar` (100)
+- `growth` (99)
+- `treatments` (95)
 - `fruit` (93)
-- `treatment` (91)
-- `plant` (78)
-- `stress` (70)
-- `data` (63)
-- `hydrogen` (59)
-- `copper` (57)
-- `studies` (56)
-- `yield` (56)
-- `garlic` (55)
-- `cyanamide` (53)
-- `sio` (52)
-- `apple` (52)
-- `cultivar` (51)
-- `cultivars` (49)
-- `bud` (48)
-- `analysis` (46)
-- `lnrr` (46)
-- `control` (45)
-- `growth` (42)
-- `extract` (42)
-- `treatments` (41)
-- `conditions` (40)
-- `plants` (39)
-- `acid` (38)
-- `size` (38)
-- `tree` (38)
-- `response` (37)
-- `number` (37)
-- `chilling` (37)
+- `yield` (90)
+- `drought` (84)
+- `acid` (84)
+- `root` (84)
+- `conditions` (84)
+- `responses` (82)
+- `data` (82)
+- `genes` (82)
+- `number` (78)
+- `soil` (75)
+- `plants` (74)
+- `response` (72)
+- `control` (68)
+- `studies` (66)
+- `hydrogen` (64)
+- `antioxidant` (63)
+- `content` (63)
+- `expression` (62)
+- `water` (61)
+- `consistent` (59)
+- `total` (59)
 
 ## Phrase bank (term + verb)
 
+- `npk + showed` (5)
+- `npk + increased` (3)
 - `lnrr + indicates` (2)
 - `dashed + indicates` (2)
+- `associated + improved` (2)
+- `chlorophyll + measured` (2)
+- `dry + increased` (2)
+- `treatments + showed` (2)
+- `clearest + observed` (2)
+- `treatments + improved` (2)
+- `pgpr + improved` (2)
 - `mean + indicates` (2)
 - `indicates + indicates` (2)
 - `cultivar + observed` (2)
@@ -55,31 +64,24 @@ Source: 3 file(s), 21,783 words
 - `likelihood + revealed` (1)
 - `literature + confirmed` (1)
 - `markers + enhanced` (1)
-- `nps + measured` (1)
-- `root + improved` (1)
-- `proline + showed` (1)
-- `change + showed` (1)
-- `fallback + indicates` (1)
-- `cat + showed` (1)
-- `responses + increased` (1)
-- `omnibus + confirmed` (1)
-- `correspondingly + increased` (1)
 
 ## Notation watch
 
 - x-ray: x-ray=10, x ray=0, xray=0
+- in situ: in situ=1, in-situ=0
 - in vivo: in vivo=1, in-vivo=0
 - in vitro: in vitro=1, in-vitro=0
-- et al.: et al.=7, et al=47
+- et al.: et al.=11, et al=214
+- setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 14 section(s), avg sentence 17.7 words, passive 69.0 /10K
-- conclusion: 2 section(s), avg sentence 21.2 words, passive 102.4 /10K
-- discussion: 18 section(s), avg sentence 29.3 words, passive 120.2 /10K
-- introduction: 14 section(s), avg sentence 21.8 words, passive 62.3 /10K
-- methods: 14 section(s), avg sentence 22.2 words, passive 343.6 /10K
-- results: 13 section(s), avg sentence 19.5 words, passive 101.4 /10K
+- abstract: 15 section(s), avg sentence 17.7 words, passive 77.5 /10K
+- conclusion: 4 section(s), avg sentence 21.5 words, passive 85.8 /10K
+- discussion: 20 section(s), avg sentence 23.8 words, passive 132.6 /10K
+- introduction: 15 section(s), avg sentence 19.0 words, passive 73.5 /10K
+- methods: 17 section(s), avg sentence 19.4 words, passive 322.7 /10K
+- results: 15 section(s), avg sentence 19.0 words, passive 114.3 /10K
 
 ## Editor notes (manual curation)
 

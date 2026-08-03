@@ -1,85 +1,86 @@
-# Overlay: Neurology (AUTO-DRAFT 2026-08-02)
+# Overlay: Neurology (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (2 files, 14,249 words — treat stats as directional, not targets)
-Source: 2 file(s), 14,249 words
+Maturity: immature (5 files, 33,924 words — treat stats as directional, not targets)
+Source: 5 file(s), 33,924 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.3 words
-- Passive voice: 155.1 /10K words
-- First person (we): 30.9 /10K words
+- Avg sentence length: 17.7 words
+- Passive voice: 168.6 /10K words
+- First person (we): 24.5 /10K words
 
 ## Top terms
 
-- `sleep` (218)
+- `sleep` (231)
+- `data` (211)
+- `model` (185)
+- `clinical` (108)
+- `early` (106)
 - `glaucoma` (104)
+- `volume` (103)
 - `mice` (102)
-- `early` (87)
+- `analysis` (96)
+- `patients` (94)
+- `stroke` (89)
+- `org` (84)
+- `learning` (84)
+- `age` (80)
+- `muscle` (78)
 - `disruption` (73)
-- `chronic` (66)
-- `months` (59)
-- `org` (56)
-- `volume` (55)
+- `chronic` (70)
+- `participants` (65)
+- `main` (64)
+- `months` (63)
+- `disease` (57)
+- `included` (54)
+- `advanced` (54)
+- `models` (53)
+- `temporal` (51)
 - `tau` (51)
-- `advanced` (51)
-- `day` (48)
-- `adulthood` (47)
-- `left` (46)
-- `right` (46)
-- `cell` (44)
-- `mouse` (43)
-- `brain` (41)
-- `condition` (39)
-- `visual` (39)
-- `genotype` (38)
-- `group` (34)
-- `differences` (34)
-- `age` (33)
-- `positive` (33)
-- `main` (33)
-- `cells` (32)
-- `groups` (31)
-- `hippocampus` (30)
-- `learning` (29)
+- `right` (50)
+- `left` (50)
+- `day` (50)
+- `condition` (49)
 
 ## Phrase bank (term + verb)
 
+- `written + obtained` (4)
+- `predictive + demonstrated` (2)
 - `mice + increased` (2)
 - `a-c + observed` (2)
 - `condition + observed` (2)
 - `disruption + increased` (2)
 - `mice + showed` (2)
 - `differences + observed` (2)
+- `classification + achieved` (2)
+- `model + achieved` (2)
 - `lgn + observed` (2)
-- `adulthood + improved` (1)
-- `hippocampal + increased` (1)
-- `positive + increased` (1)
-- `related + observed` (1)
-- `others + demonstrated` (1)
-- `wake + measured` (1)
-- `rem-predominant + increased` (1)
-- `predominant + increased` (1)
-- `recognition + increased` (1)
-- `disruption + achieved` (1)
-- `detected + confirmed` (1)
-- `spindles + showed` (1)
-- `wakefulness + confirmed` (1)
+- `rather + measured` (2)
+- `bogot + measured` (1)
+- `associated + increased` (1)
+- `common + increased` (1)
+- `muscle + measured` (1)
+- `sample + calculated` (1)
+- `model + estimated` (1)
+- `non-contrast + obtained` (1)
+- `volume + calculated` (1)
 
 ## Notation watch
 
+- x-ray: x-ray=1, x ray=0, xray=0
 - in situ: in situ=1, in-situ=0
 - in vivo: in vivo=4, in-vivo=0
-- et al.: et al.=0, et al=46
+- et al.: et al.=10, et al=110
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 19.4 words, passive 214.6 /10K
+- abstract: 3 section(s), avg sentence 17.4 words, passive 242.4 /10K
 - body: 1 section(s), avg sentence 17.8 words, passive 139.4 /10K
 - conclusion: 1 section(s), avg sentence 28.5 words, passive 263.2 /10K
-- discussion: 1 section(s), avg sentence 24.2 words, passive 175.2 /10K
-- introduction: 1 section(s), avg sentence 26.7 words, passive 125.0 /10K
-- methods: 2 section(s), avg sentence 13.0 words, passive 238.5 /10K
-- results: 1 section(s), avg sentence 22.8 words, passive 149.9 /10K
+- discussion: 4 section(s), avg sentence 18.5 words, passive 109.1 /10K
+- introduction: 4 section(s), avg sentence 25.2 words, passive 160.0 /10K
+- methods: 5 section(s), avg sentence 17.4 words, passive 264.9 /10K
+- results: 3 section(s), avg sentence 21.6 words, passive 206.7 /10K
 
 ## Editor notes (manual curation)
 

@@ -1,85 +1,86 @@
-# Overlay: Planetary science (AUTO-DRAFT 2026-08-02)
+# Overlay: Planetary science (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (2 files, 14,472 words — treat stats as directional, not targets)
-Source: 2 file(s), 14,472 words
+Maturity: immature (5 files, 40,243 words — treat stats as directional, not targets)
+Source: 5 file(s), 40,243 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.9 words
-- Passive voice: 150.6 /10K words
-- First person (we): 22.8 /10K words
+- Avg sentence length: 16.3 words
+- Passive voice: 130.7 /10K words
+- First person (we): 21.4 /10K words
 
 ## Top terms
 
-- `magnetic` (87)
-- `space` (84)
-- `data` (82)
-- `density` (79)
+- `data` (167)
+- `magnetic` (163)
+- `org` (153)
+- `iron` (145)
+- `earth` (123)
+- `rocks` (113)
+- `space` (110)
+- `density` (104)
+- `observations` (88)
+- `time` (77)
+- `hydrothermal` (76)
+- `fatira` (74)
 - `radcube` (71)
+- `zone` (68)
+- `shear` (67)
+- `bifs` (65)
+- `crustal` (64)
+- `sheared` (63)
+- `area` (63)
+- `metavolcanics` (63)
+- `formation` (62)
+- `geophys` (61)
+- `solar` (59)
+- `nature` (59)
+- `bands` (59)
+- `banded` (57)
 - `geomagnetic` (57)
-- `org` (55)
-- `weather` (48)
-- `time` (48)
-- `ophiolite` (46)
-- `muon` (45)
-- `observations` (43)
-- `solar` (41)
-- `storm` (40)
-- `measurements` (36)
-- `system` (36)
-- `wind` (35)
-- `supersubstorm` (34)
-- `geophys` (32)
-- `mantle` (31)
-- `moho` (31)
-- `muography` (30)
-- `cm-` (28)
-- `supersubstorms` (27)
-- `facs` (27)
-- `structure` (27)
-- `tracking` (27)
-- `interval` (26)
-- `supermag` (26)
-- `transition` (26)
+- `mars` (56)
+- `alteration` (53)
+- `sci` (52)
 
 ## Phrase bank (term + verb)
 
 - `magnetic + observed` (6)
 - `muon + calculated` (4)
 - `solar + observed` (3)
+- `central + indicates` (2)
+- `landsat- + revealed` (2)
 - `example + observed` (2)
 - `magnetic + measured` (2)
 - `event + measured` (2)
 - `relative + estimated` (2)
 - `region + estimated` (2)
 - `relative + calculated` (2)
-- `storms + observed` (1)
-- `aligned + observed` (1)
-- `space + observed` (1)
-- `arguably + observed` (1)
-- `returned + observed` (1)
-- `minima + observed` (1)
-- `final + exhibited` (1)
-- `density + observed` (1)
-- `magnetosheath + enhanced` (1)
-- `shortly + observed` (1)
-- `pressure + observed` (1)
+- `crustal + exhibits` (1)
+- `electrons + observed` (1)
+- `fact + observed` (1)
+- `electron + estimated` (1)
+- `means + observed` (1)
+- `energized + measured` (1)
+- `plementary + calculated` (1)
+- `plasma + observed` (1)
+- `despite + observed` (1)
 
 ## Notation watch
 
-- x-ray: x-ray=1, x ray=0, xray=0
-- in situ: in situ=5, in-situ=0
-- et al.: et al.=3, et al=63
-- setup: setup=1, set-up=0, set up=0
+- x-ray: x-ray=2, x ray=0, xray=0
+- in situ: in situ=6, in-situ=0
+- et al.: et al.=19, et al=152
+- setup: setup=1, set-up=0, set up=1
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 24.1 words, passive 46.1 /10K
-- conclusion: 1 section(s), avg sentence 29.5 words, passive 84.7 /10K
-- discussion: 2 section(s), avg sentence 23.5 words, passive 143.4 /10K
-- introduction: 1 section(s), avg sentence 26.0 words, passive 167.5 /10K
-- methods: 2 section(s), avg sentence 17.6 words, passive 266.9 /10K
-- results: 2 section(s), avg sentence 19.2 words, passive 183.3 /10K
+- abstract: 2 section(s), avg sentence 25.2 words, passive 28.3 /10K
+- conclusion: 2 section(s), avg sentence 21.0 words, passive 103.1 /10K
+- discussion: 3 section(s), avg sentence 24.2 words, passive 118.0 /10K
+- introduction: 2 section(s), avg sentence 25.0 words, passive 157.1 /10K
+- merged: results+discussion: 1 section(s), avg sentence 26.0 words, passive 102.6 /10K
+- methods: 6 section(s), avg sentence 21.6 words, passive 194.0 /10K
+- results: 4 section(s), avg sentence 20.2 words, passive 163.7 /10K
 
 ## Editor notes (manual curation)
 

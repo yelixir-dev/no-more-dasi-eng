@@ -1,49 +1,50 @@
 # Overlay: Ecology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (4 files, 35,855 words — treat stats as directional, not targets)
-Source: 4 file(s), 35,855 words
+Maturity: immature (5 files, 44,806 words — treat stats as directional, not targets)
+Source: 5 file(s), 44,806 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.5 words
-- Passive voice: 130.2 /10K words
-- First person (we): 20.9 /10K words
+- Avg sentence length: 14.8 words
+- Passive voice: 127.4 /10K words
+- First person (we): 28.3 /10K words
 
 ## Top terms
 
-- `data` (175)
-- `species` (164)
+- `data` (194)
+- `tool` (178)
+- `species` (172)
+- `model` (160)
+- `social` (158)
+- `population` (152)
 - `shrimp` (142)
+- `org` (131)
+- `grooming` (128)
 - `mud` (126)
-- `population` (126)
 - `colonies` (118)
-- `org` (111)
-- `model` (111)
+- `users` (111)
 - `mellifera` (106)
 - `rabies` (106)
+- `individuals` (103)
 - `honey` (88)
+- `populations` (84)
 - `ovalis` (82)
 - `jugyo` (82)
-- `populations` (80)
+- `network` (79)
 - `self-training` (79)
+- `classification` (75)
+- `prevalence` (75)
 - `introgression` (75)
-- `classification` (74)
-- `prevalence` (74)
 - `host` (74)
 - `health` (74)
+- `learning` (72)
 - `dog` (71)
 - `infested` (70)
 - `upogebia` (68)
-- `seonjaedo` (68)
-- `irish` (67)
-- `bee` (66)
-- `infestation` (61)
-- `bees` (58)
-- `schools` (56)
-- `training` (56)
 
 ## Phrase bank (term + verb)
 
+- `only + observed` (2)
 - `sardine + increased` (2)
 - `labels + increased` (2)
 - `species + indicates` (2)
@@ -58,25 +59,24 @@ Source: 4 file(s), 35,855 words
 - `colonies + showed` (2)
 - `irish + showed` (2)
 - `coverage + indicates` (2)
-- `data + observed` (1)
-- `bay + improved` (1)
-- `species + enhanced` (1)
-- `species + achieved` (1)
-- `initially + obtained` (1)
-- `model + estimated` (1)
+- `tool + showed` (1)
+- `non-users + showed` (1)
+- `tool + exhibited` (1)
+- `grooming + calculated` (1)
+- `exclusions + observed` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=93
+- et al.: et al.=0, et al=114
 
 ## Section metrics
 
 - abstract: 5 section(s), avg sentence 17.1 words, passive 39.6 /10K
-- conclusion: 2 section(s), avg sentence 21.0 words, passive 93.6 /10K
-- discussion: 4 section(s), avg sentence 15.9 words, passive 107.5 /10K
+- conclusion: 3 section(s), avg sentence 20.7 words, passive 101.9 /10K
+- discussion: 5 section(s), avg sentence 16.3 words, passive 106.0 /10K
 - introduction: 4 section(s), avg sentence 21.8 words, passive 184.1 /10K
-- methods: 4 section(s), avg sentence 24.8 words, passive 279.4 /10K
-- results: 4 section(s), avg sentence 20.1 words, passive 131.1 /10K
+- methods: 5 section(s), avg sentence 23.8 words, passive 247.1 /10K
+- results: 5 section(s), avg sentence 20.3 words, passive 119.6 /10K
 
 ## Editor notes (manual curation)
 

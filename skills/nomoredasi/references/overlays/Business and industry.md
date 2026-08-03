@@ -1,50 +1,51 @@
 # Overlay: Business and industry (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (4 files, 39,102 words — treat stats as directional, not targets)
-Source: 4 file(s), 39,102 words
+Maturity: immature (5 files, 50,739 words — treat stats as directional, not targets)
+Source: 5 file(s), 50,739 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.6 words
-- Passive voice: 97.4 /10K words
-- First person (we): 96.7 /10K words
+- Avg sentence length: 17.1 words
+- Passive voice: 99.9 /10K words
+- First person (we): 74.7 /10K words
 
 ## Top terms
 
-- `models` (175)
-- `model` (170)
+- `model` (196)
+- `models` (187)
+- `data` (165)
+- `org` (153)
 - `temperature` (131)
-- `data` (125)
-- `org` (119)
+- `clinical` (104)
+- `human` (103)
 - `indicators` (102)
 - `companies` (98)
 - `animals` (95)
-- `human` (95)
 - `speciesist` (93)
+- `transparency` (89)
 - `climate` (88)
-- `transparency` (85)
+- `system` (87)
+- `see` (84)
 - `language` (79)
 - `llms` (79)
-- `see` (76)
-- `nature` (76)
+- `information` (78)
+- `dataset` (78)
+- `nature` (77)
+- `systems` (73)
+- `analysis` (72)
 - `annual` (72)
-- `dataset` (66)
+- `assessment` (71)
+- `time` (64)
+- `reporting` (64)
+- `value` (62)
 - `mean` (62)
-- `reporting` (62)
 - `corporate` (62)
-- `analysis` (61)
-- `communications` (57)
-- `reasoning` (56)
-- `number` (56)
-- `economic` (56)
-- `change` (56)
-- `emissions` (56)
-- `information` (55)
-- `growth` (55)
+- `number` (59)
 
 ## Phrase bank (term + verb)
 
 - `overall + increased` (2)
+- `documentation + improved` (2)
 - `extensive + demonstrated` (1)
 - `psycho- + confirmed` (1)
 - `task + obtained` (1)
@@ -63,18 +64,20 @@ Source: 4 file(s), 39,102 words
 - `model + improved` (1)
 - `dogs + showed` (1)
 - `capacity + showed` (1)
-- `vice + indicates` (1)
 
 ## Notation watch
 
 - x-ray: x-ray=1, x ray=0, xray=0
-- in situ: in situ=2, in-situ=2
-- et al.: et al.=3, et al=71
-- setup: setup=3, set-up=0, set up=0
+- in situ: in situ=2, in-situ=4
+- et al.: et al.=3, et al=104
+- setup: setup=5, set-up=0, set up=0
 
 ## Section metrics
 
-- discussion: 4 section(s), avg sentence 25.0 words, passive 58.1 /10K
+- abstract: 1 section(s), avg sentence 23.3 words, passive 134.0 /10K
+- conclusion: 1 section(s), avg sentence 26.4 words, passive 82.1 /10K
+- discussion: 5 section(s), avg sentence 23.8 words, passive 60.3 /10K
+- introduction: 1 section(s), avg sentence 23.7 words, passive 132.1 /10K
 - methods: 4 section(s), avg sentence 20.8 words, passive 187.4 /10K
 - results: 5 section(s), avg sentence 19.8 words, passive 88.6 /10K
 

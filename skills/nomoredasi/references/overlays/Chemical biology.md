@@ -1,73 +1,86 @@
-# Overlay: Chemical biology (AUTO-DRAFT 2026-08-01)
+# Overlay: Chemical biology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 5,851 words — treat stats as directional, not targets)
-Source: 1 file(s), 5,851 words
+Maturity: immature (5 files, 43,204 words — treat stats as directional, not targets)
+Source: 5 file(s), 43,204 words
 
 ## Corpus stats
 
-- Avg sentence length: 20.0 words
-- Passive voice: 147.0 /10K words
-- First person (we): 3.4 /10K words
+- Avg sentence length: 16.4 words
+- Passive voice: 169.7 /10K words
+- First person (we): 36.1 /10K words
 
 ## Top terms
 
 - `sweeteners` (131)
-- `food` (84)
-- `products` (84)
-- `beverages` (49)
-- `ultra-processed` (34)
-- `sweet` (33)
-- `factor` (28)
-- `health` (24)
-- `sweetener` (23)
-- `brazil` (22)
-- `additives` (20)
-- `data` (19)
-- `tabletop` (19)
-- `subgroups` (19)
-- `presence` (17)
-- `patterns` (15)
-- `brazilian` (15)
-- `cookies` (15)
-- `available` (14)
-- `analysis` (14)
-- `non-carbonated` (14)
-- `sweets` (14)
-- `pies` (14)
-- `labels` (14)
-- `dairy` (13)
-- `cakes` (13)
-- `labeling` (13)
-- `general` (12)
-- `information` (12)
-- `factors` (12)
+- `fragment` (130)
+- `data` (128)
+- `molecular` (124)
+- `larvae` (124)
+- `fragments` (99)
+- `stomatal` (99)
+- `food` (94)
+- `arginine` (94)
+- `org` (91)
+- `molecule` (91)
+- `products` (90)
+- `zebrafish` (88)
+- `control` (87)
+- `model` (86)
+- `levels` (85)
+- `essential` (82)
+- `analysis` (81)
+- `mock` (78)
+- `values` (74)
+- `chemical` (72)
+- `guard` (72)
+- `oils` (72)
+- `biological` (66)
+- `molecules` (66)
+- `deepbioisostere` (63)
+- `plant` (63)
+- `removal` (62)
+- `cells` (62)
+- `nature` (61)
 
 ## Phrase bank (term + verb)
 
+- `cotyledons + observed` (3)
+- `control + exhibited` (2)
+- `stomatal + measured` (2)
+- `zebrafish + revealed` (2)
+- `glo + exhibited` (2)
+- `akr + increased` (2)
+- `pathway + indicates` (2)
+- `expression + indicates` (2)
+- `glomerular + showed` (2)
+- `neck + showed` (2)
+- `contribute + observed` (2)
+- `explain + observed` (2)
+- `constituents + demonstrated` (2)
+- `mortality + observed` (2)
 - `sweeteners + showed` (2)
-- `reformulations + increased` (1)
-- `mean + calculated` (1)
-- `spreads + showed` (1)
-- `beverages + showed` (1)
-- `maltitol + showed` (1)
-- `products + showed` (1)
-- `reinforces + observed` (1)
-- `proportion + showed` (1)
-- `reason + increased` (1)
-- `face + increased` (1)
+- `begin + exhibits` (1)
+- `formalize + observed` (1)
+- `target + improved` (1)
+- `lipophilicity + increased` (1)
+- `row + observed` (1)
 
 ## Notation watch
 
-- et al.: et al.=2, et al=24
+- in vivo: in vivo=2, in-vivo=0
+- in vitro: in vitro=5, in-vitro=0
+- et al.: et al.=7, et al=138
+- setup: setup=6, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 25.5 words, passive 245.1 /10K
-- conclusion: 1 section(s), avg sentence 21.4 words, passive 127.7 /10K
-- discussion: 1 section(s), avg sentence 33.5 words, passive 159.4 /10K
-- introduction: 1 section(s), avg sentence 29.5 words, passive 197.5 /10K
-- methods: 1 section(s), avg sentence 28.9 words, passive 295.3 /10K
-- results: 1 section(s), avg sentence 22.3 words, passive 106.3 /10K
+- abstract: 2 section(s), avg sentence 23.8 words, passive 140.1 /10K
+- conclusion: 2 section(s), avg sentence 20.5 words, passive 63.6 /10K
+- discussion: 4 section(s), avg sentence 22.6 words, passive 120.0 /10K
+- introduction: 2 section(s), avg sentence 32.2 words, passive 139.5 /10K
+- merged: results+discussion: 1 section(s), avg sentence 17.1 words, passive 141.1 /10K
+- methods: 5 section(s), avg sentence 17.8 words, passive 349.2 /10K
+- results: 4 section(s), avg sentence 20.4 words, passive 145.9 /10K
 
 ## Editor notes (manual curation)
 

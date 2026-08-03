@@ -1,68 +1,81 @@
-# Overlay: Energy and society (AUTO-DRAFT 2026-08-01)
+# Overlay: Energy and society (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,718 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,718 words
+Maturity: immature (5 files, 42,649 words — treat stats as directional, not targets)
+Source: 5 file(s), 42,649 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.6 words
-- Passive voice: 84.9 /10K words
-- First person (we): 83.7 /10K words
+- Avg sentence length: 16.3 words
+- Passive voice: 98.0 /10K words
+- First person (we): 66.6 /10K words
 
 ## Top terms
 
+- `electricity` (287)
+- `data` (204)
 - `uranium` (203)
-- `cobalt` (154)
-- `removal` (44)
-- `org` (34)
-- `exports` (33)
-- `copperbelt` (33)
-- `mining` (32)
-- `congo` (27)
-- `ores` (27)
-- `production` (27)
-- `ore` (27)
-- `copper` (27)
-- `ppm` (27)
-- `tailings` (26)
-- `data` (25)
-- `hydroxide` (23)
-- `deposits` (23)
-- `grades` (23)
-- `model` (22)
-- `republic` (20)
-- `precipitation` (20)
-- `adsorption` (20)
-- `democratic` (19)
-- `export` (19)
-- `mine` (19)
-- `uranyl` (18)
-- `exported` (17)
-- `international` (17)
-- `mines` (17)
-- `metal` (16)
+- `lithium` (164)
+- `cities` (160)
+- `cobalt` (155)
+- `energy` (148)
+- `prices` (125)
+- `production` (118)
+- `transport` (112)
+- `model` (103)
+- `nuclear` (98)
+- `market` (96)
+- `org` (94)
+- `price` (91)
+- `car` (89)
+- `countries` (88)
+- `analysis` (88)
+- `actions` (88)
+- `power` (77)
+- `action` (77)
+- `causal` (74)
+- `public` (70)
+- `city` (70)
+- `affordability` (67)
+- `costs` (67)
+- `availability` (66)
+- `policy` (66)
+- `only` (65)
+- `available` (65)
 
 ## Phrase bank (term + verb)
 
-- `uranium + indicates` (1)
-- `removed + enhanced` (1)
-- `org + obtained` (1)
-- `diluting + measured` (1)
-- `discrepancy + measured` (1)
-- `copperbelt + estimated` (1)
-- `communications + exhibits` (1)
-- `threshold + increased` (1)
-- `formal + prepared` (1)
+- `electricity + decreased` (1)
+- `example + showed` (1)
+- `affordability + estimated` (1)
+- `distributions + calculated` (1)
+- `electricity + estimated` (1)
+- `month + indicates` (1)
+- `demand-based + indicates` (1)
+- `access + observed` (1)
+- `variation + observed` (1)
+- `zimbabwe + estimated` (1)
+- `increases + observed` (1)
+- `country-average + observed` (1)
+- `tariff + indicates` (1)
+- `although + achieved` (1)
+- `recovery + achieved` (1)
+- `heavy + observed` (1)
+- `approximated + observed` (1)
+- `ssa + observed` (1)
+- `ber + achieved` (1)
+- `effective + obtained` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=16
+- et al.: et al.=1, et al=60
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 24.8 words, passive 118.8 /10K
-- methods: 1 section(s), avg sentence 21.1 words, passive 54.9 /10K
-- results: 1 section(s), avg sentence 19.3 words, passive 124.7 /10K
+- abstract: 3 section(s), avg sentence 20.8 words, passive 55.5 /10K
+- discussion: 5 section(s), avg sentence 25.9 words, passive 92.4 /10K
+- introduction: 3 section(s), avg sentence 25.4 words, passive 66.4 /10K
+- methods: 6 section(s), avg sentence 24.2 words, passive 172.3 /10K
+- results: 5 section(s), avg sentence 21.4 words, passive 95.7 /10K
 
 ## Editor notes (manual curation)
 

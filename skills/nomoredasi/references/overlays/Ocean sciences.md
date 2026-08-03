@@ -1,81 +1,86 @@
-# Overlay: Ocean sciences (AUTO-DRAFT 2026-08-02)
+# Overlay: Ocean sciences (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (1 files, 9,699 words — treat stats as directional, not targets)
-Source: 1 file(s), 9,699 words
+Maturity: immature (5 files, 39,117 words — treat stats as directional, not targets)
+Source: 5 file(s), 39,117 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.7 words
-- Passive voice: 141.3 /10K words
-- First person (we): 15.5 /10K words
+- Avg sentence length: 15.3 words
+- Passive voice: 120.7 /10K words
+- First person (we): 22.8 /10K words
 
 ## Top terms
 
-- `species` (142)
-- `model` (80)
+- `species` (228)
+- `detection` (185)
+- `model` (172)
+- `sea` (135)
+- `data` (129)
+- `copula` (104)
+- `feature` (97)
+- `underwater` (97)
+- `training` (94)
+- `yolov` (94)
+- `marine` (88)
+- `classification` (87)
 - `self-training` (79)
-- `data` (78)
-- `classification` (74)
+- `accuracy` (75)
+- `clutter` (75)
+- `learning` (74)
+- `dependence` (71)
+- `models` (71)
+- `urchins` (69)
+- `energy` (68)
+- `map` (68)
+- `dataset` (67)
+- `target` (65)
+- `fish` (61)
+- `structure` (61)
+- `metabolism` (60)
+- `acoustic` (60)
+- `org` (59)
 - `schools` (56)
-- `acoustic` (54)
-- `learning` (54)
-- `labelled` (52)
-- `training` (51)
-- `accuracy` (41)
-- `labels` (39)
-- `number` (30)
-- `monospecific` (29)
-- `catches` (28)
-- `supervised` (27)
-- `models` (26)
-- `fisheries` (26)
-- `marine` (26)
-- `instances` (26)
-- `pelagic` (25)
-- `multispecific` (25)
-- `overall` (22)
-- `pseudo-labels` (22)
-- `anchovy` (22)
-- `surveys` (21)
-- `journal` (21)
-- `trawl` (20)
-- `science` (20)
-- `lekanda` (19)
+- `labelled` (54)
 
 ## Phrase bank (term + verb)
 
+- `weighted + improved` (3)
+- `target + improved` (3)
+- `biological + enhanced` (3)
 - `sardine + increased` (2)
 - `labels + increased` (2)
 - `species + indicates` (2)
+- `consistent + observed` (2)
 - `truly + indicates` (2)
 - `multispecies + increased` (2)
-- `data + observed` (1)
-- `bay + improved` (1)
-- `species + enhanced` (1)
-- `species + achieved` (1)
-- `initially + obtained` (1)
-- `model + estimated` (1)
-- `confidence + indicates` (1)
-- `distribution + indicates` (1)
-- `fold + obtained` (1)
-- `self-training + observed` (1)
-- `pseudo + increased` (1)
-- `weighted + calculated` (1)
-- `numbers + increased` (1)
-- `self-training + increased` (1)
-- `true-labelled + showed` (1)
+- `largest + observed` (2)
+- `gonads + showed` (1)
+- `metabolism + increased` (1)
+- `changes + showed` (1)
+- `energy + increased` (1)
+- `challenge + showed` (1)
+- `control + prepared` (1)
+- `sizes + calculated` (1)
+- `groups + showed` (1)
+- `groups + observed` (1)
+- `barren + showed` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=34
+- in situ: in situ=2, in-situ=0
+- in vivo: in vivo=1, in-vivo=0
+- in vitro: in vitro=2, in-vitro=0
+- et al.: et al.=0, et al=120
+- setup: setup=1, set-up=0, set up=2
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 23.4 words, passive 47.4 /10K
-- conclusion: 1 section(s), avg sentence 22.4 words, passive 104.4 /10K
-- discussion: 1 section(s), avg sentence 26.0 words, passive 149.5 /10K
-- introduction: 1 section(s), avg sentence 24.5 words, passive 236.8 /10K
-- results: 1 section(s), avg sentence 17.2 words, passive 61.9 /10K
+- abstract: 4 section(s), avg sentence 21.5 words, passive 60.1 /10K
+- conclusion: 4 section(s), avg sentence 21.5 words, passive 82.7 /10K
+- discussion: 4 section(s), avg sentence 25.6 words, passive 157.9 /10K
+- introduction: 4 section(s), avg sentence 22.0 words, passive 132.7 /10K
+- methods: 6 section(s), avg sentence 18.4 words, passive 174.6 /10K
+- results: 3 section(s), avg sentence 19.4 words, passive 99.8 /10K
 
 ## Editor notes (manual curation)
 

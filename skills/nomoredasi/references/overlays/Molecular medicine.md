@@ -1,81 +1,85 @@
-# Overlay: Molecular medicine (AUTO-DRAFT 2026-08-01)
+# Overlay: Molecular medicine (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (1 files, 7,088 words — treat stats as directional, not targets)
-Source: 1 file(s), 7,088 words
+Maturity: immature (5 files, 56,317 words — treat stats as directional, not targets)
+Source: 5 file(s), 56,317 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.0 words
-- Passive voice: 135.4 /10K words
-- First person (we): 8.5 /10K words
+- Avg sentence length: 16.8 words
+- Passive voice: 178.8 /10K words
+- First person (we): 34.4 /10K words
 
 ## Top terms
 
+- `codanin-` (379)
+- `cnr` (222)
+- `mice` (199)
+- `years` (184)
+- `patients` (183)
+- `data` (171)
+- `complex` (156)
+- `endothelial` (154)
+- `mouse` (154)
+- `expression` (137)
+- `cell` (134)
+- `mutations` (131)
+- `cells` (122)
+- `analysis` (119)
+- `model` (117)
+- `age` (114)
+- `mutation` (112)
+- `activity` (109)
 - `codon` (102)
-- `patients` (98)
-- `mutations` (73)
-- `mutation` (70)
-- `transfusion` (67)
-- `thalassemia` (55)
-- `xmni` (49)
-- `thal` (46)
-- `polymorphism` (35)
-- `bangladesh` (32)
-- `blood` (30)
-- `group` (30)
-- `therapy` (29)
-- `regular` (27)
-- `hbf` (27)
-- `delc` (26)
-- `mean` (25)
-- `associated` (23)
-- `heterozygous` (23)
-- `clinical` (21)
-- `pathogenic` (21)
-- `severity` (21)
-- `homozygous` (21)
-- `analysis` (20)
-- `hemoglobin` (20)
-- `common` (19)
-- `reference` (19)
-- `wild` (18)
-- `type` (18)
-- `treatment` (18)
+- `org` (97)
+- `molecular` (94)
+- `female` (94)
+- `meningiomas` (94)
+- `weeks` (92)
+- `disease` (86)
+- `suppl` (86)
+- `group` (81)
+- `aortic` (81)
+- `performed` (80)
+- `substrate` (80)
 
 ## Phrase bank (term + verb)
 
-- `codon + demonstrated` (2)
-- `categorical + showed` (2)
-- `hbb + estimated` (1)
-- `mitigate + increased` (1)
-- `globin + observed` (1)
-- `mcv + exhibited` (1)
-- `codon + exhibited` (1)
-- `thal + observed` (1)
-- `ivs-i- + showed` (1)
-- `disease + revealed` (1)
-- `variant + exhibited` (1)
-- `hbb + showed` (1)
-- `xmni + observed` (1)
-- `mutation + observed` (1)
-- `heterozygous + demonstrated` (1)
-- `delc + observed` (1)
-- `statistically + observed` (1)
-- `one-time + showed` (1)
-- `one-time + exhibited` (1)
-- `xmni + increased` (1)
+- `cdin + showed` (3)
+- `wild-type + indicates` (3)
+- `meningiomas + showed` (3)
+- `fluctuations + observed` (2)
+- `score + showed` (2)
+- `proteins + confirmed` (2)
+- `radiolabelled + observed` (2)
+- `simulations + showed` (2)
+- `highest + observed` (2)
+- `dnase + observed` (2)
+- `dna + showed` (2)
+- `contrast + observed` (2)
+- `digestion + observed` (2)
+- `suppl + showed` (2)
+- `weak + observed` (2)
+- `explain + observed` (2)
+- `plaque + observed` (2)
+- `cnr + observed` (2)
+- `cnr + confirmed` (2)
+- `cnr + showed` (2)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=22
+- in situ: in situ=7, in-situ=1
+- in vivo: in vivo=6, in-vivo=0
+- in vitro: in vitro=16, in-vitro=0
+- et al.: et al.=10, et al=175
+- setup: setup=0, set-up=0, set up=1
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 24.7 words, passive 180.2 /10K
-- discussion: 1 section(s), avg sentence 22.5 words, passive 98.8 /10K
-- introduction: 1 section(s), avg sentence 20.1 words, passive 149.6 /10K
-- methods: 1 section(s), avg sentence 10.2 words, passive 141.1 /10K
-- results: 2 section(s), avg sentence 18.4 words, passive 154.5 /10K
+- abstract: 3 section(s), avg sentence 21.4 words, passive 116.9 /10K
+- discussion: 5 section(s), avg sentence 24.1 words, passive 119.8 /10K
+- introduction: 3 section(s), avg sentence 20.7 words, passive 164.2 /10K
+- methods: 7 section(s), avg sentence 15.9 words, passive 334.1 /10K
+- results: 6 section(s), avg sentence 20.7 words, passive 155.3 /10K
 
 ## Editor notes (manual curation)
 

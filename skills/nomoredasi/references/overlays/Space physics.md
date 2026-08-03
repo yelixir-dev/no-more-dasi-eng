@@ -1,82 +1,84 @@
 # Overlay: Space physics (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (2 files, 16,987 words — treat stats as directional, not targets)
-Source: 2 file(s), 16,987 words
+Maturity: immature (5 files, 40,422 words — treat stats as directional, not targets)
+Source: 5 file(s), 40,422 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.5 words
-- Passive voice: 107.7 /10K words
-- First person (we): 40.0 /10K words
+- Avg sentence length: 16.9 words
+- Passive voice: 106.6 /10K words
+- First person (we): 35.1 /10K words
 
 ## Top terms
 
-- `space` (138)
-- `magnetic` (118)
-- `data` (114)
+- `magnetic` (292)
+- `current` (262)
+- `space` (237)
+- `data` (206)
+- `observations` (162)
+- `electron` (148)
+- `time` (140)
+- `mercury` (138)
+- `electrons` (136)
+- `density` (115)
+- `region` (105)
+- `solar` (96)
 - `chorus` (95)
-- `time` (81)
-- `geomagnetic` (77)
+- `org` (94)
+- `measurements` (92)
+- `geomagnetic` (90)
+- `geophys` (89)
+- `magnetosphere` (88)
+- `res` (87)
+- `earth` (86)
+- `local` (82)
+- `flux` (79)
+- `spacecraft` (78)
+- `waves` (75)
+- `currents` (74)
+- `wind` (73)
+- `radiation` (72)
 - `radcube` (71)
-- `observations` (64)
-- `geophys` (64)
-- `measurements` (63)
-- `res` (62)
-- `occurrence` (61)
-- `waves` (59)
-- `density` (57)
-- `distribution` (56)
-- `weather` (53)
-- `solar` (51)
-- `mlat` (47)
-- `amplitudes` (46)
-- `region` (45)
-- `spacecraft` (44)
-- `probability` (42)
-- `storm` (41)
-- `wave` (39)
-- `latitudes` (39)
-- `wind` (38)
-- `average` (36)
-- `phys` (36)
-- `latitude` (34)
-- `value` (34)
+- `plasma` (70)
+- `electric` (70)
 
 ## Phrase bank (term + verb)
 
 - `magnetic + observed` (6)
+- `around + indicates` (4)
+- `current + estimated` (3)
 - `solar + observed` (3)
+- `density + estimated` (2)
+- `electron + exhibits` (2)
+- `saa + enhanced` (2)
+- `figs + indicates` (2)
+- `events + observed` (2)
+- `electrons + observed` (2)
+- `saa + observed` (2)
+- `simulation + observed` (2)
 - `long-term + obtained` (2)
 - `detections + obtained` (2)
 - `magnetic + measured` (2)
 - `event + measured` (2)
-- `investigation + demonstrated` (1)
-- `whistler + observed` (1)
-- `low- + observed` (1)
-- `squared + obtained` (1)
-- `values + calculated` (1)
-- `spectral + obtained` (1)
-- `down + observed` (1)
-- `local + observed` (1)
-- `behavior + observed` (1)
-- `substantially + obtained` (1)
-- `lpp + obtained` (1)
-- `sources + calculated` (1)
-- `dotted + estimated` (1)
-- `side + obtained` (1)
+- `magnetosphere + revealed` (1)
+- `hybrid + showed` (1)
+- `time + observed` (1)
+- `magnetopause + estimated` (1)
 
 ## Notation watch
 
-- in situ: in situ=1, in-situ=0
-- et al.: et al.=0, et al=74
+- x-ray: x-ray=2, x ray=0, xray=0
+- in situ: in situ=3, in-situ=1
+- et al.: et al.=0, et al=154
+- setup: setup=2, set-up=0, set up=2
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 24.1 words, passive 46.1 /10K
-- discussion: 2 section(s), avg sentence 25.2 words, passive 107.3 /10K
-- introduction: 1 section(s), avg sentence 26.0 words, passive 167.5 /10K
-- methods: 2 section(s), avg sentence 23.7 words, passive 160.4 /10K
-- results: 2 section(s), avg sentence 21.7 words, passive 122.6 /10K
+- abstract: 2 section(s), avg sentence 25.0 words, passive 53.3 /10K
+- discussion: 5 section(s), avg sentence 23.6 words, passive 118.1 /10K
+- introduction: 3 section(s), avg sentence 24.0 words, passive 153.8 /10K
+- methods: 5 section(s), avg sentence 23.8 words, passive 169.0 /10K
+- results: 5 section(s), avg sentence 19.9 words, passive 127.4 /10K
 
 ## Editor notes (manual curation)
 

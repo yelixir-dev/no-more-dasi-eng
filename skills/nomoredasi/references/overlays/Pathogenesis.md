@@ -1,81 +1,84 @@
-# Overlay: Pathogenesis (AUTO-DRAFT 2026-08-02)
+# Overlay: Pathogenesis (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (1 files, 7,767 words — treat stats as directional, not targets)
-Source: 1 file(s), 7,767 words
+Maturity: immature (5 files, 59,722 words — treat stats as directional, not targets)
+Source: 5 file(s), 59,722 words
 
 ## Corpus stats
 
-- Avg sentence length: 22.3 words
-- Passive voice: 224.0 /10K words
-- First person (we): 20.6 /10K words
+- Avg sentence length: 17.1 words
+- Passive voice: 173.1 /10K words
+- First person (we): 48.1 /10K words
 
 ## Top terms
 
-- `group` (92)
-- `vaginal` (78)
-- `candida` (67)
-- `albicans` (58)
-- `inflammatory` (48)
-- `cells` (47)
-- `epithelial` (40)
-- `infection` (37)
-- `expression` (37)
-- `caspase-` (37)
-- `candidiasis` (34)
-- `vulvovaginal` (32)
-- `analysis` (31)
-- `response` (28)
-- `recurrent` (26)
-- `mice` (26)
-- `control` (24)
-- `genes` (22)
-- `mouse` (20)
-- `model` (20)
-- `cell` (20)
-- `staining` (20)
-- `levels` (19)
-- `performed` (18)
-- `positive` (17)
-- `host` (16)
-- `fungal` (16)
-- `pathway` (15)
-- `models` (15)
-- `immune` (15)
+- `cells` (590)
+- `cell` (270)
+- `infection` (220)
+- `expression` (176)
+- `analysis` (171)
+- `data` (162)
+- `trachomatis` (162)
+- `asymptomatic` (155)
+- `genes` (150)
+- `mice` (139)
+- `gene` (123)
+- `serovar` (123)
+- `org` (116)
+- `group` (112)
+- `inflammatory` (104)
+- `screening` (102)
+- `protein` (100)
+- `performed` (100)
+- `neutrophil` (100)
+- `symptomatic` (100)
+- `infected` (95)
+- `cxcl` (94)
+- `response` (93)
+- `induced` (92)
+- `mouse` (89)
+- `cohort` (89)
+- `granulomas` (89)
+- `histone` (83)
+- `neutrophils` (83)
+- `levels` (81)
 
 ## Phrase bank (term + verb)
 
-- `vvc + showed` (2)
-- `vvc + exhibited` (2)
-- `whereas + exhibited` (2)
-- `cell + showed` (1)
-- `responses + demonstrated` (1)
-- `staining + increased` (1)
-- `cells + showed` (1)
-- `inflammasome + increased` (1)
-- `vvc + increased` (1)
-- `inflammasome-associated + increased` (1)
-- `increased + enhanced` (1)
-- `episodes + confirmed` (1)
-- `drugs + increased` (1)
-- `written + obtained` (1)
-- `four + confirmed` (1)
-- `identification + confirmed` (1)
-- `experiments + obtained` (1)
-- `episodes + exhibited` (1)
-- `informed + obtained` (1)
-- `approximately + confirmed` (1)
+- `similar + obtained` (4)
+- `cell + indicates` (3)
+- `cell + observed` (2)
+- `mutation + exhibited` (2)
+- `histone + revealed` (2)
+- `ehmt + decreased` (2)
+- `decreased + increased` (2)
+- `adjusted + calculated` (2)
+- `masson + showed` (2)
+- `cell + showed` (2)
+- `macro + exhibited` (2)
+- `cells + revealed` (2)
+- `trend + observed` (2)
+- `cells + observed` (2)
+- `cell + demonstrated` (2)
+- `immunofluorescence + showed` (2)
+- `neutrophils + decreased` (2)
+- `hscs + increased` (2)
+- `analysis + revealed` (2)
+- `consistent + observed` (2)
 
 ## Notation watch
 
-- in vitro: in vitro=2, in-vitro=0
-- et al.: et al.=0, et al=17
+- in situ: in situ=3, in-situ=0
+- in vivo: in vivo=5, in-vivo=1
+- in vitro: in vitro=9, in-vitro=0
+- et al.: et al.=0, et al=196
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 26.0 words, passive 149.8 /10K
-- introduction: 1 section(s), avg sentence 24.0 words, passive 32.1 /10K
-- methods: 1 section(s), avg sentence 25.7 words, passive 469.1 /10K
-- results: 1 section(s), avg sentence 26.8 words, passive 152.5 /10K
+- abstract: 3 section(s), avg sentence 19.5 words, passive 59.3 /10K
+- discussion: 5 section(s), avg sentence 19.4 words, passive 114.3 /10K
+- introduction: 5 section(s), avg sentence 13.6 words, passive 134.3 /10K
+- methods: 5 section(s), avg sentence 16.6 words, passive 314.6 /10K
+- results: 5 section(s), avg sentence 20.5 words, passive 138.6 /10K
 
 ## Editor notes (manual curation)
 

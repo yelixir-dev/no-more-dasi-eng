@@ -1,50 +1,51 @@
 # Overlay: Developmental biology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (3 files, 32,653 words — treat stats as directional, not targets)
-Source: 3 file(s), 32,653 words
+Maturity: immature (5 files, 58,000 words — treat stats as directional, not targets)
+Source: 5 file(s), 58,000 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.3 words
-- Passive voice: 190.5 /10K words
-- First person (we): 57.3 /10K words
+- Avg sentence length: 17.3 words
+- Passive voice: 167.6 /10K words
+- First person (we): 41.4 /10K words
 
 ## Top terms
 
-- `cells` (221)
-- `cell` (165)
+- `cells` (294)
+- `cell` (230)
+- `models` (226)
+- `human` (215)
+- `placenta` (193)
+- `data` (172)
 - `neurons` (159)
-- `data` (135)
+- `genes` (157)
+- `analysis` (156)
+- `hpb` (146)
+- `stages` (132)
 - `meiotic` (127)
-- `loop` (96)
-- `interactions` (94)
+- `expression` (118)
+- `activity` (117)
+- `differentiation` (115)
+- `interactions` (100)
+- `loop` (98)
+- `org` (96)
+- `primary` (95)
+- `development` (94)
+- `samples` (94)
+- `gene` (93)
+- `acid` (92)
+- `expressed` (90)
+- `placental` (90)
+- `day` (84)
 - `chromatin` (81)
-- `genes` (79)
-- `differentiation` (76)
-- `meiosis` (75)
-- `trna` (75)
-- `archease` (74)
-- `day` (72)
-- `gene` (71)
-- `analysis` (69)
-- `hi-c` (64)
-- `human` (64)
-- `expression` (63)
-- `populations` (62)
-- `transcription` (59)
-- `loops` (57)
-- `activity` (55)
-- `methylation` (54)
-- `stem` (52)
-- `sites` (51)
-- `prophase` (49)
-- `expressed` (49)
-- `buffer` (48)
-- `peaks` (47)
+- `transport` (81)
+- `model` (79)
+- `functional` (79)
 
 ## Phrase bank (term + verb)
 
 - `enrichment + calculated` (3)
+- `hpb + measured` (3)
 - `hi-c + calculated` (2)
 - `orientation + observed` (2)
 - `loop + observed` (2)
@@ -52,34 +53,34 @@ Source: 3 file(s), 32,653 words
 - `tad + calculated` (2)
 - `neurons + observed` (2)
 - `indicated + measured` (2)
-- `typi- + observed` (1)
-- `inter- + revealed` (1)
-- `whole-chromosome + observed` (1)
-- `insulation + confirmed` (1)
-- `bump + indicates` (1)
-- `cohesin-mediated + observed` (1)
-- `polymer + indicates` (1)
-- `previous + indicates` (1)
-- `rec + confirmed` (1)
-- `meiotic-specific + observed` (1)
-- `chromatin + observed` (1)
-- `ctcf + observed` (1)
+- `primary + exhibited` (2)
+- `late-stage + exhibited` (2)
+- `donor + exhibited` (2)
+- `immortalized + increased` (2)
+- `late-stage + enhanced` (2)
+- `healthy + obtained` (2)
+- `term + obtained` (2)
+- `statistical + indicates` (2)
+- `indicates + indicates` (2)
+- `related + exhibited` (2)
+- `primary + observed` (2)
 
 ## Notation watch
 
-- in situ: in situ=0, in-situ=2
-- in vivo: in vivo=30, in-vivo=0
-- in vitro: in vitro=36, in-vitro=0
-- et al.: et al.=0, et al=117
+- in situ: in situ=0, in-situ=3
+- in vivo: in vivo=38, in-vivo=0
+- in vitro: in vitro=54, in-vitro=0
+- et al.: et al.=0, et al=236
 - setup: setup=0, set-up=0, set up=2
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 20.5 words, passive 122.0 /10K
-- discussion: 3 section(s), avg sentence 22.5 words, passive 122.9 /10K
-- introduction: 3 section(s), avg sentence 21.8 words, passive 284.9 /10K
-- methods: 4 section(s), avg sentence 16.3 words, passive 383.8 /10K
-- results: 3 section(s), avg sentence 20.5 words, passive 149.4 /10K
+- abstract: 4 section(s), avg sentence 22.5 words, passive 129.3 /10K
+- conclusion: 2 section(s), avg sentence 26.8 words, passive 67.8 /10K
+- discussion: 5 section(s), avg sentence 24.1 words, passive 117.4 /10K
+- introduction: 5 section(s), avg sentence 24.4 words, passive 216.7 /10K
+- methods: 7 section(s), avg sentence 18.3 words, passive 362.4 /10K
+- results: 7 section(s), avg sentence 22.2 words, passive 125.9 /10K
 
 ## Editor notes (manual curation)
 

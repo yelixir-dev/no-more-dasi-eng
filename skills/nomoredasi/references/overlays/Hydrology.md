@@ -1,81 +1,84 @@
 # Overlay: Hydrology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 4,636 words — treat stats as directional, not targets)
-Source: 1 file(s), 4,636 words
+Maturity: immature (4 files, 28,715 words — treat stats as directional, not targets)
+Source: 4 file(s), 28,715 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.7 words
-- Passive voice: 135.9 /10K words
-- First person (we): 2.2 /10K words
+- Avg sentence length: 16.5 words
+- Passive voice: 102.7 /10K words
+- First person (we): 6.3 /10K words
 
 ## Top terms
 
+- `drought` (140)
+- `urban` (137)
+- `water` (134)
 - `vegetables` (108)
-- `health` (62)
-- `heavy` (55)
-- `water` (51)
+- `data` (105)
+- `analysis` (102)
+- `environmental` (91)
+- `thermal` (82)
+- `land` (81)
+- `health` (80)
+- `spatial` (78)
+- `monitoring` (78)
+- `vol` (78)
+- `surface` (76)
+- `values` (68)
+- `assessment` (66)
+- `droughts` (63)
+- `index` (61)
+- `amazon` (58)
+- `conditions` (56)
+- `heavy` (56)
+- `temperature` (51)
+- `climate` (50)
 - `metal` (50)
-- `metals` (48)
-- `risk` (37)
-- `irrigated` (34)
-- `risks` (30)
-- `irrigation` (27)
-- `values` (27)
-- `assessment` (26)
-- `sewage` (26)
-- `sewage-irrigated` (26)
-- `groundwater` (25)
-- `consumption` (23)
-- `vegetable` (21)
-- `food` (17)
-- `associated` (16)
-- `spinach` (16)
-- `fenugreek` (16)
-- `carcinogenic` (15)
-- `concentrations` (15)
-- `intake` (15)
-- `human` (14)
-- `hazard` (14)
-- `mint` (14)
-- `potential` (14)
-- `contamination` (14)
-- `threshold` (13)
+- `metals` (49)
+- `events` (48)
+- `extreme` (47)
+- `vegetation` (47)
+- `forest` (46)
+- `anomaly` (44)
 
 ## Phrase bank (term + verb)
 
+- `spei- + calculated` (4)
+- `depicts + estimated` (2)
+- `trends + indicates` (2)
+- `aed + estimated` (2)
+- `strongest + observed` (2)
 - `hazard + calculated` (2)
 - `vegetables + calculated` (2)
-- `sewage + increased` (1)
-- `vegetables + showed` (1)
-- `intake + increased` (1)
-- `immune + increased` (1)
-- `risks + estimated` (1)
-- `generally + observed` (1)
-- `clear + obtained` (1)
-- `water + prepared` (1)
-- `origin + estimated` (1)
-- `metal + estimated` (1)
-- `vegetable + calculated` (1)
-- `total + measured` (1)
-- `edi + estimated` (1)
-- `metals + indicates` (1)
-- `concentrations + measured` (1)
-- `health + estimated` (1)
-- `intake + calculated` (1)
-- `tables + estimated` (1)
+- `difference + observed` (2)
+- `deficits + indicates` (1)
+- `precipitation + calculated` (1)
+- `nature + exhibits` (1)
+- `january + revealed` (1)
+- `months + increased` (1)
+- `overall + indicates` (1)
+- `spei + observed` (1)
+- `third- + exhibited` (1)
+- `majority + exhibits` (1)
+- `spei- + demonstrated` (1)
+- `global + demonstrated` (1)
+- `notably + exhibited` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=15
+- in situ: in situ=2, in-situ=1
+- et al.: et al.=0, et al=114
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 31.9 words, passive 0.0 /10K
-- conclusion: 1 section(s), avg sentence 17.3 words, passive 30.4 /10K
-- introduction: 1 section(s), avg sentence 21.4 words, passive 133.3 /10K
-- merged: results+discussion: 1 section(s), avg sentence 25.8 words, passive 83.6 /10K
-- methods: 1 section(s), avg sentence 20.9 words, passive 457.0 /10K
+- abstract: 2 section(s), avg sentence 33.2 words, passive 18.8 /10K
+- conclusion: 4 section(s), avg sentence 21.4 words, passive 74.7 /10K
+- discussion: 2 section(s), avg sentence 23.3 words, passive 93.5 /10K
+- introduction: 4 section(s), avg sentence 27.2 words, passive 77.8 /10K
+- merged: results+discussion: 2 section(s), avg sentence 27.0 words, passive 38.3 /10K
+- methods: 4 section(s), avg sentence 23.9 words, passive 279.2 /10K
+- results: 2 section(s), avg sentence 19.8 words, passive 122.8 /10K
 
 ## Editor notes (manual curation)
 

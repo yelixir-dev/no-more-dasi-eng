@@ -1,51 +1,62 @@
-# Overlay: Limnology (AUTO-DRAFT 2026-08-02)
+# Overlay: Limnology (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (2 files, 14,627 words — treat stats as directional, not targets)
-Source: 2 file(s), 14,627 words
+Maturity: immature (5 files, 49,055 words — treat stats as directional, not targets)
+Source: 5 file(s), 49,055 words
 
 ## Corpus stats
 
-- Avg sentence length: 14.9 words
-- Passive voice: 127.2 /10K words
-- First person (we): 34.9 /10K words
+- Avg sentence length: 16.9 words
+- Passive voice: 122.5 /10K words
+- First person (we): 24.1 /10K words
 
 ## Top terms
 
-- `lakes` (179)
-- `glacier` (128)
-- `ice` (91)
-- `lake` (90)
-- `glaciers` (74)
-- `surface` (70)
-- `global` (50)
-- `thickness` (49)
-- `data` (47)
-- `area` (47)
-- `model` (43)
-- `mean` (43)
-- `water` (41)
-- `regions` (40)
-- `volume` (40)
-- `potential` (39)
-- `future` (39)
-- `bed` (39)
-- `org` (32)
-- `estimate` (32)
-- `estimates` (32)
-- `dissolved` (32)
-- `topography` (31)
-- `oxide` (31)
-- `volumes` (30)
-- `nitrous` (30)
-- `saturation` (30)
-- `size` (28)
-- `temperature` (28)
-- `gas` (28)
+- `lakes` (451)
+- `lake` (280)
+- `water` (212)
+- `glacier` (148)
+- `nutrient` (136)
+- `temperature` (123)
+- `data` (121)
+- `total` (113)
+- `ice` (108)
+- `precipitation` (105)
+- `org` (100)
+- `concentrations` (100)
+- `surface` (98)
+- `climate` (97)
+- `river` (97)
+- `nitrogen` (94)
+- `ratio` (94)
+- `phosphorus` (92)
+- `analysis` (89)
+- `forcing` (88)
+- `changes` (86)
+- `model` (85)
+- `conditions` (85)
+- `glaciers` (81)
+- `volcanic` (78)
+- `mean` (75)
+- `global` (74)
+- `diatom` (74)
+- `earth` (69)
+- `change` (69)
 
 ## Phrase bank (term + verb)
 
+- `ratio + calculated` (4)
+- `bar + indicates` (2)
+- `thickness + calculated` (2)
 - `lake + estimated` (2)
+- `water + measured` (2)
 - `calculated + measured` (2)
+- `some + observed` (2)
+- `recent + observed` (2)
+- `station + measured` (2)
+- `data + obtained` (2)
+- `distribution + measured` (2)
+- `ratio + observed` (2)
+- `inorganic + showed` (2)
 - `mountain + increased` (1)
 - `millan + estimated` (1)
 - `taking + improved` (1)
@@ -53,30 +64,23 @@ Source: 2 file(s), 14,627 words
 - `discontinuities + observed` (1)
 - `consistency + observed` (1)
 - `physical + achieved` (1)
-- `conservation + observed` (1)
-- `thicknesses + improved` (1)
-- `alps + observed` (1)
-- `reference + showed` (1)
-- `roughly + estimated` (1)
-- `thin + observed` (1)
-- `nature + estimated` (1)
-- `bar + indicates` (1)
-- `homogenized + calculated` (1)
-- `retreat + improved` (1)
-- `deglaciation + improved` (1)
 
 ## Notation watch
 
-- et al.: et al.=5, et al=56
+- x-ray: x-ray=3, x ray=0, xray=0
+- in situ: in situ=4, in-situ=2
+- et al.: et al.=25, et al=194
 - setup: setup=1, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 26.3 words, passive 126.6 /10K
-- introduction: 1 section(s), avg sentence 25.3 words, passive 263.2 /10K
-- merged: results+discussion: 1 section(s), avg sentence 24.1 words, passive 164.7 /10K
-- methods: 2 section(s), avg sentence 21.6 words, passive 251.1 /10K
-- results: 1 section(s), avg sentence 20.6 words, passive 77.7 /10K
+- abstract: 3 section(s), avg sentence 23.5 words, passive 74.1 /10K
+- conclusion: 1 section(s), avg sentence 30.9 words, passive 202.4 /10K
+- discussion: 2 section(s), avg sentence 23.6 words, passive 125.7 /10K
+- introduction: 3 section(s), avg sentence 27.2 words, passive 88.9 /10K
+- merged: results+discussion: 2 section(s), avg sentence 23.2 words, passive 105.7 /10K
+- methods: 5 section(s), avg sentence 22.7 words, passive 227.4 /10K
+- results: 3 section(s), avg sentence 20.6 words, passive 74.9 /10K
 
 ## Editor notes (manual curation)
 

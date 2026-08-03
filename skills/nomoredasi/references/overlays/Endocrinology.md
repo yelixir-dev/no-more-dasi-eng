@@ -1,77 +1,85 @@
-# Overlay: Endocrinology (AUTO-DRAFT 2026-08-01)
+# Overlay: Endocrinology (AUTO-DRAFT 2026-08-02)
 
-Maturity: immature (1 files, 8,534 words — treat stats as directional, not targets)
-Source: 1 file(s), 8,534 words
+Maturity: immature (5 files, 37,200 words — treat stats as directional, not targets)
+Source: 5 file(s), 37,200 words
 
 ## Corpus stats
 
-- Avg sentence length: 21.3 words
-- Passive voice: 96.1 /10K words
-- First person (we): 16.4 /10K words
+- Avg sentence length: 16.7 words
+- Passive voice: 169.1 /10K words
+- First person (we): 33.6 /10K words
 
 ## Top terms
 
-- `kidney` (73)
+- `data` (172)
+- `analysis` (137)
+- `diet` (114)
+- `org` (104)
+- `expression` (104)
+- `levels` (100)
+- `mediterranean` (97)
+- `tissue` (96)
+- `human` (94)
+- `kidney` (94)
+- `arginine` (94)
+- `diabetes` (93)
+- `larvae` (91)
+- `zebrafish` (88)
+- `disease` (83)
+- `patients` (81)
+- `adipose` (80)
+- `placental` (80)
+- `glucose` (77)
+- `genes` (72)
+- `gene` (71)
+- `group` (69)
+- `depots` (67)
 - `therapy` (63)
-- `combination` (59)
-- `disease` (57)
-- `patients` (57)
-- `monotherapy` (48)
-- `diabetes` (42)
-- `years` (40)
-- `renal` (39)
-- `outcomes` (38)
-- `egfr` (38)
-- `advanced` (38)
-- `cohort` (37)
-- `receptor` (36)
-- `cardiovascular` (34)
-- `mortality` (29)
-- `preserved` (28)
-- `diabetic` (26)
-- `benefits` (25)
-- `inhibitors` (24)
-- `data` (24)
-- `clinical` (23)
-- `trinetx` (22)
-- `function` (22)
-- `standard` (22)
-- `reduction` (22)
-- `five` (21)
-- `type` (21)
-- `chronic` (20)
-- `four` (20)
+- `metabolism` (61)
+- `combination` (61)
+- `clinical` (57)
+- `insulin` (57)
+- `diabetic` (57)
+- `values` (55)
 
 ## Phrase bank (term + verb)
 
+- `staining + obtained` (2)
+- `depot + calculated` (2)
+- `zebrafish + revealed` (2)
+- `glo + exhibited` (2)
+- `akr + increased` (2)
+- `pathway + indicates` (2)
+- `expression + indicates` (2)
+- `diet + increased` (2)
+- `glomerular + showed` (2)
+- `neck + showed` (2)
+- `differences + observed` (2)
+- `mediterranean + observed` (2)
 - `novel + demonstrated` (2)
 - `utilized + obtained` (2)
 - `data + obtained` (2)
 - `magnitude + observed` (2)
-- `agonists + demonstrated` (1)
-- `drug + demonstrated` (1)
-- `practice + increased` (1)
-- `deviations + estimated` (1)
-- `confidence + calculated` (1)
-- `treatment + calculated` (1)
-- `some + calculated` (1)
-- `preserved + demonstrated` (1)
-- `excellent + achieved` (1)
-- `sglt- + achieved` (1)
-- `larger + observed` (1)
-- `individual + showed` (1)
-- `egfr + demonstrated` (1)
-- `cohort + demonstrated` (1)
-- `crude + calculated` (1)
-- `advanced + demonstrated` (1)
+- `mortality + demonstrated` (2)
+- `expected + showed` (1)
+- `degrees + observed` (1)
+- `adipose + indicates` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=1
+- in vivo: in vivo=2, in-vivo=0
+- in vitro: in vitro=4, in-vitro=0
+- et al.: et al.=2, et al=121
+- setup: setup=2, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 21.7 words, passive 99.3 /10K
+- abstract: 3 section(s), avg sentence 21.7 words, passive 103.0 /10K
+- conclusion: 1 section(s), avg sentence 24.5 words, passive 102.0 /10K
+- discussion: 4 section(s), avg sentence 22.3 words, passive 126.2 /10K
+- introduction: 2 section(s), avg sentence 30.6 words, passive 163.3 /10K
+- methods: 4 section(s), avg sentence 16.9 words, passive 372.9 /10K
+- results: 4 section(s), avg sentence 18.8 words, passive 164.1 /10K
 
 ## Editor notes (manual curation)
 
