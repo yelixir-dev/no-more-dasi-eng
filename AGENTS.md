@@ -25,7 +25,7 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 ## 주 2회 델타 분석 사이클 (1차 목표)
 
-매주 월·목 16:00 KST에 `bash scripts/cycle_delta.sh`로 다음 7단계를 실행한다.
+매주 월·목 16:00 KST에 `bash scripts/cycle_delta.sh --with-backup`로 다음 7단계를 실행한다 (수동 업데이트는 플래그 없이 실행해 share 백업을 건너뛴다).
 
 0. 프리플라이트: `.venv` Python과 코퍼스 읽기 권한을 확인하고 세션 재시작 후 스케줄러 재무장을 안내한다.
 1. 델타 인벤토리: 코퍼스 매니페스트 diff를 `logs/cycle/<date>-delta.txt`에 기록한다.
