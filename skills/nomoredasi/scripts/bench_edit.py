@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from check_terms import VARIANT_FAMILIES, normalize
+from section_split import body_text
 
 WORD = re.compile(r"[A-Za-z][A-Za-z-]*")
 SENTENCE_END = re.compile(r"[.!?]+[\"')\]]*\s+")
@@ -62,6 +63,7 @@ def paragraphs(text):
 
 
 def detect(text, tell_patterns):
+    text = body_text(text)
     sents = sentences(text)
     paras = paragraphs(text)
     counts = {

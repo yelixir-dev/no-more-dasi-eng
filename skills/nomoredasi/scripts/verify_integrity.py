@@ -24,6 +24,10 @@ import html
 import re
 import sys
 from collections import Counter
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from section_split import body_text
 
 WARN_RATE = 0.30
 STOP_RATE = 0.50
@@ -211,7 +215,9 @@ def compare_once(original, corrected, overlay_path, order):
         for token, count in sorted(invented.items()):
             violations.append(f"INVENTED {kind}: {token!r} (x{count})")
 
-    rate = change_rate(original, corrected)
+    # Change rate is computed on the body only so that identical (long)
+    # references sections do not dilute the measured edit intensity.
+    rate = change_rate(body_text(original), body_text(corrected))
     if rate > STOP_RATE:
         violations.append(f"CHANGE RATE {rate:.0%} exceeds stop gate {STOP_RATE:.0%}")
     return violations, rate

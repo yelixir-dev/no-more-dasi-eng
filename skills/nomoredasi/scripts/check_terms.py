@@ -9,6 +9,10 @@ Exit: 0 = consistent, 1 = inconsistency found.
 import re
 import sys
 import unicodedata
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from section_split import body_text
 
 VARIANT_FAMILIES = [
     ["bandgap", "band gap", "band-gap"],
@@ -53,7 +57,7 @@ def main():
         return 2
     with open(sys.argv[1], encoding="utf-8") as f:
         text = f.read()
-    problems = find_inconsistencies(text)
+    problems = find_inconsistencies(body_text(text))
     if not problems:
         print("check_terms: PASS (notation consistent)")
         return 0

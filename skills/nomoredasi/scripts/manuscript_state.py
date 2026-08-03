@@ -14,6 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from check_terms import VARIANT_FAMILIES, count_variant, normalize
+from section_split import body_text
 
 DEF_FORWARD = re.compile(r"([A-Za-z][A-Za-z -]{2,60}?) \(([A-Z][A-Za-z0-9]{1,9})\)")
 DEF_REVERSE = re.compile(r"\b([A-Z][A-Za-z0-9]{1,9}) \(([a-z][A-Za-z -]{2,60})\)")
@@ -41,6 +42,7 @@ def trim_expansion(expansion, abbr):
 
 
 def learn_text(state, text):
+    text = body_text(text)
     for expansion, abbr in DEF_FORWARD.findall(text):
         state["abbreviations"].setdefault(abbr, trim_expansion(expansion, abbr))
     for abbr, expansion in DEF_REVERSE.findall(text):

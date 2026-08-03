@@ -14,6 +14,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from section_split import body_text
+
 WHITELIST = {"DNA", "RNA", "UV"}
 SKIP_WORDS = {"II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "OK", "USA", "OR", "AND", "NOT"}
 
@@ -57,7 +60,7 @@ def main():
         return 2
     with open(args[0], encoding="utf-8") as f:
         text = f.read()
-    undefined = find_undefined(text, state_dir)
+    undefined = find_undefined(body_text(text), state_dir)
     if not undefined:
         print("check_abbrev: PASS (all acronyms defined)")
         return 0

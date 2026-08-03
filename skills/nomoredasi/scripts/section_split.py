@@ -4,7 +4,9 @@
 Handles IMRaD variants: merged "Results and Discussion", "Experimental
 Section" for Methods, numbered or roman headings. Output: JSON list of
 {name, role, start_line, body}. A manuscript with no recognizable
-headings yields one section with role "body". Usage: section_split.py FILE
+headings yields one section with role "body". body_text(text, drop)
+joins non-dropped section bodies — used to exclude references from linters.
+Usage: section_split.py FILE
 """
 
 import json
@@ -18,7 +20,7 @@ ROLE_KEYWORDS = [
     ("results", ("results", "findings")),
     ("discussion", ("discussion",)),
     ("conclusion", ("conclusions", "conclusion", "concluding remarks", "summary and outlook", "outlook")),
-    ("references", ("references", "bibliography")),
+    ("references", ("references", "reference", "bibliography")),
 ]
 
 HEADING = re.compile(r"^\s*(?:\d+\.?\d*\.?\s+|[IVX]+\.?\s+)?([A-Za-z][A-Za-z &/-]{1,60}?)\s*$")
@@ -58,6 +60,16 @@ def split_sections(text):
         body = "\n".join(lines[line_no + 1 : end]).strip()
         sections.append({"name": name, "role": role, "start_line": line_no + 1, "body": body})
     return sections
+
+
+def body_text(text, drop=("references",)):
+    """Return the manuscript with sections whose role is in `drop` removed.
+
+    A manuscript with no recognizable headings splits into a single "body"
+    section, so the whole text is returned unchanged.
+    """
+    parts = [s["body"] for s in split_sections(text) if s["role"] not in drop]
+    return "\n\n".join(parts).strip()
 
 
 def main():
