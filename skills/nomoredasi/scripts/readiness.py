@@ -118,12 +118,12 @@ def load_series(history_path):
     return series
 
 
-# Colorblind-safe categorical palette extending Okabe-Ito with additional
-# hues kept at comparable lightness so lines stay distinguishable on light paper.
+# Categorical colors tuned to a lab-notebook figure: cobalt signal, copper,
+# teal, and mineral accents remain distinct against the pale instrument-paper field.
 PALETTE = [
-    "#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9",
-    "#F0E442", "#7E6148", "#92351B", "#403C8A", "#0DB02B", "#BEB7D7",
-    "#5AA469", "#B31B1B",
+    "#0072B2", "#B85C38", "#1F6F78", "#8B5E83", "#B77920", "#347A8C",
+    "#6B7D3A", "#725A46", "#9A3F2F", "#3E5872", "#4D8061", "#806E9A",
+    "#5C746D", "#A44A3F",
 ]
 ALWAYS_LEGEND = {"Physics", "Optics and photonics"}
 
@@ -161,10 +161,14 @@ def render_html(history_path, out_path):
     updated = max((r.get("date", "") for r in latest.values()), default="-")
 
     ranked = sorted(latest, key=lambda f: latest[f]["score"], reverse=True)
-    legend_fields = [f for f in ranked if f in ALWAYS_LEGEND][:2] + [f for f in ranked if f not in ALWAYS_LEGEND][:12]
+    legend_fields = [f for f in ranked if f in ALWAYS_LEGEND][:2] + [
+        f for f in ranked if f not in ALWAYS_LEGEND
+    ][:12]
     color_of = {f: PALETTE[i % len(PALETTE)] for i, f in enumerate(legend_fields)}
 
-    W, H, ML, MR, MT, MB = 1120, 620, 64, 232, 42, 60
+    # The chart is deliberately plot-only. Its responsive SVG stays legible while
+    # the field key can reflow as HTML instead of shrinking inside the plot.
+    W, H, ML, MR, MT, MB = 900, 520, 68, 24, 34, 58
     PW, PH = W - ML - MR, H - MT - MB
 
     def x(p):
@@ -174,130 +178,151 @@ def render_html(history_path, out_path):
         return MT + PH * (1 - s / y_max)
 
     attr = 'font-family="' + FONT_FAMILY_STACK.replace('"', '&quot;') + '"'
-    svg = [f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg" role="img">']
+    svg = [
+        '<svg width="100%" height="520" viewBox="0 0 900 520" '
+        'xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="readiness-chart-title readiness-chart-desc">',
+        '<title id="readiness-chart-title">Field readiness score by papers accumulated</title>',
+        '<desc id="readiness-chart-desc">Each line is a field history. The horizontal guides mark usable at 60 and publishable at 80.</desc>',
+    ]
 
-    # Dashed target guide lines (usable / publishable) with small labels.
     for gy, label in THRESHOLDS:
         svg.append(
             f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" '
-            f'stroke="{THRESH}" stroke-width="1" stroke-dasharray="5 4"/>'
-        )
-        # Small italic target tag, left-anchored just above the dashed line.
-        svg.append(
-            f'<text x="{ML + 6}" y="{y(gy) - 6:.1f}" font-size="10" fill="{THRESH}" '
-            f'font-style="italic" text-anchor="start" {attr}>{label} · {gy}</text>'
+            f'stroke="#c47b2a" stroke-width="1.25" stroke-dasharray="6 5"/> '
+            f'<text x="{ML + 8}" y="{y(gy) - 7:.1f}" font-size="10" fill="#9a5a18" '
+            f'font-weight="700" text-anchor="start" {attr}>{label} · {gy}</text>'
         )
 
-    # y gridlines with outward tick marks and labeled ticks.
     for gy in range(0, 101, 20):
-        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" stroke="{GRID}"/>')
-        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML - 4}" y2="{y(gy):.1f}" stroke="{AXIS}"/>')
-        svg.append(f'<text x="{ML - 8}" y="{y(gy) + 4:.1f}" text-anchor="end" font-size="11" fill="{MUTED}" {attr}>{gy}</text>')
-    # x gridlines with outward tick marks and labeled ticks.
+        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML + PW}" y2="{y(gy):.1f}" stroke="#d9e0e3"/>')
+        svg.append(f'<line x1="{ML}" y1="{y(gy):.1f}" x2="{ML - 5}" y2="{y(gy):.1f}" stroke="#263943"/>')
+        svg.append(f'<text x="{ML - 10}" y="{y(gy) + 4:.1f}" text-anchor="end" font-size="11" fill="#536873" {attr}>{gy}</text>')
+
     step = nice_step(x_max)
     xv = 0
     while xv <= x_max:
-        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT}" x2="{x(xv):.1f}" y2="{MT + PH}" stroke="{GRID}"/>')
-        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT + PH}" x2="{x(xv):.1f}" y2="{MT + PH + 4}" stroke="{AXIS}"/>')
-        svg.append(f'<text x="{x(xv):.1f}" y="{MT + PH + 20}" text-anchor="middle" font-size="11" fill="{MUTED}" {attr}>{xv}</text>')
+        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT}" x2="{x(xv):.1f}" y2="{MT + PH}" stroke="#e5eaeb"/>')
+        svg.append(f'<line x1="{x(xv):.1f}" y1="{MT + PH}" x2="{x(xv):.1f}" y2="{MT + PH + 5}" stroke="#263943"/>')
+        svg.append(f'<text x="{x(xv):.1f}" y="{MT + PH + 22}" text-anchor="middle" font-size="11" fill="#536873" {attr}>{xv}</text>')
         xv += step
 
-    # Subtle figure frame around the plot area.
-    svg.append(f'<rect x="{ML}" y="{MT}" width="{PW}" height="{PH}" fill="none" stroke="{AXIS}" stroke-width="1"/>')
-
-    # Axis titles.
-    svg.append(f'<text x="{ML + PW / 2:.0f}" y="{H - 8}" text-anchor="middle" font-size="13" fill="{TEXT}" {attr}>papers</text>')
+    svg.append(f'<rect x="{ML}" y="{MT}" width="{PW}" height="{PH}" fill="none" stroke="#263943" stroke-width="1.25"/>')
+    svg.append(f'<text x="{ML + PW / 2:.0f}" y="{H - 8}" text-anchor="middle" font-size="13" fill="#263943" font-weight="700" {attr}>papers</text>')
     svg.append(
-        f'<text x="16" y="{MT + PH / 2:.0f}" text-anchor="middle" font-size="13" fill="{TEXT}" '
-        f'transform="rotate(-90 16 {MT + PH / 2:.0f})" {attr}>score</text>'
+        f'<text x="17" y="{MT + PH / 2:.0f}" text-anchor="middle" font-size="13" fill="#263943" '
+        f'font-weight="700" transform="rotate(-90 17 {MT + PH / 2:.0f})" {attr}>readiness score (0–100)</text>'
     )
 
     for field, recs in sorted(series.items()):
-        color = color_of.get(field, GRID)
-        width = "2.25" if field in color_of else "1.25"
+        color = color_of.get(field, "#aab8bc")
+        width = "2.6" if field in color_of else "1.15"
+        opacity = "1" if field in color_of else "0.62"
         pts = " ".join(f"{x(r.get('papers', 0)):.1f},{y(r.get('score', 0)):.1f}" for r in recs)
-        svg.append(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="{width}"/>')
+        svg.append(
+            f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="{width}" '
+            f'stroke-linecap="round" stroke-linejoin="round" opacity="{opacity}">'
+            f'<title>{escape(field)} readiness history</title></polyline>'
+        )
         for r in recs:
             svg.append(
-                f'<circle cx="{x(r.get("papers", 0)):.1f}" cy="{y(r.get("score", 0)):.1f}" r="3" fill="{color}">'
+                f'<circle cx="{x(r.get("papers", 0)):.1f}" cy="{y(r.get("score", 0)):.1f}" r="3.2" fill="{color}" opacity="{opacity}">'
                 f'<title>{escape(field)} — {r.get("papers", 0)} papers, score {r.get("score", 0)} ({r.get("date", "")})</title></circle>'
             )
+    svg.append('</svg>')
 
-    # Right-hand field legend.
-    lx, ly = ML + PW + 18, MT + 10
-    svg.append(f'<text x="{lx}" y="{ly - 6}" font-size="11" font-weight="700" fill="{TEXT}" {attr}>fields (top {len(legend_fields)})</text>')
-    for i, field in enumerate(legend_fields):
-        yy = ly + 12 + i * 18
-        svg.append(f'<rect x="{lx}" y="{yy - 8}" width="10" height="10" fill="{color_of[field]}"/>')
-        label = escape(field if len(field) <= 22 else field[:21] + "…")
-        svg.append(f'<text x="{lx + 15}" y="{yy}" font-size="11" fill="{TEXT}" {attr}>{label}</text>')
-    svg.append("</svg>")
+    legend = []
+    for field in legend_fields:
+        latest_record = latest[field]
+        legend.append(
+            f'<li><span class="swatch" style="--swatch: {color_of[field]}"></span>'
+            f'<span>{escape(field)}</span><strong>{latest_record["score"]:.1f}</strong></li>'
+        )
 
     rows = []
     for field in ranked:
         r = latest[field]
         rows.append(
-            f"<tr><td>{escape(field)}</td><td class=\"num\">{r['papers']}</td>"
-            f"<td class=\"num\">{r['words']:,}</td>"
-            f"<td class=\"num\">{r['collocations_ge5']}</td>"
-            f"<td class=\"num\">{r['sections']}</td>"
-            f"<td class=\"num score\">{r['score']}</td></tr>"
+            f'<tr><th scope="row">{escape(field)}</th><td class="num">{r["papers"]}</td>'
+            f'<td class="num">{r["words"]:,}</td><td class="num">{r["collocations_ge5"]}</td>'
+            f'<td class="num">{r["sections"]}</td><td class="num score">{r["score"]:.1f}</td></tr>'
         )
+
     html = f"""<!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Field Readiness — nomoredasi</title>
 <style>
-:root {{ --ink: #1c2733; --muted: #5b6b80; --rule: #c9d2dd; --paper: #ffffff; --canvas: #fafbfc; }}
-body {{ font-family: {FONT_FAMILY_STACK}; background: var(--canvas); color: var(--ink); margin: 0; line-height: 1.55; }}
-.wrap {{ max-width: 1000px; margin: 0 auto; padding: 56px 32px 96px; }}
-.kicker {{ font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }}
-h1 {{ font-size: 1.55rem; font-weight: 600; line-height: 1.25; margin: 0 0 8px; }}
-.subtitle {{ font-size: 0.95rem; color: var(--muted); margin: 0 0 26px; max-width: 62ch; }}
-.card {{ background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 26px 28px; margin: 0 0 30px; overflow-x: auto; }}
-svg {{ display: block; max-width: 100%; height: auto; }}
-.figure-title {{ font-size: 0.85rem; font-weight: 700; margin: 0 0 6px; }}
-.figure-caption {{ font-size: 0.8rem; color: var(--muted); margin: 14px 0 0; }}
-table {{ border-collapse: collapse; width: 100%; font-size: 0.84rem; font-variant-numeric: tabular-nums; }}
-th {{ border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); text-align: left; padding: 7px 12px 7px 0; font-weight: 600; font-size: 0.76rem; letter-spacing: 0.04em; }}
-td {{ padding: 6px 12px 6px 0; border-bottom: none; }}
+:root {{
+  --ink: #1e2c32; --ink-soft: #536873; --paper: #fffdf8; --canvas: #edf2f1;
+  --rule: #cbd6d7; --signal: #0072B2; --amber: #c47b2a; --deep: #173f4a;
+  --shadow: 0 16px 42px rgba(23,63,74,.09);
+}}
+* {{ box-sizing: border-box; }}
+html {{ background: var(--canvas); }}
+body {{ margin: 0; color: var(--ink); background: var(--canvas); font-family: {FONT_FAMILY_STACK}; line-height: 1.55; }}
+.page {{ width: min(100% - 2rem, 70rem); margin: 0 auto; padding: clamp(1.5rem, 4vw, 4.5rem) 0 5rem; }}
+.hero {{ border-top: .55rem solid var(--signal); padding: clamp(1.4rem, 4vw, 2.8rem) clamp(1.1rem, 4vw, 3rem); background: var(--paper); box-shadow: var(--shadow); }}
+.eyebrow {{ color: var(--signal); font-size: .72rem; font-weight: 800; letter-spacing: .16em; margin: 0 0 .7rem; text-transform: uppercase; }}
+h1 {{ color: var(--deep); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.75rem, 4vw, 3rem); letter-spacing: -.025em; line-height: 1.05; margin: 0; max-width: 19ch; }}
+.lede {{ color: var(--ink-soft); font-size: clamp(.95rem, 1.5vw, 1.1rem); margin: 1rem 0 0; max-width: 70ch; }}
+.meta {{ border-top: 1px solid var(--rule); color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: .55rem 1.5rem; margin: 1.35rem 0 0; padding-top: .9rem; font-size: .78rem; }}
+.meta strong {{ color: var(--ink); }}
+.panel {{ background: var(--paper); box-shadow: var(--shadow); margin-top: 1.5rem; padding: clamp(1rem, 3vw, 2rem); }}
+.panel-heading {{ align-items: baseline; display: flex; flex-wrap: wrap; gap: .35rem 1rem; justify-content: space-between; }}
+h2 {{ color: var(--deep); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.25rem, 2.5vw, 1.7rem); margin: 0; }}
+.section-note, .caption, .method-note {{ color: var(--ink-soft); font-size: .84rem; }}
+.section-note {{ margin: .35rem 0 1.2rem; }}
+.chart-frame {{ background: #f7faf8; border: 1px solid var(--rule); overflow: hidden; padding: .5rem; }}
+.chart-frame svg {{ display: block; height: auto; max-width: 100%; }}
+.legend-heading {{ color: var(--ink-soft); font-size: .73rem; font-weight: 800; letter-spacing: .1em; margin: 1.3rem 0 .45rem; text-transform: uppercase; }}
+.legend-list {{ display: grid; gap: .25rem .8rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); list-style: none; margin: 0; padding: 0; }}
+.legend-list li {{ align-items: center; border-bottom: 1px solid #e1e8e7; display: grid; gap: .45rem; grid-template-columns: .75rem 1fr auto; min-width: 0; padding: .32rem 0; }}
+.legend-list li span:nth-child(2) {{ overflow-wrap: anywhere; }}
+.swatch {{ background: var(--swatch); border-radius: 50%; height: .65rem; width: .65rem; }}
+.legend-list strong {{ color: var(--deep); font-variant-numeric: tabular-nums; }}
+.caption {{ margin: 1rem 0 0; }}
+.table-wrap {{ max-width: 100%; overflow-x: auto; }}
+table {{ border-collapse: collapse; font-size: .86rem; font-variant-numeric: tabular-nums; min-width: 42rem; width: 100%; }}
+th, td {{ border-bottom: 1px solid var(--rule); padding: .7rem .6rem; text-align: left; vertical-align: top; }}
+thead th {{ background: var(--deep); color: #fff; font-size: .74rem; letter-spacing: .04em; white-space: nowrap; }}
+tbody th {{ font-weight: 650; }}
+tbody tr:nth-child(even) {{ background: #f4f8f7; }}
 .num {{ text-align: right; }}
-.score {{ font-weight: 700; }}
-.method-note {{ font-size: 0.78rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin: 34px 0 0; }}
+.score {{ color: var(--signal); font-weight: 800; }}
+.method-note {{ border-left: .25rem solid var(--amber); margin: 1.5rem 0 0; padding: .1rem 0 .1rem 1rem; }}
+@media (max-width: 42rem) {{ .page {{ width: min(100% - 1rem, 70rem); }} .meta {{ display: grid; gap: .35rem; }} .panel {{ padding: 1rem; }} }}
+@media (prefers-reduced-motion: reduce) {{ *, *::before, *::after {{ scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }} }}
+@media print {{ html, body {{ background: #fff; }} .page {{ width: 100%; padding: 0; }} .hero, .panel {{ box-shadow: none; }} }}
 </style>
 </head>
 <body>
-<div class="wrap">
-<p class="kicker">nomoredasi · documentation</p>
-<h1>Field Readiness · score versus papers accumulated</h1>
-<p class="subtitle">A 0-100 summary of how field-ready the mined corpus is for production proofreading. x-axis: papers per field; y-axis: composite score. Dashed lines mark the usable (60) and publishable (80) targets. Hover any point for details. (history: {history_path.name}, updated {updated})</p>
-
-<div class="card">
-<p class="figure-title">Figure 1. Field readiness versus papers accumulated</p>
-{''.join(svg)}
-<p class="figure-caption">Composite score = papers (25) + collocations (25) + sections (15) + top-term stability (20) + words (15). Bold lines are legend fields; faint gray lines are all remaining fields.</p>
-</div>
-
-<div class="card">
-<table>
-<thead>
-<tr><th>Field</th><th class="num">Papers</th><th class="num">Words</th><th class="num">Collocations (≥5)</th><th class="num">Sections</th><th class="num">Score</th></tr>
-</thead>
-<tbody>
-{''.join(rows)}
-</tbody>
-</table>
-</div>
-
-<p class="method-note">Method: the score normalizes a weighted sum of five components (papers 25, collocations 25, sections 15, top-term stability 20, words 15) to 0-100. Stability is the top-term overlap with the previous record; collocations count phrases seen 5+ times. The 60 (usable) and 80 (publishable) thresholds are project targets.</p>
-</div>
+<main class="page">
+<header class="hero">
+<p class="eyebrow">nomoredasi / corpus calibration</p>
+<h1>When does a field become ready?</h1>
+<p class="lede">Readiness is a measured curve, not a verdict: each field's score combines corpus volume, collocations, section coverage, term stability, and words. Follow the trajectories before using the ranking below.</p>
+<div class="meta"><span>History: <strong>{escape(history_path.name)}</strong></span><span>Updated: <strong>{escape(updated)}</strong></span><span>Scale: <strong>0–100</strong></span></div>
+</header>
+<section class="panel" aria-labelledby="chart-heading">
+<div class="panel-heading"><h2 id="chart-heading">Accumulation curves</h2><span class="section-note">x = papers · y = readiness score</span></div>
+<p class="section-note">Every field is plotted in the background; the ranked key highlights the top 12 fields plus Physics and Optics and photonics. Point titles provide exact history on hover.</p>
+<div class="chart-frame">{''.join(svg)}</div>
+<p class="legend-heading">Highlighted field key · latest score</p>
+<ul class="legend-list">{''.join(legend)}</ul>
+<p class="caption">Target guides: <strong>usable · 60</strong> and <strong>publishable · 80</strong>. Lines retain all historical states; identical paper counts keep their latest dated record.</p>
+</section>
+<section class="panel" aria-labelledby="ranking-heading">
+<div class="panel-heading"><h2 id="ranking-heading">Current field ranking</h2><span class="section-note">{len(ranked)} fields · descending score</span></div>
+<div class="table-wrap"><table><caption class="sr-only">Field readiness ranking with corpus component counts</caption><thead><tr><th scope="col">Field</th><th scope="col" class="num">Papers</th><th scope="col" class="num">Words</th><th scope="col" class="num">Collocations (≥5)</th><th scope="col" class="num">Sections</th><th scope="col" class="num">Score</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+<p class="method-note"><strong>Method.</strong> Composite score = papers (25) + collocations (25) + sections (15) + top-term stability (20) + words (15). Stability is overlap with the previous record; collocations count phrases seen five or more times. The thresholds are project targets, not claims about scientific quality.</p>
+</section>
+</main>
 </body>
 </html>
 """
     out_path.write_text(html, encoding="utf-8")
-
 
 def main():
     parser = argparse.ArgumentParser(description="field readiness scores from the corpus")
