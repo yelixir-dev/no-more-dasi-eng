@@ -76,7 +76,7 @@ Source: 5 file(s), 44,937 words
 
 - abstract: 4 section(s), avg sentence 17.9 words, passive 122.1 /10K
 - conclusion: 3 section(s), avg sentence 21.1 words, passive 121.7 /10K
-- discussion: 5 section(s), avg sentence 17.3 words, passive 124.3 /10K
+- discussion: 5 section(s), avg sentence 24.2 words, passive 156.6 /10K
 - introduction: 3 section(s), avg sentence 22.8 words, passive 205.1 /10K
 - methods: 4 section(s), avg sentence 23.0 words, passive 304.9 /10K
 - results: 5 section(s), avg sentence 20.1 words, passive 161.5 /10K

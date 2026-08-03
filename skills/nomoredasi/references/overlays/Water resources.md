@@ -1,83 +1,84 @@
-# Overlay: Water resources (AUTO-DRAFT 2026-08-02)
+# Overlay: Water resources (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (3 files, 19,631 words — treat stats as directional, not targets)
-Source: 3 file(s), 19,631 words
+Maturity: immature (5 files, 33,934 words — treat stats as directional, not targets)
+Source: 5 file(s), 33,934 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.3 words
-- Passive voice: 127.9 /10K words
-- First person (we): 13.8 /10K words
+- Avg sentence length: 15.3 words
+- Passive voice: 120.2 /10K words
+- First person (we): 21.5 /10K words
 
 ## Top terms
 
+- `data` (160)
+- `flood` (157)
 - `drought` (140)
-- `monitoring` (87)
+- `water` (118)
+- `monitoring` (89)
+- `river` (81)
 - `wastewater` (81)
-- `data` (76)
+- `groundwater` (77)
+- `neighborhoods` (75)
+- `population` (72)
+- `environmental` (71)
+- `org` (70)
+- `analysis` (70)
+- `coastal` (66)
+- `spatial` (66)
 - `droughts` (63)
+- `models` (60)
 - `detection` (60)
+- `global` (59)
 - `surveillance` (59)
 - `amazon` (58)
-- `environmental` (58)
 - `samples` (57)
-- `water` (56)
-- `analysis` (49)
-- `spatial` (48)
-- `positive` (48)
-- `events` (47)
-- `september` (46)
-- `global` (45)
-- `anomaly` (44)
-- `extreme` (43)
-- `forest` (43)
-- `rarity` (43)
-- `conditions` (42)
-- `health` (42)
-- `flights` (42)
-- `sars-cov-` (41)
-- `models` (40)
-- `river` (39)
-- `climate` (37)
-- `united` (37)
-- `january` (36)
+- `resistivity` (56)
+- `climate` (55)
+- `united` (55)
+- `model` (54)
+- `surface` (54)
+- `conditions` (53)
+- `events` (53)
+- `extreme` (52)
 
 ## Phrase bank (term + verb)
 
 - `spei- + calculated` (4)
+- `depth + calculated` (3)
+- `explain + observed` (2)
 - `depicts + estimated` (2)
 - `trends + indicates` (2)
 - `aed + estimated` (2)
 - `strongest + observed` (2)
 - `difference + observed` (2)
-- `deficits + indicates` (1)
-- `precipitation + calculated` (1)
-- `nature + exhibits` (1)
-- `january + revealed` (1)
-- `months + increased` (1)
-- `overall + indicates` (1)
-- `spei + observed` (1)
-- `third- + exhibited` (1)
-- `majority + exhibits` (1)
-- `spei- + demonstrated` (1)
-- `global + demonstrated` (1)
-- `notably + exhibited` (1)
-- `pacific + enhanced` (1)
-- `central + estimated` (1)
+- `valley-shaped + indicates` (1)
+- `deep + observed` (1)
+- `resistivity + observed` (1)
+- `otherwise + observed` (1)
+- `aem + revealed` (1)
+- `structures + achieved` (1)
+- `location + calculated` (1)
+- `bottom + indicates` (1)
+- `distribution + observed` (1)
+- `flood + observed` (1)
+- `alone + observed` (1)
+- `susceptibility + decreased` (1)
 
 ## Notation watch
 
 - in situ: in situ=0, in-situ=1
-- et al.: et al.=0, et al=119
+- et al.: et al.=0, et al=142
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 22.5 words, passive 0.0 /10K
+- abstract: 3 section(s), avg sentence 23.2 words, passive 95.9 /10K
 - conclusion: 2 section(s), avg sentence 21.2 words, passive 110.9 /10K
-- discussion: 3 section(s), avg sentence 24.6 words, passive 93.4 /10K
-- introduction: 3 section(s), avg sentence 32.8 words, passive 74.3 /10K
-- methods: 3 section(s), avg sentence 21.8 words, passive 318.2 /10K
-- results: 3 section(s), avg sentence 20.4 words, passive 123.9 /10K
+- discussion: 4 section(s), avg sentence 24.4 words, passive 93.1 /10K
+- introduction: 5 section(s), avg sentence 29.2 words, passive 94.5 /10K
+- merged: results+discussion: 1 section(s), avg sentence 24.3 words, passive 67.9 /10K
+- methods: 5 section(s), avg sentence 21.8 words, passive 293.4 /10K
+- results: 4 section(s), avg sentence 21.0 words, passive 130.4 /10K
 
 ## Editor notes (manual curation)
 

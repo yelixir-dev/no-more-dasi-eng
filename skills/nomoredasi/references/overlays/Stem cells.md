@@ -1,84 +1,85 @@
 # Overlay: Stem cells (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (2 files, 27,660 words — treat stats as directional, not targets)
-Source: 2 file(s), 27,660 words
+Maturity: immature (5 files, 54,951 words — treat stats as directional, not targets)
+Source: 5 file(s), 54,951 words
 
 ## Corpus stats
 
-- Avg sentence length: 16.5 words
-- Passive voice: 165.6 /10K words
-- First person (we): 42.3 /10K words
+- Avg sentence length: 16.2 words
+- Passive voice: 198.2 /10K words
+- First person (we): 34.0 /10K words
 
 ## Top terms
 
-- `cells` (263)
-- `cell` (229)
-- `neurons` (159)
+- `cells` (555)
+- `cell` (457)
+- `stem` (224)
+- `organoids` (187)
+- `differentiation` (165)
+- `neurons` (163)
+- `golgi` (161)
+- `expression` (159)
 - `stiffness` (150)
-- `differentiation` (134)
+- `data` (149)
+- `analysis` (140)
+- `human` (125)
+- `gene` (122)
+- `simvastatin` (122)
+- `epithelial` (121)
+- `genes` (112)
 - `lung` (110)
-- `epithelial` (106)
-- `data` (105)
-- `organoids` (96)
+- `day` (105)
 - `hawos` (94)
-- `genes` (93)
-- `expression` (86)
-- `gene` (86)
-- `analysis` (81)
-- `day` (80)
-- `stem` (78)
-- `human` (76)
-- `alveolar` (62)
-- `development` (60)
-- `populations` (60)
-- `induced` (49)
-- `transcription` (49)
-- `signaling` (47)
-- `progenitor` (47)
-- `halos` (46)
-- `enriched` (45)
-- `airway` (44)
-- `neuron` (44)
-- `differences` (44)
-- `expressed` (44)
+- `transport` (92)
+- `egfr` (90)
+- `performed` (84)
+- `iscs` (82)
+- `signaling` (81)
+- `conditions` (80)
+- `nanoparticles` (80)
+- `early` (78)
+- `medium` (75)
+- `protein` (75)
+- `akap` (73)
 
 ## Phrase bank (term + verb)
 
 - `region-specific + revealed` (4)
+- `intensity + measured` (3)
+- `day + increased` (3)
+- `hpdlscs + improved` (3)
 - `percentage + increased` (2)
 - `truli + increased` (2)
 - `yap + increased` (2)
 - `cells + increased` (2)
 - `staining + confirmed` (2)
 - `markers + measured` (2)
+- `peculiar + observed` (2)
+- `intestinal + obtained` (2)
 - `neurons + observed` (2)
 - `indicated + measured` (2)
+- `morphological + observed` (2)
+- `tsg + increased` (2)
+- `written + obtained` (2)
+- `differences + observed` (2)
+- `pronounced + observed` (2)
 - `functions + increased` (1)
-- `proximal + increased` (1)
-- `air-conducting + exhibits` (1)
-- `proximodistal + observed` (1)
-- `gelma + prepared` (1)
-- `compression + confirmed` (1)
-- `stiffness + increased` (1)
-- `electron + revealed` (1)
-- `assays + demonstrated` (1)
-- `dependent + exhibited` (1)
-- `fastest + exhibited` (1)
 
 ## Notation watch
 
-- in vivo: in vivo=39, in-vivo=0
-- in vitro: in vitro=27, in-vitro=0
-- et al.: et al.=0, et al=91
+- in vivo: in vivo=51, in-vivo=0
+- in vitro: in vitro=50, in-vitro=0
+- et al.: et al.=0, et al=201
 - setup: setup=0, set-up=0, set up=1
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 17.8 words, passive 0.0 /10K
-- discussion: 2 section(s), avg sentence 25.0 words, passive 86.9 /10K
-- introduction: 3 section(s), avg sentence 21.5 words, passive 234.5 /10K
-- methods: 3 section(s), avg sentence 16.0 words, passive 379.4 /10K
-- results: 2 section(s), avg sentence 21.0 words, passive 122.7 /10K
+- abstract: 4 section(s), avg sentence 22.3 words, passive 62.3 /10K
+- conclusion: 1 section(s), avg sentence 34.8 words, passive 0.0 /10K
+- discussion: 5 section(s), avg sentence 22.8 words, passive 149.0 /10K
+- introduction: 5 section(s), avg sentence 22.4 words, passive 194.0 /10K
+- methods: 6 section(s), avg sentence 18.3 words, passive 442.7 /10K
+- results: 5 section(s), avg sentence 20.3 words, passive 122.2 /10K
 
 ## Editor notes (manual curation)
 

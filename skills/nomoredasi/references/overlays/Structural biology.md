@@ -1,53 +1,58 @@
-# Overlay: Structural biology (AUTO-DRAFT 2026-08-02)
+# Overlay: Structural biology (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (3 files, 34,918 words — treat stats as directional, not targets)
-Source: 3 file(s), 34,918 words
+Maturity: immature (5 files, 61,255 words — treat stats as directional, not targets)
+Source: 5 file(s), 61,255 words
 
 ## Corpus stats
 
-- Avg sentence length: 15.1 words
-- Passive voice: 158.9 /10K words
-- First person (we): 35.5 /10K words
+- Avg sentence length: 15.5 words
+- Passive voice: 177.3 /10K words
+- First person (we): 38.9 /10K words
 
 ## Top terms
 
-- `membrane` (298)
-- `org` (197)
-- `lipid` (150)
-- `binding` (149)
+- `membrane` (348)
+- `org` (305)
+- `binding` (286)
+- `ptdins` (215)
+- `protein` (183)
+- `cells` (177)
+- `cell` (173)
+- `lipid` (171)
+- `structure` (162)
+- `data` (160)
+- `proteins` (145)
+- `domain` (140)
+- `site` (139)
+- `sulfate` (139)
 - `nuclear` (131)
 - `ahs` (131)
 - `insulin` (128)
-- `cells` (124)
-- `cell` (119)
-- `protein` (109)
-- `data` (109)
-- `structure` (106)
-- `domain` (97)
-- `proteins` (84)
-- `hydrophobic` (79)
-- `packing` (73)
-- `defects` (67)
-- `membranes` (66)
-- `filaments` (65)
-- `curvature` (62)
-- `receptor` (61)
-- `analysis` (60)
-- `density` (58)
-- `helical` (56)
-- `residues` (55)
-- `biol` (54)
-- `localization` (53)
-- `peptide` (53)
-- `model` (49)
-- `molecular` (49)
+- `chloride` (114)
+- `buffer` (102)
+- `min` (96)
+- `residues` (94)
+- `molecular` (91)
+- `membranes` (91)
+- `hydrophobic` (89)
+- `nature` (85)
+- `transport` (82)
+- `model` (80)
+- `biol` (79)
+- `presence` (77)
+- `nacl` (74)
 
 ## Phrase bank (term + verb)
 
+- `sulfate + observed` (4)
 - `membrane + increased` (3)
 - `categories + calculated` (2)
 - `intervals + obtained` (2)
 - `plot + estimated` (2)
+- `slc + exhibits` (2)
+- `map + obtained` (2)
+- `atomic + deposited` (2)
+- `proteomics + deposited` (2)
 - `ehd + increased` (2)
 - `ehd + exhibited` (2)
 - `detection + revealed` (2)
@@ -59,28 +64,23 @@ Source: 3 file(s), 34,918 words
 - `ahs + showed` (1)
 - `categories + showed` (1)
 - `input + showed` (1)
-- `line + calculated` (1)
-- `data + indicates` (1)
-- `vitro + demonstrated` (1)
-- `lowers + showed` (1)
-- `tmem + increased` (1)
 
 ## Notation watch
 
 - x-ray: x-ray=2, x ray=0, xray=0
 - in situ: in situ=3, in-situ=0
 - in vivo: in vivo=3, in-vivo=0
-- in vitro: in vitro=8, in-vitro=0
-- et al.: et al.=0, et al=140
-- setup: setup=2, set-up=0, set up=0
+- in vitro: in vitro=16, in-vitro=0
+- et al.: et al.=3, et al=239
+- setup: setup=3, set-up=0, set up=0
 
 ## Section metrics
 
-- abstract: 2 section(s), avg sentence 19.9 words, passive 52.8 /10K
-- discussion: 3 section(s), avg sentence 15.9 words, passive 67.3 /10K
-- introduction: 2 section(s), avg sentence 21.4 words, passive 261.1 /10K
-- methods: 2 section(s), avg sentence 19.8 words, passive 395.0 /10K
-- results: 3 section(s), avg sentence 20.1 words, passive 94.7 /10K
+- abstract: 3 section(s), avg sentence 19.8 words, passive 112.1 /10K
+- discussion: 5 section(s), avg sentence 17.6 words, passive 83.0 /10K
+- introduction: 4 section(s), avg sentence 21.2 words, passive 232.4 /10K
+- methods: 4 section(s), avg sentence 21.4 words, passive 398.8 /10K
+- results: 5 section(s), avg sentence 20.6 words, passive 99.3 /10K
 
 ## Editor notes (manual curation)
 

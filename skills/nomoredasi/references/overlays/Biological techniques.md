@@ -80,7 +80,7 @@ Source: 5 file(s), 45,848 words
 - introduction: 4 section(s), avg sentence 23.0 words, passive 232.5 /10K
 - merged: results+discussion: 1 section(s), avg sentence 21.3 words, passive 179.6 /10K
 - methods: 6 section(s), avg sentence 20.6 words, passive 312.6 /10K
-- results: 3 section(s), avg sentence 24.1 words, passive 143.9 /10K
+- results: 3 section(s), avg sentence 24.0 words, passive 145.4 /10K
 
 ## Editor notes (manual curation)
 

@@ -81,8 +81,8 @@ Source: 5 file(s), 43,255 words
 - discussion: 2 section(s), avg sentence 21.1 words, passive 136.7 /10K
 - introduction: 3 section(s), avg sentence 19.2 words, passive 177.6 /10K
 - merged: results+discussion: 3 section(s), avg sentence 22.3 words, passive 144.8 /10K
-- methods: 3 section(s), avg sentence 16.2 words, passive 229.2 /10K
-- results: 2 section(s), avg sentence 19.6 words, passive 143.2 /10K
+- methods: 3 section(s), avg sentence 21.5 words, passive 317.9 /10K
+- results: 2 section(s), avg sentence 18.0 words, passive 161.8 /10K
 
 ## Editor notes (manual curation)
 

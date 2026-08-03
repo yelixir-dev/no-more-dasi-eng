@@ -1,81 +1,85 @@
-# Overlay: Signs and symptoms (AUTO-DRAFT 2026-08-02)
+# Overlay: Signs and symptoms (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (1 files, 7,569 words — treat stats as directional, not targets)
-Source: 1 file(s), 7,569 words
+Maturity: immature (5 files, 43,475 words — treat stats as directional, not targets)
+Source: 5 file(s), 43,475 words
 
 ## Corpus stats
 
-- Avg sentence length: 17.9 words
-- Passive voice: 154.6 /10K words
-- First person (we): 2.6 /10K words
+- Avg sentence length: 15.7 words
+- Passive voice: 197.8 /10K words
+- First person (we): 13.1 /10K words
 
 ## Top terms
 
-- `day` (91)
-- `lung` (59)
-- `treatment` (48)
-- `participants` (45)
-- `fibrosis` (43)
-- `placebo` (38)
-- `data` (37)
-- `pulmonary` (31)
-- `baseline` (31)
-- `participant` (26)
-- `cough` (26)
-- `teaes` (25)
-- `samples` (25)
-- `idiopathic` (23)
-- `drug` (23)
-- `group` (21)
-- `days` (20)
-- `patients` (19)
-- `grade` (18)
-- `inhaled` (17)
-- `biomarkers` (17)
-- `therapeutics` (17)
-- `disease` (16)
-- `following` (16)
-- `clinical` (16)
-- `sample` (16)
-- `dose` (15)
-- `levels` (15)
-- `epithelial` (14)
-- `protein` (14)
+- `mice` (223)
+- `day` (148)
+- `participants` (140)
+- `data` (138)
+- `itch` (129)
+- `activity` (128)
+- `eye` (123)
+- `depression` (120)
+- `skin` (119)
+- `expression` (109)
+- `analysis` (106)
+- `disease` (99)
+- `dry` (97)
+- `nailfold` (97)
+- `physical` (95)
+- `oral` (95)
+- `cre` (94)
+- `health` (93)
+- `group` (93)
+- `dysmenorrhea` (90)
+- `pain` (87)
+- `menstrual` (87)
+- `days` (84)
+- `cells` (84)
+- `capillary` (84)
+- `women` (82)
+- `number` (75)
+- `treatment` (71)
+- `associated` (71)
+- `model` (70)
 
 ## Phrase bank (term + verb)
 
+- `cre + exhibited` (8)
+- `avil-cre + exhibited` (4)
+- `informed + obtained` (3)
+- `statistically + observed` (3)
+- `written + obtained` (3)
+- `mice + measured` (3)
+- `time + measured` (3)
 - `change + calculated` (2)
-- `informed + obtained` (2)
+- `skin + revealed` (2)
+- `mice + decreased` (2)
+- `skin + decreased` (2)
+- `analysis + revealed` (2)
+- `indicates + indicates` (2)
+- `dysmenorrhea + indicates` (2)
+- `associations + observed` (2)
+- `moisture + demonstrated` (2)
+- `outcome + measured` (2)
+- `tear + measured` (2)
 - `ligand + measured` (1)
 - `epi- + decreased` (1)
-- `organoids + demonstrated` (1)
-- `micro- + demonstrated` (1)
-- `physical + observed` (1)
-- `fev + measured` (1)
-- `indi- + showed` (1)
-- `cough + observed` (1)
-- `began + increased` (1)
-- `trended + decreased` (1)
-- `systemic + measured` (1)
-- `fibrosis + demonstrated` (1)
-- `macological + demonstrated` (1)
-- `translational + demonstrated` (1)
-- `epithelial + decreased` (1)
-- `baseline + calculated` (1)
-- `clinically + increased` (1)
-- `dbb + revealed` (1)
 
 ## Notation watch
 
-- in vivo: in vivo=2, in-vivo=0
-- in vitro: in vitro=1, in-vitro=0
-- et al.: et al.=0, et al=32
+- in situ: in situ=2, in-situ=0
+- in vivo: in vivo=5, in-vivo=0
+- in vitro: in vitro=4, in-vitro=0
+- et al.: et al.=30, et al=227
 
 ## Section metrics
 
-- discussion: 1 section(s), avg sentence 26.6 words, passive 151.2 /10K
-- methods: 1 section(s), avg sentence 23.7 words, passive 269.4 /10K
-- results: 1 section(s), avg sentence 23.6 words, passive 144.4 /10K
+- abstract: 4 section(s), avg sentence 22.9 words, passive 242.3 /10K
+- conclusion: 1 section(s), avg sentence 23.1 words, passive 127.2 /10K
+- discussion: 5 section(s), avg sentence 23.8 words, passive 171.7 /10K
+- introduction: 4 section(s), avg sentence 23.5 words, passive 139.3 /10K
+- methods: 5 section(s), avg sentence 20.7 words, passive 426.6 /10K
+- results: 5 section(s), avg sentence 22.7 words, passive 141.8 /10K
 
 ## Editor notes (manual curation)
 

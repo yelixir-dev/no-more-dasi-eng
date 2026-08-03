@@ -83,12 +83,12 @@ Source: 100 file(s), 779,484 words
 ## Section metrics
 
 - abstract: 50 section(s), avg sentence 23.6 words, passive 123.7 /10K
-- conclusion: 53 section(s), avg sentence 17.8 words, passive 86.4 /10K
+- conclusion: 53 section(s), avg sentence 19.6 words, passive 91.5 /10K
 - discussion: 48 section(s), avg sentence 22.3 words, passive 115.4 /10K
 - introduction: 65 section(s), avg sentence 22.2 words, passive 149.4 /10K
 - merged: results+discussion: 25 section(s), avg sentence 20.0 words, passive 145.9 /10K
 - methods: 81 section(s), avg sentence 18.0 words, passive 217.1 /10K
-- results: 52 section(s), avg sentence 19.5 words, passive 122.1 /10K
+- results: 52 section(s), avg sentence 19.4 words, passive 122.2 /10K
 
 ## Editor notes (manual curation)
 

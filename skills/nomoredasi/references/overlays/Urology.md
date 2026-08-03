@@ -1,77 +1,83 @@
-# Overlay: Urology (AUTO-DRAFT 2026-08-02)
+# Overlay: Urology (AUTO-DRAFT 2026-08-03)
 
-Maturity: immature (1 files, 4,037 words — treat stats as directional, not targets)
-Source: 1 file(s), 4,037 words
+Maturity: immature (5 files, 29,492 words — treat stats as directional, not targets)
+Source: 5 file(s), 29,492 words
 
 ## Corpus stats
 
-- Avg sentence length: 18.8 words
-- Passive voice: 96.6 /10K words
-- First person (we): 22.3 /10K words
+- Avg sentence length: 17.8 words
+- Passive voice: 128.8 /10K words
+- First person (we): 14.6 /10K words
 
 ## Top terms
 
-- `patients` (52)
-- `months` (36)
-- `aes` (33)
-- `oncology` (25)
-- `clinical` (23)
-- `urothelial` (22)
-- `dose` (21)
-- `medical` (20)
-- `data` (19)
-- `treatment` (19)
-- `advanced` (18)
-- `cancer` (17)
-- `carcinoma` (16)
-- `enfortumab` (15)
-- `vedotin` (15)
-- `metastatic` (14)
-- `medicine` (13)
-- `incidence` (12)
-- `median` (12)
-- `overall` (12)
-- `real-world` (11)
-- `survival` (11)
-- `events` (10)
-- `toxicity` (10)
-- `dermatologic` (10)
-- `neuropathy` (10)
-- `italy` (9)
-- `time` (9)
-- `adverse` (8)
-- `hospital` (8)
+- `patients` (141)
+- `fluid` (121)
+- `sexual` (117)
+- `years` (104)
+- `urinary` (99)
+- `treatment` (99)
+- `utis` (98)
+- `urine` (91)
+- `org` (86)
+- `data` (78)
+- `cancer` (77)
+- `risk` (75)
+- `associated` (71)
+- `outcomes` (70)
+- `time` (67)
+- `participants` (66)
+- `infections` (66)
+- `analysis` (65)
+- `clinical` (62)
+- `included` (59)
+- `beverage` (57)
+- `resistance` (57)
+- `balance` (53)
+- `year` (53)
+- `function` (52)
+- `placebo` (51)
+- `baseline` (51)
+- `solution` (50)
+- `months` (50)
+- `tract` (50)
 
 ## Phrase bank (term + verb)
 
-- `clinical + demonstrated` (1)
-- `conclusion + showed` (1)
-- `cohort + demonstrated` (1)
-- `dose + enhanced` (1)
-- `muc + improved` (1)
-- `treatment + confirmed` (1)
-- `pfs + estimated` (1)
-- `difference + confirmed` (1)
-- `aes + observed` (1)
-- `experienced + showed` (1)
-- `independent + improved` (1)
-- `overall + showed` (1)
-- `ev-related + observed` (1)
-- `underwent + improved` (1)
-- `contributed + observed` (1)
-- `suggest + observed` (1)
-- `unexpected + observed` (1)
+- `frequently + showed` (5)
+- `adults + improved` (2)
+- `nude + measured` (2)
+- `armitage + demonstrated` (2)
+- `sexual + observed` (2)
+- `sample + calculated` (2)
+- `quasi- + observed` (2)
+- `hormonal + observed` (2)
+- `whereas + showed` (2)
+- `year + showed` (2)
+- `time + showed` (2)
+- `baseline + measured` (1)
+- `retention + increased` (1)
+- `glycerol + improved` (1)
+- `body + measured` (1)
+- `calculations + calculated` (1)
+- `intake + calculated` (1)
+- `expressed + calculated` (1)
+- `fluid + calculated` (1)
+- `percentage + calculated` (1)
 
 ## Notation watch
 
-- et al.: et al.=0, et al=3
+- in vitro: in vitro=3, in-vitro=0
+- et al.: et al.=2, et al=71
 
 ## Section metrics
 
-- abstract: 1 section(s), avg sentence 16.1 words, passive 155.4 /10K
-- discussion: 1 section(s), avg sentence 20.7 words, passive 87.0 /10K
-- introduction: 1 section(s), avg sentence 19.2 words, passive 226.5 /10K
-- results: 1 section(s), avg sentence 22.2 words, passive 98.0 /10K
+- abstract: 3 section(s), avg sentence 18.3 words, passive 152.4 /10K
+- conclusion: 3 section(s), avg sentence 22.8 words, passive 94.2 /10K
+- discussion: 4 section(s), avg sentence 22.6 words, passive 101.6 /10K
+- introduction: 4 section(s), avg sentence 20.6 words, passive 139.0 /10K
+- methods: 5 section(s), avg sentence 22.5 words, passive 280.9 /10K
+- results: 4 section(s), avg sentence 18.0 words, passive 64.2 /10K
 
 ## Editor notes (manual curation)
 

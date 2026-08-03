@@ -74,7 +74,7 @@ Source: 5 file(s), 30,503 words
 ## Section metrics
 
 - abstract: 5 section(s), avg sentence 21.5 words, passive 103.9 /10K
-- conclusion: 1 section(s), avg sentence 7.4 words, passive 39.7 /10K
+- conclusion: 1 section(s), avg sentence 19.6 words, passive 306.1 /10K
 - discussion: 4 section(s), avg sentence 21.9 words, passive 187.7 /10K
 - introduction: 4 section(s), avg sentence 22.5 words, passive 122.3 /10K
 - methods: 6 section(s), avg sentence 21.4 words, passive 295.7 /10K
