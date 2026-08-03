@@ -37,7 +37,7 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 ## Phase 2: route_hint — 교정 강도 3경로
 
-초안을 훑어 **light / standard / heavy** 중 하나로 결정하고 출력한다.
+초안을 훑어 **light / standard / heavy** 중 하나로 결정하고 출력한다. **교정 중 아래 Phase 3 규칙에 따라 `<교정본>.edits.json` 저널을 섹션 단위로 항상 누적 작성한다.**
 
 - **light (1패스)** — 이미 잘 쓴 원고(게재 수준 문체, 산발적 문법 오류만). 코어 규칙 위반만 고치고 끝. 변경률 하한.
 - **standard (2패스)** — 일반적 케이스. 1패스: 코어 3층 규칙(① 일반 학술 영어 — 시제·관사·수 일치 ② 분야 용어 표기 통일 — 오버레이 Notation watch ③ 저널 레지스터). 2패스: 자체 검토 + 검증 스크립트.
@@ -47,7 +47,14 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 ## Phase 3: 섹션 인식 교정
 
-원고를 `scripts/section_split.py`로 나눠 인식한다 (IMRaD + Results and Discussion 병합, Experimental Section 등 변형 대응). 학회·논문집마다 구조는 다르지만 거시 구조는 요약/서론/본론/결과/결론의 선택이며, 병합형(Results+Discussion, 본론+결과)은 오류가 아니니 교정으로 "정규화"하지 않는다. 섹션별 시제·수동태 규칙과 전개·호흡 규칙은 `references/core/academic-en.md` §3·§8을 따른다.
+원고를 `scripts/section_split.py`로 나눠 인식한다 (IMRaD + Results and Discussion 병합, Experimental Section 등 변형 대응).
+
+**저널 (edits.json) 작성 의무:** 교정하는 동안 `<교정본>.edits.json`을 **섹션 단위로 조금씩 누적** 작성한다 — 각 편집은 지운 뒤에 채우지 않고, 오히려 `kept` 항목(평가했지만 바꾸지 않은 스팬)과 함께 기록해둔다. 형식은 `scripts/check_journal.py`의 스키마 v1을 따른다:
+
+- `changed` — 원문 스팬(`original`, 교정본의 `corrected`, `<40` 토큰)을 바꾼 편집. `rule: {source, id}`로 근거 규칙을 지목하고 `reason`으로 이유를 짧게 기록한다.
+- `kept` — 평가했으나 건드리지 않은 스팬. `original`(양쪽 파일에 그대로 존재)과 `reason`을 기록한다. `rule`은 선택.
+
+`original`·`corrected`는 각각 원문·교정본의 **정확한 부분 문자열**이어야 한다. 구두점 편집도 빼놓지 말고 기록한다 — 저널 커버리지 게이트가 diff의 모든 changed/insert/delete 영역이 저널로 덮였는지를 기계 검증한다. 학회·논문집마다 구조는 다르지만 거시 구조는 요약/서론/본론/결과/결론의 선택이며, 병합형(Results+Discussion, 본론+결과)은 오류가 아니니 교정으로 "정규화"하지 않는다. 섹션별 시제·수동태 규칙과 전개·호흡 규칙은 `references/core/academic-en.md` §3·§8을 따른다.
 
 - Methods = 과거·수동 우세 유지 (억지 능동화 금지)
 - Results = 과거 중심, 도표 지시 현재. 해석 문장을 Results에 넣지 않는다
@@ -61,14 +68,16 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 ## Phase 4: 검증 (코드 게이트 — LLM 자기판정 금지)
 
-납품 전에 반드시 아래를 실행하고 결과를 보고한다:
+납품 전에 반드시 아래를 실행하고 결과를 보고한다 (**게이트 0부터 순서대로 — 이전 게이트가 exit 1이면 이후 납품 금지**):
+
+0. `scripts/check_journal.py <원고> <교정본> --journal <교정본>.edits.json` — 저널 커버리지 게이트(모든 diff 변경 영역이 저널로 덮였는지, 스팬 ≤40토큰, rule.id가 rule.source에 존재). **exit 1이면 납품 차단** — 빠진 편집/kept 항목을 저널에 보강하거나 스팬을 쪼개고 재실행한다.
 
 1. `scripts/verify_integrity.py <원고> <교정본> --repeat 2 --report <교정본>.integrity-report.html` — 수치·단위·화학식·인용·수식·DOI(＋`--overlay` 시 전문용어) 보존 + 변경률 게이트. **exit 1이면 납품 금지**, 해당 위반을 수정하고 재실행. 리포트 파일(`<교정본>.integrity-report.html`)을 교정본과 함께 납품해 사용자가 무엇이 바뀌었는지 diff로 검토할 수 있게 한다.
 2. `scripts/check_terms.py <교정본>` — 용어 표기 일관성 (bandgap/band gap 등). exit 1이면 다수형으로 통일 후 재실행.
 3. `scripts/check_abbrev.py <교정본> [--state <폴터>]` — 미정의 약어 탐지. exit 1이면 최초 사용 시 정의를 추가하거나 manuscript.json과 대조. 미검증 약어(전개형을 모르는 약어)는 `scripts/abbrev_registry.py references/abbrev-registry.json record <ABBR> --field <분야> --context <문장>`으로 레지스트리에 기록한다. 이후 같은 분야 텍스트에서 같은 약어의 전개형이 관측되면(`scan`) 맥락 문장과 함께 verified로 갱신되고, 다른 전개형이 관측되면 conflict로 표시된다 — conflict는 사용자에게 확인을 요청한다. 사람용 뷰는 `references/abbrev-registry.html`(자동 재생성, 편집 금지; SSOT는 json).
 4. 부분 윤문이면 위 검사들을 해당 구간 기준으로 실행한다.
 
-납품 시 `scripts/log_edit.py <분야> <route_hint> <A|B> <원고> <교정본>`으로 교정 쌍을 logs/edits/에 기록한다(품질 벤치 실측과 pitfalls 파이프라인 입력).
+납품 시 `scripts/log_edit.py <분야> <route_hint> <A|B> <원고> <교정본> [--journal <교정본>.edits.json]`으로 교정 쌍과(삽입 시) 저널을 logs/edits/에 기록한다(품질 벤치 실측·pitfalls 파이프라인·왜 바꿨나 저널 입력).
 
 ## 품질 측정 (스킬 자체 개선용)
 

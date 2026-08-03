@@ -4,8 +4,10 @@
 Creates a dated, field-scoped entry containing the source text, corrected
 text, and delivery metadata. Usage:
   log_edit.py FIELD ROUTE_HINT TYPE INPUT CORRECTED [--root logs/edits]
-                 [--level low|mid|high]
+                 [--level low|mid|high] [--journal PATH]
 TYPE must be A or B. --level records the edit-intensity budget (default mid).
+--journal copies a rationale edits.json into the entry and records the
+entry count in meta.json['journal_entries'].
 """
 
 import argparse
@@ -76,6 +78,9 @@ def parse_args():
     parser.add_argument("--level", choices=("low", "mid", "high"),
                         default="mid",
                         help="edit-intensity budget low/mid/high (default mid)")
+    parser.add_argument("--journal", type=existing_file, default=None,
+                        help="rationale journal (edits.json, schema v1); "
+                             "copied into the entry as edits.json")
     return parser.parse_args()
 
 
@@ -100,6 +105,15 @@ def main():
         "change_rate": change_rate(original, corrected),
         "level": args.level,
     }
+    if args.journal is not None:
+        journal_data = json.loads(args.journal.read_text(encoding="utf-8"))
+        entry_data = journal_data if isinstance(journal_data, dict) else {}
+        (entry_dir / "edits.json").write_text(
+            json.dumps(entry_data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        entries = entry_data.get("entries") if isinstance(entry_data, dict) else None
+        metadata["journal_entries"] = len(entries) if isinstance(entries, list) else 0
     (entry_dir / "meta.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

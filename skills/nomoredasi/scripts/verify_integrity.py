@@ -23,6 +23,7 @@ Exit: 0 = pass (warnings allowed), 1 = violation, 2 = usage error.
 import argparse
 import difflib
 import html
+import json
 import re
 import sys
 from collections import Counter
@@ -261,8 +262,77 @@ def category_stats(inv_o, inv_c, kinds):
     return stats
 
 
+def rationale_html(journal_path, original):
+    """Render changed/kept rationale tables from a journal file.
+
+    Entries are sorted by the offset of their `original` span within the
+    ORIGINAL manuscript. Long spans are truncated in the table cell and their
+    full text kept inside a <details> disclosure.
+    """
+    if journal_path is None:
+        return ""
+    data = json.loads(Path(journal_path).read_text(encoding="utf-8"))
+    entries = data.get("entries", []) if isinstance(data, dict) else []
+    changed = []
+    kept = []
+    for e in entries:
+        if not isinstance(e, dict):
+            continue
+        kind = e.get("kind")
+        (changed if kind == "changed" else kept if kind == "kept" else []).append(e)
+
+    def offset_of(e):
+        orig = e.get("original", "")
+        return original.find(orig) if isinstance(orig, str) else -1
+
+    changed.sort(key=offset_of)
+    kept.sort(key=offset_of)
+
+    def row(e):
+        orig = e.get("original", "")
+        rule = e.get("rule") or {}
+        source = rule.get("source", "")
+        rid = rule.get("id", "")
+        if len(orig) > 160:
+            shown = html.escape(orig[:160]) + "…"
+            full = (
+                "<details><summary>full span</summary><pre>"
+                + html.escape(orig)
+                + "</pre></details>"
+            )
+        else:
+            shown = html.escape(orig)
+            full = ""
+        rule_cell = (
+            f"<code>{html.escape(rid)}</code><span class=\"meta\">"
+            f" ({html.escape(source)})</span>"
+            if rid
+            else "<span class=\"meta\">—</span>"
+        )
+        return f"<tr><td>{shown} {full}</td><td>{rule_cell}</td><td>{html.escape(e.get('reason', ''))}</td></tr>"
+
+    changed_rows = "".join(row(e) for e in changed)
+    kept_rows = "".join(row(e) for e in kept)
+    heading = (
+        "<h2>Rationale journal</h2>"
+        if (changed or kept)
+        else "<h2>Rationale journal</h2><p class=\"meta\">(empty journal)</p>"
+    )
+    return (
+        heading + (
+            "<h3>Changed</h3><table><tr><th>original</th><th>rule</th>"
+            "<th>reason</th></tr>" + changed_rows + "</table>"
+            if changed else ""
+        ) + (
+            "<h3>Kept</h3><table><tr><th>original</th><th>rule</th>"
+            "<th>reason</th></tr>" + kept_rows + "</table>"
+            if kept else ""
+        )
+    )
+
+
 def render_report(path, original, corrected, stats, rate, passes, total_passes,
-                  violations, level="default"):
+                  violations, level="default", journal_path=None):
     verdict = "PASS" if not violations else "FAIL"
     banner_color = "#1a7f37" if not violations else "#cf222e"
     diff = difflib.HtmlDiff(wrapcolumn=100)
@@ -285,6 +355,8 @@ def render_report(path, original, corrected, stats, rate, passes, total_passes,
     violation_items = "".join(
         f"<li>{html.escape(v)}</li>" for v in violations
     ) or "<li>none</li>"
+
+    rationale = rationale_html(journal_path, original)
 
     page = f"""<!DOCTYPE html>
 <html lang="en">
@@ -314,6 +386,7 @@ def render_report(path, original, corrected, stats, rate, passes, total_passes,
   </table>
   <h2>Violations</h2>
   <ul>{violation_items}</ul>
+  {rationale}
   <h2>Word-level diff</h2>
   {diff_html}
 </body>
@@ -339,6 +412,9 @@ def build_parser():
     p.add_argument("--level", choices=sorted(LEVELS), default=None,
                    help="edit-intensity budget low/mid/high; when absent the "
                         "built-in WARN_RATE/STOP_RATE apply")
+    p.add_argument("--journal", default=None,
+                   help="rationale journal (edits.json, schema v1); rendered "
+                        "into the report as changed/kept tables")
     return p
 
 
@@ -381,7 +457,7 @@ def main(argv=None):
         kinds = list(inv_o.keys())
         stats = category_stats(inv_o, inv_c, kinds)
         render_report(args.report, original, corrected, stats, rate, passes,
-                      total, all_violations, level=level)
+                      total, all_violations, level=level, journal_path=args.journal)
 
     for v in all_violations:
         print(f"FAIL {v}")
