@@ -70,16 +70,21 @@ class LicenseGateTest(unittest.TestCase):
         scan = self.dir / "scan.json"
         scan.write_text(json.dumps({"Field B/c.txt": "CC BY-NC-ND 4.0"}))
         quar = self.dir / "quar"
+        bl = self.dir / "blocklist.json"
+        bl.write_text(json.dumps({"count": 0, "blocklist": []}))
         r = sp.run(
             [PY, str(script), "--manifest", str(manifest), "--scan", str(scan),
              "--out", str(self.dir / "attrout2"), "--as-of", "2026-08-01",
-             "--corpus", str(self.corpus), "--quarantine", str(quar)],
+             "--corpus", str(self.corpus), "--quarantine", str(quar),
+             "--blocklist", str(bl)],
             capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertFalse((self.corpus / "Field B" / "c.txt").exists(), "NC file must leave the corpus")
         self.assertTrue((quar / "Field B" / "c.txt").exists(), "NC file must land in quarantine")
         data = json.loads((self.dir / "attrout2" / "attributions.json").read_text())
         self.assertEqual(data["entries"][0]["status"], "quarantined")
+        blocked = json.loads(bl.read_text())["blocklist"]
+        self.assertEqual([b["doi"] for b in blocked], ["10.1/nc"], "quarantined DOI must be auto-blocklisted")
 
     def test_attribution_entries_carry_relative_path(self):
         script = ROOT / "scripts" / "build_attributions.py"

@@ -378,6 +378,11 @@ def main():
         default=None,
         help="directory: move non-CC-BY PDFs out of the corpus into QUARANTINE/<relative path>",
     )
+    parser.add_argument(
+        "--blocklist",
+        default=str(Path.home() / "Documents" / "papers" / "blocklist.json"),
+        help="collector DOI blocklist to append quarantined DOIs to",
+    )
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -398,6 +403,10 @@ def main():
     if args.quarantine:
         import shutil
         quar = Path(args.quarantine)
+        blocklist_path = Path(args.blocklist)
+        blocklist = None
+        if blocklist_path.exists():
+            blocklist = json.loads(blocklist_path.read_text(encoding="utf-8"))
         for e in entries:
             rel = e.get("relative_pdf_path") or ""
             if e["status"] == "active" or not rel:
@@ -409,6 +418,18 @@ def main():
                 shutil.move(str(src), str(dst))
                 e["status"] = "quarantined"
                 print(f"QUARANTINE {rel} ({e['license_name']})")
+            if e["status"] == "quarantined" and blocklist is not None and e.get("doi"):
+                known = {b["doi"] for b in blocklist.get("blocklist", [])}
+                if e["doi"] not in known:
+                    blocklist.setdefault("blocklist", []).append({
+                        "doi": e["doi"],
+                        "license": e["license_name"],
+                        "reason": "auto-blocklisted by cycle quarantine",
+                    })
+                    blocklist["count"] = len(blocklist["blocklist"])
+                    print(f"BLOCKLIST+ {e['doi']}")
+        if blocklist is not None:
+            blocklist_path.write_text(json.dumps(blocklist, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
