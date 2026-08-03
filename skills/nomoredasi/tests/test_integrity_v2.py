@@ -160,5 +160,78 @@ class ReportTest(unittest.TestCase):
         self.assertIn("diff", text.lower())
 
 
+class InlineDiffReportTest(unittest.TestCase):
+    """Regression tests for the redesigned (HtmlDiff-free) report."""
+
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.dir, True)
+        self.orig = self.dir / "orig.txt"
+        self.out = self.dir / "out.txt"
+
+    def render(self, orig, corr, *extra):
+        self.orig.write_text(orig)
+        self.out.write_text(corr)
+        report = self.dir / "out.integrity-report.html"
+        r = run_script(
+            "verify_integrity.py", self.orig, self.out,
+            "--report", report, *extra,
+        )
+        return r, report
+
+    def test_double_render_is_byte_identical(self):
+        orig = "The bandgap was 3.25 eV [1].\n"
+        corr = "The band gap was 3.25 eV [1].\n"
+        r1 = self.dir / "r1.html"
+        r2 = self.dir / "r2.html"
+        self.orig.write_text(orig)
+        self.out.write_text(corr)
+        a = run_script("verify_integrity.py", self.orig, self.out, "--report", r1)
+        b = run_script("verify_integrity.py", self.orig, self.out, "--report", r2)
+        self.assertEqual(a.returncode, 0, a.stdout + a.stderr)
+        self.assertEqual(b.returncode, 0, b.stdout + b.stderr)
+        self.assertTrue(r1.exists())
+        self.assertEqual(r1.read_text(), r2.read_text())
+
+    def test_report_contains_banner_table_marks_details(self):
+        orig = (
+            "Introduction\nThe bandgap was 3.25 eV [1].\n\n"
+            "Methods\nThe film was deposited.\n\n"
+            "Results\nThe device worked.\n"
+        )
+        corr = (
+            "Introduction\nThe band gap was estimated at 3.25 eV [1].\n\n"
+            "Methods\nThe film was deposited.\n\n"
+            "Results\nThe device worked.\n"
+        )
+        r, report = self.render(orig, corr, "--repeat", "2")
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        text = report.read_text()
+        self.assertIn("Integrity gate: PASS", text)   # banner
+        self.assertIn("Invariant categories", text)   # invariant table
+        self.assertIn("<del>", text)                   # word-level removed mark
+        self.assertIn("<ins>", text)                   # word-level added mark
+        self.assertIn("<details", text)                # disclosure groups
+        # changed section is expanded, unchanged sections collapsed
+        self.assertIn("<details open", text)
+
+    def test_diff_area_uses_no_table(self):
+        orig = "The bandgap was 3.25 eV [1].\n"
+        corr = "The band gap was 3.25 eV [1].\n"
+        r, report = self.render(orig, corr)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        text = report.read_text()
+        diff_area = text.partition("Section diff")[2]
+        self.assertNotIn("<table", diff_area)
+
+    def test_reports_without_journal_skip_rationale(self):
+        orig = "The bandgap was 3.25 eV [1].\n"
+        corr = "The band gap was 3.25 eV [1].\n"
+        r, report = self.render(orig, corr)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        text = report.read_text()
+        self.assertNotIn("Rationale journal", text)
+
+
 if __name__ == "__main__":
     unittest.main()

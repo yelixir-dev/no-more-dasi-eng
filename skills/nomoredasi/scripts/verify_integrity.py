@@ -8,8 +8,10 @@ Compares an original manuscript with its corrected version:
   2. Change rate (word-level) warns above 30% and fails above 50%.
   3. --repeat N re-reads both files and re-runs the whole comparison N times
      (default 2) to guard against mid-write file races; every pass must pass.
-  4. --report PATH writes a self-contained HTML diff report (verdict banner,
-     per-category table, change rate, repeat pass count, word-level diff).
+  4. --report PATH writes a self-contained HTML report (verdict banner with
+     change rate / level / repeat pass count, per-category invariant table,
+     violations list, per-section inline word diffs with <del>/<ins> marks;
+     JS-free, no external assets, byte-deterministic for identical inputs).
   5. --overlay PATH optionally parses the overlay file's "## Top terms"
      section; any term present in the original must survive verbatim.
   6. --level {low,mid,high} selects an edit-intensity budget that only
@@ -17,6 +19,7 @@ Compares an original manuscript with its corrected version:
 
 Usage: verify_integrity.py ORIGINAL CORRECTED [--overlay PATH]
        [--repeat N] [--report PATH] [--level {low,mid,high}]
+       [--journal PATH] [--route {light,standard,heavy}]
 Exit: 0 = pass (warnings allowed), 1 = violation, 2 = usage error.
 """
 
@@ -30,7 +33,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from section_split import body_text
+from section_split import body_text, split_sections
 
 WARN_RATE = 0.30
 STOP_RATE = 0.50
@@ -262,6 +265,141 @@ def category_stats(inv_o, inv_c, kinds):
     return stats
 
 
+def _word_diff(orig_line, corr_line):
+    """Render one aligned (paragraph) line pair as an inline word diff.
+
+    Words are the whitespace-normalized tokens of each line (matching how
+    change_rate counts words). Unchanged words are emitted verbatim;
+    removed words are wrapped in <del> and added words in <ins>. Runs are
+    joined by single spaces so any intra-line whitespace differences do not
+    leak into the rendered output (deterministic for identical tokens).
+    Returns an HTML string; content is escaped before emission.
+    """
+    a = orig_line.split()
+    b = corr_line.split()
+    parts = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b).get_opcodes():
+        if tag == "equal":
+            parts.append(" ".join(html.escape(w) for w in a[i1:i2]))
+        elif tag == "replace" or tag == "delete":
+            removed = " ".join(html.escape(w) for w in a[i1:i2])
+            parts.append(f"<del>{removed}</del>")
+        elif tag == "insert":
+            added = " ".join(html.escape(w) for w in b[j1:j2])
+            parts.append(f"<ins>{added}</ins>")
+    return " ".join(p for p in parts if p)
+
+
+def _section_changed(orig_body, corr_body):
+    """A section counts as changed when its word token sequences differ."""
+    return orig_body.split() != corr_body.split()
+
+
+def _role_badge(role):
+    name = html.escape(role or "body")
+    return f"<span class=\"role\">{name}</span>"
+
+
+def _render_section_name(name):
+    """Section heading text escaped for the <summary> row."""
+    return html.escape(name or "(untitled)")
+
+
+def _section_diff(orig_body, corr_body):
+    """Render a changed section as a line-aligned word-level inline diff.
+
+    Lines of the original and corrected bodies are aligned with
+    SequenceMatcher; matching line pairs are rendered as inline word diffs,
+    unmatched whole lines as block-level <del> / <ins>. No <table> is used,
+    so the diff column can never force horizontal scrolling.
+    """
+    a_lines = orig_body.splitlines()
+    b_lines = corr_body.splitlines()
+    blocks = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a_lines, b_lines).get_opcodes():
+        if tag == "equal":
+            for k in range(i1, i2):
+                blocks.append(f"<div class=\"line\">{html.escape(a_lines[k])}</div>")
+        elif tag == "replace":
+            n_removed = i2 - i1
+            n_added = j2 - j1
+            paired = min(n_removed, n_added)
+            for k in range(paired):
+                blocks.append(
+                    f"<div class=\"line changed\">{_word_diff(a_lines[i1 + k], b_lines[j1 + k])}</div>"
+                )
+            for k in range(paired, n_removed):
+                blocks.append(
+                    f"<div class=\"line removed\"><del>{html.escape(a_lines[i1 + k])}</del></div>"
+                )
+            for k in range(paired, n_added):
+                blocks.append(
+                    f"<div class=\"line added\"><ins>{html.escape(b_lines[j1 + k])}</ins></div>"
+                )
+        elif tag == "delete":
+            for k in range(i1, i2):
+                blocks.append(
+                    f"<div class=\"line removed\"><del>{html.escape(a_lines[k])}</del></div>"
+                )
+        elif tag == "insert":
+            for k in range(j1, j2):
+                blocks.append(
+                    f"<div class=\"line added\"><ins>{html.escape(b_lines[k])}</ins></div>"
+                )
+    return "".join(blocks)
+
+
+def render_section_diff(original, corrected):
+    """Render per-section inline diffs.
+
+    Sections are derived with section_split for both manuscripts. Changed
+    sections are expanded (<details open>) with an inline word-level diff;
+    unchanged sections are collapsed inside <details><summary>. Identical
+    inputs produce byte-identical output (no timestamps, no randomness).
+    """
+    s_o = split_sections(original)
+    s_c = split_sections(corrected)
+    # Align sections by name; if a corrected manuscript drops/adds a section
+    # name the extra section is compared against an empty body.
+    body_c = {s["name"]: s["body"] for s in s_c}
+    out = []
+    seen = set()
+    for sec in s_o:
+        name = sec["name"]
+        seen.add(name)
+        corr_body = body_c.get(name, "")
+        changed = _section_changed(sec["body"], corr_body)
+        summary = (
+            _render_section_name(name) + " " + _role_badge(sec["role"])
+        )
+        if changed:
+            diff = _section_diff(sec["body"], corr_body)
+            out.append(
+                f"<details open class=\"section changed\">"
+                f"<summary><span class=\"mark\">diff</span>{summary}</summary>"
+                f"<div class=\"diff\">{diff}</div></details>"
+            )
+        else:
+            body = html.escape(sec["body"]) if sec["body"] else "<span class='meta'>(empty section)</span>"
+            out.append(
+                f"<details class=\"section unchanged\">"
+                f"<summary><span class=\"mark\">unchanged</span>{summary}</summary>"
+                f"<div class=\"diff\"><div class=\"line\">{body}</div></div></details>"
+            )
+    # Sections that exist only in the corrected manuscript.
+    for sec in s_c:
+        if sec["name"] not in seen:
+            corr_body = sec["body"]
+            summary = _render_section_name(sec["name"]) + " " + _role_badge(sec["role"])
+            diff = _section_diff("", corr_body)
+            out.append(
+                f"<details open class=\"section changed\">"
+                f"<summary><span class=\"mark\">diff</span>{summary}</summary>"
+                f"<div class=\"diff\">{diff}</div></details>"
+            )
+    return "".join(out)
+
+
 def rationale_html(journal_path, original):
     """Render changed/kept rationale tables from a journal file.
 
@@ -332,14 +470,17 @@ def rationale_html(journal_path, original):
 
 
 def render_report(path, original, corrected, stats, rate, passes, total_passes,
-                  violations, level="default", journal_path=None):
+                  violations, level="default", journal_path=None, route=None):
+    """Render a self-contained, scientific-journal style integrity report.
+
+    Layout top-down: verdict banner, invariant-category table, violations
+    list, rationale tables (when --journal), then per-section inline diffs.
+    The pane uses a single inline <style> block, system UI sans for chrome,
+    serif for manuscript content, no JS, no external assets, and no
+    timestamps — identical inputs reproduce byte-identical output.
+    """
     verdict = "PASS" if not violations else "FAIL"
-    banner_color = "#1a7f37" if not violations else "#cf222e"
-    diff = difflib.HtmlDiff(wrapcolumn=100)
-    diff_html = diff.make_file(
-        original.splitlines(), corrected.splitlines(),
-        fromdesc="Original", todesc="Corrected", context=False,
-    )
+    banner_color = "#1e7e34" if not violations else "#c6292f"
 
     rows = []
     for kind in ("number", "quantity", "citation", "formula", "doi", "equation", "term"):
@@ -347,48 +488,122 @@ def render_report(path, original, corrected, stats, rate, passes, total_passes,
             continue
         s = stats[kind]
         rows.append(
-            f"<tr><td><code>{html.escape(kind)}</code></td>"
-            f"<td>{s['original']}</td><td>{s['corrected']}</td>"
-            f"<td>{s['missing']}</td><td>{s['invented']}</td></tr>"
+            f"<td><code>{html.escape(kind)}</code></td>"
+            f"<td class=\"num\">{s['original']}</td><td class=\"num\">{s['corrected']}</td>"
+            f"<td class=\"num\">{s['missing']}</td><td class=\"num\">{s['invented']}</td>"
         )
+    category_rows = "".join(f"<tr>{r}</tr>" for r in rows)
 
     violation_items = "".join(
-        f"<li>{html.escape(v)}</li>" for v in violations
-    ) or "<li>none</li>"
+        f"<li class=\"vio\">{html.escape(v)}</li>" for v in violations
+    ) or "<li class=\"vio\">none</li>"
 
     rationale = rationale_html(journal_path, original)
+    section_diff = render_section_diff(original, corrected)
+
+    route_meta = f"<span class=\"pill\">route: {html.escape(route)}</span>" if route else ""
 
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>verify_integrity report</title>
+<title>Integrity report</title>
 <style>
-  body {{ font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        margin: 2rem; max-width: 960px; margin-left: auto; margin-right: auto; }}
-  .banner {{ color: #fff; background: {banner_color}; padding: 1rem 1.5rem;
-           border-radius: 6px; font-size: 1.4rem; font-weight: 700; }}
-  table {{ border-collapse: collapse; margin: 1rem 0; width: 100%; }}
-  th, td {{ border: 1px solid #d0d7de; padding: 6px 12px; text-align: left; }}
-  th {{ background: #f6f8fa; }}
-  .meta {{ color: #57606a; }}
+  :root {{ --ink:#1c2733; --muted:#5b6b80; --rule:#c9d2dd; --paper:#ffffff;
+           --canvas:#f6f8fa; --pass:#1e7e34; --fail:#c6292f;
+           --del-bg:#fdeaea; --ins-bg:#e8f6ec; --del:#c62828; --ins:#1e7e34; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif; background: var(--canvas); color: var(--ink);
+          margin: 0; line-height: 1.55; }}
+  .wrap {{ max-width: 1000px; margin: 0 auto; padding: 48px 32px 96px; }}
+  .kicker {{ font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--muted); margin: 0 0 8px; }}
+  h1 {{ font-size: 1.45rem; font-weight: 650; margin: 0 0 4px; }}
+  .banner {{ display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+            background: var(--paper); border: 1px solid var(--rule); border-left: 6px solid {banner_color};
+            border-radius: 6px; padding: 20px 24px; margin: 22px 0 30px; }}
+  .badge {{ background: {banner_color}; color: #fff; font-weight: 700;
+           font-size: 1.05rem; letter-spacing: 0.03em; padding: 6px 14px;
+           border-radius: 20px; }}
+  .banner .stats {{ display: flex; gap: 8px 22px; flex-wrap: wrap; font-size: 0.9rem; }}
+  .stat b {{ font-weight: 650; }}
+  .pill {{ background: var(--ink); color: #fff; border-radius: 12px;
+          font-size: 0.72rem; padding: 2px 10px; letter-spacing: 0.04em; }}
+  .card {{ background: var(--paper); border: 1px solid var(--rule); border-radius: 6px;
+          padding: 20px 24px; margin: 0 0 26px; }}
+  .card h2 {{ font-size: 0.95rem; font-weight: 700; margin: 0 0 12px;
+             letter-spacing: 0.02em; }}
+  table {{ border-collapse: collapse; width: 100%; font-size: 0.84rem;
+          font-variant-numeric: tabular-nums; }}
+  th {{ border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink);
+        text-align: left; padding: 7px 12px 7px 0; font-weight: 650;
+        font-size: 0.74rem; letter-spacing: 0.04em; }}
+  td {{ padding: 6px 12px 6px 0; border-bottom: 1px solid var(--rule); }}
+  td.num {{ text-align: right; }}
+  ul {{ margin: 0; padding-left: 20px; }}
+  li.vio {{ font-size: 0.84rem; margin: 3px 0; }}
+  .meta {{ color: var(--muted); font-size: 0.8rem; }}
+  details.section {{ background: var(--paper); border: 1px solid var(--rule);
+                    border-radius: 6px; margin: 0 0 12px; }}
+  details.section > summary {{ cursor: pointer; padding: 12px 16px;
+            font-size: 0.86rem; font-weight: 650; list-style: none;
+            display: flex; align-items: center; gap: 10px; }}
+  details.section > summary::-webkit-details-marker {{ display: none; }}
+  .mark {{ border-radius: 3px; font-size: 0.66rem; font-weight: 700;
+          padding: 2px 8px; letter-spacing: 0.05em; text-transform: uppercase; }}
+  details.changed > summary .mark {{ background: var(--ins-bg); color: var(--ins); }}
+  details.unchanged > summary .mark {{ background: var(--canvas); color: var(--muted); }}
+  .role {{ color: var(--muted); font-weight: 600; font-size: 0.74rem;
+          border: 1px solid var(--rule); border-radius: 3px; padding: 1px 8px;
+          text-transform: uppercase; letter-spacing: 0.05em; }}
+  .diff {{ padding: 4px 16px 14px; font-family: Georgia, "Times New Roman", serif;
+          font-size: 1.02rem; line-height: 1.75; max-width: 76ch; }}
+  .line {{ margin: 6px 0; }}
+  .line.changed {{ white-space: normal; word-wrap: break-word; }}
+  del {{ color: var(--del); background: var(--del-bg); text-decoration: line-through; }}
+  ins {{ color: var(--ins); background: var(--ins-bg); text-decoration: underline; }}
+  .line.removed {{ color: var(--del); background: var(--del-bg); }}
+  .line.added {{ color: var(--ins); background: var(--ins-bg); }}
+  .line.removed del, .line.added ins {{ background: transparent; }}
 </style>
 </head>
 <body>
-  <div class="banner">Integrity gate: {verdict}</div>
-  <p class="meta">Change rate: {rate:.0%} &nbsp;•&nbsp; level: {level}
-     &nbsp;•&nbsp; repeated comparison: {passes}/{total_passes} passes</p>
-  <h2>Invariant categories</h2>
-  <table>
-    <tr><th>category</th><th>original</th><th>corrected</th>
-        <th>missing</th><th>invented</th></tr>
-    {''.join(rows)}
-  </table>
-  <h2>Violations</h2>
-  <ul>{violation_items}</ul>
+<div class="wrap">
+  <p class="kicker">nomoredasi · fidelity gate</p>
+  <h1>Manuscript integrity report</h1>
+
+  <div class="banner">
+    <span class="badge">Integrity gate: {verdict}</span>
+    <div class="stats">
+      <span class="stat">change rate: {rate:.0%}</span>
+      <span class="stat">level: {level}</span>
+      {route_meta}
+      <span class="stat">repeat: {passes}/{total_passes}</span>
+    </div>
+    <p class="meta">repeated comparison: {passes}/{total_passes} passes</p>
+  </div>
+
+  <div class="card">
+    <h2>Invariant categories</h2>
+    <table>
+      <tr><th>category</th><th>original</th><th>corrected</th>
+          <th>missing</th><th>invented</th></tr>
+      {category_rows}
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Violations</h2>
+    <ul>{violation_items}</ul>
+  </div>
+
   {rationale}
-  <h2>Word-level diff</h2>
-  {diff_html}
+
+  <div class="card">
+    <h2>Section diff</h2>
+    {section_diff}
+  </div>
+</div>
 </body>
 </html>
 """
@@ -415,6 +630,10 @@ def build_parser():
     p.add_argument("--journal", default=None,
                    help="rationale journal (edits.json, schema v1); rendered "
                         "into the report as changed/kept tables")
+    p.add_argument("--route", choices=("light", "standard", "heavy"),
+                   default=None,
+                   help="optional route_hint diagnosis label (light/standard/"
+                        "heavy) shown in the report banner")
     return p
 
 
@@ -457,7 +676,8 @@ def main(argv=None):
         kinds = list(inv_o.keys())
         stats = category_stats(inv_o, inv_c, kinds)
         render_report(args.report, original, corrected, stats, rate, passes,
-                      total, all_violations, level=level, journal_path=args.journal)
+                      total, all_violations, level=level, journal_path=args.journal,
+                      route=args.route)
 
     for v in all_violations:
         print(f"FAIL {v}")
