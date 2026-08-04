@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 .DS_Store
 .omo/senpi-task/
+logs/
+work_logs/
+work_log.html
+bug-report/
+.omo/
+papers/
+paper-english-skill-analysis.html
