@@ -226,8 +226,9 @@ def render_md(entries, as_of):
         "",
         "## 1. Separation of licenses",
         "",
-        "- **Software source code:** project license (to be declared at publication).",
-        "- **Project-authored documentation:** same as software.",
+        "- **Software source code:** [MIT License](../../LICENSE).",
+        "- **Project-authored documentation and generated data (overlays, registries):** "
+        "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).",
         "- **Third-party article material:** remains copyrighted by the respective authors and is used "
         "under the Creative Commons Attribution 4.0 International License (CC BY 4.0) identified per article.",
         "The repository's software license does not replace, narrow, or relicense the CC BY 4.0 terms "
