@@ -19,6 +19,88 @@
 
 <!-- README-I18N:END -->
 
+<!-- READINESS:START -->
+## Field readiness
+
+![Field readiness chart](docs/assets/readiness-chart.svg)
+
+| Field | Papers | Score |
+| --- | ---: | ---: |
+| Physics (major) | 100 | 95.0 |
+| Optics and photonics (major) | 80 | 91.2 |
+| Chemistry (major) | 44 | 83.0 |
+| Biophysics (major) | 5 | 54.9 |
+| Biotechnology (major) | 5 | 50.6 |
+| Microbiology (major) | 5 | 50.2 |
+| Cancer (major) | 5 | 49.6 |
+| Environmental sciences (major) | 5 | 49.2 |
+| Energy science and technology (major) | 5 | 48.9 |
+| Biochemistry (major) | 5 | 48.7 |
+| Cell biology (major) | 5 | 48.3 |
+| Biological techniques (major) | 5 | 48.1 |
+| Neuroscience (major) | 5 | 47.8 |
+| Materials science (major) | 5 | 47.7 |
+| Mathematics and computing (major) | 5 | 47.7 |
+| Medical research (major) | 5 | 47.1 |
+| Nanoscience and technology (major) | 5 | 47.1 |
+| Engineering (major) | 5 | 45.8 |
+| Diseases (major) | 5 | 45.7 |
+| Health care (major) | 5 | 45.6 |
+| Drug discovery (minor) | 5 | 53.2 |
+| Forestry (minor) | 5 | 51.4 |
+| Oncology (minor) | 5 | 51.0 |
+| Gastroenterology (minor) | 5 | 50.4 |
+| Structural biology (minor) | 5 | 50.4 |
+| Immunology (minor) | 5 | 50.2 |
+| Pathogenesis (minor) | 5 | 50.2 |
+| Developmental biology (minor) | 5 | 50.0 |
+| Climate sciences (minor) | 5 | 49.9 |
+| Systems biology (minor) | 5 | 49.9 |
+| Geography (minor) | 5 | 49.8 |
+| Natural hazards (minor) | 5 | 49.8 |
+| Molecular medicine (minor) | 5 | 49.7 |
+| Stem cells (minor) | 5 | 49.5 |
+| Anatomy (minor) | 5 | 49.4 |
+| Environmental social sciences (minor) | 5 | 49.1 |
+| Health occupations (minor) | 5 | 49.0 |
+| Molecular biology (minor) | 5 | 49.0 |
+| Signs and symptoms (minor) | 5 | 49.0 |
+| Business and industry (minor) | 5 | 48.9 |
+| Agriculture (minor) | 5 | 48.7 |
+| Limnology (minor) | 5 | 48.6 |
+| Plant sciences (minor) | 5 | 48.6 |
+| Space physics (minor) | 5 | 48.6 |
+| Planetary science (minor) | 5 | 48.5 |
+| Social sciences (minor) | 5 | 48.5 |
+| Biogeochemistry (minor) | 5 | 48.3 |
+| Genetics (minor) | 5 | 48.2 |
+| Developing world (minor) | 5 | 48.1 |
+| Ecology (minor) | 5 | 48.0 |
+| Risk factors (minor) | 5 | 48.0 |
+| Zoology (minor) | 5 | 48.0 |
+| Solid Earth sciences (minor) | 5 | 47.9 |
+| Astronomy and planetary science (minor) | 5 | 47.8 |
+| Biomarkers (minor) | 5 | 47.8 |
+| Chemical biology (minor) | 5 | 47.7 |
+| Computational biology and bioinformatics (minor) | 5 | 47.6 |
+| Energy and society (minor) | 5 | 47.6 |
+| Psychology (minor) | 5 | 47.3 |
+| Ocean sciences (minor) | 5 | 47.1 |
+| Rheumatology (minor) | 5 | 47.1 |
+| Cardiology (minor) | 5 | 47.0 |
+| Evolution (minor) | 5 | 47.0 |
+| Physiology (minor) | 5 | 47.0 |
+| Hydrology (minor) | 5 | 46.9 |
+| Urology (minor) | 5 | 46.9 |
+| Endocrinology (minor) | 5 | 46.8 |
+| Scientific community (minor) | 5 | 46.8 |
+| Neurology (minor) | 5 | 46.3 |
+| Water resources (minor) | 5 | 46.3 |
+| Nephrology (minor) | 5 | 45.6 |
+
+_auto-updated by the delta cycle._
+<!-- READINESS:END -->
+
 **no-more-dasi** (“no more DASI” — 다시 [DASI] is Korean for “do it again”) polishes English research manuscripts to the conventions of *your field* — measured, not intuited, from a live corpus of 555 CC BY 4.0 papers across Nature's 71 subject categories. **Write your draft in any language**: it is translated into English first, then edited through the same pipeline. It is an agent skill: your coding/research agent loads it, and every edit it makes must pass deterministic verification gates before anything reaches you.
 
 [What it does](#what-it-does) · [Install](#install) · [Usage](#usage) · [How it works](#how-it-works) · [Verification gates](#verification-gates) · [Attribution](#attribution) · [Sponsoring](#sponsoring)
@@ -90,7 +172,7 @@ Source articles remain the copyright of their authors and are used under the ter
 
 ## Sponsoring
 
-no-more-dasi is independent work — corpus mining, rule distillation, and the verification gates are built and maintained by [yelixir-dev](https://github.com/yelixir-dev). If it saves you a round of “do it again”, you can support it through [GitHub Sponsors](https://github.com/sponsors/yelixir-dev). Additional channels for supporters in Korea (Toss) and abroad (Ko-fi) are wired in [.github/FUNDING.yml](.github/FUNDING.yml) as they open.
+no-more-dasi is independent work — corpus mining, rule distillation, and the verification gates are built and maintained by [yelixir-dev](https://github.com/yelixir-dev). If it saves you a round of “do it again”, you can support it through [GitHub Sponsors](https://github.com/sponsors/yelixir-dev). Additional channels for supporters in Korea (Toss) and abroad (Ko-fi) will be added here as they open.
 
 ## Current limitations
 

@@ -52,6 +52,9 @@ DATA_PATHS=(
     "docs/attributions.json"
     "docs/attributions.html"
     "docs/readiness.html"
+    "README.md"
+    "README.ko.md"
+    "docs/assets/readiness-chart.svg"
     "logs"
 )
 VERIFY_GREEN=0
@@ -140,6 +143,7 @@ for status in sorted(counts):
 PY
     } | tee "$DIFF_LOG"
     "$PY" "$SKILL/scripts/readiness.py" --html docs/readiness.html | tee -a "$DIFF_LOG"
+    "$PY" "$SKILL/scripts/update_readme_readiness.py"
 fi
 
 if selected 5; then
