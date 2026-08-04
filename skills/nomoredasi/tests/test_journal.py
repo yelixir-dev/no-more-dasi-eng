@@ -91,6 +91,7 @@ class CheckJournalTest(unittest.TestCase):
         self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
         self.assertIn("FAIL", r.stdout + r.stderr)
         self.assertIn("COVERAGE", r.stdout + r.stderr)
+        self.assertIn("SUGGEST original:", r.stdout + r.stderr)
 
     def test_kept_span_absent_from_output_fails(self):
         inp = write(self.dir / "in.txt", INPUT)

@@ -163,6 +163,16 @@ def validate_entry(entry, input_text, corrected_text, failures):
             _check_rule(rule, failures)
 
 
+def _suggest_original(input_text, start, end):
+    snippet = input_text[start:end].strip()
+    if len(snippet) > 160:
+        snippet = snippet[:160]
+    print(
+        f"SUGGEST original: {json.dumps(snippet, ensure_ascii=False)} "
+        f"(char offsets {start}:{end})"
+    )
+
+
 def check_coverage(entries, input_text, corrected_text, failures):
     """Every replace/delete/insert opcode region must be covered by the union
     of changed entries' original spans in INPUT."""
@@ -187,6 +197,7 @@ def check_coverage(entries, input_text, corrected_text, failures):
             if not covered(merged, point, point):
                 fail(failures, "COVERAGE UNCOVERED: insert "
                                f"{json.dumps(corr_tokens[j1:j2], ensure_ascii=False)}")
+                _suggest_original(input_text, point, point)
             continue
         start = starts[i1]
         end = starts[i2 - 1] + len(tokens[i2 - 1])
@@ -194,6 +205,7 @@ def check_coverage(entries, input_text, corrected_text, failures):
             fail(failures, "COVERAGE UNCOVERED: "
                            f"{json.dumps(tokens[i1:i2], ensure_ascii=False)} "
                            f"-> {json.dumps(corr_tokens[j1:j2], ensure_ascii=False)}")
+            _suggest_original(input_text, start, end)
 
 
 def fail(failures, msg):
