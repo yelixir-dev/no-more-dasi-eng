@@ -34,6 +34,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from section_split import body_text, split_sections
+from house_style import HOUSE_CSS, page, panel
 
 WARN_RATE = 0.30
 STOP_RATE = 0.50
@@ -475,18 +476,55 @@ def rationale_html(journal_path, original):
     )
 
 
+REPORT_EXTRA_CSS = """
+<style>
+.hero-meta .badge { align-self: center; border: 1px solid currentColor;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: .82rem; padding: .3rem .85rem; letter-spacing: .02em; }
+.verify-note { color: var(--muted); font-size: .82rem; margin: 0; }
+li.vio { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: .84rem; margin: 3px 0; }
+td.num { text-align: right; }
+td code { font-size: .8em; }
+details.section { background: var(--paper); border: 1px solid var(--rule); margin: .7rem 0; }
+details.section > summary { align-items: center; cursor: pointer; display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700; font-size: .86rem; gap: .7rem; list-style: none; padding: .9rem 1rem; }
+details.section > summary::-webkit-details-marker { display: none; }
+.mark { border-radius: 3px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: .66rem; font-weight: 800; padding: 2px 8px; letter-spacing: .05em;
+    text-transform: uppercase; }
+details.changed > summary .mark { background: #f6e8cd; color: #8a5a00; }
+details.unchanged > summary .mark { background: var(--canvas); color: var(--muted); }
+.role { color: var(--muted); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 600; font-size: .74rem; border: 1px solid var(--rule); border-radius: 3px;
+    padding: 1px 8px; text-transform: uppercase; letter-spacing: .05em; }
+.diff { padding: 4px 16px 14px; font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.02rem; line-height: 1.75; max-width: 76ch; }
+.line { margin: 6px 0; }
+.line.changed { white-space: normal; word-wrap: break-word; }
+del { color: #8c2f1b; background: #f3d9d2; text-decoration: line-through; }
+ins { color: #2f5d3a; background: #e8efe6; text-decoration: underline; }
+.line.removed { color: #8c2f1b; background: #f3d9d2; }
+.line.added { color: #2f5d3a; background: #e8efe6; }
+.line.removed del, .line.added ins { background: transparent; }
+</style>
+"""
+
+
 def render_report(path, original, corrected, stats, rate, passes, total_passes,
                   violations, level="default", journal_path=None, route=None):
-    """Render a self-contained, scientific-journal style integrity report.
+    """Render a self-contained integrity report in the nomoredasi house style.
 
-    Layout top-down: verdict banner, invariant-category table, violations
-    list, rationale tables (when --journal), then per-section inline diffs.
-    The pane uses a single inline <style> block, system UI sans for chrome,
-    serif for manuscript content, no JS, no external assets, and no
-    timestamps — identical inputs reproduce byte-identical output.
+    Layout top-down: dark-ink hero with a verdict badge and stats in the hero
+    meta, then house panels for the invariant-category table, violations,
+    rationale journal tables (when --journal), and per-section inline diffs.
+    No JS, no external assets, no timestamps — identical inputs reproduce
+    byte-identical output. The diff area stays table-free so long sections
+    never force horizontal scrolling.
     """
     verdict = "PASS" if not violations else "FAIL"
-    banner_color = "#1e7e34" if not violations else "#c6292f"
+    badge_class = "pass" if not violations else "high"
 
     rows = []
     for kind in ("number", "quantity", "citation", "formula", "doi", "equation", "term"):
@@ -507,114 +545,53 @@ def render_report(path, original, corrected, stats, rate, passes, total_passes,
     rationale = rationale_html(journal_path, original)
     section_diff = render_section_diff(original, corrected)
 
-    route_meta = f"<span class=\"pill\">route: {html.escape(route)}</span>" if route else ""
+    route_span = f"<span>route<strong>{html.escape(route)}</strong></span>" if route else ""
+    badge = f"<span class=\"badge {badge_class}\">Integrity gate: {verdict}</span>"
 
-    page = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Integrity report</title>
-<style>
-  :root {{ --ink:#1c2733; --muted:#5b6b80; --rule:#c9d2dd; --paper:#ffffff;
-           --canvas:#f6f8fa; --pass:#1e7e34; --fail:#c6292f;
-           --del-bg:#fdeaea; --ins-bg:#e8f6ec; --del:#c62828; --ins:#1e7e34; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif; background: var(--canvas); color: var(--ink);
-          margin: 0; line-height: 1.55; }}
-  .wrap {{ max-width: 1000px; margin: 0 auto; padding: 48px 32px 96px; }}
-  .kicker {{ font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
-            color: var(--muted); margin: 0 0 8px; }}
-  h1 {{ font-size: 1.45rem; font-weight: 650; margin: 0 0 4px; }}
-  .banner {{ display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
-            background: var(--paper); border: 1px solid var(--rule); border-left: 6px solid {banner_color};
-            border-radius: 6px; padding: 20px 24px; margin: 22px 0 30px; }}
-  .badge {{ background: {banner_color}; color: #fff; font-weight: 700;
-           font-size: 1.05rem; letter-spacing: 0.03em; padding: 6px 14px;
-           border-radius: 20px; }}
-  .banner .stats {{ display: flex; gap: 8px 22px; flex-wrap: wrap; font-size: 0.9rem; }}
-  .stat b {{ font-weight: 650; }}
-  .pill {{ background: var(--ink); color: #fff; border-radius: 12px;
-          font-size: 0.72rem; padding: 2px 10px; letter-spacing: 0.04em; }}
-  .card {{ background: var(--paper); border: 1px solid var(--rule); border-radius: 6px;
-          padding: 20px 24px; margin: 0 0 26px; }}
-  .card h2 {{ font-size: 0.95rem; font-weight: 700; margin: 0 0 12px;
-             letter-spacing: 0.02em; }}
-  table {{ border-collapse: collapse; width: 100%; font-size: 0.84rem;
-          font-variant-numeric: tabular-nums; }}
-  th {{ border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink);
-        text-align: left; padding: 7px 12px 7px 0; font-weight: 650;
-        font-size: 0.74rem; letter-spacing: 0.04em; }}
-  td {{ padding: 6px 12px 6px 0; border-bottom: 1px solid var(--rule); }}
-  td.num {{ text-align: right; }}
-  ul {{ margin: 0; padding-left: 20px; }}
-  li.vio {{ font-size: 0.84rem; margin: 3px 0; }}
-  .meta {{ color: var(--muted); font-size: 0.8rem; }}
-  details.section {{ background: var(--paper); border: 1px solid var(--rule);
-                    border-radius: 6px; margin: 0 0 12px; }}
-  details.section > summary {{ cursor: pointer; padding: 12px 16px;
-            font-size: 0.86rem; font-weight: 650; list-style: none;
-            display: flex; align-items: center; gap: 10px; }}
-  details.section > summary::-webkit-details-marker {{ display: none; }}
-  .mark {{ border-radius: 3px; font-size: 0.66rem; font-weight: 700;
-          padding: 2px 8px; letter-spacing: 0.05em; text-transform: uppercase; }}
-  details.changed > summary .mark {{ background: var(--ins-bg); color: var(--ins); }}
-  details.unchanged > summary .mark {{ background: var(--canvas); color: var(--muted); }}
-  .role {{ color: var(--muted); font-weight: 600; font-size: 0.74rem;
-          border: 1px solid var(--rule); border-radius: 3px; padding: 1px 8px;
-          text-transform: uppercase; letter-spacing: 0.05em; }}
-  .diff {{ padding: 4px 16px 14px; font-family: Georgia, "Times New Roman", serif;
-          font-size: 1.02rem; line-height: 1.75; max-width: 76ch; }}
-  .line {{ margin: 6px 0; }}
-  .line.changed {{ white-space: normal; word-wrap: break-word; }}
-  del {{ color: var(--del); background: var(--del-bg); text-decoration: line-through; }}
-  ins {{ color: var(--ins); background: var(--ins-bg); text-decoration: underline; }}
-  .line.removed {{ color: var(--del); background: var(--del-bg); }}
-  .line.added {{ color: var(--ins); background: var(--ins-bg); }}
-  .line.removed del, .line.added ins {{ background: transparent; }}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <p class="kicker">nomoredasi · fidelity gate</p>
-  <h1>Manuscript integrity report</h1>
+    hero_html = (
+        '<div class="hero"><p class="eyebrow">nomoredasi · fidelity gate</p>'
+        f"<h1>Manuscript integrity report</h1>"
+        f'<p class="lede">Invariant preservation across the edit, measured as a '
+        f'byte-deterministic gate. Categories below confirm nothing was lost or '
+        f'invented; the diff shows exactly what changed.</p>'
+        f'<div class="hero-meta">{badge}{route_span}'
+        f"<span>change rate<strong>{rate:.0%}</strong></span>"
+        f"<span>level: {level}</span>"
+        f"<span>repeated comparison<strong>{passes}/{total_passes}</strong></span>"
+        f"</div></div>"
+    )
 
-  <div class="banner">
-    <span class="badge">Integrity gate: {verdict}</span>
-    <div class="stats">
-      <span class="stat">change rate: {rate:.0%}</span>
-      <span class="stat">level: {level}</span>
-      {route_meta}
-      <span class="stat">repeat: {passes}/{total_passes}</span>
-    </div>
-    <p class="meta">repeated comparison: {passes}/{total_passes} passes</p>
-  </div>
+    category_panel = panel(
+        "Invariant categories", "multiset preservation per invariant kind",
+        "<table><tr><th>category</th><th>original</th><th>corrected</th>"
+        "<th>missing</th><th>invented</th></tr>"
+        f"{category_rows}</table>",
+    )
+    violations_panel = panel(
+        "Violations", "anything missing or invented across the comparison",
+        f"<ul>{violation_items}</ul>",
+    )
+    rationale_body = rationale
+    # rationale_html() already carries its own <h2>Rationale journal</h2>; the
+    # house panel supplies the heading, so drop it before wrapping.
+    if rationale_body.startswith("<h2>Rationale journal</h2>"):
+        rationale_body = rationale_body[len("<h2>Rationale journal</h2>"):]
+    rationale_panel = (
+        panel("Rationale journal", "per-edit decision ledger", rationale_body)
+        if rationale_body
+        else ""
+    )
+    diff_panel = panel(
+        "Section diff", "word-level <del>/<ins> marks, sections folded",
+        section_diff,
+    )
 
-  <div class="card">
-    <h2>Invariant categories</h2>
-    <table>
-      <tr><th>category</th><th>original</th><th>corrected</th>
-          <th>missing</th><th>invented</th></tr>
-      {category_rows}
-    </table>
-  </div>
+    body_html = category_panel + violations_panel + rationale_panel + diff_panel
 
-  <div class="card">
-    <h2>Violations</h2>
-    <ul>{violation_items}</ul>
-  </div>
-
-  {rationale}
-
-  <div class="card">
-    <h2>Section diff</h2>
-    {section_diff}
-  </div>
-</div>
-</body>
-</html>
-"""
+    extra = REPORT_EXTRA_CSS
+    out_html = page("Integrity report", hero_html, body_html, extra_head=extra)
     with open(path, "w", encoding="utf-8") as f:
-        f.write(page)
+        f.write(out_html)
 
 
 def build_parser():
