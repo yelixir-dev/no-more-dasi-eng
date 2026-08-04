@@ -15,6 +15,10 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 작업한 날은 `work_logs/YYYY-MM-DD.html`을 작성하고 `work_log.html` 인덱스 맨 위에 1-2줄 요약 + 링크를 추가한다 (최신순). 문서는 HTML 기본, 지침 파일만 Markdown.
 
+## HTML 문서 생성
+
+워크로그·보고서·차트 등 HTML 문서를 새로 만들 때는 effective-html 스킬을 기본으로 읽고 따른다 (글로벌 지침 참조): `~/.agents/skills/html` 라우터부터, 시각 방향은 `design-artifact`, 계획 문서는 `html-plan`, 다이어그램·차트는 `html-diagram`. 단, `build_attributions.py`·`readiness.py`처럼 스크립트가 `docs/templates/` 템플릿에서 자동 생성하는 HTML은 기존 템플릿 체계를 유지하고 스킬을 적용하지 않는다.
+
 ## 라이선스 정책
 
 스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 **`build_attributions.py --quarantine`이 원본을 `~/Documents/papers-quarantine/`으로 격리**하고 status를 quarantined로 기록한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다. 논문별 출처·라이선스 레지스트리는 `docs/attributions.json`(SSOT) + `docs/ATTRIBUTIONS.md`(공개용) + `docs/attributions.html`(뷰)로 관리하며, `build_attributions.py`가 매 사이클 자동 재생성한다(템플릿 원본은 `docs/templates/`).
