@@ -131,10 +131,10 @@ def _ui(key, ui_lang="en"):
 
 def _language_toggle():
     return (
-        '<input type="radio" name="uilang" id="uilang-ko" class="uilang-radio" checked>'
-        f'<label for="uilang-ko" class="uilang-label">{STR["ko"]["language_ko"]}</label>'
-        '<input type="radio" name="uilang" id="uilang-en" class="uilang-radio">'
+        '<input type="radio" name="uilang" id="uilang-en" class="uilang-radio" checked>'
         f'<label for="uilang-en" class="uilang-label">{STR["en"]["language_en"]}</label>'
+        '<input type="radio" name="uilang" id="uilang-ko" class="uilang-radio">'
+        f'<label for="uilang-ko" class="uilang-label">{STR["ko"]["language_ko"]}</label>'
     )
 
 
