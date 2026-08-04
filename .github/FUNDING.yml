@@ -1,0 +1,13 @@
+# Funding links for no-more-dasi — https://github.com/yelixir-dev/no-more-dasi-eng
+# This file renders the "Sponsor" button on the repository page.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# GitHub Sponsors (organization profile)
+github: [yelixir-dev]
+
+# Korea (domestic) — Toss public payment link. Uncomment and fill in when ready:
+# custom: ["https://toss.me/<TOSS_ID>"]
+
+# International — uncomment and fill in when ready:
+# ko_fi: <KO_FI_NAME>
+# buy_me_a_coffee: <BMC_NAME>
