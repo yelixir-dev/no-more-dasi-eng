@@ -72,11 +72,11 @@ def find_occurrence_spans(text, needle, limit=100):
     return spans
 
 
-def merge_spans(spans):
+def merge_spans(spans, text):
     ordered = sorted(spans)
     merged = []
     for s, e in ordered:
-        if not merged or s > merged[-1][1]:
+        if not merged or (s > merged[-1][1] and text[merged[-1][1]:s].strip() != ""):
             merged.append([s, e])
         else:
             merged[-1][1] = max(merged[-1][1], e)
@@ -170,7 +170,7 @@ def check_coverage(entries, input_text, corrected_text, failures):
     spans = []
     for e in changed:
         spans.extend(find_occurrence_spans(input_text, e["original"]))
-    merged = merge_spans(spans)
+    merged = merge_spans(spans, input_text)
 
     tokens, starts = token_offsets(input_text)
     corr_tokens = corrected_text.split()

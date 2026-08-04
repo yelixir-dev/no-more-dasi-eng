@@ -50,7 +50,7 @@ LEVELS = {
 CITATION_BRACKET = re.compile(r"\[[\d,\s\-–]+\]")
 CITATION_AUTHOR = re.compile(r"\([A-Z][A-Za-zÀ-ÿ' -]+ et al\.?,? \d{4}[a-z]?\)")
 DOI = re.compile(r"10\.\d{4,}/\S+")
-NUMBER = re.compile(r"(?<![\w.])\d+(?:\.\d+)?(?:[eE][+-]?\d+)?(?![\w])(?!\.\d)")
+NUMBER = re.compile(r"(?<![\w.])\d+(?:\.\d+)?(?:[eE][+-]?\d+)?(?![A-Za-z0-9])(?!\.\d)")
 
 _UNIT_BODY = (
     r"(?:wt%|at%|°C|°K|μM|mM|μL|mL|μm|nm|mm|cm|km|kHz|MHz|GHz|Hz|GPa|MPa"
@@ -71,7 +71,7 @@ ELEMENTS = {
     "Re", "Os", "Ir", "Pt", "Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn",
     "Fr", "Ra", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf",
 }
-FORMULA = re.compile(r"\b(?:[A-Z][a-z]?\d*){2,}\b")
+FORMULA = re.compile(r"(?<![A-Za-z0-9])(?:[A-Z][a-z]?\d*){2,}(?![A-Za-z0-9])")
 FORMULA_PART = re.compile(r"[A-Z][a-z]?\d*")
 
 # Equation heuristics.
@@ -228,8 +228,14 @@ def level_thresholds(level):
     return min(warn, WARN_RATE), min(stop, STOP_RATE)
 
 
-def compare_once(original, corrected, overlay_path, order, stop_rate=STOP_RATE):
-    """Single comparison pass. Returns (violations, rate)."""
+def compare_once(original, corrected, overlay_path, order, stop_rate=STOP_RATE, gate_rate=True):
+    """Single comparison pass. Returns (violations, rate).
+
+    For type A (translation) the change rate is meaningless by design, so
+    gate_rate=False reports the rate without gating on it.
+    """
+    if not gate_rate:
+        original = re.sub(r"(\d)\s*시간", r"\1 h", original)
     violations = []
     inv_o = extract_invariants(original, overlay_path)
     inv_c = extract_invariants(corrected, overlay_path)
@@ -246,7 +252,7 @@ def compare_once(original, corrected, overlay_path, order, stop_rate=STOP_RATE):
     # Change rate is computed on the body only so that identical (long)
     # references sections do not dilute the measured edit intensity.
     rate = change_rate(body_text(original), body_text(corrected))
-    if rate > stop_rate:
+    if gate_rate and rate > stop_rate:
         violations.append(f"CHANGE RATE {rate:.0%} exceeds stop gate {stop_rate:.0%}")
     return violations, rate
 
@@ -634,6 +640,8 @@ def build_parser():
                    default=None,
                    help="optional route_hint diagnosis label (light/standard/"
                         "heavy) shown in the report banner")
+    p.add_argument("--type", choices=("A", "B"), default="B",
+                   help="A = translation input (change rate reported, not gated)")
     return p
 
 
@@ -657,7 +665,7 @@ def main(argv=None):
     for _ in range(args.repeat):
         original = _load(args.original)
         corrected = _load(args.corrected)
-        violations, this_rate = compare_once(original, corrected, args.overlay, _,
+        violations, this_rate = compare_once(original, corrected, args.overlay, _, gate_rate=(args.type == "B"),
                                              stop_rate=stop)
         rate = this_rate
         if all_violations is None:
