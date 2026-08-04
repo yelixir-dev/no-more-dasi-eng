@@ -93,7 +93,7 @@ def detect(text, tell_patterns):
         ),
     }
     n_words = max(len(WORD.findall(text)), 1)
-    return {k: v / n_words * 100 for k, v in counts.items()}
+    return counts, n_words
 
 
 def main():
@@ -107,8 +107,13 @@ def main():
         corrected = f.read()
 
     tell_patterns = [phrase_regex(p) for p in load_tell_phrases()]
-    before = detect(original, tell_patterns)
-    after = detect(corrected, tell_patterns)
+    before_raw, orig_words = detect(original, tell_patterns)
+    after_raw, _after_words = detect(corrected, tell_patterns)
+    # Normalize both before and after by the ORIGINAL text's word count so a
+    # correction that legitimately removes words cannot inflate the after-rate.
+    shared = max(orig_words, 1)
+    before = {k: v / shared * 100 for k, v in before_raw.items()}
+    after = {k: v / shared * 100 for k, v in after_raw.items()}
 
     rows = []
     for k in before:
@@ -134,4 +139,9 @@ def main():
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+
     sys.exit(main())
+

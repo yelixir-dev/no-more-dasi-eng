@@ -20,8 +20,8 @@ from section_split import body_text
 WHITELIST = {"DNA", "RNA", "UV"}
 SKIP_WORDS = {"II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "OK", "USA", "OR", "AND", "NOT"}
 
-ACRONYM = re.compile(r"\b([A-Z][A-Z0-9]{1,9})\b")
-DEF_FORWARD = re.compile(r"([A-Za-z][A-Za-z -]{2,60}?) \(([A-Z][A-Za-z0-9]{1,9})\)")
+ACRONYM = re.compile(r"\b([A-Z][A-Za-z0-9]{1,9}%?)(?![A-Za-z0-9])")
+DEF_FORWARD = re.compile(r"([A-Za-z][A-Za-z -]{2,60}?) \(([A-Z][A-Za-z0-9]{1,9}%?)\)")
 DEF_REVERSE = re.compile(r"\b([A-Z][A-Za-z0-9]{1,9}) \(([a-z][A-Za-z -]{2,60})\)")
 CITATION = re.compile(r"\[[\d,\s\-–]+\]|\([A-Z][A-Za-zÀ-ÿ' -]+ et al\.?,? \d{4}[a-z]?\)")
 
@@ -71,4 +71,9 @@ def main():
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+
     sys.exit(main())
+

@@ -213,8 +213,17 @@ class BenchEditTest(unittest.TestCase):
         self.assertIn("after", r.stdout.lower())
 
     def test_regression_fails(self):
-        r = self.bench("This paves the way for devices. " * 12)
+        # Adding a real tell (paves the way) on top of the original's own tells
+        # must still register as a regression even with the fixed shared denominator.
+        r = self.bench(
+            "In recent years, photonics has attracted considerable attention. "
+            "The soliton plays a crucial role in the resonator. "
+            "Figure 2 showed the spectrum. "
+            "This result may possibly suggest a shift. "
+            "The film was deposited. This paves the way for devices. " * 12
+        )
         self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
+        self.assertIn("REGRESSION", r.stdout)
 
 
 class ManuscriptStateTest(unittest.TestCase):
