@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Integrity report</title>
+<style>
+  :root { --ink:#1c2733; --muted:#5b6b80; --rule:#c9d2dd; --paper:#ffffff;
+           --canvas:#f6f8fa; --pass:#1e7e34; --fail:#c6292f;
+           --del-bg:#fdeaea; --ins-bg:#e8f6ec; --del:#c62828; --ins:#1e7e34; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif; background: var(--canvas); color: var(--ink);
+          margin: 0; line-height: 1.55; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 32px 96px; }
+  .kicker { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+            color: var(--muted); margin: 0 0 8px; }
+  h1 { font-size: 1.45rem; font-weight: 650; margin: 0 0 4px; }
+  .banner { display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+            background: var(--paper); border: 1px solid var(--rule); border-left: 6px solid #1e7e34;
+            border-radius: 6px; padding: 20px 24px; margin: 22px 0 30px; }
+  .badge { background: #1e7e34; color: #fff; font-weight: 700;
+           font-size: 1.05rem; letter-spacing: 0.03em; padding: 6px 14px;
+           border-radius: 20px; }
+  .banner .stats { display: flex; gap: 8px 22px; flex-wrap: wrap; font-size: 0.9rem; }
+  .stat b { font-weight: 650; }
+  .pill { background: var(--ink); color: #fff; border-radius: 12px;
+          font-size: 0.72rem; padding: 2px 10px; letter-spacing: 0.04em; }
+  .card { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px;
+          padding: 20px 24px; margin: 0 0 26px; }
+  .card h2 { font-size: 0.95rem; font-weight: 700; margin: 0 0 12px;
+             letter-spacing: 0.02em; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.84rem;
+          font-variant-numeric: tabular-nums; }
+  th { border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink);
+        text-align: left; padding: 7px 12px 7px 0; font-weight: 650;
+        font-size: 0.74rem; letter-spacing: 0.04em; }
+  td { padding: 6px 12px 6px 0; border-bottom: 1px solid var(--rule); }
+  td.num { text-align: right; }
+  ul { margin: 0; padding-left: 20px; }
+  li.vio { font-size: 0.84rem; margin: 3px 0; }
+  .meta { color: var(--muted); font-size: 0.8rem; }
+  details.section { background: var(--paper); border: 1px solid var(--rule);
+                    border-radius: 6px; margin: 0 0 12px; }
+  details.section > summary { cursor: pointer; padding: 12px 16px;
+            font-size: 0.86rem; font-weight: 650; list-style: none;
+            display: flex; align-items: center; gap: 10px; }
+  details.section > summary::-webkit-details-marker { display: none; }
+  .mark { border-radius: 3px; font-size: 0.66rem; font-weight: 700;
+          padding: 2px 8px; letter-spacing: 0.05em; text-transform: uppercase; }
+  details.changed > summary .mark { background: var(--ins-bg); color: var(--ins); }
+  details.unchanged > summary .mark { background: var(--canvas); color: var(--muted); }
+  .role { color: var(--muted); font-weight: 600; font-size: 0.74rem;
+          border: 1px solid var(--rule); border-radius: 3px; padding: 1px 8px;
+          text-transform: uppercase; letter-spacing: 0.05em; }
+  .diff { padding: 4px 16px 14px; font-family: Georgia, "Times New Roman", serif;
+          font-size: 1.02rem; line-height: 1.75; max-width: 76ch; }
+  .line { margin: 6px 0; }
+  .line.changed { white-space: normal; word-wrap: break-word; }
+  del { color: var(--del); background: var(--del-bg); text-decoration: line-through; }
+  ins { color: var(--ins); background: var(--ins-bg); text-decoration: underline; }
+  .line.removed { color: var(--del); background: var(--del-bg); }
+  .line.added { color: var(--ins); background: var(--ins-bg); }
+  .line.removed del, .line.added ins { background: transparent; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">nomoredasi · fidelity gate</p>
+  <h1>Manuscript integrity report</h1>
+
+  <div class="banner">
+    <span class="badge">Integrity gate: PASS</span>
+    <div class="stats">
+      <span class="stat">change rate: 5%</span>
+      <span class="stat">level: mid</span>
+      
+      <span class="stat">repeat: 2/2</span>
+    </div>
+    <p class="meta">repeated comparison: 2/2 passes</p>
+  </div>
+
+  <div class="card">
+    <h2>Invariant categories</h2>
+    <table>
+      <tr><th>category</th><th>original</th><th>corrected</th>
+          <th>missing</th><th>invented</th></tr>
+      <tr><td><code>number</code></td><td class="num">49</td><td class="num">49</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>quantity</code></td><td class="num">49</td><td class="num">49</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>citation</code></td><td class="num">2</td><td class="num">2</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>formula</code></td><td class="num">12</td><td class="num">12</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>doi</code></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr><tr><td><code>equation</code></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Violations</h2>
+    <ul><li class="vio">none</li></ul>
+  </div>
+
+  <h2>Rationale journal</h2><h3>Changed</h3><table><tr><th>original</th><th>rule</th><th>reason</th></tr><tr><td>plays a crucial role in enhancing the transparency of TiO2 thin films, paves the way for their use in transparent optoelectronic </td><td><code>plays a crucial role</code><span class="meta"> (references/core/ai-tell-en.md)</span></td><td>remove AI-tell pair (mid budget allows style edits)</td></tr><tr><td>devices, and is a low-cost route to reproducible film quality. </td><td><code>plays a crucial role</code><span class="meta"> (references/core/ai-tell-en.md)</span></td><td>trim tell-adjacent filler (mid budget)</td></tr><tr><td>In recent years, TiO2 thin films have attracted considerable attention because of their wide optical band gap, high refractive index, and excellent chemical sta… <details><summary>full span</summary><pre>In recent years, TiO2 thin films have attracted considerable attention because of their wide optical band gap, high refractive index, and excellent chemical stability.</pre></details></td><td><code>In recent years</code><span class="meta"> (references/core/ai-tell-en.md)</span></td><td>remove AI-tell opener</td></tr><tr><td>It is well known that the optical properties of TiO2 depend strongly </td><td><code>It is well known</code><span class="meta"> (references/core/ai-tell-en.md)</span></td><td>remove AI-tell hedge opener</td></tr><tr><td>can introduce sub-bandgap absorption that degrades the visible transmittance </td><td><code>band gap</code><span class="meta"> (references/overlays/Optics and photonics.md)</span></td><td>compound &#x27;sub-bandgap&#x27; reworded to keep notation consistent (gate finding)</td></tr><tr><td>These sub-bandgap states act as mid-gap recombination centres </td><td><code>band gap</code><span class="meta"> (references/overlays/Optics and photonics.md)</span></td><td>same compound cleanup</td></tr><tr><td>very few studies report the bandgap under a fully controlled oxygen flow </td><td><code>band gap</code><span class="meta"> (references/overlays/Optics and photonics.md)</span></td><td>notation unified to the document-majority form &#x27;band gap&#x27; (9:5)</td></tr><tr><td>the PCE of the annealed films was evaluated </td><td><code>R2.1</code><span class="meta"> (references/core/academic-en.md)</span></td><td>define acronym at first use (PCE was undefined)</td></tr><tr><td>Figure 2 showed the extracted Tauc plots </td><td><code>R3.4</code><span class="meta"> (references/core/academic-en.md)</span></td><td>figure references take the present tense</td></tr><tr><td>the oxygen-annealed film gave a bandgap of 3.18 eV </td><td><code>band gap</code><span class="meta"> (references/overlays/Optics and photonics.md)</span></td><td>notation unified to &#x27;band gap&#x27;</td></tr><tr><td>The sharp increase in the optical bandgap together with </td><td><code>band gap</code><span class="meta"> (references/overlays/Optics and photonics.md)</span></td><td>notation unified to &#x27;band gap&#x27;</td></tr><tr><td>may have a different effect on a TiO2 film deposited by radio-frequency sputtering </td><td><code>R2.3</code><span class="meta"> (references/core/academic-en.md)</span></td><td>generic reference takes the indefinite/plural form, not the definite singular</td></tr><tr><td>This proves that oxygen annealing completely eliminates all structural and stoichiometric defects in titanium dioxide films. </td><td><code>R5.1</code><span class="meta"> (references/core/academic-en.md)</span></td><td>remove overclaim (&#x27;proves&#x27;, &#x27;completely eliminates all&#x27;) — evidence cannot support it</td></tr></table><h3>Kept</h3><table><tr><th>original</th><th>rule</th><th>reason</th></tr><tr><td>The films also exhibited an improved refractive index of 2.38. </td><td><span class="meta">—</span></td><td>dedup candidate, but deletion would drop a &#x27;2.38&#x27; number instance — blocked by integrity invariant (numbers preserved as multiset); kept</td></tr></table>
+
+  <div class="card">
+    <h2>Section diff</h2>
+    <details class="section unchanged"><summary><span class="mark">unchanged</span>(frontmatter) <span class="role">frontmatter</span></summary><div class="diff"><div class="line">Effect of Oxygen-Atmosphere Annealing on the Optical Properties of TiO2 Thin Films</div></div></details><details open class="section changed"><summary><span class="mark">diff</span>Abstract <span class="role">abstract</span></summary><div class="diff"><div class="line changed">Amorphous titanium dioxide (TiO2) thin films were deposited by electron-beam evaporation and subsequently annealed at 623 K in both air and pure oxygen atmospheres. The effect of the annealing ambient on the structural and optical behaviour of the films was investigated. Transmittance increased to 92.4 % at 550 nm after oxygen annealing, while the optical band gap widened to 3.18 eV. The refractive index at 550 nm was measured as 2.38. These results indicate that oxygen-atmosphere annealing <del>plays a crucial role in enhancing</del> the transparency of TiO2 thin <del>films, paves the way for</del> their use in transparent optoelectronic <del>devices, and is a low-cost route to reproducible film quality.</del> The films also exhibited an improved refractive index of 2.38.</div></div></details><details open class="section changed"><summary><span class="mark">diff</span>Introduction <span class="role">introduction</span></summary><div class="diff"><div class="line changed"><del>In recent years,</del> TiO2 thin films <del>have attracted considerable attention</del> because of their wide optical band gap, high refractive index, and excellent chemical stability. The material is widely employed in antireflection coatings, optical filters, and photocatalytic applications. <del>It is well known that the</del> optical properties of TiO2 depend strongly on the deposition technique and on the post-deposition processing conditions. In particular, the stoichiometry and the crystalline phase of the film determine both the band gap and the transmittance, and small deviations from ideal stoichiometry can introduce <del>sub-bandgap</del> absorption <ins>below the band gap</ins> that degrades the visible transmittance [7]. These <del>sub-bandgap</del> states <ins>below the band gap</ins> act as mid-gap recombination centres and reduce the effective optical transmission.</div><div class="line"></div><div class="line changed">Annealing in an oxygen-rich atmosphere is commonly used to restore the stoichiometry of the films and to promote the transition from the amorphous to the anatase phase. However, a systematic comparison of air and pure oxygen ambients, at a fixed temperature and for identical film thickness, remains comparatively scarce; indeed, very few studies report the <del>bandgap</del> under a fully controlled oxygen flow. In this work we examine how the annealing atmosphere influences the band gap, the transmittance, and the refractive index of TiO2 films with a nominal thickness of 120 nm.</div></div></details><details open class="section changed"><summary><span class="mark">diff</span>Methods <span class="role">methods</span></summary><div class="diff"><div class="line">TiO2 films were deposited onto quartz substrates by electron-beam evaporation from a rutile source. The base pressure of the deposition chamber was below 3 x 10-4 Pa, and the substrate temperature was held at room temperature during deposition. All films were deposited to a nominal thickness of 120 nm and the actual thickness was checked ex-situ by spectroscopic ellipsometry. The measured refractive index of the as-deposited films was 2.38 at 550 nm.</div><div class="line"></div><div class="line changed">After deposition, one set of samples was annealed in air and another set was annealed in a pure oxygen flow for 60 minutes. Both sets were annealed at 623 K with a heating and cooling ramp of 5 K min-1. Transmittance spectra were collected over the range 350-900 nm using a double-beam spectrophotometer, and the optical band gap was extracted from Tauc plots assuming an allowed indirect transition. The amorphous-to-anatase transformation was monitored by X-ray diffraction, and the <del>PCE</del> of the annealed films was evaluated from the refractive index and thickness dispersion. The PCE was derived following the standard envelope analysis of the interference fringes. All measurements were performed at room temperature in ambient air; the PCE of the air-annealed reference films was used as a baseline to normalise the oxygen-annealed results, and the PCE of each oxygen-annealed sample was then compared against this baseline.</div></div></details><details open class="section changed"><summary><span class="mark">diff</span>Results <span class="role">results</span></summary><div class="diff"><div class="line changed">Figure 1 shows the transmittance spectra of the as-deposited, air-annealed, and oxygen-annealed films. The as-deposited film exhibited a transmittance below 80 % across most of the visible range, owing to residual sub-stoichiometry. After air annealing the transmittance increased modestly, whereas after oxygen annealing the transmittance rose to 92.4 % at 550 nm. Figure 2 <del>showed</del> the extracted Tauc plots, from which the optical band gap was determined; the oxygen-annealed film gave a <del>bandgap</del> of 3.18 eV, compared with 3.05 eV for the as-deposited film and 3.11 eV for the air-annealed film.</div><div class="line"></div><div class="line changed">The refractive index of the oxygen-annealed films remained 2.38 at 550 nm, consistent with the as-deposited value, while the film thickness was essentially unchanged at approximately 120 nm. The sharp increase in the optical <del>bandgap</del> together with the high transmittance suggests that oxygen annealing fully compensates the oxygen vacancies introduced during evaporation. In addition, the measured refractive index of 2.38 confirms that the TiO2 film remains dense after annealing, although the same annealing conditions may have a different effect on <del>a</del> TiO2 <del>film</del> deposited by radio-frequency sputtering. The enhanced transparency was stable between 400 and 700 nm, with no significant degradation of the anti-reflection properties over the measured range.</div></div></details><details open class="section changed"><summary><span class="mark">diff</span>Conclusion <span class="role">conclusion</span></summary><div class="diff"><div class="line changed">Oxygen-atmosphere annealing at 623 K improved the visible transmittance of TiO2 thin films to 92.4 % at 550 nm and widened the optical band gap to 3.18 eV, while the refractive index was maintained at 2.38. This <del>proves</del> that oxygen annealing <del>completely eliminates all structural and</del> stoichiometric defects in titanium dioxide films. The combination of a high transmittance, a wide band gap, and a stable refractive index of 2.38 makes oxygen-annealed TiO2 a promising candidate for transparent optoelectronic and antireflective applications. Future work will examine the thickness dependence of the optical properties using this same 120 nm baseline.</div></div></details><details class="section unchanged"><summary><span class="mark">unchanged</span>References <span class="role">references</span></summary><div class="diff"><div class="line">[7] R. Rodriguez et al., &quot;Optical band gap engineering in TiO2 films,&quot; Applied Optics, vol. 58, pp. 4200-4207, 2019.</div></div></details>
+  </div>
+</div>
+</body>
+</html>
