@@ -26,9 +26,9 @@
 
 | Field | Papers | Score |
 | --- | ---: | ---: |
+| Chemistry (major) | 70 | 96.7 |
+| Optics and photonics (major) | 89 | 95.6 |
 | Physics (major) | 100 | 95.0 |
-| Optics and photonics (major) | 80 | 91.2 |
-| Chemistry (major) | 44 | 83.0 |
 | Biophysics (major) | 5 | 54.9 |
 | Biotechnology (major) | 5 | 50.6 |
 | Microbiology (major) | 5 | 50.2 |

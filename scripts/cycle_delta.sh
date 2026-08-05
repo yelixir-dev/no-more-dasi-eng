@@ -55,7 +55,6 @@ DATA_PATHS=(
     "README.md"
     "README.ko.md"
     "docs/assets/readiness-chart.svg"
-    "logs"
 )
 VERIFY_GREEN=0
 

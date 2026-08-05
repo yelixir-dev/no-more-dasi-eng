@@ -3143,6 +3143,601 @@
   },
   {
    "record_id": "ART-0072",
+   "relative_pdf_path": "Chemistry/s41467-026-74130-9.pdf",
+   "title": "FLOWR.ROOT – A flow matching-based foundation model for joint multi-purpose structure-aware 3D ligand generation and affinity prediction",
+   "authors": [
+    "Julian Cremer",
+    "Tuan Le",
+    "Mohammad M. Ghahremanpour",
+    "Emilia Sługocka",
+    "Filipe Menezes",
+    "Djork-Arné Clevert"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74130-9",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74130-9",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T07:28:18+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "dd318551c5612f3637b2f457bc5a3dbe0d849f9c",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0073",
+   "relative_pdf_path": "Chemistry/s41467-026-74148-z.pdf",
+   "title": "Toughening elastomer via sequentially activated multi-pathway energy dissipation",
+   "authors": [
+    "Xue Li",
+    "Chunlin Xiao",
+    "Haruki Izutsu",
+    "Osamu Urakawa",
+    "Tadashi Inoue",
+    "Yuichiro Kobayashi",
+    "Hiroyasu Yamaguchi"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74148-z",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74148-z",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T08:05:28+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "a74d3c500ee58f37f43e6538d346b39dfdb25e4f",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0074",
+   "relative_pdf_path": "Chemistry/s41467-026-74160-3.pdf",
+   "title": "Designing and mapping cascade catalysis pathway for balanced polysulfide conversion in Li-S batteries",
+   "authors": [
+    "Leyuan Zhang",
+    "Dongfang Cheng",
+    "Pu Zhang",
+    "David G. Hopkinson",
+    "Zhaozong Wang",
+    "Ao Zhang",
+    "Chen Li",
+    "Ran Wang",
+    "Rongli Liu",
+    "Christopher S. Allen",
+    "Johanna Nelson Weker",
+    "Yu Huang",
+    "Philippe Sautet",
+    "Xiangfeng Duan"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74160-3",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74160-3",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T07:52:39+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "daecdb2fde7a45921cb564b55ea39fa5a923f87b",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0075",
+   "relative_pdf_path": "Chemistry/s41467-026-74245-z.pdf",
+   "title": "Assembly-Line Biosynthesis in Living-Cell Emulsions via Tunable Supramolecular Surface Chemistry",
+   "authors": [
+    "Xiankun Wu",
+    "Mathias Dimde",
+    "Henrik Karring",
+    "Zhongkai Wang",
+    "Changzhu Wu"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74245-z",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74245-z",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T10:31:00+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "47a013ce1e5030d15e306d08d13ae5acafc4b510",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0076",
+   "relative_pdf_path": "Chemistry/s41467-026-74383-4.pdf",
+   "title": "Molecular basis for depsipeptide HDAC inhibitor combinatorial biosynthesis",
+   "authors": [
+    "Munro Passmore",
+    "Xinyun Jian",
+    "Xinyi Zhao",
+    "Emmanuel L. C. de los Santos",
+    "Douglas M. Roberts",
+    "Józef R. Lewandowski",
+    "Matthew Jenner",
+    "Lona M. Alkhalaf",
+    "Gregory L. Challis"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74383-4",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74383-4",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T08:25:09+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "d6e5ec780be7bc634f1145d2f41dfd6a0baef0a7",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0077",
+   "relative_pdf_path": "Chemistry/s41467-026-74403-3.pdf",
+   "title": "Field-induced non-linear magnetic responses of all-metal Jellium σ-aromats",
+   "authors": [
+    "Xinglan Deng",
+    "John A. Seed",
+    "Josef Tomeček",
+    "Adam Brookfield",
+    "Floriana Tuna",
+    "Benjamin L. L. Réant",
+    "Ashley J. Wooles",
+    "Nikolas Kaltsoyannis",
+    "Stephen T. Liddle"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74403-3",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74403-3",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T09:09:01+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "45254346c8161167c9900a11d9d514ba0d4eb502",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0078",
+   "relative_pdf_path": "Chemistry/s41467-026-74405-1.pdf",
+   "title": "Hydroxyl-rich nanocavities on perovskite enable nearly barrierless intramolecular hydrogen transfer for nitrate electroreduction to ammonia",
+   "authors": [
+    "Mingkai Xu",
+    "Ruizhao Wang",
+    "Zaixing Wang",
+    "Zheng Tang",
+    "Wei-Hsiang Huang",
+    "Wang Tan",
+    "Lingjie Yuan",
+    "Huanhuan Tao",
+    "Zhongliang Dong",
+    "Min-Hsin Yeh",
+    "Chih-Wen Pao",
+    "Jun Yin",
+    "Zhiwei Hu",
+    "Jie Dai",
+    "Yinlong Zhu"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74405-1",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74405-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T08:53:48+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "bc1115710cbbf195c80111da09d65706aaa9e91c",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0079",
+   "relative_pdf_path": "Chemistry/s41467-026-74502-1.pdf",
+   "title": "Mechanistic insights into chemical exchange during the signal amplification by reversible exchange sensitization of pyruvate",
+   "authors": [
+    "Charbel D. Assaf",
+    "Vladimir V. Zhivonitko",
+    "Amaia Vicario",
+    "Alexander A. Auer",
+    "Simon B. Duckett",
+    "Jan-Bernd Hövener",
+    "Andrey N. Pravdivtsev"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74502-1",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74502-1",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T10:20:43+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "73040fadd8261396b45f4873f1f5c01b0be4b542",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0080",
+   "relative_pdf_path": "Chemistry/s41467-026-74714-5.pdf",
+   "title": "Trifunctional electrocatalyst with accurate surface reconstruction for zinc-air batteries and water electrolyzers",
+   "authors": [
+    "Lingjie Yuan",
+    "Wei-Hsiang Huang",
+    "Zheng Tang",
+    "Su-Yang Hsu",
+    "Yalei Fan",
+    "Beibei Wang",
+    "Mingkai Xu",
+    "Tsung-Yi Chen",
+    "Min-Hsin Yeh",
+    "Jin-Ming Chen",
+    "Zhiwei Hu",
+    "Yinlong Zhu"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74714-5",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74714-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T10:54:20+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "516dcc6f6186ecdb2b9a2f084d99755095ebc98a",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0081",
+   "relative_pdf_path": "Chemistry/s41467-026-74878-0.pdf",
+   "title": "Bubble-assisted cleaning for primary amine oxidation towards ampere-level current densities",
+   "authors": [
+    "Xichang Lin",
+    "Bo Li",
+    "Yisong Li",
+    "Anuj Kumar",
+    "Bin Ding",
+    "Jiazhong Wu",
+    "Liang Luo",
+    "Xiaoming Sun"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74878-0",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74878-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T10:09:11+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "8fcf80211132f8332bd0f271f63ab203914d5d02",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0082",
+   "relative_pdf_path": "Chemistry/s41467-026-74887-z.pdf",
+   "title": "Elimination of detrimental grain boundary segregation in Garnets",
+   "authors": [
+    "Kai Yao",
+    "Kwangnam Kim",
+    "Dylan Jennings",
+    "Jan Dippell",
+    "Lei Jin",
+    "Meng Ma",
+    "Xingyu Liu",
+    "Qianli Ma",
+    "Walter Sebastian Scheld",
+    "Christoph Roitzheim",
+    "Yuan Zeng",
+    "Timo Danner",
+    "Olivier Guillon",
+    "Mark Huijben",
+    "Johan E. ten Elshof",
+    "Liwen F. Wan",
+    "Arnulf Latz",
+    "Brandon C. Wood",
+    "Martin Finsterbusch",
+    "Dina Fattakhova-Rohlfing"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74887-z",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74887-z",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T09:22:54+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "adaac3fd387b89131de21866b20615b713586362",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0083",
+   "relative_pdf_path": "Chemistry/s41467-026-74983-0.pdf",
+   "title": "Deep residual learning for molecular force fields",
+   "authors": [
+    "Xinyu Jiang",
+    "Mingan Chen",
+    "Chuanlong Zeng",
+    "Duanhua Cao",
+    "Jie Yu",
+    "Runze Zhang",
+    "Zunyun Fu",
+    "Zhehuan Fan",
+    "Jiacheng Xiong",
+    "Xutong Li",
+    "Xiaomin Luo",
+    "Dan Teng",
+    "Mingyue Zheng"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-74983-0",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74983-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T08:35:44+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "5b5d5251b82781524f8235acebe41392ee7334c1",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0084",
+   "relative_pdf_path": "Chemistry/s41467-026-75005-9.pdf",
+   "title": "Enhancing molecular property prediction of transformer models with dual graph representation",
+   "authors": [
+    "Shuyuan Zhang",
+    "Alexei A. Lapkin"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-75005-9",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-75005-9",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T09:50:19+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "cd1b8d806f08efa786d937d555a64e9b95197581",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0085",
    "relative_pdf_path": "Chemistry/s41467-026-75108-3.pdf",
    "title": "A triboelectric radical generation route to chlorine disinfectants from brine",
    "authors": [
@@ -3191,7 +3786,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0073",
+   "record_id": "ART-0086",
    "relative_pdf_path": "Chemistry/s41467-026-75110-9.pdf",
    "title": "Assessing hypochlorite selectivity of corrosion resistance catalysts for alkaline seawater splitting",
    "authors": [
@@ -3235,7 +3830,46 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0074",
+   "record_id": "ART-0087",
+   "relative_pdf_path": "Chemistry/s41467-026-75146-x.pdf",
+   "title": "Dielectric-dependent hybrid functional based on meta-GGA",
+   "authors": [
+    "Stefan Riemelmoser",
+    "Xun Xu",
+    "Alfredo Pasquarello"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Chemistry",
+   "doi": "10.1038/s41467-026-75146-x",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-75146-x",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T07:41:20+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "6a782e4ff9cbccb6adf7041869d20039057700a4",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0088",
    "relative_pdf_path": "Chemistry/s41467-026-75192-5.pdf",
    "title": "Hydroxy acid conjugation to lipids increases structural and hydrolytic stability",
    "authors": [
@@ -3275,7 +3909,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0075",
+   "record_id": "ART-0089",
    "relative_pdf_path": "Chemistry/s41467-026-75223-1.pdf",
    "title": "Activating in-plane dead zones of anode catalyst layers in proton exchange membrane water electrolyzers",
    "authors": [
@@ -3319,7 +3953,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0076",
+   "record_id": "ART-0090",
    "relative_pdf_path": "Chemistry/s41467-026-75247-7.pdf",
    "title": "Organic planar π-conjugated anions enable structural design of anion-π+ NIR-II phototheranostic agents",
    "authors": [
@@ -3364,7 +3998,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0077",
+   "record_id": "ART-0091",
    "relative_pdf_path": "Chemistry/s41467-026-75356-3.pdf",
    "title": "A NIR fluorotag reporter CETIF6a enables bright pan-tumor labeling and functional proteomic profiling",
    "authors": [
@@ -3409,7 +4043,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0078",
+   "record_id": "ART-0092",
    "relative_pdf_path": "Chemistry/s41467-026-75358-1.pdf",
    "title": "Thermodynamically programmed one-pot CRISPR platform for point-of-care SNP genotyping",
    "authors": [
@@ -3454,7 +4088,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0079",
+   "record_id": "ART-0093",
    "relative_pdf_path": "Chemistry/s41467-026-75368-z.pdf",
    "title": "Alignment switching in 3D-printed smectic liquid crystal elastomers",
    "authors": [
@@ -3499,7 +4133,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0080",
+   "record_id": "ART-0094",
    "relative_pdf_path": "Chemistry/s41467-026-75381-2.pdf",
    "title": "Red electroluminescent Cu4I4 bipyramids with external quantum efficiency beyond 40%",
    "authors": [
@@ -3544,7 +4178,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0081",
+   "record_id": "ART-0095",
    "relative_pdf_path": "Chemistry/s41467-026-75612-6.pdf",
    "title": "Finite-temperature toroidal moment amenable to direct observation in an Fe10Dy10 molecular ring",
    "authors": [
@@ -3591,7 +4225,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0082",
+   "record_id": "ART-0096",
    "relative_pdf_path": "Chemistry/s41467-026-75613-5.pdf",
    "title": "High-yield visible-to-ultraviolet upconversion by ZnSe quantum dots with dynamic triplet transfer",
    "authors": [
@@ -3635,7 +4269,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0083",
+   "record_id": "ART-0097",
    "relative_pdf_path": "Chemistry/s41467-026-75614-4.pdf",
    "title": "Modulating nonequilibrium electron–phonon interactions and energy relaxation in MXenes by surface-anchored Mo3S7 nanoclusters",
    "authors": [
@@ -3692,7 +4326,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0084",
+   "record_id": "ART-0098",
    "relative_pdf_path": "Chemistry/s41467-026-75654-w.pdf",
    "title": "Flow matching for reaction pathway generation",
    "authors": [
@@ -3731,7 +4365,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0085",
+   "record_id": "ART-0099",
    "relative_pdf_path": "Chemistry/s41467-026-75657-7.pdf",
    "title": "Structural and spectroscopic characterization of a Tb(IV) polyoxometalate",
    "authors": [
@@ -3786,7 +4420,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0086",
+   "record_id": "ART-0100",
    "relative_pdf_path": "Chemistry/s41467-026-75685-3.pdf",
    "title": "Interfacial chemistry governs nanoparticle self-sorting during biomimetic crystallization",
    "authors": [
@@ -3833,7 +4467,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0087",
+   "record_id": "ART-0101",
    "relative_pdf_path": "Chemistry/s41467-026-75782-3.pdf",
    "title": "Few-femtosecond photoelectron spectroscopy reveals fundamental photodynamics of the carbon-carbon double bond in ethylene",
    "authors": [
@@ -3880,7 +4514,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0088",
+   "record_id": "ART-0102",
    "relative_pdf_path": "Chemistry/s41467-026-75888-8.pdf",
    "title": "Halochromic modulation of amorphous calcium carbonate crystallization driven by pH-responsive bioinspired pigments",
    "authors": [
@@ -3934,7 +4568,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0089",
+   "record_id": "ART-0103",
    "relative_pdf_path": "Chemistry/s41467-026-75926-5.pdf",
    "title": "Single-atom-engineered perovskite enables near-theoretical-rate hydroxyl radical electrogeneration",
    "authors": [
@@ -3986,7 +4620,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0090",
+   "record_id": "ART-0104",
    "relative_pdf_path": "Chemistry/s41467-026-75992-9.pdf",
    "title": "Substituent-rebound skeletal editing for precise boron-to-carbon single-atom swapping",
    "authors": [
@@ -4027,7 +4661,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0091",
+   "record_id": "ART-0105",
    "relative_pdf_path": "Chemistry/s41467-026-75999-2.pdf",
    "title": "Nonmonotonic Screening and Solvation Dynamics of the Electrical Double Layer in Concentrated Lithium Salt Electrolytes",
    "authors": [
@@ -4075,7 +4709,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0092",
+   "record_id": "ART-0106",
    "relative_pdf_path": "Chemistry/s41467-026-76022-4.pdf",
    "title": "Metal pre-intercalation promotes water-mediated proton-coupled electron transfer in layered δ-MnO2 for aqueous pseudocapacitive energy storage",
    "authors": [
@@ -4124,7 +4758,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0093",
+   "record_id": "ART-0107",
    "relative_pdf_path": "Chemistry/s41467-026-76059-5.pdf",
    "title": "Bifacial ladder polymers enabled by chirality-assisted synthesis that exhibit self-assembly and chirality-induced spin selectivity",
    "authors": [
@@ -4163,7 +4797,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0094",
+   "record_id": "ART-0108",
    "relative_pdf_path": "Chemistry/s41467-026-76066-6.pdf",
    "title": "Metal-mediated weak adsorption enables the selective electrosynthesis of N-phenylhydroxylamine from nitrobenzene hydrogenation in water",
    "authors": [
@@ -4204,7 +4838,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0095",
+   "record_id": "ART-0109",
    "relative_pdf_path": "Chemistry/s41467-026-76124-z.pdf",
    "title": "Bis(trifluoromethylthio)carbene as a toolbox for versatile carbene transformations",
    "authors": [
@@ -4245,7 +4879,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0096",
+   "record_id": "ART-0110",
    "relative_pdf_path": "Chemistry/s41467-026-76150-x.pdf",
    "title": "Decarboxylative epoxidation of carboxylic acids for accelerating synthesis of oxiranes and derivatives",
    "authors": [
@@ -4291,7 +4925,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0097",
+   "record_id": "ART-0111",
    "relative_pdf_path": "Chemistry/s41467-026-76165-4.pdf",
    "title": "Ionic weaving network enables mechanically robust smart hydrogels with anti-swelling and anti-freezing capabilities",
    "authors": [
@@ -4336,7 +4970,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0098",
+   "record_id": "ART-0112",
    "relative_pdf_path": "Chemistry/s41467-026-76177-0.pdf",
    "title": "Efficient molecular motors in liquid crystal networks enable the integration of fluorescence with large opto-mechanical effects",
    "authors": [
@@ -4376,7 +5010,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0099",
+   "record_id": "ART-0113",
    "relative_pdf_path": "Chemistry/s41467-026-76198-9.pdf",
    "title": "Plastron-mediated direct H2O2 synthesis",
    "authors": [
@@ -4421,7 +5055,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0100",
+   "record_id": "ART-0114",
    "relative_pdf_path": "Chemistry/s41467-026-76238-4.pdf",
    "title": "Skeletal restructuring of oxetanes through photoinduced oxygen deletion",
    "authors": [
@@ -4460,7 +5094,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0101",
+   "record_id": "ART-0115",
    "relative_pdf_path": "Chemistry/s41598-026-36303-w.pdf",
    "title": "Continuous thermodynamics approach for hydrogen solubility prediction",
    "authors": [
@@ -4503,7 +5137,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0102",
+   "record_id": "ART-0116",
    "relative_pdf_path": "Chemistry/s41598-026-58633-5.pdf",
    "title": "On the Sombor index of corona product of certain graphs and honeycomb networks",
    "authors": [
@@ -4544,7 +5178,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0103",
+   "record_id": "ART-0117",
    "relative_pdf_path": "Chemistry/s41598-026-59561-0.pdf",
    "title": "Hibiscus derived nitrogen doped carbon nanochains for visual pH sensing and catalytic methyl orange degradation",
    "authors": [
@@ -4581,7 +5215,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0104",
+   "record_id": "ART-0118",
    "relative_pdf_path": "Chemistry/s41598-026-60824-z.pdf",
    "title": "Novel delafossite structured visible-light sensitive AgFeO2/PPAC nanocomposite for efficient adsorptive photocatalytic degradation of cationic and anionic dyes",
    "authors": [
@@ -4620,7 +5254,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0105",
+   "record_id": "ART-0119",
    "relative_pdf_path": "Chemistry/s41598-026-60865-4.pdf",
    "title": "Steric control of copper nuclearity in sulfur ligated oxidase mimics alters catechol and phenoxazinone oxidation",
    "authors": [
@@ -4662,7 +5296,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0106",
+   "record_id": "ART-0120",
    "relative_pdf_path": "Chemistry/s41598-026-60921-z.pdf",
    "title": "Sampling strategies for enhancing the analytical performance of a hybrid spectroscopy platform in biomedical applications",
    "authors": [
@@ -4704,7 +5338,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0107",
+   "record_id": "ART-0121",
    "relative_pdf_path": "Chemistry/s41598-026-60975-z.pdf",
    "title": "A two-stage hierarchical support vector machine framework detects roasted coffee adulterants through principal component analysis of hyperspectral imaging data",
    "authors": [
@@ -4745,7 +5379,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0108",
+   "record_id": "ART-0122",
    "relative_pdf_path": "Chemistry/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -4789,7 +5423,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0109",
+   "record_id": "ART-0123",
    "relative_pdf_path": "Chemistry/s41598-026-62276-x.pdf",
    "title": "Dyeing performance of Lawsonia inermis leaf extract on mulberry silk fibre: effect of cocoon stifling and mordanting method",
    "authors": [
@@ -4828,7 +5462,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0110",
+   "record_id": "ART-0124",
    "relative_pdf_path": "Chemistry/s41598-026-62285-w.pdf",
    "title": "Multi-physical pretreatments combined with hot-air drying affect pesticide residues and quality of jasmine tea",
    "authors": [
@@ -4873,7 +5507,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0111",
+   "record_id": "ART-0125",
    "relative_pdf_path": "Chemistry/s41598-026-62632-x.pdf",
    "title": "Recovery of rare earth elements from european coal mining waste",
    "authors": [
@@ -4914,7 +5548,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0112",
+   "record_id": "ART-0126",
    "relative_pdf_path": "Chemistry/s41598-026-63442-x.pdf",
    "title": "Aluminum phosphate-modified red clay as a stable nanocomposite catalyst for the selective conversion of methanol to dimethyl ether",
    "authors": [
@@ -4955,7 +5589,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0113",
+   "record_id": "ART-0127",
    "relative_pdf_path": "Chemistry/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -5003,7 +5637,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0114",
+   "record_id": "ART-0128",
    "relative_pdf_path": "Chemistry/s41598-026-63896-z.pdf",
    "title": "The effect of green carbon Dots/Titanium dioxide for photocatalytic reduction of CO2",
    "authors": [
@@ -5044,7 +5678,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0115",
+   "record_id": "ART-0129",
    "relative_pdf_path": "Chemistry/s41598-026-64017-6.pdf",
    "title": "Computational exploration of urethane formation in the presence of amine catalysts",
    "authors": [
@@ -5085,7 +5719,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0116",
+   "record_id": "ART-0130",
    "relative_pdf_path": "Chemistry/s41598-026-64174-8.pdf",
    "title": "Domain-generalized representation learning for cross-chemical-family toxicity prediction",
    "authors": [
@@ -5124,7 +5758,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0117",
+   "record_id": "ART-0131",
    "relative_pdf_path": "Chemistry/s41598-026-64217-0.pdf",
    "title": "Microstructure-driven description of drug release in tablets containing solid dispersions",
    "authors": [
@@ -5165,7 +5799,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0118",
+   "record_id": "ART-0132",
    "relative_pdf_path": "Chemistry/s41598-026-64375-1.pdf",
    "title": "Comprehensive characterization of lithium carbonates recovered from different spent lithium-ion batteries black masses",
    "authors": [
@@ -5205,7 +5839,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0119",
+   "record_id": "ART-0133",
    "relative_pdf_path": "Chemistry/s41598-026-64423-w.pdf",
    "title": "Thermodynamic and mechanical evaluation of moisture susceptibility in asphalt mixtures modified with aminated recycled PVC",
    "authors": [
@@ -5244,7 +5878,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0120",
+   "record_id": "ART-0134",
    "relative_pdf_path": "Chemistry/s41598-026-64443-6.pdf",
    "title": "Ethane dry reforming for CO2 utilization and H2 generation",
    "authors": [
@@ -5286,7 +5920,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0121",
+   "record_id": "ART-0135",
    "relative_pdf_path": "Chemistry/s41598-026-64477-w.pdf",
    "title": "Instrument-dependent variability affects both microplastic polymer identification and quantification: an inter-laboratory comparison using polymer standards",
    "authors": [
@@ -5347,7 +5981,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0122",
+   "record_id": "ART-0136",
    "relative_pdf_path": "Chemistry/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -5387,7 +6021,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0123",
+   "record_id": "ART-0137",
    "relative_pdf_path": "Chemistry/s41598-026-64956-0.pdf",
    "title": "Characteristics and patterns of sweetener use in ultra-processed food products available in Brazilian supermarkets",
    "authors": [
@@ -5429,7 +6063,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0124",
+   "record_id": "ART-0138",
    "relative_pdf_path": "Chemistry/s41598-026-65054-x.pdf",
    "title": "Drug-based ionic derivatives of NSAIDs: influence of cation structure on physicochemical properties, skin permeation, and biocompatibility",
    "authors": [
@@ -5477,7 +6111,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0125",
+   "record_id": "ART-0139",
    "relative_pdf_path": "Chemistry/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -5519,7 +6153,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0126",
+   "record_id": "ART-0140",
    "relative_pdf_path": "Chemistry/s41598-026-65345-3.pdf",
    "title": "Optimizing the removal of color and impurities from sugar beet syrup using bentonite/iron oxide nanocomposite",
    "authors": [
@@ -5558,7 +6192,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0127",
+   "record_id": "ART-0141",
    "relative_pdf_path": "Climate sciences/s41467-026-76093-3.pdf",
    "title": "Decadal sink-source shifts of forest aboveground carbon since 1988",
    "authors": [
@@ -5600,7 +6234,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0128",
+   "record_id": "ART-0142",
    "relative_pdf_path": "Climate sciences/s41598-026-58655-z.pdf",
    "title": "Chemical signatures, source characteristics, and transboundary transport of PM0.49 in Thailand–Myanmar border region",
    "authors": [
@@ -5644,7 +6278,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0129",
+   "record_id": "ART-0143",
    "relative_pdf_path": "Climate sciences/s41598-026-62934-0.pdf",
    "title": "Dynamic spatial allocation of future non-industrial CO₂ emissions using purpose-based travel demand forecasts",
    "authors": [
@@ -5688,7 +6322,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0130",
+   "record_id": "ART-0144",
    "relative_pdf_path": "Climate sciences/s41598-026-63674-x.pdf",
    "title": "Climate change perception–impact–adaptation pathways among farmers: evidence from seven major agricultural governorates in Egypt",
    "authors": [
@@ -5729,7 +6363,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0131",
+   "record_id": "ART-0145",
    "relative_pdf_path": "Climate sciences/s41598-026-64547-z.pdf",
    "title": "Assessing the applicability of the ICAO carbon emissions calculator at a Chinese plateau airport using operational data",
    "authors": [
@@ -5770,7 +6404,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0132",
+   "record_id": "ART-0146",
    "relative_pdf_path": "Computational biology and bioinformatics/s41598-026-58631-7.pdf",
    "title": "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images",
    "authors": [
@@ -5809,7 +6443,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0133",
+   "record_id": "ART-0147",
    "relative_pdf_path": "Computational biology and bioinformatics/s41598-026-59277-1.pdf",
    "title": "Decoupling of allele frequency and predicted pathogenicity in the tandem repeat filaggrin (FLG) gene",
    "authors": [
@@ -5854,7 +6488,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0134",
+   "record_id": "ART-0148",
    "relative_pdf_path": "Computational biology and bioinformatics/s41598-026-62229-4.pdf",
    "title": "Artificial intelligence-based photographic detection of pink esthetic score attributes using a hybrid deep learning segmentation pipeline: a method development study",
    "authors": [
@@ -5895,7 +6529,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0135",
+   "record_id": "ART-0149",
    "relative_pdf_path": "Computational biology and bioinformatics/s41598-026-64555-z.pdf",
    "title": "Impact of temporal patterns in working contacts on epidemic spread",
    "authors": [
@@ -5984,7 +6618,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0136",
+   "record_id": "ART-0150",
    "relative_pdf_path": "Computational biology and bioinformatics/s41598-026-64571-z.pdf",
    "title": "Prognostic signatures associated with immune and macrophage phenotypes in colorectal cancer: integrated single-cell and bulk transcriptomic analyses",
    "authors": [
@@ -6027,7 +6661,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0137",
+   "record_id": "ART-0151",
    "relative_pdf_path": "Developing world/s41467-026-71860-8.pdf",
    "title": "Social implications of the 30×30 global conservation target",
    "authors": [
@@ -6088,7 +6722,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0138",
+   "record_id": "ART-0152",
    "relative_pdf_path": "Developing world/s41467-026-74114-9.pdf",
    "title": "Effects of cooking with liquefied petroleum gas versus biomass on hemoglobin concentrations in pregnant women: a pre-specified exploratory analysis of the HAPIN trial",
    "authors": [
@@ -6229,7 +6863,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0139",
+   "record_id": "ART-0153",
    "relative_pdf_path": "Developing world/s41467-026-75002-y.pdf",
    "title": "Phylo-Plex: a phylogenetically informed, low-cost amplicon sequencing platform for deployable high-resolution genomic epidemiology",
    "authors": [
@@ -6286,7 +6920,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0140",
+   "record_id": "ART-0154",
    "relative_pdf_path": "Developing world/s41467-026-75052-2.pdf",
    "title": "Household mobility responses to weather extremes in Kyrgyzstan",
    "authors": [
@@ -6328,7 +6962,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0141",
+   "record_id": "ART-0155",
    "relative_pdf_path": "Developing world/s41598-026-49766-8.pdf",
    "title": "An integrated physical diagnosis of compound climate risks for urban sustainability in Port Said Region, Egypt",
    "authors": [
@@ -6365,7 +6999,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0142",
+   "record_id": "ART-0156",
    "relative_pdf_path": "Developmental biology/s41467-026-73644-6.pdf",
    "title": "High-resolution chromatin mapping reveals that CTCF anchors meiotic loops to the chromosome axis",
    "authors": [
@@ -6409,7 +7043,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0143",
+   "record_id": "ART-0157",
    "relative_pdf_path": "Developmental biology/s41467-026-76054-w.pdf",
    "title": "Distinct differentiation trajectories leave lasting impacts on gene regulation and function of V2a neurons",
    "authors": [
@@ -6455,7 +7089,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0144",
+   "record_id": "ART-0158",
    "relative_pdf_path": "Developmental biology/s41598-026-61708-y.pdf",
    "title": "Recapitulating gestational progression: a high-throughput 3D bioprinted vascularized human placenta demonstrating stage-specific molecular and functional signatures of human pregnancy",
    "authors": [
@@ -6502,7 +7136,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0145",
+   "record_id": "ART-0159",
    "relative_pdf_path": "Developmental biology/s41598-026-63151-5.pdf",
    "title": "Impact of urban air ultrafine particles on embryonic development and their association to transport emissions",
    "authors": [
@@ -6549,7 +7183,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0146",
+   "record_id": "ART-0160",
    "relative_pdf_path": "Developmental biology/s41598-026-63726-2.pdf",
    "title": "The tRNA methylation activity and specificity of NSUN2 are independent of Archease",
    "authors": [
@@ -6595,7 +7229,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0147",
+   "record_id": "ART-0161",
    "relative_pdf_path": "Diseases/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -6639,7 +7273,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0148",
+   "record_id": "ART-0162",
    "relative_pdf_path": "Diseases/s41598-026-63728-0.pdf",
    "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
    "authors": [
@@ -6682,7 +7316,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0149",
+   "record_id": "ART-0163",
    "relative_pdf_path": "Diseases/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -6726,7 +7360,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0150",
+   "record_id": "ART-0164",
    "relative_pdf_path": "Diseases/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -6766,7 +7400,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0151",
+   "record_id": "ART-0165",
    "relative_pdf_path": "Diseases/s41598-026-65032-3.pdf",
    "title": "A one health analysis of the reemergence of dog-mediated human rabies in Peru",
    "authors": [
@@ -6808,7 +7442,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0152",
+   "record_id": "ART-0166",
    "relative_pdf_path": "Drug discovery/s41467-026-76180-5.pdf",
    "title": "High-throughput engineering of bispecific antibodies to enhance macrophage-mediated cytotoxicity of B-cell lymphoma",
    "authors": [
@@ -6857,7 +7491,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0153",
+   "record_id": "ART-0167",
    "relative_pdf_path": "Drug discovery/s41598-026-61925-5.pdf",
    "title": "Chemical characterization and cardiovascular effects of an oxime derived from a metabolite of Senecio nutans",
    "authors": [
@@ -6903,7 +7537,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0154",
+   "record_id": "ART-0168",
    "relative_pdf_path": "Drug discovery/s41598-026-63203-w.pdf",
    "title": "Rocaglates and pateamines target the DEAD-box RNA helicase eIF4A from Schistosoma mansoni and demonstrate anti-schistosomal activity in vitro",
    "authors": [
@@ -6947,7 +7581,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0155",
+   "record_id": "ART-0169",
    "relative_pdf_path": "Drug discovery/s41598-026-64584-8.pdf",
    "title": "Development of shelf stable formulation for adenovirus vectored vaccines and therapeutics",
    "authors": [
@@ -6993,7 +7627,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0156",
+   "record_id": "ART-0170",
    "relative_pdf_path": "Drug discovery/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -7035,7 +7669,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0157",
+   "record_id": "ART-0171",
    "relative_pdf_path": "Ecology/s41598-026-61772-4.pdf",
    "title": "Network analysis highlights socio-demographic patterns of stone tool-using primates",
    "authors": [
@@ -7078,7 +7712,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0158",
+   "record_id": "ART-0172",
    "relative_pdf_path": "Ecology/s41598-026-62227-6.pdf",
    "title": "A self-training approach to improve multispecies school classification models in fisheries acoustics data",
    "authors": [
@@ -7118,7 +7752,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0159",
+   "record_id": "ART-0173",
    "relative_pdf_path": "Ecology/s41598-026-63940-y.pdf",
    "title": "Prevalence and impact of bopyrid isopod infestation on mud shrimp populations in the eastern Yellow Sea",
    "authors": [
@@ -7159,7 +7793,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0160",
+   "record_id": "ART-0174",
    "relative_pdf_path": "Ecology/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -7196,7 +7830,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0161",
+   "record_id": "ART-0175",
    "relative_pdf_path": "Ecology/s41598-026-65032-3.pdf",
    "title": "A one health analysis of the reemergence of dog-mediated human rabies in Peru",
    "authors": [
@@ -7238,7 +7872,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0162",
+   "record_id": "ART-0176",
    "relative_pdf_path": "Endocrinology/s41467-026-76065-7.pdf",
    "title": "Transcriptomic profiling of human brown and white adipose tissue depots",
    "authors": [
@@ -7283,7 +7917,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0163",
+   "record_id": "ART-0177",
    "relative_pdf_path": "Endocrinology/s41467-026-76082-6.pdf",
    "title": "The accumulation of methylglyoxal and acrolein impairs arginine homeostasis causing hyperglycemia and renal abnormalities in male zebrafish",
    "authors": [
@@ -7331,7 +7965,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0164",
+   "record_id": "ART-0178",
    "relative_pdf_path": "Endocrinology/s41598-026-60877-0.pdf",
    "title": "Placental lipid handling, growth and inflammatory pathways are modified by a maternal Mediterranean diet",
    "authors": [
@@ -7376,7 +8010,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0165",
+   "record_id": "ART-0179",
    "relative_pdf_path": "Endocrinology/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -7413,7 +8047,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0166",
+   "record_id": "ART-0180",
    "relative_pdf_path": "Endocrinology/s41598-026-64277-2.pdf",
    "title": "Semaglutide and COVID-19 mortality risk",
    "authors": [
@@ -7452,7 +8086,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0167",
+   "record_id": "ART-0181",
    "relative_pdf_path": "Energy and society/s41467-026-75104-7.pdf",
    "title": "Assessing grid affordability for universal electricity access in Sub-Saharan Africa",
    "authors": [
@@ -7493,7 +8127,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0168",
+   "record_id": "ART-0182",
    "relative_pdf_path": "Energy and society/s41467-026-75389-8.pdf",
    "title": "Pathways to cost competitive and viable lithium production from Salton Sea geothermal brines",
    "authors": [
@@ -7537,7 +8171,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0169",
+   "record_id": "ART-0183",
    "relative_pdf_path": "Energy and society/s41467-026-75433-7.pdf",
    "title": "Understanding the European energy crisis through structural causal models",
    "authors": [
@@ -7581,7 +8215,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0170",
+   "record_id": "ART-0184",
    "relative_pdf_path": "Energy and society/s41467-026-75910-z.pdf",
    "title": "Uranium in cobalt-hydroxide exports from the Democratic Republic of the Congo",
    "authors": [
@@ -7618,7 +8252,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0171",
+   "record_id": "ART-0185",
    "relative_pdf_path": "Energy and society/s41598-026-63279-4.pdf",
    "title": "Beyond vehicle electrification: a global analysis of reported city actions to reduce car use",
    "authors": [
@@ -7657,7 +8291,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0172",
+   "record_id": "ART-0186",
    "relative_pdf_path": "Energy science and technology/s41598-026-59705-2.pdf",
    "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
    "authors": [
@@ -7698,7 +8332,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0173",
+   "record_id": "ART-0187",
    "relative_pdf_path": "Energy science and technology/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -7742,7 +8376,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0174",
+   "record_id": "ART-0188",
    "relative_pdf_path": "Energy science and technology/s41598-026-63564-2.pdf",
    "title": "Fault-controlled reservoir compartmentalization as a control on CO2 storage potential in Jurassic Safa reservoirs, Obaiyed Field, Western Desert, Egypt",
    "authors": [
@@ -7781,7 +8415,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0175",
+   "record_id": "ART-0189",
    "relative_pdf_path": "Energy science and technology/s41598-026-64402-1.pdf",
    "title": "Highly efficient atmospheric water harvesting via a biomimetic condensation structure integrated with passive radiative cooling",
    "authors": [
@@ -7821,7 +8455,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0176",
+   "record_id": "ART-0190",
    "relative_pdf_path": "Energy science and technology/s41598-026-64771-7.pdf",
    "title": "Detection of coal seam floor failure depth through borehole direct current resistivity monitoring",
    "authors": [
@@ -7860,7 +8494,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0177",
+   "record_id": "ART-0191",
    "relative_pdf_path": "Engineering/s41598-026-62679-w.pdf",
    "title": "Uncovering reliability blind spots in transportation AI: an edge-case-based validation approach for transportation systems",
    "authors": [
@@ -7898,7 +8532,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0178",
+   "record_id": "ART-0192",
    "relative_pdf_path": "Engineering/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -7937,7 +8571,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0179",
+   "record_id": "ART-0193",
    "relative_pdf_path": "Engineering/s41598-026-63471-6.pdf",
    "title": "A bilateral US-UK airplane wastewater monitoring pilot demonstrates the feasibility of an international wastewater surveillance network",
    "authors": [
@@ -7982,7 +8616,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0180",
+   "record_id": "ART-0194",
    "relative_pdf_path": "Engineering/s41598-026-64757-5.pdf",
    "title": "Effects of real-time and potential traffic congestion on network throughput",
    "authors": [
@@ -8020,7 +8654,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0181",
+   "record_id": "ART-0195",
    "relative_pdf_path": "Engineering/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -8060,7 +8694,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0182",
+   "record_id": "ART-0196",
    "relative_pdf_path": "Environmental sciences/s41598-026-57983-4.pdf",
    "title": "Cross-sectional associations between drinking water arsenic and health outcomes in a South Texas Colonias pilot study",
    "authors": [
@@ -8104,7 +8738,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0183",
+   "record_id": "ART-0197",
    "relative_pdf_path": "Environmental sciences/s41598-026-61534-2.pdf",
    "title": "Leaching mechanism and behavior of rare earth elements from roasted coal gangue using citric acid",
    "authors": [
@@ -8148,7 +8782,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0184",
+   "record_id": "ART-0198",
    "relative_pdf_path": "Environmental sciences/s41598-026-63471-6.pdf",
    "title": "A bilateral US-UK airplane wastewater monitoring pilot demonstrates the feasibility of an international wastewater surveillance network",
    "authors": [
@@ -8193,7 +8827,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0185",
+   "record_id": "ART-0199",
    "relative_pdf_path": "Environmental sciences/s41598-026-64506-8.pdf",
    "title": "A study on the lifespan of burnt logs used in nature-based solutions for post-fire anti-erosion barriers and forest regeneration promotion",
    "authors": [
@@ -8230,7 +8864,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0186",
+   "record_id": "ART-0200",
    "relative_pdf_path": "Environmental sciences/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -8270,7 +8904,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0187",
+   "record_id": "ART-0201",
    "relative_pdf_path": "Environmental social sciences/s41467-026-75625-1.pdf",
    "title": "Global trade responses to shark finning regulations",
    "authors": [
@@ -8316,7 +8950,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0188",
+   "record_id": "ART-0202",
    "relative_pdf_path": "Environmental social sciences/s41467-026-75910-z.pdf",
    "title": "Uranium in cobalt-hydroxide exports from the Democratic Republic of the Congo",
    "authors": [
@@ -8354,7 +8988,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0189",
+   "record_id": "ART-0203",
    "relative_pdf_path": "Environmental social sciences/s41598-026-62934-0.pdf",
    "title": "Dynamic spatial allocation of future non-industrial CO₂ emissions using purpose-based travel demand forecasts",
    "authors": [
@@ -8398,7 +9032,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0190",
+   "record_id": "ART-0204",
    "relative_pdf_path": "Environmental social sciences/s41598-026-63702-w.pdf",
    "title": "Multidimensional landscape persistence enhances the structural resilience of ecological networks in high-density urban agglomerations: a case study of the GBA",
    "authors": [
@@ -8442,7 +9076,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0191",
+   "record_id": "ART-0205",
    "relative_pdf_path": "Environmental social sciences/s41598-026-64547-z.pdf",
    "title": "Assessing the applicability of the ICAO carbon emissions calculator at a Chinese plateau airport using operational data",
    "authors": [
@@ -8483,7 +9117,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0192",
+   "record_id": "ART-0206",
    "relative_pdf_path": "Evolution/s41467-026-76105-2.pdf",
    "title": "Lower speciation, not higher extinction, drove African megaherbivore diversity collapse",
    "authors": [
@@ -8530,7 +9164,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0193",
+   "record_id": "ART-0207",
    "relative_pdf_path": "Evolution/s41598-026-59277-1.pdf",
    "title": "Decoupling of allele frequency and predicted pathogenicity in the tandem repeat filaggrin (FLG) gene",
    "authors": [
@@ -8575,7 +9209,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0194",
+   "record_id": "ART-0208",
    "relative_pdf_path": "Evolution/s41598-026-61772-4.pdf",
    "title": "Network analysis highlights socio-demographic patterns of stone tool-using primates",
    "authors": [
@@ -8618,7 +9252,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0195",
+   "record_id": "ART-0209",
    "relative_pdf_path": "Evolution/s41598-026-64170-y.pdf",
    "title": "Constrained RNA polymerase mutational pathways distinguish corallopyronin A resistance from rifampicin resistance in staphylococci",
    "authors": [
@@ -8662,7 +9296,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0196",
+   "record_id": "ART-0210",
    "relative_pdf_path": "Evolution/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -8699,7 +9333,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0197",
+   "record_id": "ART-0211",
    "relative_pdf_path": "Forestry/s41467-026-71523-8.pdf",
    "title": "Assessing European cities with the 3-30-300 rule underscores the need for enhanced urban greening efforts",
    "authors": [
@@ -8741,7 +9375,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0198",
+   "record_id": "ART-0212",
    "relative_pdf_path": "Forestry/s41467-026-71552-3.pdf",
    "title": "Learning lessons from over-crediting to ensure additionality in forest carbon credits",
    "authors": [
@@ -8793,7 +9427,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0199",
+   "record_id": "ART-0213",
    "relative_pdf_path": "Forestry/s41467-026-74613-9.pdf",
    "title": "Rising tree mortality in France is associated with distinct seasonal climate anomalies",
    "authors": [
@@ -8837,7 +9471,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0200",
+   "record_id": "ART-0214",
    "relative_pdf_path": "Forestry/s41467-026-74859-3.pdf",
    "title": "Global mining has undermined forest conservation within and beyond protected areas",
    "authors": [
@@ -8887,7 +9521,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0201",
+   "record_id": "ART-0215",
    "relative_pdf_path": "Forestry/s41467-026-76226-8.pdf",
    "title": "Forests in protected areas worldwide face increased thermal pressure from urbanization",
    "authors": [
@@ -8924,7 +9558,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0202",
+   "record_id": "ART-0216",
    "relative_pdf_path": "Gastroenterology/s41598-026-62658-1.pdf",
    "title": "Cross-organ transfer learning for tumor microenvironment classification from colorectal to gastric cancer histopathology",
    "authors": [
@@ -8968,7 +9602,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0203",
+   "record_id": "ART-0217",
    "relative_pdf_path": "Gastroenterology/s41598-026-63986-y.pdf",
    "title": "A simple clinical model using waist circumference and cholesterol predicts liver fibrosis in MAFLD",
    "authors": [
@@ -9013,7 +9647,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0204",
+   "record_id": "ART-0218",
    "relative_pdf_path": "Gastroenterology/s41598-026-64047-0.pdf",
    "title": "Intravenous hydrogen-rich acetated Ringer’s solution attenuates liver injury in heatstroke rats through endothelial glycocalyx preservation",
    "authors": [
@@ -9057,7 +9691,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0205",
+   "record_id": "ART-0219",
    "relative_pdf_path": "Gastroenterology/s41598-026-64379-x.pdf",
    "title": "Anti-obesity effects of heat-killed Apilactobacillus kosoi, a FLAB-derived postbiotic, in high-fat diet-induced obese mice",
    "authors": [
@@ -9102,7 +9736,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0206",
+   "record_id": "ART-0220",
    "relative_pdf_path": "Gastroenterology/s41598-026-64485-w.pdf",
    "title": "Prevalence and determinants of gastroscopy in Northern Italy",
    "authors": [
@@ -9146,7 +9780,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0207",
+   "record_id": "ART-0221",
    "relative_pdf_path": "Genetics/s41598-026-59277-1.pdf",
    "title": "Decoupling of allele frequency and predicted pathogenicity in the tandem repeat filaggrin (FLG) gene",
    "authors": [
@@ -9191,7 +9825,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0208",
+   "record_id": "ART-0222",
    "relative_pdf_path": "Genetics/s41598-026-63572-2.pdf",
    "title": "Rootstock-dependent scion effects shape root transcriptomes in grafted Pinus pinaster",
    "authors": [
@@ -9241,7 +9875,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0209",
+   "record_id": "ART-0223",
    "relative_pdf_path": "Genetics/s41598-026-63689-4.pdf",
    "title": "Copula based fusion of clinical and gene expression machine learning risk scores for breast cancer risk stratification",
    "authors": [
@@ -9280,7 +9914,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0210",
+   "record_id": "ART-0224",
    "relative_pdf_path": "Genetics/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -9325,7 +9959,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0211",
+   "record_id": "ART-0225",
    "relative_pdf_path": "Genetics/s41598-026-64952-4.pdf",
    "title": "Rare ST124 and ST586 lineages co-circulate with the dominant ST2 clone among extensively drug-resistant Acinetobacter baumannii in Iran",
    "authors": [
@@ -9365,7 +9999,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0212",
+   "record_id": "ART-0226",
    "relative_pdf_path": "Geography/s41467-026-75072-y.pdf",
    "title": "Life course trajectory segregation and political polarization in contemporary Sweden",
    "authors": [
@@ -9404,7 +10038,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0213",
+   "record_id": "ART-0227",
    "relative_pdf_path": "Geography/s41467-026-75780-5.pdf",
    "title": "Scaling and Population Loss in Mexican Urban Centres",
    "authors": [
@@ -9445,7 +10079,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0214",
+   "record_id": "ART-0228",
    "relative_pdf_path": "Geography/s41598-026-58888-y.pdf",
    "title": "A global, proxy-based assessment of building climatization vulnerability",
    "authors": [
@@ -9488,7 +10122,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0215",
+   "record_id": "ART-0229",
    "relative_pdf_path": "Geography/s41598-026-62251-6.pdf",
    "title": "A spatial modelling framework for equitable and efficient elderly care facility allocation in urban China",
    "authors": [
@@ -9528,7 +10162,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0216",
+   "record_id": "ART-0230",
    "relative_pdf_path": "Geography/s41598-026-63675-w.pdf",
    "title": "A machine learning and agent-based modeling framework for tourism crisis management",
    "authors": [
@@ -9565,7 +10199,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0217",
+   "record_id": "ART-0231",
    "relative_pdf_path": "Health care/s41598-026-58631-7.pdf",
    "title": "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images",
    "authors": [
@@ -9604,7 +10238,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0218",
+   "record_id": "ART-0232",
    "relative_pdf_path": "Health care/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -9643,7 +10277,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0219",
+   "record_id": "ART-0233",
    "relative_pdf_path": "Health care/s41598-026-63728-0.pdf",
    "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
    "authors": [
@@ -9686,7 +10320,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0220",
+   "record_id": "ART-0234",
    "relative_pdf_path": "Health care/s41598-026-64843-8.pdf",
    "title": "Dynamic thermography used to support the diagnosis of diabetic foot with the assessment of balance and foot positioning",
    "authors": [
@@ -9726,7 +10360,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0221",
+   "record_id": "ART-0235",
    "relative_pdf_path": "Health care/s41598-026-65304-y.pdf",
    "title": "Loneliness and social isolation as predictors of pain medication use transitions in older adults",
    "authors": [
@@ -9767,7 +10401,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0222",
+   "record_id": "ART-0236",
    "relative_pdf_path": "Health occupations/s41598-025-33333-8.pdf",
    "title": "Health behaviors and health status among physicians and the general population in South Korea",
    "authors": [
@@ -9805,7 +10439,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0223",
+   "record_id": "ART-0237",
    "relative_pdf_path": "Health occupations/s41598-026-63345-x.pdf",
    "title": "Professional quality of life among migrant and non-migrant mental health staff in Germany: a gender-sensitive cross-sectional study",
    "authors": [
@@ -9848,7 +10482,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0224",
+   "record_id": "ART-0238",
    "relative_pdf_path": "Health occupations/s41598-026-63733-3.pdf",
    "title": "Occupational sleepiness in suburban metro drivers: association with fatigue, occupational balance and work functioning",
    "authors": [
@@ -9891,7 +10525,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0225",
+   "record_id": "ART-0239",
    "relative_pdf_path": "Health occupations/s41598-026-63937-7.pdf",
    "title": "Upper extremity muscle thickness, handgrip strength, manual dexterity and cognitive functions in older adults living in community and nursing homes : a cross-sectional study",
    "authors": [
@@ -9929,7 +10563,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0226",
+   "record_id": "ART-0240",
    "relative_pdf_path": "Health occupations/s41598-026-64080-z.pdf",
    "title": "Brief use of a passive shoulder exoskeleton modifies muscle activation after removal",
    "authors": [
@@ -9971,7 +10605,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0227",
+   "record_id": "ART-0241",
    "relative_pdf_path": "Hydrology/s41467-026-75637-x.pdf",
    "title": "Upwind terrestrial influences on soil moisture variability across South America",
    "authors": [
@@ -10018,7 +10652,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0228",
+   "record_id": "ART-0242",
    "relative_pdf_path": "Hydrology/s41598-026-62139-5.pdf",
    "title": "Temperature-induced shift in 21st-century Amazon droughts",
    "authors": [
@@ -10063,7 +10697,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0229",
+   "record_id": "ART-0243",
    "relative_pdf_path": "Hydrology/s41598-026-62596-y.pdf",
    "title": "Multi-decadal remote sensing assessment of Urban heat Island intensification and biophysical transformation in Al Taif, Saudi Arabia",
    "authors": [
@@ -10106,7 +10740,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0230",
+   "record_id": "ART-0244",
    "relative_pdf_path": "Hydrology/s41598-026-63828-x.pdf",
    "title": "Human health risks assessment of vegetables irrigated with different water qualities",
    "authors": [
@@ -10148,7 +10782,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0231",
+   "record_id": "ART-0245",
    "relative_pdf_path": "Hydrology/s41598-026-64153-z.pdf",
    "title": "Machine learning-based anomaly detection in surface water quality data using ensemble models with residual analysis",
    "authors": [
@@ -10186,7 +10820,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0232",
+   "record_id": "ART-0246",
    "relative_pdf_path": "Immunology/s41467-026-76180-5.pdf",
    "title": "High-throughput engineering of bispecific antibodies to enhance macrophage-mediated cytotoxicity of B-cell lymphoma",
    "authors": [
@@ -10235,7 +10869,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0233",
+   "record_id": "ART-0247",
    "relative_pdf_path": "Immunology/s41467-026-76285-x.pdf",
    "title": "Ruxolitinib prevents irreversible autoimmune endocrinopathies in APECED",
    "authors": [
@@ -10292,7 +10926,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0234",
+   "record_id": "ART-0248",
    "relative_pdf_path": "Immunology/s41598-026-64379-x.pdf",
    "title": "Anti-obesity effects of heat-killed Apilactobacillus kosoi, a FLAB-derived postbiotic, in high-fat diet-induced obese mice",
    "authors": [
@@ -10337,7 +10971,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0235",
+   "record_id": "ART-0249",
    "relative_pdf_path": "Immunology/s41598-026-64514-8.pdf",
    "title": "A novel CD69 binding ankyrin repeat protein (Ankyron®) enables detection of early activated and antigen-specific T cells in pigs",
    "authors": [
@@ -10378,7 +11012,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0236",
+   "record_id": "ART-0250",
    "relative_pdf_path": "Immunology/s41598-026-64571-z.pdf",
    "title": "Prognostic signatures associated with immune and macrophage phenotypes in colorectal cancer: integrated single-cell and bulk transcriptomic analyses",
    "authors": [
@@ -10421,7 +11055,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0237",
+   "record_id": "ART-0251",
    "relative_pdf_path": "Limnology/s41467-026-72548-9.pdf",
    "title": "Global glacier-free topography reveals a large potential for future lakes in presently ice-covered terrain",
    "authors": [
@@ -10462,7 +11096,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0238",
+   "record_id": "ART-0252",
    "relative_pdf_path": "Limnology/s41467-026-74705-6.pdf",
    "title": "Pervasive summertime nitrous oxide undersaturation in U.S. lakes and reservoirs",
    "authors": [
@@ -10501,7 +11135,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0239",
+   "record_id": "ART-0253",
    "relative_pdf_path": "Limnology/s41467-026-74760-z.pdf",
    "title": "Forced changes in a Tibetan lake ecosystem over the past millennium",
    "authors": [
@@ -10554,7 +11188,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0240",
+   "record_id": "ART-0254",
    "relative_pdf_path": "Limnology/s41598-026-53251-7.pdf",
    "title": "Identification of chemical and physical key water quality drivers in the urban Grunewald Chain of Lakes, Berlin",
    "authors": [
@@ -10594,7 +11228,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0241",
+   "record_id": "ART-0255",
    "relative_pdf_path": "Limnology/s41598-026-58131-8.pdf",
    "title": "Melt-driven freshwater inputs as potential drivers of harmful algal blooms: evidence from a diatom bloom in Northwestern Patagonia",
    "authors": [
@@ -10639,7 +11273,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0242",
+   "record_id": "ART-0256",
    "relative_pdf_path": "Materials science/s41598-026-54704-9.pdf",
    "title": "Radiation resistance of additively manufactured CrMoTaTiV compositionally complex alloys with enhanced mechanical properties",
    "authors": [
@@ -10684,7 +11318,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0243",
+   "record_id": "ART-0257",
    "relative_pdf_path": "Materials science/s41598-026-58761-y.pdf",
    "title": "Development of hybrid polypropylene composites reinforced with chemically modified rice straw and foxtail millet husk for EV automotive applications",
    "authors": [
@@ -10723,7 +11357,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0244",
+   "record_id": "ART-0258",
    "relative_pdf_path": "Materials science/s41598-026-59705-2.pdf",
    "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
    "authors": [
@@ -10764,7 +11398,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0245",
+   "record_id": "ART-0259",
    "relative_pdf_path": "Materials science/s41598-026-64292-3.pdf",
    "title": "Silver-copper hybrid nanocomposite thermal interface materials for power electronic device packaging",
    "authors": [
@@ -10805,7 +11439,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0246",
+   "record_id": "ART-0260",
    "relative_pdf_path": "Materials science/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -10845,7 +11479,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0247",
+   "record_id": "ART-0261",
    "relative_pdf_path": "Mathematics and computing/s41598-026-58631-7.pdf",
    "title": "FaceAge+: training-free synthetic augmentation for deep learning-based biological age estimation from facial images",
    "authors": [
@@ -10884,7 +11518,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0248",
+   "record_id": "ART-0262",
    "relative_pdf_path": "Mathematics and computing/s41598-026-62471-w.pdf",
    "title": "Hidden multistate models to study multimorbidity trajectories",
    "authors": [
@@ -10925,7 +11559,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0249",
+   "record_id": "ART-0263",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64209-0.pdf",
    "title": "LAMDEX: an explainable lightweight Android malware detection system for enhancing IoT APP security",
    "authors": [
@@ -10967,7 +11601,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0250",
+   "record_id": "ART-0264",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64757-5.pdf",
    "title": "Effects of real-time and potential traffic congestion on network throughput",
    "authors": [
@@ -11005,7 +11639,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0251",
+   "record_id": "ART-0265",
    "relative_pdf_path": "Mathematics and computing/s41598-026-64773-5.pdf",
    "title": "Nonlinear dynamic transitions and equilibrium topology of a beam under sequential moving masses",
    "authors": [
@@ -11049,7 +11683,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0252",
+   "record_id": "ART-0266",
    "relative_pdf_path": "Medical research/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -11093,7 +11727,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0253",
+   "record_id": "ART-0267",
    "relative_pdf_path": "Medical research/s41598-026-63372-8.pdf",
    "title": "A customisable environmental sensor proof-of-concept to enable prescription medicine reuse",
    "authors": [
@@ -11132,7 +11766,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0254",
+   "record_id": "ART-0268",
    "relative_pdf_path": "Medical research/s41598-026-63728-0.pdf",
    "title": "Parents’ awareness of respiratory syncytial virus (RSV) and its prevention: a cross-sectional study in Riyadh, Saudi Arabia",
    "authors": [
@@ -11175,7 +11809,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0255",
+   "record_id": "ART-0269",
    "relative_pdf_path": "Medical research/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -11219,7 +11853,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0256",
+   "record_id": "ART-0270",
    "relative_pdf_path": "Medical research/s41598-026-65304-y.pdf",
    "title": "Loneliness and social isolation as predictors of pain medication use transitions in older adults",
    "authors": [
@@ -11260,7 +11894,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0257",
+   "record_id": "ART-0271",
    "relative_pdf_path": "Microbiology/s41598-026-59669-3.pdf",
    "title": "Reduction of secondary bile acids following microbiome pre-conditioning was associated with reduced breast cancer progression",
    "authors": [
@@ -11308,7 +11942,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0258",
+   "record_id": "ART-0272",
    "relative_pdf_path": "Microbiology/s41598-026-63203-w.pdf",
    "title": "Rocaglates and pateamines target the DEAD-box RNA helicase eIF4A from Schistosoma mansoni and demonstrate anti-schistosomal activity in vitro",
    "authors": [
@@ -11352,7 +11986,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0259",
+   "record_id": "ART-0273",
    "relative_pdf_path": "Microbiology/s41598-026-64379-x.pdf",
    "title": "Anti-obesity effects of heat-killed Apilactobacillus kosoi, a FLAB-derived postbiotic, in high-fat diet-induced obese mice",
    "authors": [
@@ -11397,7 +12031,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0260",
+   "record_id": "ART-0274",
    "relative_pdf_path": "Microbiology/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -11441,7 +12075,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0261",
+   "record_id": "ART-0275",
    "relative_pdf_path": "Microbiology/s41598-026-64952-4.pdf",
    "title": "Rare ST124 and ST586 lineages co-circulate with the dominant ST2 clone among extensively drug-resistant Acinetobacter baumannii in Iran",
    "authors": [
@@ -11481,7 +12115,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0262",
+   "record_id": "ART-0276",
    "relative_pdf_path": "Molecular biology/s41467-026-76209-9.pdf",
    "title": "The transcription factor C/EBPβ promotes hyperglycemia-elicited glycolysis and liver cancer progression",
    "authors": [
@@ -11534,7 +12168,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0263",
+   "record_id": "ART-0277",
    "relative_pdf_path": "Molecular biology/s41598-026-63764-w.pdf",
    "title": "Transcriptomic and RNAi-mediated antiviral response to Kamiti River virus infection in Aedes albopictus U4.4 cells",
    "authors": [
@@ -11573,7 +12207,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0264",
+   "record_id": "ART-0278",
    "relative_pdf_path": "Molecular biology/s41598-026-64520-w.pdf",
    "title": "Whole-genome sequencing data confirms the uniqueness of Ireland’s native honey bee",
    "authors": [
@@ -11618,7 +12252,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0265",
+   "record_id": "ART-0279",
    "relative_pdf_path": "Molecular biology/s41598-026-64537-1.pdf",
    "title": "TIMAP depletion impairs BMP signaling by accelerating SMURF1-mediated SMAD degradation in neuroblastoma cells",
    "authors": [
@@ -11658,7 +12292,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0266",
+   "record_id": "ART-0280",
    "relative_pdf_path": "Molecular biology/s41598-026-64952-4.pdf",
    "title": "Rare ST124 and ST586 lineages co-circulate with the dominant ST2 clone among extensively drug-resistant Acinetobacter baumannii in Iran",
    "authors": [
@@ -11698,7 +12332,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0267",
+   "record_id": "ART-0281",
    "relative_pdf_path": "Molecular medicine/s41467-026-74766-7.pdf",
    "title": "CDIN1-Codanin-1 complex defective in congenital dyserythropoietic anaemia type I is an RNA nuclease",
    "authors": [
@@ -11750,7 +12384,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0268",
+   "record_id": "ART-0282",
    "relative_pdf_path": "Molecular medicine/s41467-026-75214-2.pdf",
    "title": "Endothelial cannabinoid CB1 receptor deficiency reduces shear stress-induced arterial inflammation and lipid uptake",
    "authors": [
@@ -11815,7 +12449,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0269",
+   "record_id": "ART-0283",
    "relative_pdf_path": "Molecular medicine/s41467-026-75357-2.pdf",
    "title": "Distinct molecular subgroups in pediatric and young-onset meningiomas require age-adapted risk stratification",
    "authors": [
@@ -11899,7 +12533,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0270",
+   "record_id": "ART-0284",
    "relative_pdf_path": "Molecular medicine/s41598-026-53528-x.pdf",
    "title": "The impacts of beta globin gene mutations and Xmn IGγ polymorphism (HBG2 c. -211 C > T) on the clinical features of Hb Eβ-thalassemia patients in Bangladesh",
    "authors": [
@@ -11936,7 +12570,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0271",
+   "record_id": "ART-0285",
    "relative_pdf_path": "Molecular medicine/s41598-026-63288-3.pdf",
    "title": "A novel mouse model of cholesteryl ester storage disorder with Lipa exon 8 splicing junction mutation",
    "authors": [
@@ -11977,7 +12611,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0272",
+   "record_id": "ART-0286",
    "relative_pdf_path": "Nanoscience and technology/s41467-026-75765-4.pdf",
    "title": "Direct observation of braiding of Majorana-like zero modes in real space",
    "authors": [
@@ -12018,7 +12652,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0273",
+   "record_id": "ART-0287",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-59705-2.pdf",
    "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
    "authors": [
@@ -12059,7 +12693,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0274",
+   "record_id": "ART-0288",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -12107,7 +12741,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0275",
+   "record_id": "ART-0289",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-64292-3.pdf",
    "title": "Silver-copper hybrid nanocomposite thermal interface materials for power electronic device packaging",
    "authors": [
@@ -12148,7 +12782,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0276",
+   "record_id": "ART-0290",
    "relative_pdf_path": "Nanoscience and technology/s41598-026-64521-9.pdf",
    "title": "Machine learning and deep learning for predicting photocatalytic degradation efficiency of metronidazole via TiO2/ZnO nanocomposites: a response surface methodology approach",
    "authors": [
@@ -12188,7 +12822,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0277",
+   "record_id": "ART-0291",
    "relative_pdf_path": "Natural hazards/s41467-026-75938-1.pdf",
    "title": "Improving flood detection with large-scale dashboard camera data",
    "authors": [
@@ -12228,7 +12862,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0278",
+   "record_id": "ART-0292",
    "relative_pdf_path": "Natural hazards/s41598-026-63675-w.pdf",
    "title": "A machine learning and agent-based modeling framework for tourism crisis management",
    "authors": [
@@ -12265,7 +12899,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0279",
+   "record_id": "ART-0293",
    "relative_pdf_path": "Natural hazards/s41598-026-64273-6.pdf",
    "title": "Rockburst mechanism and control of staggered roadways beneath upper-slice residual coal pillars in extra-thick coal seams: a case study",
    "authors": [
@@ -12306,7 +12940,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0280",
+   "record_id": "ART-0294",
    "relative_pdf_path": "Natural hazards/s41598-026-64506-8.pdf",
    "title": "A study on the lifespan of burnt logs used in nature-based solutions for post-fire anti-erosion barriers and forest regeneration promotion",
    "authors": [
@@ -12343,7 +12977,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0281",
+   "record_id": "ART-0295",
    "relative_pdf_path": "Natural hazards/s41598-026-64771-7.pdf",
    "title": "Detection of coal seam floor failure depth through borehole direct current resistivity monitoring",
    "authors": [
@@ -12382,7 +13016,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0282",
+   "record_id": "ART-0296",
    "relative_pdf_path": "Nephrology/s41598-026-61190-6.pdf",
    "title": "Seasonality of acute kidney injury incidence in Japanese outpatients",
    "authors": [
@@ -12425,7 +13059,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0283",
+   "record_id": "ART-0297",
    "relative_pdf_path": "Nephrology/s41598-026-61455-0.pdf",
    "title": "Histopathological predictors of renal outcomes in idiopathic membranous nephropathy with a focus on global sclerotic glomeruli ratio",
    "authors": [
@@ -12502,7 +13136,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0284",
+   "record_id": "ART-0298",
    "relative_pdf_path": "Nephrology/s41598-026-63134-6.pdf",
    "title": "Cardiorenal and survival outcomes of GLP-1 receptor agonist and SGLT-2 inhibitor therapy in diabetic kidney disease: two stage-stratified real-world comparisons",
    "authors": [
@@ -12546,7 +13180,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0285",
+   "record_id": "ART-0299",
    "relative_pdf_path": "Nephrology/s41598-026-63494-z.pdf",
    "title": "Association of body weight change with incident chronic kidney disease in patients with type 2 diabetes without proteinuria: a nationwide cohort study",
    "authors": [
@@ -12590,7 +13224,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0286",
+   "record_id": "ART-0300",
    "relative_pdf_path": "Nephrology/s41598-026-63808-1.pdf",
    "title": "Deficiency of the aryl hydrocarbon receptor in kidney epithelial cells does not influence the development of atherosclerosis",
    "authors": [
@@ -12632,7 +13266,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0287",
+   "record_id": "ART-0301",
    "relative_pdf_path": "Neurology/s41598-026-63380-8.pdf",
    "title": "Absolute and relative temporal muscle volume and one-year all-cause mortality in older adults with stroke",
    "authors": [
@@ -12671,7 +13305,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0288",
+   "record_id": "ART-0302",
    "relative_pdf_path": "Neurology/s41598-026-63866-5.pdf",
    "title": "Effects of early adulthood chronic sleep disruption on late life cognition, brain pathology, and microglial reactivity in the PS19 mouse model of tauopathy",
    "authors": [
@@ -12708,7 +13342,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0289",
+   "record_id": "ART-0303",
    "relative_pdf_path": "Neurology/s41598-026-63991-1.pdf",
    "title": "Manual federated simulation for multiple sclerosis integrating XGBoost algorithm with SHAP explanation",
    "authors": [
@@ -12747,7 +13381,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0290",
+   "record_id": "ART-0304",
    "relative_pdf_path": "Neurology/s41598-026-64540-6.pdf",
    "title": "Volumetric comparison of brain structures in early and advanced bilateral glaucoma patients using 7 tesla MRI",
    "authors": [
@@ -12791,7 +13425,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0291",
+   "record_id": "ART-0305",
    "relative_pdf_path": "Neurology/s41598-026-64552-2.pdf",
    "title": "Smartwatch-based automated lifelog platform: feasibility and preliminary real-world evaluation with real-world data from post-stroke patients",
    "authors": [
@@ -12834,7 +13468,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0292",
+   "record_id": "ART-0306",
    "relative_pdf_path": "Neuroscience/s41598-026-59055-z.pdf",
    "title": "Categorization-driven perceptual learning changes perceived similarity in the naturalistic domain of skin lesion diagnosis",
    "authors": [
@@ -12872,7 +13506,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0293",
+   "record_id": "ART-0307",
    "relative_pdf_path": "Neuroscience/s41598-026-61361-5.pdf",
    "title": "The effect of dynamic motion and simultaneous presentation on the statistical learning of nonadjacent dependencies in manual gesture sequences",
    "authors": [
@@ -12912,7 +13546,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0294",
+   "record_id": "ART-0308",
    "relative_pdf_path": "Neuroscience/s41598-026-63866-5.pdf",
    "title": "Effects of early adulthood chronic sleep disruption on late life cognition, brain pathology, and microglial reactivity in the PS19 mouse model of tauopathy",
    "authors": [
@@ -12949,7 +13583,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0295",
+   "record_id": "ART-0309",
    "relative_pdf_path": "Neuroscience/s41598-026-64537-1.pdf",
    "title": "TIMAP depletion impairs BMP signaling by accelerating SMURF1-mediated SMAD degradation in neuroblastoma cells",
    "authors": [
@@ -12989,7 +13623,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0296",
+   "record_id": "ART-0310",
    "relative_pdf_path": "Neuroscience/s41598-026-64569-7.pdf",
    "title": "Observing positive and negative social touch triggers topographically distinct physical and emotional reactions in the body",
    "authors": [
@@ -13029,7 +13663,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0297",
+   "record_id": "ART-0311",
    "relative_pdf_path": "Ocean sciences/s41598-026-53701-2.pdf",
    "title": "Metabolic adaptations of starving purple sea urchins (Strongylocentrotus purpuratus) surviving in the barrens",
    "authors": [
@@ -13072,7 +13706,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0298",
+   "record_id": "ART-0312",
    "relative_pdf_path": "Ocean sciences/s41598-026-62227-6.pdf",
    "title": "A self-training approach to improve multispecies school classification models in fisheries acoustics data",
    "authors": [
@@ -13112,7 +13746,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0299",
+   "record_id": "ART-0313",
    "relative_pdf_path": "Ocean sciences/s41598-026-62922-4.pdf",
    "title": "A computer vision-based approach to monitor changes in ecosystems associated with marine renewable energy projects",
    "authors": [
@@ -13156,7 +13790,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0300",
+   "record_id": "ART-0314",
    "relative_pdf_path": "Ocean sciences/s41598-026-63110-0.pdf",
    "title": "Switchable Copula-guided Transformer diffusion model for detecting small sea-surface targets",
    "authors": [
@@ -13196,7 +13830,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0301",
+   "record_id": "ART-0315",
    "relative_pdf_path": "Ocean sciences/s41598-026-63955-5.pdf",
    "title": "A lightweight underwater biological object detector with enhanced cross-scale feature interaction",
    "authors": [
@@ -13238,7 +13872,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0302",
+   "record_id": "ART-0316",
    "relative_pdf_path": "Oncology/s41598-026-59669-3.pdf",
    "title": "Reduction of secondary bile acids following microbiome pre-conditioning was associated with reduced breast cancer progression",
    "authors": [
@@ -13286,7 +13920,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0303",
+   "record_id": "ART-0317",
    "relative_pdf_path": "Oncology/s41598-026-63478-z.pdf",
    "title": "Comparison of cervical swab and urine samples for high-risk HPV infection and PAX1 methylation in detection of cervical neoplasia",
    "authors": [
@@ -13331,7 +13965,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0304",
+   "record_id": "ART-0318",
    "relative_pdf_path": "Oncology/s41598-026-63488-x.pdf",
    "title": "RAS inhibition limits oncogenic signaling and tumorigenesis in neuroblastoma regardless of RAS mutational status",
    "authors": [
@@ -13382,7 +14016,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0305",
+   "record_id": "ART-0319",
    "relative_pdf_path": "Oncology/s41598-026-63689-4.pdf",
    "title": "Copula based fusion of clinical and gene expression machine learning risk scores for breast cancer risk stratification",
    "authors": [
@@ -13421,7 +14055,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0306",
+   "record_id": "ART-0320",
    "relative_pdf_path": "Oncology/s41598-026-65208-x.pdf",
    "title": "Screening of the antiproliferative activity of lycopene isomers in a panel of human cancer cell lines: Lycopene Z-isomers exhibit greater activity than the all-E-isomer",
    "authors": [
@@ -13458,7 +14092,397 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0307",
+   "record_id": "ART-0321",
+   "relative_pdf_path": "Optics and photonics/s41467-026-73440-2.pdf",
+   "title": "Large-scale integrated optoelectronic chaos for machine learning acceleration",
+   "authors": [
+    "Zhouyang Pan",
+    "Zhekai Zheng",
+    "Ping Li",
+    "Hao Wang",
+    "Jiacheng Guo",
+    "Ding Cui",
+    "Zhihui Li",
+    "Jiaqi Shen",
+    "Lihan Wang",
+    "Mengya Zong",
+    "Simin Li",
+    "Zhe Kang",
+    "Yue Yuan",
+    "Jianqi Hu",
+    "Jijun He",
+    "Yuxin Liang",
+    "Dan Zhu",
+    "Shilong Pan"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-73440-2",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-73440-2",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T12:49:09+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "89e462463b644cc5c1239a9e7ed3e738044c793a",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0322",
+   "relative_pdf_path": "Optics and photonics/s41467-026-73443-z.pdf",
+   "title": "Encoding orbital angular momentum of light in space with optical catastrophes",
+   "authors": [
+    "Xiaoyan Zhou",
+    "John You En Chan",
+    "Chia-Te Chang",
+    "Zhenchao Liu",
+    "Hao Wang",
+    "Andrew Forbes",
+    "Cheng-Wei Qiu",
+    "Hongtao Wang",
+    "Joel K. W. Yang"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-73443-z",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-73443-z",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T13:30:44+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "48817d14af138cd0a56c66f2d426aac65e5324e4",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0323",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74029-5.pdf",
+   "title": "Hybrid integration of quantum dot single-photon sources with lithium tantalate photonics for on-chip routing",
+   "authors": [
+    "Kaili Xiong",
+    "Defeng Shan",
+    "Xueshi Li",
+    "Ziliang Ruan",
+    "Bin Chen",
+    "Zhanling Wang",
+    "Jiawei Wang",
+    "Ying Yu",
+    "Wei Wu",
+    "Pingxing Chen",
+    "Jin Liu",
+    "Liu Liu",
+    "Yan Chen",
+    "Tian Jiang"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74029-5",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74029-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T11:43:34+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "092edb0057ab0f2146fe3efcbde20a5b59db5a76",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0324",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74152-3.pdf",
+   "title": "High responsivity IR sensing based on reflectometric RF MEMS",
+   "authors": [
+    "Melisa E. Gülseren",
+    "Matthew Benson",
+    "Zhixing Lin",
+    "Tianyou Li",
+    "William P. Putnam",
+    "J. Sebastian Gomez-Diaz"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74152-3",
+   "canonical_url": "https://www.nature.com/articles/10.1038/s41467-026-74152-3",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T11:50:19+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "c57de665784ac4ee11f2d9aff1fe0a4efa129b61",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0325",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74193-8.pdf",
+   "title": "Nanometre-precision terahertz interferometry for battery electrode metrology",
+   "authors": [
+    "Guseon Kang",
+    "Jaeyoon Kim",
+    "Mee-Ree Kim",
+    "Younggeun Lee",
+    "Dong-Chel Shin",
+    "Jinwoo Jeon",
+    "Hyeonwoo Kim",
+    "Dae Hee Kim",
+    "Joohyung Lee",
+    "Sangbaek Park",
+    "Young-Jin Kim"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74193-8",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74193-8",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T13:08:37+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "4272823b8d8899a643e9cc6083e0b7569f7c4ead",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0326",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74298-0.pdf",
+   "title": "Transition Radiation Field Enhanced Laser Proton Acceleration Employing Near-Critical-Density Foam",
+   "authors": [
+    "Zhouyang Pan",
+    "Zhekai Zheng",
+    "Ping Li",
+    "Hao Wang",
+    "Jiacheng Guo",
+    "Ding Cui",
+    "Zhihui Li",
+    "Jiaqi Shen",
+    "Lihan Wang",
+    "Mengya Zong",
+    "Simin Li",
+    "Zhe Kang",
+    "Yue Yuan",
+    "Jianqi Hu",
+    "Jijun He",
+    "Yuxin Liang",
+    "Dan Zhu",
+    "Shilong Pan"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74298-0",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74298-0",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T12:34:15+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "54d43b7b86428dfabebdd1c889c8fdae52a00c5f",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0327",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74328-x.pdf",
+   "title": "Observation of tunable chiral spin textures with nonlinear optics",
+   "authors": [
+    "Youqiang Huang",
+    "Tiago V. C. Antão",
+    "Adolfo O. Fumega",
+    "Mikko Turunen",
+    "Yi Zhang",
+    "Hanlin Fang",
+    "Nianze Shang",
+    "Juan C. Arias-Muñoz",
+    "Fedor Nigmatulin",
+    "Hao Hong",
+    "Andrew S. Kim",
+    "Faisal Ahmed",
+    "Hyunyong Choi",
+    "Sanshui Xiao",
+    "Kaihui Liu",
+    "Jose L. Lado",
+    "Zhipei Sun"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74328-x",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74328-x",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T12:11:49+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "254589ca9b6a63d6c75a99ad6b3444397ad6986a",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0328",
+   "relative_pdf_path": "Optics and photonics/s41467-026-74380-7.pdf",
+   "title": "The confounding effects of skin colour in photoacoustic imaging",
+   "authors": [
+    "Thomas R. Else",
+    "Christine Loreno",
+    "Alice Groves",
+    "Benjamin T. Cox",
+    "Evangelia Vetsiou",
+    "Janek Gröhl",
+    "Inés Modolell",
+    "Sarah E. Bohndiek",
+    "Amit Roshan"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-74380-7",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-74380-7",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T11:30:50+0900",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "0fddab4ddd33e99ad47d5beef140be4b1ed46bee",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0329",
    "relative_pdf_path": "Optics and photonics/s41467-026-75120-7.pdf",
    "title": "Redefining topological robustness in optical polarization fields through a generalized skyrmion number",
    "authors": [
@@ -13503,10 +14527,10 @@
     "supplementary files"
    ],
    "source_hash": "957c7cfe3af4ebe59b9cb4d55237a593d734949d",
-   "status": "excluded"
+   "status": "quarantined"
   },
   {
-   "record_id": "ART-0308",
+   "record_id": "ART-0330",
    "relative_pdf_path": "Optics and photonics/s41467-026-75121-6.pdf",
    "title": "Mid-IR light modulators enabled by dynamically tunable ultra-high-Q silicon membrane metasurfaces",
    "authors": [
@@ -13552,7 +14576,58 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0309",
+   "record_id": "ART-0331",
+   "relative_pdf_path": "Optics and photonics/s41467-026-75346-5.pdf",
+   "title": "Two-dimensional pixel-level addressable mid-infrared metasurface spatial light modulator",
+   "authors": [
+    "Cosmin-Constantin Popescu",
+    "Maarten Robbert Anton Peters",
+    "Oleg Maksimov",
+    "Harish B. Bhandari",
+    "Rashi Sharma",
+    "Kathleen A. Richardson",
+    "Arka Majumdar",
+    "Hyun Jung Kim",
+    "Rui Chen",
+    "Khoi Phuong Dao",
+    "Luigi Ranno",
+    "Brian Mills",
+    "Dennis M. Calahan",
+    "Tian Gu",
+    "Juejun Hu"
+   ],
+   "journal": "Nature Communications",
+   "publication_year": "2026",
+   "subject": "Optics and photonics",
+   "doi": "10.1038/s41467-026-75346-5",
+   "canonical_url": "https://www.nature.com/articles/s41467-026-75346-5",
+   "license_name": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "license_evidence": "license statement in the article PDF",
+   "license_verified_at": "2026-08-05",
+   "retrieved_at": "2026-08-05T11:01:43+09:00",
+   "project_uses": [
+    "style-analysis"
+   ],
+   "material_used": [
+    "body-text"
+   ],
+   "transformations": [
+    "pdf-to-text",
+    "unicode-normalization",
+    "sentence-segmentation",
+    "style-statistics"
+   ],
+   "user_visible_exposure": "none",
+   "excluded_material": [
+    "figures and separately credited third-party material",
+    "supplementary files"
+   ],
+   "source_hash": "124918f057ed553b3671bbc4a67be00d69e125bf",
+   "status": "active"
+  },
+  {
+   "record_id": "ART-0332",
    "relative_pdf_path": "Optics and photonics/s41467-026-75464-0.pdf",
    "title": "Frequency conversion of highly charged femtosecond spatiotemporal optical vortices in cascaded nonlinear crystals",
    "authors": [
@@ -13597,7 +14672,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0310",
+   "record_id": "ART-0333",
    "relative_pdf_path": "Optics and photonics/s41467-026-75474-y.pdf",
    "title": "Scalable fabrication of transparent sodium calcium silicate glass-ceramics by structural engineering overcoming anisotropy barriers",
    "authors": [
@@ -13640,7 +14715,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0311",
+   "record_id": "ART-0334",
    "relative_pdf_path": "Optics and photonics/s41467-026-75516-5.pdf",
    "title": "Chip-integrated metasurface-enabled single-photon skyrmion sources",
    "authors": [
@@ -13683,7 +14758,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0312",
+   "record_id": "ART-0335",
    "relative_pdf_path": "Optics and photonics/s41467-026-75602-8.pdf",
    "title": "Small-scale photonic Kolmogorov-Arnold networks using standard telecom nonlinear modules",
    "authors": [
@@ -13722,7 +14797,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0313",
+   "record_id": "ART-0336",
    "relative_pdf_path": "Optics and photonics/s41467-026-75646-w.pdf",
    "title": "Single-photon detection in few-layer NbSe2 superconducting nanowires",
    "authors": [],
@@ -13757,7 +14832,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0314",
+   "record_id": "ART-0337",
    "relative_pdf_path": "Optics and photonics/s41467-026-75658-6.pdf",
    "title": "Microcomb-driven large-scale fully connected quantum network",
    "authors": [
@@ -13811,7 +14886,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0315",
+   "record_id": "ART-0338",
    "relative_pdf_path": "Optics and photonics/s41467-026-75750-x.pdf",
    "title": "Reconfigurable optical arithmetic logic unit and its applications",
    "authors": [
@@ -13853,7 +14928,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0316",
+   "record_id": "ART-0339",
    "relative_pdf_path": "Optics and photonics/s41467-026-75756-5.pdf",
    "title": "High-performance multijunction perovskite LEDs with reduced interconnection loss",
    "authors": [
@@ -13905,7 +14980,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0317",
+   "record_id": "ART-0340",
    "relative_pdf_path": "Optics and photonics/s41467-026-75757-4.pdf",
    "title": "Interactively addressable organic metadevices",
    "authors": [
@@ -13945,7 +15020,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0318",
+   "record_id": "ART-0341",
    "relative_pdf_path": "Optics and photonics/s41467-026-75828-6.pdf",
    "title": "Casimir stabilization of fluctuating electronic nematic order",
    "authors": [
@@ -13988,7 +15063,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0319",
+   "record_id": "ART-0342",
    "relative_pdf_path": "Optics and photonics/s41467-026-75873-1.pdf",
    "title": "Photonic scaffolds as ultrahigh-openness on-chip hollow-core waveguides for quantum photonics and optofluidics",
    "authors": [
@@ -14032,7 +15107,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0320",
+   "record_id": "ART-0343",
    "relative_pdf_path": "Optics and photonics/s41467-026-75892-y.pdf",
    "title": "Molecular rotors reveal the 3D viscous habitat of mucus-colonizing bacteria",
    "authors": [
@@ -14078,7 +15153,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0321",
+   "record_id": "ART-0344",
    "relative_pdf_path": "Optics and photonics/s41467-026-75899-5.pdf",
    "title": "Hyperloss from coherent spatial-mode mixing in quantum-correlated networks",
    "authors": [
@@ -14118,7 +15193,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0322",
+   "record_id": "ART-0345",
    "relative_pdf_path": "Optics and photonics/s41467-026-75934-5.pdf",
    "title": "Near-unity near-infrared emission from Mo6 cluster doped hybrid halide glasses via halide-ligand and matrix engineering",
    "authors": [
@@ -14165,7 +15240,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0323",
+   "record_id": "ART-0346",
    "relative_pdf_path": "Optics and photonics/s41467-026-75967-w.pdf",
    "title": "High-order photonic degeneracy enables topological reconfiguration in bound states in the continuum",
    "authors": [
@@ -14216,7 +15291,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0324",
+   "record_id": "ART-0347",
    "relative_pdf_path": "Optics and photonics/s41467-026-75968-9.pdf",
    "title": "Apparatus for quantum-mixture research in microgravity",
    "authors": [],
@@ -14251,7 +15326,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0325",
+   "record_id": "ART-0348",
    "relative_pdf_path": "Optics and photonics/s41467-026-76013-5.pdf",
    "title": "Observation of a relativistic analog of the Brewster effect in electron-photon scattering",
    "authors": [
@@ -14290,7 +15365,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0326",
+   "record_id": "ART-0349",
    "relative_pdf_path": "Optics and photonics/s41467-026-76016-2.pdf",
    "title": "Microwave-field quantum metrology with inherent robustness against detection losses enabled by Rydberg interactions",
    "authors": [
@@ -14332,7 +15407,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0327",
+   "record_id": "ART-0350",
    "relative_pdf_path": "Optics and photonics/s41467-026-76042-0.pdf",
    "title": "Wave morphing towards the flat-top envelope in photonics systems driven by artificial gauge fields",
    "authors": [
@@ -14374,7 +15449,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0328",
+   "record_id": "ART-0351",
    "relative_pdf_path": "Optics and photonics/s41467-026-76043-z.pdf",
    "title": "Directional thermal emission enables efficient energy savings",
    "authors": [
@@ -14425,7 +15500,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0329",
+   "record_id": "ART-0352",
    "relative_pdf_path": "Optics and photonics/s41467-026-76121-2.pdf",
    "title": "Photo-activated digital resistive switching in a cryogenic photomemory",
    "authors": [
@@ -14475,7 +15550,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0330",
+   "record_id": "ART-0353",
    "relative_pdf_path": "Optics and photonics/s41467-026-76228-6.pdf",
    "title": "Spatiotemporal shaping of terahertz radiation produced by a two-color ultrashort flying focus",
    "authors": [
@@ -14523,7 +15598,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0331",
+   "record_id": "ART-0354",
    "relative_pdf_path": "Optics and photonics/s41467-026-76263-3.pdf",
    "title": "Dual-function floating-gate memory driver for energy-efficient integrated display–illumination system",
    "authors": [
@@ -14579,7 +15654,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0332",
+   "record_id": "ART-0355",
    "relative_pdf_path": "Optics and photonics/s41467-026-76305-w.pdf",
    "title": "Localized polarization-guided alignment control in carbon nanotube films via femtosecond-pulse optical post-processing",
    "authors": [
@@ -14628,7 +15703,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0333",
+   "record_id": "ART-0356",
    "relative_pdf_path": "Optics and photonics/s41598-026-47510-w.pdf",
    "title": "Autofluorescence spectroscopy and multispectral autofluorescence microscopy for characterization of lupus nephritis in renal tissues",
    "authors": [
@@ -14670,7 +15745,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0334",
+   "record_id": "ART-0357",
    "relative_pdf_path": "Optics and photonics/s41598-026-49825-0.pdf",
    "title": "Broadband achromatic metalens for the short-wave infrared",
    "authors": [
@@ -14708,7 +15783,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0335",
+   "record_id": "ART-0358",
    "relative_pdf_path": "Optics and photonics/s41598-026-51163-0.pdf",
    "title": "Fabrication of atomically flat cleavage planes with ultrafast laser scribing",
    "authors": [
@@ -14756,7 +15831,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0336",
+   "record_id": "ART-0359",
    "relative_pdf_path": "Optics and photonics/s41598-026-52039-z.pdf",
    "title": "AI-enhanced inverse design of photonic crystal fiber optical modulator using deep reinforcement learning technique",
    "authors": [
@@ -14798,7 +15873,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0337",
+   "record_id": "ART-0360",
    "relative_pdf_path": "Optics and photonics/s41598-026-52576-7.pdf",
    "title": "Optical spin-orbit interaction induced by magnetic textures",
    "authors": [
@@ -14839,7 +15914,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0338",
+   "record_id": "ART-0361",
    "relative_pdf_path": "Optics and photonics/s41598-026-53004-6.pdf",
    "title": "Experimental and analytical geodetic accuracy assessment of terrestrial laser scanning for deformation monitoring under static and dynamic conditions",
    "authors": [
@@ -14880,7 +15955,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0339",
+   "record_id": "ART-0362",
    "relative_pdf_path": "Optics and photonics/s41598-026-53243-7.pdf",
    "title": "An explanation of the number of peaks and symmetries of starbursts",
    "authors": [
@@ -14919,7 +15994,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0340",
+   "record_id": "ART-0363",
    "relative_pdf_path": "Optics and photonics/s41598-026-53638-6.pdf",
    "title": "Photoluminescence enhancement by propagating surface plasmons confined in microresonators",
    "authors": [
@@ -14957,7 +16032,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0341",
+   "record_id": "ART-0364",
    "relative_pdf_path": "Optics and photonics/s41598-026-54605-x.pdf",
    "title": "Colliding micro-shock waves",
    "authors": [
@@ -14996,7 +16071,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0342",
+   "record_id": "ART-0365",
    "relative_pdf_path": "Optics and photonics/s41598-026-55102-x.pdf",
    "title": "Deep learning integrated plasmonic electrochemical sensing for fast and accurate pathogen detection",
    "authors": [
@@ -15039,7 +16114,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0343",
+   "record_id": "ART-0366",
    "relative_pdf_path": "Optics and photonics/s41598-026-55232-2.pdf",
    "title": "A two-step tilt compensation method for off-axis holographic displays",
    "authors": [
@@ -15079,7 +16154,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0344",
+   "record_id": "ART-0367",
    "relative_pdf_path": "Optics and photonics/s41598-026-55391-2.pdf",
    "title": "Computational carrier dynamics across heterojunction interface between hole injection and transport layers in quantum-dot light-emitting diodes",
    "authors": [
@@ -15124,7 +16199,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0345",
+   "record_id": "ART-0368",
    "relative_pdf_path": "Optics and photonics/s41598-026-55812-2.pdf",
    "title": "Real-time polarization control for satellite QKD with liquid-crystal beacon stabilization",
    "authors": [
@@ -15166,7 +16241,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0346",
+   "record_id": "ART-0369",
    "relative_pdf_path": "Optics and photonics/s41598-026-56188-z.pdf",
    "title": "Grating based interferometric devices on a silicon photonic platform",
    "authors": [
@@ -15205,7 +16280,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0347",
+   "record_id": "ART-0370",
    "relative_pdf_path": "Optics and photonics/s41598-026-56302-1.pdf",
    "title": "Robust image quality evaluation in optical coherence tomography of skin using global, region-independent metrics",
    "authors": [
@@ -15246,7 +16321,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0348",
+   "record_id": "ART-0371",
    "relative_pdf_path": "Optics and photonics/s41598-026-56382-z.pdf",
    "title": "Metasurface loaded multi-port tunable silicon–graphene based THz antenna with LHCP/RHCP characteristics, low-RCS and low-coupling features",
    "authors": [
@@ -15289,7 +16364,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0349",
+   "record_id": "ART-0372",
    "relative_pdf_path": "Optics and photonics/s41598-026-56639-7.pdf",
    "title": "Stable and tunable MeV \\gamma-ray generation via dual-laser inverse Thomson scattering from a laser-plasma accelerator",
    "authors": [
@@ -15346,7 +16421,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0350",
+   "record_id": "ART-0373",
    "relative_pdf_path": "Optics and photonics/s41598-026-56857-z.pdf",
    "title": "Adaptive filtering method for reducing signal saturation induced artifacts in X-ray dark-field tomography",
    "authors": [
@@ -15385,7 +16460,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0351",
+   "record_id": "ART-0374",
    "relative_pdf_path": "Optics and photonics/s41598-026-56884-w.pdf",
    "title": "Deep learning-based semantic segmentation of night-sky clouds for operational telescope scheduling",
    "authors": [
@@ -15428,7 +16503,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0352",
+   "record_id": "ART-0375",
    "relative_pdf_path": "Optics and photonics/s41598-026-57011-5.pdf",
    "title": "A nonlinear viscoelastic 3D bellows microspring fabricated with two-photon polymerization",
    "authors": [
@@ -15468,7 +16543,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0353",
+   "record_id": "ART-0376",
    "relative_pdf_path": "Optics and photonics/s41598-026-57304-9.pdf",
    "title": "NQQR: scalable qutrit image representation",
    "authors": [
@@ -15508,7 +16583,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0354",
+   "record_id": "ART-0377",
    "relative_pdf_path": "Optics and photonics/s41598-026-57327-2.pdf",
    "title": "Time-frequency joint imaging algorithm for borehole radar logging",
    "authors": [
@@ -15548,7 +16623,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0355",
+   "record_id": "ART-0378",
    "relative_pdf_path": "Optics and photonics/s41598-026-57451-z.pdf",
    "title": "Design of three-mode free-form nanostructured optical fibers: comparison of dense and convolutional neural networks in Generative Inverse Design Networks approach",
    "authors": [
@@ -15588,7 +16663,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0356",
+   "record_id": "ART-0379",
    "relative_pdf_path": "Optics and photonics/s41598-026-57483-5.pdf",
    "title": "Continuous-surface 3D reconstruction from kilometer-range single-photon LiDAR using score-based priors",
    "authors": [
@@ -15632,7 +16707,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0357",
+   "record_id": "ART-0380",
    "relative_pdf_path": "Optics and photonics/s41598-026-57752-3.pdf",
    "title": "Quantitative characterization of thermo-optically modulated microbend loss in silica fibers for high-temperature deep-well telemetry",
    "authors": [
@@ -15672,7 +16747,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0358",
+   "record_id": "ART-0381",
    "relative_pdf_path": "Optics and photonics/s41598-026-57853-z.pdf",
    "title": "Legget-Garg inequality for a quantum model of ion channels",
    "authors": [
@@ -15714,7 +16789,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0359",
+   "record_id": "ART-0382",
    "relative_pdf_path": "Optics and photonics/s41598-026-57951-y.pdf",
    "title": "Interface-controlled broadband photodetection in Si3N4/n-Si hybrid devices",
    "authors": [
@@ -15756,7 +16831,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0360",
+   "record_id": "ART-0383",
    "relative_pdf_path": "Optics and photonics/s41598-026-58385-2.pdf",
    "title": "Enhanced urine refractive index sensing using a defect-engineered one-dimensional photonic crystal",
    "authors": [
@@ -15794,7 +16869,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0361",
+   "record_id": "ART-0384",
    "relative_pdf_path": "Optics and photonics/s41598-026-58438-6.pdf",
    "title": "Elucidation of physical, structural, optical and luminescence properties of Cr2O3-doped B2O3-TeO2-Li2O-SrO glasses for deep red-light and NIR luminescence applications",
    "authors": [
@@ -15834,7 +16909,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0362",
+   "record_id": "ART-0385",
    "relative_pdf_path": "Optics and photonics/s41598-026-58492-0.pdf",
    "title": "Decoding orbital angular momentum in turbid tissue-like scattering medium with deep learning",
    "authors": [
@@ -15877,7 +16952,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0363",
+   "record_id": "ART-0386",
    "relative_pdf_path": "Optics and photonics/s41598-026-58539-2.pdf",
    "title": "Effect of tissue preparation and storage on elemental expression in oral tissues using",
    "authors": [
@@ -15920,7 +16995,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0364",
+   "record_id": "ART-0387",
    "relative_pdf_path": "Optics and photonics/s41598-026-58551-6.pdf",
    "title": "Vector characteristics of sub-ps 1.9 µm pulses produced by non-PM thulium-doped all-fiber MOPA",
    "authors": [
@@ -15962,7 +17037,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0365",
+   "record_id": "ART-0388",
    "relative_pdf_path": "Optics and photonics/s41598-026-58593-w.pdf",
    "title": "Early cancer biomarker detection using a prism-based multi-resonant Ag/BaTiO₃/BP plasmonic sensor",
    "authors": [
@@ -16005,7 +17080,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0366",
+   "record_id": "ART-0389",
    "relative_pdf_path": "Optics and photonics/s41598-026-58781-8.pdf",
    "title": "Design of a Fano-resonance-enhanced dielectric grating for ultralow-filling-factor superconducting nanowire single-photon detector",
    "authors": [
@@ -16049,7 +17124,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0367",
+   "record_id": "ART-0390",
    "relative_pdf_path": "Optics and photonics/s41598-026-58981-2.pdf",
    "title": "Effects of silicone-based formulations on laser-induced microscopic lesions: results from a randomized trial using an in vivo human wound healing model",
    "authors": [
@@ -16092,7 +17167,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0368",
+   "record_id": "ART-0391",
    "relative_pdf_path": "Optics and photonics/s41598-026-58983-0.pdf",
    "title": "Evaluating the applicability of computational super-resolution techniques for harmonic generation microscopy",
    "authors": [
@@ -16135,7 +17210,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0369",
+   "record_id": "ART-0392",
    "relative_pdf_path": "Optics and photonics/s41598-026-59062-0.pdf",
    "title": "Robust \nZ\neff\n-mapping in composites via joint beam-hardening and detector-response correction",
    "authors": [
@@ -16178,7 +17253,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0370",
+   "record_id": "ART-0393",
    "relative_pdf_path": "Optics and photonics/s41598-026-59748-5.pdf",
    "title": "One-dimensional mid-IR defect-mode photonic crystal biosensor for oral cancer detection",
    "authors": [
@@ -16215,7 +17290,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0371",
+   "record_id": "ART-0394",
    "relative_pdf_path": "Optics and photonics/s41598-026-59811-1.pdf",
    "title": "Performance characterization of non-Lambertian beams for 6G visible-light inter-satellite links",
    "authors": [
@@ -16257,7 +17332,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0372",
+   "record_id": "ART-0395",
    "relative_pdf_path": "Optics and photonics/s41598-026-60680-x.pdf",
    "title": "Exploiting colour-channel decorrelation for smartphone-based fluorescence detection",
    "authors": [
@@ -16303,7 +17378,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0373",
+   "record_id": "ART-0396",
    "relative_pdf_path": "Optics and photonics/s41598-026-60918-8.pdf",
    "title": "A tri-axis optomechanical accelerometer with plasmonic MIM waveguide and structural direction-dependent optical signatures",
    "authors": [
@@ -16341,7 +17416,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0374",
+   "record_id": "ART-0397",
    "relative_pdf_path": "Optics and photonics/s41598-026-60921-z.pdf",
    "title": "Sampling strategies for enhancing the analytical performance of a hybrid spectroscopy platform in biomedical applications",
    "authors": [
@@ -16384,7 +17459,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0375",
+   "record_id": "ART-0398",
    "relative_pdf_path": "Optics and photonics/s41598-026-60977-x.pdf",
    "title": "Machine learning–assisted performance prediction of graphene–silicon twin-port band-notched wideband antenna for THz 6G communication systems",
    "authors": [
@@ -16428,7 +17503,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0376",
+   "record_id": "ART-0399",
    "relative_pdf_path": "Optics and photonics/s41598-026-61109-1.pdf",
    "title": "Macular pigment optical density correlates inversely with intraretinal light scatter in support of a polarization-dependent glare-reduction mechanism",
    "authors": [
@@ -16472,7 +17547,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0377",
+   "record_id": "ART-0400",
    "relative_pdf_path": "Optics and photonics/s41598-026-61160-y.pdf",
    "title": "Machine learning assisted spectroscopic investigation of fluorescence quenching in Hypocrellin B with magnetic nanoparticles",
    "authors": [
@@ -16515,7 +17590,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0378",
+   "record_id": "ART-0401",
    "relative_pdf_path": "Optics and photonics/s41598-026-61176-4.pdf",
    "title": "A simulated dataset and evaluation framework for assessing AI detection limits in digital holographic microscopy",
    "authors": [
@@ -16560,7 +17635,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0379",
+   "record_id": "ART-0402",
    "relative_pdf_path": "Optics and photonics/s41598-026-61422-9.pdf",
    "title": "Metal organic framework functionalized reflective tapered fibre-optic surface plasmon resonance based refractometer for vapor sensing",
    "authors": [
@@ -16605,7 +17680,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0380",
+   "record_id": "ART-0403",
    "relative_pdf_path": "Optics and photonics/s41598-026-62183-1.pdf",
    "title": "Assessing collagenase-a and type-II mediated degradation of human type-I collagen by photoacoustic spectroscopy toward clinical translation in cancer progression",
    "authors": [
@@ -16647,7 +17722,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0381",
+   "record_id": "ART-0404",
    "relative_pdf_path": "Optics and photonics/s41598-026-62288-7.pdf",
    "title": "Hybrid interferometric near infrared spectroscopy (hybrid iNIRS) enables time-of-flight–resolved non-invasive blood flow monitoring in humans in vivo",
    "authors": [
@@ -16685,7 +17760,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0382",
+   "record_id": "ART-0405",
    "relative_pdf_path": "Optics and photonics/s41598-026-63133-7.pdf",
    "title": "Modeling ultrafast laser excitation of fused silica with a hybrid Lorentz–Drude dielectric response and density-dependent two-temperature model",
    "authors": [
@@ -16728,7 +17803,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0383",
+   "record_id": "ART-0406",
    "relative_pdf_path": "Optics and photonics/s41598-026-63244-1.pdf",
    "title": "Robust thermometry-imaging down to sub-micrometer or millisecond-resolution by fluorescence lifetime microscopy allows for additional acquisition of multiple imaging channels",
    "authors": [
@@ -16768,7 +17843,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0384",
+   "record_id": "ART-0407",
    "relative_pdf_path": "Optics and photonics/s41598-026-63320-6.pdf",
    "title": "Quantum synchronization enhanced via photon hopping in an optomechanical system",
    "authors": [
@@ -16809,7 +17884,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0385",
+   "record_id": "ART-0408",
    "relative_pdf_path": "Optics and photonics/s41598-026-63386-2.pdf",
    "title": "Hyperpolarized 129Xe MRI using dissolution dNP on a commercial polarizer: from solid-state optimization to in vivo lung imaging",
    "authors": [
@@ -16851,7 +17926,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0386",
+   "record_id": "ART-0409",
    "relative_pdf_path": "Optics and photonics/s41598-026-64203-6.pdf",
    "title": "All-optical single-shot mapping of cluster radius and density in an axisymmetric gas jet",
    "authors": [
@@ -16894,7 +17969,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0387",
+   "record_id": "ART-0410",
    "relative_pdf_path": "Optics and photonics/s41598-026-64441-8.pdf",
    "title": "Retrospective clinical artificial intelligence-assisted study of loaded peri-implant versus edentulous bone",
    "authors": [
@@ -16940,7 +18015,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0388",
+   "record_id": "ART-0411",
    "relative_pdf_path": "Pathogenesis/s41467-026-74987-w.pdf",
    "title": "De novo EHMT2 variants cause an autosomal dominant EHMT2-related Kleefstra syndrome via loss of G9a methyltransferase activity",
    "authors": [
@@ -17046,7 +18121,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0389",
+   "record_id": "ART-0412",
    "relative_pdf_path": "Pathogenesis/s41467-026-75112-7.pdf",
    "title": "Cellular heterogeneity of hepatic granuloma formation and evolution in murine schistosomiasis japonica",
    "authors": [
@@ -17099,7 +18174,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0390",
+   "record_id": "ART-0413",
    "relative_pdf_path": "Pathogenesis/s41467-026-75909-6.pdf",
    "title": "Inflammatory biomarkers of asymptomatic and symptomatic tuberculosis",
    "authors": [
@@ -17369,7 +18444,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0391",
+   "record_id": "ART-0414",
    "relative_pdf_path": "Pathogenesis/s41598-026-62091-4.pdf",
    "title": "Chlamydia trachomatis serovar D replicates in uroepithelial T24/83 cells in the absence of overt inflammation",
    "authors": [
@@ -17415,7 +18490,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0392",
+   "record_id": "ART-0415",
    "relative_pdf_path": "Pathogenesis/s41598-026-63180-0.pdf",
    "title": "The pathogenic Candida albicans regulates local vaginal epithelial immunity through the NLRP3/IL-1β pathway in VVC/RVVC mouse models",
    "authors": [
@@ -17457,7 +18532,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0393",
+   "record_id": "ART-0416",
    "relative_pdf_path": "Physics/s41467-026-75251-x.pdf",
    "title": "Probing entanglement scaling across a quantum phase transition on a quantum computer",
    "authors": [],
@@ -17492,7 +18567,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0394",
+   "record_id": "ART-0417",
    "relative_pdf_path": "Physics/s41467-026-75259-3.pdf",
    "title": "Nematic and chiral superconductivity emerging within the loop-current phase in kagome metals",
    "authors": [],
@@ -17527,7 +18602,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0395",
+   "record_id": "ART-0418",
    "relative_pdf_path": "Physics/s41467-026-75352-7.pdf",
    "title": "Mechanosensory encoding of surface mechanics optimizes locomotion",
    "authors": [],
@@ -17562,7 +18637,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0396",
+   "record_id": "ART-0419",
    "relative_pdf_path": "Physics/s41467-026-75378-x.pdf",
    "title": "Competitive resource allocation drives asynchronous and rapid nuclear multiplication in the malaria ",
    "authors": [],
@@ -17597,7 +18672,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0397",
+   "record_id": "ART-0420",
    "relative_pdf_path": "Physics/s41467-026-75439-1.pdf",
    "title": "Discrete distributions are learnable from metastable samples",
    "authors": [
@@ -17637,7 +18712,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0398",
+   "record_id": "ART-0421",
    "relative_pdf_path": "Physics/s41467-026-75446-2.pdf",
    "title": "Semiconductor room-temperature maser",
    "authors": [],
@@ -17672,7 +18747,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0399",
+   "record_id": "ART-0422",
    "relative_pdf_path": "Physics/s41467-026-75565-w.pdf",
    "title": "Phase locking and multistability in the topological Kuramoto model on cell complexes",
    "authors": [],
@@ -17707,7 +18782,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0400",
+   "record_id": "ART-0423",
    "relative_pdf_path": "Physics/s41467-026-75612-6.pdf",
    "title": "Finite-temperature toroidal moment amenable to direct observation in an Fe10Dy10 molecular ring",
    "authors": [
@@ -17754,7 +18829,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0401",
+   "record_id": "ART-0424",
    "relative_pdf_path": "Physics/s41467-026-75646-w.pdf",
    "title": "Single-photon detection in few-layer NbSe superconducting nanowires",
    "authors": [],
@@ -17789,7 +18864,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0402",
+   "record_id": "ART-0425",
    "relative_pdf_path": "Physics/s41467-026-75730-1.pdf",
    "title": "Fast-forward prediction of lattice Boltzmann dynamics with physics-informed neural operators",
    "authors": [
@@ -17835,7 +18910,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0403",
+   "record_id": "ART-0426",
    "relative_pdf_path": "Physics/s41467-026-75765-4.pdf",
    "title": "Direct observation of braiding of Majorana-like zero modes in real space",
    "authors": [
@@ -17876,7 +18951,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0404",
+   "record_id": "ART-0427",
    "relative_pdf_path": "Physics/s41467-026-75780-5.pdf",
    "title": "Scaling and Population Loss in Mexican Urban Centres",
    "authors": [],
@@ -17911,7 +18986,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0405",
+   "record_id": "ART-0428",
    "relative_pdf_path": "Physics/s41467-026-75828-6.pdf",
    "title": "Casimir stabilization of fluctuating electronic nematic order",
    "authors": [],
@@ -17946,7 +19021,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0406",
+   "record_id": "ART-0429",
    "relative_pdf_path": "Physics/s41467-026-75887-9.pdf",
    "title": "Tracking the catastrophic collapse of hybrid exciton-phonon order in a quantum material",
    "authors": [],
@@ -17981,7 +19056,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0407",
+   "record_id": "ART-0430",
    "relative_pdf_path": "Physics/s41467-026-75892-y.pdf",
    "title": "Molecular rotors reveal the 3D viscous habitat of mucus-colonizing bacteria",
    "authors": [
@@ -18027,7 +19102,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0408",
+   "record_id": "ART-0431",
    "relative_pdf_path": "Physics/s41467-026-75899-5.pdf",
    "title": "Hyperloss from coherent spatial-mode mixing in quantum-correlated networks",
    "authors": [],
@@ -18062,7 +19137,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0409",
+   "record_id": "ART-0432",
    "relative_pdf_path": "Physics/s41467-026-75968-9.pdf",
    "title": "Apparatus for quantum-mixture research in microgravity",
    "authors": [],
@@ -18097,7 +19172,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0410",
+   "record_id": "ART-0433",
    "relative_pdf_path": "Physics/s41467-026-75969-8.pdf",
    "title": "Nonlinear reversal of photoexcitation on the attosecond time scale improves ultrafast X-ray diffract",
    "authors": [],
@@ -18132,7 +19207,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0411",
+   "record_id": "ART-0434",
    "relative_pdf_path": "Physics/s41467-026-76013-5.pdf",
    "title": "Observation of a relativistic analog of the Brewster effect in electron-photon scattering",
    "authors": [
@@ -18171,7 +19246,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0412",
+   "record_id": "ART-0435",
    "relative_pdf_path": "Physics/s41467-026-76016-2.pdf",
    "title": "Microwave-field quantum metrology with inherent robustness against detection losses enabled by Rydberg interactions",
    "authors": [
@@ -18213,7 +19288,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0413",
+   "record_id": "ART-0436",
    "relative_pdf_path": "Physics/s41467-026-76019-z.pdf",
    "title": "Table-top all-attosecond transient absorption spectroscopy",
    "authors": [],
@@ -18248,7 +19323,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0414",
+   "record_id": "ART-0437",
    "relative_pdf_path": "Physics/s41467-026-76025-1.pdf",
    "title": "Function-specific epistasis shapes evolutionary trajectories towards antibiotic resistance",
    "authors": [],
@@ -18283,7 +19358,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0415",
+   "record_id": "ART-0438",
    "relative_pdf_path": "Physics/s41467-026-76034-0.pdf",
    "title": "Goblet cells mechanically breach the epithelial barrier in gut homeostasis",
    "authors": [],
@@ -18318,7 +19393,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0416",
+   "record_id": "ART-0439",
    "relative_pdf_path": "Physics/s41467-026-76043-z.pdf",
    "title": "Directional thermal emission enables efficient energy savings",
    "authors": [
@@ -18369,7 +19444,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0417",
+   "record_id": "ART-0440",
    "relative_pdf_path": "Physics/s41467-026-76121-2.pdf",
    "title": "Photo-activated digital resistive switching in a cryogenic photomemory",
    "authors": [],
@@ -18404,7 +19479,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0418",
+   "record_id": "ART-0441",
    "relative_pdf_path": "Physics/s41598-025-34106-z.pdf",
    "title": "Spatial frequency domain information aggregation network for radar image despeckling",
    "authors": [
@@ -18447,7 +19522,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0419",
+   "record_id": "ART-0442",
    "relative_pdf_path": "Physics/s41598-026-46934-8.pdf",
    "title": "FLASH effect tissue sparing comparison for X-ray, hadron, and VHEE irradiation modalities",
    "authors": [
@@ -18488,7 +19563,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0420",
+   "record_id": "ART-0443",
    "relative_pdf_path": "Physics/s41598-026-49825-0.pdf",
    "title": "Broadband achromatic metalens for the short-wave infrared",
    "authors": [
@@ -18526,7 +19601,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0421",
+   "record_id": "ART-0444",
    "relative_pdf_path": "Physics/s41598-026-51163-0.pdf",
    "title": "Fabrication of atomically flat cleavage planes with ultrafast laser scribing",
    "authors": [
@@ -18574,7 +19649,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0422",
+   "record_id": "ART-0445",
    "relative_pdf_path": "Physics/s41598-026-53091-5.pdf",
    "title": "Quantization of geometric-like coupling in gravitational field based on characterization and transformation",
    "authors": [
@@ -18611,7 +19686,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0423",
+   "record_id": "ART-0446",
    "relative_pdf_path": "Physics/s41598-026-54490-4.pdf",
    "title": "Information-theoretic grid topology reconstruction using low-precision smart meter data",
    "authors": [
@@ -18648,7 +19723,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0424",
+   "record_id": "ART-0447",
    "relative_pdf_path": "Physics/s41598-026-55232-2.pdf",
    "title": "A two-step tilt compensation method for off-axis holographic displays",
    "authors": [
@@ -18688,7 +19763,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0425",
+   "record_id": "ART-0448",
    "relative_pdf_path": "Physics/s41598-026-55965-0.pdf",
    "title": "Towards higher order oscillatory Ising machines",
    "authors": [
@@ -18730,7 +19805,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0426",
+   "record_id": "ART-0449",
    "relative_pdf_path": "Physics/s41598-026-56718-9.pdf",
    "title": "Pushing the boundaries of robotic computed tomography: automated twin-robot CT scan with maximum reachability",
    "authors": [
@@ -18771,7 +19846,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0427",
+   "record_id": "ART-0450",
    "relative_pdf_path": "Physics/s41598-026-58359-4.pdf",
    "title": "Design and analysis of modified octagonal ring-shaped MIMO antenna with connected ground for 5G sub-6 GHz n79, Wi-Fi 5, and Wi-Fi 6E band applications",
    "authors": [
@@ -18817,7 +19892,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0428",
+   "record_id": "ART-0451",
    "relative_pdf_path": "Physics/s41598-026-58385-2.pdf",
    "title": "Enhanced urine refractive index sensing using a defect-engineered one-dimensional photonic crystal",
    "authors": [
@@ -18854,7 +19929,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0429",
+   "record_id": "ART-0452",
    "relative_pdf_path": "Physics/s41598-026-58438-6.pdf",
    "title": "Elucidation of physical, structural, optical and luminescence properties of Cr2O3-doped B2O3-TeO2-Li2O-SrO glasses for deep red-light and NIR luminescence applications",
    "authors": [
@@ -18894,7 +19969,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0430",
+   "record_id": "ART-0453",
    "relative_pdf_path": "Physics/s41598-026-58442-w.pdf",
    "title": "A multiscale interpretability framework for identifying actionable road network features to mitigate congestion in highly congested cities",
    "authors": [
@@ -18935,7 +20010,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0431",
+   "record_id": "ART-0454",
    "relative_pdf_path": "Physics/s41598-026-58492-0.pdf",
    "title": "Decoding orbital angular momentum in turbid tissue-like scattering medium with deep learning",
    "authors": [
@@ -18977,7 +20052,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0432",
+   "record_id": "ART-0455",
    "relative_pdf_path": "Physics/s41598-026-58653-1.pdf",
    "title": "Atomistic simulations of crystallographic anisotropy and defects in shock loading",
    "authors": [
@@ -19019,7 +20094,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0433",
+   "record_id": "ART-0456",
    "relative_pdf_path": "Physics/s41598-026-58683-9.pdf",
    "title": "Multifunctional high gain antenna apertures using radial line slot array for multistandard 5G new radio",
    "authors": [
@@ -19060,7 +20135,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0434",
+   "record_id": "ART-0457",
    "relative_pdf_path": "Physics/s41598-026-58863-7.pdf",
    "title": "Nanometer scale imaging to develop quantitative descriptors of bipolar membrane junction structure",
    "authors": [
@@ -19106,7 +20181,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0435",
+   "record_id": "ART-0458",
    "relative_pdf_path": "Physics/s41598-026-58894-0.pdf",
    "title": "An artificial neural network with analytical self-attenuation correction for rapid efficiency calibration of HPGe detectors",
    "authors": [
@@ -19143,7 +20218,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0436",
+   "record_id": "ART-0459",
    "relative_pdf_path": "Physics/s41598-026-58938-5.pdf",
    "title": "Dynamic heterogeneous graph contrastive learning for uncovering collusive financial fraud",
    "authors": [
@@ -19185,7 +20260,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0437",
+   "record_id": "ART-0460",
    "relative_pdf_path": "Physics/s41598-026-59057-x.pdf",
    "title": "A novel fully implicit method for calculating fluid saturation distribution in immiscible gas flooding and its application",
    "authors": [
@@ -19222,7 +20297,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0438",
+   "record_id": "ART-0461",
    "relative_pdf_path": "Physics/s41598-026-59109-2.pdf",
    "title": "Sequence-defined donor-acceptor-donor oligo(para-phenylene ethynylene)s with emission across the visible spectrum",
    "authors": [
@@ -19261,7 +20336,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0439",
+   "record_id": "ART-0462",
    "relative_pdf_path": "Physics/s41598-026-59297-x.pdf",
    "title": "Wave dispersion analysis of porous functionally graded piezoelectric sandwich panels on Kerr substrates",
    "authors": [
@@ -19305,7 +20380,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0440",
+   "record_id": "ART-0463",
    "relative_pdf_path": "Physics/s41598-026-59365-2.pdf",
    "title": "Hysteresis in the aerodynamic forces and moments of a discus governed by laminar separation bubbles",
    "authors": [
@@ -19342,7 +20417,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0441",
+   "record_id": "ART-0464",
    "relative_pdf_path": "Physics/s41598-026-59428-4.pdf",
    "title": "Measuring temperature and observing graphitization of heavy-ion-heated diamond",
    "authors": [
@@ -19399,7 +20474,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0442",
+   "record_id": "ART-0465",
    "relative_pdf_path": "Physics/s41598-026-59705-2.pdf",
    "title": "A miniature piezoelectric-thermomagnetic generator for low-grade waste heat recovery",
    "authors": [
@@ -19440,7 +20515,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0443",
+   "record_id": "ART-0466",
    "relative_pdf_path": "Physics/s41598-026-59748-5.pdf",
    "title": "One-dimensional mid-IR defect-mode photonic crystal biosensor for oral cancer detection",
    "authors": [
@@ -19477,7 +20552,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0444",
+   "record_id": "ART-0467",
    "relative_pdf_path": "Physics/s41598-026-59774-3.pdf",
    "title": "Topological failure mode taxonomy and variation-aware design space exploration of carbon nanotube field-effect transistor flip-flops under process-induced geometric perturbations",
    "authors": [
@@ -19516,7 +20591,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0445",
+   "record_id": "ART-0468",
    "relative_pdf_path": "Physics/s41598-026-59875-z.pdf",
    "title": "Ultraslow oscillations as a temporal scaffold for coordinating episodic memories",
    "authors": [
@@ -19555,7 +20630,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0446",
+   "record_id": "ART-0469",
    "relative_pdf_path": "Physics/s41598-026-59993-8.pdf",
    "title": "Linking device dynamics to neural network performance in ionically gated synaptic transistors",
    "authors": [
@@ -19595,7 +20670,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0447",
+   "record_id": "ART-0470",
    "relative_pdf_path": "Physics/s41598-026-60122-8.pdf",
    "title": "Electrocapillary bridge formation from emulsions",
    "authors": [
@@ -19633,7 +20708,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0448",
+   "record_id": "ART-0471",
    "relative_pdf_path": "Physics/s41598-026-60219-0.pdf",
    "title": "Investigation of the effectiveness of the thermal conductivity of the Bingham fluid subjected to the dispersion of nanoparticles and dissipation effects",
    "authors": [
@@ -19673,7 +20748,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0449",
+   "record_id": "ART-0472",
    "relative_pdf_path": "Physics/s41598-026-60602-x.pdf",
    "title": "A new ultra-high gain CI-based DC/DC converter with low voltage and current stresses",
    "authors": [
@@ -19714,7 +20789,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0450",
+   "record_id": "ART-0473",
    "relative_pdf_path": "Physics/s41598-026-60675-8.pdf",
    "title": "Physics‑decomposed residual learning with PolyRF‑boost for cold gas thrust prediction",
    "authors": [
@@ -19753,7 +20828,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0451",
+   "record_id": "ART-0474",
    "relative_pdf_path": "Physics/s41598-026-60837-8.pdf",
    "title": "Dynamics near equilibria in the Jupiter-Europa system using the Lie-series technique",
    "authors": [
@@ -19793,7 +20868,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0452",
+   "record_id": "ART-0475",
    "relative_pdf_path": "Physics/s41598-026-60918-8.pdf",
    "title": "A tri-axis optomechanical accelerometer with plasmonic MIM waveguide and structural direction-dependent optical signatures",
    "authors": [
@@ -19831,7 +20906,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0453",
+   "record_id": "ART-0476",
    "relative_pdf_path": "Physics/s41598-026-60977-x.pdf",
    "title": "Machine learning–assisted performance prediction of graphene–silicon twin-port band-notched wideband antenna for THz 6G communication systems",
    "authors": [
@@ -19875,7 +20950,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0454",
+   "record_id": "ART-0477",
    "relative_pdf_path": "Physics/s41598-026-60986-w.pdf",
    "title": "Exact solutions and instability analysis of a fifth-order nonlinear evolution equation exhibiting multi-scale wave structures",
    "authors": [
@@ -19917,7 +20992,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0455",
+   "record_id": "ART-0478",
    "relative_pdf_path": "Physics/s41598-026-60997-7.pdf",
    "title": "Fraud learns too: continual graph learning under strategic adversarial drift in dynamic networks",
    "authors": [
@@ -19958,7 +21033,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0456",
+   "record_id": "ART-0479",
    "relative_pdf_path": "Physics/s41598-026-61044-1.pdf",
    "title": "Composition-engineered Sr1−xBaxTiO3 for high-efficiency dielectric resonator antennas in 5G/6G bands",
    "authors": [
@@ -20004,7 +21079,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0457",
+   "record_id": "ART-0480",
    "relative_pdf_path": "Physics/s41598-026-61096-3.pdf",
    "title": "Effects of grinding penetration depth and abrasive grain spacing on atomic interactions and material removal mechanisms in silicon during ultrasonic vibration-assisted grinding: a molecular dynamics study",
    "authors": [
@@ -20048,7 +21123,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0458",
+   "record_id": "ART-0481",
    "relative_pdf_path": "Physics/s41598-026-61290-3.pdf",
    "title": "Radiofrequency electrical conductivity reveals a distinct dimension of early human brain development",
    "authors": [
@@ -20099,7 +21174,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0459",
+   "record_id": "ART-0482",
    "relative_pdf_path": "Physics/s41598-026-61305-z.pdf",
    "title": "Study on three-dimensional stress characteristics and torsional performance of titanium-steel tool joints",
    "authors": [
@@ -20141,7 +21216,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0460",
+   "record_id": "ART-0483",
    "relative_pdf_path": "Physics/s41598-026-61355-3.pdf",
    "title": "Channel-resolved excitation trends in Si, GaAs, and NiO for sub-GeV dark matter detection",
    "authors": [
@@ -20179,7 +21254,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0461",
+   "record_id": "ART-0484",
    "relative_pdf_path": "Physics/s41598-026-61495-6.pdf",
    "title": "ASCENT: a tensor-oriented approach to population-scale agent-based simulation",
    "authors": [
@@ -20222,7 +21297,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0462",
+   "record_id": "ART-0485",
    "relative_pdf_path": "Physics/s41598-026-61523-5.pdf",
    "title": "Al–Ca co-doped ZnO nanostructures for enhanced electrical and dielectric properties",
    "authors": [
@@ -20268,7 +21343,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0463",
+   "record_id": "ART-0486",
    "relative_pdf_path": "Physics/s41598-026-61538-y.pdf",
    "title": "Network architecture determines delay robustness in the spindle assembly checkpoint",
    "authors": [
@@ -20306,7 +21381,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0464",
+   "record_id": "ART-0487",
    "relative_pdf_path": "Physics/s41598-026-61786-y.pdf",
    "title": "Hybrid quantum-classical machine learning for industrial multi-anomaly detection via single acoustic sensor",
    "authors": [
@@ -20346,7 +21421,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0465",
+   "record_id": "ART-0488",
    "relative_pdf_path": "Physics/s41598-026-61885-w.pdf",
    "title": "Design and analysis of a cantilever-based MEMS switch with dielectric thin film material coatings for enhanced electrostatic actuation",
    "authors": [
@@ -20391,7 +21466,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0466",
+   "record_id": "ART-0489",
    "relative_pdf_path": "Physics/s41598-026-61908-6.pdf",
    "title": "Thermo-hydraulic and second-law analysis of a shell-and-tube heat exchanger using water, propylene glycol, and glycerol mixtures in the laminar–transition regime",
    "authors": [
@@ -20428,7 +21503,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0467",
+   "record_id": "ART-0490",
    "relative_pdf_path": "Physics/s41598-026-61936-2.pdf",
    "title": "Master stability function for networks of coupled piecewise-smooth oscillators",
    "authors": [
@@ -20468,7 +21543,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0468",
+   "record_id": "ART-0491",
    "relative_pdf_path": "Physics/s41598-026-62120-2.pdf",
    "title": "Vector OBF detection method of magnetic tensor for small magnetic targets",
    "authors": [
@@ -20509,7 +21584,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0469",
+   "record_id": "ART-0492",
    "relative_pdf_path": "Physics/s41598-026-62154-6.pdf",
    "title": "First observation of novel satellites using high-resolution XR-HERFD measurement of Zn Kα emission",
    "authors": [
@@ -20555,7 +21630,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0470",
+   "record_id": "ART-0493",
    "relative_pdf_path": "Physics/s41598-026-62165-3.pdf",
    "title": "Neural network modeling of heat transfer on transient curved stretching surface with slip dynamics",
    "authors": [
@@ -20593,7 +21668,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0471",
+   "record_id": "ART-0494",
    "relative_pdf_path": "Physics/s41598-026-62266-z.pdf",
    "title": "Air transport in Africa: a statistical physics approach",
    "authors": [
@@ -20632,7 +21707,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0472",
+   "record_id": "ART-0495",
    "relative_pdf_path": "Physics/s41598-026-62288-7.pdf",
    "title": "Hybrid interferometric near infrared spectroscopy (hybrid iNIRS) enables time-of-flight–resolved non-invasive blood flow monitoring in humans in vivo",
    "authors": [
@@ -20670,7 +21745,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0473",
+   "record_id": "ART-0496",
    "relative_pdf_path": "Physics/s41598-026-62432-3.pdf",
    "title": "Image-based multiphysics modelling of random metallic meshes",
    "authors": [
@@ -20711,7 +21786,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0474",
+   "record_id": "ART-0497",
    "relative_pdf_path": "Physics/s41598-026-62819-2.pdf",
    "title": "A unified framework for net effects in signed social and ecological networks",
    "authors": [
@@ -20749,7 +21824,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0475",
+   "record_id": "ART-0498",
    "relative_pdf_path": "Physics/s41598-026-62859-8.pdf",
    "title": "Acoustic wave speed in aerogels across material classes: density scaling from theory and experiments",
    "authors": [
@@ -20795,7 +21870,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0476",
+   "record_id": "ART-0499",
    "relative_pdf_path": "Physics/s41598-026-62876-7.pdf",
    "title": "Full-scattering-matrix deterministic phonon boltzmann transport simulation",
    "authors": [
@@ -20833,7 +21908,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0477",
+   "record_id": "ART-0500",
    "relative_pdf_path": "Physics/s41598-026-62886-5.pdf",
    "title": "Field-like spin-orbit torque associated with out-of-plane spin polarization in Py/van der Waals heterostructures",
    "authors": [
@@ -20882,7 +21957,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0478",
+   "record_id": "ART-0501",
    "relative_pdf_path": "Physics/s41598-026-62899-0.pdf",
    "title": "Early phase of shock formation in pair plasma colliding with electron–proton plasma",
    "authors": [
@@ -20919,7 +21994,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0479",
+   "record_id": "ART-0502",
    "relative_pdf_path": "Physics/s41598-026-63096-9.pdf",
    "title": "Nuclear decay networks reveal stability patterns in superheavy nuclei",
    "authors": [
@@ -20956,7 +22031,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0480",
+   "record_id": "ART-0503",
    "relative_pdf_path": "Physics/s41598-026-63133-7.pdf",
    "title": "Modeling ultrafast laser excitation of fused silica with a hybrid Lorentz–Drude dielectric response and density-dependent two-temperature model",
    "authors": [
@@ -20999,7 +22074,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0481",
+   "record_id": "ART-0504",
    "relative_pdf_path": "Physics/s41598-026-63206-7.pdf",
    "title": "RadCube MAGIC observations of complex field aligned currents associated with a supersubstorm during the May 2024 geomagnetic storm",
    "authors": [
@@ -21047,7 +22122,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0482",
+   "record_id": "ART-0505",
    "relative_pdf_path": "Physics/s41598-026-63320-6.pdf",
    "title": "Quantum synchronization enhanced via photon hopping in an optomechanical system",
    "authors": [
@@ -21088,7 +22163,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0483",
+   "record_id": "ART-0506",
    "relative_pdf_path": "Physics/s41598-026-63377-3.pdf",
    "title": "Quantum simulation of noise-slowed domain-wall motion in a phenomenological spin model",
    "authors": [
@@ -21126,7 +22201,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0484",
+   "record_id": "ART-0507",
    "relative_pdf_path": "Physics/s41598-026-63512-0.pdf",
    "title": "Dual-band dual-beam millimeter-wave antenna using dual circular microstrip rings",
    "authors": [
@@ -21166,7 +22241,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0485",
+   "record_id": "ART-0508",
    "relative_pdf_path": "Physics/s41598-026-63616-7.pdf",
    "title": "Design and analysis of a compact multi-band flexible metasurface with low-loss characteristics for S, C, and X-band applications",
    "authors": [
@@ -21206,7 +22281,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0486",
+   "record_id": "ART-0509",
    "relative_pdf_path": "Physics/s41598-026-63793-5.pdf",
    "title": "Entanglement enables coherence transfer and feedforward corrects the state in quantum teleportation on superconducting dynamic circuits",
    "authors": [
@@ -21246,7 +22321,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0487",
+   "record_id": "ART-0510",
    "relative_pdf_path": "Physics/s41598-026-63901-5.pdf",
    "title": "Enhancing the security of coherent one-way quantum key distribution using CHSH correlations",
    "authors": [
@@ -21286,7 +22361,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0488",
+   "record_id": "ART-0511",
    "relative_pdf_path": "Physics/s41598-026-64097-4.pdf",
    "title": "Tunable temperature coefficient of resistance in PdSe2 films enabled by strain engineering",
    "authors": [
@@ -21333,7 +22408,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0489",
+   "record_id": "ART-0512",
    "relative_pdf_path": "Physics/s41598-026-64187-3.pdf",
    "title": "Reducing circuit resources in Grover’s algorithm via constraint-aware initialization",
    "authors": [
@@ -21372,7 +22447,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0490",
+   "record_id": "ART-0513",
    "relative_pdf_path": "Physics/s41598-026-64203-6.pdf",
    "title": "All-optical single-shot mapping of cluster radius and density in an axisymmetric gas jet",
    "authors": [
@@ -21415,7 +22490,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0491",
+   "record_id": "ART-0514",
    "relative_pdf_path": "Physics/s41598-026-64402-1.pdf",
    "title": "Highly efficient atmospheric water harvesting via a biomimetic condensation structure integrated with passive radiative cooling",
    "authors": [
@@ -21455,7 +22530,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0492",
+   "record_id": "ART-0515",
    "relative_pdf_path": "Physics/s41598-026-64773-5.pdf",
    "title": "Nonlinear dynamic transitions and equilibrium topology of a beam under sequential moving masses",
    "authors": [
@@ -21499,7 +22574,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0493",
+   "record_id": "ART-0516",
    "relative_pdf_path": "Physiology/s41598-026-61925-5.pdf",
    "title": "Chemical characterization and cardiovascular effects of an oxime derived from a metabolite of Senecio nutans",
    "authors": [
@@ -21545,7 +22620,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0494",
+   "record_id": "ART-0517",
    "relative_pdf_path": "Physiology/s41598-026-64366-2.pdf",
    "title": "Effects of diets containing fish proteins or poultry proteins on one-carbon metabolites in domestic dogs. A randomised, double-blind, two-period cross-over study",
    "authors": [
@@ -21588,7 +22663,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0495",
+   "record_id": "ART-0518",
    "relative_pdf_path": "Physiology/s41598-026-64756-6.pdf",
    "title": "Feasibility of energy expenditure estimation during outdoor walking using multimodal in-ear sensors: a preliminary validation study against indirect calorimetry",
    "authors": [],
@@ -21623,7 +22698,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0496",
+   "record_id": "ART-0519",
    "relative_pdf_path": "Physiology/s41598-026-64971-1.pdf",
    "title": "Brachiocephalic vein distensibility during passive leg raising in healthy adults",
    "authors": [
@@ -21664,7 +22739,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0497",
+   "record_id": "ART-0520",
    "relative_pdf_path": "Physiology/s41598-026-65070-x.pdf",
    "title": "Unsupported respiratory effort is associated with myocardial injury and pulmonary occlusive microvascular changes in experimental acute lung injury",
    "authors": [
@@ -21710,7 +22785,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0498",
+   "record_id": "ART-0521",
    "relative_pdf_path": "Planetary science/s41467-026-75019-3.pdf",
    "title": "Miniature Dungey-like cycle at Mars",
    "authors": [
@@ -21755,7 +22830,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0499",
+   "record_id": "ART-0522",
    "relative_pdf_path": "Planetary science/s41467-026-75933-6.pdf",
    "title": "Mafic-ultramafic igneous rocks as a source of reactive phosphorus for the origin of life",
    "authors": [
@@ -21802,7 +22877,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0500",
+   "record_id": "ART-0523",
    "relative_pdf_path": "Planetary science/s41598-026-61319-7.pdf",
    "title": "Geochemical and remote sensing insights into the hydrothermal origin of Banded Iron Formations at the Fatira Site, Northern Egyptian Nubian Shield",
    "authors": [
@@ -21843,7 +22918,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0501",
+   "record_id": "ART-0524",
    "relative_pdf_path": "Planetary science/s41598-026-63206-7.pdf",
    "title": "RadCube MAGIC observations of complex field aligned currents associated with a supersubstorm during the May 2024 geomagnetic storm",
    "authors": [
@@ -21889,7 +22964,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0502",
+   "record_id": "ART-0525",
    "relative_pdf_path": "Planetary science/s41598-026-64333-x.pdf",
    "title": "First cosmic-ray muography of a crust-mantle transition zone",
    "authors": [
@@ -21935,7 +23010,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0503",
+   "record_id": "ART-0526",
    "relative_pdf_path": "Plant sciences/s41598-026-62694-x.pdf",
    "title": "Silicon nanoparticle morphology and aggregation state modulate plant antioxidant responses under abiotic stress: a meta-analysis",
    "authors": [
@@ -21977,7 +23052,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0504",
+   "record_id": "ART-0527",
    "relative_pdf_path": "Plant sciences/s41598-026-63172-0.pdf",
    "title": "Biochar-biostimulant combinations enhance nodulation, yield, and antioxidant defense in mungbean under reduced NPK fertilization",
    "authors": [
@@ -22022,7 +23097,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0505",
+   "record_id": "ART-0528",
    "relative_pdf_path": "Plant sciences/s41598-026-63572-2.pdf",
    "title": "Rootstock-dependent scion effects shape root transcriptomes in grafted Pinus pinaster",
    "authors": [
@@ -22072,7 +23147,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0506",
+   "record_id": "ART-0529",
    "relative_pdf_path": "Plant sciences/s41598-026-63859-4.pdf",
    "title": "Nanobionic enhancement of plant growth via copper nanoclusters in Raphanus sativus",
    "authors": [
@@ -22120,7 +23195,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0507",
+   "record_id": "ART-0530",
    "relative_pdf_path": "Plant sciences/s41598-026-64854-5.pdf",
    "title": "Effects of hydrogen cyanamide and garlic extract on dormancy release, yield, and fruit quality of low-chill apple cultivars at Debre Tabor, northwestern Ethiopia",
    "authors": [
@@ -22159,7 +23234,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0508",
+   "record_id": "ART-0531",
    "relative_pdf_path": "Psychology/s41598-026-59055-z.pdf",
    "title": "Categorization-driven perceptual learning changes perceived similarity in the naturalistic domain of skin lesion diagnosis",
    "authors": [
@@ -22197,7 +23272,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0509",
+   "record_id": "ART-0532",
    "relative_pdf_path": "Psychology/s41598-026-61361-5.pdf",
    "title": "The effect of dynamic motion and simultaneous presentation on the statistical learning of nonadjacent dependencies in manual gesture sequences",
    "authors": [
@@ -22237,7 +23312,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0510",
+   "record_id": "ART-0533",
    "relative_pdf_path": "Psychology/s41598-026-63193-9.pdf",
    "title": "The role of sleep in the association between social network addiction and depressive symptoms in university students: a cross-sectional study",
    "authors": [
@@ -22283,7 +23358,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0511",
+   "record_id": "ART-0534",
    "relative_pdf_path": "Psychology/s41598-026-64569-7.pdf",
    "title": "Observing positive and negative social touch triggers topographically distinct physical and emotional reactions in the body",
    "authors": [
@@ -22323,7 +23398,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0512",
+   "record_id": "ART-0535",
    "relative_pdf_path": "Psychology/s41598-026-64597-3.pdf",
    "title": "Individual skill differences and human AI interaction shape creative outcomes",
    "authors": [
@@ -22361,7 +23436,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0513",
+   "record_id": "ART-0536",
    "relative_pdf_path": "Rheumatology/s41467-026-75260-w.pdf",
    "title": "Hematological consequences of environmental change during dewilding of rhesus macaques",
    "authors": [
@@ -22405,7 +23480,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0514",
+   "record_id": "ART-0537",
    "relative_pdf_path": "Rheumatology/s41598-026-62328-2.pdf",
    "title": "Determination of the most suitable reference gene for transcription analysis of synovial tissue from osteoarthritis patients",
    "authors": [
@@ -22444,7 +23519,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0515",
+   "record_id": "ART-0538",
    "relative_pdf_path": "Rheumatology/s41598-026-62865-w.pdf",
    "title": "The value of ultrasound semi-quantitative scoring in the clinical evaluation of acute gouty arthritis with normal and elevated serum uric acid",
    "authors": [
@@ -22483,7 +23558,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0516",
+   "record_id": "ART-0539",
    "relative_pdf_path": "Rheumatology/s41598-026-62996-0.pdf",
    "title": "Monocytes strongly induce (myo)fibroblast contraction in a 3D skin model to understand inflammation-fibrosis crosstalk",
    "authors": [
@@ -22528,7 +23603,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0517",
+   "record_id": "ART-0540",
    "relative_pdf_path": "Rheumatology/s41598-026-63293-6.pdf",
    "title": "Evaluation of rheumatic disease mobile applications using MARS",
    "authors": [
@@ -22568,7 +23643,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0518",
+   "record_id": "ART-0541",
    "relative_pdf_path": "Risk factors/s41598-026-63193-9.pdf",
    "title": "The role of sleep in the association between social network addiction and depressive symptoms in university students: a cross-sectional study",
    "authors": [
@@ -22614,7 +23689,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0519",
+   "record_id": "ART-0542",
    "relative_pdf_path": "Risk factors/s41598-026-63689-4.pdf",
    "title": "Copula based fusion of clinical and gene expression machine learning risk scores for breast cancer risk stratification",
    "authors": [
@@ -22653,7 +23728,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0520",
+   "record_id": "ART-0543",
    "relative_pdf_path": "Risk factors/s41598-026-64488-7.pdf",
    "title": "Prevalence of cervical human papillomavirus infections and cytological abnormalities in asymptomatic women living with HIV in Addis Ababa, Ethiopia",
    "authors": [
@@ -22697,7 +23772,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0521",
+   "record_id": "ART-0544",
    "relative_pdf_path": "Risk factors/s41598-026-65186-0.pdf",
    "title": "Lifestyle factors associated with cataract surgery among working age adults in Japan using claims and health screening data",
    "authors": [
@@ -22738,7 +23813,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0522",
+   "record_id": "ART-0545",
    "relative_pdf_path": "Risk factors/s41598-026-65304-y.pdf",
    "title": "Loneliness and social isolation as predictors of pain medication use transitions in older adults",
    "authors": [
@@ -22779,7 +23854,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0523",
+   "record_id": "ART-0546",
    "relative_pdf_path": "Scientific community/s41467-026-73009-z.pdf",
    "title": "Impact of early career medical research funding on subsequent publication outcomes and research income for female and male applicants in the United Kingdom",
    "authors": [
@@ -22817,7 +23892,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0524",
+   "record_id": "ART-0547",
    "relative_pdf_path": "Scientific community/s41467-026-74050-8.pdf",
    "title": "Vasculature segmentation in 3D hierarchical phase-contrast tomography images of human kidneys",
    "authors": [
@@ -22868,7 +23943,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0525",
+   "record_id": "ART-0548",
    "relative_pdf_path": "Scientific community/s41467-026-75389-8.pdf",
    "title": "Pathways to cost competitive and viable lithium production from Salton Sea geothermal brines",
    "authors": [
@@ -22912,7 +23987,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0526",
+   "record_id": "ART-0549",
    "relative_pdf_path": "Scientific community/s41598-026-56107-2.pdf",
    "title": "Mapping the AI life sciences landscape in Greece: a bibliometric comparison with global patterns",
    "authors": [
@@ -22957,7 +24032,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0527",
+   "record_id": "ART-0550",
    "relative_pdf_path": "Scientific community/s41598-026-57530-1.pdf",
    "title": "Estimated HIV cases and costs in South Africa due to global warming from 2000 to 2050: a modeling study",
    "authors": [
@@ -22994,7 +24069,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0528",
+   "record_id": "ART-0551",
    "relative_pdf_path": "Signs and symptoms/s41467-026-75291-3.pdf",
    "title": "Inhaled LTI-03 for idiopathic pulmonary fibrosis: a randomized dose escalation study",
    "authors": [
@@ -23045,7 +24120,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0529",
+   "record_id": "ART-0552",
    "relative_pdf_path": "Signs and symptoms/s41467-026-75726-x.pdf",
    "title": "Misregulation of T-box transcription factors drives BNP–NPR1 signalling underlying chronic itch",
    "authors": [
@@ -23095,7 +24170,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0530",
+   "record_id": "ART-0553",
    "relative_pdf_path": "Signs and symptoms/s41598-026-61311-1.pdf",
    "title": "Accelerometer measured physical activity and menstrual distress across menstrual and nonmenstrual days in mild and moderate to severe primary dysmenorrhea",
    "authors": [
@@ -23134,7 +24209,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0531",
+   "record_id": "ART-0554",
    "relative_pdf_path": "Signs and symptoms/s41598-026-61966-w.pdf",
    "title": "Exploratory study on the association between oral functions and nailfold capillary parameters",
    "authors": [
@@ -23182,7 +24257,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0532",
+   "record_id": "ART-0555",
    "relative_pdf_path": "Signs and symptoms/s41598-026-62176-0.pdf",
    "title": "A cross-sectional analysis of the associations between dry eye disease and depression",
    "authors": [
@@ -23224,7 +24299,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0533",
+   "record_id": "ART-0556",
    "relative_pdf_path": "Social sciences/s41467-026-75072-y.pdf",
    "title": "Life course trajectory segregation and political polarization in contemporary Sweden",
    "authors": [
@@ -23263,7 +24338,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0534",
+   "record_id": "ART-0557",
    "relative_pdf_path": "Social sciences/s41467-026-75315-y.pdf",
    "title": "Emerging capitalism and sociocultural niche construction in early modern Greece",
    "authors": [
@@ -23309,7 +24384,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0535",
+   "record_id": "ART-0558",
    "relative_pdf_path": "Social sciences/s41467-026-75625-1.pdf",
    "title": "Global trade responses to shark finning regulations",
    "authors": [
@@ -23346,7 +24421,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0536",
+   "record_id": "ART-0559",
    "relative_pdf_path": "Social sciences/s41467-026-75780-5.pdf",
    "title": "Scaling and Population Loss in Mexican Urban Centres",
    "authors": [
@@ -23387,7 +24462,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0537",
+   "record_id": "ART-0560",
    "relative_pdf_path": "Social sciences/s41598-026-63279-4.pdf",
    "title": "Beyond vehicle electrification: a global analysis of reported city actions to reduce car use",
    "authors": [
@@ -23426,7 +24501,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0538",
+   "record_id": "ART-0561",
    "relative_pdf_path": "Solid Earth sciences/s41467-026-75910-z.pdf",
    "title": "Uranium in cobalt-hydroxide exports from the Democratic Republic of the Congo",
    "authors": [
@@ -23464,7 +24539,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0539",
+   "record_id": "ART-0562",
    "relative_pdf_path": "Solid Earth sciences/s41598-026-62632-x.pdf",
    "title": "Recovery of rare earth elements from european coal mining waste",
    "authors": [
@@ -23505,7 +24580,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0540",
+   "record_id": "ART-0563",
    "relative_pdf_path": "Solid Earth sciences/s41598-026-63564-2.pdf",
    "title": "Fault-controlled reservoir compartmentalization as a control on CO2 storage potential in Jurassic Safa reservoirs, Obaiyed Field, Western Desert, Egypt",
    "authors": [
@@ -23544,7 +24619,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0541",
+   "record_id": "ART-0564",
    "relative_pdf_path": "Solid Earth sciences/s41598-026-64333-x.pdf",
    "title": "First cosmic-ray muography of a crust-mantle transition zone",
    "authors": [
@@ -23590,7 +24665,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0542",
+   "record_id": "ART-0565",
    "relative_pdf_path": "Solid Earth sciences/s41598-026-64771-7.pdf",
    "title": "Detection of coal seam floor failure depth through borehole direct current resistivity monitoring",
    "authors": [
@@ -23629,7 +24704,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0543",
+   "record_id": "ART-0566",
    "relative_pdf_path": "Space physics/s41467-026-74847-7.pdf",
    "title": "Global current systems in the magnetosphere of Mercury",
    "authors": [
@@ -23682,7 +24757,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0544",
+   "record_id": "ART-0567",
    "relative_pdf_path": "Space physics/s41467-026-74984-z.pdf",
    "title": "Transient distortions of the South Atlantic Anomaly radiation environments driven by electric fields",
    "authors": [
@@ -23728,7 +24803,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0545",
+   "record_id": "ART-0568",
    "relative_pdf_path": "Space physics/s41467-026-75019-3.pdf",
    "title": "Miniature Dungey-like cycle at Mars",
    "authors": [
@@ -23773,7 +24848,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0546",
+   "record_id": "ART-0569",
    "relative_pdf_path": "Space physics/s41467-026-75552-1.pdf",
    "title": "Spatiotemporal patterns of lower-band whistler mode waves in the magnetosphere of Earth",
    "authors": [
@@ -23813,7 +24888,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0547",
+   "record_id": "ART-0570",
    "relative_pdf_path": "Space physics/s41598-026-63206-7.pdf",
    "title": "RadCube MAGIC observations of complex field aligned currents associated with a supersubstorm during the May 2024 geomagnetic storm",
    "authors": [
@@ -23859,7 +24934,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0548",
+   "record_id": "ART-0571",
    "relative_pdf_path": "Stem cells/s41467-026-75663-9.pdf",
    "title": "Extracellular matrix stiffness directs region-specific lung epithelial differentiation revealed by hPSC-derived lung organoids",
    "authors": [
@@ -23910,7 +24985,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0549",
+   "record_id": "ART-0572",
    "relative_pdf_path": "Stem cells/s41467-026-75679-1.pdf",
    "title": "Golgi organization regulates stem cell function in the small intestine",
    "authors": [
@@ -23963,7 +25038,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0550",
+   "record_id": "ART-0573",
    "relative_pdf_path": "Stem cells/s41467-026-76054-w.pdf",
    "title": "Distinct differentiation trajectories leave lasting impacts on gene regulation and function of V2a neurons",
    "authors": [
@@ -24009,7 +25084,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0551",
+   "record_id": "ART-0574",
    "relative_pdf_path": "Stem cells/s41598-026-62951-z.pdf",
    "title": "Early morphological and gene/protein expression dynamics of human synovial mesenchymal stem cells during adhesion to a damaged meniscal surface",
    "authors": [
@@ -24052,7 +25127,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0552",
+   "record_id": "ART-0575",
    "relative_pdf_path": "Stem cells/s41598-026-63776-6.pdf",
    "title": "Sustained simvastatin delivery via poly(lactide) nanoparticles enhances early osteogenic-associated responses in human periodontal ligament stem cells",
    "authors": [
@@ -24101,7 +25176,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0553",
+   "record_id": "ART-0576",
    "relative_pdf_path": "Structural biology/s41467-026-75561-0.pdf",
    "title": "Screening of amphipathic helices identifies features linked to inner nuclear membrane properties",
    "authors": [
@@ -24144,7 +25219,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0554",
+   "record_id": "ART-0577",
    "relative_pdf_path": "Structural biology/s41467-026-75749-4.pdf",
    "title": "SLC26A11 is an atypical solute carrier with dual transport-channel function mediating lysosomal sulfate transport",
    "authors": [
@@ -24190,7 +25265,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0555",
+   "record_id": "ART-0578",
    "relative_pdf_path": "Structural biology/s41467-026-76135-w.pdf",
    "title": "A GABARAP−PtdIns3K-C1 positive feedback loop at the heart of the phagophore nucleation",
    "authors": [
@@ -24234,7 +25309,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0556",
+   "record_id": "ART-0579",
    "relative_pdf_path": "Structural biology/s41467-026-76288-8.pdf",
    "title": "Structures of EHD2 filaments on curved membranes provide a model for caveolar neck stabilization",
    "authors": [
@@ -24275,7 +25350,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0557",
+   "record_id": "ART-0580",
    "relative_pdf_path": "Structural biology/s41598-026-64340-y.pdf",
    "title": "Conformational changes in insulin receptor illuminated by live-cell linear dichroism imaging and a FLIP biosensor",
    "authors": [
@@ -24321,7 +25396,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0558",
+   "record_id": "ART-0581",
    "relative_pdf_path": "Systems biology/s41467-026-75309-w.pdf",
    "title": "Systems-level analysis predicts no autotrophy-linked protein-RNA interactions in Clostridium autoethanogenum",
    "authors": [
@@ -24364,7 +25439,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0559",
+   "record_id": "ART-0582",
    "relative_pdf_path": "Systems biology/s41467-026-75364-3.pdf",
    "title": "Epigenetic signatures mark early peripheral human B lineage bifurcation and differential transcriptional profiles in mature populations",
    "authors": [
@@ -24414,7 +25489,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0560",
+   "record_id": "ART-0583",
    "relative_pdf_path": "Systems biology/s41467-026-76025-1.pdf",
    "title": "Function-specific epistasis shapes evolutionary trajectories towards antibiotic resistance",
    "authors": [
@@ -24455,7 +25530,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0561",
+   "record_id": "ART-0584",
    "relative_pdf_path": "Systems biology/s41598-026-61463-0.pdf",
    "title": "Numerical simulation of mitochondrial systems for ATP generation and membrane transport",
    "authors": [
@@ -24493,7 +25568,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0562",
+   "record_id": "ART-0585",
    "relative_pdf_path": "Systems biology/s41598-026-61538-y.pdf",
    "title": "Network architecture determines delay robustness in the spindle assembly checkpoint",
    "authors": [
@@ -24530,7 +25605,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0563",
+   "record_id": "ART-0586",
    "relative_pdf_path": "Urology/s41598-026-59219-x.pdf",
    "title": "Time-course changes in fluid balance following ingestion of a novel glycerol-electrolyte solution in a randomized trial",
    "authors": [
@@ -24572,7 +25647,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0564",
+   "record_id": "ART-0587",
    "relative_pdf_path": "Urology/s41598-026-61231-0.pdf",
    "title": "Prevalence and risk factors associated with urinary tract infections and sexually transmitted diseases among young adults in Poland",
    "authors": [
@@ -24613,7 +25688,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0565",
+   "record_id": "ART-0588",
    "relative_pdf_path": "Urology/s41598-026-62051-y.pdf",
    "title": "Impact of different treatment modalities for localized prostate cancer on patient-reported quality of life outcomes in an Asian Cohort",
    "authors": [
@@ -24658,7 +25733,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0566",
+   "record_id": "ART-0589",
    "relative_pdf_path": "Urology/s41598-026-62193-z.pdf",
    "title": "“Uropathogens and antimicrobial susceptibility patterns in urosepsis patients at kafr el sheikh University hospital: a cross-sectional study”",
    "authors": [
@@ -24706,7 +25781,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0567",
+   "record_id": "ART-0590",
    "relative_pdf_path": "Urology/s41598-026-62882-9.pdf",
    "title": "Real-world incidence of G3-G4 adverse events with enfortumab vedotin in patients with advanced urothelial carcinoma (ARON-2EV study)",
    "authors": [
@@ -24772,7 +25847,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0568",
+   "record_id": "ART-0591",
    "relative_pdf_path": "Water resources/s41467-026-76005-5.pdf",
    "title": "The saline groundwater legacy of a large buried coastal paleo-estuary",
    "authors": [
@@ -24817,7 +25892,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0569",
+   "record_id": "ART-0592",
    "relative_pdf_path": "Water resources/s41467-026-76024-2.pdf",
    "title": "Disproportionate exposure to extreme floods in historically redlined U.S. communities",
    "authors": [
@@ -24857,7 +25932,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0570",
+   "record_id": "ART-0593",
    "relative_pdf_path": "Water resources/s41598-026-62139-5.pdf",
    "title": "Temperature-induced shift in 21st-century Amazon droughts",
    "authors": [
@@ -24902,7 +25977,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0571",
+   "record_id": "ART-0594",
    "relative_pdf_path": "Water resources/s41598-026-63471-6.pdf",
    "title": "A bilateral US-UK airplane wastewater monitoring pilot demonstrates the feasibility of an international wastewater surveillance network",
    "authors": [
@@ -24947,7 +26022,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0572",
+   "record_id": "ART-0595",
    "relative_pdf_path": "Water resources/s41598-026-64153-z.pdf",
    "title": "Machine learning-based anomaly detection in surface water quality data using ensemble models with residual analysis",
    "authors": [
@@ -24985,7 +26060,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0573",
+   "record_id": "ART-0596",
    "relative_pdf_path": "Zoology/s41598-026-53701-2.pdf",
    "title": "Metabolic adaptations of starving purple sea urchins (Strongylocentrotus purpuratus) surviving in the barrens",
    "authors": [
@@ -25028,7 +26103,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0574",
+   "record_id": "ART-0597",
    "relative_pdf_path": "Zoology/s41598-026-61772-4.pdf",
    "title": "Network analysis highlights socio-demographic patterns of stone tool-using primates",
    "authors": [
@@ -25071,7 +26146,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0575",
+   "record_id": "ART-0598",
    "relative_pdf_path": "Zoology/s41598-026-62227-6.pdf",
    "title": "A self-training approach to improve multispecies school classification models in fisheries acoustics data",
    "authors": [
@@ -25111,7 +26186,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0576",
+   "record_id": "ART-0599",
    "relative_pdf_path": "Zoology/s41598-026-63940-y.pdf",
    "title": "Prevalence and impact of bopyrid isopod infestation on mud shrimp populations in the eastern Yellow Sea",
    "authors": [
@@ -25148,7 +26223,7 @@
    "status": "active"
   },
   {
-   "record_id": "ART-0577",
+   "record_id": "ART-0600",
    "relative_pdf_path": "Zoology/s41598-026-64366-2.pdf",
    "title": "Effects of diets containing fish proteins or poultry proteins on one-carbon metabolites in domestic dogs. A randomised, double-blind, two-period cross-over study",
    "authors": [

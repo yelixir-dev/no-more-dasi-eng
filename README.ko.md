@@ -26,9 +26,9 @@
 
 | 분야 | 논문 | 점수 |
 | --- | ---: | ---: |
+| Chemistry (주요 분야) | 70 | 96.7 |
+| Optics and photonics (주요 분야) | 89 | 95.6 |
 | Physics (주요 분야) | 100 | 95.0 |
-| Optics and photonics (주요 분야) | 80 | 91.2 |
-| Chemistry (주요 분야) | 44 | 83.0 |
 | Biophysics (주요 분야) | 5 | 54.9 |
 | Biotechnology (주요 분야) | 5 | 50.6 |
 | Microbiology (주요 분야) | 5 | 50.2 |
