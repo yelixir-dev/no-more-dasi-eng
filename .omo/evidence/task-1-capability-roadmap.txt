@@ -1,0 +1,14 @@
+Todo 1 QA: engine/API boundary allowlist
+
+Command:
+  cd skills/nomoredasi && ../../.venv/bin/python -m unittest tests.test_engine_boundary -v
+Result:
+  Ran 3 tests in 0.015s
+  OK
+
+Coverage:
+- Document contains the four layers and the explicit six-file Engine API allowlist.
+- AST scan found zero forbidden references in every allowlisted script.
+- Fixture containing logs/ was detected by scan_source as a violation.
+- Every existing scripts/*.py file is classified as either the allowlist or repo-operations set.
+- readiness.py was not touched (checked with git diff --name-only).
