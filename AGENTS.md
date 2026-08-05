@@ -23,9 +23,11 @@ Nature 71개 세부 분야 논문 원고를 해당 분야 학술 영어 관행�
 
 스킬 업데이트(채굴·오버레이·레지스트리·골든 테스트)에는 **CC BY 4.0 라이선스 논문만** 사용한다. CC BY-NC 계열(NC·NC-ND·NC-SA)은 수집단에서 배제하며, 코퍼스에서 발견될 경우 **`build_attributions.py --quarantine`이 원본을 `~/Documents/papers-quarantine/`으로 격리**하고 status를 quarantined로 기록한다. 2026-08-01에 NC-ND 103편을 제거해 현재 코퍼스는 전부 CC BY 4.0이다. 논문별 출처·라이선스 레지스트리는 `docs/attributions.json`(SSOT) + `docs/ATTRIBUTIONS.md`(공개용) + `docs/attributions.html`(뷰)로 관리하며, `build_attributions.py`가 매 사이클 자동 재생성한다(템플릿 원본은 `docs/templates/`).
 
-## 성숙도 점수 (readiness)
+## 성숙도 점수: corpus coverage
 
-`scripts/readiness.py`가 분야별 준비도 점수(0-100: 편수·단어수·연어 깊이·섹션 커버리지·용어 안정성 가중합)를 계산해 `logs/readiness.jsonl` 시계열로 기록한다. 매 사이클 Step 4에서 실행되며 `docs/readiness.html`(x=편수, y=종합점수, 범례=분야, SVG 차트+랭킹 표)을 자동 갱신한다. 점수-편수 곡선으로 "몇 편이면 쓸만한가"를 실측 분석하는 데 쓰고 (향후 다른 언어·분야 스킬에도 재사용), 나중에 정리 아티클 소재로도 활용한다.
+`scripts/readiness.py`가 계산하는 readiness 점수는 이제 사용자 문면에서 **corpus coverage**로 부른다. 이는 분야별 코퍼스 축적 상태(0-100: 편수·단어수·연어 깊이·섹션 커버리지·용어 안정성 가중합)만 나타내며 교정 능력 지표가 아니다. 실제 능력은 `skills/nomoredasi/tests/benchmark/`의 결정적 벤치마크가 측정한다. 점수 산식과 가중치, `logs/readiness.jsonl` 이력 스키마는 그대로 유지한다.
+
+현재 corpus coverage 95+ 분야인 Chemistry, Optics and photonics, Physics는 벤치마크 lift 증거 없이는 코퍼스 추가를 동결한다. 그 밖의 분야는 계속 추가할 수 있다. 능력 벤치마크가 확정되면 추가 기준은 단순 coverage 부족에서 벤치마크가 드러낸 용어·섹션·최신성 갭으로 연결해 개정한다. 매 사이클 Step 4의 `docs/readiness.html` 생성과 점수-편수 이력은 이 정책에 맞춰 유지한다.
 
 ## 주 2회 델타 분석 사이클 (1차 목표)
 
