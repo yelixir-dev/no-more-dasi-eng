@@ -1,0 +1,12 @@
+$ ../../.venv/bin/python -m unittest tests.test_benchmark_metrics -v
+test_critical_miss_is_zero_and_unlisted_alternative_is_miss (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_critical_miss_is_zero_and_unlisted_alternative_is_miss) ... ok
+test_eap_weights_each_gold_opcode (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_eap_weights_each_gold_opcode) ... ok
+test_fpr0_reports_rate_and_changed_tokens_per_thousand (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_fpr0_reports_rate_and_changed_tokens_per_thousand) ... ok
+test_mp_reports_dice_strict_and_protected_names (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_mp_reports_dice_strict_and_protected_names) ... ok
+test_swcr_weights_minor_and_major (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_swcr_weights_minor_and_major) ... ok
+test_tokenizer_normalizes_nfc_and_is_fixed (tests.test_benchmark_metrics.BenchmarkMetricsTests.test_tokenizer_normalizes_nfc_and_is_fixed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK
