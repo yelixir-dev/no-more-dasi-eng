@@ -1,0 +1,96 @@
+[
+  {
+    "span": [
+      17,
+      18
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "its"
+      ]
+    ]
+  },
+  {
+    "span": [
+      21,
+      22
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "to",
+        "be"
+      ]
+    ]
+  },
+  {
+    "span": [
+      34,
+      38
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "Annealing"
+      ]
+    ]
+  },
+  {
+    "span": [
+      41,
+      42
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "decreased"
+      ]
+    ]
+  },
+  {
+    "span": [
+      46,
+      48
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  },
+  {
+    "span": [
+      59,
+      64
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "support"
+      ]
+    ]
+  },
+  {
+    "span": [
+      65,
+      65
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "use",
+        "of",
+        "the",
+        "film",
+        "in"
+      ]
+    ]
+  }
+]

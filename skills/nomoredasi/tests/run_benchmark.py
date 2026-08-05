@@ -133,7 +133,7 @@ def run_benchmark(dataset, candidates=None, baseline=None, update_baseline=None,
         swcr_values.append(score)
         eap_values.append(eap(record["input"], record["gold"], candidate))
         mp_values.append(mp(record["input"], candidate, meta["protected_names"]))
-        grade = meta["error_class"]
+        grade = meta["error_class"] if meta["error_class"] is not None else "pending"
         by_grade.setdefault(grade, []).append(score)
         by_field.setdefault(meta["field"], []).append(score)
         by_cell.setdefault(f"{grade}:{meta['severity']}", []).append(score)
@@ -147,7 +147,7 @@ def run_benchmark(dataset, candidates=None, baseline=None, update_baseline=None,
         "swcr": sum(swcr_values) / len(swcr_values), "fpr0": controls,
         "eap": sum(eap_values) / len(eap_values),
         "mp": {"dice": sum(x["dice"] for x in mp_values) / len(mp_values), "strict": all(x["strict"] for x in mp_values)},
-        "by_grade": {k: sum(v) / len(v) for k, v in sorted(by_grade.items())},
+        "by_grade": {k: sum(v) / len(v) for k, v in sorted(by_grade.items(), key=lambda item: str(item[0]))},
         "by_field": {k: sum(v) / len(v) for k, v in sorted(by_field.items())},
         "by_grade_severity": {k: sum(v) / len(v) for k, v in sorted(by_cell.items())},
     }

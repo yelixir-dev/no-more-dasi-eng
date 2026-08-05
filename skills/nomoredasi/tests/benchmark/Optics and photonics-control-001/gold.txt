@@ -1,0 +1,1 @@
+1 Scientific Reports | 5:13376 | DOI: 10.1038/srep13376 www.nature.com/scientificreports Robust light transport in non- Hermitian photonic lattices Stefano Longhi, Davide Gatti & Giuseppe Della Valle Combating the effects of disorder on light transport in micro- and nano-integrated photonic devices is of major importance from both fundamental and applied viewpoints.

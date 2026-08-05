@@ -1,0 +1,29 @@
+Todo 8 evidence
+
+TDD and component QA:
+- Initial command: `cd skills/nomoredasi && ../../.venv/bin/python -m unittest tests.test_benchmark_fetch tests.test_benchmark_sample tests.test_excluded_sources -v`; initial failures were the expected missing implementation modules/CLI option.
+- Final component command: same command plus `tests.test_pilot_assembly`; PASS, 6 tests.
+- Full suite: `cd skills/nomoredasi && ../../.venv/bin/python -m unittest discover -s tests -p 'test_*.py'`; PASS, 140 tests.
+- `python3 -m py_compile` for benchmark_fetch.py, benchmark_sample.py, assemble_pilot.py, benchmark_synth.py, and mine_corpus.py; PASS.
+- `git diff --check`; PASS.
+
+Fetch:
+- Real `benchmark_fetch.py --field <anchor> --n 8` was run once for each of Chemistry, Physics, Optics and photonics, Cancer, Materials science, and Neuroscience. The initial exact OpenAlex query accepted 3, 0, 2, 1, 0, and 0 papers respectively; no BENCH FETCH UNAVAILABLE condition occurred.
+- CC BY/allowlist-only supplemental OpenAlex fixture material was then downloaded through `--from-json` to complete the bench pool without using the mined corpus. The resulting bench-pool manifest has 54 unique OpenAlex works and 48 sampled control sources (8 per anchor field).
+- `benchmark_journals.json` is the SSOT with Scientific Reports (2045-2322) and Nature Communications (2041-1723); fixture tests verify license, ISSN, and attribution-journal filtering.
+
+Manifest aggregation (from `skills/nomoredasi/tests/benchmark/manifest.json`):
+- total: 120
+- controls: 48 (ratio 0.4, >=25%)
+- synthetic: 60 (ratio 0.5, <=60%)
+- synthetic IDs: P5=20, P6=20, R3=20 (each <=20)
+- fields: Cancer=19, Chemistry=18, Materials science=19, Neuroscience=19, Optics and photonics=26, Physics=19
+- approved non-control cases with non-empty edits: 60 (F3 probe prerequisite)
+- excluded-sources.json entries: 48, equal to sampled source count
+
+Benchmark QA:
+- `python3 skills/nomoredasi/tests/run_benchmark.py --update-baseline logs/baseline-gold-selfcheck.json`; PASS, mode=gold-selfcheck, cases=120, skipped=0, FPR0 rate=0.
+- `python3 skills/nomoredasi/tests/run_benchmark.py`; PASS, same gold-selfcheck report.
+- `cd skills/nomoredasi && ../../.venv/bin/python tests/run_golden.py`; PASS, all 5 cases.
+- Exclusion tests verify registered sources do not appear in mine_corpus output and absent registry preserves old behavior.
+- `docs/benchmark-annotation.md` records contract v2, two-person review/adjudication, protected_names, severity, machine promotion, and the deferred approximately 200-case annotation wave.

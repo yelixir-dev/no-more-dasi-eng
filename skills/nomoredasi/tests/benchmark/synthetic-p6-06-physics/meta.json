@@ -1,0 +1,11 @@
+{
+  "field": "Physics",
+  "error_class": "korean-translationese",
+  "severity": "major",
+  "origin": "synthetic",
+  "no_edit": false,
+  "source_doc_id": "synthetic/P6/Physics/06",
+  "protected_names": [],
+  "review": "approved",
+  "approved_by": "machine:synthetic"
+}

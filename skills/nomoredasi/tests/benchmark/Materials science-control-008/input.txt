@@ -1,0 +1,1 @@
+A comprehensive benchmark of active learning strategies with AutoML for small-sample regression in materials science Jinghou Bi, Yuanhao Xu, Felix Conrad, Hajo Wiemer & Steffen Ihlenfeldt The high cost and difficulty of acquiring labeled data in materials science often limits the scale of data- driven modeling efforts.

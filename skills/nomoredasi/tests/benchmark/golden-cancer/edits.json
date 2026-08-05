@@ -1,0 +1,63 @@
+[
+  {
+    "span": [
+      2,
+      3
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "were"
+      ]
+    ]
+  },
+  {
+    "span": [
+      14,
+      17
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  },
+  {
+    "span": [
+      20,
+      21
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "expression"
+      ]
+    ]
+  },
+  {
+    "span": [
+      27,
+      28
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  },
+  {
+    "span": [
+      29,
+      33
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "correlated"
+      ]
+    ]
+  }
+]

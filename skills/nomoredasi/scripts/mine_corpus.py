@@ -252,6 +252,11 @@ def main():
         default=None,
         help="attributions.json path: mine only files whose status is 'active' (CC BY gate)",
     )
+    parser.add_argument(
+        "--excluded-sources",
+        default=str(Path(__file__).resolve().parent.parent / "tests" / "benchmark" / "excluded-sources.json"),
+        help="benchmark source registry; absent registry preserves existing mining behavior",
+    )
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -273,7 +278,15 @@ def main():
             for e in attr.get("entries", [])
             if e.get("status") == "active" and e.get("relative_pdf_path")
         }
-    corpus_files = sorted(corpus.rglob("*.pdf")) + sorted(corpus.rglob("*.txt"))
+    excluded_path = Path(args.excluded_sources).expanduser()
+    excluded = set()
+    if excluded_path.exists():
+        excluded_data = json.loads(excluded_path.read_text(encoding="utf-8"))
+        excluded = {entry["relative_pdf_path"] for entry in excluded_data}
+    corpus_files = [
+        path for path in sorted(corpus.rglob("*.pdf")) + sorted(corpus.rglob("*.txt"))
+        if path.relative_to(corpus).as_posix() not in excluded
+    ]
     corpus_as_of = max(
         datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).date()
         for path in corpus_files
@@ -290,7 +303,10 @@ def main():
         field = field_dir.name
         if only and field not in only:
             continue
-        files = sorted(field_dir.glob("*.pdf")) + sorted(field_dir.glob("*.txt"))
+        files = [
+            path for path in sorted(field_dir.glob("*.pdf")) + sorted(field_dir.glob("*.txt"))
+            if path.relative_to(corpus).as_posix() not in excluded
+        ]
         if active is not None:
             files = [f for f in files if f.relative_to(corpus).as_posix() in active]
         if args.limit:

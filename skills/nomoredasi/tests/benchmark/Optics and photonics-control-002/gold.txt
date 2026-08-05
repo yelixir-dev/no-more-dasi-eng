@@ -1,0 +1,1 @@
+1 Scientific Reports | 6:22381 | DOI: 10.1038/srep22381 www.nature.com/scientificreports Fully analogue photonic reservoir computer François Duport1, Anteo Smerieri1, Akram Akrout2, Marc Haelterman1 & Serge Massar2 Introduced a decade ago, reservoir computing is an efficient approach for signal processing.

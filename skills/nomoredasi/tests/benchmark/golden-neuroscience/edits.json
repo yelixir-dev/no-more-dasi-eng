@@ -1,0 +1,66 @@
+[
+  {
+    "span": [
+      3,
+      4
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "were"
+      ]
+    ]
+  },
+  {
+    "span": [
+      25,
+      27
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "The"
+      ]
+    ]
+  },
+  {
+    "span": [
+      32,
+      33
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "increased"
+      ]
+    ]
+  },
+  {
+    "span": [
+      36,
+      38
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  },
+  {
+    "span": [
+      42,
+      43
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "-",
+        "fold"
+      ]
+    ]
+  }
+]

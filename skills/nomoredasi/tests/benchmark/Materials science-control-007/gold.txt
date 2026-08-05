@@ -1,0 +1,1 @@
+Performance of uncertainty- based active learning for efficient approximation of black-box functions in materials science Ai Koizumi1, Guillaume Deffrennes2, Kei Terayama3,4,5 & Ryo Tamura1,5,6 Obtaining a fine approximation of a black-box function is important for understanding and evaluating innovative materials.

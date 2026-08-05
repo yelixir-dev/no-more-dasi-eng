@@ -1,0 +1,10 @@
+{
+  "field": "Physics",
+  "error_class": null,
+  "severity": null,
+  "origin": "natural",
+  "no_edit": false,
+  "source_doc_id": "golden/physics",
+  "protected_names": [],
+  "review": "pending"
+}

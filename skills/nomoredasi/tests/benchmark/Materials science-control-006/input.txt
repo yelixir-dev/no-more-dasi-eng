@@ -1,0 +1,1 @@
+XElemNet: towards explainable AI for deep neural networks in materials science Kewei Wang, Vishu Gupta, Claire Songhyun Lee, Yuwei Mao, Muhammed Nur Talha Kilic, Youjia Li, Zanhua Huang, Wei-keng Liao, Alok Choudhary & Ankit Agrawal Recent progress in deep learning has significantly impacted materials science, leading to accelerated material discovery and innovation.

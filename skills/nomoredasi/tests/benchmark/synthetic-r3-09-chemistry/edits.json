@@ -1,0 +1,15 @@
+[
+  {
+    "span": [
+      4,
+      5
+    ],
+    "class": "R3",
+    "severity": "major",
+    "accept": [
+      [
+        "was"
+      ]
+    ]
+  }
+]

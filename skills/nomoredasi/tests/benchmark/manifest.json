@@ -1,0 +1,1206 @@
+{
+  "version": 2,
+  "total": 120,
+  "cases": [
+    {
+      "case_id": "Cancer-control-001",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-002",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-003",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-004",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-005",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-006",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-007",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Cancer-control-008",
+      "field": "Cancer",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-001",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-002",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-003",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-004",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-005",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-006",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-007",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Chemistry-control-008",
+      "field": "Chemistry",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-001",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-002",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-003",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-004",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-005",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-006",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-007",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Materials science-control-008",
+      "field": "Materials science",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-001",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-002",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-003",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-004",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-005",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-006",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-007",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Neuroscience-control-008",
+      "field": "Neuroscience",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-001",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-002",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-003",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-004",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-005",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-006",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-007",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Optics and photonics-control-008",
+      "field": "Optics and photonics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-001",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-002",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-003",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-004",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-005",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-006",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-007",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "Physics-control-008",
+      "field": "Physics",
+      "error_class": "none",
+      "severity": "na",
+      "origin": "natural",
+      "review": "approved",
+      "no_edit": true,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "golden-cancer",
+      "field": "Cancer",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "golden-materials",
+      "field": "Materials science",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "golden-neuroscience",
+      "field": "Neuroscience",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "golden-optics",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "golden-physics",
+      "field": "Physics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-001",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-002",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-003",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-004",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-005",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-006",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "natural-007",
+      "field": "Optics and photonics",
+      "error_class": null,
+      "severity": null,
+      "origin": "natural",
+      "review": "pending",
+      "no_edit": false,
+      "synthetic_id": null
+    },
+    {
+      "case_id": "synthetic-p5-01-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-02-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-03-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-04-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-05-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-06-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-07-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-08-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-09-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-10-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-11-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-12-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-13-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-14-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-15-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-16-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-17-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-18-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-19-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p5-20-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "minor",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P5"
+    },
+    {
+      "case_id": "synthetic-p6-01-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-02-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-03-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-04-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-05-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-06-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-07-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-08-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-09-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-10-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-11-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-12-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-13-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-14-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-15-materials-science",
+      "field": "Materials science",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-16-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-17-chemistry",
+      "field": "Chemistry",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-18-physics",
+      "field": "Physics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-19-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-p6-20-cancer",
+      "field": "Cancer",
+      "error_class": "korean-translationese",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "P6"
+    },
+    {
+      "case_id": "synthetic-r3-01-materials-science",
+      "field": "Materials science",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-02-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-03-chemistry",
+      "field": "Chemistry",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-04-physics",
+      "field": "Physics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-05-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-06-cancer",
+      "field": "Cancer",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-07-materials-science",
+      "field": "Materials science",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-08-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-09-chemistry",
+      "field": "Chemistry",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-10-physics",
+      "field": "Physics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-11-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-12-cancer",
+      "field": "Cancer",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-13-materials-science",
+      "field": "Materials science",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-14-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-15-chemistry",
+      "field": "Chemistry",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-16-physics",
+      "field": "Physics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-17-optics-and-photonics",
+      "field": "Optics and photonics",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-18-cancer",
+      "field": "Cancer",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-19-materials-science",
+      "field": "Materials science",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    },
+    {
+      "case_id": "synthetic-r3-20-neuroscience",
+      "field": "Neuroscience",
+      "error_class": "section-tense",
+      "severity": "major",
+      "origin": "synthetic",
+      "review": "approved",
+      "no_edit": false,
+      "synthetic_id": "R3"
+    }
+  ]
+}

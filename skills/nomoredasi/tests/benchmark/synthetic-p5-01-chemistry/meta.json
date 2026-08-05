@@ -1,0 +1,11 @@
+{
+  "field": "Chemistry",
+  "error_class": "korean-translationese",
+  "severity": "minor",
+  "origin": "synthetic",
+  "no_edit": false,
+  "source_doc_id": "synthetic/P5/Chemistry/01",
+  "protected_names": [],
+  "review": "approved",
+  "approved_by": "machine:synthetic"
+}

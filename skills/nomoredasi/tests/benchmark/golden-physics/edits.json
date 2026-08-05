@@ -1,0 +1,40 @@
+[
+  {
+    "span": [
+      3,
+      6
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "occurred"
+      ]
+    ]
+  },
+  {
+    "span": [
+      15,
+      19
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "Under",
+        "a"
+      ]
+    ]
+  },
+  {
+    "span": [
+      29,
+      30
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  }
+]

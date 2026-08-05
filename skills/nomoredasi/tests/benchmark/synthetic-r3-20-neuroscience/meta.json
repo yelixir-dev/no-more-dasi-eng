@@ -1,0 +1,11 @@
+{
+  "field": "Neuroscience",
+  "error_class": "section-tense",
+  "severity": "major",
+  "origin": "synthetic",
+  "no_edit": false,
+  "source_doc_id": "synthetic/R3/Neuroscience/20",
+  "protected_names": [],
+  "review": "approved",
+  "approved_by": "machine:synthetic"
+}

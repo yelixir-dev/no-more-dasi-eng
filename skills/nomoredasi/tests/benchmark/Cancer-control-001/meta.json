@@ -1,0 +1,12 @@
+{
+  "field": "Cancer",
+  "error_class": "none",
+  "severity": "na",
+  "origin": "natural",
+  "no_edit": true,
+  "source_doc_id": "Cancer/W2419439766.pdf",
+  "protected_names": [],
+  "review": "approved",
+  "approved_by": "machine:control",
+  "source_doi": null
+}

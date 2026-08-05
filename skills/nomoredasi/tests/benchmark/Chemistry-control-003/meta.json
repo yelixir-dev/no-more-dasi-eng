@@ -1,0 +1,12 @@
+{
+  "field": "Chemistry",
+  "error_class": "none",
+  "severity": "na",
+  "origin": "natural",
+  "no_edit": true,
+  "source_doc_id": "Chemistry/W2157120748.pdf",
+  "protected_names": [],
+  "review": "approved",
+  "approved_by": "machine:control",
+  "source_doi": null
+}

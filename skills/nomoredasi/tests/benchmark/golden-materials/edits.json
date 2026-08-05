@@ -1,0 +1,79 @@
+[
+  {
+    "span": [
+      12,
+      13
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      []
+    ]
+  },
+  {
+    "span": [
+      14,
+      15
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "exhibited",
+        "a"
+      ]
+    ]
+  },
+  {
+    "span": [
+      16,
+      19
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "of"
+      ]
+    ]
+  },
+  {
+    "span": [
+      27,
+      29
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "The"
+      ]
+    ]
+  },
+  {
+    "span": [
+      37,
+      38
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "enhanced"
+      ]
+    ]
+  },
+  {
+    "span": [
+      41,
+      44
+    ],
+    "class": null,
+    "severity": "major",
+    "accept": [
+      [
+        "by"
+      ]
+    ]
+  }
+]
