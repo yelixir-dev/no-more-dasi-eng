@@ -17,7 +17,11 @@ description: 한국어/영어 논문 원고를 해당 분야(Nature 71개 세부
 
 ## Phase 0: 입력 유형 판별
 
-작업 시작 시 한 줄 출력: `nomoredasi v0.1 — 유형 {A|B} / 분야: {확정된 분야}`
+작업 시작 시 한 줄 출력한다. 레이블은 **사용자 요청 언어**를 따른다:
+
+- 한국어 요청: `nomoredasi v0.1 — 유형 {A|B} / 분야: {확정된 분야}`
+- 영어 요청: `nomoredasi v0.1 — type {A|B} / field: {resolved field}`
+- 그 외 언어: type/field 레이블을 해당 언어로 번역한다.
 
 - **유형 A (한국어 원고)** — 번역+교정 복합 경로. `references/core/korean-author-pitfalls.md`의 번역투 유발 구조("~를 통해", "~에 의해" 등)를 먼저 탐지해 직역을 차단한 뒤 번역하고, 이후 유형 B와 동일한 3층 규칙을 적용한다.
 - **유형 B (영어 원고, AI 초안 포함)** — 교정 경로. AI 초안 징후가 있으면 `references/core/ai-tell-en.md` 계층을 추가 적용한다.

@@ -69,10 +69,10 @@ Adapt `~/.agents/skills` to your harness (e.g. `~/.claude/skills`); a plain copy
 
 ## Usage
 
-Just ask your agent — “proofread this paper for Nature”, “edit my manuscript to journal style”, “remove the translationese”, “fix my AI-drafted paper”. Korean works too. The skill announces itself and gets to work (the banner prints in Korean: `유형 B` = English-draft path, `분야` = detected field):
+Just ask your agent — “proofread this paper for Nature”, “edit my manuscript to journal style”, “remove the translationese”, “fix my AI-drafted paper”. Korean works too. The skill announces itself in your language and gets to work:
 
 ```text
-nomoredasi v0.1 — 유형 B / 분야: Optics and photonics
+nomoredasi v0.1 — type B / field: Optics and photonics
 ```
 
 You receive three things: the corrected manuscript, a `<name>.edits.json` journal (every change and every deliberate non-change, rule-cited), and a `<name>.integrity-report.html` you can diff-review. Set the budget explicitly if you want — “light pass please”, “mid budget please” — or request several intensities in one go.
