@@ -93,8 +93,10 @@ def readiness_section(records, majors, korean=False):
         key=score_key,
     )
 
-    rows = []
-    for field, record in major_items:
+    def cells(item):
+        if item is None:
+            return " |  | "
+        field, record = item
         try:
             papers = int(record.get("papers", 0))
         except (TypeError, ValueError):
@@ -103,7 +105,14 @@ def readiness_section(records, majors, korean=False):
             score = float(record.get("score", 0))
         except (TypeError, ValueError):
             score = 0.0
-        rows.append(f"| {field} | {papers} | {score:.1f} |")
+        return f"{field} | {papers} | {score:.1f}"
+
+    half = (len(major_items) + 1) // 2
+    rows = []
+    for i in range(half):
+        left = major_items[i]
+        right = major_items[i + half] if i + half < len(major_items) else None
+        rows.append(f"| {cells(left)} | {cells(right)} |")
 
     return "\n".join(
         [
@@ -112,8 +121,8 @@ def readiness_section(records, majors, korean=False):
             "",
             f"![{alt}](docs/assets/readiness-chart.svg)",
             "",
-            f"| {field_header} | {papers_header} | {score_header} |",
-            "| --- | ---: | ---: |",
+            f"| {field_header} | {papers_header} | {score_header} | {field_header} | {papers_header} | {score_header} |",
+            "| --- | ---: | ---: | --- | ---: | ---: |",
             *rows,
             "",
             full_list,

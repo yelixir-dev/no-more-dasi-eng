@@ -24,28 +24,18 @@
 
 ![Field readiness chart](docs/assets/readiness-chart.svg)
 
-| Field | Papers | Score |
-| --- | ---: | ---: |
-| Chemistry | 70 | 96.7 |
-| Optics and photonics | 89 | 95.6 |
-| Physics | 100 | 95.0 |
-| Biophysics | 5 | 54.9 |
-| Biotechnology | 5 | 50.6 |
-| Microbiology | 5 | 50.2 |
-| Cancer | 5 | 49.6 |
-| Environmental sciences | 5 | 49.2 |
-| Energy science and technology | 5 | 48.9 |
-| Biochemistry | 5 | 48.7 |
-| Cell biology | 5 | 48.3 |
-| Biological techniques | 5 | 48.1 |
-| Neuroscience | 5 | 47.8 |
-| Materials science | 5 | 47.7 |
-| Mathematics and computing | 5 | 47.7 |
-| Medical research | 5 | 47.1 |
-| Nanoscience and technology | 5 | 47.1 |
-| Engineering | 5 | 45.8 |
-| Diseases | 5 | 45.7 |
-| Health care | 5 | 45.6 |
+| Field | Papers | Score | Field | Papers | Score |
+| --- | ---: | ---: | --- | ---: | ---: |
+| Chemistry | 70 | 96.7 | Cell biology | 5 | 48.3 |
+| Optics and photonics | 89 | 95.6 | Biological techniques | 5 | 48.1 |
+| Physics | 100 | 95.0 | Neuroscience | 5 | 47.8 |
+| Biophysics | 5 | 54.9 | Materials science | 5 | 47.7 |
+| Biotechnology | 5 | 50.6 | Mathematics and computing | 5 | 47.7 |
+| Microbiology | 5 | 50.2 | Medical research | 5 | 47.1 |
+| Cancer | 5 | 49.6 | Nanoscience and technology | 5 | 47.1 |
+| Environmental sciences | 5 | 49.2 | Engineering | 5 | 45.8 |
+| Energy science and technology | 5 | 48.9 | Diseases | 5 | 45.7 |
+| Biochemistry | 5 | 48.7 | Health care | 5 | 45.6 |
 
 Full list including minor subjects: [docs/readiness-fields.html](docs/readiness-fields.html)
 
@@ -79,13 +69,13 @@ Adapt `~/.agents/skills` to your harness (e.g. `~/.claude/skills`); a plain copy
 
 ## Usage
 
-Just ask your agent, in English or Korean — “proofread this paper for Nature”, “논문 영어 다듬어줘”, “Nature 투고용으로 교정”, “번역투 없애줘”, “AI가 쓴 논문 초안 교정”. The skill announces itself and gets to work:
+Just ask your agent — “proofread this paper for Nature”, “edit my manuscript to journal style”, “remove the translationese”, “fix my AI-drafted paper”. Korean works too. The skill announces itself and gets to work (the banner prints in Korean: `유형 B` = English-draft path, `분야` = detected field):
 
 ```text
 nomoredasi v0.1 — 유형 B / 분야: Optics and photonics
 ```
 
-You receive three things: the corrected manuscript, a `<name>.edits.json` journal (every change and every deliberate non-change, rule-cited), and a `<name>.integrity-report.html` you can diff-review. Set the budget explicitly if you want — “가볍게(low)로”, “mid budget please” — or request several intensities in one go.
+You receive three things: the corrected manuscript, a `<name>.edits.json` journal (every change and every deliberate non-change, rule-cited), and a `<name>.integrity-report.html` you can diff-review. Set the budget explicitly if you want — “light pass please”, “mid budget please” — or request several intensities in one go.
 
 ## How it works
 

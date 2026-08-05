@@ -24,28 +24,18 @@
 
 ![분야 준비도 차트](docs/assets/readiness-chart.svg)
 
-| 분야 | 논문 | 점수 |
-| --- | ---: | ---: |
-| Chemistry | 70 | 96.7 |
-| Optics and photonics | 89 | 95.6 |
-| Physics | 100 | 95.0 |
-| Biophysics | 5 | 54.9 |
-| Biotechnology | 5 | 50.6 |
-| Microbiology | 5 | 50.2 |
-| Cancer | 5 | 49.6 |
-| Environmental sciences | 5 | 49.2 |
-| Energy science and technology | 5 | 48.9 |
-| Biochemistry | 5 | 48.7 |
-| Cell biology | 5 | 48.3 |
-| Biological techniques | 5 | 48.1 |
-| Neuroscience | 5 | 47.8 |
-| Materials science | 5 | 47.7 |
-| Mathematics and computing | 5 | 47.7 |
-| Medical research | 5 | 47.1 |
-| Nanoscience and technology | 5 | 47.1 |
-| Engineering | 5 | 45.8 |
-| Diseases | 5 | 45.7 |
-| Health care | 5 | 45.6 |
+| 분야 | 논문 | 점수 | 분야 | 논문 | 점수 |
+| --- | ---: | ---: | --- | ---: | ---: |
+| Chemistry | 70 | 96.7 | Cell biology | 5 | 48.3 |
+| Optics and photonics | 89 | 95.6 | Biological techniques | 5 | 48.1 |
+| Physics | 100 | 95.0 | Neuroscience | 5 | 47.8 |
+| Biophysics | 5 | 54.9 | Materials science | 5 | 47.7 |
+| Biotechnology | 5 | 50.6 | Mathematics and computing | 5 | 47.7 |
+| Microbiology | 5 | 50.2 | Medical research | 5 | 47.1 |
+| Cancer | 5 | 49.6 | Nanoscience and technology | 5 | 47.1 |
+| Environmental sciences | 5 | 49.2 | Engineering | 5 | 45.8 |
+| Energy science and technology | 5 | 48.9 | Diseases | 5 | 45.7 |
+| Biochemistry | 5 | 48.7 | Health care | 5 | 45.6 |
 
 세부 분야 포함 전체 목록: [docs/readiness-fields.html](docs/readiness-fields.html)
 
