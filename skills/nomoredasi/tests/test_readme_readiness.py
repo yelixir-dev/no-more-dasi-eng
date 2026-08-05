@@ -28,6 +28,7 @@ class ReadmeReadinessTest(unittest.TestCase):
         self.catalog = self.directory / "subject-catalog.json"
         self.catalog.write_text(json.dumps({"majorSubjects": ["Major field"]}), encoding="utf-8")
         self.asset = self.directory / "docs" / "assets" / "readiness-chart.svg"
+        self.fields_html = self.directory / "docs" / "readiness-fields.html"
         self.readme = self.directory / "README.md"
         self.readme_ko = self.directory / "README.ko.md"
         template = (
@@ -52,6 +53,8 @@ class ReadmeReadinessTest(unittest.TestCase):
                 str(self.html),
                 "--asset",
                 str(self.asset),
+                "--fields-html",
+                str(self.fields_html),
                 "--catalog",
                 str(self.catalog),
                 "--readme",
@@ -69,18 +72,32 @@ class ReadmeReadinessTest(unittest.TestCase):
         english = self.readme.read_text(encoding="utf-8")
         korean = self.readme_ko.read_text(encoding="utf-8")
         svg = self.asset.read_text(encoding="utf-8")
-        self.assertIn("Major field (major)", english)
+        self.assertIn("| Major field |", english)
         self.assertIn("88.0", english)
-        self.assertIn("Minor field (minor)", english)
+        self.assertNotIn("Minor field |", english)
+        self.assertIn("docs/readiness-fields.html", english)
         self.assertIn("분야 준비도", korean)
-        self.assertIn("주요 분야", korean)
+        self.assertIn("세부 분야 포함 전체 목록", korean)
+        fields = self.fields_html.read_text(encoding="utf-8")
+        self.assertIn("Major field", fields)
+        self.assertIn("Minor field", fields)
         self.assertIn('xmlns="http://www.w3.org/2000/svg"', svg)
         self.assertIn('<rect width="100%" height="100%" fill="white"/>', svg)
-        first = (self.readme.read_bytes(), self.readme_ko.read_bytes(), self.asset.read_bytes())
+        first = (
+            self.readme.read_bytes(),
+            self.readme_ko.read_bytes(),
+            self.asset.read_bytes(),
+            self.fields_html.read_bytes(),
+        )
 
         result = self.run_updater()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertEqual(first, (self.readme.read_bytes(), self.readme_ko.read_bytes(), self.asset.read_bytes()))
+        self.assertEqual(first, (
+            self.readme.read_bytes(),
+            self.readme_ko.read_bytes(),
+            self.asset.read_bytes(),
+            self.fields_html.read_bytes(),
+        ))
 
 
 if __name__ == "__main__":

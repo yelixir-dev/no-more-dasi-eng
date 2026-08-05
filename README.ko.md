@@ -26,77 +26,28 @@
 
 | 분야 | 논문 | 점수 |
 | --- | ---: | ---: |
-| Chemistry (주요 분야) | 70 | 96.7 |
-| Optics and photonics (주요 분야) | 89 | 95.6 |
-| Physics (주요 분야) | 100 | 95.0 |
-| Biophysics (주요 분야) | 5 | 54.9 |
-| Biotechnology (주요 분야) | 5 | 50.6 |
-| Microbiology (주요 분야) | 5 | 50.2 |
-| Cancer (주요 분야) | 5 | 49.6 |
-| Environmental sciences (주요 분야) | 5 | 49.2 |
-| Energy science and technology (주요 분야) | 5 | 48.9 |
-| Biochemistry (주요 분야) | 5 | 48.7 |
-| Cell biology (주요 분야) | 5 | 48.3 |
-| Biological techniques (주요 분야) | 5 | 48.1 |
-| Neuroscience (주요 분야) | 5 | 47.8 |
-| Materials science (주요 분야) | 5 | 47.7 |
-| Mathematics and computing (주요 분야) | 5 | 47.7 |
-| Medical research (주요 분야) | 5 | 47.1 |
-| Nanoscience and technology (주요 분야) | 5 | 47.1 |
-| Engineering (주요 분야) | 5 | 45.8 |
-| Diseases (주요 분야) | 5 | 45.7 |
-| Health care (주요 분야) | 5 | 45.6 |
-| Drug discovery (세부 분야) | 5 | 53.2 |
-| Forestry (세부 분야) | 5 | 51.4 |
-| Oncology (세부 분야) | 5 | 51.0 |
-| Gastroenterology (세부 분야) | 5 | 50.4 |
-| Structural biology (세부 분야) | 5 | 50.4 |
-| Immunology (세부 분야) | 5 | 50.2 |
-| Pathogenesis (세부 분야) | 5 | 50.2 |
-| Developmental biology (세부 분야) | 5 | 50.0 |
-| Climate sciences (세부 분야) | 5 | 49.9 |
-| Systems biology (세부 분야) | 5 | 49.9 |
-| Geography (세부 분야) | 5 | 49.8 |
-| Natural hazards (세부 분야) | 5 | 49.8 |
-| Molecular medicine (세부 분야) | 5 | 49.7 |
-| Stem cells (세부 분야) | 5 | 49.5 |
-| Anatomy (세부 분야) | 5 | 49.4 |
-| Environmental social sciences (세부 분야) | 5 | 49.1 |
-| Health occupations (세부 분야) | 5 | 49.0 |
-| Molecular biology (세부 분야) | 5 | 49.0 |
-| Signs and symptoms (세부 분야) | 5 | 49.0 |
-| Business and industry (세부 분야) | 5 | 48.9 |
-| Agriculture (세부 분야) | 5 | 48.7 |
-| Limnology (세부 분야) | 5 | 48.6 |
-| Plant sciences (세부 분야) | 5 | 48.6 |
-| Space physics (세부 분야) | 5 | 48.6 |
-| Planetary science (세부 분야) | 5 | 48.5 |
-| Social sciences (세부 분야) | 5 | 48.5 |
-| Biogeochemistry (세부 분야) | 5 | 48.3 |
-| Genetics (세부 분야) | 5 | 48.2 |
-| Developing world (세부 분야) | 5 | 48.1 |
-| Ecology (세부 분야) | 5 | 48.0 |
-| Risk factors (세부 분야) | 5 | 48.0 |
-| Zoology (세부 분야) | 5 | 48.0 |
-| Solid Earth sciences (세부 분야) | 5 | 47.9 |
-| Astronomy and planetary science (세부 분야) | 5 | 47.8 |
-| Biomarkers (세부 분야) | 5 | 47.8 |
-| Chemical biology (세부 분야) | 5 | 47.7 |
-| Computational biology and bioinformatics (세부 분야) | 5 | 47.6 |
-| Energy and society (세부 분야) | 5 | 47.6 |
-| Psychology (세부 분야) | 5 | 47.3 |
-| Ocean sciences (세부 분야) | 5 | 47.1 |
-| Rheumatology (세부 분야) | 5 | 47.1 |
-| Cardiology (세부 분야) | 5 | 47.0 |
-| Evolution (세부 분야) | 5 | 47.0 |
-| Physiology (세부 분야) | 5 | 47.0 |
-| Hydrology (세부 분야) | 5 | 46.9 |
-| Urology (세부 분야) | 5 | 46.9 |
-| Endocrinology (세부 분야) | 5 | 46.8 |
-| Scientific community (세부 분야) | 5 | 46.8 |
-| Neurology (세부 분야) | 5 | 46.3 |
-| Water resources (세부 분야) | 5 | 46.3 |
-| Nephrology (세부 분야) | 5 | 45.6 |
+| Chemistry | 70 | 96.7 |
+| Optics and photonics | 89 | 95.6 |
+| Physics | 100 | 95.0 |
+| Biophysics | 5 | 54.9 |
+| Biotechnology | 5 | 50.6 |
+| Microbiology | 5 | 50.2 |
+| Cancer | 5 | 49.6 |
+| Environmental sciences | 5 | 49.2 |
+| Energy science and technology | 5 | 48.9 |
+| Biochemistry | 5 | 48.7 |
+| Cell biology | 5 | 48.3 |
+| Biological techniques | 5 | 48.1 |
+| Neuroscience | 5 | 47.8 |
+| Materials science | 5 | 47.7 |
+| Mathematics and computing | 5 | 47.7 |
+| Medical research | 5 | 47.1 |
+| Nanoscience and technology | 5 | 47.1 |
+| Engineering | 5 | 45.8 |
+| Diseases | 5 | 45.7 |
+| Health care | 5 | 45.6 |
+
+세부 분야 포함 전체 목록: [docs/readiness-fields.html](docs/readiness-fields.html)
 
 _auto-updated by the delta cycle._
 <!-- READINESS:END -->
