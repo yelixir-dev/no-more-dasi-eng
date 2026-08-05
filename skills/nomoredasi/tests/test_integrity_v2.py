@@ -34,9 +34,9 @@ class EquationInvariantTest(unittest.TestCase):
         self.orig = self.dir / "orig.txt"
 
     def check(self, orig, text):
-        self.orig.write_text(orig)
+        self.orig.write_text(orig, encoding="utf-8")
         out = self.dir / "out.txt"
-        out.write_text(text)
+        out.write_text(text, encoding="utf-8")
         return run_script("verify_integrity.py", self.orig, out)
 
     def test_equation_preserved_passes(self):
@@ -70,12 +70,12 @@ class TermInvariantTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.orig = self.dir / "orig.txt"
         self.overlay = self.dir / "overlay.md"
-        self.overlay.write_text(make_overlay("", ["bandgap", "sputtering"]))
+        self.overlay.write_text(make_overlay("", ["bandgap", "sputtering"]), encoding="utf-8")
 
     def check(self, orig, text):
-        self.orig.write_text(orig)
+        self.orig.write_text(orig, encoding="utf-8")
         out = self.dir / "out.txt"
-        out.write_text(text)
+        out.write_text(text, encoding="utf-8")
         return run_script("verify_integrity.py", self.orig, out, "--overlay", self.overlay)
 
     def test_term_preserved_passes(self):
@@ -99,9 +99,9 @@ class TermInvariantTest(unittest.TestCase):
         r = run_script(
             "verify_integrity.py", self.orig, self.dir / "out2",
         )
-        self.orig.write_text(orig)
+        self.orig.write_text(orig, encoding="utf-8")
         out = self.dir / "out2.txt"
-        out.write_text("The band gap was 3.2 eV.")
+        out.write_text("The band gap was 3.2 eV.", encoding="utf-8")
         r = run_script("verify_integrity.py", self.orig, out)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
@@ -111,11 +111,11 @@ class RepeatTest(unittest.TestCase):
         self.dir = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.orig = self.dir / "orig.txt"
-        self.orig.write_text("The bandgap was 3.25 eV at 673 K.")
+        self.orig.write_text("The bandgap was 3.25 eV at 673 K.", encoding="utf-8")
 
     def check(self, text, *extra):
         out = self.dir / "out.txt"
-        out.write_text(text)
+        out.write_text(text, encoding="utf-8")
         return run_script("verify_integrity.py", self.orig, out, *extra)
 
     def test_repeat_clean_passes(self):
@@ -134,16 +134,16 @@ class ReportTest(unittest.TestCase):
         self.dir = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.orig = self.dir / "orig.txt"
-        self.orig.write_text(
+        self.orig.write_text(  # encoding="utf-8"
             "The TiO2 transmittance was 95.3 % and R² = 0.98. "
-            "The bandgap was 3.25 eV [12]."
+            "The bandgap was 3.25 eV [12].", encoding="utf-8"
         )
 
     def test_report_writes_html_with_verdict_table_diff(self):
         out = self.dir / "out.txt"
-        out.write_text(
+        out.write_text(  # encoding="utf-8"
             "A transmittance of 95.3 % was found for the TiO2 film with R² = 0.98. "
-            "The bandgap was 3.25 eV [12]."
+            "The bandgap was 3.25 eV [12].", encoding="utf-8"
         )
         report = self.dir / "out.integrity-report.html"
         r = run_script(
@@ -152,7 +152,7 @@ class ReportTest(unittest.TestCase):
         )
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertTrue(report.exists(), "report file not written")
-        text = report.read_text()
+        text = report.read_text(encoding="utf-8")
         self.assertIn("Integrity gate: PASS", text)
         self.assertIn("<td>", text)          # category table present
         self.assertIn("invariant", text.lower())
@@ -170,8 +170,8 @@ class InlineDiffReportTest(unittest.TestCase):
         self.out = self.dir / "out.txt"
 
     def render(self, orig, corr, *extra):
-        self.orig.write_text(orig)
-        self.out.write_text(corr)
+        self.orig.write_text(orig, encoding="utf-8")
+        self.out.write_text(corr, encoding="utf-8")
         report = self.dir / "out.integrity-report.html"
         r = run_script(
             "verify_integrity.py", self.orig, self.out,
@@ -184,14 +184,14 @@ class InlineDiffReportTest(unittest.TestCase):
         corr = "The band gap was 3.25 eV [1].\n"
         r1 = self.dir / "r1.html"
         r2 = self.dir / "r2.html"
-        self.orig.write_text(orig)
-        self.out.write_text(corr)
+        self.orig.write_text(orig, encoding="utf-8")
+        self.out.write_text(corr, encoding="utf-8")
         a = run_script("verify_integrity.py", self.orig, self.out, "--report", r1)
         b = run_script("verify_integrity.py", self.orig, self.out, "--report", r2)
         self.assertEqual(a.returncode, 0, a.stdout + a.stderr)
         self.assertEqual(b.returncode, 0, b.stdout + b.stderr)
         self.assertTrue(r1.exists())
-        self.assertEqual(r1.read_text(), r2.read_text())
+        self.assertEqual(r1.read_text(encoding="utf-8"), r2.read_text(encoding="utf-8"))
 
     def test_report_contains_banner_table_marks_details(self):
         orig = (
@@ -206,7 +206,7 @@ class InlineDiffReportTest(unittest.TestCase):
         )
         r, report = self.render(orig, corr, "--repeat", "2")
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        text = report.read_text()
+        text = report.read_text(encoding="utf-8")
         self.assertIn("Integrity gate: PASS", text)   # banner
         self.assertIn("Invariant categories", text)   # invariant table
         self.assertIn("<del>", text)                   # word-level removed mark
@@ -220,7 +220,7 @@ class InlineDiffReportTest(unittest.TestCase):
         corr = "The band gap was 3.25 eV [1].\n"
         r, report = self.render(orig, corr)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        text = report.read_text()
+        text = report.read_text(encoding="utf-8")
         diff_area = text.partition("Section diff")[2]
         self.assertNotIn("<table", diff_area)
 
@@ -229,7 +229,7 @@ class InlineDiffReportTest(unittest.TestCase):
         corr = "The band gap was 3.25 eV [1].\n"
         r, report = self.render(orig, corr)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        text = report.read_text()
+        text = report.read_text(encoding="utf-8")
         self.assertNotIn("Rationale journal", text)
 
 

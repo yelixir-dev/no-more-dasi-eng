@@ -34,13 +34,13 @@ class RegistryIdempotenceTest(unittest.TestCase):
         newer = self.corpus / "Beta Field" / "paper.txt"
         older.parent.mkdir(parents=True)
         newer.parent.mkdir(parents=True)
-        older.write_text(
+        older.write_text(  # encoding="utf-8"
             "We used finite-difference time-domain (FDTD) simulations. "
-            "The FDTD mesh was refined."
+            "The FDTD mesh was refined.", encoding="utf-8"
         )
-        newer.write_text(
+        newer.write_text(  # encoding="utf-8"
             "A scanning electron microscope (SEM) measured the sample. "
-            "The SEM image was analyzed."
+            "The SEM image was analyzed.", encoding="utf-8"
         )
         self._set_mtime(older, "2020-01-02")
         self._set_mtime(newer, "2020-02-03")
@@ -99,7 +99,7 @@ class RegistryIdempotenceTest(unittest.TestCase):
             text=True,
         )
         self.assertEqual(scanned.returncode, 0, scanned.stdout + scanned.stderr)
-        entries = json.loads(self.registry.read_text())["entries"]
+        entries = json.loads(self.registry.read_text(encoding="utf-8"))["entries"]
         by_acronym = {entry["acronym"]: entry for entry in entries}
         self.assertEqual(by_acronym["MAN"]["provenance"], "manual")
         self.assertEqual(by_acronym["FDTD"]["provenance"], "corpus")
@@ -128,8 +128,8 @@ class RegistryIdempotenceTest(unittest.TestCase):
             "first_seen": "2018-01-01",
             "sightings": 1,
         }
-        self.registry.write_text(
-            json.dumps({"entries": [stale_legacy_entry, manual_entry]})
+        self.registry.write_text(  # encoding="utf-8"
+            json.dumps({"entries": [stale_legacy_entry, manual_entry]}), encoding="utf-8"
         )
 
         first = self.run_mine()
@@ -173,7 +173,7 @@ class RegistryIdempotenceTest(unittest.TestCase):
 
         result = self.run_mine()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        overlay = (self.out / "Alpha Field.md").read_text()
+        overlay = (self.out / "Alpha Field.md").read_text(encoding="utf-8")
         self.assertIn("extraction failures: 1", overlay)
         self.assertIn("## Extraction failures", overlay)
         self.assertIn("- malformed.pdf", overlay)

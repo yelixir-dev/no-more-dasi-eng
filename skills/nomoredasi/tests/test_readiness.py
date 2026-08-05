@@ -30,8 +30,8 @@ class ReadinessTest(unittest.TestCase):
         corpus = self.dir / "corpus"
         (corpus / "Field A").mkdir(parents=True)
         (corpus / "Field B").mkdir(parents=True)
-        (corpus / "Field A" / "a.txt").write_text(TEXT_A)
-        (corpus / "Field B" / "b.txt").write_text(TEXT_B)
+        (corpus / "Field A" / "a.txt").write_text(TEXT_A, encoding="utf-8")
+        (corpus / "Field B" / "b.txt").write_text(TEXT_B, encoding="utf-8")
         self.corpus = corpus
         self.history = self.dir / "readiness.jsonl"
 
@@ -44,7 +44,7 @@ class ReadinessTest(unittest.TestCase):
     def test_components_and_score(self):
         r = self.run_readiness()
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        lines = self.history.read_text().strip().splitlines()
+        lines = self.history.read_text(encoding="utf-8").strip().splitlines()
         self.assertEqual(len(lines), 2)
         rec = json.loads(lines[0])
         for key in ("field", "papers", "words", "collocations_ge5", "sections", "score", "date"):
@@ -57,7 +57,7 @@ class ReadinessTest(unittest.TestCase):
     def test_second_run_computes_overlap(self):
         self.assertEqual(self.run_readiness().returncode, 0)
         self.assertEqual(self.run_readiness().returncode, 0)
-        lines = self.history.read_text().strip().splitlines()
+        lines = self.history.read_text(encoding="utf-8").strip().splitlines()
         self.assertEqual(len(lines), 4)
         second = [json.loads(l) for l in lines if json.loads(l)["field"] == "Field A"][-1]
         self.assertEqual(second["term_overlap"], 1.0)

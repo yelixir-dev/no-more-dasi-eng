@@ -49,9 +49,9 @@ class BenchFixedDenominatorTest(unittest.TestCase):
 
     def bench(self, original, corrected):
         o = self.dir / "orig.txt"
-        o.write_text(original)
+        o.write_text(original, encoding="utf-8")
         c = self.dir / "out.txt"
-        c.write_text(corrected)
+        c.write_text(corrected, encoding="utf-8")
         return run_script("bench_edit.py", o, c)
 
     def test_fixture_is_word_shrinking(self):
@@ -80,8 +80,8 @@ class StdioReconfigureTest(unittest.TestCase):
         self.addCleanup(__import__("shutil").rmtree, self.dir, True)
         self.text = self.dir / "in.txt"
         # em dash (U+2014) is not representable in cp949
-        self.text.write_text(
-            "Introduction\nBackground here — the em dash spans.\n\nMethods\nWe measured.\n"
+        self.text.write_text(  # encoding="utf-8"
+            "Introduction\nBackground here — the em dash spans.\n\nMethods\nWe measured.\n", encoding="utf-8"
         )
         self.env = dict(os.environ, PYTHONIOENCODING="cp949")
 
@@ -101,7 +101,7 @@ class UnitBearingAcronymTest(unittest.TestCase):
 
     def check(self, text, *extra):
         f = self.dir / "in.txt"
-        f.write_text(text)
+        f.write_text(text, encoding="utf-8")
         return run_script("check_abbrev.py", f, *extra)
 
     def test_cv_percent_defined_and_used_again(self):

@@ -17,25 +17,25 @@ class LicenseGateTest(unittest.TestCase):
         corpus = self.dir / "corpus"
         (corpus / "Field A").mkdir(parents=True)
         (corpus / "Field B").mkdir(parents=True)
-        (corpus / "Field A" / "a.txt").write_text(
-            "The transmittance was measured carefully. The spectrum exhibits clarity."
+        (corpus / "Field A" / "a.txt").write_text(  # encoding="utf-8"
+            "The transmittance was measured carefully. The spectrum exhibits clarity.", encoding="utf-8"
         )
-        (corpus / "Field A" / "b.txt").write_text(
-            "ZQXWSENTINEL forbidden content must never be mined."
+        (corpus / "Field A" / "b.txt").write_text(  # encoding="utf-8"
+            "ZQXWSENTINEL forbidden content must never be mined.", encoding="utf-8"
         )
-        (corpus / "Field B" / "c.txt").write_text(
-            "ZQXWSENTINEL another excluded source."
+        (corpus / "Field B" / "c.txt").write_text(  # encoding="utf-8"
+            "ZQXWSENTINEL another excluded source.", encoding="utf-8"
         )
         self.corpus = corpus
         self.attr = self.dir / "attributions.json"
-        self.attr.write_text(json.dumps({
+        self.attr.write_text(json.dumps({  # encoding="utf-8"
             "updated": "2026-08-01",
             "entries": [
                 {"record_id": "ART-0001", "relative_pdf_path": "Field A/a.txt", "status": "active"},
                 {"record_id": "ART-0002", "relative_pdf_path": "Field A/b.txt", "status": "excluded"},
                 {"record_id": "ART-0003", "relative_pdf_path": "Field B/c.txt", "status": "excluded"},
             ],
-        }))
+        }), encoding="utf-8")
         self.out = self.dir / "out"
 
     def mine(self, *extra):
@@ -47,12 +47,12 @@ class LicenseGateTest(unittest.TestCase):
     def test_gate_skips_excluded_files_and_fields(self):
         stale = self.out
         stale.mkdir(exist_ok=True)
-        (stale / "Field B.md").write_text("# stale overlay from an excluded era")
+        (stale / "Field B.md").write_text("# stale overlay from an excluded era", encoding="utf-8")
         r = self.mine("--only-active", self.attr)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         overlay_a = self.out / "Field A.md"
         self.assertTrue(overlay_a.exists())
-        text = overlay_a.read_text()
+        text = overlay_a.read_text(encoding="utf-8")
         self.assertIn("transmittance", text)
         self.assertNotIn("ZQXWSENTINEL", text)
         self.assertFalse((self.out / "Field B.md").exists(), "stale overlay for a fully-excluded field must be pruned")
@@ -61,17 +61,17 @@ class LicenseGateTest(unittest.TestCase):
         import subprocess as sp
         script = ROOT / "scripts" / "build_attributions.py"
         manifest = self.dir / "manifest.json"
-        manifest.write_text(json.dumps([{
+        manifest.write_text(json.dumps([{  # encoding="utf-8"
             "Subject": "Field B", "title": "NC paper", "authors": "X",
             "journal": "J", "publication_date": "2026-01-01",
             "received_at": "2026-01-02", "DOI": "10.1/nc",
             "original_url": "https://x", "relative_pdf_path": "Field B/c.txt",
-        }]))
+        }]), encoding="utf-8")
         scan = self.dir / "scan.json"
-        scan.write_text(json.dumps({"Field B/c.txt": "CC BY-NC-ND 4.0"}))
+        scan.write_text(json.dumps({"Field B/c.txt": "CC BY-NC-ND 4.0"}), encoding="utf-8")
         quar = self.dir / "quar"
         bl = self.dir / "blocklist.json"
-        bl.write_text(json.dumps({"count": 0, "blocklist": []}))
+        bl.write_text(json.dumps({"count": 0, "blocklist": []}), encoding="utf-8")
         r = sp.run(
             [PY, str(script), "--manifest", str(manifest), "--scan", str(scan),
              "--out", str(self.dir / "attrout2"), "--as-of", "2026-08-01",
@@ -81,28 +81,28 @@ class LicenseGateTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertFalse((self.corpus / "Field B" / "c.txt").exists(), "NC file must leave the corpus")
         self.assertTrue((quar / "Field B" / "c.txt").exists(), "NC file must land in quarantine")
-        data = json.loads((self.dir / "attrout2" / "attributions.json").read_text())
+        data = json.loads((self.dir / "attrout2" / "attributions.json").read_text(encoding="utf-8"))
         self.assertEqual(data["entries"][0]["status"], "quarantined")
-        blocked = json.loads(bl.read_text())["blocklist"]
+        blocked = json.loads(bl.read_text(encoding="utf-8"))["blocklist"]
         self.assertEqual([b["doi"] for b in blocked], ["10.1/nc"], "quarantined DOI must be auto-blocklisted")
 
     def test_attribution_entries_carry_relative_path(self):
         script = ROOT / "scripts" / "build_attributions.py"
         manifest = self.dir / "manifest.json"
-        manifest.write_text(json.dumps([{
+        manifest.write_text(json.dumps([{  # encoding="utf-8"
             "Subject": "Field A", "title": "T", "authors": "X",
             "journal": "J", "publication_date": "2026-01-01",
             "received_at": "2026-01-02", "DOI": "10.1/x",
             "original_url": "https://x", "relative_pdf_path": "Field A/a.txt",
-        }]))
+        }]), encoding="utf-8")
         scan = self.dir / "scan.json"
-        scan.write_text(json.dumps({"Field A/a.txt": "CC BY 4.0"}))
+        scan.write_text(json.dumps({"Field A/a.txt": "CC BY 4.0"}), encoding="utf-8")
         r = subprocess.run(
             [PY, str(script), "--manifest", str(manifest), "--scan", str(scan),
              "--out", str(self.dir / "attrout"), "--as-of", "2026-08-01"],
             capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        data = json.loads((self.dir / "attrout" / "attributions.json").read_text())
+        data = json.loads((self.dir / "attrout" / "attributions.json").read_text(encoding="utf-8"))
         self.assertEqual(data["entries"][0]["relative_pdf_path"], "Field A/a.txt")
 
 

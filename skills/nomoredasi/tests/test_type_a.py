@@ -23,8 +23,8 @@ class TypeATest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.ko = self.dir / "ko.txt"
         self.en = self.dir / "en.txt"
-        self.ko.write_text(KO)
-        self.en.write_text(EN)
+        self.ko.write_text(KO, encoding="utf-8")
+        self.en.write_text(EN, encoding="utf-8")
 
     def test_korean_particle_numbers_and_formulas_extracted(self):
         r = run_script("verify_integrity.py", self.ko, self.en, "--type", "A")

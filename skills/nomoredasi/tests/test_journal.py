@@ -220,30 +220,30 @@ class LogEditJournalTest(unittest.TestCase):
         # must jointly cover the diff region (union coverage with whitespace bridging)
         inp = self.dir / "in.txt"
         out = self.dir / "out.txt"
-        inp.write_text("본 연구에서는 밴드갭을 측정하였다.\n결과는 타당하였다.")
-        out.write_text("We measured the band gap.\nThe results were valid.")
+        inp.write_text("본 연구에서는 밴드갭을 측정하였다.\n결과는 타당하였다.", encoding="utf-8")
+        out.write_text("We measured the band gap.\nThe results were valid.", encoding="utf-8")
         journal = self.dir / "j.json"
-        journal.write_text(json.dumps({"version": 1, "entries": [
+        journal.write_text(json.dumps({"version": 1, "entries": [  # encoding="utf-8"
             {"kind": "changed", "original": "본 연구에서는 밴드갭을 측정하였다.",
              "corrected": "We measured the band gap.",
              "rule": {"source": "SKILL.md", "id": "유형 A"}, "reason": "translation"},
             {"kind": "changed", "original": "결과는 타당하였다.",
              "corrected": "The results were valid.",
              "rule": {"source": "SKILL.md", "id": "유형 A"}, "reason": "translation"},
-        ]}))
+        ]}), encoding="utf-8")
         r = run_script("check_journal.py", inp, out, "--journal", journal)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
     def test_content_gap_between_spans_still_fails(self):
         inp = self.dir / "in.txt"
         out = self.dir / "out.txt"
-        inp.write_text("alpha, beta gamma delta")
-        out.write_text("alpha, beta epsilon delta")
+        inp.write_text("alpha, beta gamma delta", encoding="utf-8")
+        out.write_text("alpha, beta epsilon delta", encoding="utf-8")
         journal = self.dir / "j.json"
-        journal.write_text(json.dumps({"version": 1, "entries": [
+        journal.write_text(json.dumps({"version": 1, "entries": [  # encoding="utf-8"
             {"kind": "changed", "original": "alpha", "corrected": "alpha",
              "rule": {"source": "SKILL.md", "id": "유형 A"}, "reason": "noop"},
-        ]}))
+        ]}), encoding="utf-8")
         r = run_script("check_journal.py", inp, out, "--journal", journal)
         self.assertEqual(r.returncode, 1, r.stdout + r.stderr)
         self.assertIn("COVERAGE", r.stdout + r.stderr)

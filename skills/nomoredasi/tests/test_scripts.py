@@ -36,11 +36,11 @@ class VerifyIntegrityTest(unittest.TestCase):
         self.dir = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.orig = self.dir / "orig.txt"
-        self.orig.write_text(ORIGINAL)
+        self.orig.write_text(ORIGINAL, encoding="utf-8")
 
     def check(self, text):
         out = self.dir / "out.txt"
-        out.write_text(text)
+        out.write_text(text, encoding="utf-8")
         return run_script("verify_integrity.py", self.orig, out)
 
     def test_faithful_edit_passes(self):
@@ -91,7 +91,7 @@ class RouteFieldTest(unittest.TestCase):
 
     def top_field(self, text):
         f = self.dir / "in.txt"
-        f.write_text(text)
+        f.write_text(text, encoding="utf-8")
         r = run_script("route_field.py", f)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         return r.stdout.strip().splitlines()[0]
@@ -110,7 +110,7 @@ class CheckTermsTest(unittest.TestCase):
 
     def check(self, text):
         f = self.dir / "in.txt"
-        f.write_text(text)
+        f.write_text(text, encoding="utf-8")
         return run_script("check_terms.py", f)
 
     def test_mixed_variant_fails(self):
@@ -136,7 +136,7 @@ class AbbrevRegistryTest(unittest.TestCase):
         r = self.run_reg("record", "FDTD", "--field", "Optics and photonics", "--context", "The FDTD mesh was refined.")
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
-        data = json.loads(self.reg.read_text())
+        data = json.loads(self.reg.read_text(encoding="utf-8"))
         entry = data["entries"][0]
         self.assertEqual(entry["acronym"], "FDTD")
         self.assertEqual(entry["status"], "unverified")
@@ -145,22 +145,22 @@ class AbbrevRegistryTest(unittest.TestCase):
     def test_scan_resolves_with_context(self):
         self.run_reg("record", "FDTD", "--field", "Optics and photonics")
         f = self.dir / "paper.txt"
-        f.write_text("We used finite-difference time-domain (FDTD) simulations. The FDTD mesh was refined.")
+        f.write_text("We used finite-difference time-domain (FDTD) simulations. The FDTD mesh was refined.", encoding="utf-8")
         r = self.run_reg("scan", f, "--field", "Optics and photonics")
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
-        entry = json.loads(self.reg.read_text())["entries"][0]
+        entry = json.loads(self.reg.read_text(encoding="utf-8"))["entries"][0]
         self.assertEqual(entry["status"], "verified")
         self.assertEqual(entry["expansion"], "finite-difference time-domain")
         self.assertTrue(entry["contexts"])
 
     def test_scan_records_undefined(self):
         f = self.dir / "paper.txt"
-        f.write_text("The XQZ factor was measured. The XQZ value held. XQZ is stable.")
+        f.write_text("The XQZ factor was measured. The XQZ value held. XQZ is stable.", encoding="utf-8")
         r = self.run_reg("scan", f, "--field", "Physics")
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
-        entries = json.loads(self.reg.read_text())["entries"]
+        entries = json.loads(self.reg.read_text(encoding="utf-8"))["entries"]
         xqz = [e for e in entries if e["acronym"] == "XQZ"]
         self.assertEqual(len(xqz), 1)
         self.assertEqual(xqz[0]["status"], "unverified")
@@ -169,13 +169,13 @@ class AbbrevRegistryTest(unittest.TestCase):
     def test_conflict_on_different_expansion(self):
         self.run_reg("record", "SPM", "--field", "Physics")
         f1 = self.dir / "a.txt"
-        f1.write_text("We used scanning probe microscopy (SPM) imaging.")
+        f1.write_text("We used scanning probe microscopy (SPM) imaging.", encoding="utf-8")
         f2 = self.dir / "b.txt"
-        f2.write_text("The surface plasmon microscopy (SPM) signal was weak.")
+        f2.write_text("The surface plasmon microscopy (SPM) signal was weak.", encoding="utf-8")
         self.run_reg("scan", f1, "--field", "Physics")
         self.run_reg("scan", f2, "--field", "Physics")
         import json
-        entry = json.loads(self.reg.read_text())["entries"][0]
+        entry = json.loads(self.reg.read_text(encoding="utf-8"))["entries"][0]
         self.assertEqual(entry["status"], "conflict")
 
     def test_render_html(self):
@@ -183,7 +183,7 @@ class AbbrevRegistryTest(unittest.TestCase):
         html = self.dir / "registry.html"
         r = self.run_reg("render", html)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        text = html.read_text()
+        text = html.read_text(encoding="utf-8")
         self.assertIn("FDTD", text)
         self.assertIn("Optics and photonics", text)
 
@@ -193,17 +193,17 @@ class BenchEditTest(unittest.TestCase):
         self.dir = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.orig = self.dir / "orig.txt"
-        self.orig.write_text(
+        self.orig.write_text(  # encoding="utf-8"
             "In recent years, photonics has attracted considerable attention. "
             "The soliton plays a crucial role in the resonator. "
             "Figure 2 showed the spectrum. "
             "This result may possibly suggest a shift. "
-            "The film was deposited. " * 12
+            "The film was deposited. " * 12, encoding="utf-8"
         )
 
     def bench(self, corrected):
         out = self.dir / "out.txt"
-        out.write_text(corrected)
+        out.write_text(corrected, encoding="utf-8")
         return run_script("bench_edit.py", self.orig, out)
 
     def test_improvement_detected(self):
@@ -231,17 +231,17 @@ class ManuscriptStateTest(unittest.TestCase):
         self.dir = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.dir, True)
         self.text = self.dir / "paper.txt"
-        self.text.write_text(
+        self.text.write_text(  # encoding="utf-8"
             "We used finite-difference time-domain (FDTD) simulations. "
             "The bandgap was 3.2 eV. This bandgap shift is small. "
-            "The band gap widens. The bandgap remains. Figure 3 shows the setup."
+            "The band gap widens. The bandgap remains. Figure 3 shows the setup.", encoding="utf-8"
         )
 
     def test_learn_and_show(self):
         r = run_script("manuscript_state.py", "learn", self.dir, self.text)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
-        state = json.loads((self.dir / "manuscript.json").read_text())
+        state = json.loads((self.dir / "manuscript.json").read_text(encoding="utf-8"))
         self.assertEqual(state["abbreviations"]["FDTD"], "finite-difference time-domain")
         self.assertEqual(state["terms"]["bandgap"], "bandgap")
         r2 = run_script("manuscript_state.py", "show", self.dir)
@@ -256,7 +256,7 @@ class CheckAbbrevTest(unittest.TestCase):
 
     def check(self, text, *extra):
         f = self.dir / "in.txt"
-        f.write_text(text)
+        f.write_text(text, encoding="utf-8")
         return run_script("check_abbrev.py", f, *extra)
 
     def test_undefined_acronym_fails(self):
@@ -274,8 +274,8 @@ class CheckAbbrevTest(unittest.TestCase):
 
     def test_state_file_exempts(self):
         import json
-        (self.dir / "manuscript.json").write_text(json.dumps(
-            {"abbreviations": {"FDTD": "finite-difference time-domain"}, "terms": {}}))
+        (self.dir / "manuscript.json").write_text(json.dumps(  # encoding="utf-8"
+            {"abbreviations": {"FDTD": "finite-difference time-domain"}, "terms": {}}), encoding="utf-8")
         r = self.check("The FDTD simulation was performed.", "--state", self.dir)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
@@ -287,7 +287,7 @@ class SectionSplitTest(unittest.TestCase):
 
     def split(self, text):
         f = self.dir / "in.txt"
-        f.write_text(text)
+        f.write_text(text, encoding="utf-8")
         r = run_script("section_split.py", f)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
@@ -330,14 +330,14 @@ class MineCorpusTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.dir, True)
         corpus = self.dir / "corpus" / "Test Field"
         corpus.mkdir(parents=True)
-        (corpus / "a.txt").write_text(
+        (corpus / "a.txt").write_text(  # encoding="utf-8"
             "The bandgap was measured at 3.2 eV. The bandgap exhibits a shift. "
             "We obtained the transmittance spectrum. The film was fabricated by "
-            "sputtering. The bandgap remains stable after annealing."
+            "sputtering. The bandgap remains stable after annealing.", encoding="utf-8"
         )
-        (corpus / "b.txt").write_text(
+        (corpus / "b.txt").write_text(  # encoding="utf-8"
             "Transmittance was obtained for the film. The film exhibits high "
-            "bandgap tunability. Sputtering produced uniform films."
+            "bandgap tunability. Sputtering produced uniform films.", encoding="utf-8"
         )
         self.out = self.dir / "out"
 
@@ -350,16 +350,16 @@ class MineCorpusTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         overlay = self.out / "Test Field.md"
         self.assertTrue(overlay.exists(), r.stdout + r.stderr)
-        text = overlay.read_text()
+        text = overlay.read_text(encoding="utf-8")
         self.assertIn("bandgap", text)
         self.assertTrue(any(c.isdigit() for c in text), "overlay must contain measured numbers")
         self.assertIn("sentence", text.lower())
 
     def test_registry_hook_records_definitions(self):
         corpus_file = self.dir / "corpus" / "Test Field" / "a.txt"
-        corpus_file.write_text(
+        corpus_file.write_text(  # encoding="utf-8"
             "We used finite-difference time-domain (FDTD) simulations. "
-            "The XQZ factor was measured. The XQZ value held. XQZ is stable."
+            "The XQZ factor was measured. The XQZ value held. XQZ is stable.", encoding="utf-8"
         )
         reg = self.dir / "reg.json"
         r = run_script(
@@ -370,17 +370,17 @@ class MineCorpusTest(unittest.TestCase):
         )
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         import json
-        entries = {e["acronym"]: e for e in json.loads(reg.read_text())["entries"]}
+        entries = {e["acronym"]: e for e in json.loads(reg.read_text(encoding="utf-8"))["entries"]}
         self.assertEqual(entries["FDTD"]["status"], "verified")
         self.assertEqual(entries["XQZ"]["status"], "unverified")
         self.assertTrue(reg.with_suffix(".html").exists())
 
     def test_overlay_has_maturity_flag_and_section_metrics(self):
         corpus_file = self.dir / "corpus" / "Test Field" / "a.txt"
-        corpus_file.write_text(
+        corpus_file.write_text(  # encoding="utf-8"
             "Introduction\nThe bandgap matters for devices. "
             "Methods\nThe film was deposited by sputtering. The film was annealed. "
-            "Results\nThe transmittance increased sharply."
+            "Results\nThe transmittance increased sharply.", encoding="utf-8"
         )
         r = run_script(
             "mine_corpus.py",
@@ -388,7 +388,7 @@ class MineCorpusTest(unittest.TestCase):
             "--out", self.out,
         )
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        text = (self.out / "Test Field.md").read_text()
+        text = (self.out / "Test Field.md").read_text(encoding="utf-8")
         self.assertIn("immature", text)
         self.assertIn("## Section metrics", text)
 

@@ -60,7 +60,7 @@ class BuildAttributionsTest(unittest.TestCase):
     def test_by_included_nc_excluded(self):
         r = self.run_build()
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        data = json.loads((self.out / "attributions.json").read_text())
+        data = json.loads((self.out / "attributions.json").read_text(encoding="utf-8"))
         active = [e for e in data["entries"] if e["status"] == "active"]
         excluded = [e for e in data["entries"] if e["status"] == "excluded"]
         self.assertEqual(len(active), 1)

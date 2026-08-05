@@ -17,16 +17,16 @@ class UiLanguageReportTest(unittest.TestCase):
         self.addCleanup(shutil.rmtree, self.directory, True)
         self.original = self.directory / "original.txt"
         self.corrected = self.directory / "corrected.txt"
-        self.original.write_text(
+        self.original.write_text(  # encoding="utf-8"
             "Introduction\nThe bandgap was measured at 3.2 eV.\n",
             encoding="utf-8",
         )
-        self.corrected.write_text(
+        self.corrected.write_text(  # encoding="utf-8"
             "Introduction\nThe bandgap was measured at 3.2 eV.\n",
             encoding="utf-8",
         )
         self.journal = self.directory / "journal.json"
-        self.journal.write_text(json.dumps({
+        self.journal.write_text(json.dumps({  # encoding="utf-8"
             "version": 1,
             "entries": [
                 {"kind": "changed", "original": "bandgap was", "corrected": "bandgap was",

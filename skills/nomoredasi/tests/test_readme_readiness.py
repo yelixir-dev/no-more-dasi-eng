@@ -19,7 +19,7 @@ class ReadmeReadinessTest(unittest.TestCase):
             {"field": "Minor field", "papers": 5, "score": 42.5},
             {"field": "Major field", "papers": 12, "score": 88.0},
         ]
-        self.history.write_text(
+        self.history.write_text(  # encoding="utf-8"
             "\n".join(json.dumps(record) for record in records) + "\n",
             encoding="utf-8",
         )
