@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P1",
+    "class": "korean-translationese",
+    "severity": "major",
+    "description": "Overused through as a literal rendering of Korean 를 통해.",
+    "examples": ["Through thermal annealing, crystallinity improved."],
+    "detection": "synthetic_conditional"
+  },
+  {
+    "id": "P2",
+    "class": "korean-translationese",
+    "severity": "major",
+    "description": "Stacked agentive by phrases translated from Korean 에 의해.",
+    "examples": ["The bandgap is affected by pressure by changing defects."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "P3",
+    "class": "korean-translationese",
+    "severity": "critical",
+    "description": "Dropped English subject or dummy it after a Korean topic drop.",
+    "examples": ["After annealing, was confirmed by XRD."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "P4",
+    "class": "korean-translationese",
+    "severity": "minor",
+    "description": "Over-nominalization that obscures the action in a clause.",
+    "examples": ["The improvement of crystallinity was achieved."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "P5",
+    "class": "korean-translationese",
+    "severity": "minor",
+    "description": "Article omission before singular count nouns.",
+    "examples": ["Film was deposited on glass substrate."],
+    "detection": "synthetic_safe"
+  },
+  {
+    "id": "P6",
+    "class": "korean-translationese",
+    "severity": "major",
+    "description": "Plural and countability transfer, including plural mass nouns.",
+    "examples": ["Many informations and equipments were used."],
+    "detection": "synthetic_safe"
+  },
+  {
+    "id": "R3",
+    "class": "section-tense",
+    "severity": "major",
+    "description": "Methods procedures use past tense and Results figure references use present tense.",
+    "examples": ["Figure 2 showed the measured trend."],
+    "detection": "synthetic_safe"
+  },
+  {
+    "id": "A1",
+    "class": "articles",
+    "severity": "minor",
+    "description": "Missing or incorrect determiner for a singular count noun.",
+    "examples": ["A film was deposited on the substrate."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "G1",
+    "class": "agreement/countability",
+    "severity": "major",
+    "description": "Number agreement or mass/count noun form is inconsistent.",
+    "examples": ["The refractive indexes was measured."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "T1",
+    "class": "section-tense",
+    "severity": "major",
+    "description": "Tense does not match the role of the manuscript section.",
+    "examples": ["Methods: We measure the films at room temperature."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "F1",
+    "class": "field-terminology",
+    "severity": "major",
+    "description": "A field term is used with the wrong technical sense or form.",
+    "examples": ["The optical density was annealed."],
+    "detection": "natural_only"
+  },
+  {
+    "id": "C1",
+    "class": "claim-calibration",
+    "severity": "critical",
+    "description": "Claim strength exceeds the evidence or changes the scientific relation.",
+    "examples": ["The result proves the mechanism."],
+    "detection": "natural_only"
+  }
+]
