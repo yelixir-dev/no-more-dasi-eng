@@ -1,0 +1,27 @@
+Todo 3 QA: corpus coverage label rename
+
+Regeneration:
+  Direct render_html(logs/readiness.jsonl, docs/readiness.html), then
+  python3 skills/nomoredasi/scripts/update_readme_readiness.py
+  completed; readiness history mtime was unchanged.
+
+Verification:
+  cd skills/nomoredasi && ../../.venv/bin/python -m unittest discover -s tests -p 'test_*.py'
+  Ran 116 tests in 4.091s: OK
+
+  cd skills/nomoredasi && ../../.venv/bin/python tests/run_golden.py
+  all 5 case(s) pass
+
+  python3 /Users/yorha/dev/readme-gen/skills/readme-forge/scripts/check_readme.py README.md README.ko.md
+  PASS: 2 files, 11 headings, 6 fence markers, 3 badges, 7 relative links
+
+  grep -ci 'readiness score' docs/readiness.html
+  0
+
+  grep -ci 'coverage' docs/readiness.html README.md
+  docs/readiness.html:2
+  README.md:6
+
+  readiness history mtime before/after: 1785919030 / 1785919030 (unchanged)
+
+Updated visible labels only; JSON keys, function names, score calculation, chart data, and readiness history schema were not changed. Test assertions were updated only for renamed label strings.

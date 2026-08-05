@@ -20,11 +20,11 @@
 <!-- README-I18N:END -->
 
 <!-- READINESS:START -->
-## Field readiness
+## Field corpus coverage
 
-![Field readiness chart](docs/assets/readiness-chart.svg)
+![Field corpus coverage chart](docs/assets/readiness-chart.svg)
 
-| Field | Papers | Score | Field | Papers | Score |
+| Field | Papers | Coverage | Field | Papers | Coverage |
 | --- | ---: | ---: | --- | ---: | ---: |
 | Chemistry | 70 | 96.7 | Cell biology | 5 | 48.3 |
 | Optics and photonics | 89 | 95.6 | Biological techniques | 5 | 48.1 |

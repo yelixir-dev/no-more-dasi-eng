@@ -20,11 +20,11 @@
 <!-- README-I18N:END -->
 
 <!-- READINESS:START -->
-## 분야 준비도
+## 분야 코퍼스 커버리지
 
-![분야 준비도 차트](docs/assets/readiness-chart.svg)
+![분야 코퍼스 커버리지 차트](docs/assets/readiness-chart.svg)
 
-| 분야 | 논문 | 점수 | 분야 | 논문 | 점수 |
+| 분야 | 논문 | 커버리지 | 분야 | 논문 | 커버리지 |
 | --- | ---: | ---: | --- | ---: | ---: |
 | Chemistry | 70 | 96.7 | Cell biology | 5 | 48.3 |
 | Optics and photonics | 89 | 95.6 | Biological techniques | 5 | 48.1 |

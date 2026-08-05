@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Field readiness score: papers -> usability, tracked over time.
+"""Field corpus coverage: papers -> usability, tracked over time.
 
 Computes per-field components from the corpus (paper count, words,
 collocation depth, section coverage, top-term stability vs the previous
@@ -182,8 +182,8 @@ def render_html(history_path, out_path):
     svg = [
         '<svg width="100%" height="520" viewBox="0 0 900 520" '
         'xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="readiness-chart-title readiness-chart-desc">',
-        '<title id="readiness-chart-title">Field readiness score by papers accumulated</title>',
-        '<desc id="readiness-chart-desc">Each line is a field history. The horizontal guides mark usable at 60 and publishable at 80.</desc>',
+        '<title id="readiness-chart-title">Field corpus coverage by papers accumulated</title>',
+        '<desc id="readiness-chart-desc">Each line is a field corpus coverage history. The horizontal guides mark usable at 60 and publishable at 80.</desc>',
     ]
 
     for gy, label in THRESHOLDS:
@@ -211,7 +211,7 @@ def render_html(history_path, out_path):
     svg.append(f'<text x="{ML + PW / 2:.0f}" y="{H - 8}" text-anchor="middle" font-size="13" fill="{TEXT}" font-weight="700" {attr}>papers</text>')
     svg.append(
         f'<text x="17" y="{MT + PH / 2:.0f}" text-anchor="middle" font-size="13" fill="{TEXT}" '
-        f'font-weight="700" transform="rotate(-90 17 {MT + PH / 2:.0f})" {attr}>readiness score (0–100)</text>'
+        f'font-weight="700" transform="rotate(-90 17 {MT + PH / 2:.0f})" {attr}>corpus coverage (0–100)</text>'
     )
 
     for field, recs in sorted(series.items()):
@@ -222,12 +222,12 @@ def render_html(history_path, out_path):
         svg.append(
             f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="{width}" '
             f'stroke-linecap="round" stroke-linejoin="round" opacity="{opacity}">'
-            f'<title>{escape(field)} readiness history</title></polyline>'
+            f'<title>{escape(field)} corpus coverage history</title></polyline>'
         )
         for r in recs:
             svg.append(
                 f'<circle cx="{x(r.get("papers", 0)):.1f}" cy="{y(r.get("score", 0)):.1f}" r="3.2" fill="{color}" opacity="{opacity}">'
-                f'<title>{escape(field)} — {r.get("papers", 0)} papers, score {r.get("score", 0)} ({r.get("date", "")})</title></circle>'
+                f'<title>{escape(field)} — {r.get("papers", 0)} papers, coverage {r.get("score", 0)} ({r.get("date", "")})</title></circle>'
             )
     svg.append('</svg>')
 
@@ -273,8 +273,8 @@ tbody tr:nth-child(even) { background: #fbf7f0; }
 
     hero_html = hero(
         "nomoredasi / corpus calibration",
-        "When does a field become ready?",
-        "Readiness is a measured curve, not a verdict: each field's score combines "
+        "How complete is a field corpus?",
+        "Corpus coverage is a measured curve, not a verdict: each field's score combines "
         "corpus volume, collocations, section coverage, term stability, and words. "
         "Follow the trajectories before using the ranking below.",
         meta_items=[
@@ -286,12 +286,12 @@ tbody tr:nth-child(even) { background: #fbf7f0; }
 
     chart_panel = panel(
         "Accumulation curves",
-        "x = papers · y = readiness score",
+        "x = papers · y = corpus coverage",
         '<p class="section-note">Every field is plotted in the background; the ranked key '
         "highlights the top 12 fields plus Physics and Optics and photonics. Point titles "
         "provide exact history on hover.</p>"
         f'<div class="chart-frame">{"".join(svg)}</div>'
-        '<p class="legend-heading">Highlighted field key · latest score</p>'
+        '<p class="legend-heading">Highlighted field key · latest coverage</p>'
         f'<ul class="legend-list">{"".join(legend)}</ul>'
         '<p class="caption">Target guides: <strong>usable · 60</strong> and '
         '<strong>publishable · 80</strong>. Lines retain all historical states; identical '
@@ -299,18 +299,18 @@ tbody tr:nth-child(even) { background: #fbf7f0; }
     )
 
     table_inner = (
-        "<table><caption class=\"sr-only\">Field readiness ranking with corpus "
+        "<table><caption class=\"sr-only\">Field corpus coverage ranking with corpus "
         "component counts</caption><thead><tr><th scope=\"col\">Field</th>"
         '<th scope="col" class="num">Papers</th><th scope="col" class="num">Words</th>'
         '<th scope="col" class="num">Collocations (≥5)</th><th scope="col" class="num">Sections</th>'
-        '<th scope="col" class="num">Score</th></tr></thead><tbody>'
+        '<th scope="col" class="num">Coverage</th></tr></thead><tbody>'
         f'{"".join(rows)}</tbody></table>'
     )
     ranking_panel = panel(
-        "Current field ranking",
-        f"{len(ranked)} fields · descending score",
+        "Current field corpus coverage",
+        f"{len(ranked)} fields · descending coverage",
         f'<div class="table-wrap">{table_inner}</div>'
-        '<p class="method-note"><strong>Method.</strong> Composite score = papers (25) '
+        '<p class="method-note"><strong>Method.</strong> Composite corpus coverage = papers (25) '
         "+ collocations (25) + sections (15) + top-term stability (20) + words (15). "
         "Stability is overlap with the previous record; collocations count phrases seen "
         "five or more times. The thresholds are project targets, not claims about "
@@ -318,7 +318,7 @@ tbody tr:nth-child(even) { background: #fbf7f0; }
     )
 
     html = page(
-        "Field Readiness — nomoredasi",
+        "Field Corpus Coverage — nomoredasi",
         hero_html,
         chart_panel + ranking_panel,
         extra_head=extra_css,
@@ -326,7 +326,7 @@ tbody tr:nth-child(even) { background: #fbf7f0; }
     out_path.write_text(html, encoding="utf-8")
 
 def main():
-    parser = argparse.ArgumentParser(description="field readiness scores from the corpus")
+    parser = argparse.ArgumentParser(description="field corpus coverage scores from the corpus")
     parser.add_argument("--corpus", default=str(Path.home() / "Documents" / "papers"))
     parser.add_argument(
         "--history",

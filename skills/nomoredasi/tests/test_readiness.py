@@ -84,8 +84,8 @@ class ReadinessTest(unittest.TestCase):
             capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         html = html_path.read_text(encoding="utf-8")
-        self.assertIn("55 papers, score 86.0", html, "same-day later state must be rendered")
-        self.assertEqual(html.count("55 papers, score 86.0"), 1, "exact duplicates must stay deduped")
+        self.assertIn("55 papers, coverage 86.0", html, "same-day later state must be rendered")
+        self.assertEqual(html.count("55 papers, coverage 86.0"), 1, "exact duplicates must stay deduped")
 
     def test_same_papers_keeps_latest_only(self):
         history = self.dir / "wobble.jsonl"
@@ -103,8 +103,8 @@ class ReadinessTest(unittest.TestCase):
             capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         html = html_path.read_text(encoding="utf-8")
-        self.assertIn("55 papers, score 86.2", html)
-        self.assertNotIn("score 73.6", html, "older same-papers record must be collapsed")
+        self.assertIn("55 papers, coverage 86.2", html)
+        self.assertNotIn("coverage 73.6", html, "older same-papers record must be collapsed")
 
     def test_html_render_with_chart(self):
         self.assertEqual(self.run_readiness().returncode, 0)
@@ -120,7 +120,7 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("<svg", html)
         self.assertIn("<polyline", html)
         self.assertIn("Field A", html)
-        self.assertIn("score", html.lower())
+        self.assertIn("coverage", html.lower())
         self.assertIn("papers", html.lower())
         first = html_path.read_bytes()
         r2 = subprocess.run(
@@ -152,7 +152,7 @@ class ReadinessTest(unittest.TestCase):
         self.assertIn("80", html)
 
         # Score components documented in the caption / methodology note.
-        self.assertIn("Composite score", html)
+        self.assertIn("Composite corpus coverage", html)
         self.assertIn("Method", html)
 
         # Journal-style table: tabular numerals and right-aligned numeric cells.
