@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Log Index — 논문 영어 교정 스킬 (paper-english)</title>
+<style>
+  :root {
+    --ink: #1a2332; --muted: #5a6675; --accent: #1456b8;
+    --bg: #f7f8fa; --card: #ffffff; --line: #e3e7ed;
+    --mono: "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    color: var(--ink); background: var(--bg); margin: 0; line-height: 1.75;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 28px 96px; }
+  header.doc { border-bottom: 3px solid var(--ink); padding-bottom: 20px; margin-bottom: 28px; }
+  header.doc h1 { font-size: 1.85rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  header.doc .meta { color: var(--muted); font-size: 0.9rem; }
+  ul.logs { list-style: none; padding: 0; margin: 0; }
+  ul.logs li {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 22px; margin: 12px 0;
+  }
+  ul.logs .date { font-family: var(--mono); font-weight: 700; font-size: 1.02rem; }
+  ul.logs .date a { color: var(--accent); text-decoration: none; }
+  ul.logs .date a:hover { text-decoration: underline; }
+  ul.logs .summary { color: var(--muted); font-size: 0.93rem; margin-top: 4px; }
+  .rules { margin-top: 40px; padding: 14px 20px; border-left: 4px solid var(--line); color: var(--muted); background: var(--card); border-radius: 0 8px 8px 0; font-size: 0.88rem; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc">
+  <h1>Work Log — 논문 영어 교정 스킬 프로젝트</h1>
+  <div class="meta">워크스페이스: <code>~/dev/paper-english</code> · 일자별 로그는 <code>work_logs/</code> 아래에 날짜 파일로 관리, 이 페이지는 인덱스 (최신순)</div>
+</header>
+
+<ul class="logs">
+  <li>
+    <div class="date"><a href="work_logs/2026-08-05.html">2026-08-05</a></div>
+    <div class="summary">능력 로드맵 실행: corpus coverage와 분리된 결정적 4종 지표(SWCR/FPR0/EAP/MP), 120건 기계 준비 파일럿, 실패 포착·수확·사이클 관측 리포팅, ablation 재현성 QA. ~200건 2인 주석 뒤 720 errors + 240 controls 확장은 deferred.</div>
+  </li>
+  <li>
+    <div class="date"><a href="work_logs/2026-08-04.html">2026-08-04</a></div>
+    <div class="summary">GitHub 공개 준비: EN/KO README 세트(README-I18N 셀렉터·Attribution·후원·한계·라이선스 섹션), emil 톤 배너 SVG, FUNDING.yml 배선. EN/KO 패리티 게이트 PASS + 렌더 시뮬레이션 스크린샷 QA(375px·다크) 완료. 라이선스 선언이 공개 전 잔여 과제.</div>
+  </li>
+  <li>
+    <div class="date"><a href="work_logs/2026-08-03.html">2026-08-03</a></div>
+    <div class="summary">동료 피드백 4종 전량 반영: 참고문헌부 오탐 수정, 교정 강도 하/중/상(--level), "왜" 저널(edits.json + 커버리지 게이트), 리포트 섹션별 인라인 diff 리디자인. 스위트 94 + 골든 그린, origin 푸시 완료.</div>
+  </li>
+  <li>
+    <div class="date"><a href="work_logs/2026-08-02.html">2026-08-02</a></div>
+    <div class="summary">Physics/Optics 각 +50편(55·54편) 입고, 사이클 완주(166 arrivals, NC 0건). 두 분야 readiness 86.2/83.8로 publishable 선(80) 첫 돌파. readiness.html 과학 피겨 리디자인.</div>
+  </li>
+  <li>
+    <div class="date"><a href="work_logs/2026-08-01.html">2026-08-01</a></div>
+    <div class="summary">스테이지 2 완료 + 스킬명 <b>nomoredasi</b> 등록 + 라이선스 체계(CC BY만 수집·채굴 게이트·출처 레지스트리 자동생성) + 첫 사이클 완주(코퍼스 115편 BY, 오버레이 35). 스킬 골격 + 고도화: SKILL.md, 스크립트 9종, 코어 레퍼런스 3종, 약어 레지스트리(4,220항목: verified 722/conflict 42). unittest 28/28, 골든 5/5.</div>
+  </li>
+  <li>
+    <div class="date"><a href="work_logs/2026-07-31.html">2026-07-31</a></div>
+    <div class="summary">분야 20→71개 전부로 확장, 박막광학 우선 폐기. 주 2회(월·목) 델타 분석→개선→git 푸시 사이클을 1차 목표로 확정. 로컬 git 레포 개설, 워크로그 체계 개편(인덱스+일자별 분리).</div>
+  </li>
+</ul>
+
+<div class="rules">
+  <b>운영 규칙:</b> 작업한 날은 <code>work_logs/YYYY-MM-DD.html</code>에 일자별 로그를 작성하고, 이 인덱스 맨 위에 1-2줄 요약 + 링크를 추가한다. 문서는 HTML 기본(지침 파일은 Markdown).
+</div>
+
+<footer>
+  논문 영어 교정 스킬(paper-english) — Nature 71개 세부 분야 대상 범용 학술 영어 교정 Agent Skill 프로젝트.
+</footer>
+
+</div>
+</body>
+</html>
