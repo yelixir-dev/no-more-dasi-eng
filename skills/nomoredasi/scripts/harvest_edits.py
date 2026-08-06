@@ -4,6 +4,7 @@
 import argparse
 import difflib
 import json
+import os
 import sys
 from collections import Counter
 from pathlib import Path
@@ -14,6 +15,16 @@ if str(TESTS) not in sys.path:
 from benchmark_metrics import tokenize
 
 REQUIRED_FILES = ("input.txt", "corrected.txt", "meta.json")
+
+
+def _redact(value):
+    if isinstance(value, dict):
+        return {key: _redact(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_redact(item) for item in value]
+    if isinstance(value, str) and os.path.isabs(value):
+        return "<redacted-absolute-path>"
+    return value
 
 
 def _placeholder_edits(source, corrected):
@@ -61,16 +72,25 @@ def _emit(entry, root, destination, meta, original, corrected):
         suffix += 1
     target.mkdir()
     edits = _placeholder_edits(original, corrected)
-    candidate_meta = dict(meta)
+    source_id = entry.relative_to(root).as_posix()
+    provided_id = meta.get("source_doc_id")
+    if (
+        isinstance(provided_id, str)
+        and provided_id
+        and not Path(provided_id).is_absolute()
+    ):
+        source_doc_id = provided_id
+    else:
+        source_doc_id = source_id
+    candidate_meta = _redact(dict(meta))
     candidate_meta.update({
-        "field": meta["field"], "error_class": None, "severity": None,
-        "origin": "natural", "no_edit": not bool(edits),
-        "source_doc_id": meta.get("source_doc_id", str(entry)),
-        "protected_names": meta.get("protected_names", []), "review": "pending",
-        "source_edit_path": str(entry), "route_hint": meta.get("route_hint", "unknown"),
+        "field": candidate_meta["field"], "error_class": None, "severity": None,
+        "origin": "natural", "no_edit": False,
+        "source_doc_id": source_doc_id,
+        "protected_names": candidate_meta.get("protected_names", []), "review": "pending",
+        "source_edit_path": source_id, "route_hint": candidate_meta.get("route_hint", "unknown"),
     })
-    if not edits:
-        candidate_meta.update({"error_class": "none", "severity": "na", "review": "approved", "approved_by": "machine:control"})
+    candidate_meta.pop("approved_by", None)
     (target / "input.txt").write_text(original, encoding="utf-8")
     (target / "gold.txt").write_text(corrected, encoding="utf-8")
     (target / "edits.json").write_text(json.dumps(edits, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -93,7 +113,7 @@ def harvest(root, emit_candidates=None):
             counts["fields"][str(meta["field"])] += 1
             counts["types"][str(meta.get("type", "unknown"))] += 1
             counts["levels"][str(meta.get("level", "unknown"))] += 1
-            if emit_candidates is not None:
+            if emit_candidates is not None and _placeholder_edits(original, corrected):
                 emitted.append(str(_emit(entry, root, emit_candidates, meta, original, corrected)))
     report = {key: dict(sorted(value.items())) for key, value in counts.items()}
     report.update({"total": sum(counts["fields"].values()), "skipped": skipped, "emitted": emitted})

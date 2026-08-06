@@ -27,10 +27,69 @@ _SENTENCE_STARTERS = {
     "for", "when", "if", "because", "methods", "method", "results", "figure", "fig", "table",
 }
 _VERB_STARTERS = set(_COUNT_MAP) | set(_METHODS_MAP) | set(_FIGURE_MAP) | {"measured", "tested"}
+_SAFE_SCIENTIFIC = {
+    "analysis", "data", "dna", "film", "films", "ftir", "ir", "material",
+    "materials", "measurement", "measurements", "methods", "nmr", "pcr", "results",
+    "rna", "sample", "samples", "sem", "solution", "solutions", "tem", "uv", "xps",
+    "graphene",
+    "xrd", "xrf",
+}
+_NAME_MODIFIERS = {
+    "also", "carefully", "currently", "directly", "further", "later", "newly",
+    "previously", "quickly", "rapidly", "recently", "strongly", "subsequently",
+    "unexpectedly", "widely",
+}
+_NAME_CONTEXT = {
+    "agency", "association", "center", "centre", "college", "company", "corp",
+    "corporation", "foundation", "group", "hospital", "institute", "laboratory",
+    "laboratories", "ltd", "press", "researchers", "school", "society", "team",
+    "university",
+}
+_UNKNOWN_VERBS = {
+    "contains", "confirms", "decreases", "describes", "differs", "exhibits",
+    "forms", "includes", "increases", "indicates", "interacts", "observes",
+    "produces", "provides", "remains", "reports", "reveals", "shows", "supports",
+    "uses", "yields",
+}
 
 
 def _token_spans(text):
     return [(match.group(), match.start(), match.end()) for match in TOKEN_RE.finditer(text)]
+
+
+def _is_capitalized_word(token):
+    return token.isalpha() and token[0].isupper()
+
+
+def _is_safe_scientific(tokens, index):
+    token = tokens[index]
+    if token.lower() in _SAFE_SCIENTIFIC:
+        return True
+    return (
+        token.lower() == "x"
+        and index + 2 < len(tokens)
+        and tokens[index + 1] == "-"
+        and tokens[index + 2].lower() == "ray"
+    ) or (
+        token.lower() == "ray"
+        and index >= 2
+        and tokens[index - 1] == "-"
+        and tokens[index - 2].lower() == "x"
+    )
+
+
+def _following_word(tokens, index):
+    for token in tokens[index + 1:]:
+        if token.isalpha():
+            return token
+        if token in {".", "?", "!", ":", ";"}:
+            return None
+    return None
+
+
+def _looks_like_verb(token):
+    lower = token.lower()
+    return lower in _VERB_STARTERS or lower in _UNKNOWN_VERBS or lower.endswith(("ed", "ing"))
 
 
 def _unsafe(text):
@@ -38,17 +97,37 @@ def _unsafe(text):
         return True
     tokens = tokenize(text)
     for index, token in enumerate(tokens):
-        if not token.isalpha() or not token[0].isupper():
+        if not token.isalpha():
             continue
         previous = tokens[index - 1] if index else None
         boundary = index == 0 or previous in {".", "?", "!", ":", ";"}
         lower = token.lower()
+        if _is_safe_scientific(tokens, index):
+            continue
+        if len(token) == 1 and token.isupper():
+            if (
+                index + 2 < len(tokens)
+                and tokens[index + 1] == "."
+                and _is_capitalized_word(tokens[index + 2])
+            ):
+                return True
+        if token.isupper() and len(token) > 1:
+            return True
+        if not _is_capitalized_word(token):
+            continue
         if boundary and lower in _SENTENCE_STARTERS:
             continue
-        if boundary and index + 1 < len(tokens) and tokens[index + 1].lower() in _VERB_STARTERS:
-            return True
         if not boundary:
             return True
+        following = _following_word(tokens, index)
+        if following and (
+            _is_capitalized_word(following)
+            or following.lower() in _NAME_MODIFIERS
+            or following.lower() in _NAME_CONTEXT
+            or _looks_like_verb(following)
+        ):
+            return True
+        return True
     return False
 
 

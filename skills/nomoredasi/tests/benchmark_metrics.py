@@ -27,8 +27,18 @@ def _tokens_for_span(source_tokens, output_tokens, start, end):
         None, source_tokens, output_tokens, autojunk=False
     ).get_opcodes():
         overlaps = i1 < end and i2 > start
-        insertion = start == end and tag == "insert" and i1 == start
-        if overlaps or insertion:
+        insertion = tag == "insert" and start <= i1 <= end
+        if insertion:
+            result.extend(output_tokens[j1:j2])
+        elif overlaps and tag == "equal":
+            overlap_start = max(start, i1)
+            overlap_end = min(end, i2)
+            result.extend(
+                output_tokens[
+                    j1 + overlap_start - i1:j1 + overlap_end - i1
+                ]
+            )
+        elif overlaps and tag == "replace":
             result.extend(output_tokens[j1:j2])
     return result
 
@@ -73,6 +83,11 @@ def swcr(source, candidate, edits):
         if preserved and replacement in alternatives:
             hit += _SEVERITY_WEIGHT[edit["severity"]]
     return hit / total if total else 1.0
+
+
+def swcr_weight(edits):
+    """Return the edit-level denominator weight for a case."""
+    return sum(_SEVERITY_WEIGHT[edit["severity"]] for edit in edits)
 
 
 def fpr0(control_pairs):

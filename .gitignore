@@ -10,3 +10,6 @@ bug-report/
 .omo/
 papers/
 paper-english-skill-analysis.html
+skills/nomoredasi/tests/benchmark/candidates/
+skills/nomoredasi/tests/benchmark/regressions/*
+!skills/nomoredasi/tests/benchmark/regressions/README.md

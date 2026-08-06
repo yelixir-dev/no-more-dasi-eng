@@ -22,6 +22,17 @@ class BenchmarkMetricsTests(unittest.TestCase):
         self.assertEqual(swcr(source, source, critical), 0.0)
         self.assertEqual(swcr(source, "The results was clear.", critical), 0.0)
 
+    def test_swcr_includes_insertions_at_replacement_span_boundary(self):
+        source = "The film was deposited on substrate."
+        gold = "The film was deposited on a substrate."
+        edits = [{
+            "span": [5, 6],
+            "severity": "minor",
+            "accept": [["a", "substrate"]],
+        }]
+        self.assertEqual(swcr(source, gold, edits), 1.0)
+        self.assertEqual(swcr(source, source, edits), 0.0)
+
     def test_fpr0_reports_rate_and_changed_tokens_per_thousand(self):
         result = fpr0([("A short control.", "A short control."), ("One two", "One three")])
         self.assertAlmostEqual(result["rate"], 0.5)

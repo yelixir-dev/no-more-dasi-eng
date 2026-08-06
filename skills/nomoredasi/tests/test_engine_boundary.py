@@ -1,7 +1,8 @@
-import ast
 import tempfile
 import unittest
 from pathlib import Path
+
+from tests.engine_boundary_scan import scan_source
 
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
@@ -26,19 +27,6 @@ REPO_OPERATIONS = (
     "route_field.py",
     "update_readme_readiness.py",
 )
-FORBIDDEN_REFERENCES = ("logs/", "docs/", "~/Documents/papers", "Documents/papers")
-
-
-def scan_source(path):
-    tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-    literals = [node.value for node in ast.walk(tree) if isinstance(node, ast.Constant)]
-    return [
-        pattern
-        for pattern in FORBIDDEN_REFERENCES
-        if any(pattern in value for value in literals if isinstance(value, str))
-    ]
-
-
 class EngineBoundaryTest(unittest.TestCase):
     def test_allowlist_matches_document_and_scripts(self):
         doc = Path(__file__).resolve().parents[3] / "docs" / "engine-boundary.md"
@@ -63,6 +51,30 @@ class EngineBoundaryTest(unittest.TestCase):
             fake = Path(directory) / "fake_engine.py"
             fake.write_text('SOURCE = "logs/edits"\n', encoding="utf-8")
             self.assertEqual(scan_source(fake), ["logs/"])
+
+    def test_scan_catches_static_path_composition(self):
+        fixtures = (
+            ('from pathlib import Path\nTARGET = Path("logs") / "edits"\n', ["logs/"]),
+            ('TARGET = "logs" + "/" + "edits"\n', ["logs/"]),
+            ('from pathlib import Path\nTARGET = Path("logs").joinpath("edits")\n', ["logs/"]),
+            ('import os\nTARGET = os.path.join("logs", "edits")\n', ["logs/"]),
+            ('from pathlib import Path\nTARGET = Path("docs", "private")\n', ["docs/"]),
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            for index, (source, expected) in enumerate(fixtures):
+                with self.subTest(source=source):
+                    fake = Path(directory) / f"fixture-{index}.py"
+                    fake.write_text(source, encoding="utf-8")
+                    self.assertEqual(scan_source(fake), expected)
+
+    def test_scan_ignores_unrelated_prose(self):
+        with tempfile.TemporaryDirectory() as directory:
+            fake = Path(directory) / "unrelated.py"
+            fake.write_text(
+                'print("logs/")\nNOTE = "This mentions docs/ but is not a path"\n',
+                encoding="utf-8",
+            )
+            self.assertEqual(scan_source(fake), [])
 
 
 if __name__ == "__main__":

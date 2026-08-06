@@ -12,6 +12,10 @@ class BenchmarkAblateTests(unittest.TestCase):
     def make_dataset(self, root, count=4):
         dataset = root / "dataset"
         dataset.mkdir()
+        (dataset / "taxonomy.json").write_text(
+            json.dumps([{"id": "agreement"}]),
+            encoding="utf-8",
+        )
         for index in range(count):
             case = dataset / f"case-{index}"
             case.mkdir()
@@ -36,7 +40,7 @@ class BenchmarkAblateTests(unittest.TestCase):
     def make_results(self, root, dataset, all_edits):
         output = root / ("on" if all_edits else "off")
         output.mkdir()
-        for case in sorted(dataset.iterdir()):
+        for case in sorted(path for path in dataset.iterdir() if path.is_dir()):
             tokens = case.joinpath("input.txt").read_text(encoding="utf-8").split()
             if all_edits:
                 tokens = ["are" if token == "is" else token for token in tokens]

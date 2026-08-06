@@ -8,5 +8,9 @@
   "protected_names": [],
   "review": "approved",
   "approved_by": "machine:control",
-  "source_doi": null
+  "source_license": "CC BY 4.0",
+  "source_openalex_id": "https://openalex.org/W2989686914",
+  "source_doi": "https://doi.org/10.1038/s41598-019-54018-z",
+  "source_journal": "Scientific Reports",
+  "source_issn_l": "2045-2322"
 }

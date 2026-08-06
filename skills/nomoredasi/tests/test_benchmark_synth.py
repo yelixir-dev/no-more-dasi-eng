@@ -47,6 +47,39 @@ class BenchmarkSynthTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "unsafe"):
                 generate_case(passage, "P6", source_doc_id="unsafe")
 
+    def test_rejects_probable_names_beyond_known_verb_starters(self):
+        unsafe = (
+            "Alice unexpectedly measured the sample.",
+            "Oxford researchers measured the sample.",
+            "Acme laboratory measured the sample.",
+            "The Alice sample is stable.",
+            "NASA researchers measured the sample.",
+            "A. Smith measured the sample.",
+        )
+        for passage in unsafe:
+            with self.subTest(passage=passage), self.assertRaisesRegex(ValueError, "unsafe"):
+                generate_case(passage, "P6", source_doc_id="unsafe")
+
+    def test_rejects_reviewer_name_bypass_probes(self):
+        for passage in (
+            "Smith studies samples that are stable.",
+            "Smith's sample is stable.",
+            "Alice samples are stable.",
+        ):
+            with self.subTest(passage=passage), self.assertRaisesRegex(ValueError, "unsafe"):
+                generate_case(passage, "P6", source_doc_id="reviewer-probe")
+
+    def test_allows_conservative_scientific_sentence_starts(self):
+        for passage in (
+            "Samples are stable.",
+            "DNA is stable.",
+            "X-ray diffraction is stable.",
+            "Graphene samples are stable.",
+        ):
+            with self.subTest(passage=passage):
+                case = generate_case(passage, "P6", source_doc_id="safe")
+                self.assertNotEqual(case["input"], case["gold"])
+
     def test_rejects_unsupported_grade_and_missing_p5_tags(self):
         with self.assertRaisesRegex(ValueError, "supported"):
             generate_case("The sample is stable.", "P2", source_doc_id="bad")

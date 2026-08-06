@@ -124,7 +124,8 @@ class RunBenchmarkTests(unittest.TestCase):
             self.assertEqual(meta["review"], "pending")
             self.assertIsNone(meta["error_class"])
             self.assertEqual(meta["field"], "Physics")
-            self.assertEqual(meta["captured_from"], str(source))
+            self.assertEqual(meta["captured_from"], "external/007-physics")
+            self.assertNotIn(str(source), json.dumps(meta))
             self.assertTrue(json.loads((output / "edits.json").read_text(encoding="utf-8")))
             missing = subprocess.run(
                 [sys.executable, str(script), "--dataset", str(root), "--capture-edit", str(Path(d) / "missing")],
