@@ -1,0 +1,254 @@
+{
+  "dataset": {
+    "excluded_placeholder_cases": 7,
+    "headline_approved_cases": 108,
+    "manifest_sha256": "2437a599c375acc1c8e7e1123e54dc15bfc395b7f7f6498aaa88ceeb333c2d15",
+    "operational_cases": 120,
+    "pending_golden_cases": 5,
+    "taxonomy_sha256": "257b6a0abbbe367f5c5088a12f53bae82e849c5b6e54bd96a96bfb47a2737a3f"
+  },
+  "date": "2026-08-06",
+  "failures": {
+    "false_positive_control_ids": [
+      "Materials science-control-007",
+      "Materials science-control-008",
+      "Materials science-control-006"
+    ],
+    "meaning_preservation_failures": [],
+    "missed_case_ids": [
+      "golden-optics",
+      "golden-materials",
+      "golden-cancer",
+      "golden-physics",
+      "natural-001",
+      "natural-002",
+      "natural-003",
+      "natural-004",
+      "natural-005",
+      "natural-006",
+      "natural-007",
+      "golden-neuroscience"
+    ]
+  },
+  "generation": {
+    "candidate_bundle_sha256": "d6ee14e8453721f8f8c0c252e17f4106150e1311c599df6d33dbb12bb9afed45",
+    "candidate_count": 120,
+    "mode": "prompt-only blinded field batches",
+    "sessions": 6,
+    "tool_calls": 0
+  },
+  "limitations": [
+    "The full 120-case score includes seven sanitized placeholders and is operational only.",
+    "Only two of six approved edited error strata are represented.",
+    "Five meaningful natural golden cases remain pending human review.",
+    "Candidate generation settings expose no temperature control."
+  ],
+  "metric_views": {
+    "advisory_pending_golden_5": {
+      "by_field": {
+        "Cancer": 0.2,
+        "Materials science": 0.0,
+        "Neuroscience": 0.8,
+        "Optics and photonics": 0.0,
+        "Physics": 0.3333333333333333
+      },
+      "by_grade": {
+        "pending": 0.26666666666666666
+      },
+      "by_severity": {
+        "None": 0.26666666666666666
+      },
+      "cases": 5,
+      "eap": 0.195,
+      "fpr0": {
+        "changed_per_1000": 0.0,
+        "rate": 0.0
+      },
+      "mp": {
+        "dice": 1.0,
+        "strict": true
+      },
+      "swcr": 0.23076923076923078
+    },
+    "evidence_qualified_113": {
+      "by_field": {
+        "Cancer": 0.9578947368421052,
+        "Chemistry": 1.0,
+        "Materials science": 0.9473684210526315,
+        "Neuroscience": 0.9894736842105264,
+        "Optics and photonics": 0.9473684210526315,
+        "Physics": 0.9649122807017543
+      },
+      "by_grade": {
+        "korean-translationese": 1.0,
+        "none": 1.0,
+        "pending": 0.26666666666666666,
+        "section-tense": 1.0
+      },
+      "by_severity": {
+        "None": 0.26666666666666666,
+        "major": 1.0,
+        "minor": 1.0,
+        "na": 1.0
+      },
+      "cases": 113,
+      "eap": 0.9643805309734512,
+      "fpr0": {
+        "changed_per_1000": 1.547508511296812,
+        "rate": 0.0625
+      },
+      "mp": {
+        "dice": 1.0,
+        "strict": true
+      },
+      "swcr": 0.7368421052631579
+    },
+    "excluded_placeholders_7": {
+      "by_field": {
+        "Optics and photonics": 0.0
+      },
+      "by_grade": {
+        "pending": 0.0
+      },
+      "by_severity": {
+        "None": 0.0
+      },
+      "cases": 7,
+      "eap": 0.0,
+      "fpr0": {
+        "changed_per_1000": 0.0,
+        "rate": 0.0
+      },
+      "mp": {
+        "dice": 1.0,
+        "strict": true
+      },
+      "swcr": 0.0
+    },
+    "headline_approved_108": {
+      "by_field": {
+        "Cancer": 1.0,
+        "Chemistry": 1.0,
+        "Materials science": 1.0,
+        "Neuroscience": 1.0,
+        "Optics and photonics": 1.0,
+        "Physics": 1.0
+      },
+      "by_grade": {
+        "korean-translationese": 1.0,
+        "none": 1.0,
+        "section-tense": 1.0
+      },
+      "by_severity": {
+        "major": 1.0,
+        "minor": 1.0,
+        "na": 1.0
+      },
+      "cases": 108,
+      "eap": 1.0,
+      "fpr0": {
+        "changed_per_1000": 1.547508511296812,
+        "rate": 0.0625
+      },
+      "mp": {
+        "dice": 1.0,
+        "strict": true
+      },
+      "swcr": 1.0
+    },
+    "operational_120": {
+      "by_field": {
+        "Cancer": 0.9578947368421052,
+        "Chemistry": 1.0,
+        "Materials science": 0.9473684210526315,
+        "Neuroscience": 0.9894736842105264,
+        "Optics and photonics": 0.6923076923076923,
+        "Physics": 0.9649122807017545
+      },
+      "by_grade": {
+        "korean-translationese": 1.0,
+        "none": 1.0,
+        "pending": 0.1111111111111111,
+        "section-tense": 1.0
+      },
+      "by_severity": {
+        "None": 0.1111111111111111,
+        "major": 1.0,
+        "minor": 1.0,
+        "na": 1.0
+      },
+      "cases": 120,
+      "eap": 0.908125,
+      "fpr0": {
+        "changed_per_1000": 1.547508511296812,
+        "rate": 0.0625
+      },
+      "mp": {
+        "dice": 1.0,
+        "strict": true
+      },
+      "swcr": 0.6746987951807228
+    }
+  },
+  "model": "yorha/kimi-k3",
+  "priorities": [
+    {
+      "action": "Human-adjudicate the five meaningful pending golden cases and replace the seven withheld placeholders with licensed, two-reviewer natural cases.",
+      "evidence": {
+        "pending_golden_cases": 5,
+        "pending_golden_swcr": 0.23076923076923078,
+        "placeholder_cases": 7,
+        "placeholder_swcr": 0.0
+      },
+      "id": "adjudicate-pending-natural",
+      "rank": 1
+    },
+    {
+      "action": "Add regression-locked rules for major natural recasts involving causal fronting, measurement reporting, and process-result syntax.",
+      "evidence": {
+        "golden_materials_swcr": 0.0,
+        "golden_optics_swcr": 0.0,
+        "golden_physics_swcr": 0.3333333333333333
+      },
+      "id": "causal-fronting-and-measurement-recasts",
+      "rank": 2
+    },
+    {
+      "action": "Improve agreement, correlation predication, and fold-change register on natural biomedical passages.",
+      "evidence": {
+        "golden_cancer_swcr": 0.2,
+        "golden_neuroscience_swcr": 0.8
+      },
+      "id": "agreement-correlation-and-fold-register",
+      "rank": 3
+    },
+    {
+      "action": "Prevent normalization of valid hyphenated compounds in already-correct Materials prose.",
+      "evidence": {
+        "false_positive_controls": [
+          "Materials science-control-007",
+          "Materials science-control-008",
+          "Materials science-control-006"
+        ],
+        "fpr0_rate": 0.0625
+      },
+      "id": "preserve-valid-hyphenation",
+      "rank": 4
+    },
+    {
+      "action": "Add approved edited cases for articles, agreement/countability, field terminology, and claim calibration before broader capability claims.",
+      "evidence": {
+        "approved_edited_classes": [
+          "korean-translationese",
+          "section-tense"
+        ],
+        "uncovered_class_count": 4
+      },
+      "id": "cover-four-missing-error-strata",
+      "rank": 5
+    }
+  ],
+  "run_id": "2026-08-06-capability-baseline-v1",
+  "schema_version": 1,
+  "skill_commit": "cadb6684c3d35381426a1b5d6e6ef53f2b7c4d04"
+}

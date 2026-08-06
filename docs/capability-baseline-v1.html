@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Capability Baseline v1 · nomoredasi</title>
+  <style>
+    :root {
+      --ink: #28231f;
+      --canvas: #f1ede5;
+      --paper: #fffdf8;
+      --rust: #9f4d2e;
+      --teal: #1f6f78;
+      --gold: #b57920;
+      --muted: #71675f;
+      --hairline: rgba(40, 35, 31, 0.16);
+      --shadow: 0 18px 48px rgba(40, 35, 31, 0.09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: var(--teal); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--ink);
+      color: #fffdf8;
+      padding: 4.5rem clamp(1.25rem, 5vw, 5rem) 4rem;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 1rem;
+      border: 1px solid rgba(255, 253, 248, 0.16);
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.55fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: end;
+    }
+    .hero-grid > *, .metric, .reading { min-width: 0; }
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      color: #d9aa5d;
+      font: 700 0.75rem/1.2 system-ui, sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      overflow-wrap: anywhere;
+    }
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.8rem, 7vw, 6.8rem);
+      font-weight: 400;
+      line-height: 0.92;
+      letter-spacing: -0.055em;
+    }
+    .dek {
+      max-width: 62ch;
+      margin: 1.5rem 0 0;
+      color: rgba(255, 253, 248, 0.78);
+      font-size: clamp(1rem, 1.6vw, 1.22rem);
+      overflow-wrap: anywhere;
+    }
+    .run-card {
+      border-top: 1px solid rgba(255, 253, 248, 0.35);
+      padding-top: 1rem;
+      font: 0.82rem/1.7 ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: rgba(255, 253, 248, 0.75);
+      overflow-wrap: anywhere;
+      word-break: break-all;
+    }
+    .run-card strong { color: #d9aa5d; font-weight: 700; }
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: -1.8rem 0 3.5rem;
+      position: relative;
+    }
+    .metric {
+      background: var(--paper);
+      border: 1px solid rgba(40, 35, 31, 0.08);
+      box-shadow: var(--shadow);
+      padding: 1.35rem;
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font: 700 0.69rem/1.3 system-ui, sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .metric strong {
+      display: block;
+      margin: 0.35rem 0 0.2rem;
+      color: var(--teal);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1;
+    }
+    .metric small { color: var(--muted); font-size: 0.82rem; overflow-wrap: anywhere; }
+    section { margin: 4rem 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(12rem, 0.4fr) minmax(0, 0.6fr);
+      gap: 2rem;
+      align-items: start;
+      border-top: 1px solid var(--hairline);
+      padding-top: 1.2rem;
+    }
+    h2 { margin: 0; font-size: clamp(1.8rem, 3.5vw, 3.2rem); font-weight: 400; line-height: 1.05; }
+    .section-head p { margin: 0; color: var(--muted); }
+    .caveat {
+      margin-top: 1.5rem;
+      background: #f6e8dc;
+      border-left: 5px solid var(--rust);
+      padding: 1.25rem 1.4rem;
+    }
+    .caveat strong { color: var(--rust); }
+    .reading-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .reading {
+      background: var(--paper);
+      border: 1px solid var(--hairline);
+      padding: 1.4rem;
+    }
+    .reading .count { color: var(--gold); font: 700 0.72rem/1 system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+    .reading h3 { margin: 0.45rem 0; font-size: 1.35rem; }
+    .reading dl { margin: 1rem 0 0; display: grid; grid-template-columns: 1fr auto; gap: 0.35rem 1rem; }
+    .reading dt { color: var(--muted); }
+    .reading dd { margin: 0; font-variant-numeric: tabular-nums; }
+    .field-table {
+      margin-top: 1.5rem;
+      background: var(--paper);
+      border: 1px solid var(--hairline);
+      overflow-x: auto;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 680px; }
+    th, td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--hairline); text-align: right; font-variant-numeric: tabular-nums; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: var(--muted); font: 700 0.72rem/1.3 system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    .bar-cell { width: 34%; }
+    .bar-track { height: 0.5rem; background: #e4ddd2; }
+    .bar { display: block; height: 100%; background: var(--teal); }
+    .priority-list { list-style: none; margin: 1.5rem 0 0; padding: 0; counter-reset: priority; }
+    .priority-list li {
+      counter-increment: priority;
+      display: grid;
+      grid-template-columns: 3.25rem minmax(0, 1fr);
+      gap: 1rem;
+      padding: 1.35rem 0;
+      border-top: 1px solid var(--hairline);
+    }
+    .priority-list li::before {
+      content: "0" counter(priority);
+      color: var(--rust);
+      font: 700 1rem/1.4 ui-monospace, monospace;
+    }
+    .priority-list h3 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+    .priority-list p { margin: 0; color: var(--muted); }
+    .evidence { display: inline-block; margin-top: 0.55rem; color: var(--teal); font: 700 0.76rem/1.4 system-ui, sans-serif; }
+    .method {
+      background: var(--ink);
+      color: rgba(255, 253, 248, 0.82);
+      padding: clamp(1.5rem, 4vw, 3rem);
+    }
+    .method h2 { color: #fffdf8; }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem 3rem; margin-top: 1.5rem; }
+    .method dt { color: #d9aa5d; font: 700 0.7rem/1.4 system-ui, sans-serif; letter-spacing: 0.09em; text-transform: uppercase; }
+    .method dd { margin: 0.2rem 0 1rem; overflow-wrap: anywhere; }
+    footer { padding: 2.5rem 0 4rem; color: var(--muted); border-top: 1px solid var(--hairline); font-size: 0.88rem; }
+    @media (max-width: 780px) {
+      .hero { padding-left: 1rem; padding-right: 1rem; }
+      .hero::before { inset: 0.5rem; }
+      .hero-grid {
+        width: calc(100vw - 2rem);
+        max-width: calc(100vw - 2rem);
+      }
+      .hero-grid > *, .dek, .run-card {
+        width: 100%;
+        max-width: 100%;
+      }
+      .hero-grid, .section-head, .method-grid { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: 1fr; }
+      .reading-grid { grid-template-columns: 1fr; }
+      h1 { max-width: 10ch; }
+      main {
+        width: calc(100vw - 1.5rem);
+        max-width: calc(100vw - 1.5rem);
+      }
+    }
+    @media (max-width: 460px) {
+      .hero { padding-top: 3.25rem; }
+      .metric-grid { margin-top: -1rem; }
+      main { width: min(100% - 1.25rem, 1180px); }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">nomoredasi · capability evidence · 2026-08-06</p>
+        <h1>Baseline, not a victory lap.</h1>
+        <p class="dek">현재 스킬을 120개 블라인드 사례에 실제 적용해 처음으로 “얼마나 고쳤는가”와 “괜히 건드렸는가”를 함께 측정했다. 완벽해 보이는 수치와 아직 약한 실제 문장 증거를 같은 화면에 둔다.</p>
+      </div>
+      <div class="run-card">
+        <strong>RUN</strong> 2026-08-06-capability-baseline-v1<br>
+        <strong>SKILL</strong> cadb6684c3d35381426a1b5d6e6ef53f2b7c4d04<br>
+        <strong>MODEL</strong> yorha/kimi-k3 · six prompt-only blind sessions<br>
+        <strong>BUNDLE</strong> d6ee14e8453721f8f8c0c252e17f4106150e1311c599df6d33dbb12bb9afed45
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="metric-grid" aria-label="108 approved case headline metrics">
+      <div class="metric"><span>SWCR</span><strong>1.000</strong><small>approved 108 · weighted correction recall</small></div>
+      <div class="metric"><span>FPR0</span><strong>6.25%</strong><small>3 of 48 clean controls changed</small></div>
+      <div class="metric"><span>EAP</span><strong>1.000</strong><small>approved edit alternatives accepted</small></div>
+      <div class="metric"><span>Meaning</span><strong>PASS</strong><small>MP strict · dice 1.000</small></div>
+    </div>
+
+    <section aria-labelledby="readings-title">
+      <div class="section-head">
+        <h2 id="readings-title">세 개의 독법</h2>
+        <p>한 숫자로 합치면 데이터 품질과 교정 능력이 뒤섞인다. 승인 사례, 의미 있는 pending 사례, 전체 harness 호환성은 서로 다른 질문에 답한다.</p>
+      </div>
+      <div class="caveat"><strong>해석 제한:</strong> approved SWCR 1.000은 실제 전 분야 교정 정확도 100%가 아니다. 승인된 edited 사례는 translationese와 section tense 두 계층뿐이며, 48개 control은 SWCR 분모에 기여하지 않는다.</div>
+      <div class="reading-grid">
+        <article class="reading">
+          <div class="count">Headline · 108 approved</div>
+          <h3>현재 검증 가능한 범위</h3>
+          <dl><dt>SWCR</dt><dd>1.0000</dd><dt>FPR0</dt><dd>0.0625</dd><dt>EAP</dt><dd>1.0000</dd><dt>MP strict</dt><dd>true</dd></dl>
+        </article>
+        <article class="reading">
+          <div class="count">Evidence-qualified · 113</div>
+          <h3>5개 pending golden 포함</h3>
+          <dl><dt>SWCR</dt><dd>0.7368</dd><dt>FPR0</dt><dd>0.0625</dd><dt>EAP</dt><dd>0.9644</dd><dt>MP strict</dt><dd>true</dd></dl>
+        </article>
+        <article class="reading">
+          <div class="count">Operational · 120</div>
+          <h3>Harness 완전 실행</h3>
+          <dl><dt>SWCR</dt><dd>0.6747</dd><dt>FPR0</dt><dd>0.0625</dd><dt>EAP</dt><dd>0.9081</dd><dt>MP strict</dt><dd>true</dd></dl>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="fields-title">
+      <div class="section-head">
+        <h2 id="fields-title">분야별 증거</h2>
+        <p>승인 사례만 보면 여섯 분야가 모두 1.000이다. pending golden을 더한 113건 독법에서 실제 자연 문장의 간극이 드러난다.</p>
+      </div>
+      <div class="field-table">
+        <table>
+          <thead><tr><th>Field</th><th>Approved 108</th><th>Qualified 113</th><th>Qualified bar</th><th>Operational 120</th></tr></thead>
+          <tbody>
+            <tr><td>Cancer</td><td>1.0000</td><td>0.9579</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:95.79%"></span></div></td><td>0.9579</td></tr>
+            <tr><td>Chemistry</td><td>1.0000</td><td>1.0000</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:100%"></span></div></td><td>1.0000</td></tr>
+            <tr><td>Materials science</td><td>1.0000</td><td>0.9474</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:94.74%"></span></div></td><td>0.9474</td></tr>
+            <tr><td>Neuroscience</td><td>1.0000</td><td>0.9895</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:98.95%"></span></div></td><td>0.9895</td></tr>
+            <tr><td>Optics and photonics</td><td>1.0000</td><td>0.9474</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:94.74%"></span></div></td><td>0.6923</td></tr>
+            <tr><td>Physics</td><td>1.0000</td><td>0.9649</td><td class="bar-cell"><div class="bar-track"><span class="bar" style="width:96.49%"></span></div></td><td>0.9649</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="priority-title">
+      <div class="section-head">
+        <h2 id="priority-title">다음 다섯 가지</h2>
+        <p>우선순위는 낮은 점수만 따라가지 않는다. 데이터 신뢰도, 자연 문장 miss, 과교정, 그리고 아직 측정하지 못한 영역을 함께 닫는다.</p>
+      </div>
+      <ol class="priority-list">
+        <li><div><h3>Pending natural을 실제 증거로 전환</h3><p>5개 golden을 2인 검수·adjudication하고, 보안상 placeholder로 바뀐 7개 natural을 CC BY 원문 기반 신규 사례로 대체한다.</p><span class="evidence">5 golden SWCR 0.2308 · 7 placeholder SWCR 0</span></div></li>
+        <li><div><h3>인과 전치·측정 서술의 큰 재구성</h3><p>causal fronting, measurement reporting, process-result 구문을 자연스러운 학술 영어로 바꾸는 규칙을 회귀 테스트와 함께 추가한다.</p><span class="evidence">golden optics 0 · materials 0 · physics 0.3333</span></div></li>
+        <li><div><h3>일치·상관 서술·fold-change 레지스터</h3><p>생물의학 자연 문장에서 복수 일치, correlation predication, fold 표현을 함께 다루는 좁은 규칙을 만든다.</p><span class="evidence">golden cancer 0.2 · neuroscience 0.8</span></div></li>
+        <li><div><h3>올바른 하이픈은 보존</h3><p>이미 올바른 Materials 문장의 복합어 하이픈을 정규화하지 않도록 overlay와 과교정 게이트를 강화한다.</p><span class="evidence">3 controls changed · FPR0 0.0625</span></div></li>
+        <li><div><h3>측정하지 못한 네 계층 채우기</h3><p>articles, agreement/countability, field terminology, claim calibration에 approved edited 사례를 추가하기 전에는 범용 능력을 주장하지 않는다.</p><span class="evidence">approved edited coverage: 2 of 6 strata</span></div></li>
+      </ol>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <h2 id="method-title">재현 조건</h2>
+      <dl class="method-grid">
+        <div><dt>Blind protocol</dt><dd>분야별 6개 prompt-only 세션. alias·field·input과 고정 규칙만 전달했으며 모든 세션의 tool call은 0회였다.</dd></div>
+        <div><dt>Candidate integrity</dt><dd>120 snapshot ↔ alias map ↔ candidate 파일 byte match. Missing, unknown, mismatch 모두 0.</dd></div>
+        <div><dt>Cycle gate</dt><dd><code>bash scripts/cycle_delta.sh --only 4</code> → BENCH OK, SWCR 0.6747, FPR0 0.0625, MP 1.0000.</dd></div>
+        <div><dt>Machine record</dt><dd><a href="capability-baseline-v1.json">capability-baseline-v1.json</a>에 metric views, failure IDs, limitations, priorities를 저장했다.</dd></div>
+      </dl>
+    </section>
+
+    <footer>
+      <p><a href="../work_log.html">워크로그 인덱스로 돌아가기</a> · 이 보고서는 저장된 candidate snapshot을 결정적 harness로 다시 계산할 수 있다.</p>
+    </footer>
+  </main>
+</body>
+</html>
