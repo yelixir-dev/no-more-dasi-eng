@@ -144,6 +144,48 @@ PY
     } | tee "$DIFF_LOG"
     "$PY" "$SKILL/scripts/readiness.py" --html docs/readiness.html | tee -a "$DIFF_LOG"
     "$PY" "$SKILL/scripts/update_readme_readiness.py"
+
+    BENCHMARK_SCRIPT="$SKILL/tests/run_benchmark.py"
+    BENCHMARK_DATA="$SKILL/tests/benchmark"
+    BENCHMARK_CANDIDATES="$BENCHMARK_DATA/candidates/current"
+    BENCHMARK_BASELINE=logs/baseline-candidates.json
+    BENCHMARK_LINE="BENCH UNAVAILABLE"
+    if [[ -f "$BENCHMARK_SCRIPT" && -d "$BENCHMARK_DATA" && -d "$BENCHMARK_CANDIDATES" \
+        && -f "$BENCHMARK_BASELINE" \
+        && -n "$(find "$BENCHMARK_CANDIDATES" -maxdepth 1 -type f -name '*.txt' -print -quit)" ]]; then
+        BENCHMARK_OUTPUT=""
+        if BENCHMARK_OUTPUT=$(python3 "$BENCHMARK_SCRIPT" \
+            --candidates "$BENCHMARK_CANDIDATES" \
+            --baseline "$BENCHMARK_BASELINE" \
+            --out logs/benchmark.jsonl 2>&1); then
+            BENCHMARK_STATUS=0
+        else
+            BENCHMARK_STATUS=$?
+        fi
+        if [[ "$BENCHMARK_STATUS" == 0 || "$BENCHMARK_STATUS" == 1 ]]; then
+            if [[ "$BENCHMARK_STATUS" == 1 ]]; then
+                BENCHMARK_LABEL="BENCH REGRESSION"
+            else
+                BENCHMARK_LABEL="BENCH OK"
+            fi
+            if BENCHMARK_METRICS=$(printf '%s\n' "$BENCHMARK_OUTPUT" | python3 -c '
+import json
+import sys
+
+report = json.load(sys.stdin)
+print("SWCR={:.4f} FPR0={:.4f} MP={:.4f}".format(
+    report["swcr"],
+    report["fpr0"]["rate"],
+    report["mp"]["dice"],
+))
+'); then
+                BENCHMARK_LINE="$BENCHMARK_LABEL: $BENCHMARK_METRICS"
+            else
+                BENCHMARK_LINE="BENCH UNAVAILABLE"
+            fi
+        fi
+    fi
+    printf '%s\n' "$BENCHMARK_LINE" | tee -a "$DIFF_LOG"
 fi
 
 if selected 5; then
