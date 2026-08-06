@@ -17,6 +17,7 @@ REPO_OPERATIONS = (
     "abbrev_registry.py",
     "build_attributions.py",
     "corpus_manifest.py",
+    "harvest_edits.py",
     "house_style.py",
     "log_edit.py",
     "manuscript_state.py",
