@@ -26,8 +26,8 @@
 
 | 분야 | 논문 | 커버리지 | 분야 | 논문 | 커버리지 |
 | --- | ---: | ---: | --- | ---: | ---: |
-| Chemistry | 70 | 96.7 | Cell biology | 5 | 48.3 |
-| Optics and photonics | 89 | 95.6 | Biological techniques | 5 | 48.1 |
+| Chemistry | 70 | 100.0 | Cell biology | 5 | 48.3 |
+| Optics and photonics | 90 | 96.2 | Biological techniques | 5 | 48.1 |
 | Physics | 100 | 95.0 | Neuroscience | 5 | 47.8 |
 | Biophysics | 5 | 54.9 | Materials science | 5 | 47.7 |
 | Biotechnology | 5 | 50.6 | Mathematics and computing | 5 | 47.7 |
