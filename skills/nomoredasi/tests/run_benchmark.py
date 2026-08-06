@@ -3,7 +3,9 @@
 
 import argparse
 import json
+import shutil
 import sys
+from datetime import date
 from pathlib import Path
 
 try:
@@ -168,6 +170,108 @@ def run_benchmark(dataset, candidates=None, baseline=None, update_baseline=None,
     return report
 
 
+def _capture_root(dataset, label):
+    root = Path(dataset) / "regressions"
+    root.mkdir(parents=True, exist_ok=True)
+    base = label or f"{date.today().isoformat()}-regression"
+    candidate = root / base
+    suffix = 2
+    while candidate.exists():
+        candidate = root / f"{base}-{suffix}"
+        suffix += 1
+    candidate.mkdir()
+    return candidate
+
+
+def capture_regressions(dataset, candidates, report, label=None):
+    """Copy evaluated cases whose candidate misses a target edit."""
+    if candidates is None:
+        return []
+    dataset = Path(dataset)
+    candidate_dir = Path(candidates)
+    taxonomy_ids = _taxonomy_ids(dataset)
+    records = {case.name: validate_case(case, taxonomy_ids) for case in enumerate_cases(dataset)}
+    candidate_map, _, _ = _candidate_map(dataset, candidate_dir)
+    failures = []
+    for name, record in records.items():
+        candidate = candidate_map.get(name)
+        if candidate is None:
+            continue
+        score = swcr(record["input"], candidate, record["edits"])
+        if score < 1.0 or (record["meta"]["no_edit"] and candidate != record["input"]):
+            failures.append((name, record, candidate, score))
+    if not failures:
+        return []
+    destination = _capture_root(dataset, label)
+    run_id = candidate_dir.name or "candidates"
+    captured = []
+    for name, record, candidate, score in failures:
+        source = dataset / name
+        target = destination / name
+        shutil.copytree(source, target)
+        meta = dict(record["meta"])
+        meta["captured_from"] = str(source.relative_to(dataset))
+        meta["failure_metrics"] = {
+            "swcr": {"current": score, "expected": 1.0, "delta": score - 1.0},
+            "eap": {"current": eap(record["input"], record["gold"], candidate)},
+            "mp": mp(record["input"], candidate, meta["protected_names"]),
+            "benchmark": {"swcr": report["swcr"], "fpr0": report["fpr0"]},
+        }
+        (target / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        candidate_target = target / "candidates" / run_id
+        candidate_target.mkdir(parents=True)
+        (candidate_target / f"{name}.txt").write_text(candidate, encoding="utf-8")
+        captured.append(str(target))
+    return captured
+
+
+def _placeholder_edits(source, corrected):
+    try:
+        from .benchmark_metrics import tokenize
+    except ImportError:
+        from benchmark_metrics import tokenize
+    import difflib
+    source_tokens, corrected_tokens = tokenize(source), tokenize(corrected)
+    edits = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, source_tokens, corrected_tokens, autojunk=False).get_opcodes():
+        if tag != "equal":
+            edits.append({"span": [i1, i2], "class": None, "severity": "major", "accept": [corrected_tokens[j1:j2]]})
+    return edits
+
+
+def capture_edit(dataset, source_path, label=None):
+    source = Path(source_path)
+    if not source.is_dir():
+        raise ValueError(f"capture-edit source does not exist: {source}")
+    required = [source / name for name in ("input.txt", "corrected.txt", "meta.json")]
+    missing = [path.name for path in required if not path.is_file()]
+    if missing:
+        raise ValueError(f"capture-edit source missing {', '.join(missing)}: {source}")
+    meta_source = _read_json(source / "meta.json")
+    if not isinstance(meta_source, dict) or not meta_source.get("field"):
+        raise ValueError(f"capture-edit meta.json must contain field: {source}")
+    original = (source / "input.txt").read_text(encoding="utf-8")
+    corrected = (source / "corrected.txt").read_text(encoding="utf-8")
+    destination = _capture_root(dataset, label or f"{date.today().isoformat()}-harvest")
+    target = destination / source.name
+    shutil.copytree(source, target, ignore=shutil.ignore_patterns("corrected.txt"))
+    edits = _placeholder_edits(original, corrected)
+    meta = dict(meta_source)
+    meta.update({
+        "field": meta_source["field"], "error_class": None, "severity": None,
+        "origin": "natural", "no_edit": not bool(edits), "source_doc_id": str(source),
+        "protected_names": meta_source.get("protected_names", []), "review": "pending",
+        "captured_from": str(source), "source_edit_path": str(source),
+    })
+    if meta["no_edit"]:
+        meta.update({"error_class": "none", "severity": "na", "review": "approved", "approved_by": "machine:control"})
+        edits = []
+    (target / "gold.txt").write_text(corrected, encoding="utf-8")
+    (target / "edits.json").write_text(json.dumps(edits, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (target / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return str(target)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default=str(Path(__file__).parent / "benchmark"))
@@ -175,12 +279,24 @@ def main(argv=None):
     parser.add_argument("--baseline")
     parser.add_argument("--update-baseline")
     parser.add_argument("--out", default="logs/benchmark.jsonl")
+    parser.add_argument("--capture", action="store_true")
+    parser.add_argument("--capture-edit", metavar="PATH")
+    parser.add_argument("--capture-label", metavar="RUN_ID")
     args = parser.parse_args(argv)
     try:
+        if args.capture_edit:
+            if args.capture:
+                raise ValueError("--capture and --capture-edit are mutually exclusive")
+            captured = capture_edit(args.dataset, args.capture_edit, args.capture_label)
+            print(json.dumps({"captured": [captured]}, sort_keys=True))
+            return 0
         report = run_benchmark(args.dataset, args.candidates, args.baseline, args.update_baseline, args.out)
+        captured = capture_regressions(args.dataset, args.candidates, report, args.capture_label) if args.capture else []
     except ValueError as exc:
         print(f"run_benchmark: {exc}", file=sys.stderr)
         return 2
+    if args.capture:
+        report["captured"] = captured
     print(json.dumps(report, sort_keys=True))
     return 1 if report["regression"] else 0
 

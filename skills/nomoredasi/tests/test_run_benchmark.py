@@ -68,6 +68,71 @@ class RunBenchmarkTests(unittest.TestCase):
             self.assertEqual(result.returncode, 2)
             self.assertIn("unknown case", result.stderr)
 
+    def test_capture_copies_regression_case_and_candidate_with_failure_metadata(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d) / "benchmark"
+            root.mkdir()
+            self.make_dataset(root)
+            baseline = root.parent / "baseline.json"
+            script = Path(__file__).with_name("run_benchmark.py")
+            subprocess.run(
+                [sys.executable, str(script), "--dataset", str(root), "--update-baseline", str(baseline), "--out", str(root.parent / "history.jsonl")],
+                check=True, capture_output=True, text=True,
+            )
+            candidates = root.parent / "candidates"
+            candidates.mkdir()
+            (candidates / "control.txt").write_text("A stable control.", encoding="utf-8")
+            (candidates / "natural-hit.txt").write_text("The results is clear.", encoding="utf-8")
+            (candidates / "synthetic-miss.txt").write_text("The method are robust.", encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(script), "--dataset", str(root), "--candidates", str(candidates), "--baseline", str(baseline), "--capture", "--capture-label", "2026-08-06-failure", "--out", str(root.parent / "history.jsonl")],
+                check=False, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+            captured = root / "regressions" / "2026-08-06-failure"
+            self.assertTrue((captured / "natural-hit" / "input.txt").is_file())
+            self.assertEqual((captured / "natural-hit" / "candidates" / "candidates" / "natural-hit.txt").read_text(encoding="utf-8"), "The results is clear.")
+            meta = json.loads((captured / "natural-hit" / "meta.json").read_text(encoding="utf-8"))
+            self.assertEqual(meta["captured_from"], "natural-hit")
+            self.assertIn("failure_metrics", meta)
+            second = subprocess.run(
+                [sys.executable, str(script), "--dataset", str(root), "--candidates", str(candidates), "--baseline", str(baseline), "--capture", "--capture-label", "2026-08-06-failure", "--out", str(root.parent / "history.jsonl")],
+                check=False, capture_output=True, text=True,
+            )
+            self.assertEqual(second.returncode, 1, second.stdout + second.stderr)
+            self.assertTrue((root / "regressions" / "2026-08-06-failure-2").is_dir())
+
+    def test_capture_edit_maps_log_pair_and_rejects_missing_path(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d) / "benchmark"
+            root.mkdir()
+            self.make_dataset(root)
+            source = Path(d) / "2026-08-06" / "007-physics"
+            source.mkdir(parents=True)
+            (source / "input.txt").write_text("The result are clear.", encoding="utf-8")
+            (source / "corrected.txt").write_text("The result is clear.", encoding="utf-8")
+            (source / "meta.json").write_text(json.dumps({"field": "Physics", "route_hint": "standard", "type": "A", "level": "mid"}), encoding="utf-8")
+            script = Path(__file__).with_name("run_benchmark.py")
+            result = subprocess.run(
+                [sys.executable, str(script), "--dataset", str(root), "--capture-edit", str(source), "--capture-label", "2026-08-06-edit"],
+                check=False, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            output = root / "regressions" / "2026-08-06-edit" / "007-physics"
+            self.assertEqual((output / "gold.txt").read_text(encoding="utf-8"), "The result is clear.")
+            meta = json.loads((output / "meta.json").read_text(encoding="utf-8"))
+            self.assertEqual(meta["review"], "pending")
+            self.assertIsNone(meta["error_class"])
+            self.assertEqual(meta["field"], "Physics")
+            self.assertEqual(meta["captured_from"], str(source))
+            self.assertTrue(json.loads((output / "edits.json").read_text(encoding="utf-8")))
+            missing = subprocess.run(
+                [sys.executable, str(script), "--dataset", str(root), "--capture-edit", str(Path(d) / "missing")],
+                check=False, capture_output=True, text=True,
+            )
+            self.assertEqual(missing.returncode, 2)
+            self.assertIn("capture-edit source does not exist", missing.stderr)
+
     def test_pending_allows_nulls_but_approved_rejects_them(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
