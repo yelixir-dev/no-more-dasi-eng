@@ -1,9 +1,0 @@
-$ cd skills/nomoredasi && ../../.venv/bin/python -m unittest tests.test_taxonomy -v
-test_approved_case_references_must_exist_but_pending_null_is_allowed (tests.test_taxonomy.TaxonomyTests.test_approved_case_references_must_exist_but_pending_null_is_allowed) ... ok
-test_existing_benchmark_cases_validate (tests.test_taxonomy.TaxonomyTests.test_existing_benchmark_cases_validate) ... ok
-test_seed_schema_and_detection_partition (tests.test_taxonomy.TaxonomyTests.test_seed_schema_and_detection_partition) ... ok
-
-----------------------------------------------------------------------
-Ran 3 tests in 0.003s
-
-OK

@@ -9,6 +9,8 @@ work_log.html
 bug-report/
 .omo/
 papers/
+docs/e2e/
+docs/reviews/
 paper-english-skill-analysis.html
 skills/nomoredasi/tests/benchmark/candidates/
 skills/nomoredasi/tests/benchmark/regressions/*
